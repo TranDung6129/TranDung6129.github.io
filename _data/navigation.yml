@@ -1,22 +1,22 @@
 # main links
 main:
-  - title: "About"
+  - title: "Về tôi"
     url: /about/
-  - title: "Posts"
+  - title: "Bài viết"
     url: /posts/
-  - title: "Notes"
+  - title: "Ghi chú"
     url: /categories/notes/
 
 sidebar-nav:
-  - title: "Mathematics"
+  - title: "Toán học"
     url: /categories/mathematics/
-  - title: "Physics"
+  - title: "Vật lý"
     url: /categories/physics/
-  - title: "Philosophy"
+  - title: "Triết học"
     url: /categories/philosophy/
-  - title: "Economics"
+  - title: "Kinh tế học"
     url: /categories/economics/
-  - title: "Computer Science"
+  - title: "Khoa học máy tính"
     url: /categories/computer-science/
-  - title: "Translations"
+  - title: "Dịch thuật"
     url: /categories/translations/

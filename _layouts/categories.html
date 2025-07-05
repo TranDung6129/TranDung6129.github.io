@@ -1,8 +1,10 @@
 ---
-layout: archive
+layout: single-with-left-panel
 ---
 
 {{ content }}
 
-<h2>Categories</h2>
-<p>Category listing is temporarily disabled during development.</p>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].categories_label | default: "Categories" }}</h3>
+
+{%- assign categories = site.categories | sort -%}
+{% include category-list.html categories=categories %}

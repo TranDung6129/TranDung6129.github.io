@@ -1,5 +1,6 @@
 ---
-title: "Nguyên lý bất định Heisenberg và ý nghĩa triết học"
+title: "Nguyên lý bất định Heisenberg"
+layout: single-with-left-panel
 date: 2025-07-04
 categories:
   - physics

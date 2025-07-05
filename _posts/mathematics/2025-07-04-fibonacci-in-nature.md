@@ -1,5 +1,6 @@
 ---
 title: "Vẻ đẹp của dãy Fibonacci trong tự nhiên"
+layout: single-with-left-panel
 date: 2025-07-04
 categories:
   - mathematics

@@ -1,5 +1,6 @@
 ---
 title: "Chào mừng đến với The Epistemic Journal!"
+layout: single-with-left-panel
 date: 2025-07-04
 categories:
   - blog

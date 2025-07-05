@@ -15,7 +15,7 @@ remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "vi-VN"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "The Epistemic Diary"
 title_separator          : "-"
@@ -214,6 +214,17 @@ permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single-with-left-panel
+      author_profile: true
+
+
 # Pagination with jekyll-paginate
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
@@ -301,7 +312,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: single-with-left-panel
       author_profile: true
       read_time: true
       comments: # true

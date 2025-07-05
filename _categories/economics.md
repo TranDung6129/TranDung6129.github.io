@@ -10,5 +10,3 @@ sidebar:
 ---
 
 Phân tích các hiện tượng kinh tế và những lý thuyết định hình thế giới hiện đại.
-
-Phân tích về cách con người đưa ra quyết định trong bối cảnh khan hiếm.
