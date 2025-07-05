@@ -19,9 +19,9 @@ locale                   : "vi-VN"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "The Epistemic Diary"
 title_separator          : "-"
-subtitle                 : "A personal diary of explorations in philosophy, science, and the journey of learning." # site tagline that appears below site title in masthead
+subtitle                 : "Nhật ký cá nhân ghi lại hành trình khám phá và học hỏi." # site tagline that appears below site title in masthead
 name                     : "TranDung6129"
-description              : "A personal diary of explorations in philosophy, science, and the journey of learning."
+description              : "Nhật ký cá nhân ghi lại hành trình khám phá và học hỏi trong các lĩnh vực khoa học, triết học."
 url                      : "https://trandung6129.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "TranDung6129/TranDung6129.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "TranDung6129"
   avatar           : "/assets/images/site/avatar-placeholder.svg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Interdisciplinary researcher and knowledge seeker exploring the frontiers of human understanding."
+  bio              : "Người yêu thích học hỏi và khám phá, ghi chép lại hành trình tìm hiểu kiến thức trong nhiều lĩnh vực."
   location         :
   email            : # "your.email@example.com"
   links:

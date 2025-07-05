@@ -1,33 +1,46 @@
 ---
 permalink: /about/
 layout: single-with-left-panel
-title: "Giới thiệu về The Epistemic Journal"
+title: "Giới thiệu về The Epistemic Diary"
 author_profile: true
 ---
 
-Chào mừng bạn đến với **The Epistemic Journal**, một không gian dành cho những người yêu thích tri thức và luôn khao khát khám phá sự kết nối giữa các lĩnh vực tưởng chừng như riêng biệt.
+Chào mừng bạn đến với **The Epistemic Diary**, một không gian nhỏ nơi tôi ghi lại những điều mình học được và chia sẻ với những ai có cùng sở thích tìm hiểu kiến thức.
 
-## Triết lý của chúng tôi
+## Mục đích của blog
 
-Trong một thế giới ngày càng chuyên môn hóa, chúng tôi tin rằng những đột phá lớn nhất thường xảy ra ở giao điểm của các ngành khoa học. **The Epistemic Journal** được xây dựng dựa trên triết lý đó, với mong muốn phá vỡ các rào cản học thuật và tạo ra một diễn đàn mở cho việc khám phá tri thức một cách toàn diện.
+Blog này đơn giản là nơi tôi ghi lại những kiến thức đã tìm hiểu được trong hành trình học tập và chia sẻ với mọi người. Tôi không có ý định dạy dỗ hay giảng giải gì cả, mà chỉ muốn lưu giữ những điều mình đã học được và có thể sẽ hữu ích cho ai đó.
 
-Tên gọi "Epistemic" xuất phát từ "epistemology" (tri thức luận) - ngành triết học nghiên cứu về bản chất, nguồn gốc và giới hạn của tri thức. Chúng tôi tin rằng việc hiểu "làm thế nào chúng ta biết những gì chúng ta biết" là nền tảng cho mọi hành trình khám phá.
+Tên gọi "Epistemic" xuất phát từ "epistemology" (tri thức luận) - ngành triết học nghiên cứu về bản chất, nguồn gốc và giới hạn của tri thức. Tôi tin rằng việc hiểu "làm thế nào chúng ta biết những gì chúng ta biết" là nền tảng cho mọi hành trình khám phá kiến thức.
 
-## Các lĩnh vực chính
+## Các lĩnh vực tôi quan tâm
 
-Chúng tôi tập trung vào việc khám phá các chủ đề sâu sắc trong các lĩnh vực:
+Tôi thường ghi chép lại những điều mình tìm hiểu được trong các lĩnh vực:
 
-- **Toán học**: Không chỉ là những con số, mà là ngôn ngữ của vũ trụ.
-- **Vật lý**: Từ những hạt hạ nguyên tử đến các thiên hà xa xôi, chúng tôi tìm kiếm các quy luật cơ bản của tự nhiên.
-- **Triết học**: Đặt ra những câu hỏi lớn về tồn tại, ý thức và giá trị.
-- **Kinh tế học**: Phân tích cách con người đưa ra quyết định trong một thế giới có nguồn lực khan hiếm.
-- **Khoa học máy tính**: Khám phá logic và cấu trúc đằng sau thế giới số.
-- **Dịch thuật**: Mang những tư tưởng kinh điển đến gần hơn với độc giả Việt Nam.
+- **Toán học**: Những khái niệm và ứng dụng thú vị mà tôi gặp phải trong quá trình học tập.
+- **Vật lý**: Các hiện tượng tự nhiên và nguyên lý mà tôi đã tìm hiểu.
+- **Triết học**: Những suy tưởng về các vấn đề căn bản của con người và cuộc sống.
+- **Kinh tế học**: Cách tôi hiểu về các hiện tượng kinh tế xung quanh.
+- **Khoa học máy tính**: Những kiến thức về lập trình và công nghệ tôi đã học.
+- **Dịch thuật**: Những đoạn văn hay tác phẩm mà tôi thích và muốn dịch lại.
 
-## Về tác giả
+## Về tôi
 
-Tôi là người sáng lập The Epistemic Journal, một người có niềm đam mê vô tận với việc học hỏi và kết nối các ý tưởng. Với nền tảng đa ngành, tôi mong muốn chia sẻ hành trình khám phá của mình và cùng bạn đọc xây dựng một cộng đồng tri thức cởi mở và ham học hỏi.
+Tôi là TranDung6129, một người đam mê học hỏi và khám phá kiến thức. Tôi tạo ra blog này để ghi lại những gì mình đã học được trong quá trình tìm hiểu các lĩnh vực khác nhau.
 
-Hãy cùng nhau bắt đầu hành trình này. Bởi vì kiến thức không phải là một điểm đến, mà là một cuộc phiêu lưu không hồi kết.
+### Hướng nghiên cứu quan tâm
+- Toán học ứng dụng và tính toán khoa học
+- Vật lý lý thuyết và vật lý tính toán
+- Triết học khoa học và tri thức luận
+- Kinh tế học hành vi và lý thuyết trò chơi
+- Khoa học máy tính và trí tuệ nhân tạo
 
-Feel free to connect with me on [GitHub](https://github.com/TranDung6129) or explore my projects and blog posts on this site.
+### Hoạt động nghiên cứu
+- **Bài báo**: Hiện đang tìm hiểu và chuẩn bị các nghiên cứu nhỏ trong các lĩnh vực quan tâm
+- **Hội thảo**: Tham gia các hội thảo học thuật và seminar trực tuyến để cập nhật kiến thức
+- **Dự án cá nhân**: Phát triển các dự án nhỏ kết hợp giữa lập trình và toán học
+
+### Mục tiêu
+Tôi mong muốn chia sẻ những gì mình đã học được, không với tư cách là người thầy mà chỉ đơn giản là một người bạn cùng học hỏi. Hy vọng những ghi chép này có thể hữu ích cho ai đó đang trên con đường tìm hiểu tương tự.
+
+Bạn có thể kết nối với tôi qua [GitHub](https://github.com/TranDung6129) hoặc khám phá các dự án và bài viết trên trang web này.
