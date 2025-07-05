@@ -4,9 +4,19 @@ main:
     url: /about/
   - title: "Posts"
     url: /posts/
-  # - title: "Categories"
-  #   url: /categories/
-  # - title: "Tags"
-  #   url: /tags/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Notes"
+    url: /categories/notes/
+
+sidebar-nav:
+  - title: "Mathematics"
+    url: /categories/mathematics/
+  - title: "Physics"
+    url: /categories/physics/
+  - title: "Philosophy"
+    url: /categories/philosophy/
+  - title: "Economics"
+    url: /categories/economics/
+  - title: "Computer Science"
+    url: /categories/computer-science/
+  - title: "Translations"
+    url: /categories/translations/

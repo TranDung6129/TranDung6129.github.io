@@ -236,6 +236,8 @@
 
 .feature__wrapper {
   @include clearfix();
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
 
@@ -245,9 +247,26 @@
 }
 
 .feature__item {
+  display: flex;
   position: relative;
   margin-bottom: 2em;
   font-size: 1.125em;
+
+  .archive__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .archive__item-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .archive__item-excerpt {
+      flex-grow: 1;
+    }
+  }
 
   @include breakpoint($small) {
     float: inline-start;
