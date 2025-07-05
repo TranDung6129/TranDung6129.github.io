@@ -1,26 +1,26 @@
 # The Epistemic Journal
 
-🧠 **Khám phá tri thức xuyên suốt các lĩnh vực**
+**Khám phá tri thức xuyên suốt các lĩnh vực**
 
 Một blog học thuật tập trung vào việc chia sẻ kiến thức sâu sắc về Toán học, Vật lý, Triết học, Kinh tế học, Khoa học máy tính và Dịch thuật.
 
-## 🎯 Mục tiêu
+## Mục tiêu
 
 - Chia sẻ kiến thức chuyên sâu và kết nối liên ngành
 - Phân tích các khái niệm phức tạp một cách dễ hiểu
 - Dịch thuật và giới thiệu các tác phẩm học thuật quan trọng
 - Thúc đẩy tư duy phản biện và phân tích
 
-## 📚 Chủ đề chính
+## Chủ đề chính
 
-- 🔢 **Toán học**: Lý thuyết số, Giải tích, Hình học
-- ⚛️ **Vật lý**: Cơ học lượng tử, Thuyết tương đối, Vật lý thống kê
-- 🤔 **Triết học**: Triết học khoa học, Nhận thức luận, Đạo đức học
-- 💰 **Kinh tế học**: Lý thuyết trò chơi, Kinh tế vi mô/vĩ mô
-- 💻 **Khoa học máy tính**: Thuật toán, Cấu trúc dữ liệu, AI/ML
-- 📖 **Dịch thuật**: Dịch và phân tích các tác phẩm học thuật
+- **Toán học**: Lý thuyết số, Giải tích, Hình học
+- ⚛**Vật lý**: Cơ học lượng tử, Thuyết tương đối, Vật lý thống kê
+- **Triết học**: Triết học khoa học, Nhận thức luận, Đạo đức học
+- **Kinh tế học**: Lý thuyết trò chơi, Kinh tế vi mô/vĩ mô
+- **Khoa học máy tính**: Thuật toán, Cấu trúc dữ liệu, AI/ML
+- **Dịch thuật**: Dịch và phân tích các tác phẩm học thuật
 
-## 🚀 Phát triển
+## Phát triển
 
 Blog được xây dựng với Jekyll và sử dụng theme Minimal Mistakes.
 
@@ -38,7 +38,7 @@ bundle exec jekyll serve
 bundle exec jekyll build
 ```
 
-## 📁 Cấu trúc project
+## Cấu trúc project
 
 ```
 ├── _categories/          # Trang category
@@ -58,7 +58,7 @@ bundle exec jekyll build
 └── _config.yml          # Jekyll configuration
 ```
 
-## 🤝 Đóng góp
+## Đóng góp
 
 Nếu bạn muốn đóng góp nội dung hoặc đề xuất cải thiện:
 
@@ -67,13 +67,13 @@ Nếu bạn muốn đóng góp nội dung hoặc đề xuất cải thiện:
 3. Commit changes
 4. Tạo Pull Request
 
-## 📜 License
+## License
 
 Nội dung blog được chia sẻ dưới [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 Code được phân phối dưới [MIT License](LICENSE).
 
-## 📞 Liên hệ
+## Liên hệ
 
 - Website: [trandung6129.github.io](https://trandung6129.github.io)
 - GitHub: [@TranDung6129](https://github.com/TranDung6129)
