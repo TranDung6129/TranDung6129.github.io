@@ -2,7 +2,7 @@
 title: "Triết học"
 layout: category
 permalink: /categories/philosophy/
-taxonomy: philosophy
+taxonomy: Philosophy
 entries_layout: list
 author_profile: true
 sidebar:

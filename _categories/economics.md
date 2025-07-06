@@ -2,7 +2,7 @@
 title: "Kinh tế học"
 layout: category
 permalink: /categories/economics/
-taxonomy: economics
+taxonomy: Economics
 entries_layout: list
 author_profile: true
 sidebar:

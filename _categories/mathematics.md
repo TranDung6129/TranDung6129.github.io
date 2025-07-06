@@ -2,7 +2,7 @@
 title: "Toán học"
 layout: category
 permalink: /categories/mathematics/
-taxonomy: mathematics
+taxonomy: Mathematics
 entries_layout: list
 author_profile: true
 sidebar:

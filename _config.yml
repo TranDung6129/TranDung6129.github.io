@@ -212,6 +212,7 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+future: true # Allow future posts to be published
 
 
 # Defaults
@@ -223,6 +224,8 @@ defaults:
     values:
       layout: single-with-left-panel
       author_profile: true
+      share: true
+      related: true
 
 
 # Pagination with jekyll-paginate

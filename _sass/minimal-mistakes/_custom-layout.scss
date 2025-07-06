@@ -13,10 +13,50 @@
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
+  
+  /* Hover effects similar to right sidebar */
+  @include breakpoint($large) {
+    opacity: 0.75;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.sticky {
+      overflow-y: auto;
+      max-height: calc(100vh - #{$nav-height} - 2em);
+    }
+  }
 }
 
 .main-content {
   grid-area: main-content;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Override default page constraints in main content area */
+.main-content .page {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.main-content .page__inner-wrap {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content .page__content {
+  width: 100%;
+  max-width: none;
 }
 
 .left-panel .widget h3 {
@@ -31,6 +71,45 @@
 
 .sidebar {
   grid-area: right-sidebar;
+}
+
+/* Smaller font size for post excerpts */
+.archive__item-excerpt {
+  font-size: $type-size-7 !important;
+  color: $muted-text-color;
+  line-height: 1.4;
+}
+
+/* For grid view excerpts */
+.grid__item .archive__item-excerpt {
+  font-size: $type-size-7 !important;
+}
+
+/* Related posts section - full width outside grid */
+.page__related {
+  width: 100% !important;
+  max-width: none !important;
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid $border-color;
+  float: none !important;
+  clear: both;
+  
+  /* Override default sidebar constraints */
+  @include breakpoint($large) {
+    width: 100% !important;
+    float: none !important;
+  }
+
+  @include breakpoint($x-large) {
+    width: 100% !important;
+  }
+}
+
+/* Ensure grid wrapper within related posts takes full width */
+.page__related .grid__wrapper {
+  max-width: none;
+  width: 100%;
 }
 
 /* Adjustments for smaller screens */

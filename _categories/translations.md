@@ -2,7 +2,7 @@
 title: "Bản dịch"
 layout: category
 permalink: /categories/translations/
-taxonomy: translations
+taxonomy: Translations
 entries_layout: list
 author_profile: true
 sidebar:
