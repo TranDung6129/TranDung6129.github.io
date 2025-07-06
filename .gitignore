@@ -7,7 +7,6 @@ _site/
 # Ruby/Bundle
 vendor/
 .bundle/
-Gemfile.lock
 
 # Local development
 .vscode/

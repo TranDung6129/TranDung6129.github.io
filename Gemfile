@@ -9,20 +9,14 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "github-pages", group: :jekyll_plugins
+# Use the GitHub Pages gem to manage Jekyll and its dependencies.
+# This ensures that your local environment matches the GitHub Pages build environment.
+gem "github-pages", "~> 231", group: :jekyll_plugins
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
-
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-sitemap"
-  gem "jekyll-gist"
-  gem "jekyll-include-cache"
-  gem "jekyll-paginate"
-end
+# If you have any other plugins not included in the `github-pages` gem,
+# you can add them here.
+# group :jekyll_plugins do
+# end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
