@@ -6,10 +6,10 @@
 
 .main-grid {
     @include breakpoint($x-large) {
-        grid-template-columns: 250px auto 250px;
+        grid-template-columns: 250px auto 400px;
         max-width: 100%;
         padding: 0 1em;
-        gap: 2.4em;
+        gap: 1.5em;
     }
 }
 
