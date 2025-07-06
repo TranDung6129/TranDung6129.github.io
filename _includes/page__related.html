@@ -45,24 +45,6 @@
   {% endfor %}
 {% endif %}
 
-{% comment %}<!-- If still not enough, fill with recent posts -->{% endcomment %}
-{% if related_posts.size < 4 %}
-  {% for post in posts %}
-    {% if post.id == page.id %}{% continue %}{% endif %}
-    {% assign already_included = false %}
-    {% for related_post in related_posts %}
-      {% if related_post.id == post.id %}
-        {% assign already_included = true %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-    {% unless already_included %}
-      {% assign related_posts = related_posts | push: post %}
-      {% if related_posts.size >= 4 %}{% break %}{% endif %}
-    {% endunless %}
-  {% endfor %}
-{% endif %}
-
 <div class="page__related">
   {% include before-related.html %}
   <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
