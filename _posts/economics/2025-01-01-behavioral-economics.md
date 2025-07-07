@@ -2,7 +2,7 @@
 title: "Behavioral Economics: Understanding Human Irrationality in Economic Decisions"
 excerpt: "Explore how behavioral economics reveals the psychological factors that influence economic decisions, challenging traditional assumptions about rational choice and offering insights into real-world behavior."
 categories:
-  - Economics
+  - economics
 tags:
   - behavioral-economics
   - psychology

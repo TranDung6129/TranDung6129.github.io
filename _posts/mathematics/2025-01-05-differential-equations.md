@@ -2,7 +2,7 @@
 title: "Differential Equations: The Language of Change"
 excerpt: "Explore differential equations, the mathematical tools that describe how quantities change over time and space, with applications spanning physics, biology, economics, and engineering."
 categories:
-  - Mathematics
+  - mathematics
 tags:
   - differential-equations
   - calculus

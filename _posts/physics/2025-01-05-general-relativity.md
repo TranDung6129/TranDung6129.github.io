@@ -2,7 +2,7 @@
 title: "General Relativity: Gravity as Curved Spacetime"
 excerpt: "Explore Einstein's general theory of relativity, which revolutionized our understanding of gravity as the curvature of spacetime, leading to predictions of black holes, gravitational waves, and the expanding universe."
 categories:
-  - Physics
+  - physics
 tags:
   - general-relativity
   - einstein

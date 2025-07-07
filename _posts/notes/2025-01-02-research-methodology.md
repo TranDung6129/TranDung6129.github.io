@@ -2,7 +2,7 @@
 title: "Research Methodology: From Idea to Results"
 excerpt: "Master the fundamentals of systematic research, from formulating questions and designing studies to collecting data and drawing valid conclusions across academic and professional contexts."
 categories:
-  - Notes
+  - notes
 tags:
   - research-methodology
   - academic-research

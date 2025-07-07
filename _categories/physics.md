@@ -2,7 +2,7 @@
 title: "Vật lý"
 layout: category
 permalink: /categories/physics/
-taxonomy: Physics
+taxonomy: physics
 entries_layout: list
 author_profile: true
 sidebar:

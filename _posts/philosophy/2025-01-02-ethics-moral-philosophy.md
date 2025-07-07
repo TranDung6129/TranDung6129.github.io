@@ -2,7 +2,7 @@
 title: "Ethics and Moral Philosophy: Understanding Right and Wrong"
 excerpt: "Explore the fundamental questions of moral philosophy: What makes actions right or wrong? How should we live? What constitutes a good life? Journey through major ethical theories and contemporary moral challenges."
 categories:
-  - Philosophy
+  - philosophy
 tags:
   - ethics
   - moral-philosophy

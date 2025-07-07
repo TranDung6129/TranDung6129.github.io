@@ -1,0 +1,19 @@
+- quote: "The only true wisdom is in knowing you know nothing."
+  author: "Socrates"
+- quote: "The unexamined life is not worth living."
+  author: "Socrates"
+- quote: "I cannot teach anybody anything. I can only make them think."
+  author: "Socrates"
+- quote: "Wonder is the beginning of wisdom."
+  author: "Socrates"
+- quote: "Science is a way of thinking much more than it is a body of knowledge."
+  author: "Carl Sagan"
+- quote: "The beauty of a living thing is not the atoms that go into it, but the way those atoms are put together."
+  author: "Carl Sagan"
+
+# Example of a quote with an internal quote mark that might cause issues
+# - quote: "He said, 'Hello World'."
+#   author: "A. Coder"
+
+# - quote: "And the final quote is "The End"."
+#   author: "The Author" 

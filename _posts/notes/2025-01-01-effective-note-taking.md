@@ -2,7 +2,7 @@
 title: "Effective Note-Taking Methods: Capturing and Organizing Knowledge"
 excerpt: "Discover proven note-taking strategies and systems to improve learning, retention, and knowledge management, from Cornell notes to digital tools and memory techniques."
 categories:
-  - Notes
+  - notes
 tags:
   - note-taking
   - learning-strategies

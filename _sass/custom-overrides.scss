@@ -104,4 +104,159 @@
       }
     }
   }
+}
+
+/* Mini Calendar Styles */
+#mini-calendar {
+  font-size: 0.9em;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1em;
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+
+    h4 {
+      margin: 0;
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.2em 0.6em;
+      font-size: 1.2em;
+      color: #555;
+      border-radius: 4px;
+      line-height: 1;
+      transition: background-color 0.2s ease;
+      
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+
+  .calendar-body {
+    .calendar-weekdays, .calendar-dates {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      gap: 5px;
+    }
+
+    .calendar-dates {
+      grid-template-rows: repeat(6, 1fr); /* Always create 6 rows with equal height */
+      min-height: 180px; /* Fixed minimum height to prevent jumping */
+    }
+
+    .calendar-weekdays {
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #777;
+    }
+
+    .calendar-dates span {
+      padding: 6px 0;
+      border-radius: 50%;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 28px; /* Ensure consistent height for all cells */
+
+      &.today {
+        background-color: #e9ecef;
+        font-weight: bold;
+        color: #000;
+      }
+
+      &.has-post {
+        background-color: #007acc;
+        color: white;
+        font-weight: bold;
+        cursor: default;
+        
+        &:hover {
+            opacity: 0.9;
+        }
+      }
+
+      &.empty {
+        /* Empty cells for consistent grid layout */
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+/* Enhanced TOC styling - Simple and effective */
+.toc-panel {
+  /* Remove border/background from TOC panel completely */
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  
+  .toc {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  
+  .nav__title {
+    border: none !important;
+    background: transparent !important;
+    padding-bottom: 0.5em !important;
+  }
+  
+  /* Remove any potential borders from navigation elements */
+  nav, .nav, .sidebar__right {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+.toc-panel .toc__menu {
+  /* Clean, simple TOC styling without auto-highlighting */
+  a {
+    display: block !important;
+    padding: 0.5rem 0 !important;
+    color: #666 !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+    font-size: 0.9rem !important;
+    
+    &:hover {
+      color: #007acc !important;
+    }
+  }
+  
+  /* Level-specific font sizes and colors */
+  ul li a {
+    font-size: 0.95rem !important; /* Level 1 - H1, H2 */
+    padding: 0.6rem 0 !important;
+    color: #555 !important;
+  }
+  
+  ul ul li a {
+    font-size: 0.85rem !important; /* Level 2 - H3, H4 */
+    padding: 0.4rem 0 !important;
+    color: #777 !important;
+    padding-left: 0.2rem !important;
+  }
+  
+  ul ul ul li a {
+    font-size: 0.8rem !important; /* Level 3+ - H5, H6 */
+    padding: 0.35rem 0 !important;
+    color: #888 !important;
+    padding-left: 0.3rem !important;
+  }
 } 

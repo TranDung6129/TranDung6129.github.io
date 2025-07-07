@@ -1,6 +1,6 @@
 ---
 title: "Dịch và phân tích: 'Tôi tư duy, vậy tôi tồn tại' - Descartes"
-layout: single-with-left-panel
+layout: post_single
 date: 2025-07-04
 categories:
   - translations

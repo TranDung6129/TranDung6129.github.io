@@ -2,7 +2,7 @@
 title: "Translating Bashō's Haiku: The Art and Challenge of Poetic Translation"
 excerpt: "Explore the complexities of translating Japanese haiku into English through the work of Matsuo Bashō, examining how cultural context, linguistic structure, and poetic essence intersect in translation."
 categories:
-  - Translations
+  - translations
 tags:
   - haiku
   - japanese-poetry

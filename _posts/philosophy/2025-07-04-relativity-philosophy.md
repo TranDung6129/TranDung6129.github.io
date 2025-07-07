@@ -1,6 +1,6 @@
 ---
 title: "Bàn về thuyết tương đối của Einstein trong triết học"
-layout: single-with-left-panel
+layout: post_single
 date: 2025-07-04
 categories:
   - philosophy

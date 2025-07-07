@@ -2,7 +2,7 @@
 title: "Special Relativity: Revolutionizing Our Understanding of Space and Time"
 excerpt: "Explore Einstein's special theory of relativity, its counterintuitive consequences, and how it fundamentally changed our understanding of space, time, and the nature of reality."
 categories:
-  - Physics
+  - physics
 tags:
   - relativity
   - einstein

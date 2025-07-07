@@ -1,6 +1,6 @@
 ---
 title: "Nguyên lý bất định Heisenberg"
-layout: single-with-left-panel
+layout: post_single
 date: 2025-07-04
 categories:
   - physics

@@ -1,6 +1,6 @@
 ---
 title: "My First Note"
-layout: single-with-left-panel
+layout: post_single
 date: 2025-07-04
 tags: [sample, note]
 categories:

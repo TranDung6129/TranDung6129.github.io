@@ -166,6 +166,7 @@ exclude:
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
+  - site.log
   - log
   - minimal-mistakes-jekyll.gemspec
   - node_modules

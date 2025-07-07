@@ -2,7 +2,7 @@
 title: "Algorithms and Complexity Analysis: The Foundation of Computer Science"
 excerpt: "Explore the fundamental concepts of algorithms and computational complexity, from basic sorting algorithms to P vs NP, and understand how we measure and optimize algorithmic efficiency."
 categories:
-  - Computer Science
+  - computer-science
 tags:
   - algorithms
   - complexity-analysis

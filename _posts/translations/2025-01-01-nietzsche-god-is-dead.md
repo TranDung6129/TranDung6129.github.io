@@ -2,7 +2,7 @@
 title: "Nietzsche's 'God is Dead': Translation and Philosophical Analysis"
 excerpt: "Explore Nietzsche's famous proclamation 'God is dead' through careful translation and philosophical analysis, examining its meaning, context, and profound implications for modern thought."
 categories:
-  - Translations
+  - translations
 tags:
   - nietzsche
   - philosophy

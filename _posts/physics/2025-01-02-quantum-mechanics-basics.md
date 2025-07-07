@@ -2,7 +2,7 @@
 title: "Quantum Mechanics: Unveiling the Microscopic World"
 excerpt: "Explore the fundamental principles of quantum mechanics, from wave-particle duality to quantum entanglement, and discover how this theory revolutionized our understanding of nature at the smallest scales."
 categories:
-  - Physics
+  - physics
 tags:
   - quantum-mechanics
   - quantum-physics

@@ -2,7 +2,7 @@
 title: "Consciousness and the Philosophy of Mind: The Hard Problem of Experience"
 excerpt: "Explore the mystery of consciousness and the philosophy of mind: What is consciousness? How does subjective experience arise from physical processes? Delve into one of philosophy's deepest puzzles."
 categories:
-  - Philosophy
+  - philosophy
 tags:
   - consciousness
   - philosophy-of-mind

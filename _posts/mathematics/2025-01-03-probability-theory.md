@@ -2,7 +2,7 @@
 title: "Probability Theory: From Basic Concepts to Advanced Applications"
 excerpt: "Explore the mathematical foundation of uncertainty, from basic probability rules to advanced statistical concepts that drive modern data science and machine learning."
 categories:
-  - Mathematics
+  - mathematics
 tags:
   - probability
   - statistics

@@ -1,6 +1,6 @@
 ---
 title: "Vẻ đẹp của dãy Fibonacci trong tự nhiên"
-layout: single-with-left-panel
+layout: post_single
 date: 2025-07-04
 categories:
   - mathematics
@@ -31,14 +31,36 @@ Một trong những tính chất đáng chú ý nhất của dãy Fibonacci là 
 
 Khi n tiến đến vô cùng, tỷ số F(n+1)/F(n) tiến đến φ.
 
+### Công thức Binet
+
+Dãy Fibonacci cũng có thể được tính trực tiếp bằng công thức Binet:
+
+F(n) = (φⁿ - ψⁿ) / √5
+
+Trong đó ψ = (1 - √5) / 2 ≈ -0.618
+
+### Tính chất đặc biệt
+
+Tỷ lệ vàng xuất hiện trong nhiều tính chất toán học thú vị khác của dãy Fibonacci.
+
 ## Xuất hiện trong tự nhiên
 
 Dãy Fibonacci và tỷ lệ vàng xuất hiện ở nhiều nơi trong tự nhiên:
 
+### Trong thực vật
+
 - **Hoa hướng dương**: Số xoắn ốc hạt thường là các số Fibonacci
-- **Vỏ ốc**: Tỷ lệ giữa các vòng xoắn gần với tỷ lệ vàng
 - **Cánh hoa**: Nhiều loài hoa có số cánh là số Fibonacci (3, 5, 8, 13, 21)
 - **Lá cây**: Cách sắp xếp lá trên cành theo tỷ lệ vàng để tối ưu hóa ánh sáng
+
+#### Cấu trúc phyllotaxis
+
+Sự sắp xếp lá theo góc vàng (137.5°) giúp tối ưu hóa việc hấp thụ ánh sáng.
+
+### Trong động vật
+
+- **Vỏ ốc**: Tỷ lệ giữa các vòng xoắn gần với tỷ lệ vàng
+- **Cấu trúc cơ thể**: Nhiều tỷ lệ cơ thể động vật tuân theo tỷ lệ vàng
 
 ## Kết luận
 

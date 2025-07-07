@@ -2,7 +2,7 @@
 title: "Thermodynamics: The Science of Heat, Work, and Energy"
 excerpt: "Discover the fundamental laws of thermodynamics that govern energy transformations, from steam engines to the arrow of time, and explore their profound implications for technology and cosmology."
 categories:
-  - Physics
+  - physics
 tags:
   - thermodynamics
   - entropy

@@ -2,7 +2,7 @@
 title: "Linear Algebra: Understanding Vectors and Vector Spaces"
 excerpt: "Dive into the fundamental concepts of linear algebra, exploring vectors, vector spaces, and linear transformations that form the backbone of modern mathematics and computer science."
 categories:
-  - Mathematics
+  - mathematics
 tags:
   - linear-algebra
   - vectors

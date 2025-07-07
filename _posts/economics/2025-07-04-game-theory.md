@@ -1,6 +1,6 @@
 ---
 title: "Lý thuyết trò chơi: Từ Von Neumann đến Nash"
-layout: single-with-left-panel
+layout: post_single
 date: 2025-07-04
 categories:
   - economics

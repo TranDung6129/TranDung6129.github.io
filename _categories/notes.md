@@ -2,7 +2,7 @@
 title: "Ghi chú"
 layout: category
 permalink: /categories/notes/
-taxonomy: Notes
+taxonomy: notes
 entries_layout: list
 author_profile: true
 sidebar:

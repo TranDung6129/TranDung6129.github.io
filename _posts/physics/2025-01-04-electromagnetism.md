@@ -2,7 +2,7 @@
 title: "Electromagnetism: Unifying Electric and Magnetic Phenomena"
 excerpt: "Explore Maxwell's revolutionary theory that unified electricity and magnetism, revealing electromagnetic waves and laying the foundation for modern technology from radio to quantum field theory."
 categories:
-  - Physics
+  - physics
 tags:
   - electromagnetism
   - maxwell-equations

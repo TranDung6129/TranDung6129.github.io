@@ -2,7 +2,7 @@
 title: "Macroeconomics Fundamentals: Understanding the Economy as a Whole"
 excerpt: "Explore the core concepts of macroeconomics, from GDP and inflation to monetary and fiscal policy, and understand how governments and central banks manage economic stability and growth."
 categories:
-  - Economics
+  - economics
 tags:
   - macroeconomics
   - gdp

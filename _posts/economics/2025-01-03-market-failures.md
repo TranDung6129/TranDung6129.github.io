@@ -2,7 +2,7 @@
 title: "Market Failures and Government Intervention: When Markets Don't Work Perfectly"
 excerpt: "Explore the concept of market failures - situations where free markets fail to allocate resources efficiently - and examine the role of government intervention in addressing these failures through regulation, taxation, and public provision."
 categories:
-  - Economics
+  - economics
 tags:
   - market-failures
   - government-intervention

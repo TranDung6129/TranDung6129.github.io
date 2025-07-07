@@ -2,7 +2,7 @@
 title: "Epistemology: The Theory of Knowledge and How We Know What We Know"
 excerpt: "Explore the fundamental questions of epistemology: What is knowledge? How do we acquire it? What makes beliefs justified? Delve into the philosophical foundations of human understanding."
 categories:
-  - Philosophy
+  - philosophy
 tags:
   - epistemology
   - knowledge

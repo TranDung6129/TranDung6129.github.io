@@ -2,7 +2,7 @@
 title: "Introduction to Topology: The Study of Shape and Space"
 excerpt: "Discover topology, the mathematical study of properties preserved under continuous deformations, exploring concepts from rubber sheet geometry to advanced mathematical structures."
 categories:
-  - Mathematics
+  - mathematics
 tags:
   - topology
   - geometry

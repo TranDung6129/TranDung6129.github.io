@@ -2,7 +2,7 @@
 title: "Khoa học máy tính"
 layout: category
 permalink: /categories/computer-science/
-taxonomy: Computer Science
+taxonomy: computer-science
 entries_layout: list
 author_profile: true
 sidebar:

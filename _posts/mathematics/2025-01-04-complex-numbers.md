@@ -2,7 +2,7 @@
 title: "Complex Numbers: Extending the Real Number System"
 excerpt: "Discover the elegant mathematical system of complex numbers, their geometric interpretations, and powerful applications in engineering, physics, and signal processing."
 categories:
-  - Mathematics
+  - mathematics
 tags:
   - complex-numbers
   - algebra
