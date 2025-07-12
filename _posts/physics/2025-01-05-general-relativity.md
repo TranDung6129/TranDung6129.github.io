@@ -9,6 +9,7 @@ tags:
   - gravity
   - spacetime
   - cosmology
+series: relativity-series
 date: 2024-12-05
 ---
 

@@ -1,0 +1,19 @@
+---
+layout: single-with-left-panel
+---
+
+<h1 class="page__title p-name">{{ page.title }}</h1>
+
+{{ content }}
+
+<hr>
+
+<h2 class="archive__subtitle">Bài viết trong series này</h2>
+
+{% assign series_posts = site.posts | where: "series", page.slug | sort: "date" %}
+
+<div class="entries-list">
+  {% for post in series_posts %}
+    {% include archive-single.html type="list" %}
+  {% endfor %}
+</div> 

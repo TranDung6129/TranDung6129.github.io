@@ -9,6 +9,7 @@ tags:
   - spacetime
   - physics-foundations
   - modern-physics
+series: relativity-series
 date: 2024-12-01
 ---
 

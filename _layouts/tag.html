@@ -2,9 +2,166 @@
 layout: single-with-left-panel
 ---
 
-{{ content }}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include posts-tag.html taxonomy=page.taxonomy type=entries_layout %}
+<div id="tag-post-list">
+  {% assign tag_posts = site.tags[page.tag] %}
+  {% for post in tag_posts %}
+    {% unless post.hidden %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endfor %}
 </div>
+
+<nav id="tag-pagination" class="pagination"></nav>
+
+<!-- Navigation Buttons -->
+<div class="navigation-buttons">
+  <div class="back-to-top">
+    <a href="#page-title" class="btn btn--primary btn--circle" title="{{ site.data.ui-text[site.locale].back_to_top | default: 'Lên đầu trang' }}">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+  
+  <div class="go-to-bottom">
+    <a href="#bottom-marker" class="btn btn--primary btn--circle" title="{{ site.data.ui-text[site.locale].go_to_bottom | default: 'Xuống cuối trang' }}">
+      <i class="fas fa-arrow-down"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Bottom marker -->
+<div id="bottom-marker" style="height: 1px;"></div>
+
+<style>
+.navigation-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn--circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn--circle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  text-decoration: none;
+}
+
+.btn--circle i {
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navigation-buttons {
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .btn--circle {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .btn--circle i {
+    font-size: 14px;
+  }
+}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const postsContainer = document.getElementById('tag-post-list');
+    const paginationContainer = document.getElementById('tag-pagination');
+    const posts = Array.from(postsContainer.children);
+    const postsPerPage = 5;
+    let currentPage = 0;
+
+    if (posts.length <= postsPerPage) {
+      paginationContainer.style.display = 'none';
+      return;
+    }
+
+    function showPage(page) {
+      const startIndex = page * postsPerPage;
+      const endIndex = startIndex + postsPerPage;
+      
+      posts.forEach((post, index) => {
+        post.style.display = (index >= startIndex && index < endIndex) ? 'block' : 'none';
+      });
+
+      updatePagination(page);
+    }
+
+    function updatePagination(page) {
+      currentPage = page;
+      paginationContainer.innerHTML = '';
+
+      const totalPages = Math.ceil(posts.length / postsPerPage);
+
+      // Previous button
+      const prevButton = document.createElement('a');
+      prevButton.href = '#';
+      prevButton.className = 'pagination--pager';
+      prevButton.innerText = '{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}';
+      if (currentPage === 0) {
+        prevButton.classList.add('disabled');
+      }
+      prevButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentPage > 0) {
+          showPage(currentPage - 1);
+          window.scrollTo(0, 0);
+        }
+      });
+      paginationContainer.appendChild(prevButton);
+
+      // Next button
+      const nextButton = document.createElement('a');
+      nextButton.href = '#';
+      nextButton.className = 'pagination--pager';
+      nextButton.innerText = '{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}';
+      if (currentPage >= totalPages - 1) {
+        nextButton.classList.add('disabled');
+      }
+      nextButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentPage < totalPages - 1) {
+          showPage(currentPage + 1);
+          window.scrollTo(0, 0);
+        }
+      });
+      paginationContainer.appendChild(nextButton);
+    }
+
+    showPage(0);
+
+    // Smooth scrolling for navigation buttons
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  });
+</script>

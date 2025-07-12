@@ -1,0 +1,120 @@
+/* /_sass/minimal-mistakes/_post-layout.scss */
+/* Layout for single posts with 3 columns */
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px; /* Left sidebar, Main content, Right TOC */
+  grid-template-areas: "post-sidebar post-content post-toc";
+  gap: 1.5em;
+  align-items: start;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "post-content"
+      "post-toc"
+      "post-sidebar";
+  }
+}
+
+.post-sidebar {
+  grid-area: post-sidebar;
+}
+
+.post-content {
+  grid-area: post-content;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+
+  /* Override default page constraints */
+  .page {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .page__inner-wrap {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page__content {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.post-toc {
+  grid-area: post-toc;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+
+  @include breakpoint($large) {
+    &.sticky {
+      overflow-y: auto;
+      max-height: calc(100vh - #{$nav-height} - 2em);
+    }
+  }
+
+  /* Styling for the TOC itself */
+  .toc {
+    padding: 0;
+  }
+
+  .nav__title {
+    margin: 0 0 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .toc__menu {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin: 0;
+        
+        a {
+          display: block;
+          padding: 0.2em 0;
+          text-decoration: none;
+          line-height: 1.4;
+          color: $muted-text-color;
+          transition: color 0.2s ease-in-out;
+          font-size: 15px; /* Increase font size for better readability */
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        &.active > a {
+          color: $primary-color;
+          font-weight: bold;
+        }
+      }
+      
+      ul {
+        padding-left: 1rem;
+        border-left: 1px solid $border-color;
+        margin-left: 0.5rem;
+        margin-top: 0.25rem;
+        
+        ul {
+          border-left-color: lighten($border-color, 10%);
+        }
+      }
+    }
+  }
+} 

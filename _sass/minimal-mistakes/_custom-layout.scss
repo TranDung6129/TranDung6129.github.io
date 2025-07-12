@@ -9,11 +9,6 @@
   /* Default areas - can be overridden by specific layouts */
   grid-template-areas: "sidebar main-content right-panel";
   
-  /* When used with TOC */
-  &.with-toc {
-    grid-template-areas: "sidebar main-content toc-panel";
-  }
-  
   /* When used with left-panel widgets */
   &.with-left-panel {
     grid-template-areas: "sidebar main-content left-panel";
@@ -153,72 +148,6 @@
   }
 }
 
-.toc-panel {
-  grid-area: right-panel; /* Use right-panel area in default grid */
-  position: -webkit-sticky;
-  position: sticky;
-  top: 2em;
-  opacity: 1 !important;
-  
-  @include breakpoint($large) {
-    &.sticky {
-      overflow-y: auto;
-      max-height: calc(100vh - #{$nav-height} - 2em);
-    }
-  }
-}
-
-/* Alternative grid area for specific layouts */
-.main-grid.with-toc .toc-panel {
-  grid-area: toc-panel;
-}
-
-/* Enhanced TOC with toggle functionality */
-.toc-panel .toc {
-  padding: 0;
-}
-
-.toc-panel .nav__title {
-  margin: 0 0 0.5em;
-  color: $text-color;
-  font-size: $type-size-5;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* TOC Menu - Basic structure only, detailed styling in custom-overrides.scss */
-.toc__menu {
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    li {
-      margin: 0;
-      
-      a {
-        display: block;
-        text-decoration: none;
-        line-height: 1.5;
-        transition: all 0.2s ease-in-out;
-      }
-    }
-    
-    // Nested levels structure
-    ul {
-      padding-left: 1rem;
-      border-left: 2px solid $border-color;
-      margin-left: 0.5rem;
-      margin-top: 0.25rem;
-      
-      ul {
-        border-left-color: lighten($border-color, 10%);
-      }
-    }
-  }
-}
-
 /* Smaller font size for post excerpts */
 .archive__item-excerpt {
   font-size: $type-size-7 !important;
@@ -267,13 +196,6 @@
       "right-panel"
       "sidebar";
       
-    &.with-toc {
-      grid-template-areas:
-        "main-content"
-        "toc-panel"
-        "sidebar";
-    }
-    
     &.with-left-panel {
       grid-template-areas:
         "sidebar"

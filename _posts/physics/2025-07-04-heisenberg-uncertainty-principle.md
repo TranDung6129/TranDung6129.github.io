@@ -1,14 +1,13 @@
 ---
-title: "Nguyên lý bất định Heisenberg"
-layout: post_single
+title: "Nguyên lý bất định của Heisenberg và giới hạn của tri thức"
 date: 2025-07-04
 categories:
   - physics
-  - philosophy
 tags:
-  - quantum mechanics
-  - uncertainty principle
-  - philosophy of science
+  - heisenberg
+  - quantum-mechanics
+  - uncertainty-principle
+  - physics
 header:
   teaser: "/assets/images/placeholder-article.svg"
 ---

@@ -1,6 +1,5 @@
 ---
 title: "Thuật toán sắp xếp: Từ Bubble Sort đến QuickSort"
-layout: post_single
 date: 2025-07-04
 categories:
   - computer-science

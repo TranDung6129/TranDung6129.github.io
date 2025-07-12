@@ -1,16 +1,13 @@
 ---
-title: "Chào mừng đến với The Epistemic Journal!"
-layout: post_single
-date: 2025-07-04
+title: "Welcome to My Blog"
+excerpt: "A personal space to document my journey of discovery and learning in science, philosophy, and technology."
 categories:
   - blog
 tags:
-  - Jekyll
-  - GitHub Pages
-  - First Post
-  - Epistemic Journal
-header:
-  teaser: "/assets/images/placeholder-article.svg"
+  - introduction
+  - personal
+  - learning
+date: 2024-12-04
 ---
 
 Chào mừng bạn đến với **The Epistemic Journal** - một tạp chí đa ngành khám phá kiến thức qua nhiều lĩnh vực khác nhau!

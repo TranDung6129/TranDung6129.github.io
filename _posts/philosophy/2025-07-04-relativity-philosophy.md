@@ -1,14 +1,14 @@
 ---
-title: "Bàn về thuyết tương đối của Einstein trong triết học"
-layout: post_single
+title: "Thuyết tương đối và Triết học về không gian và thời gian"
 date: 2025-07-04
+series: relativity-series
 categories:
   - philosophy
 tags:
   - relativity
-  - epistemology
-  - philosophy of science
-  - Einstein
+  - philosophy-of-science
+  - metaphysics
+  - space-time
 header:
   teaser: "/assets/images/placeholder-article.svg"
 ---

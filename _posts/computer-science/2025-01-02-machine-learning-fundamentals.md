@@ -1,7 +1,6 @@
 ---
 title: "Machine Learning Fundamentals: Algorithms that Learn from Data"
 excerpt: "Explore the core concepts of machine learning, from supervised and unsupervised learning to neural networks and deep learning, and understand how machines can learn patterns from data to make predictions and decisions."
-layout: post_single
 categories:
   - computer-science
 tags:

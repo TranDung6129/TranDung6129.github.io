@@ -50,6 +50,7 @@ en: &DEFAULT_EN
   search_algolia_no_results  : "No results"
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
+  go_to_bottom               : "Go to bottom"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -109,5 +110,6 @@ vi: &DEFAULT_VI
   search_algolia_no_results : "Không có kết quả"
   results_found           : "Kết quả được tìm thấy"
   back_to_top             : "Về đầu trang"
+  go_to_bottom            : "Xuống cuối trang"
 vi-VN:
   <<: *DEFAULT_VI

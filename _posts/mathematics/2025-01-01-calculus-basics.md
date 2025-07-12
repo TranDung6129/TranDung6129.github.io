@@ -1,7 +1,6 @@
 ---
 title: "Giải tích cơ bản: Nền tảng của Toán học phân tích"
 excerpt: "Khám phá các khái niệm cơ bản về đạo hàm và tích phân, những công cụ toán học mạnh mẽ giúp hiểu về sự thay đổi và tích lũy trong tự nhiên."
-layout: post_single
 categories:
   - mathematics
 tags:

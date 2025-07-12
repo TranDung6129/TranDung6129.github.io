@@ -1,13 +1,13 @@
 ---
-title: "Vẻ đẹp của dãy Fibonacci trong tự nhiên"
-layout: post_single
+title: "Fibonacci trong tự nhiên: Vẻ đẹp toán học của tạo hóa"
 date: 2025-07-04
 categories:
   - mathematics
 tags:
   - fibonacci
-  - golden ratio
-  - number theory
+  - nature
+  - golden-ratio
+  - mathematics
 header:
   teaser: "/assets/images/placeholder-article.svg"
 ---

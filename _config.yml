@@ -142,12 +142,17 @@ collections:
   categories:
     output: true
     permalink: /:collection/:name/
+  series:
+    output: true
+    permalink: /:collection/:name/
 
 # Reading Files
 include:
   - .htaccess
   - _pages
   - _categories
+  - _series
+  - _tags
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -215,7 +220,6 @@ permalink: /:categories/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 future: true # Allow future posts to be published
 
-
 # Defaults
 defaults:
   # _posts
@@ -223,11 +227,32 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single-with-left-panel
+      layout: post_layout # Changed to the new clean post layout
       author_profile: true
+      read_time: true
+      comments: # true
       share: true
       related: true
-
+      sidebar:
+        nav: "sidebar-nav"
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "sidebar-nav"
+  # _categories
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: archive
+      author_profile: false
+      sidebar:
+        nav: "categories"
 
 # Pagination with jekyll-paginate
 paginate: 5 # amount of posts to show
@@ -307,38 +332,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single-with-left-panel
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-      sidebar:
-        nav: "sidebar-nav"
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      sidebar:
-        nav: "sidebar-nav"
-  # _categories
-  - scope:
-      path: ""
-      type: categories
-    values:
-      layout: archive
-      author_profile: false
-      sidebar:
-        nav: "categories"

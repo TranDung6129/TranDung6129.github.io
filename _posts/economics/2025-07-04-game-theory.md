@@ -1,14 +1,13 @@
 ---
-title: "Lý thuyết trò chơi: Từ Von Neumann đến Nash"
-layout: post_single
+title: "Lý thuyết trò chơi và các vấn đề kinh tế"
 date: 2025-07-04
 categories:
   - economics
 tags:
-  - game theory
-  - Nash equilibrium
+  - game-theory
   - economics
-  - mathematics
+  - nash-equilibrium
+  - strategy
 header:
   teaser: "/assets/images/placeholder-article.svg"
 ---

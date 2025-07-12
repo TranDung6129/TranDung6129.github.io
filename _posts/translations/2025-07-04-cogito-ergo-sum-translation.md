@@ -1,15 +1,13 @@
 ---
-title: "Dịch và phân tích: 'Tôi tư duy, vậy tôi tồn tại' - Descartes"
-layout: post_single
+title: "Cogito, ergo sum: Phân tích và dịch thuật"
 date: 2025-07-04
 categories:
   - translations
-  - philosophy
 tags:
-  - Descartes
-  - cogito ergo sum
-  - translation
+  - descartes
   - philosophy
+  - translation
+  - latin
 header:
   teaser: "/assets/images/placeholder-article.svg"
 ---
