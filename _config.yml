@@ -69,7 +69,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
 search                   : true
-search_full_content      : true
+search_full_content      : false
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)

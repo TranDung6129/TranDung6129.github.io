@@ -15,28 +15,702 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <div class="archive">
+  <div class="search-page">
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
+      <header class="search-header">
+        <h1 id="page-title" class="page__title">
+          <i class="fas fa-search"></i> {{ page.title }}
+        </h1>
+        <p class="search-subtitle">{{ content }}</p>
+      </header>
     {% endunless %}
 
-    {{ content }}
-
-    {%- assign search_provider = site.search_provider | default: "lunr" -%}
-    {%- case search_provider -%}
-      {%- when "lunr" -%}
-        <input type="text" id="search" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
-        <div id="results" class="results"></div>
-      {%- when "google" -%}
-        <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
-        <input type="text" id="cse-search-input-box-id" class="search-input" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+    <div class="search-container">
+      <div class="search-box-container">
+        <form class="search-form" onsubmit="return false;" role="search">
+          <div class="search-input-group">
+            <input type="search" id="search" class="search-input" placeholder="Nhập từ khóa tìm kiếm..." autocomplete="off" />
+            <button type="button" id="search-btn" class="search-btn">Tìm kiếm</button>
+          </div>
         </form>
-        <div id="results" class="results">
-          <gcse:searchresults-only></gcse:searchresults-only>
+        
+        <div class="search-filters">
+          <div class="filter-group">
+            <label for="category-filter">Danh mục:</label>
+            <select id="category-filter" class="filter-select">
+              <option value="">Tất cả danh mục</option>
+              <option value="computer-science">Computer Science</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="physics">Physics</option>
+              <option value="philosophy">Philosophy</option>
+              <option value="economics">Economics</option>
+              <option value="translations">Translations</option>
+              <option value="notes">Notes</option>
+            </select>
+          </div>
         </div>
-      {%- when "algolia" -%}
-        <div class="search-searchbar"></div>
-        <div class="search-hits"></div>
-    {%- endcase -%}
+
+        <div class="popular-tags">
+          <h4>Thẻ phổ biến:</h4>
+          <div class="tags-list">
+            <button type="button" class="tag-btn" data-tag="algorithms">Algorithms</button>
+            <button type="button" class="tag-btn" data-tag="machine-learning">Machine Learning</button>
+            <button type="button" class="tag-btn" data-tag="calculus">Calculus</button>
+            <button type="button" class="tag-btn" data-tag="linear-algebra">Linear Algebra</button>
+            <button type="button" class="tag-btn" data-tag="quantum-mechanics">Quantum Mechanics</button>
+            <button type="button" class="tag-btn" data-tag="relativity">Relativity</button>
+            <button type="button" class="tag-btn" data-tag="ethics">Ethics</button>
+            <button type="button" class="tag-btn" data-tag="economics">Economics</button>
+            <button type="button" class="tag-btn" data-tag="translation">Translation</button>
+            <button type="button" class="tag-btn" data-tag="philosophy">Philosophy</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="search-stats" style="display: none;">
+        <div id="search-info" class="search-info"></div>
+        <div id="search-time" class="search-time"></div>
+      </div>
+      
+      <div id="results" class="search-results"></div>
+      
+      <div id="show-more-container" class="show-more-container" style="display: none;">
+        <button type="button" id="show-more-btn" class="show-more-btn">
+          <i class="fas fa-chevron-down"></i> Xem thêm kết quả
+        </button>
+      </div>
+      
+      <div id="no-results" class="no-results" style="display: none;">
+        <div class="no-results-content">
+          <i class="fas fa-search-minus"></i>
+          <h3>Không tìm thấy kết quả</h3>
+          <p>Không có bài viết nào phù hợp với từ khóa "<span id="search-term"></span>"</p>
+          <div class="search-suggestions">
+            <h4>Gợi ý:</h4>
+            <ul>
+              <li>Kiểm tra lại chính tả</li>
+              <li>Thử sử dụng từ khóa khác</li>
+              <li>Sử dụng từ khóa ngắn gọn hơn</li>
+              <li>Tìm kiếm theo danh mục hoặc thẻ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<style>
+.search-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.search-header {
+  text-align: center;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.search-header .page__title {
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.search-header .page__title i {
+  color: #3498db;
+  margin-right: 0.5em;
+}
+
+.search-subtitle {
+  color: #6c757d;
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.search-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-box-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.search-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5em;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.search-btn {
+  padding: 12px 24px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #2980b9;
+}
+
+.search-filters {
+  margin-bottom: 1.5em;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.filter-select {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.popular-tags {
+  margin-top: 1.5em;
+}
+
+.popular-tags h4 {
+  color: #495057;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-btn {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #495057;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tag-btn:hover {
+  background: #e9ecef;
+}
+
+.tag-btn.active {
+  background: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+
+.search-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.search-info {
+  font-weight: 600;
+}
+
+.search-time {
+  font-style: italic;
+}
+
+.search-results {
+  margin-top: 2em;
+}
+
+.search-results .list__item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.search-results .list__item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.search-results .archive__item-title {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.search-results .archive__item-title a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.search-results .archive__item-title a:hover {
+  color: #3498db;
+}
+
+.search-results .archive__item-excerpt {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.search-results .archive__item-meta {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  font-size: 13px;
+  color: #868e96;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #e9ecef;
+}
+
+.search-results .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.search-results .meta-item i {
+  color: #3498db;
+}
+
+.search-highlight {
+  background: #fff3cd;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #856404;
+}
+
+.show-more-container {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.show-more-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: #2980b9;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3em 2em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.no-results-content i {
+  font-size: 3em;
+  color: #6c757d;
+  margin-bottom: 1em;
+}
+
+.no-results-content h3 {
+  color: #495057;
+  margin-bottom: 0.5em;
+}
+
+.no-results-content p {
+  color: #6c757d;
+  margin-bottom: 1.5em;
+}
+
+.search-suggestions {
+  text-align: left;
+  display: inline-block;
+  background: #f8f9fa;
+  padding: 1.5em;
+  border-radius: 6px;
+  margin-top: 1em;
+}
+
+.search-suggestions h4 {
+  color: #495057;
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+
+.search-suggestions ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.search-suggestions li {
+  color: #6c757d;
+  margin-bottom: 0.3em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-page {
+    padding: 0 0.5em;
+  }
+  
+  .search-header .page__title {
+    font-size: 1.8em;
+  }
+  
+  .search-box-container {
+    padding: 1em;
+  }
+  
+  .search-input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-input,
+  .search-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .search-stats {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .search-results .list__item {
+    padding: 1em;
+  }
+  
+  .search-results .archive__item-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .tags-list {
+    gap: 6px;
+  }
+  
+  .tag-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input,
+  .search-btn {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  
+  .no-results {
+    padding: 2em 1em;
+  }
+  
+  .search-suggestions {
+    padding: 1em;
+  }
+}
+</style>
+
+<script>
+// Initialize search when page loads
+window.addEventListener('load', function() {
+  console.log('Page loaded, initializing search...');
+  const searchInput = document.getElementById('search');
+  const searchBtn = document.getElementById('search-btn');
+  const categoryFilter = document.getElementById('category-filter');
+  const tagButtons = document.querySelectorAll('.tag-btn');
+  const resultsDiv = document.getElementById('results');
+  const noResultsDiv = document.getElementById('no-results');
+  const searchInfo = document.getElementById('search-info');
+  const searchTime = document.getElementById('search-time');
+  const searchTermSpan = document.getElementById('search-term');
+  const searchStats = document.querySelector('.search-stats');
+  const showMoreContainer = document.getElementById('show-more-container');
+  const showMoreBtn = document.getElementById('show-more-btn');
+  
+  let searchStartTime;
+  let allResults = [];
+  let currentDisplayCount = 0;
+  const resultsPerPage = 5;
+  let selectedTag = '';
+  
+  // Tag button functionality
+  tagButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      tagButtons.forEach(btn => btn.classList.remove('active'));
+      
+      if (selectedTag === this.dataset.tag) {
+        selectedTag = '';
+      } else {
+        selectedTag = this.dataset.tag;
+        this.classList.add('active');
+      }
+      
+      if (searchInput.value.trim().length >= 2 || selectedTag) {
+        performSearch();
+      }
+    });
+  });
+  
+  // Search on button click
+  searchBtn.addEventListener('click', function() {
+    if (searchInput.value.trim().length >= 2 || selectedTag || categoryFilter.value) {
+      performSearch();
+    }
+  });
+  
+  // Search on Enter key
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      if (this.value.trim().length >= 2 || selectedTag || categoryFilter.value) {
+        performSearch();
+      }
+    }
+  });
+  
+  // Category filter change
+  categoryFilter.addEventListener('change', function() {
+    if (searchInput.value.trim().length >= 2 || selectedTag || this.value) {
+      performSearch();
+    }
+  });
+  
+  // Show more results
+  showMoreBtn.addEventListener('click', function() {
+    displayResults(allResults, searchInput.value.trim(), null, currentDisplayCount + resultsPerPage);
+  });
+  
+  function clearResults() {
+    resultsDiv.innerHTML = '';
+    noResultsDiv.style.display = 'none';
+    searchStats.style.display = 'none';
+    showMoreContainer.style.display = 'none';
+    searchInfo.textContent = '';
+    searchTime.textContent = '';
+    allResults = [];
+    currentDisplayCount = 0;
+  }
+  
+  function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    const selectedCategory = categoryFilter.value;
+    
+    if (query.length < 2 && !selectedCategory && !selectedTag) {
+      clearResults();
+      return;
+    }
+    
+    searchStartTime = performance.now();
+    
+    let results = [];
+    
+    if (query.length < 2 && (selectedCategory || selectedTag)) {
+      results = idx.search('*').filter(function(result) {
+        const item = store[result.ref];
+        let matchesCategory = !selectedCategory || (item.categories && item.categories.includes(selectedCategory));
+        let matchesTag = !selectedTag || (item.tags && item.tags.includes(selectedTag));
+        return matchesCategory && matchesTag;
+      });
+    } else {
+      results = idx.query(function (q) {
+        query.split(lunr.tokenizer.separator).forEach(function (term) {
+          q.term(term, { boost: 100 });
+          if(query.lastIndexOf(" ") != query.length-1){
+            q.term(term, { usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 });
+          }
+          if (term != ""){
+            q.term(term, { usePipeline: false, editDistance: 1, boost: 1 });
+          }
+        });
+      });
+      
+      if (selectedCategory || selectedTag) {
+        results = results.filter(function(result) {
+          const item = store[result.ref];
+          let matchesCategory = !selectedCategory || (item.categories && item.categories.includes(selectedCategory));
+          let matchesTag = !selectedTag || (item.tags && item.tags.includes(selectedTag));
+          return matchesCategory && matchesTag;
+        });
+      }
+    }
+    
+    const searchEndTime = performance.now();
+    const searchDuration = ((searchEndTime - searchStartTime) / 1000).toFixed(3);
+    
+    allResults = results;
+    displayResults(results, query, searchDuration, resultsPerPage);
+    
+    // Update URL with search query (for sharing)
+    if (query.length > 0) {
+      const newUrl = new URL(window.location);
+      newUrl.searchParams.set('q', query);
+      window.history.replaceState({}, '', newUrl);
+    } else {
+      const newUrl = new URL(window.location);
+      newUrl.searchParams.delete('q');
+      window.history.replaceState({}, '', newUrl);
+    }
+  }
+  
+  function displayResults(results, query, duration, maxDisplay) {
+    resultsDiv.innerHTML = '';
+    
+    if (results.length === 0) {
+      noResultsDiv.style.display = 'block';
+      searchStats.style.display = 'none';
+      showMoreContainer.style.display = 'none';
+      searchTermSpan.textContent = query;
+      return;
+    }
+    
+    noResultsDiv.style.display = 'none';
+    searchStats.style.display = 'flex';
+    
+    if (duration !== null) {
+      searchInfo.textContent = `Tìm thấy ${results.length} kết quả`;
+      searchTime.textContent = `(${duration} giây)`;
+    }
+    
+    const displayCount = Math.min(maxDisplay || resultsPerPage, results.length);
+    currentDisplayCount = displayCount;
+    
+    for (let i = 0; i < displayCount; i++) {
+      const result = results[i];
+      const item = store[result.ref];
+      
+      const maxExcerptLength = 200;
+      let excerpt = item.excerpt || '';
+      if (excerpt.length > maxExcerptLength) {
+        excerpt = excerpt.substring(0, maxExcerptLength) + '...';
+      }
+      
+      const highlightedExcerpt = highlightSearchTerms(excerpt, query);
+      const highlightedTitle = highlightSearchTerms(item.title, query);
+      
+      const postDate = new Date(item.date || '').toLocaleDateString('vi-VN', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      
+      const searchItem = `
+        <div class="list__item">
+          <article class="archive__item">
+            <h2 class="archive__item-title">
+              <a href="${item.url}" rel="permalink">${highlightedTitle}</a>
+            </h2>
+            <p class="archive__item-excerpt">${highlightedExcerpt}</p>
+            <div class="archive__item-meta">
+              ${item.date ? `<div class="meta-item"><i class="far fa-calendar-alt"></i> ${postDate}</div>` : ''}
+              ${item.categories && item.categories.length > 0 ? `<div class="meta-item"><i class="fas fa-folder"></i> ${item.categories.join(', ')}</div>` : ''}
+              ${item.tags && item.tags.length > 0 ? `<div class="meta-item"><i class="fas fa-tags"></i> ${item.tags.slice(0, 3).join(', ')}${item.tags.length > 3 ? '...' : ''}</div>` : ''}
+            </div>
+          </article>
+        </div>
+      `;
+      
+      resultsDiv.insertAdjacentHTML('beforeend', searchItem);
+    }
+    
+    if (results.length > displayCount) {
+      showMoreContainer.style.display = 'block';
+      showMoreBtn.innerHTML = `<i class="fas fa-chevron-down"></i> Xem thêm kết quả (${results.length - displayCount} còn lại)`;
+    } else {
+      showMoreContainer.style.display = 'none';
+    }
+  }
+  
+  function highlightSearchTerms(text, query) {
+    if (!query || query.length === 0) return text;
+    
+    const terms = query.split(/\s+/).filter(term => term.length > 0);
+    let highlightedText = text;
+    
+    terms.forEach(function(term) {
+      const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
+      highlightedText = highlightedText.replace(regex, '<span class="search-highlight">$1</span>');
+    });
+    
+    return highlightedText;
+  }
+  
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+  
+  // Check for query parameter in URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const queryParam = urlParams.get('q');
+  if (queryParam) {
+    searchInput.value = queryParam;
+    performSearch();
+  }
+  
+  searchInput.focus();
+});
+</script>
+
+{% include search/lunr-search-scripts.html %}

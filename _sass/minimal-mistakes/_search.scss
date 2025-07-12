@@ -18,9 +18,19 @@
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     color: mix(#000, $primary-color, 25%);
+    text-decoration: none;
+  }
+  
+  &:focus {
+    outline: none;
+    text-decoration: none;
   }
 }
 
@@ -32,44 +42,153 @@
 .search-content {
   display: none;
   visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding-top: 1em;
   padding-bottom: 1em;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
 
   &__inner-wrap {
     width: 100%;
+    max-width: 600px;
     margin-inline: auto;
-    padding-inline: 1em;
+    padding: 2em;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.15s;
     animation-delay: 0.15s;
+    margin-top: 5vh;
 
-    @include breakpoint($x-large) {
-      max-width: $max-width;
+    @include breakpoint($large) {
+      max-width: 700px;
     }
 
+    @include breakpoint($x-large) {
+      max-width: 800px;
+    }
   }
 
   &__form {
     background-color: transparent;
+    margin-bottom: 1.5em;
+  }
+
+  .search-popup-header {
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #e9ecef;
+
+    h2 {
+      color: #2c3e50;
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+
+      i {
+        color: #3498db;
+        margin-right: 0.5em;
+      }
+    }
+
+    p {
+      color: #6c757d;
+      margin: 0;
+      font-size: 0.9em;
+    }
+  }
+
+  .search-input-container {
+    position: relative;
+    margin-bottom: 1em;
+  }
+
+  .search-input-icon {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    font-size: 1em;
+    z-index: 2;
+    pointer-events: none;
   }
 
   .search-input {
-    display: block;
-    margin-bottom: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background-color: transparent;
-    font-size: $type-size-3;
+    width: 100%;
+    padding: 1em 3em 1em 3em;
+    border: 2px solid #e9ecef;
+    border-radius: 50px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    box-sizing: border-box;
 
-    @include breakpoint($large) {
-      font-size: $type-size-2;
+    &:focus {
+      outline: none;
+      border-color: #3498db;
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+      background: #fff;
     }
 
-    @include breakpoint($x-large) {
-      font-size: $type-size-1;
+    @include breakpoint($large) {
+      font-size: 1.1em;
+    }
+  }
+
+  .search-clear-btn {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 3;
+
+    &:hover {
+      background: #e9ecef;
+      color: #495057;
+    }
+
+    &.show {
+      display: block;
+    }
+  }
+
+  .search-quick-links {
+    text-align: center;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #e9ecef;
+
+    p {
+      margin: 0;
+      font-size: 0.85em;
+      color: #6c757d;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -83,29 +202,150 @@
     }
   }
 
+  .results {
+    max-height: 50vh;
+    overflow-y: auto;
+    margin-top: 1em;
+  }
+
   .results__found {
-    margin-top: 0.5em;
-    font-size: $type-size-6;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    color: #6c757d;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5em;
+    background: #f8f9fa;
+    border-radius: 6px;
   }
 
   .archive__item {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
 
-    @include breakpoint($large) {
-      width: 75%;
+    &:hover {
+      background: #e9ecef;
+      border-color: #3498db;
     }
 
-    @include breakpoint($x-large) {
-      width: 50%;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
   .archive__item-title {
-    margin-top: 0;
+    margin: 0 0 0.5em 0;
+    font-size: 1.1em;
+
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        color: #3498db;
+      }
+    }
   }
 
   .archive__item-excerpt {
-    margin-bottom: 0;
+    margin: 0;
+    font-size: 0.85em;
+    color: #6c757d;
+    line-height: 1.4;
+  }
+
+  /* Responsive design for search popup */
+  @include breakpoint($small) {
+    &__inner-wrap {
+      margin: 2vh 1em;
+      padding: 1.5em;
+    }
+
+    .search-popup-header h2 {
+      font-size: 1.3em;
+    }
+
+    .search-input {
+      padding: 0.8em 2.5em 0.8em 2.5em;
+      font-size: 0.9em;
+    }
+
+    .search-input-icon,
+    .search-clear-btn {
+      font-size: 0.9em;
+    }
+
+    .results {
+      max-height: 40vh;
+    }
+
+    .archive__item {
+      padding: 0.8em;
+    }
+
+    .archive__item-title {
+      font-size: 1em;
+    }
+
+    .archive__item-excerpt {
+      font-size: 0.8em;
+    }
+  }
+
+  @include breakpoint(480px) {
+    &__inner-wrap {
+      margin: 1vh 0.5em;
+      padding: 1em;
+    }
+
+    .search-popup-header {
+      margin-bottom: 1em;
+      padding-bottom: 0.8em;
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+
+    .search-input {
+      padding: 0.7em 2.2em 0.7em 2.2em;
+      font-size: 0.85em;
+    }
+
+    .search-quick-links {
+      margin-bottom: 0.8em;
+      padding-bottom: 0.8em;
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+
+    .results {
+      max-height: 35vh;
+    }
+
+    .archive__item {
+      padding: 0.7em;
+      margin-bottom: 1em;
+    }
+
+    .archive__item-title {
+      font-size: 0.95em;
+    }
+
+    .archive__item-excerpt {
+      font-size: 0.75em;
+    }
   }
 }
 

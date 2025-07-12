@@ -23,10 +23,10 @@
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+        <a href="{{ '/search/' | relative_url }}" class="search__toggle" title="Tìm kiếm">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Search" }}</span>
           <i class="fas fa-search"></i>
-        </button>
+        </a>
         {% endif %}
       </nav>
     </div>
