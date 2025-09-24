@@ -6,7 +6,7 @@
 # FixIt 0.2.15 | CHANGED FixIt theme version
 version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
-description = "This is my new Hugo FixIt site"
+description = "Tôi sợ quên cái gì thì tôi viết lại ở đây"
 # site keywords
 keywords = ["Hugo", "FixIt"]
 # site default theme ["light", "dark", "auto"]
@@ -63,7 +63,7 @@ disableThemeInject = false
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = ""
+  svgFavicon = "static/images/logoted.png"
   # Safari mask icon color
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
@@ -115,7 +115,7 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/images/fixit.min.svg"
+    logo = "/images/logoted.png"
     # title name
     name = ""
     # you can add extra information before the name (HTML format is supported), such as icons
@@ -185,14 +185,14 @@ disableThemeInject = false
 # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
 [archives]
   # special amount of posts in archives page
-  paginate = 20
+  pagerSize = 20
   # date format (month and day)
   dateFormat = "01-02"
 
 # Section page config (all pages in section)
 [section]
   # special amount of pages in each section page
-  paginate = 20
+  pagerSize = 20
   # date format (month and day)
   dateFormat = "01-02"
   # FixIt 0.3.10 | NEW Section feed config for RSS, Atom and JSON feed.
@@ -205,7 +205,7 @@ disableThemeInject = false
 # Term list (category or tag) page config
 [list]
   # special amount of posts in each list page
-  paginate = 20
+  pagerSize = 20
   # date format (month and day)
   dateFormat = "01-02"
   # FixIt 0.3.10 | NEW Term list feed config for RSS, Atom and JSON feed.
@@ -256,7 +256,7 @@ disableThemeInject = false
   [home.posts]
     enable = true
     # special amount of posts in each home posts page
-    paginate = 6
+    pagerSize = 6
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
@@ -490,8 +490,8 @@ disableThemeInject = false
 
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
-  enable = false
-  permalink = "https://github.com/hugo-fixit/FixIt"
+  enable = true
+  permalink = "https://github.com/TranDung6129"
   title = "View source on GitHub"
   position = "right" # ["left", "right"]
 
@@ -616,9 +616,9 @@ disableThemeInject = false
   # FixIt 0.2.18 | NEW whether to enable instant.page
   instantPage = false
   # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
-  collectionList = false
+  collectionList = true
   # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
-  collectionNavigation = false
+  collectionNavigation = true
 
   # FixIt 0.2.15 | NEW Repost config
   [page.repost]
@@ -710,7 +710,7 @@ disableThemeInject = false
     replace = false
   # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
   [page.related]
-    enable = false
+    enable = true
     count = 5
   # FixIt 0.2.17 | NEW Donate (Sponsor) settings
   [page.reward]

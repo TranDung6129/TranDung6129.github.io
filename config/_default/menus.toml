@@ -47,3 +47,55 @@
   weight = 3
   [main.params]
     icon = "fa-solid fa-tags"
+[[main]]
+  identifier = "collections"
+  parent = ""
+  pre = ""
+  post = ""
+  name = "Collections"
+  url = "/collections/"
+  title = "Bộ sưu tập theo chủ đề"
+  weight = 4
+  [main.params]
+    icon = "fa-solid fa-layer-group"
+
+# Collections submenu items
+[[main]]
+  identifier = "web-development"
+  parent = "collections"
+  name = "Web Development"
+  url = "/collections/web-development/"
+  title = "Khóa học Web Development"
+  weight = 1
+  [main.params]
+    icon = "fa-solid fa-code"
+
+[[main]]
+  identifier = "travel-guides"
+  parent = "collections"
+  name = "Travel Guides"
+  url = "/collections/travel-guides/"
+  title = "Cẩm nang du lịch"
+  weight = 2
+  [main.params]
+    icon = "fa-solid fa-map-marked-alt"
+
+[[main]]
+  identifier = "programming-tips"
+  parent = "collections"
+  name = "Programming Tips"
+  url = "/collections/programming-tips/"
+  title = "Tips lập trình"
+  weight = 3
+  [main.params]
+    icon = "fa-solid fa-lightbulb"
+
+[[main]]
+  identifier = "hugo-tutorials"
+  parent = "collections"
+  name = "Hugo Tutorials"
+  url = "/collections/hugo-tutorials/"
+  title = "Hướng dẫn Hugo"
+  weight = 4
+  [main.params]
+    icon = "fa-solid fa-graduation-cap"

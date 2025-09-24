@@ -4,19 +4,19 @@
 # -------------------------------------------------------------------------------------
 
 title = "The Epistemic Diary"
-baseURL = "https://example.org/"
+baseURL = "https://trandung6129.github.io/"
 theme = [
   "FixIt",
   "shortcode-docs-bookmark"
 ]
-defaultContentLanguage = "en"
-languageCode = "en"
+defaultContentLanguage = "vi"
+languageCode = "vi"
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
 relativeURLs = false
 buildDrafts = false
-summaryLength = 150
+summaryLength = 70
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]

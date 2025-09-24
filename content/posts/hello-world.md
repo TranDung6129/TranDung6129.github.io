@@ -1,11 +1,13 @@
 ---
-title: Hello World
-date: 2025-09-07T12:07:32.681Z
+title: "Hello World"
+date: 2024-09-07T12:07:32+07:00
 tags:
 - hello
 - FixIt
 categories:
 - hello
+description: "Bài viết đầu tiên - Chào mừng đến với blog"
+summary: "Xin chào! Đây là bài viết đầu tiên trên blog của tôi. Hãy cùng khám phá những nội dung thú vị sắp tới."
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
 

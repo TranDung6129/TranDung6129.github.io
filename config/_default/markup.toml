@@ -42,3 +42,5 @@
   ordered = false
   startLevel = 2
   endLevel = 6
+
+_merge = "shallow"

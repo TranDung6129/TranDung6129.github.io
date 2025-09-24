@@ -6,3 +6,4 @@
 category = "categories"
 tag = "tags"
 collection = "collections"
+_merge = "shallow"
