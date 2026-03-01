@@ -1,0 +1,610 @@
+{{- define "title" }}{{ .Site.Title }}{{- end -}}
+
+{{- define "content" -}}
+<div class="home-layout-three-col">
+  <!-- DEBUG: {{ printf "%#v" .Site.Params.home }} -->
+  {{- /* Panel trái - Thông tin cá nhân */ -}}
+  <aside class="left-panel profile-panel">
+    <div class="profile-card">
+      {{- $avatar := .Site.Params.home.profile.avatarurl | default .Site.Params.home.profile.avatarURL | default
+      "/images/avatar.png" -}}
+      <div class="profile-avatar">
+        <a href="/about/" title="Xem thông tin chi tiết">
+          <img src="{{ $avatar }}" alt="Avatar" onerror="this.onerror=null;this.src='/images/avatar.png';">
+        </a>
+      </div>
+
+      <div class="profile-info">
+        {{- with .Site.Params.home.profile.title -}}
+        <h2 class="profile-name">{{ . | safeHTML }}</h2>
+        {{- end -}}
+
+        <div class="manifesto-tagline">
+          {{ if eq .Site.Language.Lang "en" }}
+          Modeling Structure. Building Systems.
+          {{ else }}
+          Mô hình hóa Cấu trúc. Xây dựng Hệ thống.
+          {{ end }}
+        </div>
+
+        <div class="manifesto-section">
+          <p class="label">{{ if eq .Site.Language.Lang "en" }}Primary Axis{{ else }}Trục Chính{{ end }}</p>
+          <p class="value primary-axis">{{ if eq .Site.Language.Lang "en" }}Mathematics &rarr; Computer Systems{{ else
+            }}Toán học &rarr; Hệ thống Máy tính{{ end }}</p>
+        </div>
+
+        <div class="manifesto-section">
+          <p class="label">{{ if eq .Site.Language.Lang "en" }}Secondary Domains{{ else }}Lĩnh vực Bổ trợ{{ end }}</p>
+          <p class="value">{{ if eq .Site.Language.Lang "en" }}Physics &middot; Quantitative Economics &middot;
+            Philosophy{{ else }}Vật lý &middot; Kinh tế lượng &middot; Triết học{{ end }}</p>
+        </div>
+
+        <div class="manifesto-section">
+          <p class="label">{{ if eq .Site.Language.Lang "en" }}Current Focus{{ else }}Trọng tâm Hiện tại{{ end }}</p>
+          <ul class="value-list">
+            {{ if eq .Site.Language.Lang "en" }}
+            <li>Computational modeling</li>
+            <li>Real-time architectures</li>
+            <li>Decision under uncertainty</li>
+            {{ else }}
+            <li>Mô hình tính toán</li>
+            <li>Kiến trúc thời gian thực</li>
+            <li>Ra quyết định trong bất định</li>
+            {{ end }}
+          </ul>
+        </div>
+
+        <div class="manifesto-section">
+          <p class="label">{{ if eq .Site.Language.Lang "en" }}Method{{ else }}Phương pháp{{ end }}</p>
+          <p class="value method-axis">{{ if eq .Site.Language.Lang "en" }}Model &rarr; Compute &rarr; Validate{{ else
+            }}Mô hình hóa &rarr; Tính toán &rarr; Kiểm chứng{{ end }}</p>
+        </div>
+
+        {{- with .Site.Params.home.profile.subtitle -}}
+        <div class="profile-intro manifesto-intro">
+          <p class="label">{{ if eq $.Site.Language.Lang "en" }}About{{ else }}Giới thiệu{{ end }}</p>
+          <p class="intro-text">{{ . | safeHTML }}</p>
+        </div>
+        {{- end -}}
+      </div>
+    </div>
+  </aside>
+
+  {{- /* Panel giữa - Categories & Recent Posts */ -}}
+  <main class="center-panel">
+    <section class="categories-section">
+      <h2 class="section-title">Khám phá theo chủ đề</h2>
+      <div class="categories-grid">
+        {{- $categories := slice "toan-hoc" "vat-ly" "kinh-te" "khoa-hoc-may-tinh" "triet-hoc" "ca-nhan" -}}
+        {{- $categoryInfo := dict
+        "toan-hoc" (dict "title" "Toán học" "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path
+            d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" />
+        </svg>` "desc" "Lý thuyết số, giải tích, đại số")
+        "vat-ly" (dict "title" "Vật lý" "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <circle cx="12" cy="12" r="1" />
+          <ellipse cx="12" cy="12" rx="11" ry="4" transform="rotate(30 12 12)" />
+          <ellipse cx="12" cy="12" rx="11" ry="4" transform="rotate(90 12 12)" />
+          <ellipse cx="12" cy="12" rx="11" ry="4" transform="rotate(150 12 12)" />
+        </svg>` "desc" "Cơ học, lượng tử, tương đối")
+        "kinh-te" (dict "title" "Kinh tế" "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+          <polyline points="16 7 22 7 22 13" />
+        </svg>` "desc" "Vi mô, vĩ mô, lý thuyết trò chơi")
+        "khoa-hoc-may-tinh" (dict "title" "Khoa học máy tính" "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40"
+          height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect width="16" height="16" x="4" y="4" rx="2" />
+          <rect width="6" height="6" x="9" y="9" rx="1" />
+          <path d="M15 2v2" />
+          <path d="M15 20v2" />
+          <path d="M2 15h2" />
+          <path d="M2 9h2" />
+          <path d="M20 15h2" />
+          <path d="M20 9h2" />
+          <path d="M9 2v2" />
+          <path d="M9 20v2" />
+        </svg>` "desc" "Thuật toán, AI, complexity")
+        "triet-hoc" (dict "title" "Triết học" "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" x2="21" y1="22" y2="22" />
+          <line x1="6" x2="6" y1="18" y2="11" />
+          <line x1="10" x2="10" y1="18" y2="11" />
+          <line x1="14" x2="14" y1="18" y2="11" />
+          <line x1="18" x2="18" y1="18" y2="11" />
+          <polygon points="12 2 20 7 4 7" />
+        </svg>` "desc" "Nhận thức, siêu hình, hiện tượng")
+        "ca-nhan" (dict "title" "Cá nhân" "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path
+            d="M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z" />
+          <path d="M16 8 2 22" />
+          <path d="M17.5 15H9" />
+        </svg>` "desc" "Nhật ký, suy ngẫm")
+        -}}
+
+        {{- range $categories -}}
+        {{- $catSlug := . -}}
+        {{- $info := index $categoryInfo $catSlug -}}
+        {{- with $.Site.GetPage (printf "/categories/%s" $catSlug) -}}
+        {{- $count := len .Pages -}}
+        <a href="{{ .RelPermalink }}" class="category-card">
+          <div class="category-icon">{{ $info.icon | safeHTML }}</div>
+          <div class="category-content">
+            <h3 class="category-title">{{ $info.title }}</h3>
+            <p class="category-desc">{{ $info.desc }}</p>
+            <span class="category-count">{{ $count }} bài</span>
+          </div>
+        </a>
+        {{- end -}}
+        {{- end -}}
+      </div>
+    </section>
+
+    {{- if .Site.Params.home.posts.enable -}}
+    <section class="recent-posts">
+      <h2 class="section-title">Bài viết gần đây</h2>
+      {{- /* Fetch latest regular pages avoiding specific sections limit so it picks up all new categories */ -}}
+      {{- $pages := where .Site.RegularPages "Section" "in" (slice "posts" "toan-hoc" "vat-ly" "kinh-te"
+      "khoa-hoc-may-tinh" "triet-hoc" "ca-nhan") -}}
+      {{- $pages = $pages | first 5 -}}
+      <div class="posts-list">
+        {{- range $pages -}}
+        <article class="post-item">
+          <time class="post-date">{{ .Date.Format "02/01/2006" }}</time>
+          <h3 class="post-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          {{- with .Params.categories -}}
+          <div class="post-meta">
+            {{- range . -}}
+            <span class="category">{{ . }}</span>
+            {{- end -}}
+          </div>
+          {{- end -}}
+        </article>
+        {{- end -}}
+      </div>
+    </section>
+    {{- end -}}
+  </main>
+
+  {{- /* Panel phải - Chuỗi bài (Collections) */ -}}
+  <aside class="right-panel collections-panel">
+    <section class="featured-courses" style="margin-bottom: 3rem;">
+      <h2 class="panel-title">Khóa học nổi bật</h2>
+      <div class="collections-list">
+        <!-- Dummy Data for Now -->
+        <a href="#" class="collection-item">
+          <h3 class="collection-name">Nhập môn Machine Learning</h3>
+          <span class="collection-count">Đang mở đăng ký</span>
+        </a>
+        <a href="#" class="collection-item">
+          <h3 class="collection-name">Toán cho Data Science</h3>
+          <span class="collection-count">Khai giảng 15/04</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="collections-section">
+      <h2 class="panel-title">Chuỗi bài</h2>
+      <div class="collections-list">
+        {{- range .Site.Taxonomies.collections -}}
+        <a href="{{ .Page.RelPermalink }}" class="collection-item">
+          <h3 class="collection-name">{{ .Page.Title }}</h3>
+          <span class="collection-count">{{ len .Pages }} bài viết</span>
+        </a>
+        {{- end -}}
+      </div>
+    </section>
+  </aside>
+</div>
+
+<style>
+  /* Force LiveReload trigger */
+  /* Ghi đè cấu hình chiều rộng tối đa của theme FixIt */
+  main.main>.container,
+  .page.home {
+    max-width: 1800px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .home-layout-three-col {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr) 340px;
+    align-items: flex-start;
+    gap: 4rem;
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+  }
+
+  /* Panel trái - Profile */
+  .left-panel.profile-panel {
+    grid-column: 1 / 2;
+    position: sticky;
+    top: 5rem;
+    height: fit-content;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
+
+  /* Ẩn thanh cuộn cho đẹp nnhưng vẫn cuộn được */
+  .left-panel.profile-panel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .left-panel.profile-panel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .profile-card {
+    background: var(--code-bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-avatar {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .profile-avatar img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    object-fit: cover;
+    background: var(--border-color);
+  }
+
+  .profile-info {
+    text-align: left;
+  }
+
+  .profile-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.2rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  .manifesto-tagline {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--global-secondary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .manifesto-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .manifesto-section .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--global-secondary-color);
+    margin-bottom: 0.3rem;
+    opacity: 0.8;
+  }
+
+  .manifesto-section .value {
+    font-size: 0.95rem;
+    color: var(--global-font-color);
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  .manifesto-section .value.primary-axis {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  .manifesto-section .value.method-axis {
+    font-family: var(--font-family-code);
+    font-size: 0.85rem;
+    color: var(--primary-color);
+  }
+
+  .manifesto-section .value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .manifesto-section .value-list li {
+    font-size: 0.95rem;
+    color: var(--global-font-color);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1rem;
+    font-weight: 500;
+  }
+
+  .manifesto-section .value-list li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+  }
+
+  .manifesto-intro {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px dotted var(--border-color);
+  }
+
+  .manifesto-intro .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--global-secondary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--global-font-color);
+    font-style: italic;
+  }
+
+  /* Panel giữa - Main content */
+  .center-panel {
+    grid-column: 2 / 3;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    padding: 1.5rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background: var(--code-bg-color);
+  }
+
+  .category-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .category-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    background: var(--global-bg-color);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 2px solid var(--border-color);
+    color: var(--primary-color);
+    flex-shrink: 0;
+  }
+
+  .category-card:hover .category-icon {
+    transform: scale(1.1);
+    background: var(--primary-color);
+    color: var(--global-bg-color);
+    border-color: var(--primary-color);
+  }
+
+  .category-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .category-desc {
+    font-size: 0.95rem;
+    color: var(--global-secondary-color);
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .category-count {
+    font-size: 0.9rem;
+    color: var(--global-secondary-color);
+  }
+
+  /* Recent posts */
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .post-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: var(--code-bg-color);
+  }
+
+  .post-item:hover {
+    background: var(--global-bg-color);
+    border-color: var(--primary-color);
+  }
+
+  .post-date {
+    font-size: 0.95rem;
+    color: var(--global-secondary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+
+  .post-title a {
+    color: var(--global-font-color);
+    text-decoration: none;
+  }
+
+  .post-title a:hover {
+    color: var(--primary-color);
+  }
+
+  /* Panel phải - Collections */
+  .right-panel.collections-panel {
+    grid-column: 3 / 4;
+    position: sticky;
+    top: 5rem;
+    height: fit-content;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    min-width: 0;
+    max-width: 100%;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .right-panel.collections-panel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .right-panel.collections-panel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .panel-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--border-color);
+  }
+
+  .collections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .collection-item {
+    padding: 1.5rem;
+    background: var(--code-bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .collection-item:hover {
+    border-color: var(--primary-color);
+    transform: translateX(4px);
+    background: var(--global-bg-color);
+  }
+
+  .collection-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .collection-count {
+    font-size: 0.95rem;
+    color: var(--global-secondary-color);
+  }
+
+  /* Responsive */
+  @media (max-width: 1400px) {
+    .home-layout-three-col {
+      grid-template-columns: 260px 1fr 300px;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .home-layout-three-col {
+      grid-template-columns: 1fr;
+      padding: 2rem 1.5rem;
+    }
+
+    .left-panel,
+    .right-panel {
+      position: static;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+{{- end -}}

@@ -15,7 +15,7 @@ title = ""
 # Hostname (and path) to the root
 baseURL = "http://localhost:1313"
 # theme list
-# theme = ["FixIt"] # enable in your site config file
+theme = ["FixIt"]
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "vi"
 # language code ["en", "zh-CN", "fr", "pl", ...]
@@ -35,7 +35,7 @@ enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 # the main sections of a site
-mainSections = []
+mainSections = ["toan-hoc", "vat-ly", "kinh-te", "khoa-hoc-may-tinh", "triet-hoc", "ca-nhan"]
 
 # -------------------------------------------------------------------------------------
 # Menu Configuration
@@ -50,7 +50,7 @@ mainSections = []
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Archives"
+    name = "Lưu trữ"
     url = "/archives/"
     # title will be shown when you hover on this menu link
     title = ""
@@ -72,7 +72,7 @@ mainSections = []
     parent = ""
     pre = ""
     post = ""
-    name = "Categories"
+    name = "Chủ đề"
     url = "/categories/"
     title = ""
     weight = 2
@@ -83,7 +83,7 @@ mainSections = []
     parent = ""
     pre = ""
     post = ""
-    name = "Tags"
+    name = "Thẻ"
     url = "/tags/"
     title = ""
     weight = 3
@@ -219,6 +219,17 @@ mainSections = []
     # posts = "/posts/:slugorcontentbasename"
   [permalinks.taxonomy]
   [permalinks.term]
+
+# -------------------------------------------------------------------------------------
+# Casage Configuration (Force Type for new categories)
+# -------------------------------------------------------------------------------------
+
+[[cascade]]
+  [cascade._target]
+    path = "/{toan-hoc,vat-ly,kinh-te,khoa-hoc-may-tinh,triet-hoc,ca-nhan}/**"
+  [cascade.params]
+    type = "posts"
+    layout = "single"
 
 # -------------------------------------------------------------------------------------
 # Privacy Configuration
@@ -451,7 +462,7 @@ mainSections = []
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "static/images/logoted.png"
+      logo = "/images/logoted.png"
       # title name
       name = ""
       # you can add extra information before the name (HTML format is supported), such as icons
@@ -571,11 +582,11 @@ mainSections = []
   [params.home]
     # Home page profile
     [params.home.profile]
-      enable = false
+      enable = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "/images/avatar.png"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # title shown in home page (HTML format is supported)
@@ -1120,7 +1131,7 @@ mainSections = []
     [params.page.math]
       enable = true
       # mathematical formulas rendering engines, optional values: ["katex", "mathjax"]
-      type = "katex"
+      type = "mathjax"
       # KaTeX server-side rendering (https://katex.org)
       # KaTeX partial config: https://gohugo.io/functions/transform/tomath/#options
       [params.page.math.katex]

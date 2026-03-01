@@ -245,7 +245,7 @@ disableThemeInject = false
     # title shown in home page (HTML format is supported)
     title = ""
     # subtitle shown in home page (HTML format is supported)
-    subtitle = "This is my new Hugo FixIt site"
+    subtitle = "Ghi chép những suy nghĩ về toán học, triết học, kinh tế và cuộc sống"
     # whether to use typeit animation for subtitle
     typeit = true
     # whether to show social links
