@@ -3,12 +3,14 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'assets/**'
+      - 'layouts/**'
       - 'config/**'
       - 'content/**'
       - 'data/**'
       - 'static/**'
       - 'themes/**'
+      - 'hugo.toml'
+      - '.nojekyll'
   workflow_run:
     workflows: ['Update theme']
     types:

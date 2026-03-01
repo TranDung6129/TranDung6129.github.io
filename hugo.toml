@@ -13,7 +13,7 @@
 # website title
 title = ""
 # Hostname (and path) to the root
-baseURL = "http://localhost:1313"
+baseURL = "https://trandung6129.github.io/"
 # theme list
 theme = ["FixIt"]
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
