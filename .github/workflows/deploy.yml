@@ -17,43 +17,43 @@ on:
       - completed
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v5
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          # use the environment variable HUGO_VERSION as the hugo version, if not set, use `latest`.
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
       - name: Hugo build
-        run: hugo --gc --minify --logLevel info
+        run: hugo --gc --minify --logLevel info 2> hugo_error.log
+      - name: Upload error log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hugo-error-log
+          path: hugo_error.log
       - name: Upload artifact
+        if: success()
         uses: actions/upload-pages-artifact@v4
         with:
-          # Upload only the public directory
           path: './public'
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -65,4 +65,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
