@@ -18,9 +18,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: "pages"
@@ -41,13 +42,12 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
       - name: Hugo build
-        run: hugo --gc --minify --logLevel info 2> hugo_error.log
-      - name: Upload error log
+        run: hugo --gc --minify --logLevel info > hugo_error.log 2>&1 || (cat hugo_error.log && exit 1)
+      - name: Append error to PR or Commit
         if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: hugo-error-log
-          path: hugo_error.log
+        run: |
+          ERROR_DETAILS=$(cat hugo_error.log)
+          curl -L -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}/comments -d "{\"body\":\"Hugo build failed:\n\`\`\`\n${ERROR_DETAILS}\n\`\`\`\"}"
       - name: Upload artifact
         if: success()
         uses: actions/upload-pages-artifact@v4
