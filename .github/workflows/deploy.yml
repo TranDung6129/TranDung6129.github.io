@@ -21,7 +21,6 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  issues: write
 
 concurrency:
   group: "pages"
@@ -36,18 +35,12 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
-          extended: true
-      - name: Hugo build
-        run: hugo --gc --minify --logLevel info > hugo_error.log 2>&1 || (cat hugo_error.log && exit 1)
-      - name: Append error to PR or Commit
-        if: failure()
+      - name: Install Hugo CLI
         run: |
-          ERROR_DETAILS=$(cat hugo_error.log)
-          curl -L -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}/comments -d "{\"body\":\"Hugo build failed:\n\`\`\`\n${ERROR_DETAILS}\n\`\`\`\"}"
+          wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.149.0/hugo_extended_0.149.0_linux-amd64.deb
+          sudo dpkg -i hugo.deb
+      - name: Hugo build
+        run: hugo --gc --minify --logLevel info
       - name: Upload artifact
         if: success()
         uses: actions/upload-pages-artifact@v4
