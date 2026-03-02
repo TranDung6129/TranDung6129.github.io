@@ -588,10 +588,20 @@
       padding: 2rem 1.5rem;
     }
 
-    .left-panel,
-    .right-panel {
+    .left-panel.profile-panel,
+    .center-panel {
+      grid-column: 1 / -1;
+    }
+
+    .right-panel.collections-panel {
+      display: none !important;
+    }
+
+    .left-panel {
       position: static;
       max-width: 600px;
+      max-height: none;
+      overflow-y: visible;
       margin: 0 auto 2rem;
     }
 
