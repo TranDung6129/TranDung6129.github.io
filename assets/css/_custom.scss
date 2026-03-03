@@ -19,17 +19,23 @@
 }
 
 /* 3. Bảng màu Light Mode (Cảm hứng: Sách giấy ngà & Mực cổ) */
-[data-theme="light"] {
-  --global-bg-color: #F7F5F0;        /* Nền: Giấy ngà ấm */
-  --global-font-color: #332E28;      /* Chữ: Mực xám nâu sâu thẳm */
-  --global-secondary-color: #7A7265; /* Chữ phụ: Mực phai */
-  --primary-color: #8C4A32;          /* Link/Nhấn: Đỏ gạch/Huyết dụ */
+[data-theme="light"],
+:root {
+  --global-bg-color: #F7F5F0;
+  /* Nền: Giấy ngà ấm */
+  --global-font-color: #332E28;
+  /* Chữ: Mực xám nâu sâu thẳm */
+  --global-secondary-color: #7A7265;
+  /* Chữ phụ: Mực phai */
+  --primary-color: #8C4A32;
+  /* Link/Nhấn: Đỏ gạch/Huyết dụ */
   --primary-color-hover: #A65D43;
   --header-bg-color: #F7F5F0;
-  
+
   /* UX "Ghi chép": Xóa nền khung, làm tiệp màu với nền trang */
-  --card-bg-color: transparent;      
-  --border-color: rgba(51, 46, 40, 0.1); /* Đường kẻ line mờ */
+  --card-bg-color: transparent;
+  --border-color: rgba(51, 46, 40, 0.1);
+  /* Đường kẻ line mờ */
   --code-bg-color: rgba(51, 46, 40, 0.05);
   --blockquote-border-color: #8C4A32;
   --blockquote-bg-color: transparent;
@@ -37,16 +43,21 @@
 
 /* 4. Bảng màu Dark Mode (Cảm hứng: Thư viện cấm & Đêm tối) */
 [data-theme="dark"] {
-  --global-bg-color: #1A1816;        /* Nền: Đen than/nâu rất trầm */
-  --global-font-color: #E2DCD0;      /* Chữ: Trắng ngà, giảm chói mắt */
-  --global-secondary-color: #8E8579; /* Chữ phụ: Xám nâu */
-  --primary-color: #D4A373;          /* Link/Nhấn: Vàng cháy/Đồng cổ */
+  --global-bg-color: #1A1816;
+  /* Nền: Đen than/nâu rất trầm */
+  --global-font-color: #E2DCD0;
+  /* Chữ: Trắng ngà, giảm chói mắt */
+  --global-secondary-color: #8E8579;
+  /* Chữ phụ: Xám nâu */
+  --primary-color: #D4A373;
+  /* Link/Nhấn: Vàng cháy/Đồng cổ */
   --primary-color-hover: #E6B98D;
   --header-bg-color: #1A1816;
-  
+
   /* UX "Ghi chép": Xóa nền khung */
-  --card-bg-color: transparent;      
-  --border-color: rgba(226, 220, 208, 0.1); /* Đường kẻ line mờ */
+  --card-bg-color: transparent;
+  --border-color: rgba(226, 220, 208, 0.1);
+  /* Đường kẻ line mờ */
   --code-bg-color: rgba(226, 220, 208, 0.05);
   --blockquote-border-color: #D4A373;
   --blockquote-bg-color: transparent;
@@ -62,7 +73,13 @@ body {
 }
 
 /* Tiêu đề thanh thoát, không cần in đậm quá mức */
-.site-title, h1, h2, h3, h4, h5, h6 {
+.site-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-family-title);
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -70,27 +87,32 @@ body {
 }
 
 /* Tùy chỉnh riêng cho các bài viết */
-.single .content, .post-content {
+.single .content,
+.post-content {
   font-family: var(--font-family-content);
   font-size: 1.15rem;
   line-height: 1.8;
 }
 
 /* Chỉ làm tròn avatar, không động vào layout */
-.home-avatar img, .avatar img {
+.home-avatar img,
+.avatar img {
   border-radius: 50% !important;
   border: 3px solid var(--primary-color) !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-.home-avatar img:hover, .avatar img:hover {
+.home-avatar img:hover,
+.avatar img:hover {
   transform: scale(1.05) !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
 }
 
 /* Xóa border đứt đoạn mặc định - Chuyển sang style nhật ký */
-.summary, .post-card, article.single {
+.summary,
+.post-card,
+article.single {
   background: transparent !important;
   box-shadow: none !important;
   border: none !important;
@@ -98,14 +120,16 @@ body {
 }
 
 /* Ngăn cách bài viết bằng đường kẻ mờ thay vì card */
-.summary, .post-card {
+.summary,
+.post-card {
   border-bottom: 1px solid var(--border-color) !important;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
 }
 
 /* Dãn dòng nội dung để đọc như sách */
-.single .content, .post-content {
+.single .content,
+.post-content {
   font-family: var(--font-family-content);
   line-height: 1.8;
   font-size: 1.15rem;
@@ -166,7 +190,8 @@ pre code {
 }
 
 /* Category & Tags - Font viết tay Excalidraw style */
-.category, .tag {
+.category,
+.tag {
   font-family: var(--font-family-handwritten);
   background-color: transparent;
   border: 1.5px solid var(--border-color);
@@ -178,12 +203,13 @@ pre code {
   display: inline-block;
 }
 
-.category:hover, .tag:hover {
+.category:hover,
+.tag:hover {
   background-color: var(--primary-color);
   color: var(--global-bg-color);
   border-color: var(--primary-color);
   transform: translateY(-2px) rotate(-1deg);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Collection Sidebar Styling */
@@ -193,8 +219,8 @@ pre code {
   padding: 1.5rem;
   margin-bottom: 2rem;
   border: 1px solid var(--border-color);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
-  
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+
   .collection-title {
     font-size: 1.1rem;
     font-weight: 600;
@@ -202,21 +228,21 @@ pre code {
     color: var(--primary-color);
     display: flex;
     align-items: center;
-    
+
     &::before {
       content: "📚";
       margin-right: 0.5rem;
     }
   }
-  
+
   .collection-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    
+
     .collection-item {
       margin-bottom: 0.5rem;
-      
+
       a {
         display: block;
         padding: 0.5rem 0.75rem;
@@ -225,20 +251,20 @@ pre code {
         border-radius: 4px;
         transition: all 0.2s ease;
         font-size: 0.95rem;
-        
+
         &:hover {
           background: var(--primary-color);
           color: #161412;
           transform: translateX(4px);
         }
-        
+
         &.active {
           background: var(--primary-color);
           color: #161412;
           font-weight: 500;
         }
       }
-      
+
       .post-count {
         font-size: 0.8rem;
         opacity: 0.7;
@@ -246,22 +272,22 @@ pre code {
       }
     }
   }
-  
+
   .related-posts {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--border-color);
-    
+
     .related-title {
       font-size: 1rem;
       font-weight: 600;
       margin-bottom: 0.75rem;
       color: var(--primary-color);
     }
-    
+
     .related-item {
       margin-bottom: 0.5rem;
-      
+
       a {
         display: block;
         padding: 0.4rem 0.5rem;
@@ -270,7 +296,7 @@ pre code {
         border-radius: 4px;
         font-size: 0.9rem;
         line-height: 1.3;
-        
+
         &:hover {
           background: var(--card-bg-color);
           color: var(--primary-color);
@@ -285,7 +311,7 @@ pre code {
   flex-grow: 1;
   font-weight: bold;
   font-size: 0.875rem;
-  
+
   /* Remove the default "Collections •" prefix */
   &::before {
     content: none !important;
@@ -298,19 +324,19 @@ pre code {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-  
+
   .collection-nav-simple-item {
     padding: 0.25rem;
     border-radius: 4px;
     color: var(--global-font-color);
     transition: all 0.2s ease;
-    
+
     &:hover {
       color: var(--primary-color);
       background: var(--card-bg-color);
     }
   }
-  
+
   .collection-nav-simple-info {
     font-size: 0.8rem;
     color: var(--global-secondary-color);
@@ -374,7 +400,8 @@ td {
 }
 
 /* Remove extra padding/margin from lists in posts */
-.single .content ul, .single .content ol {
+.single .content ul,
+.single .content ol {
   padding-left: 2rem;
 }
 
@@ -384,15 +411,22 @@ td {
 }
 
 /* Lỗi Font chữ cho Tác giả, Ngày tháng (Metadata) */
-.post-meta, .post-meta-line, .post-date {
-  font-family: var(--global-font-family); /* Font không chân */
-  font-size: 0.9rem; /* Tăng kích thước chữ (khoảng 14px) */
-  font-weight: 400; /* Làm nét chữ đậm và rõ hơn một chút */
+.post-meta,
+.post-meta-line,
+.post-date {
+  font-family: var(--global-font-family);
+  /* Font không chân */
+  font-size: 0.9rem;
+  /* Tăng kích thước chữ (khoảng 14px) */
+  font-weight: 400;
+  /* Làm nét chữ đậm và rõ hơn một chút */
   line-height: 1.5;
   color: var(--global-secondary-color);
 }
 
-.post-meta svg, .post-meta i, .post-meta-line .iconfont {
+.post-meta svg,
+.post-meta i,
+.post-meta-line .iconfont {
   width: 1em;
   height: 1em;
   vertical-align: -0.125em;
@@ -406,14 +440,17 @@ td {
 }
 
 /* Buttons và interactive elements */
-button, .button, input[type="submit"] {
+button,
+.button,
+input[type="submit"] {
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Images rounded */
