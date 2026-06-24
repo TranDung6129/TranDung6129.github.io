@@ -11,6 +11,10 @@ on:
       - 'themes/**'
       - 'hugo.toml'
       - '.nojekyll'
+      - 'assets/**'
+      - '.github/workflows/**'
+      - 'package.json'
+      - 'package-lock.json'
   workflow_run:
     workflows: ['Update theme']
     types:
