@@ -1,0 +1,59 @@
+{{ $component := .Get "name" }}
+{{ $id := printf "react-root-%s-%d" $component .Ordinal }}
+
+<style>
+  @media (max-width: 768px) {
+    .react-component-wrapper { display: none !important; }
+    .react-mobile-fallback { display: block !important; padding: 1rem; background: var(--code-bg-color); border-left: 4px solid var(--primary-color); margin: 1rem 0; font-size: 0.9em; font-style: italic; opacity: 0.8; }
+  }
+  .react-mobile-fallback { display: none; }
+</style>
+
+<div class="react-mobile-fallback">
+  ⚠️ Biểu đồ tương tác chỉ hỗ trợ hiển thị trên màn hình máy tính hoặc tablet ngang.
+</div>
+<div id="{{ $id }}" class="react-component-wrapper"></div>
+<script>
+  if (typeof window.process === "undefined") {
+    window.process = { env: { NODE_ENV: "{{ if hugo.IsProduction }}production{{ else }}development{{ end }}" } };
+  }
+</script>
+
+{{ $mountCode := printf `
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import Component from './components/%s.jsx';
+
+const container = document.getElementById('%s');
+console.log('Mounting React component %s into container:', container);
+if (container) {
+    try {
+        const root = createRoot(container);
+        root.render(<Component />);
+        console.log('Successfully mounted %s');
+    } catch (e) {
+        console.error('Error rendering %s:', e);
+    }
+} else {
+    console.error('Container element not found for %s');
+}
+` $component $id $component $component $component $component }}
+
+{{ $mountFile := printf "js/mount-%s.jsx" $id }}
+{{ $jsx := $mountCode | resources.FromString $mountFile }}
+
+{{ $defines := dict "process.env.NODE_ENV" `"development"` }}
+{{ if hugo.IsProduction }}
+    {{ $defines = dict "process.env.NODE_ENV" `"production"` }}
+{{ end }}
+
+{{ $opts := dict
+    "target" "es2018"
+    "format" "iife"
+    "jsx" "automatic"
+    "minify" hugo.IsProduction
+    "defines" $defines
+}}
+
+{{ $built := $jsx | js.Build $opts }}
+<script src="{{ $built.RelPermalink }}" defer></script>

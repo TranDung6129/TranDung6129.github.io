@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/hugo-fixit/hugo-fixit-starter1/issues"
   },
-  "homepage": "https://github.com/hugo-fixit/hugo-fixit-starter1#readme"
+  "homepage": "https://github.com/hugo-fixit/hugo-fixit-starter1#readme",
+  "keywords": [],
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "recharts": "^3.9.0"
+  }
 }

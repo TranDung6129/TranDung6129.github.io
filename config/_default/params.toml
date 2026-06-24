@@ -4,6 +4,7 @@
 # -------------------------------------------------------------------------------------
 
 # FixIt 0.2.15 | CHANGED FixIt theme version
+mainSections = ["posts", "toan-hoc", "vat-ly", "kinh-te", "khoa-hoc-may-tinh", "triet-hoc", "ca-nhan"]
 version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
 description = "Tôi sợ quên cái gì thì tôi viết lại ở đây"

@@ -1,0 +1,84 @@
+# -------------------------------------------------------------------------------------
+# English Menu Configuration
+# -------------------------------------------------------------------------------------
+
+[[main]]
+  identifier = "archives"
+  parent = ""
+  name = "Archives"
+  url = "/en/archives/"
+  weight = 1
+  [main.params]
+    icon = "fa-solid fa-archive"
+
+[[main]]
+  identifier = "categories"
+  parent = ""
+  name = "Categories"
+  url = "/en/categories/"
+  weight = 2
+  [main.params]
+    icon = "fa-solid fa-folder-tree"
+
+[[main]]
+  identifier = "tags"
+  parent = ""
+  name = "Tags"
+  url = "/en/tags/"
+  weight = 3
+  [main.params]
+    icon = "fa-solid fa-tags"
+
+[[main]]
+  identifier = "about"
+  parent = ""
+  name = "About"
+  url = "/en/about/"
+  weight = 5
+  [main.params]
+    icon = "fa-solid fa-user"
+
+[[main]]
+  identifier = "collections"
+  parent = ""
+  name = "Collections"
+  url = "/en/collections/"
+  weight = 4
+  [main.params]
+    icon = "fa-solid fa-layer-group"
+
+[[main]]
+  identifier = "web-development"
+  parent = "collections"
+  name = "Web Development Course"
+  url = "/en/collections/web-development/"
+  weight = 1
+  [main.params]
+    icon = "fa-solid fa-code"
+
+[[main]]
+  identifier = "travel-guides"
+  parent = "collections"
+  name = "Travel Guides"
+  url = "/en/collections/travel-guides/"
+  weight = 2
+  [main.params]
+    icon = "fa-solid fa-map-marked-alt"
+
+[[main]]
+  identifier = "programming-tips"
+  parent = "collections"
+  name = "Programming Tips"
+  url = "/en/collections/programming-tips/"
+  weight = 3
+  [main.params]
+    icon = "fa-solid fa-lightbulb"
+
+[[main]]
+  identifier = "hugo-tutorials"
+  parent = "collections"
+  name = "Hugo Tutorials"
+  url = "/en/collections/hugo-tutorials/"
+  weight = 4
+  [main.params]
+    icon = "fa-solid fa-graduation-cap"

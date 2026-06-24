@@ -89,6 +89,17 @@ mainSections = ["toan-hoc", "vat-ly", "kinh-te", "khoa-hoc-may-tinh", "triet-hoc
     weight = 3
     [menu.main.params]
       icon = "fa-solid fa-tags"
+  [[menu.main]]
+    identifier = "about"
+    parent = ""
+    pre = ""
+    post = ""
+    name = "Giới thiệu"
+    url = "/about/"
+    title = ""
+    weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-user"
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
@@ -798,7 +809,7 @@ mainSections = ["toan-hoc", "vat-ly", "kinh-te", "khoa-hoc-may-tinh", "triet-hoc
   # FixIt 0.3.10 | NEW Busuanzi count
   [params.busuanzi]
     # whether to enable busuanzi count
-    enable = false
+    enable = true
     # busuanzi count core script source. Default is https://vercount.one/js
     source = "https://vercount.one/js"
     # whether to show the site views

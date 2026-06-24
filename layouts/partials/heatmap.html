@@ -1,0 +1,88 @@
+{{ $pages := where .Site.RegularPages "Section" "in" (slice "posts" "toan-hoc" "vat-ly" "kinh-te" "khoa-hoc-may-tinh" "triet-hoc" "ca-nhan") }}
+
+<!-- Cal-Heatmap v3 -->
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css" />
+
+<style>
+/* CSS Override để hợp với FixIt theme */
+.ch-tooltip {
+    font-family: inherit;
+    background: var(--global-bg-color);
+    color: var(--global-font-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 5px 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.ch-tooltip::after {
+    border-top-color: var(--global-bg-color) !important;
+}
+.graph-label {
+    fill: var(--global-font-color) !important;
+    font-family: inherit !important;
+    font-size: 12px !important;
+}
+.graph-rect {
+    stroke: var(--border-color) !important;
+    stroke-width: 0.5px;
+}
+</style>
+
+<script type="text/javascript">
+  // Tính tổng số bài viết theo ngày
+  var postData = {};
+  {{ range $pages }}
+    // Lấy timestamp đầu ngày
+    var ts = new Date({{ .Date.Unix }} * 1000);
+    ts.setHours(0,0,0,0);
+    var startOfDay = ts.getTime() / 1000;
+    postData[startOfDay] = (postData[startOfDay] || 0) + 1;
+  {{ end }}
+
+  // Bắt đầu từ 6 tháng trước hoặc 12 tháng trước tùy không gian
+  var startDate = new Date();
+  startDate.setMonth(startDate.getMonth() - 5); 
+
+  var cal = new CalHeatMap();
+  cal.init({
+    itemSelector: "#cal-heatmap",
+    domain: "month",
+    subDomain: "day",
+    cellSize: 14,
+    cellPadding: 3,
+    domainGutter: 10,
+    range: 6, // Hiển thị 6 tháng để vừa màn hình
+    displayLegend: false,
+    tooltip: true,
+    data: postData,
+    start: startDate,
+    itemName: ["bài viết", "bài viết"],
+    subDomainTextFormat: "",
+    legend: [1, 2, 3, 4],
+    legendColors: {
+      empty: "var(--code-bg-color)", // Màu khi chưa có bài
+      min: "#9be9a8",
+      max: "#216e39"
+    }
+  });
+
+  // Chỉnh màu empty cell theo theme khi switch dark/light mode
+  function updateHeatmapTheme() {
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if(isDark) {
+      cal.options.legendColors.empty = "#161b22";
+      cal.options.legendColors.min = "#0e4429";
+      cal.options.legendColors.max = "#39d353";
+    } else {
+      cal.options.legendColors.empty = "#ebedf0";
+      cal.options.legendColors.min = "#9be9a8";
+      cal.options.legendColors.max = "#216e39";
+    }
+    cal.update(postData);
+  }
+
+  // Khởi tạo màu đúng theme
+  setTimeout(updateHeatmapTheme, 500);
+</script>
