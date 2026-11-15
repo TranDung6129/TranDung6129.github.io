@@ -1,0 +1,28 @@
+{{- /*
+  Translation state of a page (P1-06). Returns a dict:
+    isCopy    true when this page is not in the default content language and its Markdown
+              body is byte-identical to the default-language version (an untranslated copy)
+    original  the default-language version when isCopy, otherwise the page itself
+    verified  the language versions that differ from the default-language body, plus the
+              default-language version itself; only these are announced through hreflang
+  Detection is automatic, so translating a copied file makes it independent again.
+*/ -}}
+{{- $page := . -}}
+{{- $defaultLang := site.Language.Lang -}}
+{{- with site.Sites.Default }}{{ $defaultLang = .Language.Lang }}{{ end -}}
+{{- $source := false -}}
+{{- range $page.AllTranslations -}}
+  {{- if eq .Language.Lang $defaultLang }}{{ $source = . }}{{ end -}}
+{{- end -}}
+{{- $isCopy := false -}}
+{{- $verified := slice -}}
+{{- if and $source $page.IsPage -}}
+  {{- range $page.AllTranslations -}}
+    {{- if or (eq .Language.Lang $defaultLang) (ne .RawContent $source.RawContent) -}}
+      {{- $verified = $verified | append . -}}
+    {{- else if eq . $page -}}
+      {{- $isCopy = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict "isCopy" $isCopy "original" (cond $isCopy $source $page) "verified" $verified "defaultLang" $defaultLang -}}
