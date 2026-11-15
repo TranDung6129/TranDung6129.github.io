@@ -21,6 +21,8 @@ Hugo + FixIt via submodule; GitHub Pages action deploying main; root hugo.toml a
 8. Confirm production build and links; document rollback to preceding commit.
 
 ## Cleanup ledger template (P1-01 fills this)
+
+The verified P1-01 inventory and populated KEEP/REPLACE/REMOVE ledger are in [the audit report](audits/P1-01.md), with file manifests and build evidence. Recommendations remain deferred until their stated migration gates pass.
 | Candidate | Current purpose | Evidence | Decision KEEP/REPLACE/REMOVE | Migration & risk |
 |---|---|---|---|---|
 | themes/FixIt | Site templates and shortcodes | verify usage | REPLACE after parity | high |
