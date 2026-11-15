@@ -1,0 +1,2 @@
+{{- cond (.Param "capitalizeTitles") (title .Title) .Title -}}
+{{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}

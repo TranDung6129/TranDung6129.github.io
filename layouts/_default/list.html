@@ -1,0 +1,9 @@
+{{- /* Compatibility adapter derived from FixIt f5fb989; MIT terms in layouts/_default/FIXIT-LICENSE.txt. */ -}}
+{{- define "title" -}}
+  {{- title (.Params.Title | default ((T .Section) | default .Section | dict "Some" | T "allSome")) -}}
+  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
+{{- end -}}
+
+{{- define "content" -}}
+  {{- partial "p1-04/section-content.html" . -}}
+{{- end -}}

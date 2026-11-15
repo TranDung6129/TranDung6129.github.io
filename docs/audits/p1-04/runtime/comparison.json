@@ -1,0 +1,22 @@
+{
+  "baseline": "docs/audits/p1-04/runtime/results-baseline-main.json",
+  "candidate": "docs/audits/p1-04/runtime/results-p1-04.json",
+  "comparedSections": [
+    "browser",
+    "checks",
+    "math",
+    "heatmap",
+    "heatmapMobile",
+    "heatmapThemeToggle",
+    "heatmapThemeObservation",
+    "external",
+    "consoleErrors",
+    "requestsFailed"
+  ],
+  "differences": [],
+  "identical": true,
+  "allChecksPass": {
+    "baseline": true,
+    "candidate": true
+  }
+}

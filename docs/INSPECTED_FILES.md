@@ -149,3 +149,67 @@ Git working-file blob hashes at review; registry self hash is pre-append. All en
 | `config/_default/hugo.toml` | `ff107c0c3ce681d919e50f25c91e1feb6b388f6f` | Project title/base URL and active theme list override root conflicts. |
 | `config/_default/params.toml` | `61861b802993602aabc4e57f6f926f1caefe9005` | Theme search, appearance, math and injected partial settings; preserve consumers until migration. |
 | `config/_default/outputs.toml` | `63a58b15da2925adc6056f74d2cabc7b4a1dc02a` | Home and page output configuration; feeds/search depend on effective merge. |
+
+## 2026-11-15 — P1-04 compatibility implementation
+
+Working-file Git blob hashes at inspection (registry self hash is pre-append). Coverage PARTIAL unless scoped to authored adapter; exact build/browser evidence and limits in [P1-04 report](audits/p1-04/README.md). Agent contributors inspected source, integrator owns shared documentation.
+
+| Path | Blob | Purpose, consumers and risks |
+|---|---|---|
+| `layouts/_default/baseof.html` | `3f49d4ec77963d5a1db23aae5f1e1f210e1e4a6a` | Owned FixIt-derived HTML shell, initializes theme and renders head/widgets/assets; uses site adapters. Affects every page including home. |
+| `layouts/_partials/site/header.html` | `995c16d5685f3cbaa009568fafb961bbf686f32a` | Compatibility adapter delegates FixIt header with navigation, search, language and theme controls. |
+| `layouts/_partials/site/footer.html` | `9bfc1a7c25a754a977c3dfb1e61814024f0564d4` | Compatibility adapter delegates FixIt footer and custom hooks; cached by shell. |
+| `layouts/posts/single.html` | `41f4ad1050ed84f1834b8575926adccaa609fe46` | Type-specific owned post template retaining FixIt article helpers, TOC, collection navigation, content and comments; title uses owned partial. |
+| `layouts/section.html` | `1b12ed761c0783d4f1e9356f037c643a796ded47` | Active section template delegates archive body to owned partial while preserving title. |
+| `layouts/_default/list.html` | `1b12ed761c0783d4f1e9356f037c643a796ded47` | Generic list fallback delegates owned section-content partial; not active for current section lookup. |
+| `layouts/_default/single.html` | `18130a7545efe23c4301cab7d2091286768e39c6` | Generic single fallback adapted from FixIt page template; current posts use type-specific template. |
+| `layouts/_partials/p1-04/post-title.html` | `0da4467325604cc8693ce288dadb2ae315e12cae` | Renders localized/capitalized post title and site suffix for posts/single. |
+| `layouts/_partials/p1-04/section-content.html` | `2c6b26a8288df8609636e89665ec91f0282876f4` | Year-grouped archive, paginator, icon and recent-update compatibility; trims final whitespace to preserve development output. |
+| `layouts/_default/FIXIT-LICENSE.txt` | `2b4cb5adcfe4b2e054409759ce434aeb1224849e` | Upstream MIT license for adapted FixIt templates; keep attribution when altering copies. |
+| `docs/CODEBASE_MAP.md` | `b789892f3aac98f93b36766f8eee9803e7f8b4c6` | Documents new compatibility entrypoints, active vs fallback and remaining theme ownership. |
+| `docs/TASK_BOARD.md` | `0e646bfde7590dbc2a0b2a74b78b839d88f926da` | P1-04 claimed and blocked on trusted external MathJax/heatmap runtime parity. |
+| `docs/AGENT_LOG.md` | `aa0ed2dff6633cbfc7f514c610e2e0087a7c6d0a` | Claims, scoped implementation, tests, contributors, blockers and next actions. |
+| `docs/audits/p1-04/README.md` | `524d143a100acb826d7d3c853a497b6c9746c1c8` | Reproducible production/development/lookup/browser evidence and explicit unverified runtime gate. |
+| `docs/audits/p1-04/artifact-blobs.tsv` | `d3f95226859a148e99473cbd61ab149a8c14fe83` | Manifest of generated report/screenshot Git blobs and sizes for baseline evidence. |
+| `docs/INSPECTED_FILES.md` | `e596c21f1d9486592d4e8c0984b7c0c47cf22eb4` | Revision-aware knowledge registry; self hash records state before this append. |
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Workflow, task ownership, documentation, visual and content preservation safeguards. |
+| `docs/DECISIONS.md` | `5bccb094ef5df421c01631520897947cf1760a09` | D-012 prescribes site-owned incremental compatibility and browser parity before theme removal. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Build, routes, browser, accessibility, evidence and deployment gates. |
+| `docs/audits/p1-02/browser/baseline.cjs` | `6bb142cbfcc1cad96732aa5adb32d45c93144e84` | Playwright reference harness for real browser interactive assertions and viewport captures. |
+| `docs/audits/p1-02/browser/keyboard.cjs` | `39b2d64f315a6719bba2b973884cebafc43837e9` | Reference keyboard and reduced-motion observation harness. |
+| `docs/audits/p1-02/static/analyze.py` | `3e18bcc236d0349feddb57e6a4d7753c61cd4e0e` | Static route, links, metadata, search and XML baseline analyzer. |
+| `docs/audits/p1-02/static/test_analyzer.py` | `7ab49acbba261f3a6c3b31797e3def8a46142146` | Fixture proving analyzer route and URL/fragment behavior. |
+| `docs/audits/p1-02/static/routes.txt` | `6d18a022b4125e4271d6fc3e6d8540c2795cfd77` | Frozen P1-02 output paths used for retention comparison. |
+| `docs/audits/p1-01/content-pages.csv` | `0fc0b18babb32b4526d2c750653b1ee117276863` | Source page/permalink and language inventory consumed by analyzer. |
+| `docs/audits/p1-01/verify.py` | `d936eff54c8eb4af55a8ac5202a74aca0be89cc2` | Production route and byte comparator and emitted consumer assertions. |
+| `hugo.toml` | `31ba0a8a84864500f4b96eb87a744d46bbb52c77` | Root config with content cascade selecting posts type and math/pagination settings. |
+| `content/about/index.md` | `8d9c83af0530bf2aad05b3377780d7631075fb2c` | About content uses posts type; remains unchanged, affects template lookup. |
+| `content/kinh-te/game_theory_nash.md` | `12e43aa0bdf6f7c37052c99cf7f711be7a0735ce` | Nash article and React/video consumer; unchanged and used for runtime checks. |
+| `layouts/index.html` | `647dbb82d6b8cfe957db0070bf0c459d0de9806b` | Existing home defines blocks within shared base; unchanged and production bytes verified. |
+
+Pinned vendor FixIt subtree `f5fb989ad1a157dc0e7ac30d0a66b18194b1bea4` PARTIAL: `layouts/baseof.html` blob `f634bfeb6759857511b070f2d8c34cec5049d751`, `layouts/posts/single.html` `813ff47473d158e65a55f897c010e63e815fecf5`, `layouts/section.html` `f6dae6fae193e6b0cc6dca2131f0e8fc815341d0`, `layouts/page.html` `86f65d693277671f46536f5e8aec04519c5c8258` (verify against pinned Git tree before future edits), header `40cf1efe1b07a3a0e60fad8a428b4859ae2c0cd9`, footer `0c103187ba4438639b9daa243efad77822ea9807`, LICENSE `2b4cb5adcfe4b2e054409759ce434aeb1224849e`. These provide originals and delegated head/navigation/footer/article helpers; do not remove theme before D-012 parity. Generated P1-04 JSON/logs/screenshots grouped as PARTIAL; individual hashes and sizes in `artifact-blobs.tsv` SHA256 `268fd65e20f029f4fd371a3fbf076842937ca276e8141bb95182d1296766c587`. Production builds/fixture passed; 8 browser checks passed, but MathJax/heatmap external runtime unverified.
+
+## 2026-11-15 — P1-04 external runtime verification (Claude Code)
+
+Working-file Git blob hashes on `feat/p1-04-hugo-templates`; registry self hash is pre-append `781d6b589d1e45768a5ab24dea596e9af95739bd`. All planning docs listed in AGENTS.md were read in full for onboarding and are unchanged from the blobs recorded above (reused, not re-described). The ten P1-04 template entries above were re-read in full and match their recorded blobs.
+
+| Path | Blob | Status | Purpose, consumers, risks and verification |
+|---|---|---|---|
+| `layouts/partials/heatmap.html` | `7c5c29664eea78b50b0860b2e4cf08ec858fd0ec` | COVERED | Home activity heatmap: loads D3 v3 and Cal-Heatmap 3.3.10 CSS/JS from `d3js.org`/`cdn.jsdelivr.net`, builds `postData` (day timestamp → count) from seven sections, renders six months from five months ago into `#cal-heatmap`, then `updateHeatmapTheme` after 500 ms. Called by `layouts/index.html`. Browser-verified: renders 183 cells/6 domains and tooltip; defect — mutating `cal.options.legendColors` after `init` does not rebuild the colour scale, so cells keep one fill in both themes and empty days show the "min" colour. |
+| `docs/audits/p1-04/runtime/runtime.cjs` | `39ff653990f9a277194eb053bc5e10ccc388ffcc` | COVERED | Playwright harness for the external runtime gate: 16 math routes (MathJax version, container/item counts, errors, raw TeX), four home routes × two themes (D3/Cal-Heatmap state, cells vs expected days, tooltip), per-response TLS issuer and SHA-256, screenshots. Default launch options, no trust bypass; exits nonzero on a failed check. Theme-colour behaviour is an observation, not a gate. |
+| `docs/audits/p1-04/runtime/compare.cjs` | `9538735e057560809a4d7cc3d34af76942a08cc0` | COVERED | Compares two `runtime-results.json` files section by section (baseline vs candidate build); exits nonzero on any difference or failed check. Reuse for later tasks. |
+| `docs/audits/p1-04/runtime/integrity.py` | `a0c7aa6f313600ea1c89555e78b305422d88c7dd` | COVERED | Stdlib script: checks npm tarball SHA-512 against registry `dist.integrity` and the SHA-256 of each CDN body captured by the harness against the same file in the npm release. Needs extracted `npm pack` output. |
+| `docs/audits/p1-04/README.md` | `bc16fc4320ab6924ca444910150433d240bc961d` | COVERED | P1-04 evidence report; now includes the resolved runtime gate, trust-path statement, result tables and remaining baseline defects. |
+| `.github/workflows/deploy.yml` | `5bd23aea364dca5f037f8bb60509e2e5b552bb87` | COVERED | Pages deploy on push to `main` (paths: layouts, config, content, data, static, themes, hugo.toml, assets, workflows, package files), `workflow_run` after "Update theme", and manual dispatch. Checks out with submodules, installs Hugo Extended 0.149.0 deb and Node 20, `npm ci`, `hugo --gc --minify`, uploads `./public`. No pull-request build. P1-07 must drop the `workflow_run` coupling and submodule checkout together with the theme. |
+| `.github/workflows/update-theme.yml` | `6fdd4637d5551c3391ebff6192519420e3e3516a` | COVERED | Daily cron + manual: `git submodule update --remote --merge themes/FixIt` and auto-commit to the default branch, which then triggers deploy. Unreviewed theme drift; retire in P1-07. |
+| `.github/dependabot.yml` | `d550813f6ec374061d0ddf2fc51c26189741d730` | COVERED | Monthly `github-actions` and `gitsubmodule` updates, assignee is the upstream starter author (`Lruihao`), limit 1000. Submodule ecosystem entry becomes obsolete in P1-07; assignee is a starter remnant. |
+| `package.json` | `81866df30ef519c711f7ed2221099ecc5295ad8f` | COVERED | Starter metadata (`hugo-fixit-starter1`, upstream author/repository URLs), scripts `build`, `server`, `server:production`, `update:theme`; dependencies react, react-dom, recharts (active for the Nash simulation). |
+| `.gitmodules` | `632d82b716f1e6ff168db88f73a31507781b9377` | COVERED | Two submodules: `themes/FixIt` (branch main) and `themes/shortcode-docs-bookmark`. |
+| `.gitignore` | `5add35df779366e3aaac48a9c849a5f4a1473e0c` | COVERED | Ignores node_modules, build, public, resources, lock file, `_vendor`, jsconfig.json and a few local scratch patterns. |
+| `docs/audits/p1-02/browser/REPORT.md` | `f61d23ff287cc3eb8e5a784da79782a428b201b4` | COVERED | Unchanged; reused for the baseline interaction method and the original MathJax/heatmap failure description. |
+| `docs/audits/p1-02/RUNBOOK.md` | `3b1d9770ec2bc69e7886ab83196182343ebc589a` | COVERED | Unchanged; reproduction commands reused. |
+| `docs/TASK_BOARD.md` | `da82eb4f3ce57d6ccf1200eccfd0fa3cbe38e2d1` | COVERED | P1-04 marked DONE with evidence; acceptance is the maintainer merge of PR #19. |
+| `docs/AGENT_LOG.md` | `82fdfd62b28bf1b2ab0d9930a33e5d78070dddf7` | COVERED | Appends the P1-04 runtime verification entry. |
+| `docs/CODEBASE_MAP.md` | `9207a9ca2f516c517b1f8f5f0037d413143e8fae` | COVERED | Adds the runtime-check entry point and modification record. |
+
+Generated evidence group `docs/audits/p1-04/runtime/` (result JSON, logs, PNGs): PARTIAL, blobs listed in `docs/audits/p1-04/artifact-blobs.tsv`. Generated production output `js/lib/mathjax.min.js` (FixIt loader, config `processHtmlClass: content`, CDN `mathjax@3/es5/tex-mml-chtml.js`, `ui/safe`) was read from the build to design the harness; its source stays in the pinned theme.
