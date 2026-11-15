@@ -386,3 +386,25 @@ PARTIAL coverage; working blobs, registry self hash pre-append. Contrast checks 
 | `docs/VISUAL_DIRECTION.md` | `9181d328d71d874bc95c44daca2dec5a7607bd0c` | Magazine/book visual brief, specimen-first approval and no unapproved homepage. |
 | `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Build, route, accessibility, screenshots and review requirements. |
 | `assets/css/_custom.scss` | `9b97fbecc88efc486e604cf36bd73bb2ae34a292` | Existing production palette, font imports and theme rules; independent of new specimen-only tokens. |
+
+## 2026-11-15 — P2-02 typography
+
+Working blobs, PARTIAL coverage; Chromium and production output checks recorded in AGENT_LOG; final visual approval remains outstanding.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/specimen/single.html` | `216bc6ae16301086ae6835e08b37fe466a9a898b` | Review-environment-only standalone shell, loads tokens and available specimen partials; no production content route. |
+| `layouts/_partials/specimen/typography.html` | `ab6d677ba8f0d1898336299dc192afe7f4981d70` | Vietnamese/English article type specimen with existing attributed excerpt, native MathML, code and caption. |
+| `assets/css/specimen/base.css` | `9ec3ebfb44f61a40e14b44581ab981f921def0d2` | Review shell base styles; depends on semantic ed tokens. |
+| `assets/css/specimen/typography.css` | `aa44142d91784f4beb02cd029835691fbdfcaefd` | Long-form type and math/code styles for review only. |
+| `assets/css/specimen/responsive.css` | `472a8c126aeb53ff4bd5cc9734af4a348c3e618f` | Specimen responsive overrides; includes selectors for later component checkpoints. |
+| `scripts/preview-editorial.sh` | `64dc58158500b01d3f3ed3201f9a0baefa71baa6` | Creates temporary Hugo snapshot/draft, disables snapshot GitInfo and runs editorial-review environment on loopback; no repo content changes. |
+| `scripts/test-editorial-typography.cjs` | `dd16cbefb5039abc6c15306eb6596590a4adb6cc` | Headless Chromium checks Vietnamese/math/code and overflow, captures four light/dark screenshots at 360/1440. |
+| `docs/design/TYPOGRAPHY.md` | `09d631583e0f557bdf4e6a1a7a9972efeb15c414` | Type specimen scope, preview instructions and provisional font/visual approval limitations. |
+| `docs/TASK_BOARD.md` | `1e6641765a70e2eef7b0badd26585e6d984ff54d` | P2-02 typography completed on branch; downstream component tasks remain and owner approval outstanding. |
+| `docs/AGENT_LOG.md` | `99fe1ebfa1d0a74d8d902c059c51268af99624aa` | P2-02 claim, tests, production isolation and visual limitations. |
+| `docs/CODEBASE_MAP.md` | `71562ff7af4ceeaeaa927a6f1be635c8c9dd8612` | Preview and typography ownership; production paths unchanged. |
+| `docs/INSPECTED_FILES.md` | `681a652dec192dab76c26ab62324f91caca1d8ca` | Self registry hash is pre-append. |
+| `content/toan-hoc/riemann-hypothesis-number-theory.md` | `d038f61397e2531a230d4da3d82f90c634aa8c4c` | Existing Vietnamese article supplies one attributed specimen excerpt; unchanged. |
+
+Generated intermediate screenshots `docs/design/screenshots/p202-{360,1440}-{light,dark}.png` are review-only browser captures; no claim of final aesthetic approval.

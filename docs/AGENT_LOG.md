@@ -204,3 +204,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Status:** IN PROGRESS; P2-01 tokens pass on stacked branch.
 - **Branch:** `feat/p2-02-typography`, based on `feat/p2-01-tokens`.
 - **Scope:** Real browser typography specimen with Vietnamese/English, math and code. Prototype remains local-only, no homepage production change.
+
+### 2026-11-15 — P2-02 — Codex evidence
+- **Status:** DONE for the typography specimen and automated rendering checks; visual direction and final typeface remain UNAPPROVED pending owner review. **Branch:** `feat/p2-02-typography`, claim `93a88cd`.
+- **Files:** review-only Hugo template, typography partial/CSS, preview script, browser check and four preliminary screenshots; [type notes](design/TYPOGRAPHY.md). Native MathML and existing Vietnamese excerpt are included; no content/page changes in the repository. Contributor drafted composition in temporary directory; integrator isolated and tested typography checkpoint.
+- **Checks:** `PATH=/workspace/.cloud-tools/bin:$PATH scripts/preview-editorial.sh` PASS after supported `--enableGitInfo=false` in the temporary source (initial run failed because copied tree lacked .git). Preview HTTP 200, Vietnamese and MathML/code present. `NODE_PATH=/tmp/p1-02-browser/node_modules node scripts/test-editorial-typography.cjs` PASS at 360/1440 light/dark: math has nonzero rendered width, Vietnamese and code present, no horizontal overflow. Screenshots in `docs/design/screenshots/`. Production Hugo build and SHA256 tree comparison vs `/tmp/p201-before` PASS: 647 paths, zero added/removed/changed bytes and no editorial-review route.
+- **Limits:** Font fallback stacks are provisional, not an owner selection; no full accessibility or performance certification. P2-03/04/05 and full visual review follow. P1-08 remains BLOCKED on live-site proxy egress.

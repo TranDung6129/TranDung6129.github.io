@@ -1,0 +1,23 @@
+{{ if eq hugo.Environment "editorial-review" }}
+<!doctype html>
+<html lang="en" data-ed-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Editorial specimen · The Epistemic Diary</title>
+  {{ with resources.Get "css/editorial/tokens.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ range slice "base" "navigation" "home" "typography" "future" "responsive" }}{{ with resources.Get (printf "css/specimen/%s.css" .) }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}{{ end }}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="review-banner"><span>Design specimen</span> · Demonstration content · Not the published homepage <a href="#typography">View type study ↓</a></div>
+{{ if templates.Exists "_partials/specimen/navigation.html" }}{{ partial "specimen/navigation.html" . }}{{ end }}
+<main id="main" class="wrap">
+{{ if templates.Exists "_partials/specimen/home.html" }}{{ partial "specimen/home.html" . }}{{ end }}
+{{ if templates.Exists "_partials/specimen/typography.html" }}{{ partial "specimen/typography.html" . }}{{ end }}
+{{ if templates.Exists "_partials/specimen/future.html" }}{{ partial "specimen/future.html" . }}{{ end }}
+</main>{{ if templates.Exists "_partials/specimen/footer.html" }}{{ partial "specimen/footer.html" . }}{{ end }}
+{{ if templates.Exists "_partials/specimen/interactions.html" }}{{ partial "specimen/interactions.html" . }}{{ end }}
+</body></html>
+
+{{ end }}

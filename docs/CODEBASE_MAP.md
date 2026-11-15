@@ -58,6 +58,8 @@ Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_p
 
 P2-01 review-only tokens live at `assets/css/editorial/tokens.css`; [usage and contrast](design/TOKENS.md) and `docs/design/check-token-contrast.py` accompany them. They are not imported in production.
 
+P2-02 local specimen: `scripts/preview-editorial.sh` builds a temporary snapshot and review-only `layouts/specimen/single.html` with `layouts/_partials/specimen/typography.html` and `assets/css/specimen/`; [type notes](design/TYPOGRAPHY.md). There is no production content route.
+
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
 - `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).
