@@ -25,7 +25,7 @@ The FixIt shell, styles and scripts are gone. The table below supersedes older r
 | Films, Labs, Discover | `data/films.yaml`, `data/labs.yaml`, `data/discover.yaml`; `views/films.html`, `views/labs.html`, `views/discover.html` | Only published media; no affiliate links (fields reserved) |
 | Artwork and fonts | `data/art.yaml`, `layouts/_partials/editorial/art.html`, `art-image.html`; `assets/editorial-*` | Responsive WebP + PNG fallback |
 | Interface strings | `i18n/{vi,en,ja,zh-CN}.toml`, keys `ed_*` | ja/zh-CN carry English strings |
-| Regression tests | `docs/audits/p3-07/tools/p3-smoke.cjs`, `perf.cjs`; `docs/audits/p1-06/tools/seo-check.py`; `docs/audits/p1-02/static/analyze.py` | `p1-04/runtime/runtime.cjs` and `p1-08/tools/live-smoke.cjs` target the pre-Phase-3 markup |
+| Regression tests | `docs/audits/p3-07/tools/p3-smoke.cjs` (also against the live site: `BASE=https://trandung6129.github.io`), `perf.cjs`, `docs/audits/p1-08/tools/live-mirror.py`; `docs/audits/p1-06/tools/seo-check.py`; `docs/audits/p1-02/static/analyze.py` | `p1-04/runtime/runtime.cjs` and `p1-08/tools/live-smoke.cjs` target the pre-Phase-3 markup |
 
 ## State after P1-07 — no theme
 

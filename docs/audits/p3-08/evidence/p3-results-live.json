@@ -1,0 +1,3506 @@
+{
+  "base": "https://trandung6129.github.io",
+  "browser": "153.0.8010.12",
+  "method": "Headless Chromium, default launch options, certificate validation on.",
+  "matrix": [
+    {
+      "page": "home",
+      "route": "/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-360-light.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-360-light.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-360-light.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-360-light.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-360-light.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-360-light.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-360-light.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 360,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-360-light.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-360-dark.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-360-dark.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-360-dark.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-360-dark.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-360-dark.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-360-dark.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-360-dark.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 360,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 360,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-360-dark.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-390-light.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-390-light.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-390-light.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-390-light.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-390-light.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-390-light.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-390-light.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-390-light.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-390-dark.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-390-dark.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-390-dark.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-390-dark.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-390-dark.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-390-dark.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-390-dark.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 390,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-390-dark.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-768-light.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-768-light.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-768-light.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-768-light.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-768-light.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-768-light.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-768-light.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-768-light.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-768-dark.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-768-dark.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-768-dark.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-768-dark.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-768-dark.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-768-dark.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-768-dark.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 768,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          92,
+          44
+        ]
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-768-dark.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-1024-light.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-1024-light.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-1024-light.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-1024-light.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-1024-light.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-1024-light.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-1024-light.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 1024,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-1024-light.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-1024-dark.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-1024-dark.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-1024-dark.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-1024-dark.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-1024-dark.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-1024-dark.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-1024-dark.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 1024,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1024,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-1024-dark.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-1440-light.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-1440-light.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-1440-light.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-1440-light.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-1440-light.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-1440-light.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-1440-light.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "bg": "rgb(247, 245, 240)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-1440-light.png"
+    },
+    {
+      "page": "home",
+      "route": "/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "home-1440-dark.png"
+    },
+    {
+      "page": "journal",
+      "route": "/journal/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "journal-1440-dark.png"
+    },
+    {
+      "page": "article",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "article-1440-dark.png"
+    },
+    {
+      "page": "volume",
+      "route": "/volumes/volume-i/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "volume-1440-dark.png"
+    },
+    {
+      "page": "films",
+      "route": "/films/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "films-1440-dark.png"
+    },
+    {
+      "page": "labs",
+      "route": "/labs/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "labs-1440-dark.png"
+    },
+    {
+      "page": "nash",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "nash-1440-dark.png"
+    },
+    {
+      "page": "discover",
+      "route": "/discover/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "bg": "rgb(26, 24, 22)",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "fonts": [
+        "newsreader variable",
+        "source serif 4 variable"
+      ],
+      "targets": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": null
+      },
+      "h1": 1,
+      "pageErrors": [],
+      "siteFailed": [],
+      "screenshot": "discover-1440-dark.png"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Matrix: 200, theme follows scheme, no overflow, no page errors, no failed own-site requests",
+      "passed": true,
+      "states": 80,
+      "failing": []
+    },
+    {
+      "name": "Approved paper colours: light #F7F5F0, dark #1A1816",
+      "passed": true
+    },
+    {
+      "name": "Newsreader and Source Serif 4 load on every page",
+      "passed": true
+    },
+    {
+      "name": "One h1 per page",
+      "passed": true,
+      "exceptions": []
+    },
+    {
+      "name": "Masthead controls are at least 44x44 px",
+      "passed": true,
+      "sample": {
+        "search": [
+          44,
+          44
+        ],
+        "theme": [
+          44,
+          44
+        ],
+        "menu": [
+          44,
+          44
+        ]
+      }
+    },
+    {
+      "name": "Masthead, language and footer links resolve in all four languages",
+      "passed": true,
+      "nav": {
+        "/": [
+          [
+            "/journal/",
+            200
+          ],
+          [
+            "/volumes/",
+            200
+          ],
+          [
+            "/films/",
+            200
+          ],
+          [
+            "/labs/",
+            200
+          ],
+          [
+            "/discover/",
+            200
+          ],
+          [
+            "/en/",
+            200
+          ],
+          [
+            "/ja/",
+            200
+          ],
+          [
+            "/zh-cn/",
+            200
+          ],
+          [
+            "/about/",
+            200
+          ],
+          [
+            "/archives/",
+            200
+          ],
+          [
+            "/categories/",
+            200
+          ],
+          [
+            "/tags/",
+            200
+          ],
+          [
+            "/collections/",
+            200
+          ],
+          [
+            "/index.xml",
+            200
+          ]
+        ],
+        "/en/": [
+          [
+            "/en/journal/",
+            200
+          ],
+          [
+            "/en/volumes/",
+            200
+          ],
+          [
+            "/en/films/",
+            200
+          ],
+          [
+            "/en/labs/",
+            200
+          ],
+          [
+            "/en/discover/",
+            200
+          ],
+          [
+            "/",
+            200
+          ],
+          [
+            "/ja/",
+            200
+          ],
+          [
+            "/zh-cn/",
+            200
+          ],
+          [
+            "/en/about/",
+            200
+          ],
+          [
+            "/en/archives/",
+            200
+          ],
+          [
+            "/en/categories/",
+            200
+          ],
+          [
+            "/en/tags/",
+            200
+          ],
+          [
+            "/en/collections/",
+            200
+          ],
+          [
+            "/en/index.xml",
+            200
+          ]
+        ],
+        "/ja/": [
+          [
+            "/en/journal/",
+            200
+          ],
+          [
+            "/en/volumes/",
+            200
+          ],
+          [
+            "/en/films/",
+            200
+          ],
+          [
+            "/en/labs/",
+            200
+          ],
+          [
+            "/en/discover/",
+            200
+          ],
+          [
+            "/",
+            200
+          ],
+          [
+            "/en/",
+            200
+          ],
+          [
+            "/zh-cn/",
+            200
+          ],
+          [
+            "/ja/archives/",
+            200
+          ],
+          [
+            "/ja/categories/",
+            200
+          ],
+          [
+            "/ja/tags/",
+            200
+          ],
+          [
+            "/ja/collections/",
+            200
+          ],
+          [
+            "/ja/index.xml",
+            200
+          ]
+        ],
+        "/zh-cn/": [
+          [
+            "/en/journal/",
+            200
+          ],
+          [
+            "/en/volumes/",
+            200
+          ],
+          [
+            "/en/films/",
+            200
+          ],
+          [
+            "/en/labs/",
+            200
+          ],
+          [
+            "/en/discover/",
+            200
+          ],
+          [
+            "/",
+            200
+          ],
+          [
+            "/en/",
+            200
+          ],
+          [
+            "/ja/",
+            200
+          ],
+          [
+            "/zh-cn/archives/",
+            200
+          ],
+          [
+            "/zh-cn/categories/",
+            200
+          ],
+          [
+            "/zh-cn/tags/",
+            200
+          ],
+          [
+            "/zh-cn/collections/",
+            200
+          ],
+          [
+            "/zh-cn/index.xml",
+            200
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Five editorial sections in the navigation",
+      "passed": true
+    },
+    {
+      "name": "Search \"nash\" on / returns results that resolve",
+      "passed": true,
+      "hits": 3,
+      "first": "/kinh-te/game_theory_nash/"
+    },
+    {
+      "name": "Search \"nash\" on /en/ returns results that resolve",
+      "passed": true,
+      "hits": 3,
+      "first": "/en/kinh-te/game_theory_nash/"
+    },
+    {
+      "name": "Search \"toi uu\" on / returns results that resolve",
+      "passed": true,
+      "hits": 8,
+      "first": "/kinh-te/toan-co-ban-3/"
+    },
+    {
+      "name": "Escape closes the search panel and returns focus to its button",
+      "passed": true
+    },
+    {
+      "name": "Theme toggle switches and persists across pages",
+      "passed": true,
+      "t1": "dark",
+      "t2": "dark",
+      "t3": "light"
+    },
+    {
+      "name": "TOC link scrolls to its heading",
+      "passed": true,
+      "href": "#1-tối-đa-hóa-lợi-nhuận-của-doanh-nghiệp",
+      "top": 26
+    },
+    {
+      "name": "Code copy writes the code (without line numbers) to the clipboard",
+      "passed": true,
+      "characters": 311
+    },
+    {
+      "name": "MathJax typesets every math page without errors",
+      "passed": true,
+      "total": 674,
+      "math": [
+        {
+          "route": "/kinh-te/toan-co-ban-1/",
+          "containers": 15,
+          "errors": 0
+        },
+        {
+          "route": "/en/kinh-te/toan-co-ban-1/",
+          "containers": 15,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/toan-co-ban-2/",
+          "containers": 10,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/toan-co-ban-3/",
+          "containers": 20,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/toan-co-ban-4/",
+          "containers": 11,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/toan-co-ban-5/",
+          "containers": 12,
+          "errors": 0
+        },
+        {
+          "route": "/en/kinh-te/toan-co-ban-5/",
+          "containers": 12,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/co-gian-cung-cau-cong-thuc/",
+          "containers": 28,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+          "containers": 47,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+          "containers": 54,
+          "errors": 0
+        },
+        {
+          "route": "/kinh-te/game_theory_nash/",
+          "containers": 78,
+          "errors": 0
+        },
+        {
+          "route": "/en/kinh-te/game_theory_nash/",
+          "containers": 78,
+          "errors": 0
+        },
+        {
+          "route": "/toan-hoc/riemann-hypothesis-number-theory/",
+          "containers": 62,
+          "errors": 0
+        },
+        {
+          "route": "/en/toan-hoc/riemann-hypothesis-number-theory/",
+          "containers": 62,
+          "errors": 0
+        },
+        {
+          "route": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+          "containers": 85,
+          "errors": 0
+        },
+        {
+          "route": "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+          "containers": 85,
+          "errors": 0
+        }
+      ]
+    },
+    {
+      "name": "Heatmap on /journal/: six months, active days highlighted, colours follow the theme",
+      "passed": true,
+      "domains": 6,
+      "cells": 182,
+      "fills": [
+        "rgb(232, 226, 215)",
+        "rgb(140, 74, 50)"
+      ],
+      "dark": [
+        "rgb(41, 37, 33)",
+        "rgb(212, 163, 115)"
+      ]
+    },
+    {
+      "name": "Heatmap on /en/journal/: six months, active days highlighted, colours follow the theme",
+      "passed": true,
+      "domains": 6,
+      "cells": 182,
+      "fills": [
+        "rgb(232, 226, 215)",
+        "rgb(140, 74, 50)"
+      ],
+      "dark": [
+        "rgb(41, 37, 33)",
+        "rgb(212, 163, 115)"
+      ]
+    },
+    {
+      "name": "Nash: simulation renders and Matching Pennies gives p* = q* = 0.500",
+      "passed": true
+    },
+    {
+      "name": "Nash: payoff slider responds to the keyboard",
+      "passed": true
+    },
+    {
+      "name": "Nash: poster loads and video is served",
+      "passed": true,
+      "vid": [
+        206,
+        "video/mp4"
+      ]
+    },
+    {
+      "name": "Films: the published film has a working poster and source",
+      "passed": true
+    },
+    {
+      "name": "Labs: the experiment link opens the live simulation section",
+      "passed": true,
+      "lab": "/kinh-te/game_theory_nash/#11-interactive-exploration"
+    },
+    {
+      "name": "Volume I: six chapters, all resolve",
+      "passed": true,
+      "cs": [
+        [
+          "/kinh-te/toan-co-ban-1/",
+          200
+        ],
+        [
+          "/kinh-te/toan-co-ban-2/",
+          200
+        ],
+        [
+          "/kinh-te/toan-co-ban-3/",
+          200
+        ],
+        [
+          "/kinh-te/toan-co-ban-4/",
+          200
+        ],
+        [
+          "/kinh-te/toan-co-ban-5/",
+          200
+        ],
+        [
+          "/kinh-te/game_theory_nash/",
+          200
+        ]
+      ]
+    },
+    {
+      "name": "Chapter page shows its volume position and links back",
+      "passed": true
+    },
+    {
+      "name": "No purchase, price, sponsored or affiliate links",
+      "passed": true,
+      "commerce": []
+    },
+    {
+      "name": "No page errors or failed own-site requests during functional checks",
+      "passed": true,
+      "pageErrors": [],
+      "siteFailed": []
+    },
+    {
+      "name": "Nash mobile fallback at 390 px",
+      "passed": true,
+      "fbk": [
+        "block",
+        "none"
+      ]
+    },
+    {
+      "name": "Mobile menu opens with sections and languages, Escape closes it and restores focus",
+      "passed": true,
+      "open": true,
+      "links": 5,
+      "langs": 4
+    },
+    {
+      "name": "Keyboard: skip link first, then masthead controls, every stop has a visible outline",
+      "passed": true,
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Bỏ qua đến nội dung",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "The Epistemic Diary",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Journal",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Volumes",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Films",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Labs",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Discover",
+          "outline": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Tìm bài viết",
+          "outline": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Chuyển sang giao diện tố",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "EN",
+          "outline": true
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion disables smooth scrolling",
+      "passed": true,
+      "reduce": true,
+      "scroll": "auto"
+    },
+    {
+      "name": "axe-core: no serious or critical WCAG 2.1 A/AA violations",
+      "passed": true,
+      "serious": []
+    }
+  ],
+  "axe": [
+    {
+      "page": "home",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "page": "journal",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        }
+      ]
+    },
+    {
+      "page": "article",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "volume",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "films",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        },
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "labs",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "nash",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        },
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "discover",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "page": "journal",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        }
+      ]
+    },
+    {
+      "page": "article",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "volume",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "films",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        },
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "labs",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "nash",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        },
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "discover",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "journal",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "page": "article",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "volume",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "films",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "labs",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "nash",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        },
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "discover",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "journal",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "page": "article",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "volume",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "films",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "labs",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "page": "nash",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        },
+        {
+          "id": "video-caption",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "discover",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "thirdPartyFailures": [],
+  "functionalErrors": {
+    "pageErrors": [],
+    "siteFailed": []
+  }
+}
