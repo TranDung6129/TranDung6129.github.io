@@ -8,6 +8,7 @@
 - Note website visual capture may be unavailable; do not claim visual parity without evidence.
 
 ## Per PR
+0. If adding, moving, deleting or reassigning code responsibilities, update docs/CODEBASE_MAP.md with new owner, entry point, impact and verification. A stale codebase map fails review.
 1. Run project build (current package script: npm run build; underlying Hugo command may also be used), documenting environment and failures.
 2. Check generated URL list before/after; zero unintended disappeared URLs.
 3. Check rendered HTML for unique title, correct language, metadata, headings and image references.

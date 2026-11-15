@@ -4,7 +4,8 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 
 ## Read first (in order)
 1. docs/README.md
-2. docs/MASTER_PLAN.md
+2. docs/CODEBASE_MAP.md (find the owning files before searching)
+3. docs/MASTER_PLAN.md
 3. docs/TASK_BOARD.md
 4. docs/ARCHITECTURE.md
 5. docs/DESIGN_SYSTEM.md
@@ -39,6 +40,7 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 - Use semantic HTML and keyboard-accessible controls; respect reduced-motion preferences.
 - Follow docs/VISUAL_ASSET_GUIDELINES.md: original/look-consistent images, provable commercial-use rights and truthful documentary imagery.
 - Follow docs/ENGINEERING_STANDARDS.md and docs/DATABASE_FOUNDATION.md: **PostgreSQL local foundation is approved** (P1-09), but public articles remain static; no unapproved authentication, billing, hosted provisioning or secrets in Git. Use versioned migrations and tested backup/restore plans.
+- Update docs/CODEBASE_MAP.md in the SAME PR whenever an entry point, dependency, component owner or file path changes; record where future agents should edit. Prefer targeted reads of the map + directly related code over whole-repo scanning.
 - Do not automatically check off project-wide acceptance solely because a local task passed.
 
 ## Handoff format (append to docs/AGENT_LOG.md)
