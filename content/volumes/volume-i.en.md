@@ -7,6 +7,11 @@ description: "From derivatives and optimisation to Nash equilibrium: the mathema
 date: 2026-03-01
 weight: 1
 cover: volume_1
+# Former series pages (collections taxonomy, retired in P4-02) redirect here.
+aliases:
+  - "/en/collections/"
+  - "/en/collections/basic-mathematics-for-economics/"
+  - "/en/collections/toán-cơ-bản-cho-kinh-tế/"
 status: "Preview"
 statusNote: "This volume is in preparation. The chapters below are essays already published in the journal, arranged in reading order; it is not a finished edition and is not for sale."
 chapters:

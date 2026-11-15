@@ -193,3 +193,6 @@ other = "{{ .Count }} chapters"
 other = "Link to this section"
 [ed_activityLabel]
 other = "Calendar of essays published per day over six months"
+
+[ed_watchFilm]
+other = "Watch the film"

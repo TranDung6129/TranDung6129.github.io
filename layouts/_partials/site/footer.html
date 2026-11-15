@@ -7,7 +7,7 @@
       {{- with site.Home.OutputFormats.Get "archives" }}<a href="{{ .RelPermalink }}">{{ T "ed_archive" | default "Archive" }}</a>{{ end -}}
       {{- with site.GetPage "/categories" }}<a href="{{ .RelPermalink }}">{{ T "ed_categories" | default "Categories" }}</a>{{ end -}}
       {{- with site.GetPage "/tags" }}<a href="{{ .RelPermalink }}">{{ T "ed_tags" | default "Tags" }}</a>{{ end -}}
-      {{- with site.GetPage "/collections" }}<a href="{{ .RelPermalink }}">{{ T "ed_collections" | default "Series" }}</a>{{ end -}}
+      {{- with partial "editorial/section-link.html" "volumes" }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end -}}
       {{- with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end -}}
     </nav>
     <small>© {{ site.Params.footer.since | default 2025 }}–{{ now.Year }} {{ site.Title }} · {{ T "ed_license" | default "Text" }} {{ site.Params.footer.license | safeHTML }} · <a href="https://github.com/TranDung6129/TranDung6129.github.io/blob/main/THIRD_PARTY_NOTICES.md">{{ T "ed_credits" | default "Credits" }}</a></small>

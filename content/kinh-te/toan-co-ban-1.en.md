@@ -4,7 +4,6 @@ date: 2026-03-01T10:00:00+07:00
 draft: false
 categories: ["economics", "mathematics"]
 tags: ["economics-math", "calculus"]
-collections: ["Basic Mathematics for Economics"]
 math: true
 ---
 

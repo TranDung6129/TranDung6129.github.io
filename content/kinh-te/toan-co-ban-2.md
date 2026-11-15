@@ -4,7 +4,6 @@ date: 2026-03-01T11:00:00+07:00
 draft: false
 categories: ["kinh-te", "toan-hoc"]
 tags: ["toan-kinh-te", "toi-uu-hoa"]
-collections: ["Toán Cơ Bản Cho Kinh Tế"]
 math: true
 ---
 

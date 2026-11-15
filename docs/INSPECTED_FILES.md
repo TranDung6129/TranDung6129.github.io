@@ -609,3 +609,22 @@ Blobs on `feat/p3-qa`; registry self hash pre-append `42d8fbf110678f6748373962d3
 | `docs/audits/p3-07/tools/perf.cjs` | `5f1d4a56224c195d694cc5cc97ae3c05893be5c9` | COVERED | Page weight and paint observations. |
 | `docs/audits/p3-07/README.md` | `ac9a4457f68a830055fa1c4936ee48b9283ba9ac` | COVERED | QA report. |
 | `docs/phases/phase-3/PLAN.md` | `d457a010220dbce4f5f0afc1750767a2d24b3250` | COVERED | Phase 3 plan. |
+
+## 2026-11-15 — Phase 4 IA (Claude Code)
+
+Registry self hash pre-append `9fa89441e125e78e735a3b8a472a3c052fac942c`. Removed: `content/collections/**`, `layouts/_partials/editorial/series-nav.html`, `data/films.yaml`, `data/labs.yaml`.
+
+| Path | Blob | Status | Purpose |
+|---|---|---|---|
+| `layouts/_partials/editorial/media-page.html` | `eb8a5f5339f6ec6e38d1db286cf2ec0bb92cc0f3` | COVERED | Film/lab page: header, player (films), content, companion essay. |
+| `layouts/_partials/editorial/media-player.html` | `21783a4b421ba366686dcd840c8c1a7380224bc5` | COVERED | Self-hosted video or youtube-nocookie iframe. |
+| `layouts/shortcodes/film.html` | `47fdd5e816af4bf543c295d1f20b77aab439a2d9` | COVERED | Essay card linking to /films/<id>; build fails on unknown id. |
+| `layouts/shortcodes/lab.html` | `f9837933ff73f1eeea9e9c623c9562e081274b0b` | COVERED | Essay card linking to /labs/<id>; build fails on unknown id. |
+| `layouts/_partials/views/films.html` | `1fad16243c8d8c047fabf3f7f203ba48696a6669` | COVERED | Films list from section pages. |
+| `layouts/_partials/views/labs.html` | `92adc09b8d9e434d0e9aae5be23fb5d1abe68e3a` | COVERED | Labs list from section pages. |
+| `content/labs/nash-explorer.md` | `997c7cee17a0f9a9fd0c475c7d894ed2b7477c9d` | COVERED | Nash simulation page (vi); en sibling. |
+| `content/films/nash-animation.md` | `2a84d88cd4b7390378d1a1c0ca6428bb9f06c4bf` | COVERED | Nash animation page (vi); en sibling. |
+| `content/about/index.md` | `800d3efa8ecd57c408c6e20c40455bad68c92630` | COVERED | About the publication (vi); en sibling. |
+| `content/kinh-te/game_theory_nash.md` | `5f68cd875c182f2975a085da00bc010ab7ab9287` | COVERED | Essay; video and React replaced by film/lab cards (P4-04). |
+| `config/_default/taxonomies.toml` | `4dfe6d850c59b19a180f7ddedb32830dd9b6fcce` | COVERED | categories and tags only; collections retired. |
+| `docs/phases/phase-4/PLAN.md` | `3e5d5d14221aefc9eafb9bbee915a024827f9f59` | COVERED | Phase 4 decisions and status. |

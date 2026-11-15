@@ -35,7 +35,6 @@
     {{- with $p.GetTerms "tags" }}
     <p class="tag-list"><span>{{ T "ed_tags" | default "Tags" }}</span>{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
     {{- end }}
-    {{- partial "editorial/series-nav.html" $p -}}
     {{- $related := first 3 (where (site.RegularPages.Related $p) "Section" "in" site.Params.mainSections) -}}
     {{- with $related }}
     <nav class="related-reading" aria-labelledby="related-title">
