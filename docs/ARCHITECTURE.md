@@ -78,4 +78,3 @@ The provider-neutral local PostgreSQL reference schema, transactional versioned 
 ## P1-07 state
 
 No theme, submodule or Hugo module. Templates, SCSS, scripts, bundled libraries, interface strings and all configuration are in this repository ([D-013](DECISIONS.md#d-013--fixit-retired-by-owning-the-files-in-use), [report](audits/p1-07/README.md)). The cleanup-ledger rows for `themes/FixIt`, `themes/shortcode-docs-bookmark` and `update-theme.yml` are resolved. Deploy builds from a plain checkout.
-

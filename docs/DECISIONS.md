@@ -69,4 +69,3 @@ Agents may propose choices; changes to accepted product direction require mainta
 - **Options:** (a) rewrite every template and stylesheet from scratch before removing the theme; (b) move exactly the files the build uses into the site, unchanged, and remove the theme; (c) keep the pinned submodule indefinitely.
 - **Choice and rationale:** (b). It removes the external dependency and the unreviewed update path now, with byte-level proof that readers see no difference, and leaves the redesign to Phase 2 where each file can be replaced deliberately. (a) would mix a rewrite with a migration and could not be verified by output identity; (c) leaves the risk in place.
 - **Consequences:** about 250 FixIt-derived files (MIT, attributed in `THIRD_PARTY_NOTICES.md`) are now ours to maintain; upstream fixes no longer arrive automatically. Features with no current use were not migrated. Phase 2 should replace these files progressively rather than restyle on top of them.
-
