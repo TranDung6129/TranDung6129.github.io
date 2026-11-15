@@ -187,3 +187,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Status:** BLOCKED; no origin connection. **Branch:** `docs/p1-08-live-retry`, base `a01366e`.
 - **Evidence:** Independent contributor tried Chromium 156.0.8078.79, normal TLS, `https://trandung6129.github.io/`: `net::ERR_TUNNEL_CONNECTION_FAILED`. `curl -I --max-time 12 https://trandung6129.github.io/` failed exit 56, proxy CONNECT HTTP 403. Environment status reports restricted egress and site hostname absent from effective allowlist. This is not an origin response and does not establish a site outage. No live checks or site screenshots passed. See [P1-08 report](audits/p1-08/README.md).
 - **Next:** Allow the site host and retry full live smoke, then maintainer sign-off. Continue independent Phase 2 specimen work; no homepage deployment or design approval inferred.
+
+### 2026-11-15 — P2-01 claim — Codex
+- **Status:** IN PROGRESS; P1-03 DONE. P1-08 live retry remains BLOCKED and is documented separately.
+- **Branch:** `feat/phase2-editorial-specimens`, stacked on `docs/p1-08-live-retry`.
+- **Scope:** Isolated editorial tokens, contrast and usage; no production homepage or site-wide visual rollout.
+- **Next:** Typography specimen and review-gated components.
