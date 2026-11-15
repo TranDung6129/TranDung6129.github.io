@@ -459,3 +459,54 @@ Working blobs, PARTIAL coverage; isolated render and production comparison passe
 | `docs/AGENT_LOG.md` | `18b95e262fd2c0945ceb5a583b33ab1475300669` | P2-05 scope, isolation test and limitations. |
 | `docs/CODEBASE_MAP.md` | `fe6cfda82f1dab4cc028c4519e7d13951d1b2d13` | Review-only future-format entrypoints; public routes unaffected. |
 | `docs/INSPECTED_FILES.md` | `619d85fc6d1f3032d230d03d861c5f7686a9eac2` | Registry self hash is pre-append. |
+
+## 2026-11-15 — P2-06 review checkpoint
+
+Working Git blobs at inspection; registry self hash pre-append. Coverage PARTIAL except narrowly authored test utilities; browser/axe evidence and limitations are documented in [REVIEW.md](design/REVIEW.md). Owner visual sign-off remains outstanding.
+
+| Path | Blob | Responsibility, consumers and risk |
+|---|---|---|
+| `layouts/_partials/specimen/navigation.html` | `9830f1096cc1720f6588eefa7cfa3bfe2cdb6c89` | Review masthead with actual section anchors and accessible mobile/search/theme controls; production layout does not import it. |
+| `layouts/_partials/specimen/interactions.html` | `b956403db41818425734f35fb12abad9d85394f2` | Review-only theme persistence, menu and search keyboard state; ignores stale asynchronous search responses. |
+| `layouts/_partials/specimen/home.html` | `27d56b607a12ec21e6c6dc60d1d2f77e43c55c86` | Review-only hero, journal and volume with original illustrative SVG, links local anchors; not the production homepage. |
+| `layouts/_partials/specimen/feature.html` | `45027d27342ff05151a328a7b03082dacb12c16b` | Parameterized review featured-essay partial, original SVG variants; illustrative titles are not fake live links. |
+| `layouts/_partials/specimen/art-landscape.html` | `8c4ce35ad9526800118286663b1d7e902a47b516` | Original AI-assisted geometric landscape SVG for review; provenance/rights review remains required before publication. |
+| `layouts/_partials/specimen/art-architecture.html` | `5bca6dd5d61d0d2756f6a69c57d6bb8226a12597` | Original AI-assisted geometric library SVG for review; decorative inside labeled wrapper. |
+| `layouts/_partials/specimen/typography.html` | `11ba90215e3e4af353ab23b90bb8ad42f88ed210` | Reading specimen with VI excerpt, native MathML, keyboard-scrollable named code region and existing related-reading links. |
+| `layouts/_partials/specimen/future.html` | `faec323d8086c2fef77b647b18f1d4a59e044a36` | Local section anchors and static nontransactional film/lab/discover/support/editions/advertising examples, explicit disclosure. |
+| `layouts/_partials/specimen/footer.html` | `aa1e9f2f914607c5e771c8b5593d2bf2692b3d6e` | Review-only footer, no public route ownership. |
+| `layouts/specimen/single.html` | `216bc6ae16301086ae6835e08b37fe466a9a898b` | Standalone review-only Hugo shell guarded by editorial-review environment; dynamically includes specimen partials. |
+| `assets/css/editorial/tokens.css` | `177b57a1a1684478c192be510ea8993f3f1e1ae2` | Review-only semantic color/type/spacing/motion tokens, text pairings checked; not imported by production. |
+| `assets/css/specimen/base.css` | `ff4584086bd783fad28adaaab2af1ea265f498ef` | Review shell basics and focus-visible styles including scrollable code region. |
+| `assets/css/specimen/navigation.css` | `2622bcb19c95f38f4091a65907c1961de4a8aabe` | Specimen masthead/menu/search controls, themed with editorial tokens. |
+| `assets/css/specimen/home.css` | `76ddb17c3799463b65a6cb67ad2086a3b3a7190d` | Specimen hero/feature/list/volume and high-contrast caption treatments. |
+| `assets/css/specimen/typography.css` | `db1953f0d9a4253dc5b1301af2191e50e3e23a5f` | Article, MathML/code and typography presentation, depends on semantic tokens. |
+| `assets/css/specimen/future.css` | `a1c5d74a779ffd8fd46ac507148f4ba42f363d01` | Static future-format and inactive ad-label presentation. |
+| `assets/css/specimen/responsive.css` | `0b11b934a6d77a7cde8b3a55720645b2116fe814` | Review breakpoint and reduced-motion rules, 44px mobile controls, independent of production. |
+| `scripts/preview-editorial.sh` | `64dc58158500b01d3f3ed3201f9a0baefa71baa6` | Temporary source snapshot and draft with GitInfo disabled and environment guard; loopback server, no repo content route. |
+| `scripts/test-editorial-typography.cjs` | `dd16cbefb5039abc6c15306eb6596590a4adb6cc` | Chromium checks type sample, MathML, code and overflow at 360/1440 light/dark. |
+| `scripts/test-editorial-navigation.cjs` | `cc94cde249c712df682ba574118d6c82f87af12e` | Chromium checks menu Escape/focus, search, stale async race and theme persistence. |
+| `scripts/test-editorial-review.cjs` | `648dfe824a61e1d1685b9f7d6f686449ffa80957` | Integrated 10-viewport/theme screenshots, interactions, link and overflow evidence; no owner sign-off. |
+| `scripts/test-editorial-axe.cjs` | `fc8935969e6c895da896e8edc2dbdd8bc02c7787` | Axe WCAG-tagged automated checks at 390/1440; incomplete cases need human review. |
+| `scripts/test-editorial-extra.cjs` | `9c094de9ee86d251d52a9ae7dbc0fd788feff4a3` | Mobile scrollable code keyboard focus/scroll and existing Nash search-link HTTP check. |
+| `scripts/test-editorial-fonts.cjs` | `8c6882ecdeef7ba6843a45c9e04e513594a0825f` | Chrome DevTools actual resolved platform font evidence; machine-specific fallback, not font approval. |
+| `scripts/test-editorial-computed.cjs` | `a1ca5246fb08fa79e64b59922045ef4f98d6ccd2` | Samples computed styles/overlap of axe-incomplete cases for manual review. |
+| `docs/design/REVIEW.md` | `91977d322f041fd571867728d2a81a179fcaf2c0` | Owner review entrypoint, previews, design-reference interpretation, artifacts, tests and limitations. |
+| `docs/design/TOKENS.md` | `976dbfedcceae1b34292732e0c656663a58b37f9` | Review-only token contract and color-contrast rationale. |
+| `docs/design/TYPOGRAPHY.md` | `438c38ff952f5b509a1f1ea63c995eb07153ab17` | Review type specimen, attributed excerpt and preview/test instructions; candidate font approval pending. |
+| `docs/design/FUTURE-SPECIMENS.md` | `05c249b78f5393ab18923cb761b7fa4351ec14b8` | Nontransactional future format and inactive advertising placeholder scope. |
+| `docs/design/ASSET-PROVENANCE.md` | `5701007fbd73208d2bade254e45bd6a149135477` | Original AI-assisted vector provenance; rights/editorial review before publication. |
+| `docs/design/check-token-contrast.py` | `dc1505561442a4edb3cb79a1b77757cdef3344f9` | Computes WCAG relative luminance for body/accent/muted against background and surface. |
+| `docs/design/review/artifact-blobs.tsv` | `3d135bd58f1e123178c2855f561ef339ed305c1e` | Git-blob manifest and sizes for 10 screenshots plus QA result JSON. |
+| `docs/TASK_BOARD.md` | `fa175331afe6965fee3d611029d04d91d410e867` | P1-08 blocked on live egress, P2-01–05 prototype checkpoints done, P2-06 blocked pending owner visual review. |
+| `docs/AGENT_LOG.md` | `3be2ba1e99b4c8d55487fe140b1d9cbaf1608e94` | Append-only P1 and P2 claim, tests, blockers and review evidence. |
+| `docs/CODEBASE_MAP.md` | `5acf3d18c0b2c6a3c3ec2ef91ac97928cb379f8c` | New gated review entrypoints; production homepage remains existing layouts/index.html. |
+| `docs/INSPECTED_FILES.md` | `2b89a7eef2420ab5cc32b11fac2c77887deaa9a5` | Knowledge registry, self-hash pre-append. |
+| `docs/DESIGN_SYSTEM.md` | `ee8ca775a8471bea29f69523dfc7f0c98109eef8` | Editorial tokens/typography candidates and prototype-first visual gate. |
+| `docs/VISUAL_DIRECTION.md` | `9181d328d71d874bc95c44daca2dec5a7607bd0c` | Magazine/book direction, no homepage approval, owner screenshot review required. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Routes, browser, accessibility, performance and evidence review gates. |
+| `config/_default/languages.toml` | `031b0c18b10f5fa91a44b42354f7c1cf55b69430` | Current configured vi/en/ja/zh-cn locales; preview uses existing config, not route migration. |
+| `config/_default/module.toml` | `aa0dcce387d347b441e346f7de90c844695c0117` | Current Hugo version requirement; no new theme/module dependency. |
+| `content/toan-hoc/riemann-hypothesis-number-theory.md` | `d038f61397e2531a230d4da3d82f90c634aa8c4c` | Existing VI article supplies attributed specimen excerpt; unchanged. |
+
+Review output group `docs/design/review/` (10 screenshot PNGs, browser/axe/font/contrast/performance JSON and retention evidence) is PARTIAL local-browser evidence, not live deployment, owner approval or complete WCAG evaluation. Artifact manifest SHA256 `204d01886f2b311ce8b7887b0479dbd7ccc15f0dd5c7cd5752eeac8a817efc72`. P1-08 live browser remained blocked by proxy CONNECT 403; no origin status inferred. Existing old `themes/` directories were left untouched after checkout and were not staged.

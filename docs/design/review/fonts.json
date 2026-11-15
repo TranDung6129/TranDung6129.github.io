@@ -1,0 +1,92 @@
+[
+  {
+    "name": "display",
+    "text": "Ideas worth staying with.",
+    "cssFamily": "Georgia, \"Times New Roman\", serif",
+    "fontSize": "87.04px",
+    "fonts": [
+      {
+        "familyName": "Liberation Serif",
+        "postScriptName": "LiberationSerif",
+        "isCustomFont": false,
+        "glyphCount": 17
+      },
+      {
+        "familyName": "Liberation Serif",
+        "postScriptName": "LiberationSerif-Italic",
+        "isCustomFont": false,
+        "glyphCount": 7
+      }
+    ]
+  },
+  {
+    "name": "vietnamese",
+    "text": "Khi chúng ta tìm cách hiểu một hiện tượng, điều quan trọng không chỉ là câu trả lời. Cách đặt câu hỏ",
+    "cssFamily": "Georgia, \"Times New Roman\", serif",
+    "fontSize": "17.6px",
+    "fonts": [
+      {
+        "familyName": "Liberation Serif",
+        "postScriptName": "LiberationSerif",
+        "isCustomFont": false,
+        "glyphCount": 186
+      }
+    ]
+  },
+  {
+    "name": "body",
+    "text": "A good model is an invitation to look more carefully: not a promise that the world will be simple, b",
+    "cssFamily": "Georgia, \"Times New Roman\", serif",
+    "fontSize": "21.6px",
+    "fonts": [
+      {
+        "familyName": "Liberation Serif",
+        "postScriptName": "LiberationSerif",
+        "isCustomFont": false,
+        "glyphCount": 136
+      }
+    ]
+  },
+  {
+    "name": "metadata",
+    "text": "By the editors · Design specimen · 15 November 2026",
+    "cssFamily": "system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "fontSize": "11.04px",
+    "fonts": [
+      {
+        "familyName": "Noto Sans",
+        "postScriptName": "NotoSans-Regular",
+        "isCustomFont": false,
+        "glyphCount": 51
+      }
+    ]
+  },
+  {
+    "name": "code",
+    "text": "def weighted_mean(values, weights):\n    total = sum(weights)\n    return sum(v * w for v, w in zip(va",
+    "cssFamily": "monospace",
+    "fontSize": "12.8px",
+    "fonts": [
+      {
+        "familyName": "DejaVu Sans Mono",
+        "postScriptName": "DejaVuSansMono",
+        "isCustomFont": false,
+        "glyphCount": 121
+      }
+    ]
+  },
+  {
+    "name": "math",
+    "text": "x¯=∑wixi∑wi",
+    "cssFamily": "math",
+    "fontSize": "24px",
+    "fonts": [
+      {
+        "familyName": "Latin Modern Math",
+        "postScriptName": "LatinModernMath-Regular",
+        "isCustomFont": false,
+        "glyphCount": 1
+      }
+    ]
+  }
+]

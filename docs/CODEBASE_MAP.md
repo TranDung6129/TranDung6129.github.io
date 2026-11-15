@@ -64,6 +64,8 @@ Review-only editorial composition lives in `layouts/_partials/specimen/home.html
 
 Review-only future formats: `layouts/_partials/specimen/future.html`, `footer.html` and `assets/css/specimen/future.css`; [scope](design/FUTURE-SPECIMENS.md). They provide no commerce or feature routes.
 
+Integrated review entrypoint: [design review](design/REVIEW.md), `scripts/preview-editorial.sh`, `scripts/test-editorial-{review,axe,extra,fonts,computed}.cjs`; `layouts/_partials/specimen/` and `assets/css/specimen/` are gated review-only. Production `layouts/index.html` is unchanged.
+
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
 - `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).

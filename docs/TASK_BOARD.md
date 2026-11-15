@@ -25,7 +25,7 @@
 | [x] | P2-03 | Accessible navigation primitives, buttons, focus states, mobile behavior, reduced motion | P1-04, P2-01 | DONE | Codex |
 | [x] | P2-04 | Editorial components: article cards, lead, quotes, media, code, TOC, citations, chapter navigation | P2-01, P2-02 | DONE | specimen_design / Codex |
 | [x] | P2-05 | Future-ready *visual-only* support/membership, Discover/affiliate, premium teaser, film, lab and ad specimens with disclosures | P2-01, P2-04 | DONE | Codex |
-| [ ] | P2-06 | Component showcase, usage docs, light/dark/mobile/accessibility/performance validation and sign-off | P2-02, P2-03, P2-04, P2-05 | IN PROGRESS | Codex |
+| [ ] | P2-06 | Component showcase, usage docs, light/dark/mobile/accessibility/performance validation and sign-off | P2-02, P2-03, P2-04, P2-05 | BLOCKED | Codex (owner visual review) |
 
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage
