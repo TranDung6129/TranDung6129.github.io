@@ -12,7 +12,7 @@
     grid-template-columns: 1fr;
   }
   .feature-image {
-    aspect-ratio: 2;
+    aspect-ratio: 1.5;
   }
   .featured-grid {
     gap: 1.5rem;
@@ -170,9 +170,6 @@
   }
   .hero-art {
     margin: -0.8rem -1rem 0 1rem;
-  }
-  .hero-art svg {
-    max-height: 290px;
   }
   .art-caption {
     font-size: 0.62rem;
