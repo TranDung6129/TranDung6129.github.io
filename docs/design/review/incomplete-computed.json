@@ -1,0 +1,3582 @@
+[
+  {
+    "width": 390,
+    "theme": "light",
+    "data": [
+      {
+        "sel": ".menu-toggle",
+        "text": "Menu ☰",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "flex",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "0px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 236.8125,
+          "y": 80.75,
+          "width": 44,
+          "height": 44
+        },
+        "chain": [
+          {
+            "tag": "BUTTON",
+            "cls": "menu-toggle",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(0, 0, 0)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption",
+        "text": "FIG. 01   An instrument for looking closer",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(106, 98, 86)",
+        "fontSize": "9.92px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 70.875,
+          "y": 778.140625,
+          "width": 301.125,
+          "height": 20.375
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(106, 98, 86)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(0, 0, 0)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption > span",
+        "text": "FIG. 01",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "inline",
+        "visibility": "visible",
+        "color": "rgb(140, 74, 50)",
+        "fontSize": "9.92px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 76.46875,
+          "y": 781.328125,
+          "width": 42.234375,
+          "height": 14
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(140, 74, 50)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(106, 98, 86)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".landscape > span",
+        "text": "FIG. 02 / PROBABILITY",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 28.390625,
+          "y": 1055.4375,
+          "width": 158.609375,
+          "height": 39.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image landscape",
+            "backgroundColor": "rgb(232, 226, 215)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".architecture > span",
+        "text": "FIG. 03 / REASON",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 28.390625,
+          "y": 1288.453125,
+          "width": 126.265625,
+          "height": 24.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image architecture",
+            "backgroundColor": "rgb(232, 226, 215)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"74\"]",
+        "text": "φ",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 74.30560302734375,
+          "y": 602.9644775390625,
+          "width": 5.125,
+          "height": 10
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"496\"]",
+        "text": "a little more wonder",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 304.12646484375,
+          "y": 672.4947509765625,
+          "width": 57.465118408203125,
+          "height": 8
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mover > mo",
+        "text": "¯",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "16.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 134.515625,
+          "y": 3582.953125,
+          "width": 8.390625,
+          "height": 1
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mover",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(1) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 182.578125,
+          "y": 3563.59375,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(2) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 193.015625,
+          "y": 3596.28125,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".language",
+        "text": "EN",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "none",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "12.8px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": "language",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "tools",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(0, 0, 0)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".book",
+        "text": "TheEpistemicDiaryVOLUME I",
+        "role": "img",
+        "ariaLabel": "Illustrative volume cover",
+        "ariaHidden": null,
+        "display": "flex",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 18,
+          "y": 1875.96875,
+          "width": 140,
+          "height": 200
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "book",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "volume-body",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ASIDE",
+            "cls": "volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "journal-volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "pre",
+        "text": "def weighted_mean(values, weights):\n    total = sum(weights)\n    return sum(v * w for v, w in zip(va",
+        "role": "region",
+        "ariaLabel": "Example Python code",
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 18,
+          "y": 3657.078125,
+          "width": 354,
+          "height": 106.625
+        },
+        "chain": [
+          {
+            "tag": "PRE",
+            "cls": null,
+            "backgroundColor": "rgb(232, 226, 215)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "type-study section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "data": [
+      {
+        "sel": ".menu-toggle",
+        "text": "Menu ☰",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "flex",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "0px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 236.8125,
+          "y": 80.75,
+          "width": 44,
+          "height": 44
+        },
+        "chain": [
+          {
+            "tag": "BUTTON",
+            "cls": "menu-toggle",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 255, 255)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption",
+        "text": "FIG. 01   An instrument for looking closer",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(166, 154, 139)",
+        "fontSize": "9.92px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 70.875,
+          "y": 778.140625,
+          "width": 301.125,
+          "height": 20.375
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(166, 154, 139)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 255, 255)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption > span",
+        "text": "FIG. 01",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "inline",
+        "visibility": "visible",
+        "color": "rgb(212, 163, 115)",
+        "fontSize": "9.92px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 76.46875,
+          "y": 781.328125,
+          "width": 42.234375,
+          "height": 14
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(212, 163, 115)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(166, 154, 139)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".landscape > span",
+        "text": "FIG. 02 / PROBABILITY",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 28.390625,
+          "y": 1055.4375,
+          "width": 158.609375,
+          "height": 39.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image landscape",
+            "backgroundColor": "rgb(41, 37, 33)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".architecture > span",
+        "text": "FIG. 03 / REASON",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 28.390625,
+          "y": 1288.453125,
+          "width": 126.265625,
+          "height": 24.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image architecture",
+            "backgroundColor": "rgb(41, 37, 33)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"74\"]",
+        "text": "φ",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 74.30560302734375,
+          "y": 602.9644775390625,
+          "width": 5.125,
+          "height": 10
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"496\"]",
+        "text": "a little more wonder",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 304.12646484375,
+          "y": 672.4947509765625,
+          "width": 57.465118408203125,
+          "height": 8
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mover > mo",
+        "text": "¯",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "16.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 134.515625,
+          "y": 3582.953125,
+          "width": 8.390625,
+          "height": 1
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mover",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(1) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 182.578125,
+          "y": 3563.59375,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(2) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 193.015625,
+          "y": 3596.28125,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".language",
+        "text": "EN",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "none",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "12.8px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": "language",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "tools",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 255, 255)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".book",
+        "text": "TheEpistemicDiaryVOLUME I",
+        "role": "img",
+        "ariaLabel": "Illustrative volume cover",
+        "ariaHidden": null,
+        "display": "flex",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 18,
+          "y": 1875.96875,
+          "width": 140,
+          "height": 200
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "book",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "volume-body",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ASIDE",
+            "cls": "volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "journal-volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "pre",
+        "text": "def weighted_mean(values, weights):\n    total = sum(weights)\n    return sum(v * w for v, w in zip(va",
+        "role": "region",
+        "ariaLabel": "Example Python code",
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 18,
+          "y": 3657.078125,
+          "width": 354,
+          "height": 106.625
+        },
+        "chain": [
+          {
+            "tag": "PRE",
+            "cls": null,
+            "backgroundColor": "rgb(41, 37, 33)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "type-study section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "data": [
+      {
+        "sel": ".menu-toggle",
+        "text": "Menu ☰",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "none",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "chain": [
+          {
+            "tag": "BUTTON",
+            "cls": "menu-toggle",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(0, 0, 0)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption",
+        "text": "FIG. 01   An instrument for looking closer",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(106, 98, 86)",
+        "fontSize": "10.4px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 1060.734375,
+          "y": 611.6875,
+          "width": 315.265625,
+          "height": 20.375
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(106, 98, 86)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(0, 0, 0)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption > span",
+        "text": "FIG. 01",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "inline",
+        "visibility": "visible",
+        "color": "rgb(140, 74, 50)",
+        "fontSize": "10.4px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 1066.328125,
+          "y": 614.875,
+          "width": 44.296875,
+          "height": 14
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(140, 74, 50)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(106, 98, 86)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".landscape > span",
+        "text": "FIG. 02 / PROBABILITY",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 58.390625,
+          "y": 932.890625,
+          "width": 161.546875,
+          "height": 24.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image landscape",
+            "backgroundColor": "rgb(232, 226, 215)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".architecture > span",
+        "text": "FIG. 03 / REASON",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 779.390625,
+          "y": 923.359375,
+          "width": 126.265625,
+          "height": 24.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image architecture",
+            "backgroundColor": "rgb(232, 226, 215)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"74\"]",
+        "text": "φ",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 775.5927124023438,
+          "y": 287.8016357421875,
+          "width": 9,
+          "height": 18
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"496\"]",
+        "text": "a little more wonder",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 1179.244873046875,
+          "y": 409.4103088378906,
+          "width": 100.796142578125,
+          "height": 14
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mover > mo",
+        "text": "¯",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "16.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 725.921875,
+          "y": 2573.9375,
+          "width": 8.390625,
+          "height": 1
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mover",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(1) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 773.984375,
+          "y": 2554.578125,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(2) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 784.421875,
+          "y": 2587.265625,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".language",
+        "text": "EN",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "12.8px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 1357.421875,
+          "y": 58.09375,
+          "width": 34.578125,
+          "height": 18
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": "language",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "tools",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(0, 0, 0)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".book",
+        "text": "TheEpistemicDiaryVOLUME I",
+        "role": "img",
+        "ariaLabel": "Illustrative volume cover",
+        "ariaHidden": null,
+        "display": "flex",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 945.96875,
+          "y": 1061.890625,
+          "width": 160.5625,
+          "height": 225
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "book",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "volume-body",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ASIDE",
+            "cls": "volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "journal-volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "pre",
+        "text": "def weighted_mean(values, weights):\n    total = sum(weights)\n    return sum(v * w for v, w in zip(va",
+        "role": "region",
+        "ariaLabel": "Example Python code",
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(51, 46, 40)",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 478.515625,
+          "y": 2648.0625,
+          "width": 615.78125,
+          "height": 106.625
+        },
+        "chain": [
+          {
+            "tag": "PRE",
+            "cls": null,
+            "backgroundColor": "rgb(232, 226, 215)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "type-study section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(247, 245, 240)",
+            "backgroundImage": "none",
+            "color": "rgb(51, 46, 40)",
+            "opacity": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "data": [
+      {
+        "sel": ".menu-toggle",
+        "text": "Menu ☰",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "none",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "chain": [
+          {
+            "tag": "BUTTON",
+            "cls": "menu-toggle",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 255, 255)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption",
+        "text": "FIG. 01   An instrument for looking closer",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(166, 154, 139)",
+        "fontSize": "10.4px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 1060.734375,
+          "y": 611.6875,
+          "width": 315.265625,
+          "height": 20.375
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(166, 154, 139)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 255, 255)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".art-caption > span",
+        "text": "FIG. 01",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "inline",
+        "visibility": "visible",
+        "color": "rgb(212, 163, 115)",
+        "fontSize": "10.4px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 1066.328125,
+          "y": 614.875,
+          "width": 44.296875,
+          "height": 14
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(212, 163, 115)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "art-caption",
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(166, 154, 139)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".landscape > span",
+        "text": "FIG. 02 / PROBABILITY",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 58.390625,
+          "y": 932.890625,
+          "width": 161.546875,
+          "height": 24.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image landscape",
+            "backgroundColor": "rgb(41, 37, 33)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".architecture > span",
+        "text": "FIG. 03 / REASON",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(255, 250, 240)",
+        "fontSize": "10.88px",
+        "fontWeight": "700",
+        "textShadow": "none",
+        "box": {
+          "x": 779.390625,
+          "y": 923.359375,
+          "width": 126.265625,
+          "height": 24.59375
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": null,
+            "backgroundColor": "rgb(51, 46, 40)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 250, 240)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "feature-image architecture",
+            "backgroundColor": "rgb(41, 37, 33)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "feature",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "featured-grid",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"74\"]",
+        "text": "φ",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 775.5927124023438,
+          "y": 287.8016357421875,
+          "width": 9,
+          "height": 18
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "text[x=\"496\"]",
+        "text": "a little more wonder",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 1179.244873046875,
+          "y": 409.4103088378906,
+          "width": 100.796142578125,
+          "height": 14
+        },
+        "chain": [
+          {
+            "tag": "text",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "svg",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "hero-art",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "hero",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mover > mo",
+        "text": "¯",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "16.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 725.921875,
+          "y": 2573.9375,
+          "width": 8.390625,
+          "height": 1
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mover",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(1) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 773.984375,
+          "y": 2554.578125,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "mrow:nth-child(2) > mo",
+        "text": "∑",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block math",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 784.421875,
+          "y": 2587.265625,
+          "width": 25.359375,
+          "height": 24
+        },
+        "chain": [
+          {
+            "tag": "mo",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mrow",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "mfrac",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "math",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "math-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".language",
+        "text": "EN",
+        "role": null,
+        "ariaLabel": null,
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "12.8px",
+        "fontWeight": "600",
+        "textShadow": "none",
+        "box": {
+          "x": 1357.421875,
+          "y": 58.09375,
+          "width": 34.578125,
+          "height": 18
+        },
+        "chain": [
+          {
+            "tag": "SPAN",
+            "cls": "language",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "tools",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "masthead-top",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HEADER",
+            "cls": "masthead wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "HTML",
+            "cls": null,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(255, 255, 255)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": ".book",
+        "text": "TheEpistemicDiaryVOLUME I",
+        "role": "img",
+        "ariaLabel": "Illustrative volume cover",
+        "ariaHidden": null,
+        "display": "flex",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 945.96875,
+          "y": 1061.890625,
+          "width": 160.5625,
+          "height": 225
+        },
+        "chain": [
+          {
+            "tag": "DIV",
+            "cls": "book",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "volume-body",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ASIDE",
+            "cls": "volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "journal-volume",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "sel": "pre",
+        "text": "def weighted_mean(values, weights):\n    total = sum(weights)\n    return sum(v * w for v, w in zip(va",
+        "role": "region",
+        "ariaLabel": "Example Python code",
+        "ariaHidden": null,
+        "display": "block",
+        "visibility": "visible",
+        "color": "rgb(226, 220, 208)",
+        "fontSize": "12.8px",
+        "fontWeight": "400",
+        "textShadow": "none",
+        "box": {
+          "x": 478.515625,
+          "y": 2648.0625,
+          "width": 615.78125,
+          "height": 106.625
+        },
+        "chain": [
+          {
+            "tag": "PRE",
+            "cls": null,
+            "backgroundColor": "rgb(41, 37, 33)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "ARTICLE",
+            "cls": "prose",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "DIV",
+            "cls": "type-layout",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "SECTION",
+            "cls": "type-study section-block",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "MAIN",
+            "cls": "wrap",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          },
+          {
+            "tag": "BODY",
+            "cls": null,
+            "backgroundColor": "rgb(26, 24, 22)",
+            "backgroundImage": "none",
+            "color": "rgb(226, 220, 208)",
+            "opacity": "1"
+          }
+        ]
+      }
+    ]
+  }
+]

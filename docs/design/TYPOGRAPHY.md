@@ -1,0 +1,9 @@
+# Typography specimen
+
+The review-only Hugo specimen tests network-independent system serif/sans/monospace stacks: English and Vietnamese diacritics, a real existing Riemann-article excerpt, long title, metadata, italic quote, code, caption and native MathML. The excerpt is attributed and remains unchanged in content. These stacks are a starting point, not final font adoption. Read and compare against the requested typeface candidates before selecting a production face.
+
+Run `PATH=/workspace/.cloud-tools/bin:$PATH scripts/preview-editorial.sh`, or put Hugo Extended 0.149.0 on PATH first, then open `/editorial-review/` on port 1317. The script creates a temporary snapshot, inserts a draft there, disables GitInfo only in that snapshot and uses the `editorial-review` environment; no review content lives in the checkout. Template guard requires that environment. Restart the script after source edits. Stop it with Ctrl+C. Production build has no preview route.
+
+Chromium capture: `NODE_PATH=/tmp/p1-02-browser/node_modules node scripts/test-editorial-typography.cjs` against the running server. Four images at 360/1440 in light/dark are under `screenshots/`; automated checks confirmed Vietnamese text, nonzero MathML layout, code and no horizontal overflow. These screenshots are an intermediate specimen, not aesthetic approval or a comprehensive accessibility/typeface decision. Full composition and multi-width review follow.
+
+Actual Chromium font resolution and final cross-theme/mobile results are documented in [the review report](REVIEW.md). Liberation Serif was the measured display/VI face in this environment, not Georgia; system fallback varies. Candidate font adoption and owner design review remain pending.

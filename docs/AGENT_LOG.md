@@ -182,3 +182,108 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Regression review:** Checked stored P1-07 report and results (647 output files, 355 screenshot states, 8/8 interactions, MathJax/Cal-Heatmap, SEO 201 pages). These tests were run by Claude, not rerun independently here.
 - **Blocker:** Public site cannot be fetched from this review environment via web/DNS, so no independent live browser/HTTP smoke evidence. Do not mark P1-08 DONE until that specific gate is demonstrated.
 - **Next:** trusted browser smoke, screenshots and console/HTTP findings per [P1-08 audit](audits/p1-08/README.md); Phase 2 concept may proceed separately as a design prototype, not automatic production homepage redesign.
+
+### 2026-11-15 — P1-08 live retry — Codex
+- **Status:** BLOCKED; no origin connection. **Branch:** `docs/p1-08-live-retry`, base `a01366e`.
+- **Evidence:** Independent contributor tried Chromium 156.0.8078.79, normal TLS, `https://trandung6129.github.io/`: `net::ERR_TUNNEL_CONNECTION_FAILED`. `curl -I --max-time 12 https://trandung6129.github.io/` failed exit 56, proxy CONNECT HTTP 403. Environment status reports restricted egress and site hostname absent from effective allowlist. This is not an origin response and does not establish a site outage. No live checks or site screenshots passed. See [P1-08 report](audits/p1-08/README.md).
+- **Next:** Allow the site host and retry full live smoke, then maintainer sign-off. Continue independent Phase 2 specimen work; no homepage deployment or design approval inferred.
+
+### 2026-11-15 — P2-01 claim — Codex
+- **Status:** IN PROGRESS; P1-03 DONE. P1-08 live retry remains BLOCKED and is documented separately.
+- **Branch:** `feat/phase2-editorial-specimens`, stacked on `docs/p1-08-live-retry`.
+- **Scope:** Isolated editorial tokens, contrast and usage; no production homepage or site-wide visual rollout.
+- **Next:** Typography specimen and review-gated components.
+
+### 2026-11-15 — P2-01 — Codex evidence
+- **Status:** DONE for token implementation/contrast; owner visual approval remains pending P2-06. Branch `feat/phase2-editorial-specimens`, claim `c074a64`.
+- **Files:** `assets/css/editorial/tokens.css`, `docs/design/TOKENS.md`, `docs/design/check-token-contrast.py`, map, registry and status. Tokens are not imported in public templates.
+- **Tests:** `python3 docs/design/check-token-contrast.py` PASS: body/accent/muted >=4.5:1 on paper and surfaces in light/dark. Light muted changed to #6A6256 due baseline #7A7265 measuring 4.36:1 on paper. `npm run build -- --destination /tmp/p201-public` PASS. A separate build with only the new unreferenced token file temporarily moved outside checkout produced 647/647 paths, 0 changed bytes. Initial P1-02 route check failed because P1-07 deliberately changed baseline paths; comparison rerun against current main output instead.
+- **Limits:** System font stacks are candidates, not final adoption; typography/actual visual review remains P2-02/P2-06. Browser visual approval not claimed. P1-08 remains blocked on live egress.
+
+### 2026-11-15 — P2-02 claim — Codex
+- **Status:** IN PROGRESS; P2-01 tokens pass on stacked branch.
+- **Branch:** `feat/p2-02-typography`, based on `feat/p2-01-tokens`.
+- **Scope:** Real browser typography specimen with Vietnamese/English, math and code. Prototype remains local-only, no homepage production change.
+
+### 2026-11-15 — P2-02 — Codex evidence
+- **Status:** DONE for the typography specimen and automated rendering checks; visual direction and final typeface remain UNAPPROVED pending owner review. **Branch:** `feat/p2-02-typography`, claim `93a88cd`.
+- **Files:** review-only Hugo template, typography partial/CSS, preview script, browser check and four preliminary screenshots; [type notes](design/TYPOGRAPHY.md). Native MathML and existing Vietnamese excerpt are included; no content/page changes in the repository. Contributor drafted composition in temporary directory; integrator isolated and tested typography checkpoint.
+- **Checks:** `PATH=/workspace/.cloud-tools/bin:$PATH scripts/preview-editorial.sh` PASS after supported `--enableGitInfo=false` in the temporary source (initial run failed because copied tree lacked .git). Preview HTTP 200, Vietnamese and MathML/code present. `NODE_PATH=/tmp/p1-02-browser/node_modules node scripts/test-editorial-typography.cjs` PASS at 360/1440 light/dark: math has nonzero rendered width, Vietnamese and code present, no horizontal overflow. Screenshots in `docs/design/screenshots/`. Production Hugo build and SHA256 tree comparison vs `/tmp/p201-before` PASS: 647 paths, zero added/removed/changed bytes and no editorial-review route.
+- **Limits:** Font fallback stacks are provisional, not an owner selection; no full accessibility or performance certification. P2-03/04/05 and full visual review follow. P1-08 remains BLOCKED on live-site proxy egress.
+
+### 2026-11-15 — P2-03 claim — Codex
+- **Status:** IN PROGRESS; dependencies P1-04 and P2-01 DONE.
+- **Branch:** `feat/p2-03-navigation` stacked on P2-02.
+- **Scope:** Review-only editorial navigation/search/mobile menu and theme controls; no public route changes.
+
+### 2026-11-15 — P2-03 navigation checkpoint — Codex
+- **Status:** IN PROGRESS: core navigation and local interaction probes pass; section anchors and full responsive/accessibility review await integrated P2-04/05 specimen. Branch `feat/p2-03-navigation`, claim `ce9d298`.
+- **Change:** Review-only masthead, mobile menu, local article search and theme persistence; keyboard Escape closes menu and search with focus return. Search uses a request sequence to ignore stale asynchronous responses. Responsive CSS updated; trailing blank lines from P2-02 corrected without semantic changes. No public homepage modification.
+- **Checks:** `NODE_PATH=/tmp/p1-02-browser/node_modules node scripts/test-editorial-navigation.cjs` PASS on local preview: menu open/Escape focus, theme persistence, delayed search race, real Nash search results and search Escape. Full link/keyboard/motion testing follows integrated specimen; no owner visual approval claimed.
+
+### 2026-11-15 — P2-04 claim — specimen_design / Codex integrator
+- **Status:** IN PROGRESS; P2-01/02 done on stacked branches. P2-03 remains in progress pending integrated anchors.
+- **Branch:** `feat/p2-04-editorial-components`, stacked on P2-03.
+- **Scope:** Reusable editorial components and isolated experimental homepage composition; original SVG illustration only. No production homepage changes.
+
+### 2026-11-15 — P2-04 — specimen_design / Codex
+- **Status:** DONE for isolated editorial component prototypes; production propagation and owner visual approval remain pending P2-06. **Branch:** `feat/p2-04-editorial-components`, claim `5d52416`. P2-03 remains IN PROGRESS pending final integrated anchors.
+- **Files:** `layouts/_partials/specimen/{home,feature,art-landscape,art-architecture}.html`, `assets/css/specimen/home.css`, [illustration provenance](design/ASSET-PROVENANCE.md). Two featured entries share the parameterized `feature.html`; journal/volume/hero are specimen composition. Original SVG illustrations are AI-assisted, illustrative and not a copied background; publication rights review remains pending.
+- **Tests:** Local review route HTTP 200 contains hero, two featured components, journal and volume anchors; `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/p204-public` PASS, 647 production files and byte-identical tree vs `/tmp/p201-before`, no review route. Full browser visual/keyboard/contrast QA and screenshot review follow after P2-05 integration; no maintainer approval claimed.
+
+### 2026-11-15 — P2-05 claim — Codex
+- **Status:** IN PROGRESS; P2-01 and P2-04 done on stacked branches.
+- **Branch:** `feat/p2-05-future-specimens`, stacked on P2-04.
+- **Scope:** Visual-only future formats; no commerce, auth, payment, subscription or infrastructure.
+
+### 2026-11-15 — P2-05 — Codex evidence
+- **Status:** DONE for visual-only prototypes; real product, payment, subscription, affiliate, auth and advertising remain deferred. **Branch:** `feat/p2-05-future-specimens`, claim `a115df9`; stacked on P2-04.
+- **Files:** `layouts/_partials/specimen/{future,footer}.html`, `assets/css/specimen/future.css`, responsive update, [future specimen notes](design/FUTURE-SPECIMENS.md). Contains Films, Labs, Discover, Support, original Editions; Volume is in P2-04 composition. No fake checkout or undeployed production route.
+- **Tests:** Local preview contains all five future labels plus volume. `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/p205-public` PASS; compared to `/tmp/p201-before`, 647/647 output files, zero added/removed/changed bytes, no editorial-review route. Integrated responsive/keyboard/accessibility/screenshot QA follows P2-06; owner visual approval remains UNTESTED.
+
+### 2026-11-15 — P2-03 integrated navigation verification
+- **Status:** DONE for review-only navigation behavior; owner visual approval remains pending. Branch code `feat/p2-03-navigation`, claim `ce9d298`; verification on stacked P2-05 composition.
+- **Tests:** Focused `scripts/test-editorial-navigation.cjs` PASS: mobile menu/Escape/focus, theme persistence, delayed search stale-result race, real Nash search and search Escape. Independent Playwright integrated run recorded 80/80 interaction/layout checks and working anchors across 360/390/768/1024/1440 light/dark; no console/network errors observed. Full accessibility audit and owner aesthetic sign-off are not claimed. One unrelated scrollable code region needed keyboard focus; fix tracked in P2-06.
+
+### 2026-11-15 — P2-06 claim — Codex
+- **Status:** IN PROGRESS; P2-02–05 prototype checkpoints complete on stacked branches.
+- **Branch:** `feat/p2-06-review`, stacked on P2-05.
+- **Scope:** Integrated screenshot, keyboard, reduced-motion, contrast/accessibility and performance review; owner visual sign-off required.
+
+### 2026-11-15 — P2-06 integrated review — Codex
+- **Status:** BLOCKED awaiting owner visual review; do not mark visual direction or Phase 2 approved. **Branch:** `feat/p2-06-review`, claim `7909c88`, stacked after P2-01–05 checkpoints. No homepage deployment, no production source/route changes. P1-08 separately BLOCKED by live-site egress.
+- **Files:** [review report](design/REVIEW.md), `docs/design/review/` screenshots/JSON, P2-06 QA scripts in `scripts/test-editorial-{review,axe,extra,fonts,computed}.cjs`; fixes to review-only typography/nav/home/future partials and CSS. Component examples remain guarded to `editorial-review`, with content created only in a temporary snapshot. Preview command and environment limitation are in review report.
+- **Tests:** `PATH=/workspace/.cloud-tools/bin:$PATH scripts/preview-editorial.sh` PASS, local `/editorial-review/` HTTP 200. Independent Playwright 1.65.1/Chromium 156 on 360/390/768/1024/1440 light/dark: 84/84 checks PASS, 10 full-page screenshots, 16 links valid, no page console errors, failed requests or HTTP errors; keyboard/menu/search/theme/reduced-motion and MathML observed. Integrator repeated `P2_URL=http://127.0.0.1:1317/editorial-review/ P2_QA_OUT=/tmp/p2-repro-final NODE_PATH=/tmp/p2-qa/node_modules:/tmp/p1-02-browser/node_modules node scripts/test-editorial-review.cjs` PASS 84/84. At 360, code region received 3px focus outline and ArrowRight scrolled 0→194px; actual Nash search result returned HTTP 200.
+- **Accessibility/contrast:** axe-core 4.10.2: 0 reported violations at 390/1440 light/dark, but 11/9 incomplete contrast checks per viewport/theme require manual assessment. Initial scrollable code-focus failure and ARIA role issues were fixed and rerun. Opaque image-caption backing and larger mobile controls were added after manual review; sampled caption contrast 12.92:1 and token pairs >=4.5:1, touch controls 44×44px. This is not full WCAG or assistive-tech sign-off.
+- **Typography/performance:** Real Chromium fonts: Liberation Serif for headings/VI, Noto Sans metadata, DejaVu Sans Mono code, Latin Modern Math. Candidate font decision still pending; different environments may differ. Unthrottled local-only single run: 390 light load 492.9ms/FCP 484ms, 1440 light load 249ms/FCP 264ms; not field CWV.
+- **Isolation:** `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/p206-final-public` PASS; SHA256 comparison with pre-specimen `/tmp/p201-before`: 647/647, no added/removed/changed files and preview route absent. Current homepage not replaced. Placeholder future formats and inactive ad label have no commercial integrations.
+- **Review/next:** `specimen_design` contributed original, illustrative SVG and layout split; `specimen_qa` independently tested. Integrator inspected desktop light/mobile dark screenshots, fixed focus/ARIA, caption contrast, touch targets and async search race, and repeated QA. This is not owner approval. Owner should review [screenshots and preview instructions](design/REVIEW.md) before visual language is propagated. P1-08 needs site hostname allowlisted and full trusted live smoke.
+
+### 2026-11-15 — checkpoint publication — Codex
+- **Status:** Review branches pushed; P1-08 remains BLOCKED on trusted live-site access, P2-06 remains BLOCKED on owner visual review.
+- **PR delivery:** `gh pr create --base main --head docs/p1-08-live-retry --title 'docs: record P1-08 live smoke retry' --body-file /tmp/p108-pr-body.md` failed: `Post https://api.github.com/graphql: Forbidden`. No PR was created; [PR plan](design/PR-PLAN.md) lists all pushed stacked branches and appropriate bases. The production homepage was not changed or deployed.
+- **Final checks:** Full current local specimen is available in the running environment on port 1317; 84/84 browser checks, ten screenshots and no reported axe violations, with incomplete cases and owner review explicitly retained. Normal production output is unchanged across 647 files.
+
+### 2026-11-15 — P2 visual asset follow-up claim — Codex
+- **Status:** IN PROGRESS for owner-supplied asset integration and separate typography comparison; P2-06 remains BLOCKED pending final owner approval. The owner approved the existing layout, spacing, hierarchy, color direction and component structure as design direction only.
+- **Branch:** `feat/p2-visual-assets-v2`, based on `feat/p2-06-review` at `efb2667`.
+- **Scope:** Integrate the four specified revised owner-supplied artwork files into the isolated preview without regenerating artwork, preserve originals, optimize responsively and record provenance; compare Newsreader/Source Serif 4/Lora separately. Production homepage and fonts remain unchanged.
+- **Initial blocker:** Four images are visible in the user message but the named ZIP and source files are not available in workspace attachments. Do not substitute or regenerate images; continue independent typography work and ask for the original bundle if still unavailable.
+
+### 2026-11-15 — P2 artwork v2 and typography follow-up — Codex
+- **Status:** Artwork integration and independent type specimen ready for owner review; P2-06 remains BLOCKED pending final visual approval. The initial missing-bundle blocker was resolved by the owner's subsequent ZIP attachment. No production redesign or deployment.
+- **Branch and checkpoints:** `feat/p2-visual-assets-v2` based on `efb2667`; claim `a0d1fc1`; artwork `5e428e7`, separate type comparison `f605abe`, unobscured caption/link fix `e5f7f12`.
+- **Artwork:** Four original owner-supplied AI-generated PNGs retained exactly, eleven responsive WebP derivatives, semantic captions and alt text, no automatic inversion or deliberate crop. Standard visible integral and metric notation and limitations of decorative geometry are recorded in [provenance](design/ASSET-PROVENANCE.md); rights and editorial checks remain pending before production publication.
+- **Validation:** `python3 scripts/test-editorial-art.py` passed all source hashes and 11 derivatives. Chromium review passed 84/84 checks across five widths in both themes with no console/request/HTTP errors; 40 artwork image checks and 12 focused crops passed. Scoped baseline comparison found no differences in 27 non-image selectors and 17 tokens across 10 cases. Axe reported zero violations at 390/1440 in both themes, with 4 mobile and 2 desktop contrast cases incomplete per theme; manual review remains necessary. [Evidence and reproduction](design/review-v2/README.md).
+- **Isolation:** Final normal Hugo production build matched the pre-specimen baseline across 647 files byte-for-byte, with no review route, artwork or typography comparison emitted. Local timing observations are not field performance measurements.
+- **Typography:** [Separate Newsreader, Source Serif 4 and Lora specimen](design/typography-comparison/README.md) tested Vietnamese, English and mathematical text in both themes at desktop/mobile. Browser and axe checks passed with incomplete contrast cases requiring manual review; no font selected or production font changed. The owner approved the design direction only, not final visuals.
+
+### 2026-11-15 — artwork review publication — Codex
+- **Branch:** `feat/p2-visual-assets-v2` pushed; review base `feat/p2-06-review`.
+- **PR blocker:** `gh pr create --base feat/p2-06-review --head feat/p2-visual-assets-v2` returned `Post https://api.github.com/graphql: Forbidden`. No pull request was created; the pushed branch remains available for a manual PR. P2-06 remains blocked pending owner visual approval.
+
+### 2026-11-15 — P2-06 maintainer acceptance and integration
+- **Owner:** Approved merging Phase 2 design specimen and v2 artworks as a reversible milestone without waiting for additional visual review. Chose Source Serif 4 for reading text and Newsreader for headlines.
+- **Font scope:** Self-hosted 12 licensed variable WOFF2 files copied from already sourced font comparison, loaded only in Hugo `editorial-review` preview build. Original license notices remain under `docs/design/typography-comparison/fonts/`.
+- **Evidence:** Codex reports 84/84 browser, 40/40 image and 647/647 unchanged production build **before this font wiring**. Independent browser/font rerun after this final change is still required before production typography migration; this integration is owner's reversible design acceptance, not proof of production homepage change.
+- **P1-08:** Live browser smoke remains BLOCKED independently.

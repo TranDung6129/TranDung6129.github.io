@@ -1,0 +1,290 @@
+[
+  {
+    "width": 390,
+    "dark": false,
+    "ok": true,
+    "overflow": false,
+    "math": [
+      358,
+      358,
+      358
+    ],
+    "samples": 3,
+    "theme": "light",
+    "fonts": {
+      "newsreader": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "source-serif-4": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Regular",
+          "isCustomFont": true,
+          "glyphCount": 184
+        }
+      ],
+      "lora": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Regular",
+          "isCustomFont": true,
+          "glyphCount": 184
+        }
+      ],
+      "newsreader-italic": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "source-serif-4-italic": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "lora-italic": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "math": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 1
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "ok": true,
+    "overflow": false,
+    "math": [
+      358,
+      358,
+      358
+    ],
+    "samples": 3,
+    "theme": "dark",
+    "fonts": {
+      "newsreader": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "source-serif-4": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Regular",
+          "isCustomFont": true,
+          "glyphCount": 184
+        }
+      ],
+      "lora": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Regular",
+          "isCustomFont": true,
+          "glyphCount": 184
+        }
+      ],
+      "newsreader-italic": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "source-serif-4-italic": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "lora-italic": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "math": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 1
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "dark": false,
+    "ok": true,
+    "overflow": false,
+    "math": [
+      420.265625,
+      387.265625,
+      387.265625
+    ],
+    "samples": 3,
+    "theme": "light",
+    "fonts": {
+      "newsreader": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "source-serif-4": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "lora": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "newsreader-italic": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "source-serif-4-italic": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "lora-italic": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "math": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 1
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "ok": true,
+    "overflow": false,
+    "math": [
+      420.265625,
+      387.265625,
+      387.265625
+    ],
+    "samples": 3,
+    "theme": "dark",
+    "fonts": {
+      "newsreader": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "source-serif-4": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "lora": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Regular",
+          "isCustomFont": true,
+          "glyphCount": 185
+        }
+      ],
+      "newsreader-italic": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "source-serif-4-italic": [
+        {
+          "familyName": "Source Serif 4",
+          "postScriptName": "SourceSerif4-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "lora-italic": [
+        {
+          "familyName": "Lora",
+          "postScriptName": "Lora-Italic",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ],
+      "math": [
+        {
+          "familyName": "Newsreader 16pt 16pt",
+          "postScriptName": "Newsreader16pt16pt-Regular",
+          "isCustomFont": true,
+          "glyphCount": 1
+        }
+      ]
+    },
+    "errors": []
+  }
+]

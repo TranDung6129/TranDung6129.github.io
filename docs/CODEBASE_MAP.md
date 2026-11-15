@@ -56,6 +56,16 @@ FixIt and the bookmark module are gone. Everything the site renders with is in t
 
 Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_partials/site/header.html` and `footer.html` to FixIt. It affects home as well as other page kinds; test all output before changes. Derived FixIt templates retain upstream MIT terms in `layouts/_default/FIXIT-LICENSE.txt`.
 
+P2-01 review-only tokens live at `assets/css/editorial/tokens.css`; [usage and contrast](design/TOKENS.md) and `docs/design/check-token-contrast.py` accompany them. They are not imported in production.
+
+P2-02 local specimen: `scripts/preview-editorial.sh` builds a temporary snapshot and review-only `layouts/specimen/single.html` with `layouts/_partials/specimen/typography.html` and `assets/css/specimen/`; [type notes](design/TYPOGRAPHY.md). There is no production content route.
+
+Review-only editorial composition lives in `layouts/_partials/specimen/home.html`, reusable `feature.html`/`art-image.html` and `assets/css/specimen/home.css`; owner originals are in `assets/editorial-source/`, WebPs in `assets/editorial-art/`, with [provenance](design/ASSET-PROVENANCE.md). Separate font review: `docs/design/typography-comparison/`. Production homepage remains `layouts/index.html`.
+
+Review-only future formats: `layouts/_partials/specimen/future.html`, `footer.html` and `assets/css/specimen/future.css`; [scope](design/FUTURE-SPECIMENS.md). They provide no commerce or feature routes.
+
+Integrated review entrypoint: [design review](design/REVIEW.md), `scripts/preview-editorial.sh`, `scripts/test-editorial-{review,axe,extra,fonts,computed}.cjs`; `layouts/_partials/specimen/` and `assets/css/specimen/` are gated review-only. Production `layouts/index.html` is unchanged.
+
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
 - `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).

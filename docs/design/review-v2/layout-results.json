@@ -1,0 +1,111 @@
+{
+  "method": "Same browser, same viewport/theme, unmodified base efb2667 on port 1318 versus asset integration on port 1317; computed styles of named non-image layout elements and tokens, no pixel identity or owner approval implied.",
+  "selectors": [
+    ".masthead",
+    ".masthead-top",
+    ".wordmark",
+    "#editorial-nav",
+    ".menu-toggle",
+    ".tools",
+    ".masthead-meta",
+    ".hero",
+    ".hero-copy",
+    ".hero h1",
+    ".hero-deck",
+    ".featured-grid",
+    ".feature",
+    ".feature-copy h3",
+    ".journal-volume",
+    ".journal",
+    ".reading-list",
+    ".volume",
+    ".volume-body",
+    ".type-layout",
+    ".type-index",
+    ".prose",
+    ".prose > h2",
+    ".prose .lead",
+    ".chapter-nav",
+    ".beyond-grid",
+    ".footer"
+  ],
+  "properties": [
+    "display",
+    "position",
+    "gridTemplateColumns",
+    "gridAutoFlow",
+    "flexDirection",
+    "alignItems",
+    "justifyContent",
+    "gap",
+    "rowGap",
+    "columnGap",
+    "fontFamily",
+    "fontSize",
+    "fontWeight",
+    "fontStyle",
+    "lineHeight",
+    "letterSpacing",
+    "textTransform",
+    "paddingTop",
+    "paddingRight",
+    "paddingBottom",
+    "paddingLeft",
+    "marginTop",
+    "marginRight",
+    "marginBottom",
+    "marginLeft"
+  ],
+  "results": [
+    {
+      "width": 360,
+      "theme": "light",
+      "differences": []
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "differences": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "differences": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "differences": []
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "differences": []
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "differences": []
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "differences": []
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "differences": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "differences": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "differences": []
+    }
+  ]
+}

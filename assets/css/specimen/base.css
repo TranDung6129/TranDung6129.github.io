@@ -1,0 +1,79 @@
+/* Isolated design-review specimen. Core visual decisions use --ed-* tokens. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+body {
+  margin: 0;
+  color: var(--ed-fg, #332e28);
+  background: var(--ed-bg, #f7f5f0);
+  font-family: var(--ed-serif, Georgia, serif);
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+}
+a:hover {
+  text-decoration-color: var(--ed-accent, #8c4a32);
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  color: inherit;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+pre:focus-visible {
+  outline: 3px solid var(--ed-focus, #8c4a32);
+  outline-offset: 4px;
+}
+button {
+  cursor: pointer;
+}
+.wrap {
+  width: min(calc(100% - 6rem), var(--ed-width, 1440px));
+  margin-inline: auto;
+}
+.skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 100;
+  background: var(--ed-bg, #f7f5f0);
+  padding: 0.6rem;
+  transform: translateY(-200%);
+}
+.skip-link:focus {
+  transform: none;
+}
+.review-banner {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  background: var(--ed-fg, #332e28);
+  color: var(--ed-bg, #f7f5f0);
+  font: 600 0.68rem/1.4 var(--ed-sans, Arial, sans-serif);
+  letter-spacing: 0.045em;
+  padding: 0.45rem 1rem;
+  text-align: center;
+}
+.review-banner span {
+  text-transform: uppercase;
+}
+.review-banner a {
+  margin-left: 0.6rem;
+  color: inherit;
+}

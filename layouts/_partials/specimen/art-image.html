@@ -1,0 +1,16 @@
+{{- /* Owner-provided review artwork: uncropped WebP sources with original PNG fallback. */ -}}
+{{- $name := .name -}}
+{{- $original := resources.Get (printf "editorial-source/%s.png" $name) -}}
+{{- if not $original -}}{{- errorf "Missing original editorial artwork: %s" $name -}}{{- end -}}
+{{- $sources := slice -}}
+{{- $largest := false -}}
+{{- range .widths -}}
+  {{- $asset := resources.Get (printf "editorial-art/%s-%d.webp" $name .) -}}
+  {{- if not $asset -}}{{- errorf "Missing optimized editorial artwork: %s-%d" $name . -}}{{- end -}}
+  {{- $sources = $sources | append (printf "%s %dw" $asset.RelPermalink .) -}}
+  {{- $largest = $asset -}}
+{{- end -}}
+<picture>
+  <source type="image/webp" srcset="{{ delimit $sources ", " }}" sizes="{{ .sizes }}">
+  <img src="{{ $original.RelPermalink }}" width="{{ .width }}" height="{{ .height }}" alt="{{ .alt }}" {{ if .priority }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }} decoding="async">
+</picture>

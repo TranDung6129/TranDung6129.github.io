@@ -1,0 +1,23 @@
+{
+  "pre": {
+    "before": {
+      "scrollLeft": 0,
+      "scrollWidth": 516,
+      "clientWidth": 322,
+      "active": true,
+      "outline": "rgb(140, 74, 50) solid 3px"
+    },
+    "after": {
+      "scrollLeft": 194,
+      "scrollWidth": 516,
+      "clientWidth": 322,
+      "active": true
+    },
+    "passed": true
+  },
+  "search": {
+    "href": "/kinh-te/game_theory_nash/",
+    "status": 200,
+    "passed": true
+  }
+}

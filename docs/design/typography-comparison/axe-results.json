@@ -1,0 +1,46 @@
+[
+  {
+    "width": 390,
+    "dark": false,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 7
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "dark": true,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 7
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "dark": false,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 8
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "dark": true,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 8
+      }
+    ]
+  }
+]

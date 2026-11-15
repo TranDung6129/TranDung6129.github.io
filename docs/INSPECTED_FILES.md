@@ -356,3 +356,205 @@ Registry self hash pre-append `b38d75cdfc0147c36721dcbff5fd94b4f48a1fe5`. Migrat
 | `docs/AGENT_LOG.md` | `17a2ec9f2d3be45ad34283bed04be438ba4e4b4d` | COVERED | P1-07 claim and completion. |
 
 **REMOVED in P1-07:** `themes/FixIt` (gitlink `f5fb989`), `themes/shortcode-docs-bookmark` (gitlink `bad88c8`), `.gitmodules`, `.github/workflows/update-theme.yml`, `README.en.md`. FixIt source files read while migrating: `hugo.toml` (output formats, outputs, mediaTypes sections), `assets/lib/VERSION`.
+
+## 2026-11-15 — P1-08 live retry
+
+Working Git blobs; coverage PARTIAL. Browser/network failure verified; no production behavior inferred.
+
+| Path | Blob | Purpose and risk |
+|---|---|---|
+| `docs/audits/p1-08/README.md` | `7ef51021e991879f74d8ae2f858962f749a22a0e` | P1-08 deployed-site evidence and exact blocked retry; no origin result, sign-off remains pending. |
+| `docs/AGENT_LOG.md` | `95d74fc3e85d83e699332ed39a63a19ed06c3456` | Append-only P1-08 retry evidence and Phase 2 handoff. |
+| `docs/INSPECTED_FILES.md` | `9c2de304d673c1521c0cb4cde3c7c2714499f317` | Revision-aware registry; self hash is pre-append. |
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Task claims, evidence, preservation and visual approval safeguards. |
+| `docs/TASK_BOARD.md` | `1f709d219b2968366640346f6de15922addac5f5` | Canonical statuses; P1-08 remains BLOCKED and P2-01 is unclaimed. |
+
+## 2026-11-15 — P2-01 tokens
+
+PARTIAL coverage; working blobs, registry self hash pre-append. Contrast checks and current-main production byte comparison passed; no owner visual approval.
+
+| Path | Blob | Purpose / dependencies / risk |
+|---|---|---|
+| `assets/css/editorial/tokens.css` | `177b57a1a1684478c192be510ea8993f3f1e1ae2` | Specimen-only semantic palette, type, spacing, width and reduced-motion tokens; not loaded in production. |
+| `docs/design/TOKENS.md` | `976dbfedcceae1b34292732e0c656663a58b37f9` | Token usage, measured contrast, light-muted adjustment and provisional font decision. |
+| `docs/design/check-token-contrast.py` | `dc1505561442a4edb3cb79a1b77757cdef3344f9` | Parses CSS token declarations and asserts text/background pairings >=4.5 contrast. |
+| `docs/CODEBASE_MAP.md` | `019a98b59b9d9a39fc25606198514b7018552ff4` | Current source navigation plus specimen-only P2-01 token ownership. |
+| `docs/TASK_BOARD.md` | `7090678de209ffe08d83ad01368db3a11e7b3f8e` | P2-01 completed on branch; P1-08 blocked; dependent P2 tasks remain unclaimed. |
+| `docs/AGENT_LOG.md` | `75a6fe1441b3f7ca28ecd99e5ae3c72d479e04d3` | P2-01 claim and exact verification, scope and limitations. |
+| `docs/INSPECTED_FILES.md` | `ec8e49a0741ea6318228dd1ac5508a3a259a3132` | Knowledge registry; own hash describes pre-append version. |
+| `docs/DESIGN_SYSTEM.md` | `ee8ca775a8471bea29f69523dfc7f0c98109eef8` | Semantic palette and specimen/owner-approval visual gate. |
+| `docs/VISUAL_DIRECTION.md` | `9181d328d71d874bc95c44daca2dec5a7607bd0c` | Magazine/book visual brief, specimen-first approval and no unapproved homepage. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Build, route, accessibility, screenshots and review requirements. |
+| `assets/css/_custom.scss` | `9b97fbecc88efc486e604cf36bd73bb2ae34a292` | Existing production palette, font imports and theme rules; independent of new specimen-only tokens. |
+
+## 2026-11-15 — P2-02 typography
+
+Working blobs, PARTIAL coverage; Chromium and production output checks recorded in AGENT_LOG; final visual approval remains outstanding.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/specimen/single.html` | `216bc6ae16301086ae6835e08b37fe466a9a898b` | Review-environment-only standalone shell, loads tokens and available specimen partials; no production content route. |
+| `layouts/_partials/specimen/typography.html` | `ab6d677ba8f0d1898336299dc192afe7f4981d70` | Vietnamese/English article type specimen with existing attributed excerpt, native MathML, code and caption. |
+| `assets/css/specimen/base.css` | `9ec3ebfb44f61a40e14b44581ab981f921def0d2` | Review shell base styles; depends on semantic ed tokens. |
+| `assets/css/specimen/typography.css` | `aa44142d91784f4beb02cd029835691fbdfcaefd` | Long-form type and math/code styles for review only. |
+| `assets/css/specimen/responsive.css` | `472a8c126aeb53ff4bd5cc9734af4a348c3e618f` | Specimen responsive overrides; includes selectors for later component checkpoints. |
+| `scripts/preview-editorial.sh` | `64dc58158500b01d3f3ed3201f9a0baefa71baa6` | Creates temporary Hugo snapshot/draft, disables snapshot GitInfo and runs editorial-review environment on loopback; no repo content changes. |
+| `scripts/test-editorial-typography.cjs` | `dd16cbefb5039abc6c15306eb6596590a4adb6cc` | Headless Chromium checks Vietnamese/math/code and overflow, captures four light/dark screenshots at 360/1440. |
+| `docs/design/TYPOGRAPHY.md` | `09d631583e0f557bdf4e6a1a7a9972efeb15c414` | Type specimen scope, preview instructions and provisional font/visual approval limitations. |
+| `docs/TASK_BOARD.md` | `1e6641765a70e2eef7b0badd26585e6d984ff54d` | P2-02 typography completed on branch; downstream component tasks remain and owner approval outstanding. |
+| `docs/AGENT_LOG.md` | `99fe1ebfa1d0a74d8d902c059c51268af99624aa` | P2-02 claim, tests, production isolation and visual limitations. |
+| `docs/CODEBASE_MAP.md` | `71562ff7af4ceeaeaa927a6f1be635c8c9dd8612` | Preview and typography ownership; production paths unchanged. |
+| `docs/INSPECTED_FILES.md` | `681a652dec192dab76c26ab62324f91caca1d8ca` | Self registry hash is pre-append. |
+| `content/toan-hoc/riemann-hypothesis-number-theory.md` | `d038f61397e2531a230d4da3d82f90c634aa8c4c` | Existing Vietnamese article supplies one attributed specimen excerpt; unchanged. |
+
+Generated intermediate screenshots `docs/design/screenshots/p202-{360,1440}-{light,dark}.png` are review-only browser captures; no claim of final aesthetic approval.
+
+## 2026-11-15 — P2-03 navigation checkpoint
+
+Working blobs, PARTIAL coverage; core controls tested, integrated anchors and owner visual review pending.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/_partials/specimen/navigation.html` | `dc0c512afed742ad4fe669e466b4bcb0496ac204` | Review masthead, responsive menu, search and theme controls; section anchors must be checked when home/future partials are integrated. |
+| `layouts/_partials/specimen/interactions.html` | `b956403db41818425734f35fb12abad9d85394f2` | Theme persistence, mobile Escape/focus, local search and async stale-response protection; demo-only and no public template import. |
+| `assets/css/specimen/navigation.css` | `10ea94a012d565045cd0a2d92d3bf2ab474fdd7a` | Specimen masthead, controls, search and responsive menu presentation; depends on ed tokens. |
+| `assets/css/specimen/responsive.css` | `331634a8e7309b1fdc84f4002faff00a3b0e0324` | Responsive overrides for specimen components; reviewed after updated mobile masthead rules. |
+| `scripts/test-editorial-navigation.cjs` | `cc94cde249c712df682ba574118d6c82f87af12e` | Playwright focused navigation test including delayed search race and keyboard Escape. |
+| `docs/TASK_BOARD.md` | `a6b4231ae2ac35517f07d92f54455026c674c254` | P2-03 currently IN PROGRESS; full integrated anchor review outstanding. |
+| `docs/AGENT_LOG.md` | `e493f15d2a8ae2fb31a49bd09194718578e1f7ad` | P2-03 claim and limited interaction test evidence. |
+| `docs/INSPECTED_FILES.md` | `14c6a0c30b7b91891bc78a3daf553318dc845a6a` | Registry self hash is pre-append. |
+| `assets/css/specimen/base.css` | `d5a877c91239f0ccba986a82a1efb03a6fb2c482` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
+| `assets/css/specimen/typography.css` | `605d970113632fb1be1a989dc990728d1d744701` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
+| `layouts/_partials/specimen/typography.html` | `046622590826399410a48ed6521fd3ce094a9db7` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
+
+## 2026-11-15 — P2-04 editorial component checkpoint
+
+Working blobs, PARTIAL coverage; isolated render and production isolation passed; integrated browser QA and owner visual review remain.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/_partials/specimen/home.html` | `fbde3b4641596e850a71cdeefb108030e158987c` | Review-only hero, journal and volume composition, includes original inline geometric SVG and two feature partial calls. |
+| `layouts/_partials/specimen/feature.html` | `45027d27342ff05151a328a7b03082dacb12c16b` | Parameterized featured essay prototype, selects one of two illustrative SVG variants; no fake article link. |
+| `layouts/_partials/specimen/art-landscape.html` | `8c4ce35ad9526800118286663b1d7e902a47b516` | Original AI-assisted geometric probability landscape for review, decorative SVG within labeled wrapper. |
+| `layouts/_partials/specimen/art-architecture.html` | `5bca6dd5d61d0d2756f6a69c57d6bb8226a12597` | Original AI-assisted geometric library illustration for review, decorative SVG within labeled wrapper. |
+| `assets/css/specimen/home.css` | `f0322b5e842cbec9871a1296f573d4101da0def8` | Review-only hero, editorial feature, reading list and volume layout; relies on P2 token and responsive styles. |
+| `docs/design/ASSET-PROVENANCE.md` | `5701007fbd73208d2bade254e45bd6a149135477` | Source, alt and publication rights review state for original illustrative SVGs. |
+| `docs/TASK_BOARD.md` | `0a293d059bbb2bb28c6982f205c79541a755a952` | P2-04 prototype done on branch; P2-03 and owner visual approval pending. |
+| `docs/AGENT_LOG.md` | `c3caea2bec4e85dd1e7464c88a6c5f7b43cb6d02` | P2-04 claim and scoped production isolation evidence. |
+| `docs/CODEBASE_MAP.md` | `0f944abb9c357d736e59c372196530f4ecca818b` | Review-only component ownership, production homepage remains separate. |
+| `docs/INSPECTED_FILES.md` | `8f7cfa5138b52acd36767da70adee1210448c2b1` | Registry self hash is pre-append. |
+
+## 2026-11-15 — P2-05 future specimens
+
+Working blobs, PARTIAL coverage; isolated render and production comparison passed, visual sign-off pending.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/_partials/specimen/future.html` | `aba4a0e25cce4ecd37106baf090744b7d4f19055` | Visual-only descriptions of films, labs, discover, reader support and editions; no actual checkout or feature route. |
+| `layouts/_partials/specimen/footer.html` | `aa1e9f2f914607c5e771c8b5593d2bf2692b3d6e` | Review-only footer and attribution; not production footer. |
+| `assets/css/specimen/future.css` | `cc4ca477cbac89f116c9cbaa987c2d4331a0ac82` | Layout for future-format examples and specimen footer; depends on semantic ed tokens. |
+| `assets/css/specimen/responsive.css` | `f835446bd5490dc5699ece26af0fb0235bb436dd` | Responsive specimen styles, five future-format examples wrap without misleading divider layout. |
+| `docs/design/FUTURE-SPECIMENS.md` | `e4c5bf57f41eea5fa64cfe3a208df074d2fe4664` | Scope and nontransactional limitations of prototype formats. |
+| `docs/TASK_BOARD.md` | `8bf27b81da61c55dd9b0ed7f55a0ced2d0f9b0fc` | P2-05 implementation done on branch; owner review remains P2-06. |
+| `docs/AGENT_LOG.md` | `18b95e262fd2c0945ceb5a583b33ab1475300669` | P2-05 scope, isolation test and limitations. |
+| `docs/CODEBASE_MAP.md` | `fe6cfda82f1dab4cc028c4519e7d13951d1b2d13` | Review-only future-format entrypoints; public routes unaffected. |
+| `docs/INSPECTED_FILES.md` | `619d85fc6d1f3032d230d03d861c5f7686a9eac2` | Registry self hash is pre-append. |
+
+## 2026-11-15 — P2-06 review checkpoint
+
+Working Git blobs at inspection; registry self hash pre-append. Coverage PARTIAL except narrowly authored test utilities; browser/axe evidence and limitations are documented in [REVIEW.md](design/REVIEW.md). Owner visual sign-off remains outstanding.
+
+| Path | Blob | Responsibility, consumers and risk |
+|---|---|---|
+| `layouts/_partials/specimen/navigation.html` | `9830f1096cc1720f6588eefa7cfa3bfe2cdb6c89` | Review masthead with actual section anchors and accessible mobile/search/theme controls; production layout does not import it. |
+| `layouts/_partials/specimen/interactions.html` | `b956403db41818425734f35fb12abad9d85394f2` | Review-only theme persistence, menu and search keyboard state; ignores stale asynchronous search responses. |
+| `layouts/_partials/specimen/home.html` | `27d56b607a12ec21e6c6dc60d1d2f77e43c55c86` | Review-only hero, journal and volume with original illustrative SVG, links local anchors; not the production homepage. |
+| `layouts/_partials/specimen/feature.html` | `45027d27342ff05151a328a7b03082dacb12c16b` | Parameterized review featured-essay partial, original SVG variants; illustrative titles are not fake live links. |
+| `layouts/_partials/specimen/art-landscape.html` | `8c4ce35ad9526800118286663b1d7e902a47b516` | Original AI-assisted geometric landscape SVG for review; provenance/rights review remains required before publication. |
+| `layouts/_partials/specimen/art-architecture.html` | `5bca6dd5d61d0d2756f6a69c57d6bb8226a12597` | Original AI-assisted geometric library SVG for review; decorative inside labeled wrapper. |
+| `layouts/_partials/specimen/typography.html` | `11ba90215e3e4af353ab23b90bb8ad42f88ed210` | Reading specimen with VI excerpt, native MathML, keyboard-scrollable named code region and existing related-reading links. |
+| `layouts/_partials/specimen/future.html` | `faec323d8086c2fef77b647b18f1d4a59e044a36` | Local section anchors and static nontransactional film/lab/discover/support/editions/advertising examples, explicit disclosure. |
+| `layouts/_partials/specimen/footer.html` | `aa1e9f2f914607c5e771c8b5593d2bf2692b3d6e` | Review-only footer, no public route ownership. |
+| `layouts/specimen/single.html` | `216bc6ae16301086ae6835e08b37fe466a9a898b` | Standalone review-only Hugo shell guarded by editorial-review environment; dynamically includes specimen partials. |
+| `assets/css/editorial/tokens.css` | `177b57a1a1684478c192be510ea8993f3f1e1ae2` | Review-only semantic color/type/spacing/motion tokens, text pairings checked; not imported by production. |
+| `assets/css/specimen/base.css` | `ff4584086bd783fad28adaaab2af1ea265f498ef` | Review shell basics and focus-visible styles including scrollable code region. |
+| `assets/css/specimen/navigation.css` | `2622bcb19c95f38f4091a65907c1961de4a8aabe` | Specimen masthead/menu/search controls, themed with editorial tokens. |
+| `assets/css/specimen/home.css` | `76ddb17c3799463b65a6cb67ad2086a3b3a7190d` | Specimen hero/feature/list/volume and high-contrast caption treatments. |
+| `assets/css/specimen/typography.css` | `db1953f0d9a4253dc5b1301af2191e50e3e23a5f` | Article, MathML/code and typography presentation, depends on semantic tokens. |
+| `assets/css/specimen/future.css` | `a1c5d74a779ffd8fd46ac507148f4ba42f363d01` | Static future-format and inactive ad-label presentation. |
+| `assets/css/specimen/responsive.css` | `0b11b934a6d77a7cde8b3a55720645b2116fe814` | Review breakpoint and reduced-motion rules, 44px mobile controls, independent of production. |
+| `scripts/preview-editorial.sh` | `64dc58158500b01d3f3ed3201f9a0baefa71baa6` | Temporary source snapshot and draft with GitInfo disabled and environment guard; loopback server, no repo content route. |
+| `scripts/test-editorial-typography.cjs` | `dd16cbefb5039abc6c15306eb6596590a4adb6cc` | Chromium checks type sample, MathML, code and overflow at 360/1440 light/dark. |
+| `scripts/test-editorial-navigation.cjs` | `cc94cde249c712df682ba574118d6c82f87af12e` | Chromium checks menu Escape/focus, search, stale async race and theme persistence. |
+| `scripts/test-editorial-review.cjs` | `648dfe824a61e1d1685b9f7d6f686449ffa80957` | Integrated 10-viewport/theme screenshots, interactions, link and overflow evidence; no owner sign-off. |
+| `scripts/test-editorial-axe.cjs` | `fc8935969e6c895da896e8edc2dbdd8bc02c7787` | Axe WCAG-tagged automated checks at 390/1440; incomplete cases need human review. |
+| `scripts/test-editorial-extra.cjs` | `9c094de9ee86d251d52a9ae7dbc0fd788feff4a3` | Mobile scrollable code keyboard focus/scroll and existing Nash search-link HTTP check. |
+| `scripts/test-editorial-fonts.cjs` | `8c6882ecdeef7ba6843a45c9e04e513594a0825f` | Chrome DevTools actual resolved platform font evidence; machine-specific fallback, not font approval. |
+| `scripts/test-editorial-computed.cjs` | `a1ca5246fb08fa79e64b59922045ef4f98d6ccd2` | Samples computed styles/overlap of axe-incomplete cases for manual review. |
+| `docs/design/REVIEW.md` | `91977d322f041fd571867728d2a81a179fcaf2c0` | Owner review entrypoint, previews, design-reference interpretation, artifacts, tests and limitations. |
+| `docs/design/TOKENS.md` | `976dbfedcceae1b34292732e0c656663a58b37f9` | Review-only token contract and color-contrast rationale. |
+| `docs/design/TYPOGRAPHY.md` | `438c38ff952f5b509a1f1ea63c995eb07153ab17` | Review type specimen, attributed excerpt and preview/test instructions; candidate font approval pending. |
+| `docs/design/FUTURE-SPECIMENS.md` | `05c249b78f5393ab18923cb761b7fa4351ec14b8` | Nontransactional future format and inactive advertising placeholder scope. |
+| `docs/design/ASSET-PROVENANCE.md` | `5701007fbd73208d2bade254e45bd6a149135477` | Original AI-assisted vector provenance; rights/editorial review before publication. |
+| `docs/design/check-token-contrast.py` | `dc1505561442a4edb3cb79a1b77757cdef3344f9` | Computes WCAG relative luminance for body/accent/muted against background and surface. |
+| `docs/design/review/artifact-blobs.tsv` | `3d135bd58f1e123178c2855f561ef339ed305c1e` | Git-blob manifest and sizes for 10 screenshots plus QA result JSON. |
+| `docs/TASK_BOARD.md` | `fa175331afe6965fee3d611029d04d91d410e867` | P1-08 blocked on live egress, P2-01–05 prototype checkpoints done, P2-06 blocked pending owner visual review. |
+| `docs/AGENT_LOG.md` | `3be2ba1e99b4c8d55487fe140b1d9cbaf1608e94` | Append-only P1 and P2 claim, tests, blockers and review evidence. |
+| `docs/CODEBASE_MAP.md` | `5acf3d18c0b2c6a3c3ec2ef91ac97928cb379f8c` | New gated review entrypoints; production homepage remains existing layouts/index.html. |
+| `docs/INSPECTED_FILES.md` | `2b89a7eef2420ab5cc32b11fac2c77887deaa9a5` | Knowledge registry, self-hash pre-append. |
+| `docs/DESIGN_SYSTEM.md` | `ee8ca775a8471bea29f69523dfc7f0c98109eef8` | Editorial tokens/typography candidates and prototype-first visual gate. |
+| `docs/VISUAL_DIRECTION.md` | `9181d328d71d874bc95c44daca2dec5a7607bd0c` | Magazine/book direction, no homepage approval, owner screenshot review required. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Routes, browser, accessibility, performance and evidence review gates. |
+| `config/_default/languages.toml` | `031b0c18b10f5fa91a44b42354f7c1cf55b69430` | Current configured vi/en/ja/zh-cn locales; preview uses existing config, not route migration. |
+| `config/_default/module.toml` | `aa0dcce387d347b441e346f7de90c844695c0117` | Current Hugo version requirement; no new theme/module dependency. |
+| `content/toan-hoc/riemann-hypothesis-number-theory.md` | `d038f61397e2531a230d4da3d82f90c634aa8c4c` | Existing VI article supplies attributed specimen excerpt; unchanged. |
+
+Review output group `docs/design/review/` (10 screenshot PNGs, browser/axe/font/contrast/performance JSON and retention evidence) is PARTIAL local-browser evidence, not live deployment, owner approval or complete WCAG evaluation. Artifact manifest SHA256 `204d01886f2b311ce8b7887b0479dbd7ccc15f0dd5c7cd5752eeac8a817efc72`. P1-08 live browser remained blocked by proxy CONNECT 403; no origin status inferred. Existing old `themes/` directories were left untouched after checkout and were not staged.
+
+## 2026-11-15 — review publication handoff
+
+Working Git blobs; PARTIAL coverage. Local preview and screenshots available; PR creation and owner visual approval remain unresolved.
+
+| Path | Blob | Responsibility and risk |
+|---|---|---|
+| `docs/design/PR-PLAN.md` | `a5edf06b638efaf45f32659e828105a135946398` | Pushed stacked review branches and base order; GitHub API Forbidden, no PR or merge claimed. |
+| `docs/design/REVIEW.md` | `2cb22030b9eedbd206b89abca1db0de84faeb4d9` | Final owner review entrypoint, screenshots, prototype isolation, tests, limitations and PR plan. |
+| `docs/AGENT_LOG.md` | `4435d51e38346748ea3bcdfb37ee3e501da39368` | Append-only publication blocker and current review status. |
+| `docs/INSPECTED_FILES.md` | `23bd483de00cc9807abdf484a49045b0e6eb88c6` | Registry self hash is pre-append. |
+
+## 2026-11-15 — artwork v2 and separate type review
+
+Working Git blobs at inspection; registry self-hash is pre-append. Source artwork SHA-256 and dimensions are recorded in `docs/design/owner-art-v2.json`. Binary screenshot and QA artifact blobs are inventoried in `docs/design/review-v2/artifact-blobs.tsv`; font files and licenses are inventoried in `docs/design/typography-comparison/font-blobs.tsv`. Owner approval and manual accessibility review remain pending.
+
+| Path | Git blob |
+|---|---|
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` |
+| `layouts/_partials/specimen/home.html` | `69218134136a2351a6d5c3087e48823f64940d29` |
+| `layouts/_partials/specimen/feature.html` | `b46baea22a5292d3b496dc6921c2c1c5e6a6c298` |
+| `layouts/_partials/specimen/art-image.html` | `1ebfd418502bb15916f7205ab5d030b6a7953019` |
+| `assets/css/specimen/home.css` | `5e115839ad7b71e2129010818e36dedc3a58f073` |
+| `assets/css/specimen/responsive.css` | `6a1b6a775bfdb230db141cb5016a69e0949e3385` |
+| `scripts/process-editorial-art.py` | `93206450526c82e53ffb4d56f27273d50792f8f3` |
+| `scripts/test-editorial-art.py` | `e7cc738aa5f2ea5e0a705912e207dccb2be48cd3` |
+| `scripts/test-editorial-review.cjs` | `648dfe824a61e1d1685b9f7d6f686449ffa80957` |
+| `scripts/test-editorial-axe.cjs` | `fc8935969e6c895da896e8edc2dbdd8bc02c7787` |
+| `docs/design/ASSET-PROVENANCE.md` | `d1d1993c4f1afd91ade6d495cb3d279f6e553435` |
+| `docs/design/owner-art-v2.json` | `541e2bccaab16135f3bed3ef6bbc4060b071d54d` |
+| `docs/design/REVIEW.md` | `b880a7b43f22d8da7bd76df3588f16a701ab64dd` |
+| `docs/design/review-v2/README.md` | `c3828191cd2d667295268be2becfc128410b4850` |
+| `docs/design/review-v2/artifact-blobs.tsv` | `cfb1835b24b2c5b25d3805f253c201c8afc9f35f` |
+| `docs/design/typography-comparison/README.md` | `a77ac02aab6e8edc16de94dcff2de86997868ed9` |
+| `docs/design/typography-comparison/index.html` | `0cf2b1af0c3dfe2551d8fd74b46815deb59cc6fd` |
+| `docs/design/typography-comparison/comparison.css` | `208674b68e04c07e1c927734d36d91e0b16d5623` |
+| `docs/design/typography-comparison/font-sources.json` | `d97ebaedfe5006980f7314ca4290539ac54a3822` |
+| `docs/design/typography-comparison/font-blobs.tsv` | `7671fe85fb3dff46bec3f44719fcbc10de794081` |
+| `docs/design/typography-comparison/test.cjs` | `a53ce306c471a0ae64b9e1416dcec4286835e555` |
+| `docs/design/typography-comparison/axe.cjs` | `bc95f0d0965cfd9e80b9f0f9b622e27ef33953d2` |
+| `docs/CODEBASE_MAP.md` | `01bc44417fde012b63ee611214625bd053f6698c` |
+| `docs/TASK_BOARD.md` | `fa175331afe6965fee3d611029d04d91d410e867` |
+| `docs/AGENT_LOG.md` | `2156a1704681356843e2fd08500f36d6c1354de3` |
+| `docs/INSPECTED_FILES.md` | `253f7d4821b09774d354ebf743c09ebd1cbacfe0` |
+| `docs/DESIGN_SYSTEM.md` | `ee8ca775a8471bea29f69523dfc7f0c98109eef8` |
+| `docs/design/TYPOGRAPHY.md` | `438c38ff952f5b509a1f1ea63c995eb07153ab17` |
+
+Publication handoff: `docs/AGENT_LOG.md` working blob `7edff6abaa66c842d4d3a27d6c2f51463b28c3b3` records the failed PR attempt; `docs/INSPECTED_FILES.md` pre-append blob `5c98104b1e02127f32bcdf1a4ab788c09e78db3f`.

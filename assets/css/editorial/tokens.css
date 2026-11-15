@@ -1,0 +1,53 @@
+/* P2-01: specimen-only design tokens; not loaded by public layouts. */
+:root,
+[data-ed-theme="light"] {
+  color-scheme: light;
+  --ed-bg: #f7f5f0;
+  --ed-fg: #332e28;
+  --ed-accent: #8c4a32;
+  --ed-surface: #e8e2d7;
+  --ed-muted: #6a6256;
+  --ed-border: #a19889;
+  --ed-focus: #8c4a32;
+  --ed-shadow: 0 0.6rem 1.8rem rgb(51 46 40 / 0.09);
+}
+[data-ed-theme="dark"] {
+  color-scheme: dark;
+  --ed-bg: #1a1816;
+  --ed-fg: #e2dcd0;
+  --ed-accent: #d4a373;
+  --ed-surface: #292521;
+  --ed-muted: #a69a8b;
+  --ed-border: #746a5f;
+  --ed-focus: #d4a373;
+  --ed-shadow: 0 0.6rem 1.8rem rgb(0 0 0 / 0.24);
+}
+:root {
+  --ed-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --ed-display: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
+  --ed-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ed-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --ed-type-xs: 0.75rem;
+  --ed-type-sm: 0.875rem;
+  --ed-type-base: 1rem;
+  --ed-type-lead: clamp(1.125rem, 1.05rem + 0.4vw, 1.375rem);
+  --ed-type-h3: clamp(1.375rem, 1.2rem + 0.8vw, 1.75rem);
+  --ed-type-h2: clamp(1.875rem, 1.5rem + 1.5vw, 2.75rem);
+  --ed-type-display: clamp(3.1rem, 1.75rem + 5vw, 7rem);
+  --ed-space-1: 0.25rem;
+  --ed-space-2: 0.5rem;
+  --ed-space-3: 0.75rem;
+  --ed-space-4: 1rem;
+  --ed-space-5: 1.5rem;
+  --ed-space-6: 2rem;
+  --ed-space-7: 3rem;
+  --ed-space-8: 5rem;
+  --ed-measure: 70ch;
+  --ed-width: 90rem;
+  --ed-radius: 0.125rem;
+  --ed-duration: 160ms;
+  --ed-ease: ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --ed-duration: 0ms; }
+}
