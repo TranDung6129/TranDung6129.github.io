@@ -74,3 +74,8 @@ Site configuration now lives only in `config/_default/` (the root `hugo.toml` wa
 ## P1-09 local foundation implemented
 
 The provider-neutral local PostgreSQL reference schema, transactional versioned SQL migrations and tested backup/restore drill live in [`db/README.md`](../db/README.md), `compose.yaml`, and `db/`. See D-013 and `docs/audits/p1-09/README.md`. This adds no Hugo build/runtime database dependency; production hosting, authorization and payments remain separately approved work.
+
+## P1-07 state
+
+No theme, submodule or Hugo module. Templates, SCSS, scripts, bundled libraries, interface strings and all configuration are in this repository ([D-013](DECISIONS.md#d-013--fixit-retired-by-owning-the-files-in-use), [report](audits/p1-07/README.md)). The cleanup-ledger rows for `themes/FixIt`, `themes/shortcode-docs-bookmark` and `update-theme.yml` are resolved. Deploy builds from a plain checkout.
+

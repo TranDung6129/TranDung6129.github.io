@@ -1,0 +1,16 @@
+{
+  "before_files": 650,
+  "after_files": 650,
+  "removed": [],
+  "added": [],
+  "byte_different": [
+    "css/config.min.css.map",
+    "css/style.min.css.map",
+    "js/head/color-scheme.min.js.map",
+    "js/lib/mathjax.min.js.map",
+    "js/theme.min.js",
+    "js/theme.min.js.map"
+  ],
+  "different_after_path_normalisation": [],
+  "equivalent": true
+}
