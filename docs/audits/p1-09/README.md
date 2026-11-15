@@ -1,0 +1,10 @@
+# P1-09 verification
+
+Base `0eb0450`, branch `feat/p1-09-postgres-foundation`; claim `be3b740`. Hugo/Pages remains independent of PostgreSQL. See [database operations](../../../db/README.md) and D-013 for schema, risk and restore details.
+
+- `docker pull postgres:16.10` — PASS; Docker verified layer checksums; resolved image digest `sha256:21f6013073bc6b92830a2129570e2f5ec42a6c734b5a985a41e83aa58f54c3c1` in this environment (the version tag can be republished; digest is observed, not enforced by Compose).
+- `bash -n db/bin/compose db/bin/migrate db/tests/integration.sh`, `db/bin/compose config --quiet`, `git check-ignore db/.env` — PASS. ShellCheck was not installed.
+- `db/tests/integration.sh > /tmp/p109-integrator-test.log 2>&1` — PASS, exit 0. Independently repeated in a unique disposable Compose project and volume. The test checks connection, six tables, migration ledger, repeat no-op, seed repeated, key/kind/FK/duplicate rejection, modified-migration rejection, transactional rollback on SQL error, backup to custom-format archive, volume teardown, clean recreation, actual restore and data/relations/ledger verification, then another migration no-op. Only the test-owned project is removed; no other volume is touched. See [integration log](integration.log). Spaces at line ends in captured logs were normalized for Git whitespace checks; results are unchanged.
+- `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/p109-hugo` — PASS; `python3 docs/audits/p1-01/verify.py /tmp/p1-03-public /tmp/p109-hugo /tmp/p109-hugo-check` — PASS: 645 files, no path or byte differences. See [Hugo build](hugo-build.log) and [retention evidence](hugo-retention.json). This is a static-build check, not a live deployment or browser test.
+
+The tests use synthetic data, local superuser privileges and an isolated Docker volume. They do not validate hosted credentials, production role separation/RLS, payment/auth, real personal data, production backup handling or live GitHub Pages deployment. Those require separate approvals and tests. Existing content and theme remain unchanged.

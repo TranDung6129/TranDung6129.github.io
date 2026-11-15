@@ -1,0 +1,89 @@
+ Network p109tedp109testu2snoxdc_default  Creating
+ Network p109tedp109testu2snoxdc_default  Created
+ Volume p109tedp109testu2snoxdc_p1_postgres_data  Creating
+ Volume p109tedp109testu2snoxdc_p1_postgres_data  Created
+ Container p109tedp109testu2snoxdc-db-1  Creating
+ Container p109tedp109testu2snoxdc-db-1  Created
+ Container p109tedp109testu2snoxdc-db-1  Starting
+ Container p109tedp109testu2snoxdc-db-1  Started
+ Container p109tedp109testu2snoxdc-db-1  Waiting
+ Container p109tedp109testu2snoxdc-db-1  Healthy
+PASS: database connection
+BEGIN
+ pg_advisory_xact_lock
+-----------------------
+
+(1 row)
+
+CREATE TABLE
+DO
+applying: 001_foundation.sql
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+COMMIT
+PASS: clean migration ledger
+PASS: expected six metadata tables
+BEGIN
+ pg_advisory_xact_lock
+-----------------------
+
+(1 row)
+
+CREATE TABLE
+NOTICE:  relation "schema_migrations" already exists, skipping
+DO
+already applied: 001_foundation.sql
+COMMIT
+PASS: repeat migration is a no-op
+PASS: demo seed is idempotent
+PASS: demo editorial object present
+PASS: demo author relationship present
+PASS: demo capability relationship present
+PASS: invalid content key rejected
+PASS: invalid kind rejected
+PASS: missing editorial foreign key rejected
+PASS: duplicate association rejected
+PASS: changed applied migration rejected
+PASS: failed migration transaction rolls back schema
+PASS: failed migration does not enter ledger
+ Container p109tedp109testu2snoxdc-db-1  Stopping
+ Container p109tedp109testu2snoxdc-db-1  Stopped
+ Container p109tedp109testu2snoxdc-db-1  Removing
+ Container p109tedp109testu2snoxdc-db-1  Removed
+ Volume p109tedp109testu2snoxdc_p1_postgres_data  Removing
+ Network p109tedp109testu2snoxdc_default  Removing
+ Volume p109tedp109testu2snoxdc_p1_postgres_data  Removed
+ Network p109tedp109testu2snoxdc_default  Removed
+ Network p109tedp109testu2snoxdc_default  Creating
+ Network p109tedp109testu2snoxdc_default  Created
+ Volume p109tedp109testu2snoxdc_p1_postgres_data  Creating
+ Volume p109tedp109testu2snoxdc_p1_postgres_data  Created
+ Container p109tedp109testu2snoxdc-db-1  Creating
+ Container p109tedp109testu2snoxdc-db-1  Created
+ Container p109tedp109testu2snoxdc-db-1  Starting
+ Container p109tedp109testu2snoxdc-db-1  Started
+ Container p109tedp109testu2snoxdc-db-1  Waiting
+ Container p109tedp109testu2snoxdc-db-1  Healthy
+PASS: recreated volume starts empty
+PASS: backup restores demo data
+PASS: backup restores author relationship
+PASS: backup restores capability relationship
+PASS: backup restores migration ledger
+BEGIN
+ pg_advisory_xact_lock
+-----------------------
+
+(1 row)
+
+CREATE TABLE
+NOTICE:  relation "schema_migrations" already exists, skipping
+DO
+already applied: 001_foundation.sql
+COMMIT
+PASS: migration remains a no-op after restore
+PASS: isolated PostgreSQL migration and backup/restore integration test

@@ -42,3 +42,7 @@ Before creating cloud resources, document expected monthly cost, free-tier/limit
 - Demonstrated migration and tested backup/restore flow.
 - No committed secrets, production keys, or unapproved network dependencies.
 - Architecture rationale, test evidence and a clear later rollout plan available to other agents.
+
+## P1-09 local implementation
+
+[D-013](DECISIONS.md#d-013--local-postgresql-reference-foundation) records the local schema and migration choices. The implementation, entity diagram, commands, demo-only credential warning, security boundary and restore drill are in [db/README.md](../db/README.md). Actual outcomes and limitations belong in AGENT_LOG. No hosted service or production credentials are implied by this local foundation.

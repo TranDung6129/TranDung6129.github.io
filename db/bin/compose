@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Run the P1-09 local Compose project from any working directory.
+set -euo pipefail
+root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$root_dir"
+if [[ -f db/.env ]]; then
+  exec docker compose --env-file db/.env -f compose.yaml "$@"
+fi
+exec docker compose -f compose.yaml "$@"

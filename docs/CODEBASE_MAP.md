@@ -29,7 +29,7 @@ P1-03 prospective template ownership, lookup precedence, migration gates and Pos
 | Search, RSS, sitemap, robots | `config/_default/params.toml`, `outputs.toml`, `sitemap.toml`, root `hugo.toml` | FixIt search/robots templates | Retain outputs and paths; test generated HTML and index files |
 | GitHub Pages builds | `.github/workflows/deploy.yml` | `package.json`, Hugo config, submodules | Action currently pinned Hugo 0.149.0; PR-triggered CI not present at audit |
 | Theme updates | `.github/workflows/update-theme.yml` | `.gitmodules`, `.github/dependabot.yml` | Remove only after theme replacement verified; adjust deploy workflow_run coupling |
-| Database foundation (planned, not yet built) | `docs/DATABASE_FOUNDATION.md` | P1-09; future migration directory/compose files | Do not invent current code paths; update after P1-09 establishes them |
+| Local database foundation | `db/README.md`, `compose.yaml`, `db/bin/compose`, `db/bin/migrate` | `db/migrations/`, `db/seed.sql`, `db/tests/integration.sh`; D-010/D-012/D-013 | Demo-only local PostgreSQL; static Hugo does not read it; no hosted provisioning/auth/payments |
 | Affiliate, subscriptions, payments (future) | `docs/SEO_AND_MONETIZATION.md`, `docs/CONTENT_MODEL.md` | Future secure service/provider | Not part of P1/P2; no browser secrets or fake secure paywall |
 | Visual and editorial assets (new) | `docs/VISUAL_ASSET_GUIDELINES.md` | `docs/ASSET_MANIFEST_TEMPLATE.md` | Rights, factual accuracy, alt, crops and source provenance |
 
@@ -56,6 +56,7 @@ P1-03 prospective template ownership, lookup precedence, migration gates and Pos
 ## Modification record template (append short entries here, most recent first)
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
+| 2026-11-15 | P1-09 local PostgreSQL | Database reference foundation | New `db/` and `compose.yaml` | Ordered migrations, synthetic seed and isolated restore test; Hugo remains static |
 | 2026-11-15 | P1-02 baseline | Test/evidence entrypoints | New `docs/audits/p1-02/` | Static route/link/metadata fixture + Chromium capture; no application owner moved |
 | 2026-11-15 | P1-01 audit / PR #13 | Inventory only | No runtime path changed | 645 emitted files unchanged per audit |
 
