@@ -1,0 +1,10 @@
+# -------------------------------------------------------------------------------------
+# Module Configuration
+# See: https://gohugo.io/configuration/module/
+# -------------------------------------------------------------------------------------
+
+# Minimum Hugo version for this site (moved from the former root hugo.toml in P1-05).
+# CI pins Hugo Extended 0.149.0 in .github/workflows/deploy.yml.
+[hugoVersion]
+  extended = true
+  min = "0.147.7"

@@ -20,3 +20,16 @@ buildDrafts = false
 summaryLength = 70
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+# Pagination (moved from the former root hugo.toml in P1-05)
+[pagination]
+  pagerSize = 12
+
+# Subject sections render with the article template: type "posts" selects
+# layouts/posts/single.html (moved from the former root hugo.toml in P1-05).
+[[cascade]]
+  [cascade._target]
+    path = "/{toan-hoc,vat-ly,kinh-te,khoa-hoc-may-tinh,triet-hoc,ca-nhan}/**"
+  [cascade.params]
+    type = "posts"
+    layout = "single"
