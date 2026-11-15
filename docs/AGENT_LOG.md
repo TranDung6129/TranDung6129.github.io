@@ -161,3 +161,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **PR:** [#21](https://github.com/TranDung6129/TranDung6129.github.io/pull/21). Integration preserves P1-04/P1-05/P1-06 changes, introduces only `compose.yaml` + `db/` local implementation, P1-09 audit evidence and merged documentation.
 - **Review:** Inspected migration/seed/integration scripts and saved execution logs; integration test evidence supports local migrations, rollback and restore; no independent Docker rerun in this review runtime. No hosted/production DB validation.
 - **Next:** P1-07 theme retirement, then P1-08 phase regression. Placeholder editorial content quality deferred by maintainer direction.
+
+### 2026-11-15 — P1-07 claim — Claude Code
+- **Status:** IN PROGRESS; P1-04, P1-05, P1-06 and P1-09 are merged (`main` `4d97a92`).
+- **Branch:** `feat/p1-07-retire-fixit`, from `main`.
+- **Scope:** make every template, style, script, asset, translation string and configuration default the site uses site-owned, then remove the FixIt and bookmark submodules and the theme-update machinery. Checkpoints: A dependency map, B templates, C CSS/JS/assets/i18n/config, D removal, E regression and docs. No redesign, no content edits, no deletion of the remaining Manim intermediates, no database changes.
+
