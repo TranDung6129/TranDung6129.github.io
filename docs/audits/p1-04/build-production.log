@@ -1,0 +1,61 @@
+
+> hugo-fixit-starter1@1.0.0 build
+> hugo --gc --minify --logLevel info --destination /tmp/p104-final2
+
+WARN  deprecated: site config key privacy.twitter.enableDNT was deprecated in Hugo v0.141.0 and will be removed in a future release. Use privacy.x.enableDNT instead.
+Start building sites …
+hugo v0.149.0-66240338f1b908ca3b163384c8229943e74eb290+extended linux/amd64 BuildDate=2025-08-27T15:37:16Z VendorInfo=gohugoio
+
+INFO  Translation func for language ja not found, use default.
+INFO  build:  step process substep collect files 58 files_total 58 pages_total 48 resources_total 10 duration 22.088152ms
+INFO  build:  step process duration 22.150253ms
+INFO  build:  step assemble duration 12.983633ms
+INFO  static: syncing static files to / duration 67.772953ms
+INFO  build:  step render substep pages site vi outputFormat html duration 724.262599ms
+INFO  build:  step render substep pages site vi outputFormat archives duration 25.368325ms
+INFO  build:  step render substep pages site vi outputFormat markdown duration 4.157911ms
+INFO  build:  step render substep pages site vi outputFormat offline duration 8.594362ms
+INFO  build:  step render substep pages site vi outputFormat rss duration 46.847515ms
+INFO  build:  step render substep pages site vi outputFormat search duration 89.655497ms
+INFO  build:  step render substep pages site en outputFormat html duration 246.959775ms
+INFO  build:  step render substep pages site en outputFormat archives duration 26.084119ms
+INFO  build:  step render substep pages site en outputFormat markdown duration 5.1662ms
+INFO  build:  step render substep pages site en outputFormat offline duration 7.199368ms
+INFO  build:  step render substep pages site en outputFormat rss duration 62.367141ms
+INFO  build:  step render substep pages site en outputFormat search duration 39.385415ms
+INFO  build:  step render substep pages site ja outputFormat html duration 10.869121ms
+INFO  build:  step render substep pages site ja outputFormat archives duration 4.836931ms
+INFO  build:  step render substep pages site ja outputFormat markdown duration 39.663µs
+INFO  build:  step render substep pages site ja outputFormat offline duration 5.114279ms
+INFO  build:  step render substep pages site ja outputFormat rss duration 378.006µs
+INFO  build:  step render substep pages site ja outputFormat search duration 249.467µs
+INFO  build:  step render substep pages site zh-cn outputFormat html duration 11.159564ms
+INFO  build:  step render substep pages site zh-cn outputFormat archives duration 6.558385ms
+INFO  build:  step render substep pages site zh-cn outputFormat markdown duration 20.5µs
+INFO  build:  step render substep pages site zh-cn outputFormat offline duration 5.670923ms
+INFO  build:  step render substep pages site zh-cn outputFormat rss duration 319.971µs
+INFO  build:  step render substep pages site zh-cn outputFormat search duration 161.879µs
+INFO  build:  step render pages 388 content 205 duration 1.335714804s
+INFO  build:  step render deferred count 0 duration 3.625µs
+INFO  build:  step postProcess duration 198.982µs
+INFO  build:  duration 1.371161159s
+
+              │ VI  │ EN  │ JA │ ZH - CN
+──────────────┼─────┼─────┼────┼─────────
+ Pages        │ 180 │ 188 │ 10 │      10
+ Paginator    │   0 │   0 │  0 │       0
+ pages        │     │     │    │
+ Non-page     │  10 │   0 │  0 │       0
+ files        │     │     │    │
+ Static files │  78 │  78 │ 78 │      78
+ Processed    │   0 │   0 │  0 │       0
+ images       │     │     │    │
+ Aliases      │  71 │  75 │  0 │       0
+ Cleaned      │   0 │   0 │  0 │       0
+
+Total in 1477 ms
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

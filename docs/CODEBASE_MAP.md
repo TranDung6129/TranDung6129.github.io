@@ -4,17 +4,17 @@
 
 **Verified baseline:** P1-01 audit merged; initial FixIt architecture, Hugo Extended 0.149.0. See [P1-01 audit](audits/P1-01.md). After migration, do not preserve stale paths: update the **Current path** and status below.
 
-P1-03 prospective template ownership, lookup precedence, migration gates and PostgreSQL conventions are specified in [D-012](DECISIONS.md#d-012--owned-hugo-templates-and-incremental-compatibility); these template paths do not yet exist.
+P1-04 introduces site-owned Hugo compatibility templates under `layouts/_default/`, `layouts/posts/`, and `layouts/section.html`; [D-012](DECISIONS.md#d-012--owned-hugo-templates-and-incremental-compatibility) still governs migration and P1-09. These adapters retain FixIt partial dependencies until parity and retirement gates pass.
 
 ## Task routing (read the smallest relevant surface first)
 
 | Need to change | Current entry point(s) | Related files / dependency | Important cautions |
 |---|---|---|---|
 | Site title, theme, canonical base URL | `config/_default/hugo.toml`, root `hugo.toml` | `config/_default/languages.toml`, `params.toml` | Both config families contribute effective values; inspect merge/precedence before edits |
-| Main navigation | `config/_default/menus.toml`, `menus.en.toml` | FixIt header partials | No finalized V2 menu/homepage; avoid premature overhaul |
+| Main navigation | `layouts/_partials/site/header.html`, `config/_default/menus.toml`, `menus.en.toml` | FixIt header partials (delegated) | No finalized V2 menu/homepage; avoid premature overhaul |
 | Homepage structure/categories/featured/recent posts | `layouts/index.html` | `layouts/partials/heatmap.html`, site params | Homepage redesign deferred to Phase 3. Inline CSS lines ~123–414 in P1-01 snapshot |
 | Global colors, reading fonts, appearance | `assets/css/_custom.scss` | `assets/css/_override.scss`, FixIt `assets/css/style.scss` | This is a theme-import layer now; after custom layout migration update this row |
-| Long-form article / section rendering | FixIt theme template tree in `themes/FixIt/layouts/` | `layouts/_partials/single/collection-list.html`; markup/params config | Do not edit vendor theme as permanent customization. Replace with owned templates with parity tests |
+| Long-form article / section rendering | `layouts/posts/single.html`, `layouts/section.html`, `layouts/_default/{single,list}.html` | `layouts/_partials/p1-04/`, FixIt helpers, collection partial; markup/params config | Post and section are active; generic files are fallback. Keep compatibility until feature parity |
 | Previous/next chapters or collection labels | `layouts/_partials/single/collection-list.html` | `content/collections/**`, front matter taxonomies | References FixIt helpers; verify both vi/en chapter output |
 | Activity heatmap | `layouts/partials/heatmap.html` | `layouts/index.html`, D3/Cal-Heatmap external scripts | Verify browser and theme toggling before modifying |
 | Mathematics, code highlight, TOC | root `hugo.toml`; `config/_default/markup.toml`, `params.toml` | Theme templates, shortcodes, page front matter | Root and config/_default both active; preserve equation and code behavior |
@@ -32,6 +32,8 @@ P1-03 prospective template ownership, lookup precedence, migration gates and Pos
 | Database foundation (planned, not yet built) | `docs/DATABASE_FOUNDATION.md` | P1-09; future migration directory/compose files | Do not invent current code paths; update after P1-09 establishes them |
 | Affiliate, subscriptions, payments (future) | `docs/SEO_AND_MONETIZATION.md`, `docs/CONTENT_MODEL.md` | Future secure service/provider | Not part of P1/P2; no browser secrets or fake secure paywall |
 | Visual and editorial assets (new) | `docs/VISUAL_ASSET_GUIDELINES.md` | `docs/ASSET_MANIFEST_TEMPLATE.md` | Rights, factual accuracy, alt, crops and source provenance |
+
+Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_partials/site/header.html` and `footer.html` to FixIt. It affects home as well as other page kinds; test all output before changes. Derived FixIt templates retain upstream MIT terms in `layouts/_default/FIXIT-LICENSE.txt`.
 
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
@@ -56,6 +58,7 @@ P1-03 prospective template ownership, lookup precedence, migration gates and Pos
 ## Modification record template (append short entries here, most recent first)
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
+| 2026-11-15 | P1-04 compatibility | HTML shell, post and section | FixIt layout entrypoints → `layouts/_default/`, `layouts/posts/`, `layouts/section.html` | Preserve output via theme partials; see P1-04 evidence |
 | 2026-11-15 | P1-02 baseline | Test/evidence entrypoints | New `docs/audits/p1-02/` | Static route/link/metadata fixture + Chromium capture; no application owner moved |
 | 2026-11-15 | P1-01 audit / PR #13 | Inventory only | No runtime path changed | 645 emitted files unchanged per audit |
 

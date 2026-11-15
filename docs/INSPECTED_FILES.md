@@ -149,3 +149,42 @@ Git working-file blob hashes at review; registry self hash is pre-append. All en
 | `config/_default/hugo.toml` | `ff107c0c3ce681d919e50f25c91e1feb6b388f6f` | Project title/base URL and active theme list override root conflicts. |
 | `config/_default/params.toml` | `61861b802993602aabc4e57f6f926f1caefe9005` | Theme search, appearance, math and injected partial settings; preserve consumers until migration. |
 | `config/_default/outputs.toml` | `63a58b15da2925adc6056f74d2cabc7b4a1dc02a` | Home and page output configuration; feeds/search depend on effective merge. |
+
+## 2026-11-15 — P1-04 compatibility implementation
+
+Working-file Git blob hashes at inspection (registry self hash is pre-append). Coverage PARTIAL unless scoped to authored adapter; exact build/browser evidence and limits in [P1-04 report](audits/p1-04/README.md). Agent contributors inspected source, integrator owns shared documentation.
+
+| Path | Blob | Purpose, consumers and risks |
+|---|---|---|
+| `layouts/_default/baseof.html` | `3f49d4ec77963d5a1db23aae5f1e1f210e1e4a6a` | Owned FixIt-derived HTML shell, initializes theme and renders head/widgets/assets; uses site adapters. Affects every page including home. |
+| `layouts/_partials/site/header.html` | `995c16d5685f3cbaa009568fafb961bbf686f32a` | Compatibility adapter delegates FixIt header with navigation, search, language and theme controls. |
+| `layouts/_partials/site/footer.html` | `9bfc1a7c25a754a977c3dfb1e61814024f0564d4` | Compatibility adapter delegates FixIt footer and custom hooks; cached by shell. |
+| `layouts/posts/single.html` | `41f4ad1050ed84f1834b8575926adccaa609fe46` | Type-specific owned post template retaining FixIt article helpers, TOC, collection navigation, content and comments; title uses owned partial. |
+| `layouts/section.html` | `1b12ed761c0783d4f1e9356f037c643a796ded47` | Active section template delegates archive body to owned partial while preserving title. |
+| `layouts/_default/list.html` | `1b12ed761c0783d4f1e9356f037c643a796ded47` | Generic list fallback delegates owned section-content partial; not active for current section lookup. |
+| `layouts/_default/single.html` | `18130a7545efe23c4301cab7d2091286768e39c6` | Generic single fallback adapted from FixIt page template; current posts use type-specific template. |
+| `layouts/_partials/p1-04/post-title.html` | `0da4467325604cc8693ce288dadb2ae315e12cae` | Renders localized/capitalized post title and site suffix for posts/single. |
+| `layouts/_partials/p1-04/section-content.html` | `2c6b26a8288df8609636e89665ec91f0282876f4` | Year-grouped archive, paginator, icon and recent-update compatibility; trims final whitespace to preserve development output. |
+| `layouts/_default/FIXIT-LICENSE.txt` | `2b4cb5adcfe4b2e054409759ce434aeb1224849e` | Upstream MIT license for adapted FixIt templates; keep attribution when altering copies. |
+| `docs/CODEBASE_MAP.md` | `b789892f3aac98f93b36766f8eee9803e7f8b4c6` | Documents new compatibility entrypoints, active vs fallback and remaining theme ownership. |
+| `docs/TASK_BOARD.md` | `0e646bfde7590dbc2a0b2a74b78b839d88f926da` | P1-04 claimed and blocked on trusted external MathJax/heatmap runtime parity. |
+| `docs/AGENT_LOG.md` | `aa0ed2dff6633cbfc7f514c610e2e0087a7c6d0a` | Claims, scoped implementation, tests, contributors, blockers and next actions. |
+| `docs/audits/p1-04/README.md` | `524d143a100acb826d7d3c853a497b6c9746c1c8` | Reproducible production/development/lookup/browser evidence and explicit unverified runtime gate. |
+| `docs/audits/p1-04/artifact-blobs.tsv` | `d3f95226859a148e99473cbd61ab149a8c14fe83` | Manifest of generated report/screenshot Git blobs and sizes for baseline evidence. |
+| `docs/INSPECTED_FILES.md` | `e596c21f1d9486592d4e8c0984b7c0c47cf22eb4` | Revision-aware knowledge registry; self hash records state before this append. |
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Workflow, task ownership, documentation, visual and content preservation safeguards. |
+| `docs/DECISIONS.md` | `5bccb094ef5df421c01631520897947cf1760a09` | D-012 prescribes site-owned incremental compatibility and browser parity before theme removal. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Build, routes, browser, accessibility, evidence and deployment gates. |
+| `docs/audits/p1-02/browser/baseline.cjs` | `6bb142cbfcc1cad96732aa5adb32d45c93144e84` | Playwright reference harness for real browser interactive assertions and viewport captures. |
+| `docs/audits/p1-02/browser/keyboard.cjs` | `39b2d64f315a6719bba2b973884cebafc43837e9` | Reference keyboard and reduced-motion observation harness. |
+| `docs/audits/p1-02/static/analyze.py` | `3e18bcc236d0349feddb57e6a4d7753c61cd4e0e` | Static route, links, metadata, search and XML baseline analyzer. |
+| `docs/audits/p1-02/static/test_analyzer.py` | `7ab49acbba261f3a6c3b31797e3def8a46142146` | Fixture proving analyzer route and URL/fragment behavior. |
+| `docs/audits/p1-02/static/routes.txt` | `6d18a022b4125e4271d6fc3e6d8540c2795cfd77` | Frozen P1-02 output paths used for retention comparison. |
+| `docs/audits/p1-01/content-pages.csv` | `0fc0b18babb32b4526d2c750653b1ee117276863` | Source page/permalink and language inventory consumed by analyzer. |
+| `docs/audits/p1-01/verify.py` | `d936eff54c8eb4af55a8ac5202a74aca0be89cc2` | Production route and byte comparator and emitted consumer assertions. |
+| `hugo.toml` | `31ba0a8a84864500f4b96eb87a744d46bbb52c77` | Root config with content cascade selecting posts type and math/pagination settings. |
+| `content/about/index.md` | `8d9c83af0530bf2aad05b3377780d7631075fb2c` | About content uses posts type; remains unchanged, affects template lookup. |
+| `content/kinh-te/game_theory_nash.md` | `12e43aa0bdf6f7c37052c99cf7f711be7a0735ce` | Nash article and React/video consumer; unchanged and used for runtime checks. |
+| `layouts/index.html` | `647dbb82d6b8cfe957db0070bf0c459d0de9806b` | Existing home defines blocks within shared base; unchanged and production bytes verified. |
+
+Pinned vendor FixIt subtree `f5fb989ad1a157dc0e7ac30d0a66b18194b1bea4` PARTIAL: `layouts/baseof.html` blob `f634bfeb6759857511b070f2d8c34cec5049d751`, `layouts/posts/single.html` `813ff47473d158e65a55f897c010e63e815fecf5`, `layouts/section.html` `f6dae6fae193e6b0cc6dca2131f0e8fc815341d0`, `layouts/page.html` `86f65d693277671f46536f5e8aec04519c5c8258` (verify against pinned Git tree before future edits), header `40cf1efe1b07a3a0e60fad8a428b4859ae2c0cd9`, footer `0c103187ba4438639b9daa243efad77822ea9807`, LICENSE `2b4cb5adcfe4b2e054409759ce434aeb1224849e`. These provide originals and delegated head/navigation/footer/article helpers; do not remove theme before D-012 parity. Generated P1-04 JSON/logs/screenshots grouped as PARTIAL; individual hashes and sizes in `artifact-blobs.tsv` SHA256 `268fd65e20f029f4fd371a3fbf076842937ca276e8141bb95182d1296766c587`. Production builds/fixture passed; 8 browser checks passed, but MathJax/heatmap external runtime unverified.
