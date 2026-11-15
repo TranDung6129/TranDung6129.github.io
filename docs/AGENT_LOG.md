@@ -73,3 +73,10 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Evidence examined:** P1-02 output-retention JSON: 645/645 emitted files with zero additions/removals and zero byte changes; browser results JSON: 8 passing named interaction checks and 16 screenshots at four widths and two themes; static summary: 11,202 internal references, 745 missing occurrences/210 unique missing normalized targets; 156 parseable XML outputs and four search indexes. See [baseline audit](audits/P1-02.md), [runbook](audits/p1-02/RUNBOOK.md), and [browser results](audits/p1-02/browser/results.json).
 - **Limits:** Existing missing branding poster/icon references, duplicated canonical/title groups, incomplete ja/zh-cn routes and MathJax/Cal-Heatmap network failures are **unresolved**. Reviewer inspected submitted source/results but did not independently rerun browser/build test suite in this review environment. Local unthrottled browser timing is not production CWV or performance compliance. This acceptance is for **baseline capture**, not Phase-1 site parity or bug-free production.
 - **Next:** P1-03 architecture decision may proceed. Carry all P1-02 baseline defects into migration and SEO/asset tasks, with final release verification under P1-08.
+
+### 2026-11-15 — P1-03 — Codex
+- **Status:** IN PROGRESS; dependencies P1-01 and P1-02 DONE on main `2654c30`.
+- **Branch / PR:** `design/p1-03-template-architecture`; claim first.
+- **Scope:** Decide owned Hugo template architecture, configuration and migration strategy, including PostgreSQL migration boundaries; preserve current site.
+- **Evidence:** P1-01/02 merged baseline; tests and decision to follow.
+- **Next:** P1-04 and P1-09 after integration.
