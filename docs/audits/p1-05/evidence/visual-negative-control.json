@@ -1,0 +1,77 @@
+{
+ "method": "Full-page Chromium screenshots of two builds, reduced motion, fonts and MathJax settled; pass = same size and zero differing pixels.",
+ "browser": "153.0.8010.12",
+ "baseA": "http://localhost:1315",
+ "baseB": "http://127.0.0.1:1316",
+ "states": 2,
+ "identical": 1,
+ "different": 1,
+ "retried": 1,
+ "rechecked": 1,
+ "routesAll": 2,
+ "routesMatrix": 0,
+ "failed": [
+  {
+   "route": "/kinh-te/toan-co-ban-2/",
+   "width": 1440,
+   "scheme": "light",
+   "attempts": 5,
+   "statusA": 200,
+   "statusB": 200,
+   "shaA": "ad0c67f61012956174f2db9b4f8054548f58bfc3638832a2b596d048bcc2b947",
+   "shaB": "0b445844f6c6260181113a80c0c7f466fa7b7baf33aacf75d43b6af68d19f213",
+   "sameSize": true,
+   "a": [
+    1440,
+    1611
+   ],
+   "differing": 9457,
+   "maxChannelDelta": 190,
+   "identical": false,
+   "recheck": true,
+   "parallelRunDifference": {
+    "differing": 9457,
+    "maxChannelDelta": 190,
+    "sameSize": true
+   }
+  }
+ ],
+ "results": [
+  {
+   "route": "/",
+   "width": 1440,
+   "scheme": "light",
+   "attempts": 1,
+   "statusA": 200,
+   "statusB": 200,
+   "shaA": "328be3c6227f81733cc931ae934bea85ca467bfebcfa85df367ffdcf9b33bb4a",
+   "shaB": "328be3c6227f81733cc931ae934bea85ca467bfebcfa85df367ffdcf9b33bb4a",
+   "identical": true,
+   "differing": 0
+  },
+  {
+   "route": "/kinh-te/toan-co-ban-2/",
+   "width": 1440,
+   "scheme": "light",
+   "attempts": 5,
+   "statusA": 200,
+   "statusB": 200,
+   "shaA": "ad0c67f61012956174f2db9b4f8054548f58bfc3638832a2b596d048bcc2b947",
+   "shaB": "0b445844f6c6260181113a80c0c7f466fa7b7baf33aacf75d43b6af68d19f213",
+   "sameSize": true,
+   "a": [
+    1440,
+    1611
+   ],
+   "differing": 9457,
+   "maxChannelDelta": 190,
+   "identical": false,
+   "recheck": true,
+   "parallelRunDifference": {
+    "differing": 9457,
+    "maxChannelDelta": 190,
+    "sameSize": true
+   }
+  }
+ ]
+}

@@ -10,24 +10,24 @@ P1-04 introduces site-owned Hugo compatibility templates under `layouts/_default
 
 | Need to change | Current entry point(s) | Related files / dependency | Important cautions |
 |---|---|---|---|
-| Site title, theme, canonical base URL | `config/_default/hugo.toml`, root `hugo.toml` | `config/_default/languages.toml`, `params.toml` | Both config families contribute effective values; inspect merge/precedence before edits |
+| Site title, theme, canonical base URL, pagination, section cascade | `config/_default/hugo.toml` | `config/_default/languages.toml`, `params.toml`, `module.toml` | `config/_default/` is the only site configuration since P1-05 (root `hugo.toml` removed); theme defaults still fill gaps until P1-07. Compare `hugo config` with `docs/audits/p1-05/tools/config-diff.py` before and after edits |
 | Main navigation | `layouts/_partials/site/header.html`, `config/_default/menus.toml`, `menus.en.toml` | FixIt header partials (delegated) | No finalized V2 menu/homepage; avoid premature overhaul |
-| Homepage structure/categories/featured/recent posts | `layouts/index.html` | `layouts/partials/heatmap.html`, site params | Homepage redesign deferred to Phase 3. Inline CSS lines ~123–414 in P1-01 snapshot |
-| Global colors, reading fonts, appearance | `assets/css/_custom.scss` | `assets/css/_override.scss`, FixIt `assets/css/style.scss` | This is a theme-import layer now; after custom layout migration update this row |
+| Homepage structure/categories/featured/recent posts | `layouts/index.html` | `assets/css/home.scss` (linked from `<head>` via the `custom-head` block), `layouts/partials/heatmap.html`, site params | Homepage redesign deferred to Phase 3. Home-only CSS lives in `home.scss` since P1-05; the heatmap partial keeps its own inline style |
+| Global colors, reading fonts, appearance | `assets/css/_custom.scss` | FixIt `assets/css/style.scss` imports it last; the site `_override.scss` was removed in P1-05 (theme fallback is used) | This is a theme-import layer now; after custom layout migration update this row |
 | Long-form article / section rendering | `layouts/posts/single.html`, `layouts/section.html`, `layouts/_default/{single,list}.html` | `layouts/_partials/p1-04/`, FixIt helpers, collection partial; markup/params config | Post and section are active; generic files are fallback. Keep compatibility until feature parity |
 | Previous/next chapters or collection labels | `layouts/_partials/single/collection-list.html` | `content/collections/**`, front matter taxonomies | References FixIt helpers; verify both vi/en chapter output |
 | Activity heatmap | `layouts/partials/heatmap.html` | `layouts/index.html`, D3/Cal-Heatmap external scripts | Verify browser and theme toggling before modifying |
-| Mathematics, code highlight, TOC | root `hugo.toml`; `config/_default/markup.toml`, `params.toml` | Theme templates, shortcodes, page front matter | Root and config/_default both active; preserve equation and code behavior |
+| Mathematics, code highlight, TOC | `config/_default/markup.toml` (Goldmark extras, math passthrough, highlight, TOC), `params.toml` (`page.math.type = "mathjax"`) | Theme templates, shortcodes, page front matter | Preserve equation and code behavior; rerun `docs/audits/p1-04/runtime/runtime.cjs` after changes |
 | English/VI and other language support | `config/_default/languages.toml`, `menus.en.toml` | `content/**/*.en.md`, site language config | Existing four language home outputs do not establish complete translations |
 | Blog/chapters text, screenshots, post metadata | `content/<section>/*.md` | section indexes, `static/`, page bundles | Preserve URL/slug; see `docs/audits/p1-01/content-pages.csv` |
 | React/interactive Nash visualization | `layouts/shortcodes/react.html` | `assets/js/components/NashEquilibriumSim.jsx`, `package.json`, content Nash articles | React/Recharts **are active**; two shortcode calls; mobile fallback. Never remove dependencies blindly |
-| Kalman mock visualization | `assets/js/components/KalmanFilterSim.jsx` | No observed runtime consumer (audit finding) | Candidate cleanup only after verified non-use |
-| Browser custom JS | `assets/js/custom.js` | FixIt asset pipeline | Starter greeting is emitted; verify consumers before removal |
+| Browser custom JS | none (the starter `assets/js/custom.js` was removed in P1-05) | FixIt asset pipeline builds `assets/js/custom.js` if it exists | Put new behaviour in focused files under `assets/js/`, not a catch-all |
 | Logos, avatars, published videos | `static/images/`, `static/videos/` | `content/about/images/`, params, media library | Published URL may exist even when not referenced in Markdown |
-| Scientific animation source | `manim/game_theory_nash.py` | `media/` intermediates; published MP4 under `static/videos/` | `media/` tracked generated files; content poster missing, documented in audit |
+| Scientific animation source | `manim/game_theory_nash.py` | `media/` intermediates (128 tracked Manim cache files, not mounted); published MP4 under `static/videos/` | The duplicate MP4 under `media/` and tracked bytecode were removed in P1-05; removing the remaining intermediates needs the author's confirmation. Content poster missing, documented in audit |
 | Pre-migration baseline / regression evidence | `docs/audits/P1-02.md`, `docs/audits/p1-02/static/analyze.py`, `test_analyzer.py`, `browser/baseline.cjs` | Frozen P1-01 routes, generated production output, system Chromium + external Playwright install | Capture known defects separately from passing invariants; no runtime source changes; local timings are not field CWV |
 | External runtime checks (MathJax, D3/Cal-Heatmap in a real browser) | `docs/audits/p1-04/runtime/runtime.cjs`, `compare.cjs`, `integrity.py` | Environment Playwright/Chromium; network access to `cdn.jsdelivr.net` and `d3js.org`; npm registry tarballs for the integrity cross-check | Never relax certificate validation. Run against baseline and candidate builds and compare; trust-path limits are documented in `docs/audits/p1-04/README.md` |
-| Search, RSS, sitemap, robots | `config/_default/params.toml`, `outputs.toml`, `sitemap.toml`, root `hugo.toml` | FixIt search/robots templates | Retain outputs and paths; test generated HTML and index files |
+| Regression tooling for output, config and rendering | `docs/audits/p1-05/tools/`: `compare-output.py` (byte diff of two builds), `config-diff.py` (effective config), `visual-compare.cjs` + `make-routes.py` (pixel comparison), `dead-selectors.cjs`, `home-css-rules.cjs` | Two builds served locally; environment Playwright/Chromium | Build both trees from the same checkout path (source maps embed it). Pixel noise handling and the negative control are described in `docs/audits/p1-05/README.md` |
+| Search, RSS, sitemap, robots | `config/_default/params.toml`, `outputs.toml`, `sitemap.toml`, `hugo.toml` (`enableRobotsTXT`) | FixIt search/robots templates; the published `robots.txt` is the theme template (the dead root copy was removed in P1-05) | Retain outputs and paths; test generated HTML and index files |
 | GitHub Pages builds | `.github/workflows/deploy.yml` | `package.json`, Hugo config, submodules | Action currently pinned Hugo 0.149.0; PR-triggered CI not present at audit |
 | Theme updates | `.github/workflows/update-theme.yml` | `.gitmodules`, `.github/dependabot.yml` | Remove only after theme replacement verified; adjust deploy workflow_run coupling |
 | Database foundation (planned, not yet built) | `docs/DATABASE_FOUNDATION.md` | P1-09; future migration directory/compose files | Do not invent current code paths; update after P1-09 establishes them |
@@ -42,7 +42,7 @@ Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_p
 - `assets/css/`, `assets/js/`: authored style, JS and React components.
 - `content/`: authored Markdown and page bundle assets (preserve).
 - `static/`: files exposed directly as URLs; don't delete based on source-reference search alone.
-- `config/_default/` **and** root `hugo.toml`: both affect effective config.
+- `config/_default/`: the only site configuration (root `hugo.toml` was folded in by P1-05).
 - `docs/audits/p1-01/`: detailed inventory, shortcode-use manifest, full config matrix, build/route comparison, evidence.
 - `manim/`, `media/`: science-video source and generated intermediates; not the Hugo runtime by default.
 - `docs/`: product decisions, task board, runbooks and this map.
@@ -59,6 +59,7 @@ Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_p
 ## Modification record template (append short entries here, most recent first)
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
+| 2026-11-15 | P1-05 cleanup | Configuration, site CSS, unused files | root `hugo.toml` → `config/_default/{hugo,module,markup,params}.toml`; inline home CSS → `assets/css/home.scss`; removed `_override.scss`, `custom.js`, `KalmanFilterSim.jsx`, root `robots.txt`, bytecode, duplicate MP4 | Effective config, byte diff, CSSOM and 355-state pixel comparison in `docs/audits/p1-05/` |
 | 2026-11-15 | P1-04 runtime gate | Test/evidence entrypoints | New `docs/audits/p1-04/runtime/` | MathJax/Cal-Heatmap browser harness, baseline comparison and npm integrity check; no application owner moved |
 | 2026-11-15 | P1-04 compatibility | HTML shell, post and section | FixIt layout entrypoints → `layouts/_default/`, `layouts/posts/`, `layouts/section.html` | Preserve output via theme partials; see P1-04 evidence |
 | 2026-11-15 | P1-02 baseline | Test/evidence entrypoints | New `docs/audits/p1-02/` | Static route/link/metadata fixture + Chromium capture; no application owner moved |
