@@ -20,7 +20,7 @@
 
 | Check | ID | Task / acceptance | Depends | Status | Owner |
 |---|---|---|---|---|---|
-| [ ] | P2-01 | Establish color/spacing/size/motion tokens for both themes, document contrast and semantics | P1-03 | IN PROGRESS | Codex |
+| [x] | P2-01 | Establish color/spacing/size/motion tokens for both themes, document contrast and semantics | P1-03 | DONE | Codex |
 | [ ] | P2-02 | Typography specimen: test Vietnamese/English, headings, prose, math, code, captions and long-form readability | P2-01 | TODO | — |
 | [ ] | P2-03 | Accessible navigation primitives, buttons, focus states, mobile behavior, reduced motion | P1-04, P2-01 | TODO | — |
 | [ ] | P2-04 | Editorial components: article cards, lead, quotes, media, code, TOC, citations, chapter navigation | P2-01, P2-02 | TODO | — |

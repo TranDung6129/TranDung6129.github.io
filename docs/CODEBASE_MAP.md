@@ -56,6 +56,8 @@ FixIt and the bookmark module are gone. Everything the site renders with is in t
 
 Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_partials/site/header.html` and `footer.html` to FixIt. It affects home as well as other page kinds; test all output before changes. Derived FixIt templates retain upstream MIT terms in `layouts/_default/FIXIT-LICENSE.txt`.
 
+P2-01 review-only tokens live at `assets/css/editorial/tokens.css`; [usage and contrast](design/TOKENS.md) and `docs/design/check-token-contrast.py` accompany them. They are not imported in production.
+
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
 - `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).

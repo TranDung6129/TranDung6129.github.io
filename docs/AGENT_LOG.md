@@ -193,3 +193,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Branch:** `feat/phase2-editorial-specimens`, stacked on `docs/p1-08-live-retry`.
 - **Scope:** Isolated editorial tokens, contrast and usage; no production homepage or site-wide visual rollout.
 - **Next:** Typography specimen and review-gated components.
+
+### 2026-11-15 — P2-01 — Codex evidence
+- **Status:** DONE for token implementation/contrast; owner visual approval remains pending P2-06. Branch `feat/phase2-editorial-specimens`, claim `c074a64`.
+- **Files:** `assets/css/editorial/tokens.css`, `docs/design/TOKENS.md`, `docs/design/check-token-contrast.py`, map, registry and status. Tokens are not imported in public templates.
+- **Tests:** `python3 docs/design/check-token-contrast.py` PASS: body/accent/muted >=4.5:1 on paper and surfaces in light/dark. Light muted changed to #6A6256 due baseline #7A7265 measuring 4.36:1 on paper. `npm run build -- --destination /tmp/p201-public` PASS. A separate build with only the new unreferenced token file temporarily moved outside checkout produced 647/647 paths, 0 changed bytes. Initial P1-02 route check failed because P1-07 deliberately changed baseline paths; comparison rerun against current main output instead.
+- **Limits:** System font stacks are candidates, not final adoption; typography/actual visual review remains P2-02/P2-06. Browser visual approval not claimed. P1-08 remains blocked on live egress.

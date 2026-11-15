@@ -368,3 +368,21 @@ Working Git blobs; coverage PARTIAL. Browser/network failure verified; no produc
 | `docs/INSPECTED_FILES.md` | `9c2de304d673c1521c0cb4cde3c7c2714499f317` | Revision-aware registry; self hash is pre-append. |
 | `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Task claims, evidence, preservation and visual approval safeguards. |
 | `docs/TASK_BOARD.md` | `1f709d219b2968366640346f6de15922addac5f5` | Canonical statuses; P1-08 remains BLOCKED and P2-01 is unclaimed. |
+
+## 2026-11-15 — P2-01 tokens
+
+PARTIAL coverage; working blobs, registry self hash pre-append. Contrast checks and current-main production byte comparison passed; no owner visual approval.
+
+| Path | Blob | Purpose / dependencies / risk |
+|---|---|---|
+| `assets/css/editorial/tokens.css` | `177b57a1a1684478c192be510ea8993f3f1e1ae2` | Specimen-only semantic palette, type, spacing, width and reduced-motion tokens; not loaded in production. |
+| `docs/design/TOKENS.md` | `976dbfedcceae1b34292732e0c656663a58b37f9` | Token usage, measured contrast, light-muted adjustment and provisional font decision. |
+| `docs/design/check-token-contrast.py` | `dc1505561442a4edb3cb79a1b77757cdef3344f9` | Parses CSS token declarations and asserts text/background pairings >=4.5 contrast. |
+| `docs/CODEBASE_MAP.md` | `019a98b59b9d9a39fc25606198514b7018552ff4` | Current source navigation plus specimen-only P2-01 token ownership. |
+| `docs/TASK_BOARD.md` | `7090678de209ffe08d83ad01368db3a11e7b3f8e` | P2-01 completed on branch; P1-08 blocked; dependent P2 tasks remain unclaimed. |
+| `docs/AGENT_LOG.md` | `75a6fe1441b3f7ca28ecd99e5ae3c72d479e04d3` | P2-01 claim and exact verification, scope and limitations. |
+| `docs/INSPECTED_FILES.md` | `ec8e49a0741ea6318228dd1ac5508a3a259a3132` | Knowledge registry; own hash describes pre-append version. |
+| `docs/DESIGN_SYSTEM.md` | `ee8ca775a8471bea29f69523dfc7f0c98109eef8` | Semantic palette and specimen/owner-approval visual gate. |
+| `docs/VISUAL_DIRECTION.md` | `9181d328d71d874bc95c44daca2dec5a7607bd0c` | Magazine/book visual brief, specimen-first approval and no unapproved homepage. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Build, route, accessibility, screenshots and review requirements. |
+| `assets/css/_custom.scss` | `9b97fbecc88efc486e604cf36bd73bb2ae34a292` | Existing production palette, font imports and theme rules; independent of new specimen-only tokens. |
