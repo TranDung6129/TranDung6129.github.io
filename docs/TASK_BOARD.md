@@ -6,7 +6,7 @@
 
 | Check | ID | Task / acceptance | Depends | Status | Owner |
 |---|---|---|---|---|---|
-| [ ] | P1-01 | Inventory all files, deployments, config precedence, active assets/shortcodes/theme use; publish KEEP/REPLACE/REMOVE matrix with proof | — | TODO | — |
+| [ ] | P1-01 | Inventory all files, deployments, config precedence, active assets/shortcodes/theme use; publish KEEP/REPLACE/REMOVE matrix with proof | — | IN PROGRESS | Codex (integrator) |
 | [ ] | P1-02 | Capture baseline: Hugo version/build, route list, language variants, RSS/search/math/code/TOC/theme behaviors, broken links, current performance | P1-01 | TODO | — |
 | [ ] | P1-03 | Decide custom Hugo template architecture, configuration model and migration strategy; record decision | P1-01, P1-02 | TODO | — |
 | [ ] | P1-04 | Implement base, header/footer, section/single templates and compatibility layer; build passes while old functionality remains | P1-03 | TODO | — |
