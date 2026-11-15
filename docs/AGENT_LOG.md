@@ -287,3 +287,12 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Font scope:** Self-hosted 12 licensed variable WOFF2 files copied from already sourced font comparison, loaded only in Hugo `editorial-review` preview build. Original license notices remain under `docs/design/typography-comparison/fonts/`.
 - **Evidence:** Codex reports 84/84 browser, 40/40 image and 647/647 unchanged production build **before this font wiring**. Independent browser/font rerun after this final change is still required before production typography migration; this integration is owner's reversible design acceptance, not proof of production homepage change.
 - **P1-08:** Live browser smoke remains BLOCKED independently.
+
+### 2026-11-15 — P1-08 live verification and sign-off — Claude Code
+- **Status:** DONE. Phase 1 ready for the maintainer's final acceptance.
+- **Branch:** `docs/p1-08-production-signoff` from `main` `3569afe`; evidence and docs only, no site code changed.
+- **Access:** proxy CONNECT 403 for `trandung6129.github.io` was the environment allowlist; the host was added to the `epistemic-diary` cloud environment through the approved environment tool. Public certificate (Let's Encrypt `YR1`, `*.github.io`) validated normally; no TLS bypass.
+- **Deployment:** run 43733870614 (`deploy.yml`, push, success) for `3569afe`; live `last-modified` matches.
+- **Tests (exit 0 unless stated):** `hugo --gc --minify` of `3569afe` (full history, 0 warnings, 647 files); `python3 docs/audits/p1-08/tools/live-mirror.py <build> https://trandung6129.github.io <dir> <json>` 647 × 200, 645 byte-identical, 2 source maps differ only in `sourceRoot`; `docs/audits/p1-07/tools/compare-normalised.py` P1-07 build vs `3569afe` build equivalent; `docs/audits/p1-06/tools/seo-check.py` on the live tree PASS (201 pages); P1-02 `analyze.py` on the live tree identical to P1-07 (exit 1 by design); `BASE=https://trandung6129.github.io node docs/audits/p1-04/runtime/runtime.cjs` PASS (MathJax 674/674, heatmap 4 languages × 2 themes); `node docs/audits/p1-08/tools/live-smoke.cjs` PASS 15/15, 36 states at 390/768/1440 × light/dark, 0 own-site failures.
+- **Findings:** no new regression. New baseline observation: dark-mode body background is FixIt `#292A2E`, not `#1A1816` (same before migration) — Phase 2. Gravatar not allow-listed (environment-limited). Earlier defects unchanged.
+- **Rollback:** procedure, merge SHAs and verification commands in the [P1-08 report](audits/p1-08/README.md).

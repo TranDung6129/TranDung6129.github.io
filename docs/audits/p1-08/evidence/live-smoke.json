@@ -1,0 +1,980 @@
+{
+  "method": "Headless Chromium against the public GitHub Pages site; default launch options, certificate validation on, no request interception.",
+  "base": "https://trandung6129.github.io",
+  "browser": "153.0.8010.12",
+  "matrix": [
+    {
+      "page": "home-vi",
+      "url": "https://trandung6129.github.io/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-vi-390-light.png"
+    },
+    {
+      "page": "home-en",
+      "url": "https://trandung6129.github.io/en/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "en",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-en-390-light.png"
+    },
+    {
+      "page": "home-ja",
+      "url": "https://trandung6129.github.io/ja/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "ja",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-ja-390-light.png"
+    },
+    {
+      "page": "math",
+      "url": "https://trandung6129.github.io/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 10,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "math-390-light.png"
+    },
+    {
+      "page": "nash",
+      "url": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 78,
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "nash-390-light.png"
+    },
+    {
+      "page": "code",
+      "url": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "width": 390,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 85,
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "code-390-light.png"
+    },
+    {
+      "page": "home-vi",
+      "url": "https://trandung6129.github.io/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-vi-390-dark.png"
+    },
+    {
+      "page": "home-en",
+      "url": "https://trandung6129.github.io/en/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "en",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-en-390-dark.png"
+    },
+    {
+      "page": "home-ja",
+      "url": "https://trandung6129.github.io/ja/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "ja",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-ja-390-dark.png"
+    },
+    {
+      "page": "math",
+      "url": "https://trandung6129.github.io/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 10,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "math-390-dark.png"
+    },
+    {
+      "page": "nash",
+      "url": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 78,
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "nash-390-dark.png"
+    },
+    {
+      "page": "code",
+      "url": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "width": 390,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 390,
+      "math": 85,
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "code-390-dark.png"
+    },
+    {
+      "page": "home-vi",
+      "url": "https://trandung6129.github.io/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-vi-768-light.png"
+    },
+    {
+      "page": "home-en",
+      "url": "https://trandung6129.github.io/en/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "en",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-en-768-light.png"
+    },
+    {
+      "page": "home-ja",
+      "url": "https://trandung6129.github.io/ja/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "ja",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-ja-768-light.png"
+    },
+    {
+      "page": "math",
+      "url": "https://trandung6129.github.io/kinh-te/toan-co-ban-2/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 10,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "math-768-light.png"
+    },
+    {
+      "page": "nash",
+      "url": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 78,
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "nash-768-light.png"
+    },
+    {
+      "page": "code",
+      "url": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "width": 768,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 85,
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "code-768-light.png"
+    },
+    {
+      "page": "home-vi",
+      "url": "https://trandung6129.github.io/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-vi-768-dark.png"
+    },
+    {
+      "page": "home-en",
+      "url": "https://trandung6129.github.io/en/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "en",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-en-768-dark.png"
+    },
+    {
+      "page": "home-ja",
+      "url": "https://trandung6129.github.io/ja/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "ja",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-ja-768-dark.png"
+    },
+    {
+      "page": "math",
+      "url": "https://trandung6129.github.io/kinh-te/toan-co-ban-2/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 10,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "math-768-dark.png"
+    },
+    {
+      "page": "nash",
+      "url": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 78,
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "nash-768-dark.png"
+    },
+    {
+      "page": "code",
+      "url": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "width": 768,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 768,
+      "math": 85,
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "code-768-dark.png"
+    },
+    {
+      "page": "home-vi",
+      "url": "https://trandung6129.github.io/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-vi-1440-light.png"
+    },
+    {
+      "page": "home-en",
+      "url": "https://trandung6129.github.io/en/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "en",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-en-1440-light.png"
+    },
+    {
+      "page": "home-ja",
+      "url": "https://trandung6129.github.io/ja/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "ja",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-ja-1440-light.png"
+    },
+    {
+      "page": "math",
+      "url": "https://trandung6129.github.io/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 10,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "math-1440-light.png"
+    },
+    {
+      "page": "nash",
+      "url": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 78,
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "nash-1440-light.png"
+    },
+    {
+      "page": "code",
+      "url": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "width": 1440,
+      "scheme": "light",
+      "status": 200,
+      "theme": "light",
+      "background": "rgb(247, 245, 240)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 85,
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "code-1440-light.png"
+    },
+    {
+      "page": "home-vi",
+      "url": "https://trandung6129.github.io/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-vi-1440-dark.png"
+    },
+    {
+      "page": "home-en",
+      "url": "https://trandung6129.github.io/en/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "en",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-en-1440-dark.png"
+    },
+    {
+      "page": "home-ja",
+      "url": "https://trandung6129.github.io/ja/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "ja",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 0,
+      "title": "The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 0,
+      "siteFailed": [],
+      "thirdFailed": 0,
+      "screenshot": "home-ja-1440-dark.png"
+    },
+    {
+      "page": "math",
+      "url": "https://trandung6129.github.io/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 10,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "math-1440-dark.png"
+    },
+    {
+      "page": "nash",
+      "url": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 78,
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "nash-1440-dark.png"
+    },
+    {
+      "page": "code",
+      "url": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "width": 1440,
+      "scheme": "dark",
+      "status": 200,
+      "theme": "dark",
+      "background": "rgb(41, 42, 46)",
+      "lang": "vi",
+      "overflow": false,
+      "scrollWidth": 1440,
+      "math": 85,
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "pageErrors": [],
+      "consoleErrors": 1,
+      "siteFailed": [],
+      "thirdFailed": 1,
+      "screenshot": "code-1440-dark.png"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Matrix: every page 200, theme matches colour scheme, no overflow, no page error, no failed own-site request",
+      "passed": true,
+      "states": 36
+    },
+    {
+      "name": "Page backgrounds match the pre-migration baseline (light #F7F5F0, dark #292A2E)",
+      "passed": true,
+      "light": [
+        "rgb(247, 245, 240)"
+      ],
+      "dark": [
+        "rgb(41, 42, 46)"
+      ]
+    },
+    {
+      "name": "Math pages typeset at every width and theme",
+      "passed": true,
+      "counts": [
+        10
+      ]
+    },
+    {
+      "name": "Desktop navigation links resolve (vi)",
+      "passed": true,
+      "links": [
+        [
+          "/archives/",
+          200
+        ],
+        [
+          "/categories/",
+          200
+        ],
+        [
+          "/tags/",
+          200
+        ],
+        [
+          "/collections/",
+          200
+        ],
+        [
+          "/collections/web-development/",
+          200
+        ],
+        [
+          "/collections/travel-guides/",
+          200
+        ],
+        [
+          "/collections/programming-tips/",
+          200
+        ],
+        [
+          "/collections/hugo-tutorials/",
+          200
+        ],
+        [
+          "/about/",
+          200
+        ],
+        [
+          "/en/",
+          200
+        ],
+        [
+          "/ja/",
+          200
+        ],
+        [
+          "/zh-cn/",
+          200
+        ]
+      ]
+    },
+    {
+      "name": "Search returns results for \"Nash\"",
+      "passed": true,
+      "results": 1
+    },
+    {
+      "name": "Theme toggle changes theme and persists after reload",
+      "passed": true,
+      "before": null,
+      "afterToggle": "dark",
+      "afterReload": "dark"
+    },
+    {
+      "name": "TOC link navigates to its heading",
+      "passed": true,
+      "href": "#1-tối-đa-hóa-lợi-nhuận-của-doanh-nghiệp",
+      "headingTop": 64
+    },
+    {
+      "name": "Code block expands and copy writes the code to the clipboard",
+      "passed": true,
+      "characters": 311,
+      "prefix": "def vertex_cover_approx(G):\n    cover = set()\n    edges = G."
+    },
+    {
+      "name": "Nash simulation initialises and Matching Pennies preset gives p* = q* = 0.500",
+      "passed": true
+    },
+    {
+      "name": "Nash payoff slider responds to the keyboard",
+      "passed": true,
+      "before": "1",
+      "after": "1.5"
+    },
+    {
+      "name": "Nash video poster loads and the video file is served",
+      "passed": true,
+      "poster": "/images/game_theory_nash_poster.png",
+      "posterLoaded": true,
+      "posterSize": [
+        1280,
+        720
+      ],
+      "src": "https://trandung6129.github.io/videos/game_theory_nash.mp4",
+      "videoStatus": 206,
+      "videoType": "video/mp4"
+    },
+    {
+      "name": "Nash mobile fallback shown and interactive wrapper hidden at 390 px",
+      "passed": true,
+      "fallback": "block",
+      "wrapper": "none"
+    },
+    {
+      "name": "Mobile menu opens and closes",
+      "passed": true,
+      "links": 9
+    },
+    {
+      "name": "Mobile search returns results",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Tab reaches header links with a visible focus outline",
+      "passed": true,
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Tìm hiểu thêm",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Đã hiểu!",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "The Epistemic Diary",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Lưu trữ",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Chủ đề",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Thẻ",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Chuỗi bài",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "text": "Giới thiệu",
+          "outline": true
+        }
+      ]
+    }
+  ],
+  "thirdPartyFailures": [
+    {
+      "page": "/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    }
+  ],
+  "siteFailures": [],
+  "observations": {
+    "searchAfterEscape": {
+      "dropdownVisible": false,
+      "inputValue": "Nash"
+    }
+  },
+  "desktopErrors": {
+    "pageErrors": [],
+    "siteFailed": []
+  }
+}

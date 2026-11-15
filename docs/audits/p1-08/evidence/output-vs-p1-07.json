@@ -1,0 +1,12 @@
+{
+  "before_files": 647,
+  "after_files": 647,
+  "removed": [],
+  "added": [],
+  "byte_different": [
+    "css/config.min.css.map",
+    "css/style.min.css.map"
+  ],
+  "different_after_path_normalisation": [],
+  "equivalent": true
+}
