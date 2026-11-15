@@ -235,3 +235,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Status:** IN PROGRESS; P2-01 and P2-04 done on stacked branches.
 - **Branch:** `feat/p2-05-future-specimens`, stacked on P2-04.
 - **Scope:** Visual-only future formats; no commerce, auth, payment, subscription or infrastructure.
+
+### 2026-11-15 — P2-05 — Codex evidence
+- **Status:** DONE for visual-only prototypes; real product, payment, subscription, affiliate, auth and advertising remain deferred. **Branch:** `feat/p2-05-future-specimens`, claim `a115df9`; stacked on P2-04.
+- **Files:** `layouts/_partials/specimen/{future,footer}.html`, `assets/css/specimen/future.css`, responsive update, [future specimen notes](design/FUTURE-SPECIMENS.md). Contains Films, Labs, Discover, Support, original Editions; Volume is in P2-04 composition. No fake checkout or undeployed production route.
+- **Tests:** Local preview contains all five future labels plus volume. `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/p205-public` PASS; compared to `/tmp/p201-before`, 647/647 output files, zero added/removed/changed bytes, no editorial-review route. Integrated responsive/keyboard/accessibility/screenshot QA follows P2-06; owner visual approval remains UNTESTED.

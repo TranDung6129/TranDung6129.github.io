@@ -62,6 +62,8 @@ P2-02 local specimen: `scripts/preview-editorial.sh` builds a temporary snapshot
 
 Review-only editorial composition lives in `layouts/_partials/specimen/home.html`, reusable `feature.html` and SVG art partials with `assets/css/specimen/home.css`; [provenance](design/ASSET-PROVENANCE.md). Production homepage remains `layouts/index.html`.
 
+Review-only future formats: `layouts/_partials/specimen/future.html`, `footer.html` and `assets/css/specimen/future.css`; [scope](design/FUTURE-SPECIMENS.md). They provide no commerce or feature routes.
+
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
 - `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).

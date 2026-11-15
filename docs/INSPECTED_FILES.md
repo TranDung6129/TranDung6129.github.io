@@ -443,3 +443,19 @@ Working blobs, PARTIAL coverage; isolated render and production isolation passed
 | `docs/AGENT_LOG.md` | `c3caea2bec4e85dd1e7464c88a6c5f7b43cb6d02` | P2-04 claim and scoped production isolation evidence. |
 | `docs/CODEBASE_MAP.md` | `0f944abb9c357d736e59c372196530f4ecca818b` | Review-only component ownership, production homepage remains separate. |
 | `docs/INSPECTED_FILES.md` | `8f7cfa5138b52acd36767da70adee1210448c2b1` | Registry self hash is pre-append. |
+
+## 2026-11-15 — P2-05 future specimens
+
+Working blobs, PARTIAL coverage; isolated render and production comparison passed, visual sign-off pending.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/_partials/specimen/future.html` | `aba4a0e25cce4ecd37106baf090744b7d4f19055` | Visual-only descriptions of films, labs, discover, reader support and editions; no actual checkout or feature route. |
+| `layouts/_partials/specimen/footer.html` | `aa1e9f2f914607c5e771c8b5593d2bf2692b3d6e` | Review-only footer and attribution; not production footer. |
+| `assets/css/specimen/future.css` | `cc4ca477cbac89f116c9cbaa987c2d4331a0ac82` | Layout for future-format examples and specimen footer; depends on semantic ed tokens. |
+| `assets/css/specimen/responsive.css` | `f835446bd5490dc5699ece26af0fb0235bb436dd` | Responsive specimen styles, five future-format examples wrap without misleading divider layout. |
+| `docs/design/FUTURE-SPECIMENS.md` | `e4c5bf57f41eea5fa64cfe3a208df074d2fe4664` | Scope and nontransactional limitations of prototype formats. |
+| `docs/TASK_BOARD.md` | `8bf27b81da61c55dd9b0ed7f55a0ced2d0f9b0fc` | P2-05 implementation done on branch; owner review remains P2-06. |
+| `docs/AGENT_LOG.md` | `18b95e262fd2c0945ceb5a583b33ab1475300669` | P2-05 scope, isolation test and limitations. |
+| `docs/CODEBASE_MAP.md` | `fe6cfda82f1dab4cc028c4519e7d13951d1b2d13` | Review-only future-format entrypoints; public routes unaffected. |
+| `docs/INSPECTED_FILES.md` | `619d85fc6d1f3032d230d03d861c5f7686a9eac2` | Registry self hash is pre-append. |
