@@ -32,6 +32,7 @@ Editorial influences: science storytelling and experiments (Veritasium), mathema
 5. Preserve URLs, translations, search, RSS, math, code, TOC and dark mode or log and resolve parity gaps.
 6. Retire FixIt and unused modules only after passing Phase 1 exit gates.
 7. Prepare structured content types and SEO metadata without migrating existing content URLs unnecessarily.
+8. **P1-09 database foundation:** establish PostgreSQL local development schema/migrations, env template, smoke tests and backup/restore instructions. Prefer managed Supabase PostgreSQL for a later hosted environment, but do not claim it is provisioned or connect public Hugo output. No real auth, membership or payment implementation.
 
 ### Phase 2 — Editorial design system and tested components
 1. Define semantic light/dark tokens, spacing, typography, layout breakpoints, motion and accessibility.
@@ -56,7 +57,7 @@ All deferred features must be separately scoped and approved.
 5. PR-E: fix parity gaps, safe FixIt retirement, regression and release notes.
 
 ## Non-negotiable exit gates
-**Phase 1:** clean build; no lost visible content/URLs/assets/translations; parity for current essential features; no hidden premium content exposed; no broken production deployment.
+**Phase 1:** clean build; no lost visible content/URLs/assets/translations; parity for current essential features; no hidden premium content exposed; no broken production deployment; PostgreSQL local schema/migrations tested and documented, or explicitly recorded as BLOCKED when runtime prerequisites are unavailable. Live database provisioning is a separate approval gate.
 **Phase 2:** consistent tokens; accessible responsive navigation and readable articles; components documented; documented measured performance; no new regressions; reviewer approves visual direction.
 
 ## Commercial principle
