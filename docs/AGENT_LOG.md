@@ -175,3 +175,10 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Findings / risks:** FixIt-derived files are now maintained here; 52 unused templates were not migrated; footer/meta still credit FixIt; two unused `static/lib` trees remain published; 128 Manim intermediates untouched. Earlier defects unchanged. First deploy without submodules has not run yet.
 - **Next:** P1-08 after merge (deployment smoke test, rollback notes, sign-off).
 
+
+### 2026-11-15 — P1-08 integration checkpoint (reviewed, live smoke BLOCKED)
+- **Baseline:** Theme-free merge `e5269a0` (PR #23) and all Phase-1 prerequisites are merged.
+- **Deployment:** GitHub Actions run [43706336488](https://github.com/TranDung6129/TranDung6129.github.io/actions/runs/43706336488) build and deploy both SUCCESS, on `e5269a0`, Pages reported success. Artifact 14157718813 uploaded.
+- **Regression review:** Checked stored P1-07 report and results (647 output files, 355 screenshot states, 8/8 interactions, MathJax/Cal-Heatmap, SEO 201 pages). These tests were run by Claude, not rerun independently here.
+- **Blocker:** Public site cannot be fetched from this review environment via web/DNS, so no independent live browser/HTTP smoke evidence. Do not mark P1-08 DONE until that specific gate is demonstrated.
+- **Next:** trusted browser smoke, screenshots and console/HTTP findings per [P1-08 audit](audits/p1-08/README.md); Phase 2 concept may proceed separately as a design prototype, not automatic production homepage redesign.
