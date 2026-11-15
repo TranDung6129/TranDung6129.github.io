@@ -302,3 +302,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Branches:** `feat/p3-foundation-home-journal` (P3-01..03), then `feat/p3-sections-navigation`, `feat/p3-qa`, `docs/p3-08-signoff`; plan in `docs/phases/phase-3/PLAN.md`.
 - **Baseline:** `main` `0045a4c`; P1-08 live evidence is the behavioural baseline.
 
+### 2026-11-15 — P3-01..P3-07 implementation and QA — Claude Code
+- **Status:** P3-01..P3-07 DONE on branches `feat/p3-foundation-home-journal` (A), `feat/p3-sections-navigation` (B), `feat/p3-qa` (C); merge order A → B → C; P3-08 follows the deploy.
+- **What:** site-owned editorial shell and design system (D-014), homepage from real content, journal/article/list pages, volumes, films, labs, discover, navigation in four languages; 31 unused FixIt templates and the FixIt SCSS/JS/library sources removed with output-identity proof; accessibility fixes (heading-anchor names, focusable heatmap region, Nash slider labels and contrast tokens).
+- **Tests (exit 0):** `hugo --gc --minify` (0 warnings) and development build; `python3 docs/audits/p1-05/tools/compare-output.py <P1-08 build> <P3 build>` — no content route removed; `python3 docs/audits/p1-02/static/analyze.py ...` — 0 broken references (was 140); `python3 docs/audits/p1-06/tools/seo-check.py <build> content ...` PASS 213 pages; `BASE=... AXE=.../axe.min.js node docs/audits/p3-07/tools/p3-smoke.cjs` — 80 matrix states, 31/31 checks, axe 0 violations; `node docs/audits/p3-07/tools/perf.cjs` — home 1,135 to 589 KB at 390 px, CLS 0.
+- **Known limitations:** see `docs/audits/p3-07/README.md`.
+

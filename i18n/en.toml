@@ -368,3 +368,48 @@ other = "A book of connected ideas"
 [ed_words]
 one = "{{ .Count }} word"
 other = "{{ .Count }} words"
+
+[ed_inVolume]
+other = "In a volume"
+[ed_chapterOf]
+other = "Chapter {{ .N }} of {{ .Total }}"
+[ed_nextChapter]
+other = "Next chapter"
+[ed_chapters]
+other = "Chapters"
+[ed_allVolumes]
+other = "All volumes"
+[ed_volumesKicker]
+other = "Books of connected ideas"
+[ed_noVolumes]
+other = "No volume has been published yet."
+[ed_filmsKicker]
+other = "Ideas, in motion"
+[ed_film]
+other = "Film"
+[ed_companion]
+other = "Companion essay"
+[ed_filmsUpcoming]
+other = "Longer films are in production. None has been published yet; they will appear here when they are."
+[ed_labsKicker]
+other = "Think with your hands"
+[ed_lab]
+other = "Lab"
+[ed_openLab]
+other = "Open the experiment"
+[ed_inEssay]
+other = "in"
+[ed_discoverKicker]
+other = "Useful things, considered"
+[ed_discoverDisclosure]
+other = "An editorial selection of works cited in our essays. Nothing on this page is a paid placement or an affiliate link."
+[ed_citedIn]
+other = "Cited in"
+[ed_chapterCount]
+one = "{{ .Count }} chapter"
+other = "{{ .Count }} chapters"
+
+[ed_sectionLink]
+other = "Link to this section"
+[ed_activityLabel]
+other = "Calendar of essays published per day over six months"

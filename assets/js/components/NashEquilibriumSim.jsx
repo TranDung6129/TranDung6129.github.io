@@ -28,10 +28,10 @@ const T = {
   border:    "var(--border-color)",
   text:      "var(--text-color)",
   primary:   "var(--primary-color)",
-  p1:        "#4FC3F7",
-  p2:        "#EF9A9A",
-  ne:        "#A5D6A7",
-  muted:     "#888",
+  p1:        "var(--ed-nash-p1, #4FC3F7)", // P3-07: theme-aware, readable on paper and ink
+  p2:        "var(--ed-nash-p2, #EF9A9A)",
+  ne:        "var(--ed-nash-ne, #A5D6A7)",
+  muted:     "var(--ed-muted, #888)", // P3-07: site token, meets 4.5:1 in both themes
 };
 
 // ── Utility: find pure-strategy NE ──────────────────────────────────────────
@@ -97,6 +97,7 @@ function PayoffSlider({ label, value, onChange, color }) {
       <span style={{ fontSize: 13, color: color, fontWeight: 600, letterSpacing: "0.03em" }}>{label}</span>
       <input
         type="range" min={-10} max={10} step={0.5}
+        aria-label={`Payoff ${label}`}
         value={value}
         onChange={e => onChange(Number(e.target.value))}
         style={{ width: 68, accentColor: color }}
@@ -351,6 +352,7 @@ export default function NashEquilibriumSim() {
           <span style={{ fontSize: 14, color: T.muted }}>q =</span>
           <input
             type="range" min={0} max={1} step={0.01}
+            aria-label="Player 2 mixing probability q"
             value={qSlider}
             onChange={e => setQSlider(Number(e.target.value))}
             style={{ width: 160, accentColor: T.primary }}

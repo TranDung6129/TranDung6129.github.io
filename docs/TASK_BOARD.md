@@ -33,13 +33,13 @@ Plan, scope and acceptance: [docs/phases/phase-3/PLAN.md](phases/phase-3/PLAN.md
 
 | Check | ID | Task / acceptance | Depends | Status | Owner / PR |
 |---|---|---|---|---|---|
-| [ ] | P3-01 | Production design system: tokens (dark `#1A1816`), local fonts, shared components, editorial shell | P2-06 | IN PROGRESS | Claude Code, PR A |
-| [ ] | P3-02 | Homepage integration from real Hugo data | P3-01 | TODO | Claude Code, PR A |
-| [ ] | P3-03 | Journal landing, lists and article reading experience; MathJax/code/TOC/shortcodes kept | P3-01 | TODO | Claude Code, PR A |
-| [ ] | P3-04 | Volumes and chapters | P3-03 | TODO | Claude Code, PR B |
-| [ ] | P3-05 | Films and Labs; Nash unchanged | P3-03 | TODO | Claude Code, PR B |
-| [ ] | P3-06 | Discover, global navigation, search, multilingual behaviour | P3-04, P3-05 | TODO | Claude Code, PR B |
-| [ ] | P3-07 | QA and regression report (routes, SEO, runtime, browser matrix, a11y, performance, visual) | P3-01..06 | TODO | Claude Code, PR C |
+| [x] | P3-01 | Production design system: tokens (dark `#1A1816`), local fonts, shared components, editorial shell | P2-06 | DONE | Claude Code, PR A; evidence `docs/audits/p3-07/` |
+| [x] | P3-02 | Homepage integration from real Hugo data | P3-01 | DONE | Claude Code, PR A |
+| [x] | P3-03 | Journal landing, lists and article reading experience; MathJax/code/TOC/shortcodes kept | P3-01 | DONE | Claude Code, PR A |
+| [x] | P3-04 | Volumes and chapters | P3-03 | DONE | Claude Code, PR B |
+| [x] | P3-05 | Films and Labs; Nash unchanged | P3-03 | DONE | Claude Code, PR B |
+| [x] | P3-06 | Discover, global navigation, search, multilingual behaviour | P3-04, P3-05 | DONE | Claude Code, PR B |
+| [x] | P3-07 | QA and regression report (routes, SEO, runtime, browser matrix, a11y, performance, visual) | P3-01..06 | DONE | Claude Code, PR C; `docs/audits/p3-07/README.md` |
 | [ ] | P3-08 | Production deployment and live sign-off | P3-07 | TODO | Claude Code, PR D |
 
 ## Deferred backlog (do NOT check off or implement without new approval)

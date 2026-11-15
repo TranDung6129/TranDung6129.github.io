@@ -1,0 +1,17 @@
+# Published films only (P3-05). Each entry must point to media that is actually published.
+# Fields: title, description (per language), date, duration, video (self-hosted path) or
+# youtube (video id, rendered with the privacy-enhanced youtube-nocookie domain), poster,
+# related (content path of the companion essay).
+films:
+  - id: nash-animation
+    title:
+      vi: "Lý thuyết trò chơi và cân bằng Nash"
+      en: "Game theory and Nash equilibrium"
+    description:
+      vi: "Hoạt hình Manim ngắn (65 giây) đi kèm bài luận: từ trò chơi dạng chiến lược đến cân bằng."
+      en: "A short Manim animation (65 seconds) accompanying the essay: from strategic-form games to equilibrium."
+    date: 2025-08-01
+    duration: "1:05"
+    video: /videos/game_theory_nash.mp4
+    poster: /images/game_theory_nash_poster.png
+    related: /kinh-te/game_theory_nash

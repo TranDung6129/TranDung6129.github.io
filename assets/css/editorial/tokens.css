@@ -74,3 +74,7 @@
   --global-bg-color: var(--ed-bg);
   --global-font-color: var(--ed-fg);
 }
+
+/* Nash simulation series colours (P3-07): the original pastels fail contrast on light paper. */
+:root { --ed-nash-p1: #0b6285; --ed-nash-p2: #a3352e; --ed-nash-ne: #2e6b33; }
+[data-theme="dark"] { --ed-nash-p1: #4fc3f7; --ed-nash-p2: #ef9a9a; --ed-nash-ne: #a5d6a7; }

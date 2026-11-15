@@ -4,27 +4,34 @@ The site's own code and content are covered by [LICENSE](LICENSE). The following
 
 ## FixIt theme (MIT)
 
-Templates under `layouts/`, styles under `assets/css/` (except `_custom.scss` and `home.scss`), scripts `assets/js/theme.js`, `assets/js/util.js`, `assets/js/head/`, `assets/js/lib/mathjax.js`, images under `assets/images/` and translation strings under `i18n/` are derived from [FixIt](https://github.com/hugo-fixit/FixIt) at commit `f5fb989ad1a157dc0e7ac30d0a66b18194b1bea4` (v0.4.0-alpha). FixIt was a Git submodule until P1-07; the files the site uses are now maintained here. The MIT license and copyright notices are kept in [LICENSE-FixIt.txt](LICENSE-FixIt.txt).
+Since Phase 3 the page shell, styles and site scripts are the site's own (`layouts/_default/baseof.html`, `layouts/_partials/site/`, `layouts/_partials/editorial/`, `assets/css/editorial/`, `assets/js/editorial.js`). Still derived from [FixIt](https://github.com/hugo-fixit/FixIt) at commit `f5fb989ad1a157dc0e7ac30d0a66b18194b1bea4` (v0.4.0-alpha): the SEO head partials (`layouts/_partials/head/`), initialisation and helper partials (`layouts/_partials/init/`, `function/`, `plugin/`), Markdown render hooks (`layouts/_markup/`), feed, sitemap, search-index and Markdown-output templates, `assets/js/lib/mathjax.js`, `assets/images/fixit.svg` and the FixIt interface strings in `i18n/`. The MIT licence and copyright notices are kept in [LICENSE-FixIt.txt](LICENSE-FixIt.txt).
 
-## Bundled libraries
+## Fonts (SIL Open Font License 1.1)
 
-Unmodified copies shipped with FixIt, under `assets/lib/` and `static/lib/`. Each keeps its upstream license.
+Self-hosted variable WOFF2 files, Vietnamese, Latin and Latin Extended subsets, from the `@fontsource-variable` packages; unmodified. Licences are next to the files.
+
+| Family | Use | Path |
+|---|---|---|
+| Newsreader | Headings and display | `assets/editorial-fonts/newsreader/` |
+| Source Serif 4 | Reading text | `assets/editorial-fonts/source-serif-4/` |
+
+## Editorial artwork
+
+Owner-supplied illustrations in `assets/editorial-source/` (originals) and `assets/editorial-art/` (WebP derivatives). Provenance and limits: [docs/design/ASSET-PROVENANCE.md](docs/design/ASSET-PROVENANCE.md).
+
+## Published library files kept for URL stability
+
+Unmodified files under `static/lib/`, shipped with FixIt and still published so existing URLs keep working; no current page loads them.
 
 | Library | Version | Path | Upstream |
 |---|---|---|---|
-| animate.css | 4.1.1 | `assets/lib/animate/` | https://github.com/daneden/animate.css |
-| autocomplete.js | 0.38.1 | `assets/lib/autocomplete/` | https://github.com/algolia/autocomplete |
-| cookieconsent | 3.1.1 | `assets/lib/cookieconsent/` | https://github.com/osano/cookieconsent |
-| Font Awesome Free | 6.7.1 | `assets/lib/fontawesome-free/`, `static/lib/webfonts/` | https://github.com/FortAwesome/Font-Awesome |
-| Fuse.js | 6.6.2 | `assets/lib/fuse/` | https://github.com/krisk/fuse |
-| lightGallery | 2.7.2 | `assets/lib/lightgallery/`, `static/lib/lightgallery/` | https://github.com/sachinchoolur/lightgallery |
-| normalize.css | 8.0.1 | `assets/lib/normalize/` | https://github.com/necolas/normalize.css |
-| sharer.js | 0.5.1 | `assets/lib/sharer/` | https://github.com/ellisonleao/sharer.js |
-| KaTeX (fonts and CSS only, published but not used by current pages) | 0.16.22 | `static/lib/katex/` | https://github.com/KaTeX/KaTeX |
+| Font Awesome Free (webfonts) | 6.7.1 | `static/lib/webfonts/` | https://github.com/FortAwesome/Font-Awesome |
+| lightGallery | 2.7.2 | `static/lib/lightgallery/` | https://github.com/sachinchoolur/lightgallery |
+| KaTeX (fonts and CSS) | 0.16.22 | `static/lib/katex/` | https://github.com/KaTeX/KaTeX |
 
 ## Loaded from CDNs at runtime (not in this repository)
 
-MathJax 3 (`cdn.jsdelivr.net`), D3 3 (`d3js.org`), Cal-Heatmap 3.3.10 (`cdn.jsdelivr.net`), Google Fonts (Inter, Lora, Caveat, JetBrains Mono).
+MathJax 3 (`cdn.jsdelivr.net`, pages with mathematics), D3 3 (`d3js.org`) and Cal-Heatmap 3.3.10 (`cdn.jsdelivr.net`, journal page).
 
 ## npm dependencies
 

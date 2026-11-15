@@ -25,8 +25,8 @@
     cal.init({
       itemSelector: '#cal-heatmap', domain: 'month', subDomain: 'day', cellSize: 14, cellPadding: 3,
       domainGutter: 10, range: 6, displayLegend: false, tooltip: true, data: postData, start: start,
-      itemName: ['essay', 'essays'], subDomainTextFormat: '', legend: [1, 2],
-      legendColors: { empty: colour('--ed-heat-0'), min: colour('--ed-heat-1'), max: colour('--ed-heat-2') }
+      itemName: ['essay', 'essays'], subDomainTextFormat: '', legend: [1, 2, 4], considerMissingDataAsZero: true,
+      legendColors: { empty: colour('--ed-heat-0'), min: colour('--ed-heat-0'), max: colour('--ed-heat-2') }
     });
   }
   draw();

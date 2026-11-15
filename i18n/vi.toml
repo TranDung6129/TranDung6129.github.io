@@ -364,3 +364,47 @@ other = "Tập"
 other = "Một cuốn sách của những ý tưởng liên kết"
 [ed_words]
 other = "{{ .Count }} từ"
+
+[ed_inVolume]
+other = "Thuộc tuyển tập"
+[ed_chapterOf]
+other = "Chương {{ .N }} / {{ .Total }}"
+[ed_nextChapter]
+other = "Chương tiếp"
+[ed_chapters]
+other = "Các chương"
+[ed_allVolumes]
+other = "Tất cả tuyển tập"
+[ed_volumesKicker]
+other = "Những cuốn sách của ý tưởng liên kết"
+[ed_noVolumes]
+other = "Chưa có tuyển tập nào được xuất bản."
+[ed_filmsKicker]
+other = "Ý tưởng chuyển động"
+[ed_film]
+other = "Phim"
+[ed_companion]
+other = "Bài luận đi kèm"
+[ed_filmsUpcoming]
+other = "Các phim dài hơn đang được thực hiện. Chưa phim nào được phát hành; chúng sẽ xuất hiện ở đây khi ra mắt."
+[ed_labsKicker]
+other = "Nghĩ bằng đôi tay"
+[ed_lab]
+other = "Thí nghiệm"
+[ed_openLab]
+other = "Mở thí nghiệm"
+[ed_inEssay]
+other = "trong"
+[ed_discoverKicker]
+other = "Những thứ hữu ích, được cân nhắc"
+[ed_discoverDisclosure]
+other = "Tuyển chọn biên tập từ các tài liệu được trích dẫn trong bài viết. Không có liên kết trả phí hay liên kết tiếp thị nào trên trang này."
+[ed_citedIn]
+other = "Được trích dẫn trong"
+[ed_chapterCount]
+other = "{{ .Count }} chương"
+
+[ed_sectionLink]
+other = "Liên kết tới mục này"
+[ed_activityLabel]
+other = "Lịch số bài viết được đăng mỗi ngày trong sáu tháng"

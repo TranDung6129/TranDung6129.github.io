@@ -1,0 +1,251 @@
+{
+  "method": "Single local unthrottled run per state, fresh context; third-party CDNs reached through the environment proxy. Not field CWV.",
+  "rows": [
+    {
+      "label": "before",
+      "route": "/",
+      "width": 390,
+      "bytes": {
+        "css": 361663,
+        "js": 364286,
+        "image": 387414,
+        "font": 25784,
+        "html": 23055
+      },
+      "total": 1162202,
+      "requests": 26,
+      "fcp": 368,
+      "lcp": 368,
+      "lcpElement": "H2.section-title",
+      "cls": 0.0064,
+      "blockingCss": 5,
+      "scripts": 11
+    },
+    {
+      "label": "before",
+      "route": "/",
+      "width": 1440,
+      "bytes": {
+        "css": 361663,
+        "js": 364286,
+        "image": 387414,
+        "font": 184308,
+        "html": 23055
+      },
+      "total": 1320726,
+      "requests": 27,
+      "fcp": 324,
+      "lcp": 324,
+      "lcpElement": "H2.section-title",
+      "cls": 0.0016,
+      "blockingCss": 5,
+      "scripts": 11
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 390,
+      "bytes": {
+        "css": 357692,
+        "js": 940445,
+        "image": 439807,
+        "img": 0,
+        "video": 1721047,
+        "font": 452296,
+        "html": 54741
+      },
+      "total": 3966028,
+      "requests": 36,
+      "fcp": 152,
+      "lcp": 152,
+      "lcpElement": "VIDEO",
+      "cls": 0.1549,
+      "blockingCss": 4,
+      "scripts": 10
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "bytes": {
+        "css": 357692,
+        "js": 940445,
+        "image": 439807,
+        "img": 0,
+        "font": 452296,
+        "video": 1721047,
+        "html": 54741
+      },
+      "total": 3966028,
+      "requests": 36,
+      "fcp": 284,
+      "lcp": 284,
+      "lcpElement": "VIDEO",
+      "cls": 0.093,
+      "blockingCss": 4,
+      "scripts": 10
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "bytes": {
+        "css": 357776,
+        "js": 352790,
+        "image": 387414,
+        "img": 0,
+        "font": 359120,
+        "html": 29433
+      },
+      "total": 1486533,
+      "requests": 28,
+      "fcp": 124,
+      "lcp": 124,
+      "lcpElement": "P",
+      "cls": 0.0666,
+      "blockingCss": 4,
+      "scripts": 9
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "bytes": {
+        "css": 357692,
+        "js": 352790,
+        "image": 387414,
+        "img": 0,
+        "font": 359120,
+        "html": 29433
+      },
+      "total": 1486449,
+      "requests": 28,
+      "fcp": 152,
+      "lcp": 152,
+      "lcpElement": "DIV.content",
+      "cls": 0.04,
+      "blockingCss": 4,
+      "scripts": 9
+    },
+    {
+      "label": "after",
+      "route": "/",
+      "width": 390,
+      "bytes": {
+        "font": 390352,
+        "css": 37192,
+        "image": 155866,
+        "js": 4666,
+        "html": 14657
+      },
+      "total": 602733,
+      "requests": 17,
+      "fcp": 124,
+      "lcp": 124,
+      "lcpElement": "IMG",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 1
+    },
+    {
+      "label": "after",
+      "route": "/",
+      "width": 1440,
+      "bytes": {
+        "font": 390352,
+        "css": 37192,
+        "image": 312898,
+        "js": 4666,
+        "html": 14657
+      },
+      "total": 759765,
+      "requests": 17,
+      "fcp": 104,
+      "lcp": 104,
+      "lcpElement": "IMG",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 1
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 390,
+      "bytes": {
+        "font": 474496,
+        "css": 37192,
+        "image": 52393,
+        "js": 801868,
+        "video": 1721047,
+        "html": 46673
+      },
+      "total": 3133669,
+      "requests": 26,
+      "fcp": 120,
+      "lcp": 120,
+      "lcpElement": "P.lead",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 5
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "bytes": {
+        "font": 415556,
+        "css": 37192,
+        "image": 52393,
+        "js": 801868,
+        "video": 1721047,
+        "html": 46673
+      },
+      "total": 3074729,
+      "requests": 24,
+      "fcp": 124,
+      "lcp": 124,
+      "lcpElement": "H1.article-title",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 5
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "bytes": {
+        "font": 270504,
+        "css": 37192,
+        "js": 214067,
+        "html": 16814
+      },
+      "total": 538577,
+      "requests": 15,
+      "fcp": 84,
+      "lcp": 84,
+      "lcpElement": "P",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "bytes": {
+        "font": 270504,
+        "css": 37192,
+        "js": 214067,
+        "html": 16814
+      },
+      "total": 538577,
+      "requests": 15,
+      "fcp": 80,
+      "lcp": 80,
+      "lcpElement": "H1.article-title",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    }
+  ]
+}

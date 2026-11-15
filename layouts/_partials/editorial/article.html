@@ -2,7 +2,7 @@
        shortcodes) is unchanged; this partial only frames it. */ -}}
 {{- $p := . -}}
 {{- $cat := partial "editorial/category.html" $p -}}
-{{- $toc := and (ne $p.Params.toc false) (ge (len $p.Fragments.Headings) 1) (gt $p.WordCount 300) -}}
+{{- $toc := and (ne $p.Params.toc false) (ne $p.Params.toc.enable false) (gt (len $p.Fragments.HeadingsMap) 1) -}}
 {{- $author := partial "function/get-author-map.html" $p.Params.author -}}
 <article class="article" lang="{{ $p.Language.Lang }}">
   <header class="article-header">

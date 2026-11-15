@@ -1,0 +1,11 @@
+{{- /* Resolved chapter pages of a volume (front matter "chapters": content paths), in the
+       volume's language, falling back to English. Missing paths fail the build. */ -}}
+{{- $v := . -}}
+{{- $out := slice -}}
+{{- range $v.Params.chapters -}}
+  {{- $p := $v.Site.GetPage . -}}
+  {{- if not $p }}{{ $p = partial "editorial/get-page.html" . }}{{ end -}}
+  {{- if not $p }}{{ errorf "Volume %s lists a chapter that does not exist: %s" $v.RelPermalink . }}{{ end -}}
+  {{- $out = $out | append $p -}}
+{{- end -}}
+{{- return $out -}}
