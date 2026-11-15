@@ -1,0 +1,125 @@
+{
+  "method": "One unthrottled local Chromium run per viewport/theme, no production field CWV; observe 2.5 seconds after load without interaction. Lazy images outside viewport may not be fetched.",
+  "data": [
+    {
+      "width": 390,
+      "theme": "light",
+      "status": 200,
+      "lcp": {
+        "startTime": 388,
+        "size": 33728,
+        "tag": "H1",
+        "url": null
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 333.80000000447035,
+          "transferSize": 20165,
+          "encodedBodySize": 19865
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 388
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 388
+        }
+      ],
+      "images": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "status": 200,
+      "lcp": {
+        "startTime": 224,
+        "size": 33728,
+        "tag": "H1",
+        "url": null
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 175,
+          "transferSize": 20165,
+          "encodedBodySize": 19865
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 224
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 224
+        }
+      ],
+      "images": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "lcp": {
+        "startTime": 276,
+        "size": 87200,
+        "tag": "H1",
+        "url": null
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 205.19999999552965,
+          "transferSize": 20165,
+          "encodedBodySize": 19865
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 276
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 276
+        }
+      ],
+      "images": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "lcp": {
+        "startTime": 192,
+        "size": 87200,
+        "tag": "H1",
+        "url": null
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 147.10000000149012,
+          "transferSize": 20165,
+          "encodedBodySize": 19865
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 192
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 192
+        }
+      ],
+      "images": []
+    }
+  ]
+}

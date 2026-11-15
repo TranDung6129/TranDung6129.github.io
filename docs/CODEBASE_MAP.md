@@ -60,7 +60,7 @@ P2-01 review-only tokens live at `assets/css/editorial/tokens.css`; [usage and c
 
 P2-02 local specimen: `scripts/preview-editorial.sh` builds a temporary snapshot and review-only `layouts/specimen/single.html` with `layouts/_partials/specimen/typography.html` and `assets/css/specimen/`; [type notes](design/TYPOGRAPHY.md). There is no production content route.
 
-Review-only editorial composition lives in `layouts/_partials/specimen/home.html`, reusable `feature.html` and SVG art partials with `assets/css/specimen/home.css`; [provenance](design/ASSET-PROVENANCE.md). Production homepage remains `layouts/index.html`.
+Review-only editorial composition lives in `layouts/_partials/specimen/home.html`, reusable `feature.html`/`art-image.html` and `assets/css/specimen/home.css`; owner originals are in `assets/editorial-source/`, WebPs in `assets/editorial-art/`, with [provenance](design/ASSET-PROVENANCE.md). Separate font review: `docs/design/typography-comparison/`. Production homepage remains `layouts/index.html`.
 
 Review-only future formats: `layouts/_partials/specimen/future.html`, `footer.html` and `assets/css/specimen/future.css`; [scope](design/FUTURE-SPECIMENS.md). They provide no commerce or feature routes.
 

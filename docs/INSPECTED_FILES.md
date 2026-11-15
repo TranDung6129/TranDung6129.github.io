@@ -521,3 +521,38 @@ Working Git blobs; PARTIAL coverage. Local preview and screenshots available; PR
 | `docs/design/REVIEW.md` | `2cb22030b9eedbd206b89abca1db0de84faeb4d9` | Final owner review entrypoint, screenshots, prototype isolation, tests, limitations and PR plan. |
 | `docs/AGENT_LOG.md` | `4435d51e38346748ea3bcdfb37ee3e501da39368` | Append-only publication blocker and current review status. |
 | `docs/INSPECTED_FILES.md` | `23bd483de00cc9807abdf484a49045b0e6eb88c6` | Registry self hash is pre-append. |
+
+## 2026-11-15 — artwork v2 and separate type review
+
+Working Git blobs at inspection; registry self-hash is pre-append. Source artwork SHA-256 and dimensions are recorded in `docs/design/owner-art-v2.json`. Binary screenshot and QA artifact blobs are inventoried in `docs/design/review-v2/artifact-blobs.tsv`; font files and licenses are inventoried in `docs/design/typography-comparison/font-blobs.tsv`. Owner approval and manual accessibility review remain pending.
+
+| Path | Git blob |
+|---|---|
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` |
+| `layouts/_partials/specimen/home.html` | `69218134136a2351a6d5c3087e48823f64940d29` |
+| `layouts/_partials/specimen/feature.html` | `b46baea22a5292d3b496dc6921c2c1c5e6a6c298` |
+| `layouts/_partials/specimen/art-image.html` | `1ebfd418502bb15916f7205ab5d030b6a7953019` |
+| `assets/css/specimen/home.css` | `5e115839ad7b71e2129010818e36dedc3a58f073` |
+| `assets/css/specimen/responsive.css` | `6a1b6a775bfdb230db141cb5016a69e0949e3385` |
+| `scripts/process-editorial-art.py` | `93206450526c82e53ffb4d56f27273d50792f8f3` |
+| `scripts/test-editorial-art.py` | `e7cc738aa5f2ea5e0a705912e207dccb2be48cd3` |
+| `scripts/test-editorial-review.cjs` | `648dfe824a61e1d1685b9f7d6f686449ffa80957` |
+| `scripts/test-editorial-axe.cjs` | `fc8935969e6c895da896e8edc2dbdd8bc02c7787` |
+| `docs/design/ASSET-PROVENANCE.md` | `d1d1993c4f1afd91ade6d495cb3d279f6e553435` |
+| `docs/design/owner-art-v2.json` | `541e2bccaab16135f3bed3ef6bbc4060b071d54d` |
+| `docs/design/REVIEW.md` | `b880a7b43f22d8da7bd76df3588f16a701ab64dd` |
+| `docs/design/review-v2/README.md` | `c3828191cd2d667295268be2becfc128410b4850` |
+| `docs/design/review-v2/artifact-blobs.tsv` | `cfb1835b24b2c5b25d3805f253c201c8afc9f35f` |
+| `docs/design/typography-comparison/README.md` | `a77ac02aab6e8edc16de94dcff2de86997868ed9` |
+| `docs/design/typography-comparison/index.html` | `0cf2b1af0c3dfe2551d8fd74b46815deb59cc6fd` |
+| `docs/design/typography-comparison/comparison.css` | `208674b68e04c07e1c927734d36d91e0b16d5623` |
+| `docs/design/typography-comparison/font-sources.json` | `d97ebaedfe5006980f7314ca4290539ac54a3822` |
+| `docs/design/typography-comparison/font-blobs.tsv` | `7671fe85fb3dff46bec3f44719fcbc10de794081` |
+| `docs/design/typography-comparison/test.cjs` | `a53ce306c471a0ae64b9e1416dcec4286835e555` |
+| `docs/design/typography-comparison/axe.cjs` | `bc95f0d0965cfd9e80b9f0f9b622e27ef33953d2` |
+| `docs/CODEBASE_MAP.md` | `01bc44417fde012b63ee611214625bd053f6698c` |
+| `docs/TASK_BOARD.md` | `fa175331afe6965fee3d611029d04d91d410e867` |
+| `docs/AGENT_LOG.md` | `2156a1704681356843e2fd08500f36d6c1354de3` |
+| `docs/INSPECTED_FILES.md` | `253f7d4821b09774d354ebf743c09ebd1cbacfe0` |
+| `docs/DESIGN_SYSTEM.md` | `ee8ca775a8471bea29f69523dfc7f0c98109eef8` |
+| `docs/design/TYPOGRAPHY.md` | `438c38ff952f5b509a1f1ea63c995eb07153ab17` |

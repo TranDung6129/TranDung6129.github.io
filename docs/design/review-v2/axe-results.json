@@ -1,0 +1,142 @@
+[
+  {
+    "width": 390,
+    "theme": "light",
+    "passes": 26,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 4,
+        "nodes": [
+          {
+            "target": [
+              ".menu-toggle"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<button class=\"menu-toggle\" aria-expanded=\"false\" aria-controls=\"editorial-nav\" type=\"button\">Menu <span aria-hidden=\"true\">☰</span></button>"
+          },
+          {
+            "target": [
+              ".menu-toggle > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<span aria-hidden=\"true\">☰</span>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "passes": 26,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 4,
+        "nodes": [
+          {
+            "target": [
+              ".menu-toggle"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<button class=\"menu-toggle\" aria-expanded=\"false\" aria-controls=\"editorial-nav\" type=\"button\">Menu <span aria-hidden=\"true\">☰</span></button>"
+          },
+          {
+            "target": [
+              ".menu-toggle > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<span aria-hidden=\"true\">☰</span>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 2,
+        "nodes": [
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 2,
+        "nodes": [
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  }
+]
