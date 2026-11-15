@@ -556,3 +556,5 @@ Working Git blobs at inspection; registry self-hash is pre-append. Source artwor
 | `docs/INSPECTED_FILES.md` | `253f7d4821b09774d354ebf743c09ebd1cbacfe0` |
 | `docs/DESIGN_SYSTEM.md` | `ee8ca775a8471bea29f69523dfc7f0c98109eef8` |
 | `docs/design/TYPOGRAPHY.md` | `438c38ff952f5b509a1f1ea63c995eb07153ab17` |
+
+Publication handoff: `docs/AGENT_LOG.md` working blob `7edff6abaa66c842d4d3a27d6c2f51463b28c3b3` records the failed PR attempt; `docs/INSPECTED_FILES.md` pre-append blob `5c98104b1e02127f32bcdf1a4ab788c09e78db3f`.
