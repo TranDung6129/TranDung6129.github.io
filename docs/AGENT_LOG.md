@@ -87,3 +87,10 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Tests:** `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/p1-03-public` PASS; `python3 docs/audits/p1-02/static/test_analyzer.py` PASS (1 fixture); `python3 docs/audits/p1-02/static/analyze.py /tmp/p1-03-public /tmp/p1-03-static docs/audits/p1-02/static/routes.txt docs/audits/p1-01/content-pages.csv` PASS: 645 output paths, zero added/removed vs P1-02, 0 invalid XML, 745 pre-existing missing-reference occurrences. `git diff --exit-code origin/main -- . ':(exclude)docs/**'` PASS; `git diff --check` PASS. Evidence: decision/architecture files and `/tmp/p1-03-build.log`, `/tmp/p1-03-static/summary.json` in current environment.
 - **Known gaps:** These tests validate preserved output, not actual owned templates (P1-04); MathJax and heatmap runtime previously blocked by external trust/network, no parity claim. P1-02 missing assets, language links and metadata issues remain P1-06 work. D-011 owner screenshot gate and P1-09 backup/restore tests remain mandatory. No database provisioned.
 - **Next:** Review this decision before merging; P1-04 implements type-specific compatibility, P1-09 develops minimal DB migrations in its own PR. No homepage redesign, billing, auth or deployment performed.
+
+### 2026-11-15 — P1-04 claim — Codex
+- **Status:** IN PROGRESS; P1-03 merged via PR #18.
+- **Branch:** `feat/p1-04-hugo-templates`.
+- **Scope:** Implement owned Hugo shell and post/list compatibility with existing behavior; preserve paths and theme fallback.
+- **Evidence:** Claim commit precedes implementation; checks to follow.
+- **Next:** P1-05/06 after integration.
