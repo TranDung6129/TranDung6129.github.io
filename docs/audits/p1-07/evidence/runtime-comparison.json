@@ -1,0 +1,25 @@
+{
+  "baseline": "runtime harness on merged main (with FixIt)",
+  "candidate": "docs/audits/p1-07/evidence/runtime-results.json",
+  "comparedSections": [
+    "browser",
+    "checks",
+    "math",
+    "heatmap",
+    "heatmapMobile",
+    "heatmapThemeToggle",
+    "heatmapThemeObservation",
+    "external",
+    "externalHashes",
+    "consoleErrors",
+    "requestsFailed"
+  ],
+  "differences": [],
+  "hashMismatch": [],
+  "hashesComparedInBoth": 15,
+  "identical": true,
+  "allChecksPass": {
+    "baseline": true,
+    "candidate": true
+  }
+}

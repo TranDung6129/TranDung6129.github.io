@@ -1,25 +1,22 @@
 {
-  "name": "hugo-fixit-starter1",
+  "name": "the-epistemic-diary",
   "version": "1.0.0",
-  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses Git submodule feature to load the theme.",
-  "main": "index.js",
+  "private": true,
+  "description": "The Epistemic Diary — Hugo static publication.",
   "scripts": {
     "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0 -O",
-    "server:production": "npm run server -- --environment production",
-    "update:theme": "git submodule update --remote --merge themes/FixIt && git add themes/FixIt && git commit -m ':arrow_up: Chore(theme): update FixIt version'"
+    "server:production": "npm run server -- --environment production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hugo-fixit/hugo-fixit-starter1.git"
+    "url": "git+https://github.com/TranDung6129/TranDung6129.github.io.git"
   },
-  "author": "Lruihao (https://github.com/Lruihao)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hugo-fixit/hugo-fixit-starter1/issues"
+    "url": "https://github.com/TranDung6129/TranDung6129.github.io/issues"
   },
-  "homepage": "https://github.com/hugo-fixit/hugo-fixit-starter1#readme",
-  "keywords": [],
+  "homepage": "https://trandung6129.github.io/",
   "dependencies": {
     "react": "^19.2.7",
     "react-dom": "^19.2.7",

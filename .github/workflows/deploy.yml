@@ -8,17 +8,12 @@ on:
       - 'content/**'
       - 'data/**'
       - 'static/**'
-      - 'themes/**'
-      - 'hugo.toml'
+      - 'i18n/**'
       - '.nojekyll'
       - 'assets/**'
       - '.github/workflows/**'
       - 'package.json'
       - 'package-lock.json'
-  workflow_run:
-    workflows: ['Update theme']
-    types:
-      - completed
   workflow_dispatch:
 
 permissions:
@@ -37,7 +32,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v5
         with:
-          submodules: true
           fetch-depth: 0
       - name: Install Hugo CLI
         run: |

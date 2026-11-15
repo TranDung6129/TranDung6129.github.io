@@ -1,0 +1,584 @@
+{
+  "method": "Single-run headless Chromium against unmodified production output served by python http.server on localhost:1315; normal external requests retained; no production-origin rewrites, trust bypass, CPU/network throttle or field CWV claim.",
+  "browser": "153.0.8010.12",
+  "screenshots": [
+    {
+      "file": "home-360-light.png",
+      "width": 360,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-360-light.png",
+      "width": 360,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-360-dark.png",
+      "width": 360,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-360-dark.png",
+      "width": 360,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-768-light.png",
+      "width": 768,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-768-light.png",
+      "width": 768,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-768-dark.png",
+      "width": 768,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-768-dark.png",
+      "width": 768,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-1024-light.png",
+      "width": 1024,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1024-light.png",
+      "width": 1024,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    },
+    {
+      "file": "home-1024-dark.png",
+      "width": 1024,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1024-dark.png",
+      "width": 1024,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    },
+    {
+      "file": "home-1440-light.png",
+      "width": 1440,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1440-light.png",
+      "width": 1440,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    },
+    {
+      "file": "home-1440-dark.png",
+      "width": 1440,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1440-dark.png",
+      "width": 1440,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "lang": "vi",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 605.7999999999302,
+            "domContentLoaded": 369.19999999995343,
+            "load": 605.7999999999302,
+            "transferSize": 23055
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 328
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 328
+          }
+        ],
+        "resources": 26
+      }
+    },
+    {
+      "route": "/en/",
+      "status": 200,
+      "lang": "en",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/en/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 155.40000000002328,
+            "domContentLoaded": 57.90000000002328,
+            "load": 155.40000000002328,
+            "transferSize": 22812
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 100
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 100
+          }
+        ],
+        "resources": 33
+      }
+    },
+    {
+      "route": "/ja/",
+      "status": 200,
+      "lang": "ja",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/ja/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 89.69999999995343,
+            "domContentLoaded": 61.79999999993015,
+            "load": 89.69999999995343,
+            "transferSize": 16400
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 68
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 68
+          }
+        ],
+        "resources": 33
+      }
+    },
+    {
+      "route": "/zh-cn/",
+      "status": 200,
+      "lang": "zh-cn",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/zh-cn/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 94,
+            "domContentLoaded": 52.90000000002328,
+            "load": 94,
+            "transferSize": 16180
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 52
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 52
+          }
+        ],
+        "resources": 33
+      }
+    },
+    {
+      "route": "/kinh-te/game_theory_nash/",
+      "status": 200,
+      "lang": "vi",
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "mathContainers": 78,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 24,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d="
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 696.5,
+            "domContentLoaded": 196.60000000009313,
+            "load": 696.5,
+            "transferSize": 54741
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 120
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 120
+          }
+        ],
+        "resources": 42
+      }
+    },
+    {
+      "route": "/en/kinh-te/game_theory_nash/",
+      "status": 200,
+      "lang": "en",
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "mathContainers": 78,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 24,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d="
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 339.80000000004657,
+            "domContentLoaded": 70.30000000004657,
+            "load": 339.80000000004657,
+            "transferSize": 54484
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 96
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 96
+          }
+        ],
+        "resources": 44
+      }
+    },
+    {
+      "route": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "status": 200,
+      "lang": "vi",
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "mathContainers": 85,
+      "mathLoader": true,
+      "codeBlocks": 1,
+      "tocLinks": 38,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d="
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 350.69999999995343,
+            "domContentLoaded": 57.300000000046566,
+            "load": 350.69999999995343,
+            "transferSize": 69119
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 84
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 84
+          }
+        ],
+        "resources": 41
+      }
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "lang": "vi",
+      "title": "About - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/about/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d="
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 389.4000000000233,
+            "domContentLoaded": 78.70000000006985,
+            "load": 389.4000000000233,
+            "transferSize": 22079
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 260
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 260
+          }
+        ],
+        "resources": 49
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "Nash preset state updates (vi)",
+      "passed": true,
+      "before": [
+        "Pure-strategy NE: (Bottom, Right)"
+      ],
+      "after": "Equilibrium Analysis\nPure-strategy NE: None\nMixed-strategy NE: p* = 0.500, q* = 0.500→ U₁ = 0.000, U₂ = 0.000\n"
+    },
+    {
+      "name": "Nash payoff keyboard slider",
+      "passed": true,
+      "before": "1",
+      "after": "1.5"
+    },
+    {
+      "name": "TOC anchor navigation",
+      "passed": true,
+      "href": "#1-motivation-why-do-we-need-game-theory",
+      "url": "http://127.0.0.1:1315/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory"
+    },
+    {
+      "name": "Theme toggle changes html data-theme",
+      "passed": true,
+      "before": null,
+      "after": "dark"
+    },
+    {
+      "name": "Theme choice survives reload",
+      "passed": true,
+      "theme": "dark"
+    },
+    {
+      "name": "Desktop search returns Nash results",
+      "passed": true,
+      "count": 1,
+      "text": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points\n2025-08-01\nYour browser does not support the video tag. 1. Motivation: Why Do We Need Game Theory? Classical optimization asks: given an objective function, find its maximiser. The catch — the objective function depends solely on your ow"
+    },
+    {
+      "name": "Fenced code rendered",
+      "passed": true,
+      "blocks": 1,
+      "copyControls": 1
+    },
+    {
+      "name": "Code copy writes clipboard",
+      "passed": true,
+      "characters": 311,
+      "prefix": "def vertex_cover_approx(G):\n    cover = set()\n    edges = G.edges.copy()\n    \n    while edges:\n        u, v = edges.pop("
+    }
+  ],
+  "errors": [],
+  "requestsFailed": [
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1315/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/about/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1315/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "http://127.0.0.1:1315/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    }
+  ]
+}

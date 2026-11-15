@@ -319,3 +319,40 @@ Hashes are working-file Git blobs at review (registry self hash is pre-append); 
 | `docs/audits/p1-01/verify.py` | `d936eff54c8eb4af55a8ac5202a74aca0be89cc2` | Production output route/byte and representative metadata comparator; used for Hugo independence verification. |
 
 Generated evidence group `docs/audits/p1-09/` (integration/build logs and retention JSON) is PARTIAL: local synthetic Docker test and current Hugo build only, not hosted security, production recovery, browser behavior or deployment. Exact artifacts and test limitations are linked from the group README. Test-created temporary project, network and volume are deleted only after ownership/collision checks.
+
+## 2026-11-15 — P1-07 FixIt retirement (Claude Code)
+
+Registry self hash pre-append `b38d75cdfc0147c36721dcbff5fd94b4f48a1fe5`. Migrated FixIt files are recorded as groups (tree hashes at `a0167aa`), per the vendor-tree rule; they were selected by tracing the build, not read line by line. Earlier entries that describe files under `themes/FixIt/` now apply to the same relative path in the site.
+
+| Group | Git tree | Status | Contents and provenance |
+|---|---|---|---|
+| `layouts/` | `00398a032a9d8a0d043fd953d301a324e9d47502` | PARTIAL | 87 templates. Site-authored: `index.html`, `_default/{baseof,single,list}.html`, `posts/single.html`, `section.html`, `robots.txt`, `_partials/{site,p1-04}/`, `_partials/head/link.html`, `_partials/single/collection-list.html`, `partials/heatmap.html`, `shortcodes/react.html` (see earlier sections). The rest are unchanged copies of FixIt `f5fb989` selected because the build executes them; read at group level only (names, roles in `CODEBASE_MAP.md`). |
+| `assets/css/` | `5d0bc5329e28ad54729d140d573fde43045a2ed3` | PARTIAL | FixIt SCSS tree (`style.scss`, `_variables`, `_core`, `_page`, `_partials`, `_shortcodes`, `_mixin`, `config.template.scss`, comment-only `_override.scss`) copied unchanged, plus site `_custom.scss` and `home.scss`. Compiled CSS identical to pre-migration. |
+| `assets/js/` | `20c6ee8c4358701561dc9bd0c51ec2b2425c04be` | PARTIAL | `theme.js`, `util.js`, `head/color-scheme.js`, `lib/mathjax.js` copied unchanged from FixIt; `components/NashEquilibriumSim.jsx` is the site's. Bundles identical apart from source paths. |
+| `assets/lib/` | `d78eeb50e4a9e1f5dda8b98daff9d384d250617a` | PARTIAL | Bundled libraries (animate, autocomplete, cookieconsent, fontawesome-free, fuse, lightgallery, normalize, sharer); only the files the build opened. |
+| `assets/images/` | `a36d3ce87f7523d7bd3fe9e40ef55864c4679942` | PARTIAL | `fixit.svg`, `hugo.svg`, `loading.svg` used by footer and lazy-loading markup. |
+| `i18n/` | `ab37779475d5fda00dfeebfb9c073a7d94f1c378` | PARTIAL | `en.toml`, `vi.toml`, `zh-CN.toml` interface strings from FixIt. |
+| `static/lib/` | `3e2ac4d9e3f4fae2b4bf457c68c6b51024d87da7` | PARTIAL | KaTeX and lightGallery files and Font Awesome webfonts published as-is (73 files); KaTeX/lightGallery unused by current pages. |
+
+| Path | Blob | Status | Purpose |
+|---|---|---|---|
+| `config/_default/hugo.toml` | `f8f389f71d6e37160df622cb83472ebf76f23c5d` | COVERED | No `theme` key since P1-07. |
+| `config/_default/outputs.toml` | `55f0567eee776cf6dc0f980aa2f836312a300bd4` | COVERED | Explicit outputs per kind (home: html, rss, archives, offline, search; page: html, markdown; section/term: html, rss; taxonomy: html). |
+| `config/_default/outputFormats.toml` | `9db99bc9e97dfa38ec88f16ca7ef45ef5057cb1f` | COVERED | `archives`, `offline`, `search` formats formerly defined by the theme. |
+| `config/_default/params.toml` | `f59405303e892898548b09f113391958ee64a236` | PARTIAL | P1-07: `customPartials.head` emptied; paginate defaults, `page.linkToVscode`, `page.related.position`, `page.math.mathjax` added (formerly theme defaults). |
+| `.github/workflows/deploy.yml` | `aa85e86dfc62d7df7905ddfc36c6ef281750d938` | COVERED | Push to `main` (path-filtered, now incl. `i18n/**`) and manual dispatch; plain checkout with full history, Hugo Extended 0.149.0, Node 20, `npm ci`, build, Pages deploy. No `workflow_run`, no submodules. |
+| `.github/dependabot.yml` | `39820ad24ffe9da0e14686a5b241f2c60e3fc869` | COVERED | Monthly GitHub Actions and npm updates; no assignee. |
+| `package.json` | `78f69783acee5a047184fa1150bfaaf5cd13b014` | COVERED | Project metadata, scripts `build`, `server`, `server:production`; react, react-dom, recharts. |
+| `assets/jsconfig.json` | `377218ccba6fb053d253ce738684fbf85dc4f69d` | COVERED | Editor resolver for `assets/`; Hugo rewrites it during JS builds (theme path dropped). |
+| `README.md` | `ebb8102faaf37fb1ba1caca64b5505df3a2804a3` | COVERED | Project README (requirements, develop, layout, deployment, licenses). |
+| `THIRD_PARTY_NOTICES.md` | `1b2930064e82c550b412907fdf9a7e7295c28be2` | COVERED | FixIt provenance and bundled library versions. |
+| `LICENSE-FixIt.txt` | `2b4cb5adcfe4b2e054409759ce434aeb1224849e` | COVERED | FixIt MIT license (moved from `layouts/_default/FIXIT-LICENSE.txt`). |
+| `docs/audits/p1-07/README.md` | `163f3a332fbc16f829feaac2fa3329f3bf2c6018` | COVERED | Report, dependency map, verification, P1-08 hand-off. |
+| `docs/audits/p1-07/tools/compare-normalised.py` | `2f9878835eb327634e17c9c93d7666e1fa4f420a` | COVERED | Byte comparison ignoring embedded source-path prefixes. |
+| `docs/DECISIONS.md` | `cd0fa303594b27956dfedb835720bd030dd3b7ee` | COVERED | Adds D-013. |
+| `docs/CODEBASE_MAP.md` | `93cee551a747512f4fa720ff83d09050d80f97b7` | COVERED | Adds the post-P1-07 ownership table. |
+| `docs/ARCHITECTURE.md` | `d59939b18a5f2f081493090e03aa91ce16d62e72` | COVERED | Adds the P1-07 state. |
+| `docs/TASK_BOARD.md` | `97eefddda27a723dceec6c2f78f1cbe610824e80` | COVERED | P1-07 DONE pending merge. |
+| `docs/AGENT_LOG.md` | `17a2ec9f2d3be45ad34283bed04be438ba4e4b4d` | COVERED | P1-07 claim and completion. |
+
+**REMOVED in P1-07:** `themes/FixIt` (gitlink `f5fb989`), `themes/shortcode-docs-bookmark` (gitlink `bad88c8`), `.gitmodules`, `.github/workflows/update-theme.yml`, `README.en.md`. FixIt source files read while migrating: `hugo.toml` (output formats, outputs, mediaTypes sections), `assets/lib/VERSION`.

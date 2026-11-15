@@ -1,0 +1,45 @@
+.details {
+  > .details-summary {
+    @include border-radius($global-border-radius);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    i.details-icon {
+      color: $global-font-secondary-color;
+      @include transition(transform 0.2s ease);
+
+      [data-theme='dark'] & {
+        color: $global-font-secondary-color-dark;
+      }
+    }
+  }
+
+  > .details-content {
+    height: 0;
+    overflow-y: hidden;
+    @include transition(height 0.5s ease-out);
+  }
+
+  &.open {
+    > .details-summary {
+      @include border-radius($global-border-radius $global-border-radius 0 0);
+
+      i.details-icon {
+        @include transform(rotate(90deg));
+      }
+    }
+
+    > .details-content {
+      height: auto;
+      @include border-radius(0 0 $global-border-radius $global-border-radius);
+    }
+  }
+
+  &.disabled {
+    > .details-summary {
+      cursor: default;
+    }
+  }
+}

@@ -187,6 +187,8 @@ disableThemeInject = false
 
 # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
 [archives]
+  # default formerly inherited from the FixIt theme configuration (P1-07)
+  paginate = 20
   # special amount of posts in archives page
   pagerSize = 20
   # date format (month and day)
@@ -194,6 +196,8 @@ disableThemeInject = false
 
 # Section page config (all pages in section)
 [section]
+  # default formerly inherited from the FixIt theme configuration (P1-07)
+  paginate = 20
   # special amount of pages in each section page
   pagerSize = 20
   # date format (month and day)
@@ -207,6 +211,8 @@ disableThemeInject = false
 
 # Term list (category or tag) page config
 [list]
+  # default formerly inherited from the FixIt theme configuration (P1-07)
+  paginate = 20
   # special amount of posts in each list page
   pagerSize = 20
   # date format (month and day)
@@ -257,6 +263,8 @@ disableThemeInject = false
     disclaimer = ""
   # Home page posts
   [home.posts]
+    # default formerly inherited from the FixIt theme configuration (P1-07)
+    paginate = 6
     enable = true
     # special amount of posts in each home posts page
     pagerSize = 6
@@ -551,9 +559,7 @@ disableThemeInject = false
 # Custom partials must be stored in the /layouts/partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
-  head = [
-    "inject/fixit-docs-bookmark.html",
-  ]
+  head = []
   profile = []
   aside = []
   comment = []
@@ -573,6 +579,8 @@ disableThemeInject = false
 
 # Page config
 [page]
+  # default formerly inherited from the FixIt theme configuration (P1-07)
+  linkToVscode = true
   # FixIt 0.2.18 | NEW whether to enable the author's avatar of the post
   authorAvatar = true
   # whether to hide a page from home page
@@ -715,6 +723,8 @@ disableThemeInject = false
     replace = false
   # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
   [page.related]
+    # default formerly inherited from the FixIt theme configuration (P1-07)
+    position = ["aside", "footer"]
     enable = true
     count = 5
   # FixIt 0.2.17 | NEW Donate (Sponsor) settings
@@ -921,3 +931,15 @@ disableThemeInject = false
       # the publication is the publisher in article structured data; authors stay in bylines
       name = "The Epistemic Diary"
       logoUrl = "/images/logoted.png"
+
+# ---- Defaults formerly inherited from the FixIt theme configuration (site-owned since P1-07) ----
+# MathJax loader settings read by assets/js/lib/mathjax.js
+[page.math.mathjax]
+  cdn = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  [page.math.mathjax.packages]
+  [page.math.mathjax.macros]
+  [page.math.mathjax.loader]
+    load = ["ui/safe"]
+    [page.math.mathjax.loader.paths]
+  [page.math.mathjax.options]
+    enableMenu = true

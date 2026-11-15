@@ -1,0 +1,41 @@
+# Effective configuration: merged main with FixIt (before) vs theme-free site (after), hugo config --format json.
+## --lang vi --environment production (the other seven language/environment combinations give the same key list)
+- module.imports = [{"path": "FixIt"}, {"path": "shortcode-docs-bookmark"}]
+- outputformats.baidu_urls.basename = baidu_urls
+- outputformats.baidu_urls.isplaintext = True
+- outputformats.baidu_urls.mediatype = text/plain
+- outputformats.baidu_urls.notalternative = True
+- outputformats.baidu_urls.rel = alternate
+- outputformats.readme.basename = readme
+- outputformats.readme.isplaintext = True
+- outputformats.readme.mediatype = text/markdown
+- outputformats.readme.notalternative = True
+- outputformats.readme.rel = alternate
+- params.analytics.baidu = {}
+- params.analytics.cloudflare = {}
+- params.analytics.plausible = {}
+- params.analytics.splitbee.do_not_track = True
+- params.analytics.splitbee.no_cookie = True
+- params.analytics.umami = {}
+- params.cse.bing = {}
+- params.cse.google = {}
+- params.cse.resultspage = /search/
+- params.custompartials.head = ["inject/fixit-docs-bookmark.html"]
+- params.image = {}
+- params.mermaid.layout = dagre
+- params.mermaid.look = handDrawn
+- params.mermaid.securitylevel = loose
+- params.page.math.katex.copytex = True
+- params.page.math.katex.errorcolor = #ff4949
+- params.page.math.katex.macros = {}
+- params.postchat.addbutton = True
+- params.postchat.hotwords = True
+- params.postchat.showinvitelink = True
+- params.postchat.uploadweb = True
+- params.postchat.usermode = iframe
+- params.postsummary.loadingtext = True
+- params.postsummary.typinganimate = True
+- params.postsummary.wordlimit = 1000
+- theme = ["FixIt", "shortcode-docs-bookmark"]
++ params.custompartials = {}
+# only-in-first 37, only-in-second 1, changed 0, total keys 620/584

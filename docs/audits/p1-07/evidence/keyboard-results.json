@@ -1,0 +1,139 @@
+{
+  "method": "Supplemental keyboard/reduced-motion/console baseline; no a11y conformance claim",
+  "console": [
+    {
+      "width": 360,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "width": 1440,
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    }
+  ],
+  "states": [
+    {
+      "width": 360,
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Tìm hiểu thêm",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": "Đã hiểu!",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": "The Epistemic Diary",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": " TranDung",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": " Applied Mathematics",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": "1. Motivation: Why Do We Need Game Theory?",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": "2. Formal Setup: Strategic-Form Games",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": "2.1 Mixed Strategies",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        }
+      ],
+      "reduced": {
+        "matches": true,
+        "scrollBehavior": "auto",
+        "bodyAnimationDuration": "0s",
+        "fallbackText": "⚠️ Biểu đồ tương tác chỉ hỗ trợ hiển thị trên màn hình máy tính hoặc tablet ngang.",
+        "fallbackDisplay": "block",
+        "wrapperDisplay": "none"
+      }
+    },
+    {
+      "width": 1440,
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Tìm hiểu thêm",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": "Đã hiểu!",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": "The Epistemic Diary",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": " Lưu trữ",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": " Chủ đề",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": " Thẻ",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": " Chuỗi bài",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        },
+        {
+          "tag": "A",
+          "text": " Giới thiệu",
+          "id": "",
+          "outline": "rgb(16, 16, 16) auto 1px"
+        }
+      ],
+      "reduced": {
+        "matches": true,
+        "scrollBehavior": "auto",
+        "bodyAnimationDuration": "0s",
+        "fallbackText": "⚠️ Biểu đồ tương tác chỉ hỗ trợ hiển thị trên màn hình máy tính hoặc tablet ngang.",
+        "fallbackDisplay": "none",
+        "wrapperDisplay": "block"
+      }
+    }
+  ]
+}

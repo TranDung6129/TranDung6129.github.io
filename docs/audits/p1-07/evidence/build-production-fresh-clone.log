@@ -1,0 +1,18 @@
+Start building sites …
+hugo v0.149.0-66240338f1b908ca3b163384c8229943e74eb290+extended linux/amd64 BuildDate=2025-08-27T15:37:16Z VendorInfo=gohugoio
+
+
+              │ VI  │ EN  │ JA │ ZH - CN
+──────────────┼─────┼─────┼────┼─────────
+ Pages        │ 180 │ 188 │ 10 │      10
+ Paginator    │   0 │   0 │  0 │       0
+ pages        │     │     │    │
+ Non-page     │  10 │   0 │  0 │       0
+ files        │     │     │    │
+ Static files │  80 │  80 │ 80 │      80
+ Processed    │   0 │   0 │  0 │       0
+ images       │     │     │    │
+ Aliases      │  71 │  75 │  0 │       0
+ Cleaned      │   0 │   0 │  0 │       0
+
+Total in 1147 ms

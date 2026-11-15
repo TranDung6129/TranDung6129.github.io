@@ -6,6 +6,25 @@
 
 P1-04 introduces site-owned Hugo compatibility templates under `layouts/_default/`, `layouts/posts/`, and `layouts/section.html`; [D-012](DECISIONS.md#d-012--owned-hugo-templates-and-incremental-compatibility) still governs migration and P1-09. These adapters retain FixIt partial dependencies until parity and retirement gates pass.
 
+## State after P1-07 — no theme
+
+FixIt and the bookmark module are gone. Everything the site renders with is in this repository; there is no `themes/` directory, submodule or Hugo module. **Wherever a row below says "FixIt" or "theme", read it as the site-owned file at the same relative path** (`themes/FixIt/layouts/X` → `layouts/X`, `themes/FixIt/assets/X` → `assets/X`). Provenance and licenses: `THIRD_PARTY_NOTICES.md`, `LICENSE-FixIt.txt`.
+
+| Need to change | Entry point | Notes |
+|---|---|---|
+| Page shell and `<head>` | `layouts/_default/baseof.html`, `layouts/_partials/head/{meta,seo,link,script}.html` | `seo.html` builds JSON-LD; `meta.html` Open Graph/Twitter |
+| Header, menus, search box, language and theme switches | `layouts/_partials/header.html` (via `site/header.html`) | Menu data in `config/_default/menus*.toml` |
+| Footer, back-to-top and other widgets, cookie notice | `layouts/_partials/footer.html`, `widgets.html`, `assets.html` | |
+| Script and stylesheet pipeline, per-page libraries | `layouts/_partials/assets.html`, `plugin/{script,style}.html`, `store/`, `init/` | `init/index.html` sets version/CDN/fingerprint state used everywhere |
+| Lists: taxonomy, term, tags, archives; 404; offline | `layouts/taxonomy.html`, `term.html`, `tags.html`, `taxonomies.html`, `home.archives.html`, `404.html`, `home.offline.html` | Output formats in `config/_default/outputFormats.toml`, `outputs.toml` |
+| Feeds, sitemap, search index, Markdown twin of a page | `layouts/home.rss.xml`, `section.rss.xml`, `term.rss.xml`, `sitemap.xml`, `home.search.json`, `page.md`, `_partials/feed/` | |
+| Markdown rendering (headings, links, images, code blocks, math passthrough) | `layouts/_markup/` | Code-block wrapper and copy button markup come from here plus `assets/js/theme.js` |
+| Global styles | `assets/css/style.scss` → `_variables`, `_core/`, `_page/`, `_partials/`, `_shortcodes/`, then `_custom.scss` | Site palette/typography stay in `_custom.scss`; home in `home.scss` |
+| Client behaviour (mobile menu, search with Fuse, theme persistence, TOC, code copy) | `assets/js/theme.js`, `assets/js/util.js`, `assets/js/head/color-scheme.js` | Built with Hugo `js.Build`; MathJax loader `assets/js/lib/mathjax.js` |
+| Interface strings | `i18n/{vi,en,zh-CN}.toml` | ja has no file and falls back to English |
+| Bundled libraries | `assets/lib/`, `static/lib/` | Versions in `THIRD_PARTY_NOTICES.md`; `static/lib/katex` and `lightgallery` are published but unused |
+| Shortcodes available to authors | `layouts/shortcodes/react.html` only | FixIt shortcodes were not migrated (list: `docs/audits/p1-07/evidence/templates-not-migrated.txt`) |
+
 ## Task routing (read the smallest relevant surface first)
 
 | Need to change | Current entry point(s) | Related files / dependency | Important cautions |
@@ -30,7 +49,7 @@ P1-04 introduces site-owned Hugo compatibility templates under `layouts/_default
 | Canonical, hreflang, icons, social image, structured-data publisher | `layouts/_partials/head/link.html`, `layouts/_partials/site/translation.html`, `config/_default/params.toml` (`app`, `images`, `page.seo`) | FixIt `head/meta.html` and `head/seo.html` still render description, Open Graph and JSON-LD | Site-owned since P1-06. Untranslated copies canonicalise to the original automatically; run `docs/audits/p1-06/tools/seo-check.py` after any change |
 | Search, RSS, sitemap, robots | `config/_default/params.toml`, `outputs.toml`, `sitemap.toml`, `hugo.toml` (`enableRobotsTXT`) | FixIt search/robots templates; the published `robots.txt` comes from site-owned `layouts/robots.txt` since P1-06 | Retain outputs and paths; test generated HTML and index files |
 | GitHub Pages builds | `.github/workflows/deploy.yml` | `package.json`, Hugo config, submodules | Action currently pinned Hugo 0.149.0; PR-triggered CI not present at audit |
-| Theme updates | `.github/workflows/update-theme.yml` | `.gitmodules`, `.github/dependabot.yml` | Remove only after theme replacement verified; adjust deploy workflow_run coupling |
+| Dependency updates | `.github/dependabot.yml` (GitHub Actions and npm, monthly) | `package.json`, workflows | The theme-update workflow and submodules were removed in P1-07; there is no automatic change to site code |
 | Local PostgreSQL foundation | `db/README.md`, `compose.yaml`, `db/bin/compose`, `db/bin/migrate` | `db/migrations/`, `db/seed.sql`, `db/tests/integration.sh`; D-010/D-012/D-013 | Demo-only local Postgres; static Hugo does not read it; no hosted provisioning/auth/payments |
 | Affiliate, subscriptions, payments (future) | `docs/SEO_AND_MONETIZATION.md`, `docs/CONTENT_MODEL.md` | Future secure service/provider | Not part of P1/P2; no browser secrets or fake secure paywall |
 | Visual and editorial assets (new) | `docs/VISUAL_ASSET_GUIDELINES.md` | `docs/ASSET_MANIFEST_TEMPLATE.md` | Rights, factual accuracy, alt, crops and source provenance |
@@ -39,7 +58,7 @@ Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_p
 
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
-- `themes/FixIt/`: current vendor theme, target for *eventual* removal.
+- `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).
 - `assets/css/`, `assets/js/`: authored style, JS and React components.
 - `content/`: authored Markdown and page bundle assets (preserve).
 - `static/`: files exposed directly as URLs; don't delete based on source-reference search alone.
@@ -61,6 +80,7 @@ Shell: `layouts/_default/baseof.html` owns the wrapper and delegates `layouts/_p
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
 | 2026-11-15 | P1-09 local PostgreSQL | Database reference foundation | New `db/` and `compose.yaml` | Ordered migrations, synthetic seed and isolated restore test; Hugo remains static |
+| 2026-11-15 | P1-07 FixIt retirement | Whole rendering stack | `themes/FixIt/{layouts,assets,i18n,static}` → `layouts/`, `assets/`, `i18n/`, `static/`; theme config → `config/_default/{outputs,outputFormats,params}.toml`; submodules, `.gitmodules`, `update-theme.yml` removed | 647/647 output files equivalent, 355/355 pixel states, see `docs/audits/p1-07/` |
 | 2026-11-15 | P1-06 metadata/SEO | Head links, robots, icons | FixIt `head/link.html` and `robots.txt` → site-owned `layouts/_partials/head/link.html`, `layouts/robots.txt`; new `site/translation.html` | `docs/audits/p1-06/` |
 | 2026-11-15 | P1-05 cleanup | Configuration, site CSS, unused files | root `hugo.toml` → `config/_default/{hugo,module,markup,params}.toml`; inline home CSS → `assets/css/home.scss`; removed `_override.scss`, `custom.js`, `KalmanFilterSim.jsx`, root `robots.txt`, bytecode, duplicate MP4 | Effective config, byte diff, CSSOM and 355-state pixel comparison in `docs/audits/p1-05/` |
 | 2026-11-15 | P1-04 runtime gate | Test/evidence entrypoints | New `docs/audits/p1-04/runtime/` | MathJax/Cal-Heatmap browser harness, baseline comparison and npm integrity check; no application owner moved |
