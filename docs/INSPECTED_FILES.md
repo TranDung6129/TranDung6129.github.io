@@ -268,3 +268,22 @@ Working-file Git blob hashes on `chore/p1-05-css-config-cleanup`; registry self 
 | `media/videos/game_theory_nash/720p30/game_theory_nash.mp4` | — | Byte-identical to `static/videos/game_theory_nash.mp4` (SHA-256 `10a2da74…145b`). |
 
 Vendor theme files read for this task (pinned FixIt `f5fb989`, PARTIAL): `assets/css/style.scss` (import order: variables, override, mixins, core, page, media, patch, custom), `assets/css/_override.scss` and `_custom.scss` (comment-only fallbacks), `layouts/_partials/plugin/style.html` (stylesheet helper: resource, template, toCSS, minify, fingerprint, preload), `layouts/_partials/head/link.html` (icons, canonical, prev/next, alternates, config/style/Font Awesome/Animate links), `layouts/_partials/assets.html` lines 285–320 (config script, theme script, optional `js/custom.js`, per-page styles), `layouts/robots.txt` (robots template). Generated evidence under `docs/audits/p1-05/evidence/`: PARTIAL, described in the report.
+
+## 2026-11-15 — P1-06 metadata and SEO (Claude Code)
+
+Working-file blobs on `feat/p1-06-metadata-seo`; registry self hash is pre-append `5cb93b447bd3c110d817369e29646d67c3868899`. Vendor FixIt `f5fb989` read PARTIAL: `layouts/_partials/head/link.html` (full, source of the owned copy), `head/seo.html` lines 85–105 (image selection for JSON-LD), `home.offline.html`, `robots.txt`. Content read: front matter of `kinh-te/toan-co-ban-1.en.md`, `toan-co-ban-2.en.md`, `game_theory_nash.md` only.
+
+| Path | Blob | Status | Purpose, consumers, risks |
+|---|---|---|---|
+| `layouts/_partials/head/link.html` | `b229d58546b209a517a882184d1493c51523931c` | COVERED | Site-owned copy of FixIt `head/link.html`: icons, canonical (via `site/translation.html`), hreflang for verified translations, prev/next, alternate output formats except rel=canonical, config/style/Font Awesome/Animate stylesheets. Called by `layouts/_default/baseof.html`. Still uses FixIt `plugin/style.html`. |
+| `layouts/_partials/site/translation.html` | `f6ac96c8cde0950e88418e5016d3b3d066bf2f30` | COVERED | Returns `isCopy`, `original`, `verified`, `defaultLang` for a page by comparing `.RawContent` with the default-language translation; regular pages only. Consumer: `head/link.html`. |
+| `layouts/robots.txt` | `cd73623af6136a6869507b732d1bfa8e88419534` | COVERED | Site-owned robots template (from FixIt): no CSS/JS/image disallow, offline/404/markdown disallowed, crawler block list, absolute sitemap URL. |
+| `config/_default/params.toml` | `7b0596fb33c577d36baaf0a2beab5204a7807525` | PARTIAL | P1-06 edits: `keywords`, `images` (default social image), `app.title`, `app.svgFavicon`, `app.iconColor` empty, `page.seo.publisher`. Other sections unread. |
+| `config/_default/languages.toml` | `031b0c18b10f5fa91a44b42354f7c1cf55b69430` | COVERED | en/ja/zh-cn `description` and `home.subtitle` now translate the Vietnamese tagline. |
+| `config/_default/frontmatter.toml` | `33cfb657b916a05d0b5245f81a7e85b6d4691bd1` | COVERED | `lastmod = ["lastmod", ":git", ":fileModTime", ":default"]`. |
+| `archetypes/default.md` | `30f5195c2fb386c0b780bbef382b643b2c8071f4` | COVERED | Adds commented optional schema fields and a description hint. |
+| `docs/audits/p1-06/tools/seo-check.py` | `393ae7920fe4d34db1e96ffe721930bcc3da6523` | COVERED | Stdlib SEO invariant checker for a build plus the content tree; exits 1 on violations. |
+| `docs/audits/p1-06/tools/explain-html-diff.py` | `46cf1f1bb32e1036151b56690f9e65055a8823ee` | COVERED | Strips the intended head metadata from two builds and requires the remaining HTML to be identical. |
+| `docs/audits/p1-06/README.md` | `3b5e997d3cfa1ca6006c310c3b511f6d51d5bea3` | COVERED | Report, front matter conventions, verification table, follow-up backlog, P1-07 hand-off. |
+| `docs/audits/P1-02.md` | `ad7ee51ec5ae89a9d708d765092eac76faad8d99` | COVERED | Unchanged; defect list used as the P1-06 scope source. |
+| `docs/audits/p1-02/static/REPORT.md` | `b1b7e1c19eaaf8633724568777342572c7ece9c0` | COVERED | Unchanged; missing-reference table reused. |

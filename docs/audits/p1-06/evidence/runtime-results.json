@@ -1,0 +1,1058 @@
+{
+  "method": "Headless Chromium against the unmodified production build served by python http.server. External CDN requests are real network requests with certificate validation enabled; no ignoreHTTPSErrors, no certificate-error flags, no interception or mocked assets.",
+  "base": "http://127.0.0.1:1315",
+  "browser": "153.0.8010.12",
+  "launchOptions": {},
+  "contextOptions": {
+    "ignoreHTTPSErrors": false
+  },
+  "external": {
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/toan-co-ban-1/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:09:36.000Z",
+        "validTo": "2027-11-15T09:09:36.000Z"
+      },
+      "contentType": "application/javascript; charset=utf-8",
+      "resolvedVersion": "3.2.2",
+      "bytes": 1173007,
+      "sha256": "300480069078b5892d2363a2b65e2dfbbf30fe5c80f83edbfecf4610fd093862"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/ui/safe.js": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/toan-co-ban-1/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:13:12.000Z",
+        "validTo": "2027-11-15T09:13:12.000Z"
+      },
+      "contentType": "application/javascript; charset=utf-8",
+      "resolvedVersion": "3.2.2",
+      "bytes": 11189,
+      "sha256": "9fef48d868277a8bc1852f7ba796b33ead812d38916a7131b0a29ea48961a6a4"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/toan-co-ban-1/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:13:12.000Z",
+        "validTo": "2027-11-15T09:13:12.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 1368,
+      "sha256": "481e39042508ae313a60618af1e37146ab93e9324c98e4c78b8f17fe55d41e0b"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/toan-co-ban-1/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:13:12.000Z",
+        "validTo": "2027-11-15T09:13:12.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 19360,
+      "sha256": "a009bea404f7a500ded48f8b9ad9cf16e12504b3195dd9e25975289b8256b0f0"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/toan-co-ban-1/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T07:57:55.000Z",
+        "validTo": "2027-11-15T08:57:55.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 34160,
+      "sha256": "1cb1c39ea642f26a4dfed230b4aea1c3c218689421f6e9c0a7c1811693c4fa07"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/toan-co-ban-3/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:16:14.000Z",
+        "validTo": "2027-11-15T09:16:14.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 9600,
+      "sha256": "26683bf201fb258a2237d9754616de9d4ecf4cc1cd39dd1902476df7d75f1d16"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/toan-co-ban-4/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:00:19.000Z",
+        "validTo": "2027-11-15T09:00:19.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 5464,
+      "sha256": "30e889b58cbc51adfbb038ab1a96dc4025aa3542a3cff7712fc55ece510675e2"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T07:58:18.000Z",
+        "validTo": "2027-11-15T08:58:18.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 5792,
+      "sha256": "c49810b53ecc0d87d8028762c518924197dd9d3f905b08f99ea241301085b9cb"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T07:58:25.000Z",
+        "validTo": "2027-11-15T08:58:25.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 3244,
+      "sha256": "5cda41563a095bd70c78e2dda13d0f8cb922c71c90fffd0a0044c65173a66e83"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:09:57.000Z",
+        "validTo": "2027-11-15T09:09:57.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 34464,
+      "sha256": "88b98cad3688915e50da55553ff6ad185e0dce134b47f176e91b100f8a9b175c"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T09:13:01.000Z",
+        "validTo": "2027-11-15T10:13:01.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 5148,
+      "sha256": "3bc6ecaae7ecf6f8d7f8ea07bddbaca8601e2cb6e89d6aef58e78d9f6d8a398f"
+    },
+    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/kinh-te/ly-thuyet-tro-choi-nash/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T08:09:57.000Z",
+        "validTo": "2027-11-15T09:09:57.000Z"
+      },
+      "contentType": "font/woff",
+      "resolvedVersion": "3.2.2",
+      "bytes": 40808,
+      "sha256": "3de784d07b9fa8f104c10928a878ee879cf3305cae5195cba663c9c2bb0195eb"
+    },
+    "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T09:10:38.000Z",
+        "validTo": "2027-11-15T10:10:38.000Z"
+      },
+      "contentType": "application/javascript; charset=utf-8",
+      "resolvedVersion": null,
+      "bytes": 44230,
+      "sha256": "ab8a58f0a4603ad5b275c78c6e6bde7b2170dc6cdbb3f81225cdfb01dc64f387"
+    },
+    "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "cdn.jsdelivr.net",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T09:12:22.000Z",
+        "validTo": "2027-11-15T10:12:22.000Z"
+      },
+      "contentType": "text/css; charset=utf-8",
+      "resolvedVersion": null,
+      "bytes": 1676,
+      "sha256": "fa2c3af7dc8eb41ad42d4efa2f492b816a27abb69f309f5ff4dfb11d7cd5d673"
+    },
+    "https://d3js.org/d3.v3.min.js": {
+      "status": 200,
+      "firstSeenOn": "http://127.0.0.1:1315/",
+      "tls": {
+        "protocol": "TLS 1.3",
+        "subjectName": "d3js.org",
+        "issuer": "CCR agent-proxy interception CA (production) 2026-08",
+        "validFrom": "2026-11-15T09:13:10.000Z",
+        "validTo": "2027-11-15T10:13:10.000Z"
+      },
+      "contentType": "application/javascript; charset=utf-8",
+      "resolvedVersion": null,
+      "bytes": 151725,
+      "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7"
+    }
+  },
+  "math": [
+    {
+      "route": "/kinh-te/toan-co-ban-1/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 15,
+      "display": 3,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 15,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 1): Đạo Hàm Và Hàm Tế - The Epistemic Diary"
+    },
+    {
+      "route": "/en/kinh-te/toan-co-ban-1/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 15,
+      "display": 3,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 15,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "en",
+      "title": "Basic Mathematics for Economics (Part 1): Derivatives and Marginal Functions - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-2/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 10,
+      "display": 4,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 10,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-3/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 20,
+      "display": 3,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 20,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 3): Tối Ưu Hóa Có Ràng Buộc - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-4/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 11,
+      "display": 3,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 11,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 4): Tích Phân Và Thặng Dư - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-5/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 12,
+      "display": 1,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 12,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 5): Đại Số Tuyến Tính - The Epistemic Diary"
+    },
+    {
+      "route": "/en/kinh-te/toan-co-ban-5/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 12,
+      "display": 1,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 12,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "en",
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 5): Đại Số Tuyến Tính - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/co-gian-cung-cau-cong-thuc/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 28,
+      "display": 17,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 28,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Độ Co Giãn Cung Cầu: Chứng Minh Và Giải Thích Công Thức - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 47,
+      "display": 30,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 47,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Tổng Doanh Thu Và Độ Co Giãn Cầu: Góc Nhìn Từ Định Thức Ma Trận - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 54,
+      "display": 21,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 54,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Lý Thuyết Trò Chơi Và Cân Bằng Nash: Từ Cơ Sở Toán Học Đến Ứng Dụng Kinh Tế - The Epistemic Diary"
+    },
+    {
+      "route": "/kinh-te/game_theory_nash/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 78,
+      "display": 14,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 78,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary"
+    },
+    {
+      "route": "/en/kinh-te/game_theory_nash/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 78,
+      "display": 14,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 78,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "en",
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary"
+    },
+    {
+      "route": "/toan-hoc/riemann-hypothesis-number-theory/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 62,
+      "display": 15,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 62,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Lý Thuyết Số Và Giả Thuyết Riemann: Từ Hàm Zeta Đến Cryptography - The Epistemic Diary"
+    },
+    {
+      "route": "/en/toan-hoc/riemann-hypothesis-number-theory/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 62,
+      "display": 15,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 62,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "en",
+      "title": "Lý Thuyết Số Và Giả Thuyết Riemann: Từ Hàm Zeta Đến Cryptography - The Epistemic Diary"
+    },
+    {
+      "route": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 85,
+      "display": 20,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 85,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "vi",
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary"
+    },
+    {
+      "route": "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "status": 200,
+      "ready": true,
+      "version": "3.2.2",
+      "containers": 85,
+      "display": 20,
+      "errors": 0,
+      "zeroSize": 0,
+      "mathItems": 85,
+      "rawTexLeftovers": 0,
+      "rawTexSamples": [],
+      "outputJax": "CHTML",
+      "lang": "en",
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary"
+    }
+  ],
+  "heatmap": [
+    {
+      "route": "/",
+      "scheme": "light",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 3,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": null,
+      "lang": "vi",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    },
+    {
+      "route": "/en/",
+      "scheme": "light",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 3,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": null,
+      "lang": "en",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    },
+    {
+      "route": "/ja/",
+      "scheme": "light",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 0,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": null,
+      "lang": "ja",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    },
+    {
+      "route": "/zh-cn/",
+      "scheme": "light",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 0,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": null,
+      "lang": "zh-cn",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    },
+    {
+      "route": "/",
+      "scheme": "dark",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 3,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": "dark",
+      "lang": "vi",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    },
+    {
+      "route": "/en/",
+      "scheme": "dark",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 3,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": "dark",
+      "lang": "en",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    },
+    {
+      "route": "/ja/",
+      "scheme": "dark",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 0,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": "dark",
+      "lang": "ja",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    },
+    {
+      "route": "/zh-cn/",
+      "scheme": "dark",
+      "status": 200,
+      "d3": "3.5.17",
+      "calHeatMap": "function",
+      "instance": true,
+      "svg": 1,
+      "domains": 6,
+      "labels": [
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "cells": 183,
+      "expectedCells": 183,
+      "postDays": 0,
+      "postDaysInWindow": 0,
+      "fills": {
+        "rgb(155, 233, 168)": 183
+      },
+      "theme": "dark",
+      "lang": "zh-cn",
+      "tooltip": {
+        "text": "Monday June 1, 2026",
+        "display": "block"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "MathJax loads from CDN and typesets every math page",
+      "passed": true,
+      "pages": 16,
+      "totalContainers": 674,
+      "versions": [
+        "3.2.2"
+      ]
+    },
+    {
+      "name": "Math page has no document horizontal overflow (1440px light)",
+      "passed": true
+    },
+    {
+      "name": "Math page has no document horizontal overflow (1440px dark)",
+      "passed": true
+    },
+    {
+      "name": "Math page has no document horizontal overflow (360px light)",
+      "passed": true
+    },
+    {
+      "name": "Math page has no document horizontal overflow (360px dark)",
+      "passed": true
+    },
+    {
+      "name": "D3 + Cal-Heatmap load from CDN and render six month domains on every home language",
+      "passed": true,
+      "pages": 8,
+      "d3": [
+        "3.5.17"
+      ],
+      "cells": [
+        183
+      ]
+    },
+    {
+      "name": "Required CDN resources return 200 over validated TLS",
+      "passed": true,
+      "resources": [
+        {
+          "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+          "status": 200,
+          "sha256": "300480069078b5892d2363a2b65e2dfbbf30fe5c80f83edbfecf4610fd093862"
+        },
+        {
+          "url": "https://d3js.org/d3.v3.min.js",
+          "status": 200,
+          "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+          "status": 200,
+          "sha256": "ab8a58f0a4603ad5b275c78c6e6bde7b2170dc6cdbb3f81225cdfb01dc64f387"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+          "status": 200,
+          "sha256": "fa2c3af7dc8eb41ad42d4efa2f492b816a27abb69f309f5ff4dfb11d7cd5d673"
+        }
+      ]
+    },
+    {
+      "name": "No failed CDN request and no MathJax/CalHeatMap runtime error",
+      "passed": true,
+      "cdnFailures": 0,
+      "externalResponses": 15
+    }
+  ],
+  "consoleErrors": [
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-1/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/toan-co-ban-1/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-3/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-4/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-5/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/toan-co-ban-5/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/co-gian-cung-cau-cong-thuc/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/ly-thuyet-tro-choi-nash/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/game_theory_nash/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/game_theory_nash/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/toan-hoc/riemann-hypothesis-number-theory/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/toan-hoc/riemann-hypothesis-number-theory/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "type": "console.error",
+      "message": "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+    }
+  ],
+  "requestsFailed": [
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-1/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/toan-co-ban-1/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-3/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-4/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-5/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/toan-co-ban-5/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/co-gian-cung-cau-cong-thuc/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/ly-thuyet-tro-choi-nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1315/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1315/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/toan-hoc/riemann-hypothesis-number-theory/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/toan-hoc/riemann-hypothesis-number-theory/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1315/kinh-te/toan-co-ban-2/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    }
+  ],
+  "screenshots": [
+    "screenshots/math-1440-light.png",
+    "screenshots/math-1440-dark.png",
+    "screenshots/math-360-light.png",
+    "screenshots/math-360-dark.png",
+    "screenshots/heatmap-1440-light.png",
+    "screenshots/heatmap-1440-dark.png",
+    "screenshots/heatmap-360-light.png"
+  ],
+  "heatmapMobile": {
+    "svg": 1,
+    "cells": 183,
+    "documentOverflow": false
+  },
+  "heatmapThemeToggle": {
+    "before": "rgb(155, 233, 168)",
+    "afterToggle": "rgb(155, 233, 168)",
+    "themeAfterToggle": "dark",
+    "afterReload": "rgb(155, 233, 168)",
+    "recolouredWithoutReload": false
+  },
+  "heatmapThemeObservation": {
+    "lightFills": [
+      "rgb(155, 233, 168)"
+    ],
+    "darkFills": [
+      "rgb(155, 233, 168)"
+    ],
+    "coloursDifferBetweenThemes": false
+  }
+}
