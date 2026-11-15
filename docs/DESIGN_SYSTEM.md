@@ -1,6 +1,6 @@
 # Design System — Editorial Research (V1 specification)
 
-**Stage:** Phase 2 design target, NOT a final approved homepage design.
+**Stage:** Phase 2 design target, NOT a final approved homepage design. **Mandatory creative brief:** [VISUAL_DIRECTION.md](VISUAL_DIRECTION.md). Token correctness alone does not imply design acceptance.
 
 ## Desired experience
 A thoughtfully produced journal and multi-volume book: premium-level polish without glossy excess. Minimal, warm, literary and technical; consistent, restrained interactions. Inspired by quality of execution, not a copy of Apple or any named creator. Preserve quiet long-form reading.
@@ -42,6 +42,9 @@ Test WCAG contrast in the actual pairing. Derive focus/borders/disabled/selectio
 | Editorial | article card, featured article, topic tag, author byline, TOC, chapter navigation | missing image, long title |
 | Media | film card, transcript, embedded figure, lab/embed | fallback/loading/accessible |
 | Monetization previews | SupportAuthor, MembershipCard, AffiliateProduct, disclosure, premium preview, AdSlot | demo-only, **no fake checkout** |
+
+## Prototype gate
+Create and visually review a **real screenshot-based specimen** before reusing a new visual language across the publication. Follow VISUAL_DIRECTION.md for editorial hierarchy, imagery, article/volume/film composition and prohibited generic-template patterns. Require maintainer visual acceptance; if unavailable, record UNTESTED, not DONE.
 
 ## Design review rubric
 Check discoverability, reading rhythm, content hierarchy, contrast, keyboard navigation, responsive design (360/768/1024/desktop), SEO semantics and perceived quality. Screenshot specimens in both themes. Record design choices and rejected alternatives in DECISIONS.md.

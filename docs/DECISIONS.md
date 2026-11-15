@@ -30,6 +30,9 @@
 ## D-010 — PostgreSQL foundation from Phase 1
 **Accepted:** Prepare an extensible PostgreSQL database early, with a local reproducible environment, reviewed schema/migrations, example data and verification/restore instructions (P1-09). Supabase PostgreSQL is a favored managed provider, not yet provisioned. Hugo/Pages articles remain static and must work without database connection. Real accounts, member entitlements, billing, private assets and customer personal data processing remain deferred to separately approved phases. See [DATABASE_FOUNDATION.md](DATABASE_FOUNDATION.md).
 
+## D-011 — Editorial visual direction and prototype-first review
+**Accepted direction:** Phase 2 visual standard is defined in [VISUAL_DIRECTION.md](VISUAL_DIRECTION.md): premium magazine × multi-chapter book, warm restraint, intentional editorial hierarchy, strong type, curated illustrations and pixel-level care. User liked the concept moodboard as a *reference*, but has not approved a final homepage layout. Require browser screenshots and maintainer review of a specimen before widespread implementation; automatic checks alone cannot validate aesthetic fit. The moodboard file is not yet checked into the repository; agents must not claim to have inspected it.
+
 ## Decision proposal template
 ### D-XXX — Name
 - Status: PROPOSED / ACCEPTED / REJECTED / SUPERSEDED
