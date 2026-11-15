@@ -282,6 +282,11 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Branch:** `feat/p2-visual-assets-v2` pushed; review base `feat/p2-06-review`.
 - **PR blocker:** `gh pr create --base feat/p2-06-review --head feat/p2-visual-assets-v2` returned `Post https://api.github.com/graphql: Forbidden`. No pull request was created; the pushed branch remains available for a manual PR. P2-06 remains blocked pending owner visual approval.
 
+### 2026-11-16 — D1 claim — Codex
+- **Status:** IN PROGRESS. **Branch:** `feat/d1-article-reading`, created from current `origin/main` (`c2898aa`).
+- **Scope:** D1-00 through D1-06 only: production article reading experience, independent TOC/progress, centered masthead/identity, licensed-or-owner-supplied ornamental system, and data-backed end-of-article discovery. D2–D8 remain guardrails only.
+- **Audit baseline:** Read the complete owner handoff and inspected its approved reference before code changes; audited Phase 1–3 architecture and representative current articles. Local production captures show the long Nash article prose center at x=687.3 of a 1440px viewport and x=606.7 of 1024px, rather than viewport center. Mobile is centered and has no horizontal overflow. Direct production access is blocked here by proxy `CONNECT 403`; local production build is the test target.
+
 ### 2026-11-15 — P2-06 maintainer acceptance and integration
 - **Owner:** Approved merging Phase 2 design specimen and v2 artworks as a reversible milestone without waiting for additional visual review. Chose Source Serif 4 for reading text and Newsreader for headlines.
 - **Font scope:** Self-hosted 12 licensed variable WOFF2 files copied from already sourced font comparison, loaded only in Hugo `editorial-review` preview build. Original license notices remain under `docs/design/typography-comparison/fonts/`.
