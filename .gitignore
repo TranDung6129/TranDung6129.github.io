@@ -9,3 +9,7 @@ jsconfig.json
 claude-prompt-template.txt
 update_*.py
 kalman-test.*
+
+# Python bytecode (Manim authoring scripts)
+__pycache__/
+*.pyc

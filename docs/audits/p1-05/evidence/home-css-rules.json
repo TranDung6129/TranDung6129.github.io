@@ -1,0 +1,64 @@
+{
+  "note": "home rules moved from an inline <style> at the end of the page content to a <head> link",
+  "baselineInlineRules": 39,
+  "candidateRules": 24,
+  "droppedDeadRules": 15,
+  "droppedSelectors": [
+    ".right-panel.collections-panel",
+    ".right-panel.collections-panel::-webkit-scrollbar",
+    ".right-panel.collections-panel",
+    ".panel-title",
+    ".custom-details",
+    ".custom-details[open]",
+    ".panel-title-summary",
+    ".panel-title-summary::-webkit-details-marker",
+    ".panel-title-summary::after",
+    ".custom-details[open] .panel-title-summary::after",
+    ".collections-list",
+    ".collection-item",
+    ".collection-item:hover",
+    ".collection-name",
+    ".collection-count"
+  ],
+  "sameRulesSameOrder": true,
+  "inlineHomeStyleBlocksLeft": 0,
+  "cascadeOrderBefore": [
+    "/css/config.min.css",
+    "/css/style.min.css",
+    "/lib/fontawesome-free/all.min.css",
+    "/lib/animate/animate.min.css",
+    "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+    "<style heatmap>",
+    "<style home>",
+    "/lib/cookieconsent/cookieconsent.min.css"
+  ],
+  "cascadeOrderAfter": [
+    "/css/config.min.css",
+    "/css/style.min.css",
+    "/lib/fontawesome-free/all.min.css",
+    "/lib/animate/animate.min.css",
+    "/css/home.min.css",
+    "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+    "<style heatmap>",
+    "/lib/cookieconsent/cookieconsent.min.css"
+  ],
+  "homeLinkInHead": true,
+  "samePositionRelativeToOtherSheets": false,
+  "reorderedAgainst": [
+    "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+    "<style heatmap>"
+  ],
+  "overlap": {
+    "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css": {
+      "elementsStyledByThatSheet": 198,
+      "sharedElementPropertyPairs": 0,
+      "sample": []
+    },
+    "<style heatmap>": {
+      "elementsStyledByThatSheet": 7,
+      "sharedElementPropertyPairs": 0,
+      "sample": []
+    }
+  },
+  "reorderingCannotChangeComputedStyle": true
+}

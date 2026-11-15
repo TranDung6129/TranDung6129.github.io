@@ -1,3 +1,5 @@
+# Language list. The en/ja/zh-cn descriptions translate the Vietnamese tagline (P1-06; they were FixIt
+# starter taglines). ja and zh-cn currently have no translated articles.
 [vi]
   languageName = "Tiếng Việt"
   weight = 1
@@ -10,22 +12,22 @@
   languageName = "English"
   weight = 2
   [en.params]
-    description = "A Clean, Elegant but Advanced Hugo Theme"
+    description = "Whatever I am afraid of forgetting, I write down here."
     [en.params.home]
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      subtitle = "Whatever I am afraid of forgetting, I write down here."
 
 [ja]
   languageName = "日本語"
   weight = 3
   [ja.params]
-    description = "クリーンでエレガント、そして先進的な Hugo テーマ"
+    description = "忘れたくないことを、ここに書き留めています。"
     [ja.params.home]
-      subtitle = "クリーンでエレガント、そして先進的な Hugo テーマ"
+      subtitle = "忘れたくないことを、ここに書き留めています。"
 
 [zh-cn]
   languageName = "简体中文"
   weight = 4
   [zh-cn.params]
-    description = "一个简洁、优雅且功能强大的 Hugo 主题"
+    description = "怕忘记的东西，我都记在这里。"
     [zh-cn.params.home]
-      subtitle = "一个简洁、优雅且功能强大的 Hugo 主题"
+      subtitle = "怕忘记的东西，我都记在这里。"

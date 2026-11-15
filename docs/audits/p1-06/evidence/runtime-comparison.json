@@ -1,0 +1,28 @@
+{
+  "baseline": "docs/audits/p1-05/evidence/runtime-results.json",
+  "candidate": "docs/audits/p1-06/evidence/runtime-results.json",
+  "comparedSections": [
+    "browser",
+    "checks",
+    "math",
+    "heatmap",
+    "heatmapMobile",
+    "heatmapThemeToggle",
+    "heatmapThemeObservation",
+    "external",
+    "externalHashes",
+    "consoleErrors",
+    "requestsFailed"
+  ],
+  "differences": [
+    "consoleErrors",
+    "requestsFailed"
+  ],
+  "hashMismatch": [],
+  "hashesComparedInBoth": 14,
+  "identical": false,
+  "allChecksPass": {
+    "baseline": true,
+    "candidate": true
+  }
+}

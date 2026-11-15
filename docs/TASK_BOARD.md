@@ -9,12 +9,12 @@
 | [x] | P1-01 | Inventory all files, deployments, config precedence, active assets/shortcodes/theme use; publish KEEP/REPLACE/REMOVE matrix with proof | — | DONE | Codex (PR #13 accepted) |
 | [x] | P1-02 | Capture baseline: Hugo version/build, route list, language variants, RSS/search/math/code/TOC/theme behaviors, broken links, current performance | P1-01 | DONE | Codex (PR #17 reviewed and merged; existing defects logged) |
 | [x] | P1-03 | Decide custom Hugo template architecture, configuration model and migration strategy; record decision | P1-01, P1-02 | DONE | Codex |
-| [ ] | P1-04 | Implement base, header/footer, section/single templates and compatibility layer; build passes while old functionality remains | P1-03 | TODO | — |
-| [ ] | P1-05 | Consolidate duplicate CSS and configuration; remove only demonstrably unused packages/old overrides, with proof | P1-04 | TODO | — |
-| [ ] | P1-06 | Adopt content metadata/schema and SEO defaults without breaking permalinks or translations | P1-03, P1-04 | TODO | — |
+| [x] | P1-04 | Implement base, header/footer, section/single templates and compatibility layer; build passes while old functionality remains | P1-03 | DONE | Codex (implementation) + Claude Code (runtime verification); PR #19, acceptance = maintainer merge |
+| [x] | P1-05 | Consolidate duplicate CSS and configuration; remove only demonstrably unused packages/old overrides, with proof | P1-04 | DONE | Claude Code; PR stacked on #19, acceptance = maintainer merge after #19 |
+| [x] | P1-06 | Adopt content metadata/schema and SEO defaults without breaking permalinks or translations | P1-03, P1-04 | DONE | Claude Code; PR stacked on #20, acceptance = maintainer merge after #19 and #20. Editorial backlog in `docs/audits/p1-06/README.md` |
 | [ ] | P1-07 | Verify parity and safely remove FixIt/unused submodules and obsolete theme update workflow | P1-04, P1-05, P1-06 | TODO | — |
 | [ ] | P1-08 | Final Phase-1 regression, rollback notes, deployment smoke test and sign-off | P1-02, P1-07, P1-09 | TODO | — |
-| [x] | P1-09 | PostgreSQL foundation: review schema boundary, local dev setup, versioned migration, seed/demo data, env.example, connection/migration tests and backup/restore drill; no live auth/payments/hosted provision claim | P1-03 | DONE | Codex |
+| [x] | P1-09 | PostgreSQL foundation: review schema boundary, local dev setup, versioned migration, seed/demo data, env.example, connection/migration tests and backup/restore drill; no live auth/payments/hosted provision claim | P1-03 | DONE | Codex (PR #21, local integration verified) |
 
 ## Phase 2 — Editorial design system
 

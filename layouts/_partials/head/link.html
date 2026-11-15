@@ -1,0 +1,77 @@
+{{- /* Site-owned copy of FixIt f5fb989 layouts/_partials/head/link.html (MIT, see layouts/_default/FIXIT-LICENSE.txt), changed in P1-06: canonical, hreflang and alternate links. */ -}}
+{{- $cdn := .Site.Store.Get "cdn" | default dict -}}
+{{- $fingerprint := .Site.Store.Get "fingerprint" -}}
+{{- $title := printf "%s %s %s" .Title .Site.Params.titleDelimiter .Site.Title -}}
+{{- if .IsHome -}}
+  {{- $title = site.Title -}}
+{{- end -}}
+
+{{/*  FIXME)) use relURL for rel permalink */}}
+{{- if not .Site.Params.app.noFavicon -}}
+  {{- with .Site.Params.app.svgFavicon -}}
+    <link rel="icon" href="{{ . }}">
+  {{- else -}}
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  {{- end -}}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  {{- with .Site.Params.app.iconColor -}}
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ . }}">
+  {{- end -}}
+  {{- if eq .Site.Params.enablePWA true -}}
+    <link rel="manifest" href="/site.webmanifest">
+  {{- end -}}
+{{- end -}}
+
+{{- /* P1-06: an untranslated copy names the default-language original as canonical. */ -}}
+{{- $translation := partial "site/translation.html" . -}}
+<link rel="canonical" type="text/html" href="{{ $translation.original.Permalink }}" title="{{ $title }}" />
+{{- /* P1-06: hreflang only between versions whose text actually differs from the original. */ -}}
+{{- if and (not $translation.isCopy) (gt (len $translation.verified) 1) -}}
+  {{- range $translation.verified -}}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{- if eq .Language.Lang $translation.defaultLang -}}
+      <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with .Prev -}}
+  <link rel="prev" type="text/html" href="{{ .Permalink }}" title="{{ .Title }}" />
+{{- end -}}
+{{- with .Next -}}
+  <link rel="next" type="text/html" href="{{ .Permalink }}" title="{{ .Title }}" />
+{{- end -}}
+{{- /* P1-06: the HTML format of a page rendered as archives/offline has rel "canonical"; skip it so
+       a page never carries two canonical links. */ -}}
+{{- range .AlternativeOutputFormats -}}
+  {{- if ne .Rel "canonical" -}}
+    {{- printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink $title | safeHTML -}}
+  {{- end -}}
+{{- end -}}
+{{- /* Compatible with https://github.com/hugo-fixit/hugo-json-feed */ -}}
+{{- with .OutputFormats.Get "jsonfeed" -}}
+  <link rel="alternate" type="application/feed+json" href="{{ .Permalink }}" title="{{ $title }}" />
+{{- end -}}
+
+{{- /* config.min.css */ -}}
+{{- $options := dict "Source" "css/config.template.scss" "Template" "css/config.scss" "Fingerprint" $fingerprint -}}
+{{- $toCSS := dict "targetPath" "css/config.min.css" "enableSourceMap" true -}}
+{{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
+{{- partial "plugin/style.html" $options -}}
+
+{{- /* style.min.css */ -}}
+{{- $options := dict "Source" "css/style.scss" "Fingerprint" $fingerprint -}}
+{{- $toCSS := dict "targetPath" "css/style.min.css" "enableSourceMap" true -}}
+{{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
+{{- partial "plugin/style.html" $options -}}
+
+{{- /* Font Awesome */ -}}
+{{- $source := $cdn.fontawesomeFreeCSS | default "lib/fontawesome-free/all.min.css" -}}
+{{- $options := dict "Source" $source "Fingerprint" $fingerprint "Preload" true -}}
+{{- partial "plugin/style.html" $options -}}
+
+{{- /* Animate.css */ -}}
+{{- $source := $cdn.animateCSS | default "lib/animate/animate.min.css" -}}
+{{- $options := dict "Source" $source "Fingerprint" $fingerprint "Preload" true -}}
+{{- partial "plugin/style.html" $options -}}

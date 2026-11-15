@@ -1,0 +1,12 @@
+{
+  "method": "For every changed HTML file: remove the custom.min.js script tag (and, on home pages, the inline home <style> block / the home.min.css link) and require the remainder to be byte-identical.",
+  "changed_html": 201,
+  "only_script_tag_removed": 197,
+  "script_tag_plus_home_style_move": [
+    "en/index.html",
+    "index.html",
+    "ja/index.html",
+    "zh-cn/index.html"
+  ],
+  "unexplained": []
+}

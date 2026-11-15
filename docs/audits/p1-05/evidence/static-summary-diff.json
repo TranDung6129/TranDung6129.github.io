@@ -1,0 +1,33 @@
+{
+  "method": "docs/audits/p1-02/static/analyze.py on the P1-05 production build, compared with the committed P1-02 summary.json",
+  "metrics_compared": 86,
+  "metrics_identical": 83,
+  "differences": {
+    "links.internal_references_checked": {
+      "p1-02": 11202,
+      "p1-05": 11005
+    },
+    "route_diff.added": {
+      "p1-02": [],
+      "p1-05": [
+        "/css/home.min.css"
+      ]
+    },
+    "route_diff.removed": {
+      "p1-02": [],
+      "p1-05": [
+        "/js/custom.min.js"
+      ]
+    }
+  },
+  "unchanged_highlights": {
+    "emitted_files": 645,
+    "html_files": 347,
+    "non_alias_html": 201,
+    "alias_html": 146,
+    "links.missing_target_occurrences": 745,
+    "links.unique_missing_target_count": 210,
+    "links.missing_fragment_occurrences": 0
+  },
+  "note": "The analyzer exits 1 by design when the route set changes; the two route changes are the intended removal of js/custom.min.js and addition of css/home.min.css."
+}

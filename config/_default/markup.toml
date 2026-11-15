@@ -24,6 +24,26 @@
     table = true
     taskList = true
     typographer = true
+    # Inline extras: ~~del~~, ++ins++, ==mark==, ~sub~, ^sup^ (moved from the former root hugo.toml in P1-05)
+    # https://gohugo.io/configuration/markup/#extras
+    [goldmark.extensions.extras]
+      [goldmark.extensions.extras.delete]
+        enable = true
+      [goldmark.extensions.extras.insert]
+        enable = true
+      [goldmark.extensions.extras.mark]
+        enable = true
+      [goldmark.extensions.extras.subscript]
+        enable = true
+      [goldmark.extensions.extras.superscript]
+        enable = true
+    # Pass TeX through untouched for MathJax (moved from the former root hugo.toml in P1-05)
+    # https://gohugo.io/content-management/mathematics/
+    [goldmark.extensions.passthrough]
+      enable = true
+      [goldmark.extensions.passthrough.delimiters]
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)'], ['$', '$']]
   [goldmark.parser]
     autoHeadingID = true
     autoHeadingIDType = "github"

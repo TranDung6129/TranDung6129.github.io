@@ -1,0 +1,17 @@
+{
+  "before_files": 648,
+  "after_files": 648,
+  "removed": [],
+  "added": [],
+  "changed": [
+    "css/config.min.css.map",
+    "css/style.min.css.map",
+    "js/head/color-scheme.min.js.map",
+    "js/lib/mathjax.min.js.map",
+    "js/mount-react-root-NashEquilibriumSim-0.js",
+    "js/theme.min.js",
+    "js/theme.min.js.map"
+  ],
+  "html_changed": [],
+  "note": "Remaining dev JS/source map differences reflect archive versus checkout source paths; see independent review in AGENT_LOG."
+}

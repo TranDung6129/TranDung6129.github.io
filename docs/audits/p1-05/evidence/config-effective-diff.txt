@@ -1,0 +1,33 @@
+# Effective configuration before (P1-04 state) vs after consolidation, per language and environment.
+## hugo config --format json --lang vi --environment production  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619
+## hugo config --format json --lang vi --environment development  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619
+## hugo config --format json --lang en --environment production  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619
+## hugo config --format json --lang en --environment development  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619
+## hugo config --format json --lang ja --environment production  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619
+## hugo config --format json --lang ja --environment development  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619
+## hugo config --format json --lang zh-cn --environment production  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619
+## hugo config --format json --lang zh-cn --environment development  (stderr lines after: 0)
+- privacy.twitter.enablednt = True
++ privacy.twitter = {}
+# only-in-first 1, only-in-second 1, changed 0, total keys 619/619

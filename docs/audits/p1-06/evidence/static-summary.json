@@ -1,0 +1,58 @@
+{
+  "method": "docs/audits/p1-02/static/analyze.py; P1-02 committed baseline vs P1-06 production build (exits 1 by design because routes were added/removed intentionally)",
+  "emitted_files": [
+    645,
+    647
+  ],
+  "non_alias_html": [
+    201,
+    201
+  ],
+  "alias_html": [
+    146,
+    146
+  ],
+  "route_diff_vs_p1_02": {
+    "removed": [
+      "/js/custom.min.js"
+    ],
+    "added": [
+      "/apple-touch-icon.png",
+      "/css/home.min.css",
+      "/images/game_theory_nash_poster.png"
+    ]
+  },
+  "missing_target_occurrences": [
+    745,
+    140
+  ],
+  "unique_missing_targets": [
+    210,
+    10
+  ],
+  "missing_fragments": [
+    0,
+    0
+  ],
+  "remaining_missing_by_literal_url": {
+    "/ja/collections/web-development/": 14,
+    "/ja/collections/travel-guides/": 14,
+    "/ja/collections/programming-tips/": 14,
+    "/ja/collections/hugo-tutorials/": 14,
+    "/ja/about/": 14,
+    "/zh-cn/collections/web-development/": 14,
+    "/zh-cn/collections/travel-guides/": 14,
+    "/zh-cn/collections/programming-tips/": 14,
+    "/zh-cn/collections/hugo-tutorials/": 14,
+    "/zh-cn/about/": 14
+  },
+  "duplicate_canonical_groups": [
+    4,
+    12
+  ],
+  "duplicate_canonical_note": "the P1-06 groups are each an untranslated English copy plus its Vietnamese original, which is the intended canonical consolidation",
+  "duplicate_title_groups": [
+    24,
+    24
+  ]
+}

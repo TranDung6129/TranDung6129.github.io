@@ -1,8 +1,7 @@
+{{- /* Site-owned robots policy (P1-06), derived from the FixIt template. Stylesheets, scripts and
+       images are crawlable again so search engines can render pages and index figures; the
+       crawler block list below is unchanged. */ -}}
 User-agent: *
-
-Disallow: /images/
-Disallow: /js/
-Disallow: /css/
 
 Disallow: /*offline/
 Disallow: /*404.html$
@@ -97,4 +96,4 @@ Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 
-Sitemap: https://example.org/sitemap.xml
+Sitemap: {{ "/sitemap.xml" | absURL }}

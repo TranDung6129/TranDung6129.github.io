@@ -9,7 +9,7 @@ version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
 description = "Tôi sợ quên cái gì thì tôi viết lại ở đây"
 # site keywords
-keywords = ["Hugo", "FixIt"]
+keywords = ["The Epistemic Diary", "toán học", "kinh tế học", "khoa học máy tính", "triết học", "vật lý"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
@@ -18,7 +18,7 @@ fingerprint = ""
 # NEW date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = []
+images = ["/images/logoted.png"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = false
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -60,13 +60,15 @@ disableThemeInject = false
 # App icon config
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
-  title = "Hugo FixIt Blog"
+  title = "The Epistemic Diary"
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = "static/images/logoted.png"
+  # site-root-relative so it resolves on every page (was "static/images/logoted.png", a 404 on nested pages)
+  svgFavicon = "/images/logoted.png"
   # Safari mask icon color
-  iconColor = "#5bbad5"
+  # empty: no Safari mask icon is published, so no <link rel="mask-icon"> should be emitted
+  iconColor = ""
   # Windows v8-10 tile color
   tileColor = "#da532c"
   # FixIt 0.2.12 | CHANGED Android browser theme color
@@ -668,6 +670,8 @@ disableThemeInject = false
   # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas (https://katex.org)
   [page.math]
     enable = true
+    # rendering engine: "katex" or "mathjax" (moved from the former root hugo.toml in P1-05; the theme default is katex)
+    type = "mathjax"
     # default inline delimiter is $ ... $ and \( ... \)
     inlineLeftDelimiter = ""
     inlineRightDelimiter = ""
@@ -914,5 +918,6 @@ disableThemeInject = false
     images = []
     # Publisher info
     [page.seo.publisher]
-      name = ""
-      logoUrl = ""
+      # the publication is the publisher in article structured data; authors stay in bylines
+      name = "The Epistemic Diary"
+      logoUrl = "/images/logoted.png"

@@ -1,0 +1,25 @@
+# What the former root hugo.toml contributed: effective config (root + config/_default + theme) vs config/_default + theme only.
+# '-' = present only with the root file, '~' = value changed without it. Language vi, production; the other languages/environments give the same list.
+- cascade = [{"fields": {}, "params": {"layout": "single", "type": "posts"}, "target": {"path": "/{toan-hoc,vat-ly,kinh-te,khoa-hoc-may-tinh,triet-hoc,ca-nhan}/**"}}]
+- markup.goldmark.extensions.extras.delete.enable = True
+- markup.goldmark.extensions.extras.insert.enable = True
+- markup.goldmark.extensions.extras.mark.enable = True
+- markup.goldmark.extensions.extras.subscript.enable = True
+- markup.goldmark.extensions.extras.superscript.enable = True
+- markup.goldmark.extensions.passthrough.delimiters.block = [["\\[", "\\]"], ["$$", "$$"]]
+- markup.goldmark.extensions.passthrough.delimiters.inline = [["\\(", "\\)"], ["$", "$"]]
+- markup.goldmark.extensions.passthrough.enable = True
+- module.hugoversion.extended = True
+- module.hugoversion.min = 0.147.7
+- privacy.twitter.enablednt = True
++ markup.goldmark.extensions.extras.delete = {}
++ markup.goldmark.extensions.extras.insert = {}
++ markup.goldmark.extensions.extras.mark = {}
++ markup.goldmark.extensions.extras.subscript = {}
++ markup.goldmark.extensions.extras.superscript = {}
++ markup.goldmark.extensions.passthrough.delimiters = {}
++ module.hugoversion = {}
++ privacy.twitter = {}
+~ pagination.pagersize : 12 => 10
+~ params.page.math.type : mathjax => katex
+# only-in-first 12, only-in-second 8, changed 2, total keys 619/615
