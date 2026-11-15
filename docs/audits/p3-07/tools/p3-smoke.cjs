@@ -1,8 +1,9 @@
 // Phase 3 regression and acceptance harness (P3-07; reused live in P3-08).
 //
+// P4-04: Nash simulation checked on /labs/nash-explorer/, video on /films/nash-animation/, essay checked for link cards.
 // Usage: BASE=http://127.0.0.1:1316 OUT=/tmp/p3 [AXE=/path/to/axe.min.js] [MATRIX_SHOTS=1] node p3-smoke.cjs
 // Default Chromium options (certificate validation on, no interception). Exit 1 if a named check fails.
-// 1) Matrix: 8 pages x 360/390/768/1024/1440 px x light/dark — status, theme, overflow, page errors,
+// 1) Matrix: 10 pages x 360/390/768/1024/1440 px x light/dark — status, theme, overflow, page errors,
 //    own-site failed requests, fonts, touch-target sizes of masthead controls, screenshot.
 // 2) Functional checks: navigation in four languages, search (vi/en) + Escape, theme persistence,
 //    TOC, code copy, MathJax on every math page, heatmap rendering and theme colours, Nash preset /
@@ -20,12 +21,14 @@ fs.mkdirSync(path.join(out, 'screenshots'), { recursive: true });
 const host = new URL(base).host;
 const PAGES = [
   ['home', '/'], ['journal', '/journal/'], ['article', '/kinh-te/toan-co-ban-2/'], ['volume', '/volumes/volume-i/'],
-  ['films', '/films/'], ['labs', '/labs/'], ['nash', '/kinh-te/game_theory_nash/'], ['discover', '/discover/'],
+  ['films', '/films/'], ['labs', '/labs/'], ['nash', '/labs/nash-explorer/'], ['discover', '/discover/'],
+  ['essay', '/kinh-te/game_theory_nash/'], ['film', '/films/nash-animation/'],
 ];
 const MATH = ['/kinh-te/toan-co-ban-1/', '/en/kinh-te/toan-co-ban-1/', '/kinh-te/toan-co-ban-2/', '/kinh-te/toan-co-ban-3/', '/kinh-te/toan-co-ban-4/',
   '/kinh-te/toan-co-ban-5/', '/en/kinh-te/toan-co-ban-5/', '/kinh-te/co-gian-cung-cau-cong-thuc/', '/kinh-te/doanh-thu-co-gian-dinh-thuc/',
   '/kinh-te/ly-thuyet-tro-choi-nash/', '/kinh-te/game_theory_nash/', '/en/kinh-te/game_theory_nash/', '/toan-hoc/riemann-hypothesis-number-theory/',
-  '/en/toan-hoc/riemann-hypothesis-number-theory/', '/khoa-hoc-may-tinh/complexity-theory-quantum/', '/en/khoa-hoc-may-tinh/complexity-theory-quantum/'];
+  '/en/toan-hoc/riemann-hypothesis-number-theory/', '/khoa-hoc-may-tinh/complexity-theory-quantum/', '/en/khoa-hoc-may-tinh/complexity-theory-quantum/',
+  '/labs/nash-explorer/', '/en/labs/nash-explorer/'];
 
 (async () => {
   const browser = await chromium.launch();
@@ -127,22 +130,28 @@ const MATH = ['/kinh-te/toan-co-ban-1/', '/en/kinh-te/toan-co-ban-1/', '/kinh-te
     check(`Heatmap on ${route}: six months, active days highlighted, colours follow the theme`, h.domains === 6 && h.cells > 150 && h.fills.length >= 2 && dark.join() !== h.fills.join(), { ...h, dark });
   }
 
-  await p.goto(base + '/kinh-te/game_theory_nash/', { waitUntil: 'load' }); await p.waitForTimeout(800);
+  // P4-04: the essay links out to its lab and film; the simulation lives on the lab page.
+  await p.goto(base + '/kinh-te/game_theory_nash/', { waitUntil: 'load' });
+  const cards = await p.evaluate(() => ({ react: !!document.querySelector('[id^="react-root"]'), video: !!document.querySelector('.prose video'), links: [...document.querySelectorAll('.prose .media-card a.text-link')].map(a => a.getAttribute('href')) }));
+  const cardStatus = []; for (const l of cards.links) cardStatus.push([l, await fetchStatus(l)]);
+  check('Essay links to its film and lab pages instead of embedding them', !cards.react && !cards.video && cards.links.length === 2 && cardStatus.every(([, s]) => s === 200), { cardStatus });
+  await p.goto(base + '/labs/nash-explorer/', { waitUntil: 'load' }); await p.waitForTimeout(800);
   const react = p.locator('[id^="react-root-Nash"]'); const before = await react.innerText();
   await p.getByRole('button', { name: 'Matching Pennies', exact: true }).click(); await p.waitForTimeout(300);
   const after = await react.innerText();
   check('Nash: simulation renders and Matching Pennies gives p* = q* = 0.500', before.includes('Pure-strategy NE') && after.includes('p* = 0.500') && after.includes('q* = 0.500'));
   const slider = react.locator('input[type=range]').first(); const s0 = await slider.inputValue(); await slider.focus(); await slider.press('ArrowRight');
   check('Nash: payoff slider responds to the keyboard', (await slider.inputValue()) !== s0);
-  const media = await p.evaluate(async () => { const v = document.querySelector('.prose video'); const i = new Image(); i.src = v.getAttribute('poster'); await new Promise(r => { i.onload = i.onerror = r; }); return { poster: i.naturalWidth > 0, src: v.getAttribute('src') }; });
+  await p.goto(base + '/films/nash-animation/', { waitUntil: 'load' });
+  const media = await p.evaluate(async () => { const v = document.querySelector('.film-media video'); const i = new Image(); i.src = v.getAttribute('poster'); await new Promise(r => { i.onload = i.onerror = r; }); return { poster: i.naturalWidth > 0, src: v.getAttribute('src') }; });
   const vid = await p.evaluate(u => fetch(u, { headers: { Range: 'bytes=0-1023' } }).then(r => [r.status, r.headers.get('content-type')]), media.src);
-  check('Nash: poster loads and video is served', media.poster && [200, 206].includes(vid[0]) && /video\/mp4/.test(vid[1]), { vid });
+  check('Film page: poster loads and video is served', media.poster && [200, 206].includes(vid[0]) && /video\/mp4/.test(vid[1]), { vid });
   await p.goto(base + '/films/', { waitUntil: 'load' });
-  check('Films: the published film has a working poster and source', await p.evaluate(async () => { const v = document.querySelector('.film video'); if (!v) return false; const i = new Image(); i.src = v.poster; await new Promise(r => { i.onload = i.onerror = r; }); return i.naturalWidth > 0 && (await fetch(v.getAttribute('src'), { headers: { Range: 'bytes=0-15' } })).ok; }));
+  check('Films list: each film has a loading poster and a working page link', await p.evaluate(async () => { const f = [...document.querySelectorAll('.film')]; if (!f.length) return false; for (const e of f) { const i = e.querySelector('img'); await new Promise(r => { if (i.complete) r(); else { i.onload = i.onerror = r; } }); if (!i.naturalWidth || !(await fetch(e.querySelector('h2 a').href)).ok) return false; } return true; }));
   await p.goto(base + '/labs/', { waitUntil: 'load' });
   const lab = await p.locator('.lab h2 a').getAttribute('href');
   await p.goto(base + lab, { waitUntil: 'load' });
-  check('Labs: the experiment link opens the live simulation section', await p.evaluate(() => !!document.getElementById(decodeURIComponent(location.hash.slice(1))) && !!document.querySelector('[id^="react-root-Nash"]')), { lab });
+  check('Labs: the experiment link opens the live simulation', await p.evaluate(() => !!document.querySelector('[id^="react-root-Nash"]')), { lab });
   await p.goto(base + '/volumes/volume-i/', { waitUntil: 'load' });
   const chapters = await p.evaluate(() => [...document.querySelectorAll('.chapter-list a')].map(a => a.getAttribute('href')));
   const cs = []; for (const c of chapters) cs.push([c, await fetchStatus(c)]);
@@ -161,7 +170,7 @@ const MATH = ['/kinh-te/toan-co-ban-1/', '/en/kinh-te/toan-co-ban-1/', '/kinh-te
 
   const mob = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   p = await mob.newPage();
-  await p.goto(base + '/kinh-te/game_theory_nash/', { waitUntil: 'load' }); await p.waitForTimeout(500);
+  await p.goto(base + '/labs/nash-explorer/', { waitUntil: 'load' }); await p.waitForTimeout(500);
   const fbk = await p.evaluate(() => [getComputedStyle(document.querySelector('.react-mobile-fallback')).display, getComputedStyle(document.querySelector('.react-component-wrapper')).display]);
   check('Nash mobile fallback at 390 px', fbk[0] !== 'none' && fbk[1] === 'none', { fbk });
   await p.goto(base + '/', { waitUntil: 'load' });

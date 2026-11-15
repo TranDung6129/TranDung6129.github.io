@@ -7,6 +7,10 @@ description: "Từ đạo hàm và tối ưu hoá đến cân bằng Nash: các 
 date: 2026-03-01
 weight: 1
 cover: volume_1
+# Former series pages (collections taxonomy, retired in P4-02) redirect here.
+aliases:
+  - "/collections/"
+  - "/collections/toán-cơ-bản-cho-kinh-tế/"
 status: "Bản xem trước"
 statusNote: "Tập này đang được biên soạn. Các chương dưới đây là những bài đã đăng trên tạp chí, được sắp xếp theo thứ tự đọc; chưa phải ấn bản hoàn chỉnh và không bán."
 chapters:

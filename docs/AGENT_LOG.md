@@ -319,3 +319,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Change:** `.feature-image img` uses `object-fit: cover` with per-image focal points (`data/art.yaml` `focus`, passed by `editorial/art.html` → `art-image.html`); the figure label is overlaid on the image corner (`assets/css/editorial/home.css`). Also applies to the Phase 2 specimen, which shares the CSS.
 - **Tests:** frame and image boxes equal with `cover` at 360/390/768/1024/1440 px for both images; `p3-smoke.cjs` 80 states, 31/31, axe 0 violations.
 
+### 2026-11-15 — P4-02..P4-04 — Claude Code
+- **Owner decisions:** item 2 agreed (sample collections out, series into Volumes, About as a publication page; article layout deferred to Phase 4), item 3 agreed (separate labs and films).
+- **Branch:** `feat/p4-ia-cleanup`. Details and removed URLs: `docs/phases/phase-4/PLAN.md`; decision D-015.
+- **Tests (exit 0):** `hugo --gc --minify` (0 warnings); `BASE=… AXE=… node docs/audits/p3-07/tools/p3-smoke.cjs` — 100 states (10 pages), 32/32 checks, axe 0 violations; `seo-check.py` PASS (158 pages); `analyze.py` 0 broken references; route diff vs production: only the sample collection/category/tag pages and series feeds removed, series pages redirect to Volume I, lab and film pages added.
+

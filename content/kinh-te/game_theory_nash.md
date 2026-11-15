@@ -11,15 +11,7 @@ description: >
   with an interactive 2×2 bimatrix explorer and Manim animation.
 ---
 
-<!-- Video produced by manim/game_theory_nash.py -->
-<video
-  src="/videos/game_theory_nash.mp4"
-  controls
-  width="100%"
-  style="border-radius:8px; margin-bottom:1.5rem;"
-  poster="/images/game_theory_nash_poster.png">
-  Your browser does not support the video tag.
-</video>
+{{< film "nash-animation" >}}
 
 ## 1. Motivation: Why Do We Need Game Theory?
 
@@ -327,24 +319,9 @@ Key takeaways:
 
 ## 11. Interactive Exploration
 
-The component below lets you edit any 2×2 bimatrix game via sliders.
-It computes and displays:
+The interactive 2×2 bimatrix explorer now lives in Labs: edit the payoffs with sliders, load the classic games and watch the pure and mixed equilibria and expected-payoff curves change.
 
-- **All pure-strategy NE** (highlighted in the normal-form table)
-- **The unique mixed-strategy NE** $(p^*, q^*)$ when it exists in $(0,1)^2$
-- **Expected payoff curves** $U_1(p)$ and $U_2(p)$ as a function of Player 1's
-  mixing probability, at a fixed $q$ you control
-
-Suggested experiments:
-
-| Preset | What to observe |
-|--------|----------------|
-| Prisoner's Dilemma | Unique pure NE at $(D,D)$; no mixed NE in $(0,1)^2$ |
-| Battle of the Sexes | Two pure NE; mixed NE exists but is Pareto-dominated by both pure NE |
-| Matching Pennies | No pure NE; unique mixed NE at $p^*=q^*=0.5$ |
-| Stag Hunt | Two pure NE; the Pareto-optimal $(T,L)$ is risk-dominated by $(B,R)$ |
-
-{{< react name="NashEquilibriumSim" >}}
+{{< lab "nash-explorer" >}}
 
 ---
 

@@ -42,6 +42,17 @@ Plan, scope and acceptance: [docs/phases/phase-3/PLAN.md](phases/phase-3/PLAN.md
 | [x] | P3-07 | QA and regression report (routes, SEO, runtime, browser matrix, a11y, performance, visual) | P3-01..06 | DONE | Claude Code, PR #36; `docs/audits/p3-07/README.md` |
 | [x] | P3-08 | Production deployment and live sign-off | P3-07 | DONE | Claude Code; `main` `5cfcec9`, deploy run 43739094847, `docs/audits/p3-08/README.md` |
 
+## Phase 4 — Information architecture and reading experience
+
+Plan and owner decisions: [docs/phases/phase-4/PLAN.md](phases/phase-4/PLAN.md).
+
+| Check | ID | Task / acceptance | Depends | Status | Owner / PR |
+|---|---|---|---|---|---|
+| [ ] | P4-01 | Article layout: marginal notes + wide media; prototype and owner approval first | P3-08 | DEFERRED (owner: decide in Phase 4) | — |
+| [x] | P4-02 | Retire sample collections; series folded into Volumes with redirects | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
+| [x] | P4-03 | About as a publication page | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
+| [x] | P4-04 | Labs and films as their own pages; essays link with cards | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
+
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage
 - [ ] F3-02 Journal/Volumes/Films/Labs/Discover production pages

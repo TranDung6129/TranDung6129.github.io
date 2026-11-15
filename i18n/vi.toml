@@ -408,3 +408,6 @@ other = "{{ .Count }} chương"
 other = "Liên kết tới mục này"
 [ed_activityLabel]
 other = "Lịch số bài viết được đăng mỗi ngày trong sáu tháng"
+
+[ed_watchFilm]
+other = "Xem phim"

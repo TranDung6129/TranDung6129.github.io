@@ -297,3 +297,18 @@ mjx-container { font-family: initial; }
 }
 .meta { font: 500 0.75rem/1.5 var(--ed-sans); color: var(--ed-muted); }
 .chapter-list .meta { white-space: nowrap; }
+
+/* ---- Film/lab pages and essay cards (P4-04) ---- */
+.media-stage { max-width: 58rem; margin: 2rem 0 0; }
+.film-thumb { display: block; aspect-ratio: 16 / 9; background: #111; overflow: hidden; margin-bottom: 0.8rem; }
+.film-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.prose .media-card { display: grid; grid-template-columns: minmax(8rem, 13rem) minmax(0, 1fr); gap: 1.2rem; align-items: center; border-top: 1px solid var(--ed-border); border-bottom: 1px solid var(--ed-border); padding: 1rem 0; margin: 1.8rem 0; }
+.prose .media-card.lab-card { grid-template-columns: minmax(0, 1fr); border-left: 2px solid var(--ed-accent); border-top: 0; border-bottom: 0; padding: 0.4rem 0 0.4rem 1.2rem; }
+.prose .media-card-thumb { display: block; aspect-ratio: 16 / 9; background: #111; overflow: hidden; }
+.prose .media-card-thumb img { margin: 0; width: 100%; height: 100%; object-fit: cover; }
+.prose .media-card p { margin: 0.25rem 0; font-size: 0.95rem; line-height: 1.5; }
+.prose .media-card p.kicker { margin: 0; font: 700 0.66rem/1.4 var(--ed-sans); letter-spacing: 0.18em; }
+.prose .media-card p.media-card-title { font: 500 1.35rem/1.2 var(--ed-display); margin: 0.3rem 0 0.4rem; }
+.prose .media-card-title a { color: var(--ed-fg); text-decoration: none; }
+.prose .media-card-title a:hover { text-decoration: underline; text-decoration-color: var(--ed-accent); }
+@media (max-width: 560px) { .prose .media-card { grid-template-columns: 1fr; } }

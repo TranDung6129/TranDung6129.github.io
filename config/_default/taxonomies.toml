@@ -5,5 +5,5 @@
 
 category = "categories"
 tag = "tags"
-collection = "collections"
+# "collections" was retired in P4-02: series are Volumes now (content/volumes/).
 _merge = "shallow"

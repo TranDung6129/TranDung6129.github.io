@@ -1,37 +1,36 @@
 ---
-title: "About"
+title: "Giới thiệu"
+description: "The Epistemic Diary là một ấn phẩm độc lập về toán học, khoa học máy tính, kinh tế, vật lý và triết học: viết chặt chẽ, dễ tiếp cận và trung thực về những gì còn chưa biết."
 date: 2026-03-01
+lastmod: 2026-11-15
 draft: false
 type: "posts"
-images: ["images/mathematics.png"]
-featuredImage: "images/mathematics.png"
-featuredImagePreview: "images/mathematics.png"
 ---
 
-Chào bạn, mình là Dũng.
+**The Epistemic Diary** là một ấn phẩm độc lập về cách chúng ta hiểu thế giới: toán học, khoa học máy tính, vật lý, kinh tế học và triết học — và những chỗ chúng gặp nhau. Cái tên nói lên điều chúng tôi quan tâm nhất: không chỉ *biết gì*, mà *làm sao ta biết*.
 
-Mình xuất phát từ Toán – Tin, và với mình, toán học trước hết là một cách nhìn thế giới. Nó không chỉ là công cụ, mà là cấu trúc. Nó buộc ta phải định nghĩa rõ, suy luận chặt, và chấp nhận rằng một hệ thống chỉ mạnh khi nền tảng của nó nhất quán.
+## Những gì bạn sẽ tìm thấy
 
-<!-- IMAGE: close-up silicon wafer / CPU die shot, high detail, dark background -->
-![Microarchitecture close-up](images/computer.png)
+- **Journal** — các bài luận và ghi chú: một câu hỏi, một mô hình để trả lời nó, và giới hạn của mô hình đó.
+- **Volumes** — những chuỗi bài được sắp xếp như các chương của một cuốn sách, để theo một ý tưởng đi xa hơn.
+- **Films** — giải thích bằng hình ảnh cho những ý tưởng nên được nhìn thấy cũng như đọc.
+- **Labs** — thí nghiệm và mô hình tương tác để tự tay thử.
+- **Discover** — sách và tài liệu được trích dẫn trong các bài viết.
 
-Từ nền đó, mình quan tâm sâu đến khoa học máy tính — đặc biệt là cách một mô hình trừu tượng được hiện thực hóa thành kiến trúc, bộ nhớ, luồng dữ liệu và thời gian thực thi. Một thuật toán không tồn tại trong chân không; nó sống trong cache, bus, latency và giới hạn vật lý của phần cứng.
+## Cách chúng tôi làm việc
 
-<!-- IMAGE: oscilloscope waveform or raw sensor data stream, black background -->
-![Signal waveform visualization](images/physics.png)
+- Phân biệt rõ điều đã được chứng minh, cách diễn giải, giả thuyết và ý kiến biên tập.
+- Ghi nguồn cho các khẳng định; không đưa ra con số không có căn cứ.
+- Nói thẳng về sự bất định và những câu hỏi còn bỏ ngỏ.
+- Khi sai, chúng tôi sửa công khai và ghi ngày cập nhật.
+- Không có quảng cáo, liên kết tiếp thị hay nội dung được tài trợ trên trang. Nếu sau này có, chúng sẽ được ghi rõ.
 
-Vật lý là nơi mọi giả định bị thử thách. Sai số, nhiễu, dao động, bất ổn — đó là thực tại. Ở đây, toán học và máy tính không còn thuần lý thuyết, mà trở thành công cụ để mô hình hóa, ước lượng và kiểm soát hệ động lực trong thế giới thật.
+Ấn phẩm đang ở giai đoạn đầu: nhiều bài hiện có là bản nháp và sẽ được biên tập lại; một số bản tiếng Anh vẫn đang dùng văn bản tiếng Việt.
 
-<!-- IMAGE: minimalist financial chart, thin white lines on black -->
-![Minimalist market structure graph](images/finance.png)
+## Người viết
 
-Kinh tế học mở ra một hệ thống khác — nơi thông tin không hoàn hảo, động lực cá nhân và khan hiếm nguồn lực tạo nên hành vi tập thể. Quản lý rủi ro, tối ưu hóa quyết định, và tư duy xác suất ở đây có cùng tinh thần với kỹ thuật: không tìm sự chắc chắn tuyệt đối, mà tìm cấu trúc trong bất định.
+Các bài viết hiện do **TranDung** thực hiện. Xuất phát từ Toán – Tin, anh quan tâm đến cách một mô hình trừu tượng trở thành hệ thống tính toán, cách nó đứng vững trước nhiễu và sai số của thế giới vật lý, cách nó giải thích hành vi kinh tế dưới bất định — và triết học như nơi kiểm tra lại các tiền đề.
 
-<!-- IMAGE: abstract light beam in darkness / minimal sculpture -->
-![Abstract light and shadow](images/philosophy.png)
+## Liên hệ
 
-Và ở tầng sâu hơn, triết học giúp mình kiểm tra tiền đề: ta đang giả định điều gì? mô hình đại diện cho cái gì? và đâu là giới hạn của việc tính toán?
-
-Blog này là nơi mình ghi lại quá trình xây dựng và kiểm định các mô hình — từ toán học, hệ thống tính toán, đến thế giới vật lý và kinh tế.
-
-Nếu bạn quan tâm đến cách thế giới được mô hình hóa bằng toán học, được vận hành bằng hệ thống tính toán, và được thúc đẩy bởi động lực kinh tế, hy vọng bạn sẽ tìm thấy điều gì đó hữu ích ở đây.
+Góp ý, đính chính hoặc trao đổi: mở một issue tại [kho mã của ấn phẩm trên GitHub](https://github.com/TranDung6129/TranDung6129.github.io/issues).

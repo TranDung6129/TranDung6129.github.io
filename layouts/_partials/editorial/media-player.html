@@ -1,0 +1,8 @@
+{{- /* Video for a film page: self-hosted file or privacy-enhanced YouTube embed. Input: film page. */ -}}
+<div class="film-media">
+  {{- with .Params.youtube }}
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ . }}" title="{{ $.Title }}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  {{- else }}
+  <video controls preload="none" playsinline poster="{{ .Params.poster }}" src="{{ .Params.video }}" aria-label="{{ .Title }}"></video>
+  {{- end }}
+</div>

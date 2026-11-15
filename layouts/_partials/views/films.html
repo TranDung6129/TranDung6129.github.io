@@ -1,21 +1,14 @@
-{{- /* /films/ (P3-05): only films that are actually published (data/films.yaml). */ -}}
+{{- /* /films/ (P4-04): film pages in this section; only published films exist as pages. */ -}}
 {{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_filmsKicker" | default "Ideas, in motion")) }}
 <div class="entry-grid">
-  {{- range site.Data.films.films }}
-  {{- $title := partial "editorial/l10n.html" .title -}}
-  {{- $rel := partial "editorial/get-page.html" .related }}
-  <article class="entry film" id="{{ .id }}">
-    <div class="film-media">
-      {{- if .youtube }}
-      <iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" title="{{ $title }}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-      {{- else }}
-      <video controls preload="none" playsinline poster="{{ .poster }}" src="{{ .video }}" aria-label="{{ $title }}"></video>
-      {{- end }}
-    </div>
-    <p class="kicker">{{ T "ed_film" | default "Film" }} · {{ .duration }}</p>
-    <h2>{{ $title }}</h2>
-    <p>{{ partial "editorial/l10n.html" .description }}</p>
-    <p class="meta"><time datetime="{{ time.Format "2006-01-02" .date }}">{{ partial "editorial/date.html" (time .date) }}</time>{{ with $rel }} · {{ T "ed_companion" | default "Companion essay" }}: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
+  {{- range .RegularPages.ByWeight }}
+  {{- $rel := partial "editorial/get-page.html" .Params.related }}
+  <article class="entry film">
+    <a class="film-thumb" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="{{ .Params.poster }}" alt="" loading="lazy" decoding="async"></a>
+    <p class="kicker">{{ T "ed_film" | default "Film" }}{{ with .Params.duration }} · {{ . }}{{ end }}</p>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Description }}</p>
+    <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "editorial/date.html" .Date }}</time>{{ with $rel }} · {{ T "ed_companion" | default "Companion essay" }}: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
   </article>
   {{- end }}
 </div>
