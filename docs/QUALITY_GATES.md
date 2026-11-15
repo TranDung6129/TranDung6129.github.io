@@ -8,6 +8,7 @@
 - Note website visual capture may be unavailable; do not claim visual parity without evidence.
 
 ## Per PR
+0. Every newly inspected file must be recorded/updated in docs/INSPECTED_FILES.md with verified revision, meaningful purpose, dependencies, findings and PARTIAL/COVERED status; every changed file must have its entry refreshed. For vendor/generated/binary trees, reviewed group-level entries are acceptable. Update docs/CODEBASE_MAP.md if file paths or component responsibility changed. Stale knowledge documentation fails review.
 1. Run project build (current package script: npm run build; underlying Hugo command may also be used), documenting environment and failures.
 2. Check generated URL list before/after; zero unintended disappeared URLs.
 3. Check rendered HTML for unique title, correct language, metadata, headings and image references.

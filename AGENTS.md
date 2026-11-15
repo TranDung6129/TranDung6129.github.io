@@ -4,8 +4,10 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 
 ## Read first (in order)
 1. docs/README.md
-2. docs/MASTER_PLAN.md
-3. docs/TASK_BOARD.md
+2. docs/CODEBASE_MAP.md (find the owning files before searching)
+3. docs/INSPECTED_FILES.md (persistent per-file findings and inspected blob versions)
+4. docs/MASTER_PLAN.md
+5. docs/TASK_BOARD.md
 4. docs/ARCHITECTURE.md
 5. docs/DESIGN_SYSTEM.md
 6. docs/VISUAL_ASSET_GUIDELINES.md
@@ -39,6 +41,9 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 - Use semantic HTML and keyboard-accessible controls; respect reduced-motion preferences.
 - Follow docs/VISUAL_ASSET_GUIDELINES.md: original/look-consistent images, provable commercial-use rights and truthful documentary imagery.
 - Follow docs/ENGINEERING_STANDARDS.md and docs/DATABASE_FOUNDATION.md: **PostgreSQL local foundation is approved** (P1-09), but public articles remain static; no unapproved authentication, billing, hosted provisioning or secrets in Git. Use versioned migrations and tested backup/restore plans.
+- Update docs/CODEBASE_MAP.md in the SAME PR whenever an entry point, dependency, component owner or file path changes; record where future agents should edit.
+- **Every file you read, even incidentally while searching, must contribute to docs/INSPECTED_FILES.md**: purpose, key components, consumers/dependencies, risks, verified Git blob SHA, coverage PARTIAL/COVERED, and test evidence. Do not record only whether a sought term exists. If an entry is unchanged, reuse its summary; if the file changed, update just the changed content/dependency implications. The registry is guidance, not a license to edit code without checking current source.
+- For large generated/vendor/binary trees, use a concise group-level entry rather than exhaustive per-file descriptions. Coordinate shared Markdown edits through one integrator to prevent branch conflicts. Prefer targeted reads over whole-repo scanning.
 - Do not automatically check off project-wide acceptance solely because a local task passed.
 
 ## Handoff format (append to docs/AGENT_LOG.md)

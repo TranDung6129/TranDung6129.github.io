@@ -9,6 +9,8 @@ Build **The Epistemic Diary**, an independent, witty but rigorous publication fo
 | File | Purpose |
 |---|---|
 | [MASTER_PLAN.md](MASTER_PLAN.md) | Scope, phases, constraints, PR sequence |
+| [CODEBASE_MAP.md](CODEBASE_MAP.md) | **Where to edit what:** quick navigation without re-reading repository |
+| [INSPECTED_FILES.md](INSPECTED_FILES.md) | **What we already know:** cumulative per-file findings, revision and dependencies |
 | [TASK_BOARD.md](TASK_BOARD.md) | Single task status ledger; checkboxes, dependencies, ownership |
 | [AGENT_LOG.md](AGENT_LOG.md) | Evidence-rich agent activity/handoff log |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Hugo migration and technical boundaries |
