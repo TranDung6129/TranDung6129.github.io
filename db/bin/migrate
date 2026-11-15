@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+# Apply the checked-in SQL migrations to the local Compose database only.
+set -euo pipefail
+root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+cd "$root_dir"
+migration_dir="${P1_MIGRATIONS_DIR:-$root_dir/db/migrations}"
+if [[ ! -d "$migration_dir" ]]; then
+  printf 'Migration directory does not exist: %s\n' "$migration_dir" >&2
+  exit 1
+fi
+mapfile -d '' -t migrations < <(find "$migration_dir" -maxdepth 1 -type f -name '*.sql' -print0 | LC_ALL=C sort -z)
+if (( ${#migrations[@]} == 0 )); then
+  printf 'No SQL migrations found in %s\n' "$migration_dir" >&2
+  exit 1
+fi
+versions=()
+checksums=()
+expected=1
+for file in "${migrations[@]}"; do
+  name="${file##*/}"
+  if [[ ! "$name" =~ ^[0-9]{3}_[a-z][a-z0-9_]*\.sql$ ]] || [[ "${name:0:3}" != "$(printf '%03d' "$expected")" ]]; then
+    printf 'Invalid migration name or sequence: %s (expected %03d_name.sql)\n' "$name" "$expected" >&2
+    exit 1
+  fi
+  versions+=("$name")
+  checksums+=("$(sha256sum "$file" | cut -d ' ' -f 1)")
+  ((expected+=1))
+done
+
+# One PostgreSQL session holds an advisory transaction lock while checking the
+# complete recorded history, applying new migrations, and updating the ledger.
+# A SQL error aborts the transaction and psql exits nonzero via ON_ERROR_STOP.
+{
+  printf '%s\n' 'BEGIN;' 'SELECT pg_advisory_xact_lock(109091209);'
+  cat <<'SQL'
+CREATE TABLE IF NOT EXISTS public.schema_migrations (
+  version text PRIMARY KEY,
+  checksum text NOT NULL CHECK (checksum ~ '^[0-9a-f]{64}$'),
+  applied_at timestamptz NOT NULL DEFAULT now()
+);
+DO $check$
+BEGIN
+SQL
+  printf '  IF EXISTS (SELECT 1 FROM public.schema_migrations WHERE version NOT IN ('
+  separator=''
+  for version in "${versions[@]}"; do
+    printf "%s'%s'" "$separator" "$version"
+    separator=','
+  done
+  printf ")) THEN RAISE EXCEPTION 'database has an unknown migration'; END IF;\n"
+  for i in "${!versions[@]}"; do
+    printf "  IF EXISTS (SELECT 1 FROM public.schema_migrations WHERE version = '%s' AND checksum <> '%s') THEN RAISE EXCEPTION 'migration checksum mismatch: %s'; END IF;\n" "${versions[$i]}" "${checksums[$i]}" "${versions[$i]}"
+    if (( i > 0 )); then
+      printf "  IF EXISTS (SELECT 1 FROM public.schema_migrations WHERE version = '%s') AND NOT EXISTS (SELECT 1 FROM public.schema_migrations WHERE version = '%s') THEN RAISE EXCEPTION 'migration history has a gap'; END IF;\n" "${versions[$i]}" "${versions[$((i-1))]}"
+    fi
+  done
+  printf '%s\n' 'END' '$check$;'
+  for i in "${!versions[@]}"; do
+    printf "SELECT EXISTS (SELECT 1 FROM public.schema_migrations WHERE version = '%s') AS already_applied \\\gset\n" "${versions[$i]}"
+    printf '%s\n' '\if :already_applied'
+    printf '\\echo already applied: %s\n' "${versions[$i]}"
+    printf '%s\n' '\else'
+    printf '\\echo applying: %s\n' "${versions[$i]}"
+    cat "${migrations[$i]}"
+    printf "\nINSERT INTO public.schema_migrations(version, checksum) VALUES ('%s', '%s');\n" "${versions[$i]}" "${checksums[$i]}"
+    printf '%s\n' '\endif'
+  done
+  printf '%s\n' 'COMMIT;'
+} | "$root_dir/db/bin/compose" exec -T db sh -c 'exec psql -X -v ON_ERROR_STOP=1 -U "$POSTGRES_USER" -d "$POSTGRES_DB"'

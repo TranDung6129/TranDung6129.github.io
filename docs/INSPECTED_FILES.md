@@ -287,3 +287,35 @@ Working-file blobs on `feat/p1-06-metadata-seo`; registry self hash is pre-appen
 | `docs/audits/p1-06/README.md` | `3b5e997d3cfa1ca6006c310c3b511f6d51d5bea3` | COVERED | Report, front matter conventions, verification table, follow-up backlog, P1-07 hand-off. |
 | `docs/audits/P1-02.md` | `ad7ee51ec5ae89a9d708d765092eac76faad8d99` | COVERED | Unchanged; defect list used as the P1-06 scope source. |
 | `docs/audits/p1-02/static/REPORT.md` | `b1b7e1c19eaaf8633724568777342572c7ece9c0` | COVERED | Unchanged; missing-reference table reused. |
+
+## 2026-11-15 — P1-09 local PostgreSQL foundation
+
+Hashes are working-file Git blobs at review (registry self hash is pre-append); entries PARTIAL unless specifically scoped. Contributors inspected independent DB files; integrator reviewed and reran isolated full integration plus Hugo retention. Evidence and exact commands in [P1-09 verification](audits/p1-09/README.md).
+
+| Path | Git blob | Purpose, consumers and risks |
+|---|---|---|
+| `compose.yaml` | `d594ca1e63f449f76aba9048c18b0731134b542b` | PostgreSQL 16.10 local-only service, healthcheck, loopback port and persistent named volume; demo credentials only, no Hugo dependency. |
+| `db/.env.example` | `7c6f6ea0d896d2f0c0334134b516e532c821de7b` | Optional non-secret demo configuration for local Compose; copy to ignored db/.env for local overrides, never hosted secrets. |
+| `db/.gitignore` | `4c49bd78f1d08f2bc09fa0bd8191ed38b7dce5e3` | Ignores db/.env to avoid accidental local credential commits; not a replacement for secret management. |
+| `db/bin/compose` | `420a931b807c86ce2a0c642509d8b40e32a34419` | Resolves repository root and invokes Compose with optional db/.env; honors COMPOSE_PROJECT_NAME for isolated tests. |
+| `db/bin/migrate` | `17bfd45c2a486a80955064271113be41d60f9c06` | Validates sequential migration names and SHA256 history; serializes with PostgreSQL advisory transaction lock, applies SQL and ledger atomically via local Compose psql. No hosted DB support. |
+| `db/migrations/001_foundation.sql` | `a17020b850f9cfb440f5f6714866a916ce382870` | Six provider-neutral reference tables: editorial authors/objects and associations, catalog products, entitlement types and associations; UUID/stable-key constraints and foreign keys, no article bodies/identity/grants. |
+| `db/seed.sql` | `9ecc3242cba41b585b61b29cd94845d18fe8014d` | Opt-in fixed UUID synthetic metadata, repeatable INSERT ON CONFLICT; conflicts with different natural-key owners fail. |
+| `db/tests/integration.sh` | `4d46d5b7e38af7653394ec1e5b1d490b99e1eee1` | Disposable unique Compose fixture, checks existing project container/volume/network collision, migrates/repeats, validates constraints/tamper/rollback, backs up then recreates volume and restores actual rows/ledger. Cleanup removes only generated project. |
+| `db/README.md` | `3551b453e42718ad0928c89b8f7772fcae560917` | Local startup, entity boundary, stable content-key future mapping, migration conventions, isolated restore drill, security and hosted rollout limitations. |
+| `docs/DATABASE_FOUNDATION.md` | `a89a99b5e7bfc7b653f4ef92443c46f5d8b4b211` | P1-09 approved deliverables and acceptance, now links implemented local foundation and D-013. |
+| `docs/DECISIONS.md` | `2b7ef6689ae4c070cd2502f8e5a69adc4e520c32` | D-013 records schema and operational choices under D-010/D-012; no hosted or production authorization. |
+| `docs/CODEBASE_MAP.md` | `34a011a8f0d276f839156c3570cbb2984e687fa3` | Database row and change record now identify actual local DB entrypoints and boundaries. |
+| `docs/TASK_BOARD.md` | `0f7f980edfb4bddcc2bf2f5715784ce8d572c433` | P1-09 DONE on feature branch following independent verification; P1-04–07 untouched; P1-08 dependencies remain. |
+| `docs/AGENT_LOG.md` | `0e33a756066a5ead88ecfa5427539d3417bea9a1` | Append-only P1-09 claim, completion evidence, contributor provenance and limitations; review/merge remains separate. |
+| `docs/audits/p1-09/PR_BODY.md` | `6ca6f17bbdd873096e0704df7042868e8bbe8fb9` | Prepared scoped PR description with tests and limitations; actual GitHub PR remains uncreated due API Forbidden. |
+| `docs/audits/p1-09/README.md` | `706f6dfa2823bb11633065dc14e2ed4c0e79b395` | Exact local DB and Hugo test commands, output artifacts, observed Docker digest and limitations. |
+| `docs/INSPECTED_FILES.md` | `e596c21f1d9486592d4e8c0984b7c0c47cf22eb4` | Revision-aware inspected-file registry; self hash records pre-append working blob. |
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Multi-agent claim, checks, scope, and documentation/registry safeguards. |
+| `.gitignore` | `5add35df779366e3aaac48a9c849a5f4a1473e0c` | Existing project ignores generated Hugo/npm files; local database env protected separately by db/.gitignore. |
+| `docs/ENGINEERING_STANDARDS.md` | `71a05d70d3982fd873745e99c39822291edd79c5` | PostgreSQL foundation approval, static Hugo boundary, migration/backup and future role/privacy requirements. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Build/routes/test/evidence and per-file knowledge gates; no UI redesign in P1-09. |
+| `docs/ARCHITECTURE.md` | `9266866e2034c245268d601b872f6a7f757b41f1` | Static Hugo and P1-09 dependency boundaries; no hosted service or runtime DB dependency. |
+| `docs/audits/p1-01/verify.py` | `d936eff54c8eb4af55a8ac5202a74aca0be89cc2` | Production output route/byte and representative metadata comparator; used for Hugo independence verification. |
+
+Generated evidence group `docs/audits/p1-09/` (integration/build logs and retention JSON) is PARTIAL: local synthetic Docker test and current Hugo build only, not hosted security, production recovery, browser behavior or deployment. Exact artifacts and test limitations are linked from the group README. Test-created temporary project, network and volume are deleted only after ownership/collision checks.

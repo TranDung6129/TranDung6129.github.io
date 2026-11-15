@@ -70,3 +70,7 @@ The verified P1-01 inventory and populated KEEP/REPLACE/REMOVE ledger are in [th
 ## P1-05 state
 
 Site configuration now lives only in `config/_default/` (the root `hugo.toml` was folded in, effective configuration unchanged). Home-page CSS moved from the template to `assets/css/home.scss`; duplicate and dead rules left `assets/css/_custom.scss`; the comments-only `_override.scss`, the starter `custom.js`, the unused Kalman mock, the dead root `robots.txt`, tracked bytecode and the duplicate Nash video were removed with proof. See [the P1-05 report](audits/p1-05/README.md). The cleanup-ledger rows above for those files are resolved; the theme, its update workflow, the bookmark module and the remaining `media/` intermediates are still open.
+
+## P1-09 local foundation implemented
+
+The provider-neutral local PostgreSQL reference schema, transactional versioned SQL migrations and tested backup/restore drill live in [`db/README.md`](../db/README.md), `compose.yaml`, and `db/`. See D-013 and `docs/audits/p1-09/README.md`. This adds no Hugo build/runtime database dependency; production hosting, authorization and payments remain separately approved work.

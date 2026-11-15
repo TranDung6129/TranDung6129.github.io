@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:16.10
+    environment:
+      POSTGRES_USER: ${P1_POSTGRES_USER:-ted_local}
+      POSTGRES_PASSWORD: ${P1_POSTGRES_PASSWORD:-local_demo_only}
+      POSTGRES_DB: ${P1_POSTGRES_DB:-ted_local}
+    ports:
+      - "127.0.0.1:${P1_POSTGRES_PORT:-55432}:5432"
+    volumes:
+      - p1_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  p1_postgres_data:
