@@ -426,3 +426,20 @@ Working blobs, PARTIAL coverage; core controls tested, integrated anchors and ow
 | `assets/css/specimen/base.css` | `d5a877c91239f0ccba986a82a1efb03a6fb2c482` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
 | `assets/css/specimen/typography.css` | `605d970113632fb1be1a989dc990728d1d744701` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
 | `layouts/_partials/specimen/typography.html` | `046622590826399410a48ed6521fd3ce094a9db7` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
+
+## 2026-11-15 — P2-04 editorial component checkpoint
+
+Working blobs, PARTIAL coverage; isolated render and production isolation passed; integrated browser QA and owner visual review remain.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/_partials/specimen/home.html` | `fbde3b4641596e850a71cdeefb108030e158987c` | Review-only hero, journal and volume composition, includes original inline geometric SVG and two feature partial calls. |
+| `layouts/_partials/specimen/feature.html` | `45027d27342ff05151a328a7b03082dacb12c16b` | Parameterized featured essay prototype, selects one of two illustrative SVG variants; no fake article link. |
+| `layouts/_partials/specimen/art-landscape.html` | `8c4ce35ad9526800118286663b1d7e902a47b516` | Original AI-assisted geometric probability landscape for review, decorative SVG within labeled wrapper. |
+| `layouts/_partials/specimen/art-architecture.html` | `5bca6dd5d61d0d2756f6a69c57d6bb8226a12597` | Original AI-assisted geometric library illustration for review, decorative SVG within labeled wrapper. |
+| `assets/css/specimen/home.css` | `f0322b5e842cbec9871a1296f573d4101da0def8` | Review-only hero, editorial feature, reading list and volume layout; relies on P2 token and responsive styles. |
+| `docs/design/ASSET-PROVENANCE.md` | `5701007fbd73208d2bade254e45bd6a149135477` | Source, alt and publication rights review state for original illustrative SVGs. |
+| `docs/TASK_BOARD.md` | `0a293d059bbb2bb28c6982f205c79541a755a952` | P2-04 prototype done on branch; P2-03 and owner visual approval pending. |
+| `docs/AGENT_LOG.md` | `c3caea2bec4e85dd1e7464c88a6c5f7b43cb6d02` | P2-04 claim and scoped production isolation evidence. |
+| `docs/CODEBASE_MAP.md` | `0f944abb9c357d736e59c372196530f4ecca818b` | Review-only component ownership, production homepage remains separate. |
+| `docs/INSPECTED_FILES.md` | `8f7cfa5138b52acd36767da70adee1210448c2b1` | Registry self hash is pre-append. |

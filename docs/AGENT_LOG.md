@@ -225,3 +225,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Status:** IN PROGRESS; P2-01/02 done on stacked branches. P2-03 remains in progress pending integrated anchors.
 - **Branch:** `feat/p2-04-editorial-components`, stacked on P2-03.
 - **Scope:** Reusable editorial components and isolated experimental homepage composition; original SVG illustration only. No production homepage changes.
+
+### 2026-11-15 — P2-04 — specimen_design / Codex
+- **Status:** DONE for isolated editorial component prototypes; production propagation and owner visual approval remain pending P2-06. **Branch:** `feat/p2-04-editorial-components`, claim `5d52416`. P2-03 remains IN PROGRESS pending final integrated anchors.
+- **Files:** `layouts/_partials/specimen/{home,feature,art-landscape,art-architecture}.html`, `assets/css/specimen/home.css`, [illustration provenance](design/ASSET-PROVENANCE.md). Two featured entries share the parameterized `feature.html`; journal/volume/hero are specimen composition. Original SVG illustrations are AI-assisted, illustrative and not a copied background; publication rights review remains pending.
+- **Tests:** Local review route HTTP 200 contains hero, two featured components, journal and volume anchors; `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/p204-public` PASS, 647 production files and byte-identical tree vs `/tmp/p201-before`, no review route. Full browser visual/keyboard/contrast QA and screenshot review follow after P2-05 integration; no maintainer approval claimed.

@@ -60,6 +60,8 @@ P2-01 review-only tokens live at `assets/css/editorial/tokens.css`; [usage and c
 
 P2-02 local specimen: `scripts/preview-editorial.sh` builds a temporary snapshot and review-only `layouts/specimen/single.html` with `layouts/_partials/specimen/typography.html` and `assets/css/specimen/`; [type notes](design/TYPOGRAPHY.md). There is no production content route.
 
+Review-only editorial composition lives in `layouts/_partials/specimen/home.html`, reusable `feature.html` and SVG art partials with `assets/css/specimen/home.css`; [provenance](design/ASSET-PROVENANCE.md). Production homepage remains `layouts/index.html`.
+
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
 - `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).
