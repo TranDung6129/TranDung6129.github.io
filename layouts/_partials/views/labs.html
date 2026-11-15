@@ -1,0 +1,14 @@
+{{- /* /labs/ (P3-05): interactive experiments that exist on the site (data/labs.yaml). */ -}}
+{{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_labsKicker" | default "Think with your hands")) }}
+<div class="entry-grid">
+  {{- range $lab := site.Data.labs.labs }}
+  {{- $rel := partial "editorial/get-page.html" .related }}
+  <article class="entry lab" id="{{ .id }}">
+    <p class="kicker">{{ T "ed_lab" | default "Lab" }} · {{ .tech }}</p>
+    <h2>{{ with $rel }}<a href="{{ .RelPermalink }}#{{ $lab.anchor }}">{{ end }}{{ partial "editorial/l10n.html" .title }}{{ with $rel }}</a>{{ end }}</h2>
+    <p>{{ partial "editorial/l10n.html" .description }}</p>
+    <p class="meta">{{ partial "editorial/l10n.html" .requires }}</p>
+    {{ with $rel }}<p><a class="text-link" href="{{ .RelPermalink }}#{{ $lab.anchor }}">{{ T "ed_openLab" | default "Open the experiment" }} <span aria-hidden="true">↗</span></a> <span class="meta">— {{ T "ed_inEssay" | default "in" }} {{ .LinkTitle }}</span></p>{{ end }}
+  </article>
+  {{- end }}
+</div>

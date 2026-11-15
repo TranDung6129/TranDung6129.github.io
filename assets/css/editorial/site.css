@@ -295,3 +295,5 @@ mjx-container { font-family: initial; }
   .masthead nav .nav-languages a { border-top: 0; padding: 0.35rem 0.1rem; }
   .hero-art .art-caption { padding-right: 1.4rem; line-height: 1.5; }
 }
+.meta { font: 500 0.75rem/1.5 var(--ed-sans); color: var(--ed-muted); }
+.chapter-list .meta { white-space: nowrap; }

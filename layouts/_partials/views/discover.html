@@ -1,0 +1,18 @@
+{{- /* /discover/ (P3-06): works cited by existing essays. No affiliate links, prices or sponsored
+       placements; the data model keeps url/affiliate/disclosure fields for a later approved phase. */ -}}
+{{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_discoverKicker" | default "Useful things, considered")) }}
+<p class="disclosure">{{ T "ed_discoverDisclosure" | default "Editorial selection of works cited in our essays. No links on this page are paid or affiliate links." }}</p>
+{{- range site.Data.discover.groups }}
+<section class="discover-group" aria-labelledby="discover-{{ .id }}">
+  {{ partial "editorial/section-heading.html" (dict "id" (printf "discover-%s" .id) "title" (partial "editorial/l10n.html" .title)) }}
+  <ul class="discover-list">
+    {{- range .items }}
+    {{- $cited := partial "editorial/get-page.html" .cited_in }}
+    <li>
+      <div><h3>{{ if .url }}<a href="{{ .url }}" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</h3><p class="cited">{{ .authors }} · {{ .source }}</p></div>
+      <div><p class="why">{{ partial "editorial/l10n.html" .why }}</p>{{ with $cited }}<p class="cited">{{ T "ed_citedIn" | default "Cited in" }} <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p>{{ end }}</div>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

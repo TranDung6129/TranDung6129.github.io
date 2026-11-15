@@ -1,0 +1,46 @@
+# Discover (P3-06): works cited by existing essays. Editorial selection only.
+# Commercial fields are present for a later phase and must stay empty/false until a
+# separately approved affiliate programme exists: url (a neutral publisher or DOI link,
+# added only after it is verified), affiliate (bool), disclosure (text).
+groups:
+  - id: papers
+    title: { vi: "Bài báo nền tảng", en: "Foundational papers" }
+    items:
+      - title: "Equilibrium points in n-person games"
+        authors: "John F. Nash (1950)"
+        source: "Proceedings of the National Academy of Sciences, 36(1), 48–49"
+        why: { vi: "Hai trang chứng minh sự tồn tại của cân bằng trong mọi trò chơi hữu hạn.", en: "Two pages that prove every finite game has an equilibrium." }
+        cited_in: /kinh-te/game_theory_nash
+        url: ""
+        affiliate: false
+      - title: "A generalization of Brouwer's fixed point theorem"
+        authors: "Shizuo Kakutani (1941)"
+        source: "Duke Mathematical Journal, 8(3), 457–459"
+        why: { vi: "Định lý điểm bất động mà chứng minh của Nash dựa vào.", en: "The fixed-point theorem Nash's proof relies on." }
+        cited_in: /kinh-te/game_theory_nash
+        url: ""
+        affiliate: false
+      - title: "Potential games"
+        authors: "Dov Monderer & Lloyd S. Shapley (1996)"
+        source: "Games and Economic Behavior, 14(1), 124–143"
+        why: { vi: "Khi nào động lực phản ứng tốt nhất chắc chắn hội tụ.", en: "When best-response dynamics are guaranteed to converge." }
+        cited_in: /kinh-te/game_theory_nash
+        url: ""
+        affiliate: false
+      - title: "The complexity of computing a Nash equilibrium"
+        authors: "Constantinos Daskalakis, Paul W. Goldberg & Christos H. Papadimitriou (2009)"
+        source: "SIAM Journal on Computing, 39(1), 195–259"
+        why: { vi: "Vì sao tìm cân bằng có thể khó về mặt tính toán.", en: "Why finding an equilibrium can be computationally hard." }
+        cited_in: /kinh-te/game_theory_nash
+        url: ""
+        affiliate: false
+  - id: books
+    title: { vi: "Sách", en: "Books" }
+    items:
+      - title: "Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations"
+        authors: "Yoav Shoham & Kevin Leyton-Brown (2008)"
+        source: "Cambridge University Press"
+        why: { vi: "Giáo trình rộng về lý thuyết trò chơi nhìn từ khoa học máy tính.", en: "A broad textbook on game theory from the computer-science side." }
+        cited_in: /kinh-te/game_theory_nash
+        url: ""
+        affiliate: false

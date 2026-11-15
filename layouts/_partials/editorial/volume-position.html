@@ -1,0 +1,17 @@
+{{- /* On a chapter page: which volume it belongs to, its position and back/next links (P3-04). */ -}}
+{{- $p := . -}}
+{{- with site.GetPage "/volumes" -}}
+  {{- range .RegularPages.ByWeight -}}
+    {{- $v := . -}}
+    {{- $chapters := partial "editorial/volume-chapters.html" $v -}}
+    {{- range $i, $c := $chapters -}}
+      {{- if eq $c.RelPermalink $p.RelPermalink }}
+    <nav class="volume-position" aria-label="{{ T "ed_inVolume" | default "In a volume" }}">
+      <span class="kicker">{{ T "ed_chapterOf" (dict "N" (add $i 1) "Total" (len $chapters)) | default (printf "Chapter %d of %d" (add $i 1) (len $chapters)) }}</span>
+      <a href="{{ $v.RelPermalink }}">{{ $v.Title }}</a>
+      {{- if lt (add $i 1) (len $chapters) }}{{ with index $chapters (add $i 1) }}<span>· {{ T "ed_nextChapter" | default "Next chapter" }}: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>{{ end }}{{ end }}
+    </nav>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
