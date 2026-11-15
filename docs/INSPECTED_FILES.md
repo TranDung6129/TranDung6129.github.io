@@ -356,3 +356,15 @@ Registry self hash pre-append `b38d75cdfc0147c36721dcbff5fd94b4f48a1fe5`. Migrat
 | `docs/AGENT_LOG.md` | `17a2ec9f2d3be45ad34283bed04be438ba4e4b4d` | COVERED | P1-07 claim and completion. |
 
 **REMOVED in P1-07:** `themes/FixIt` (gitlink `f5fb989`), `themes/shortcode-docs-bookmark` (gitlink `bad88c8`), `.gitmodules`, `.github/workflows/update-theme.yml`, `README.en.md`. FixIt source files read while migrating: `hugo.toml` (output formats, outputs, mediaTypes sections), `assets/lib/VERSION`.
+
+## 2026-11-15 — P1-08 live retry
+
+Working Git blobs; coverage PARTIAL. Browser/network failure verified; no production behavior inferred.
+
+| Path | Blob | Purpose and risk |
+|---|---|---|
+| `docs/audits/p1-08/README.md` | `7ef51021e991879f74d8ae2f858962f749a22a0e` | P1-08 deployed-site evidence and exact blocked retry; no origin result, sign-off remains pending. |
+| `docs/AGENT_LOG.md` | `95d74fc3e85d83e699332ed39a63a19ed06c3456` | Append-only P1-08 retry evidence and Phase 2 handoff. |
+| `docs/INSPECTED_FILES.md` | `9c2de304d673c1521c0cb4cde3c7c2714499f317` | Revision-aware registry; self hash is pre-append. |
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Task claims, evidence, preservation and visual approval safeguards. |
+| `docs/TASK_BOARD.md` | `1f709d219b2968366640346f6de15922addac5f5` | Canonical statuses; P1-08 remains BLOCKED and P2-01 is unclaimed. |

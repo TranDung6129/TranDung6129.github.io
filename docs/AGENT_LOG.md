@@ -182,3 +182,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Regression review:** Checked stored P1-07 report and results (647 output files, 355 screenshot states, 8/8 interactions, MathJax/Cal-Heatmap, SEO 201 pages). These tests were run by Claude, not rerun independently here.
 - **Blocker:** Public site cannot be fetched from this review environment via web/DNS, so no independent live browser/HTTP smoke evidence. Do not mark P1-08 DONE until that specific gate is demonstrated.
 - **Next:** trusted browser smoke, screenshots and console/HTTP findings per [P1-08 audit](audits/p1-08/README.md); Phase 2 concept may proceed separately as a design prototype, not automatic production homepage redesign.
+
+### 2026-11-15 — P1-08 live retry — Codex
+- **Status:** BLOCKED; no origin connection. **Branch:** `docs/p1-08-live-retry`, base `a01366e`.
+- **Evidence:** Independent contributor tried Chromium 156.0.8078.79, normal TLS, `https://trandung6129.github.io/`: `net::ERR_TUNNEL_CONNECTION_FAILED`. `curl -I --max-time 12 https://trandung6129.github.io/` failed exit 56, proxy CONNECT HTTP 403. Environment status reports restricted egress and site hostname absent from effective allowlist. This is not an origin response and does not establish a site outage. No live checks or site screenshots passed. See [P1-08 report](audits/p1-08/README.md).
+- **Next:** Allow the site host and retry full live smoke, then maintainer sign-off. Continue independent Phase 2 specimen work; no homepage deployment or design approval inferred.
