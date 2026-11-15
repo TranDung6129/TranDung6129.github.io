@@ -23,7 +23,7 @@
 {{- if eq $pager.PageNumber 1 }}
 <section class="section-block heatmap-section" aria-labelledby="activity-title">
   {{ partial "editorial/section-heading.html" (dict "number" "02" "id" "activity-title" "title" (T "ed_activity" | default "Publishing activity") "aside" (T "ed_activityAside" | default "Essays per day, six months")) }}
-  <div id="cal-heatmap" class="heatmap-container"></div>
+  <div id="cal-heatmap" class="heatmap-container" tabindex="0" role="img" aria-label="{{ T "ed_activityLabel" | default "Calendar of essays published per day over six months" }}"></div>
   {{ partial "heatmap.html" (dict "pages" $src.pages) }}
 </section>
 {{- end }}

@@ -24,10 +24,11 @@ npm run build       # production build into public/
 | `config/_default/` | All site configuration (one file per Hugo root key) |
 | `content/` | Markdown articles; `name.md` is Vietnamese, `name.en.md` English |
 | `layouts/` | Templates: base shell, home, article, lists, partials, render hooks, shortcodes |
-| `assets/css/` | SCSS: `style.scss` entry point, `_custom.scss` site palette and typography, `home.scss` home page |
-| `assets/js/` | `theme.js` (navigation, search, theme switch, code blocks), React components |
-| `assets/lib/`, `static/lib/` | Bundled third-party libraries |
-| `i18n/` | Interface strings |
+| `assets/css/editorial/` | Design system: tokens (light/dark), fonts, Phase 2 components, `site.css` production layer; bundled into one stylesheet |
+| `assets/js/` | `editorial.js` (theme, menu, search, code copy, TOC), MathJax loader, React components |
+| `assets/editorial-*` | Self-hosted fonts, artwork originals and WebP derivatives |
+| `data/` | Curation: featured essays, artwork, films, labs, discover |
+| `i18n/` | Interface strings (`ed_*` keys are the editorial interface) |
 | `static/` | Files published as-is |
 | `db/`, `compose.yaml` | Local PostgreSQL foundation; not used by the site build (see `db/README.md`) |
 | `docs/` | Plans, decisions, task board, codebase map and audit evidence |

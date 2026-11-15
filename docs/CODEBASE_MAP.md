@@ -6,6 +6,27 @@
 
 P1-04 introduces site-owned Hugo compatibility templates under `layouts/_default/`, `layouts/posts/`, and `layouts/section.html`; [D-012](DECISIONS.md#d-012--owned-hugo-templates-and-incremental-compatibility) still governs migration and P1-09. These adapters retain FixIt partial dependencies until parity and retirement gates pass.
 
+## State after Phase 3 — editorial production site (read this first)
+
+The FixIt shell, styles and scripts are gone. The table below supersedes older rows that mention FixIt header/footer, `style.scss`, `_custom.scss`, `home.scss`, `theme.js` or `assets/lib/`.
+
+| Need to change | Entry point | Notes |
+|---|---|---|
+| Page shell, `<head>` assets, theme-before-paint script | `layouts/_default/baseof.html`, `layouts/_partials/site/head-assets.html` | SEO head partials (`head/meta`, `head/link`, `head/seo`) unchanged; one fingerprinted stylesheet |
+| Masthead, navigation, language links, search panel | `layouts/_partials/site/masthead.html`, `site/languages.html`, `editorial/section-link.html` | Sections come from `/journal`, `/volumes`, `/films`, `/labs`, `/discover`; English fallback for ja/zh-cn |
+| Footer | `layouts/_partials/site/footer.html` | |
+| Client behaviour | `assets/js/editorial.js` (+ `site/scripts.html` for i18n and MathJax) | Theme key `theme`, `data-theme="dark"`; MathJax only when the passthrough hook sets `hasMath` |
+| Design tokens and styles | `assets/css/editorial/tokens.css` → `fonts`, `base`, `navigation`, `home`, `typography`, `future`, `responsive` (Phase 2 components, shared with the specimen) → `site.css` (production layer) | Change tokens, not hex values; dark paper `#1A1816` |
+| Homepage | `layouts/index.html`, `data/home.yaml` (featured essays), `editorial/feature.html`, `essay-list.html`, `volume-card.html` | Brand copy in `i18n` (`ed_hero*`) |
+| Article page | `layouts/posts/single.html` → `layouts/_partials/editorial/article.html`, `series-nav.html`, `volume-position.html` | Rendering of Markdown/math/shortcodes unchanged (`layouts/_markup/`, `layouts/shortcodes/react.html`) |
+| Lists | `layouts/section.html` (dispatches `view` front matter to `layouts/_partials/views/`), `taxonomy.html`, `term.html`, `home.archives.html`, `home.offline.html`, `404.html` | Pagination sizes kept so routes stay stable |
+| Journal, heatmap | `content/journal/`, `layouts/_partials/views/journal.html`, `layouts/partials/heatmap.html` | Heatmap colours from `--ed-heat-*` |
+| Volumes | `content/volumes/*.md` (`chapters:` content paths), `layouts/volumes/single.html`, `views/volumes.html` | Missing chapter path fails the build |
+| Films, Labs, Discover | `data/films.yaml`, `data/labs.yaml`, `data/discover.yaml`; `views/films.html`, `views/labs.html`, `views/discover.html` | Only published media; no affiliate links (fields reserved) |
+| Artwork and fonts | `data/art.yaml`, `layouts/_partials/editorial/art.html`, `art-image.html`; `assets/editorial-*` | Responsive WebP + PNG fallback |
+| Interface strings | `i18n/{vi,en,ja,zh-CN}.toml`, keys `ed_*` | ja/zh-CN carry English strings |
+| Regression tests | `docs/audits/p3-07/tools/p3-smoke.cjs`, `perf.cjs`; `docs/audits/p1-06/tools/seo-check.py`; `docs/audits/p1-02/static/analyze.py` | `p1-04/runtime/runtime.cjs` and `p1-08/tools/live-smoke.cjs` target the pre-Phase-3 markup |
+
 ## State after P1-07 — no theme
 
 FixIt and the bookmark module are gone. Everything the site renders with is in this repository; there is no `themes/` directory, submodule or Hugo module. **Wherever a row below says "FixIt" or "theme", read it as the site-owned file at the same relative path** (`themes/FixIt/layouts/X` → `layouts/X`, `themes/FixIt/assets/X` → `assets/X`). Provenance and licenses: `THIRD_PARTY_NOTICES.md`, `LICENSE-FixIt.txt`.
@@ -91,6 +112,7 @@ Integrated review entrypoint: [design review](design/REVIEW.md), `scripts/previe
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
 | 2026-11-15 | P1-09 local PostgreSQL | Database reference foundation | New `db/` and `compose.yaml` | Ordered migrations, synthetic seed and isolated restore test; Hugo remains static |
+| 2026-11-15 | Phase 3 (P3-01..07) | Whole presentation layer | FixIt shell/SCSS/JS/libs → `layouts/_partials/{site,editorial,views}/`, `assets/css/editorial/`, `assets/js/editorial.js`; new sections Journal/Volumes/Films/Labs/Discover | `docs/audits/p3-07/` (80-state matrix, 31 checks, axe 0 violations) |
 | 2026-11-15 | P1-07 FixIt retirement | Whole rendering stack | `themes/FixIt/{layouts,assets,i18n,static}` → `layouts/`, `assets/`, `i18n/`, `static/`; theme config → `config/_default/{outputs,outputFormats,params}.toml`; submodules, `.gitmodules`, `update-theme.yml` removed | 647/647 output files equivalent, 355/355 pixel states, see `docs/audits/p1-07/` |
 | 2026-11-15 | P1-06 metadata/SEO | Head links, robots, icons | FixIt `head/link.html` and `robots.txt` → site-owned `layouts/_partials/head/link.html`, `layouts/robots.txt`; new `site/translation.html` | `docs/audits/p1-06/` |
 | 2026-11-15 | P1-05 cleanup | Configuration, site CSS, unused files | root `hugo.toml` → `config/_default/{hugo,module,markup,params}.toml`; inline home CSS → `assets/css/home.scss`; removed `_override.scss`, `custom.js`, `KalmanFilterSim.jsx`, root `robots.txt`, bytecode, duplicate MP4 | Effective config, byte diff, CSSOM and 355-state pixel comparison in `docs/audits/p1-05/` |

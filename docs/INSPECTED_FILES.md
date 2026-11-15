@@ -574,3 +574,38 @@ Blobs on `docs/p1-08-production-signoff`; registry self hash pre-append `367e255
 | `docs/TASK_BOARD.md` | `85ed56d353ac115bc4e7cdd815125474b1648535` | COVERED | P1-08 DONE. |
 | `docs/AGENT_LOG.md` | `b728fb83280a4fe120492297981e18634cd43001` | COVERED | P1-08 entry. |
 | `docs/CODEBASE_MAP.md` | `054bf897fd0e289785790eea08c9a5b7a4bb0684` | COVERED | Live production checks row. |
+
+## 2026-11-15 — Phase 3 (Claude Code)
+
+Blobs on `feat/p3-qa`; registry self hash pre-append `42d8fbf110678f6748373962d300e6a95e16cd91`. Phase 2 specimen files were read in full (templates, CSS, review docs). Removed templates are listed in `docs/audits/p3-07/evidence/removed-templates.txt`; removed FixIt SCSS/JS/library sources are recorded in D-014.
+
+| Path | Blob | Status | Purpose |
+|---|---|---|---|
+| `layouts/_default/baseof.html` | `798b0bc6d625fc0f136abc16a76ef96af399bdd1` | COVERED | Editorial shell: init, SEO head partials, head assets, masthead, main block, footer, scripts. |
+| `layouts/_partials/site/head-assets.html` | `32a94d4ffd38a1c5a8829fe037bd232f725fb9a8` | COVERED | Theme-before-paint inline script (key theme), font publishing/preload, CSS bundle (concat, minify, fingerprint, SRI). |
+| `layouts/_partials/site/masthead.html` | `2a023d75c8c7e39db38a51a909334294e69d84a4` | COVERED | Wordmark, five section links with aria-current, search/theme buttons, languages, tagline row, search panel bound to the per-language search.json. |
+| `layouts/_partials/site/languages.html` | `ee50d589f3643704cee0f10cdf652d3c143a505a` | COVERED | Links to the page's translation or the language home for vi/en/ja/zh-cn. |
+| `layouts/_partials/site/footer.html` | `4b265144fe86070a226a612ad3dfb0e3833083f5` | COVERED | Brand, About/Archive/Categories/Tags/Series/RSS links, licence and credits link. |
+| `layouts/_partials/site/scripts.html` | `dca835d6d34ccc7dd0f33aad4255b30bec30483f` | COVERED | i18n object for JS, editorial.js bundle, MathJax loader when hasMath. |
+| `assets/js/editorial.js` | `7761c80b9dbdde92889e51a21c93e444143330a1` | COVERED | Theme toggle and persistence, mobile menu, search (diacritic-insensitive), Escape handling, code-copy bar, TOC current section. |
+| `assets/css/editorial/tokens.css` | `cf860f4e1346549c99b725fa450f5ad1b6a76c63` | COVERED | Light/dark tokens (dark paper #1A1816), heat and Nash colours, compatibility aliases. |
+| `assets/css/editorial/site.css` | `77b197e9abce4c27a9f7ba575b4a441f7271caa2` | COVERED | Production layer: typography roles, shell states, lists, article, code, tables, footnotes, volumes, films, labs, discover, heatmap, responsive. |
+| `layouts/index.html` | `46264f0902e52807e0cf0b1c70b107f2c9411c38` | COVERED | Homepage composition bound to real essays and the current volume. |
+| `layouts/_partials/editorial/article.html` | `96549977af2fdaa5faeeead1e80032c2a69217b5` | COVERED | Article reading page (header, TOC, prose, tags, series, related, older/newer). |
+| `layouts/section.html` | `bdd4535f83df58113b7d0df6e84d46bee9cbfa8a` | COVERED | Section list; dispatches view front matter to views/*. |
+| `layouts/_partials/views/journal.html` | `82ed6f9d8af1fb83d4c0ba32d06cc4d8cbfe20ba` | COVERED | Journal landing: essays, categories, heatmap. |
+| `layouts/partials/heatmap.html` | `76a1acf8b7066a8de9cde66d5139442428ebaf8b` | COVERED | Cal-Heatmap with token colours, theme re-render, window ending at newest essay. |
+| `layouts/volumes/single.html` | `4fbf8df08e0b2158b1c33c1e6ea1f77a8183ae9d` | COVERED | Volume page: cover, status, chapter list. |
+| `layouts/_partials/editorial/volume-position.html` | `d5cfe16d3373cae26c7748193bac5e95b84d6f90` | COVERED | Chapter position inside a volume on article pages. |
+| `layouts/_markup/render-passthrough.html` | `cf96fe61c4a76c31f4ecfc420cc954c4df3f7f46` | COVERED | Sets page Store hasMath when MathJax passthrough renders. |
+| `layouts/_markup/render-heading.html` | `b524e397391fd9bc4f0173babcf2cd39de8ed3fb` | COVERED | Heading anchor now has an accessible name. |
+| `assets/js/components/NashEquilibriumSim.jsx` | `88e6c7fe9530b817d5d9c837cbfd05a1314aa4a3` | COVERED | Only token colours and slider aria-labels changed in P3-07; logic untouched. |
+| `data/home.yaml` | `fceb8fbb523ac9406284eeceb73b6fd4536c4932` | COVERED | Featured essays and journal count. |
+| `data/art.yaml` | `e8dc78b03ce4632fc0f03f5b1152ce0314ed3640` | COVERED | Artwork metadata. |
+| `data/films.yaml` | `3876a08045165e4b2857869709b9bf5018cfa0b7` | COVERED | Published films. |
+| `data/labs.yaml` | `4e2652667cbef08a8b5620af7bcaeedaf72b2490` | COVERED | Labs. |
+| `data/discover.yaml` | `b663feafa9b49fc7b6f1ce97a114ecb378b9b950` | COVERED | Discover entries (cited works, commercial fields reserved). |
+| `docs/audits/p3-07/tools/p3-smoke.cjs` | `cce2673656090d4c53307884810f08bb565cad04` | COVERED | Phase 3 harness (matrix, functional, axe). |
+| `docs/audits/p3-07/tools/perf.cjs` | `5f1d4a56224c195d694cc5cc97ae3c05893be5c9` | COVERED | Page weight and paint observations. |
+| `docs/audits/p3-07/README.md` | `ac9a4457f68a830055fa1c4936ee48b9283ba9ac` | COVERED | QA report. |
+| `docs/phases/phase-3/PLAN.md` | `d457a010220dbce4f5f0afc1750767a2d24b3250` | COVERED | Phase 3 plan. |
