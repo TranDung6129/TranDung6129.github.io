@@ -74,3 +74,31 @@ The P1-01 report has genuine evidence for the following responsibilities. **The 
 
 ## Maintenance protocol
 Each PR must include a short `Knowledge captured` section (new/updated entry paths, statuses, affected dependencies). The reviewer checks that every file the agent **actually inspected** was accounted for, at least as a PARTIAL entry or within a clearly identified reviewed module group. Do not mark implementation tasks DONE until this bookkeeping and necessary tests are complete.
+
+## 2026-11-15 — P1-01 acceptance reconciliation
+
+Reviewed on `docs/p1-01-acceptance`, based on `aae95e9`. Versions below are working-file Git blob hashes at inspection; registry self-entry records its pre-append blob. Coverage is PARTIAL (role/relevant clauses verified, no claim of external deployment or whole-application execution). Verification: fetched merge graph, fresh Hugo build and `verify.py` passed with 645 unchanged files. No runtime ownership paths changed.
+
+| Path | Reviewed blob | Responsibility, dependencies and edit risks | Coverage |
+|---|---|---|---|
+| `AGENTS.md` | `283fb0f2870e3c3ae6ce0424ea9b233d9b5a77b3` | Agent entrypoint; scope, serialized claims, evidence and per-file knowledge rules; governs every task. PostgreSQL allowed locally only. | PARTIAL |
+| `docs/README.md` | `5ae68728c91c0efbfd94225f801f77a01a14f450` | Documentation index linking workflow/product/database/visual specs; entrypoint for onboarding, not implementation evidence. | PARTIAL |
+| `docs/CODEBASE_MAP.md` | `c3ee7af936e145fa52fdd1783169eda1d78f4c9f` | Feature-to-owner routing and modification log; directs targeted source inspection; update when adding entrypoints. | PARTIAL |
+| `docs/INSPECTED_FILES.md` | `4a568f12173c5a593bd95acba8a7aec3dbc1cc04` | Cumulative purpose/dependency/blob/coverage registry; self-entry references pre-update blob, avoiding a recursive hash claim. | PARTIAL |
+| `docs/MASTER_PLAN.md` | `4470cd58cd4597135b247d5f298227e6cec3df6a` | Ordered P1/P2 roadmap and phase exit gates; public Hugo preserved; P1-09 local DB must follow approved architecture. | PARTIAL |
+| `docs/TASK_BOARD.md` | `f24dbc36bc57df57a504adf88d4b5ae2b6d7eed6` | Canonical task/dependency/status ledger; P1-01 accepted through merged PR #13 and retest; P1-02 next; P1-09 depends P1-03. | PARTIAL |
+| `docs/ARCHITECTURE.md` | `209c35a7637edde3340cb31441ea13ea8ad1f227` | Gradual FixIt migration, URL retention, effective config and DB boundaries; depends on P1-01/P1-02 evidence before P1-03 design. | PARTIAL |
+| `docs/DESIGN_SYSTEM.md` | `3de7531815910df722f0ce8c052d092a4bcfe01e` | P2 semantic palette/type/component targets; no approved homepage layout; actual contrast/responsive tests required later. | PARTIAL |
+| `docs/VISUAL_ASSET_GUIDELINES.md` | `a685802a69d9945498e69b7bd257385e05ebed6d` | Asset sourcing, rights, synthetic honesty, alt/crop/performance workflow; applies to new shipped art, not baseline screenshot rights claims. | PARTIAL |
+| `docs/ASSET_MANIFEST_TEMPLATE.md` | `7ffbdfd1ce18b3dc83a50b96bc889b30d7844cc7` | Provenance schema/checklist for future published assets; example fields are specimens, not actual licensed media records. | PARTIAL |
+| `docs/ENGINEERING_STANDARDS.md` | `71a05d70d3982fd873745e99c39822291edd79c5` | Static/DB service boundaries, security, migrations/recovery, CI/privacy; local DB approved, hosted services/auth/billing deferred. | PARTIAL |
+| `docs/QUALITY_GATES.md` | `8914d7729b3f330d8e5334b08f1a084d09e73d3c` | Per-PR build/routes/metadata/browser/knowledge evidence and phase exits; existing baseline defects must be distinguished from regressions. | PARTIAL |
+| `docs/CONTENT_MODEL.md` | `de2e087ddecde79a71d48f27e83ed2aa4a02be7c` | Optional editorial/frontmatter and access semantics; preserves article bodies/URLs, no forced schema rewrite. | PARTIAL |
+| `docs/EDITORIAL_VOICE.md` | `6dbd468df8c3c344c773afe8c290c0ea6321aa2b` | Source-aware narrative, accuracy and disclosure rules; governs future writing without rewriting current content in audit. | PARTIAL |
+| `docs/SEO_AND_MONETIZATION.md` | `528ae99094409023f2ff097adc06976261ac2fa2` | Canonical/hreflang/distribution principles and deferred commercial flows; no active payments or affiliate tracking authorized. | PARTIAL |
+| `docs/DATABASE_FOUNDATION.md` | `80087fd4ecdeb223cd879cba8a3701d0e2049775` | P1-09 acceptance: local PostgreSQL, versioned migration, demo seed, connection/repeatability and restore tests; no article DB runtime. | PARTIAL |
+| `docs/DECISIONS.md` | `daa098124b0116f0b91f867f64dc69053da48af9` | Accepted D-001–D-010 product/technical decisions; D-010 partially supersedes D-009, local PostgreSQL only at approved task dependency. | PARTIAL |
+| `docs/AGENT_LOG.md` | `5daab93048163ecad0f07c8e42c092fd460b1d1d` | Append-only claims/evidence/handoff; P1-01 original BLOCKED history retained and superseded by explicit acceptance entry; task board controls state. | PARTIAL |
+| `docs/audits/p1-01/verify.py` | `d936eff54c8eb4af55a8ac5202a74aca0be89cc2` | Read-only output comparator checks routes, bytes, language/title/canonical, emitted consumers and outputs; assertion retains known absent poster, not runtime proof. | PARTIAL |
+
+Audit evidence module `docs/audits/p1-01/` (tree `4b62518085cc39774d24ad2533166f98b4f4d374`) is reused from merged PR #13: TSVs inventory Git objects; JSON/logs/routes record production emission, scripts regenerate/check evidence. Generated/binary/vendor content is treated as module-level evidence, not new exhaustive per-file inspection. No browser behavior inferred from HTML markers.
