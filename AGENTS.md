@@ -10,6 +10,7 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 5. docs/TASK_BOARD.md
 4. docs/ARCHITECTURE.md
 5. docs/DESIGN_SYSTEM.md
+6. docs/VISUAL_DIRECTION.md (mandatory visual north star and screenshot approval gate)
 6. docs/VISUAL_ASSET_GUIDELINES.md
 7. docs/ENGINEERING_STANDARDS.md
 8. docs/QUALITY_GATES.md
@@ -39,6 +40,7 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 - Never expose premium plaintext in generated public HTML; client-side hiding is not a paywall.
 - External links and future affiliate material require honest labeling. Never fabricate product tests, prices, citations, traffic, or freshness claims.
 - Use semantic HTML and keyboard-accessible controls; respect reduced-motion preferences.
+- Phase 2 design must follow docs/VISUAL_DIRECTION.md: do not assume correct tokens equal good visual design; render real prototype screenshots for owner approval before rolling visual changes through the site. Homepage redesign remains Phase 3 and requires approval.
 - Follow docs/VISUAL_ASSET_GUIDELINES.md: original/look-consistent images, provable commercial-use rights and truthful documentary imagery.
 - Follow docs/ENGINEERING_STANDARDS.md and docs/DATABASE_FOUNDATION.md: **PostgreSQL local foundation is approved** (P1-09), but public articles remain static; no unapproved authentication, billing, hosted provisioning or secrets in Git. Use versioned migrations and tested backup/restore plans.
 - Update docs/CODEBASE_MAP.md in the SAME PR whenever an entry point, dependency, component owner or file path changes; record where future agents should edit.

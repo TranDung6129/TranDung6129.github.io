@@ -41,6 +41,7 @@ Editorial influences: science storytelling and experiments (Veritasium), mathema
 4. Create **non-transactional** specimens for Volume/Chapter, Film/Lab, Support, Product/Disclosure, Premium preview and AdSlot; no fake active purchase.
 5. Validate on mobile/desktop and long-form pages against design and quality gates.
 6. Finish with documentation of usage and examples. Do not ship untested components.
+7. **Mandatory visual approval gate** before scaling: compare actual light/dark desktop/mobile Hugo specimens against [VISUAL_DIRECTION.md](VISUAL_DIRECTION.md), with real screenshots and maintainer feedback. The moodboard is a direction, not final homepage sign-off.
 
 ## Defer: later decision gates, NOT a mandate to implement
 - **Phase 3:** homepage editorial direction, final IA/navigation, journal and discover page layout.

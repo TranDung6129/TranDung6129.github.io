@@ -26,6 +26,12 @@
 - No dependence on FixIt remains, **only after** feature parity verified.
 - README and architecture match actual implementation; rollback path recorded.
 
+## Visual acceptance checkpoint
+- Agent supplies working desktop/mobile light/dark screenshots of real rendered Hugo specimens (not only generated moodboards).
+- Visual assessment is recorded against docs/VISUAL_DIRECTION.md: hierarchy, rhythm, typography, crop, clarity, restraint and craft.
+- Maintainer approves a specimen before its style is propagated across the site; no approval is inferred from automated tests alone.
+- A missing browser/screenshot environment means visual review is UNTESTED/BLOCKED, not a silent pass.
+
 ## Phase 2 exit
 - Color tokens validated for contrast in target context.
 - Typography specimen read and reviewed (Vietnamese diacritics, math, code, captions).
