@@ -1,6 +1,6 @@
 # Codebase Map — Where to change what
 
-**Purpose:** Fast, evidence-based navigation for Codex, Claude Code and other agents. Read this before exploring the repository. This map is **not** a claim that every future file path is already implemented. Update the map in the same PR whenever files, responsibilities or entry points change.
+**Purpose:** Fast, evidence-based navigation for Codex, Claude Code and other agents. Read this before exploring the repository. For durable findings from every file already inspected, see [INSPECTED_FILES.md](INSPECTED_FILES.md). This map is **not** a claim that every future file path is already implemented. Update the map in the same PR whenever files, responsibilities or entry points change.
 
 **Verified baseline:** P1-01 audit merged; initial FixIt architecture, Hugo Extended 0.149.0. See [P1-01 audit](audits/P1-01.md). After migration, do not preserve stale paths: update the **Current path** and status below.
 
@@ -44,10 +44,10 @@
 ## Required workflow — avoid whole-codebase rereads
 1. Read `AGENTS.md`, `docs/TASK_BOARD.md`, then **this map**. Consult architecture/design and relevant audit subsection, not every file.
 2. Identify the narrow responsibility and inspect its listed entry points and direct consumers only. Use `rg`/targeted search if the map lacks information.
-3. Verify the exact current code path before editing; if moved/renamed, correct this map **in the same PR**.
+3. Verify the exact current code path before editing; if moved/renamed, correct this map **in the same PR**. When opening **any** file, opportunistically record its purpose, important symbols, dependencies and version in INSPECTED_FILES.md (mark PARTIAL if not fully read).
 4. Implement and run scoped tests + required quality gates. Update `AGENT_LOG.md` with actual evidence.
 5. Add a `Change impact` note in PR: affected feature, owning files, dependencies, test, new location, known caveats.
-6. Do **not** create a new comprehensive inventory per task. Re-audit only when code changes make the map stale or an unverified dependency is involved.
+6. Do **not** create a new comprehensive inventory per task. Compare recorded Git blob SHA with the working version; if unchanged, reuse the file summary, and if changed, review changed hunks plus affected dependencies. Re-audit only when the map becomes stale or a dependency is unverified.
 7. If design/architecture changed, update `docs/DECISIONS.md` and relevant documentation as well.
 
 ## Modification record template (append short entries here, most recent first)
