@@ -127,3 +127,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Findings / risks:** the home stylesheet now precedes the Cal-Heatmap stylesheet instead of following it — shown to be inert, but worth knowing when the heatmap is reworked. Same-build screenshot captures show occasional one-pixel raster noise on image-heavy pages; the harness retries and rechecks serially, and the report says so. `config/_default/params.toml` still mirrors theme defaults on purpose (needed once the theme config is gone). 128 Manim intermediates under `media/` remain tracked: maintainer decision requested. P1-02 defects and the heatmap colour defect are unchanged.
 - **Next dependency / requested review:** maintainer reviews this PR after #19. P1-06 starts on a branch stacked on this one.
 
+### 2026-11-15 — P1-06 claim — Claude Code
+- **Status:** IN PROGRESS. P1-05 is delivered as [PR #20](https://github.com/TranDung6129/TranDung6129.github.io/pull/20), stacked on PR #19; neither is merged, so this branch is stacked on `chore/p1-05-css-config-cleanup` (`05cf5e8`).
+- **Branch:** `feat/p1-06-metadata-seo`.
+- **Scope:** canonical/hreflang correctness, icon and poster references, site metadata defaults, robots policy, front matter conventions. No article rewrites or translations, no permalink change, no homepage or visual change, no theme removal, no database files.
+

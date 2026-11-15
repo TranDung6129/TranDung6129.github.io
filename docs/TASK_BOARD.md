@@ -11,7 +11,7 @@
 | [x] | P1-03 | Decide custom Hugo template architecture, configuration model and migration strategy; record decision | P1-01, P1-02 | DONE | Codex |
 | [x] | P1-04 | Implement base, header/footer, section/single templates and compatibility layer; build passes while old functionality remains | P1-03 | DONE | Codex (implementation) + Claude Code (runtime verification); PR #19, acceptance = maintainer merge |
 | [x] | P1-05 | Consolidate duplicate CSS and configuration; remove only demonstrably unused packages/old overrides, with proof | P1-04 | DONE | Claude Code; PR stacked on #19, acceptance = maintainer merge after #19 |
-| [ ] | P1-06 | Adopt content metadata/schema and SEO defaults without breaking permalinks or translations | P1-03, P1-04 | TODO | — |
+| [ ] | P1-06 | Adopt content metadata/schema and SEO defaults without breaking permalinks or translations | P1-03, P1-04 | IN PROGRESS | Claude Code (`feat/p1-06-metadata-seo`, stacked on PR #20) |
 | [ ] | P1-07 | Verify parity and safely remove FixIt/unused submodules and obsolete theme update workflow | P1-04, P1-05, P1-06 | TODO | — |
 | [ ] | P1-08 | Final Phase-1 regression, rollback notes, deployment smoke test and sign-off | P1-02, P1-07, P1-09 | TODO | — |
 | [ ] | P1-09 | PostgreSQL foundation: review schema boundary, local dev setup, versioned migration, seed/demo data, env.example, connection/migration tests and backup/restore drill; no live auth/payments/hosted provision claim | P1-03 | TODO | — |
