@@ -81,9 +81,7 @@
   height: auto;
 }
 .art-caption {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  text-align: right;
   font: 600 0.65rem var(--ed-sans, Arial, sans-serif);
   letter-spacing: 0.13em;
   text-transform: uppercase;
