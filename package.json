@@ -18,7 +18,7 @@
   },
   "homepage": "https://trandung6129.github.io/",
   "dependencies": {
-    "react": "^19.2.7",
+    "react": "^19.3.1",
     "react-dom": "^19.2.7",
     "recharts": "^3.9.0"
   }
