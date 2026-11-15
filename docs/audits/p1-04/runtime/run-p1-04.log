@@ -1,0 +1,280 @@
+{
+ "browser": "153.0.8010.12",
+ "checks": [
+  {
+   "name": "MathJax loads from CDN and typesets every math page",
+   "passed": true,
+   "pages": 16,
+   "totalContainers": 674,
+   "versions": [
+    "3.2.2"
+   ]
+  },
+  {
+   "name": "Math page has no document horizontal overflow (1440px light)",
+   "passed": true
+  },
+  {
+   "name": "Math page has no document horizontal overflow (1440px dark)",
+   "passed": true
+  },
+  {
+   "name": "Math page has no document horizontal overflow (360px light)",
+   "passed": true
+  },
+  {
+   "name": "Math page has no document horizontal overflow (360px dark)",
+   "passed": true
+  },
+  {
+   "name": "D3 + Cal-Heatmap load from CDN and render six month domains on every home language",
+   "passed": true,
+   "pages": 8,
+   "d3": [
+    "3.5.17"
+   ],
+   "cells": [
+    183
+   ]
+  },
+  {
+   "name": "Required CDN resources return 200 over validated TLS",
+   "passed": true,
+   "resources": [
+    {
+     "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+     "status": 200,
+     "sha256": "300480069078b5892d2363a2b65e2dfbbf30fe5c80f83edbfecf4610fd093862"
+    },
+    {
+     "url": "https://d3js.org/d3.v3.min.js",
+     "status": 200,
+     "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7"
+    },
+    {
+     "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+     "status": 200,
+     "sha256": "ab8a58f0a4603ad5b275c78c6e6bde7b2170dc6cdbb3f81225cdfb01dc64f387"
+    },
+    {
+     "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+     "status": 200,
+     "sha256": "fa2c3af7dc8eb41ad42d4efa2f492b816a27abb69f309f5ff4dfb11d7cd5d673"
+    }
+   ]
+  },
+  {
+   "name": "No failed CDN request and no MathJax/CalHeatMap runtime error",
+   "passed": true,
+   "cdnFailures": 0,
+   "externalResponses": 15
+  }
+ ],
+ "mathPages": [
+  [
+   "/kinh-te/toan-co-ban-1/",
+   15,
+   15,
+   0,
+   0
+  ],
+  [
+   "/en/kinh-te/toan-co-ban-1/",
+   15,
+   15,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/toan-co-ban-2/",
+   10,
+   10,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/toan-co-ban-3/",
+   20,
+   20,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/toan-co-ban-4/",
+   11,
+   11,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/toan-co-ban-5/",
+   12,
+   12,
+   0,
+   0
+  ],
+  [
+   "/en/kinh-te/toan-co-ban-5/",
+   12,
+   12,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/co-gian-cung-cau-cong-thuc/",
+   28,
+   28,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+   47,
+   47,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/ly-thuyet-tro-choi-nash/",
+   54,
+   54,
+   0,
+   0
+  ],
+  [
+   "/kinh-te/game_theory_nash/",
+   78,
+   78,
+   0,
+   0
+  ],
+  [
+   "/en/kinh-te/game_theory_nash/",
+   78,
+   78,
+   0,
+   0
+  ],
+  [
+   "/toan-hoc/riemann-hypothesis-number-theory/",
+   62,
+   62,
+   0,
+   0
+  ],
+  [
+   "/en/toan-hoc/riemann-hypothesis-number-theory/",
+   62,
+   62,
+   0,
+   0
+  ],
+  [
+   "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+   85,
+   85,
+   0,
+   0
+  ],
+  [
+   "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+   85,
+   85,
+   0,
+   0
+  ]
+ ],
+ "heatmap": [
+  [
+   "/",
+   "light",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ],
+  [
+   "/en/",
+   "light",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ],
+  [
+   "/ja/",
+   "light",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ],
+  [
+   "/zh-cn/",
+   "light",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ],
+  [
+   "/",
+   "dark",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ],
+  [
+   "/en/",
+   "dark",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ],
+  [
+   "/ja/",
+   "dark",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ],
+  [
+   "/zh-cn/",
+   "dark",
+   "3.5.17",
+   6,
+   183,
+   183,
+   0,
+   "{\"rgb(155, 233, 168)\":183}",
+   "Monday June 1, 2026"
+  ]
+ ],
+ "consoleErrors": 22,
+ "requestsFailed": 21,
+ "screenshots": 7
+}

@@ -1,0 +1,73 @@
+{
+  "method": "sha256 of each CDN response body captured by Chromium vs the same file inside the npm registry tarball; tarball sha512 checked against the registry's dist.integrity.",
+  "packages": {
+    "cal-heatmap@3.3.10": {
+      "registryIntegrity": "sha512-l0K9B/vxig4SxaZ92jCG225JIMDqY1nmMN7IQEd9+sZygSO/aCtN+sYVGi4DyGr3agqsoCgcoArmAgG/xGbOCQ==",
+      "tarballIntegrity": "sha512-l0K9B/vxig4SxaZ92jCG225JIMDqY1nmMN7IQEd9+sZygSO/aCtN+sYVGi4DyGr3agqsoCgcoArmAgG/xGbOCQ==",
+      "match": true
+    },
+    "d3@3.5.17": {
+      "registryIntegrity": "sha512-yFk/2idb8OHPKkbAL8QaOaqENNoMhIaSHZerk3oQsECwkObkCpJyjYwCe+OHiq6UEdhe1m8ZGARRRO3ljFjlKg==",
+      "tarballIntegrity": "sha512-yFk/2idb8OHPKkbAL8QaOaqENNoMhIaSHZerk3oQsECwkObkCpJyjYwCe+OHiq6UEdhe1m8ZGARRRO3ljFjlKg==",
+      "match": true
+    },
+    "mathjax@3.2.2": {
+      "registryIntegrity": "sha512-Bt+SSVU8eBG27zChVewOicYs7Xsdt40qm4+UpHyX7k0/O9NliPc+x77k1/FEsPsjKPZGJvtRZM1vO+geW0OhGw==",
+      "tarballIntegrity": "sha512-Bt+SSVU8eBG27zChVewOicYs7Xsdt40qm4+UpHyX7k0/O9NliPc+x77k1/FEsPsjKPZGJvtRZM1vO+geW0OhGw==",
+      "match": true
+    }
+  },
+  "files": [
+    {
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "cdnSha256": "300480069078b5892d2363a2b65e2dfbbf30fe5c80f83edbfecf4610fd093862",
+      "cdnBytes": 1173007,
+      "cdnResolvedVersion": "3.2.2",
+      "npm": "mathjax@3.2.2/es5/tex-mml-chtml.js",
+      "npmSha256": "300480069078b5892d2363a2b65e2dfbbf30fe5c80f83edbfecf4610fd093862",
+      "npmBytes": 1173007,
+      "match": true
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/ui/safe.js",
+      "cdnSha256": "9fef48d868277a8bc1852f7ba796b33ead812d38916a7131b0a29ea48961a6a4",
+      "cdnBytes": 11189,
+      "cdnResolvedVersion": "3.2.2",
+      "npm": "mathjax@3.2.2/es5/ui/safe.js",
+      "npmSha256": "9fef48d868277a8bc1852f7ba796b33ead812d38916a7131b0a29ea48961a6a4",
+      "npmBytes": 11189,
+      "match": true
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+      "cdnSha256": "ab8a58f0a4603ad5b275c78c6e6bde7b2170dc6cdbb3f81225cdfb01dc64f387",
+      "cdnBytes": 44230,
+      "cdnResolvedVersion": null,
+      "npm": "cal-heatmap@3.3.10/cal-heatmap.min.js",
+      "npmSha256": "ab8a58f0a4603ad5b275c78c6e6bde7b2170dc6cdbb3f81225cdfb01dc64f387",
+      "npmBytes": 44230,
+      "match": true
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+      "cdnSha256": "fa2c3af7dc8eb41ad42d4efa2f492b816a27abb69f309f5ff4dfb11d7cd5d673",
+      "cdnBytes": 1676,
+      "cdnResolvedVersion": null,
+      "npm": "cal-heatmap@3.3.10/cal-heatmap.css",
+      "npmSha256": "fa2c3af7dc8eb41ad42d4efa2f492b816a27abb69f309f5ff4dfb11d7cd5d673",
+      "npmBytes": 1676,
+      "match": true
+    },
+    {
+      "url": "https://d3js.org/d3.v3.min.js",
+      "cdnSha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+      "cdnBytes": 151725,
+      "cdnResolvedVersion": null,
+      "npm": "d3@3.5.17/d3.min.js",
+      "npmSha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+      "npmBytes": 151725,
+      "match": true
+    }
+  ],
+  "allMatch": true
+}
