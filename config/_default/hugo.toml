@@ -5,10 +5,6 @@
 
 title = "The Epistemic Diary"
 baseURL = "https://trandung6129.github.io/"
-theme = [
-  "FixIt",
-  "shortcode-docs-bookmark"
-]
 defaultContentLanguage = "vi"
 languageCode = "vi"
 hasCJKLanguage = true

@@ -1,0 +1,34 @@
+# -------------------------------------------------------------------------------------
+# Custom output formats
+# See: https://gohugo.io/configuration/output-formats/
+# Formerly supplied by the FixIt theme configuration; site-owned since P1-07.
+# -------------------------------------------------------------------------------------
+
+# /archives/ — layouts/home.archives.html
+[archives]
+  path = "archives"
+  baseName = "index"
+  mediaType = "text/html"
+  isPlainText = false
+  isHTML = true
+  permalinkable = true
+  notAlternative = true
+
+# /offline/ — layouts/home.offline.html
+[offline]
+  path = "offline"
+  baseName = "index"
+  mediaType = "text/html"
+  isPlainText = false
+  isHTML = true
+  permalinkable = true
+  notAlternative = true
+
+# /search.json — layouts/home.search.json, read by the Fuse search in assets/js/theme.js
+[search]
+  baseName = "search"
+  mediaType = "application/json"
+  rel = "search"
+  isPlainText = true
+  isHTML = false
+  permalinkable = true

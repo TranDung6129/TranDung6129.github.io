@@ -1,0 +1,99 @@
+@import "../../lib/normalize/normalize";
+
+html {
+  font-family: $global-font-family;
+  font-weight: $global-font-weight;
+  font-display: swap;
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow: overlay;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+::selection {
+  background-color: $selection-color;
+
+  [data-theme='dark'] & {
+    background-color: $selection-color-dark;
+  }
+}
+
+body {
+  background-color: $global-background-color;
+  color: $global-font-color;
+  @include overflow-wrap(break-word);
+
+  [data-theme='dark'] & {
+    color: $global-font-color-dark;
+    background-color: $global-background-color-dark;
+  }
+}
+
+iframe {
+  border: 0;
+  @include border-radius($global-border-radius);
+}
+
+[role='button'] {
+  cursor: pointer;
+}
+
+summary {
+  cursor: pointer;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration-skip-ink: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+img,video {
+  max-width: 100%;
+  height: auto;
+}
+
+details {
+  &.center {
+    summary {
+      text-align: center;
+    }
+  }
+}
+
+%code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+  color: $code-color;
+  background-color: rgba(175, 184, 193, 0.2);
+  text-decoration: inherit;
+  @include border-radius($global-border-radius);
+  @include overflow-wrap(break-word);
+  @include line-break(auto);
+
+  [data-theme='dark'] & {
+    color: $code-color-dark;
+    background-color: rgba(99, 110, 123, 0.4);
+  }
+}
+
+@include link(true, true);
+
+@import '../_partials/scrollbar';
+@import '../_partials/mask';
+@import '../_partials/img';
+@import '../_partials/icon';
+@import '../_partials/details';
+@import '../_partials/widgets';

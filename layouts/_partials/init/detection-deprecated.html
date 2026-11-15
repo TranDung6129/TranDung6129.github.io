@@ -1,0 +1,15 @@
+{{- /* Deprecated parameter detection */ -}}
+{{- $warns := slice -}}
+{{- $errors := slice -}}
+
+{{- with .Site.Params.ibruce -}}
+  {{- $warns = $warns | append "The parameter `params.ibruce` is deprecated since v0.3.9, use `params.busuanzi` instead." -}}
+{{- end -}}
+
+{{- if len $warns -}}
+  {{- warnf "Deprecated parameter detection until %v\n  - %v\n\n" (hugo.Store.Get "version") (delimit $warns "\n  - ") -}}
+{{- end -}}
+
+{{- if len $errors -}}
+  {{- errorf "Deprecated parameter detection until %v\n  - %v\n\n" (hugo.Store.Get "version") (delimit $errors "\n  - ") -}}
+{{- end -}}

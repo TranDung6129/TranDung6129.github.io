@@ -1,6 +1,11 @@
 # -------------------------------------------------------------------------------------
-# Customizing Output Formats
-# See: https://gohugo.io/templates/output-formats/#customizing-output-formats
+# Output formats rendered per page kind
+# See: https://gohugo.io/configuration/outputs/
+# These values came from the FixIt theme configuration until P1-07; they are now site-owned.
 # -------------------------------------------------------------------------------------
 
-_merge = "shadow"
+home = ["html", "rss", "archives", "offline", "search"]
+page = ["html", "markdown"]
+section = ["html", "rss"]
+taxonomy = ["html"]
+term = ["html", "rss"]
