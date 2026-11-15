@@ -1,0 +1,51 @@
+Start building sites …
+hugo v0.149.0-66240338f1b908ca3b163384c8229943e74eb290+extended linux/amd64 BuildDate=2025-08-27T15:37:16Z VendorInfo=gohugoio
+
+INFO  Translation func for language ja not found, use default.
+INFO  build:  step process substep collect files 58 files_total 58 pages_total 48 resources_total 10 duration 10.453035ms
+INFO  build:  step process duration 10.49389ms
+INFO  static: syncing static files to / duration 16.584054ms
+INFO  build:  step assemble duration 16.987947ms
+INFO  build:  step render substep pages site vi outputFormat html duration 503.591424ms
+INFO  build:  step render substep pages site vi outputFormat archives duration 32.166158ms
+INFO  build:  step render substep pages site vi outputFormat markdown duration 3.195397ms
+INFO  build:  step render substep pages site vi outputFormat offline duration 4.357748ms
+INFO  build:  step render substep pages site vi outputFormat rss duration 34.484935ms
+INFO  build:  step render substep pages site vi outputFormat search duration 39.539827ms
+INFO  build:  step render substep pages site en outputFormat html duration 195.682715ms
+INFO  build:  step render substep pages site en outputFormat archives duration 29.153236ms
+INFO  build:  step render substep pages site en outputFormat markdown duration 3.813165ms
+INFO  build:  step render substep pages site en outputFormat offline duration 3.461209ms
+INFO  build:  step render substep pages site en outputFormat rss duration 38.773145ms
+INFO  build:  step render substep pages site en outputFormat search duration 26.185887ms
+INFO  build:  step render substep pages site ja outputFormat html duration 7.296084ms
+INFO  build:  step render substep pages site ja outputFormat archives duration 5.310998ms
+INFO  build:  step render substep pages site ja outputFormat markdown duration 15.887µs
+INFO  build:  step render substep pages site ja outputFormat offline duration 4.145763ms
+INFO  build:  step render substep pages site ja outputFormat rss duration 264.156µs
+INFO  build:  step render substep pages site ja outputFormat search duration 84.967µs
+INFO  build:  step render substep pages site zh-cn outputFormat html duration 13.092136ms
+INFO  build:  step render substep pages site zh-cn outputFormat archives duration 5.435433ms
+INFO  build:  step render substep pages site zh-cn outputFormat markdown duration 30.821µs
+INFO  build:  step render substep pages site zh-cn outputFormat offline duration 4.311459ms
+INFO  build:  step render substep pages site zh-cn outputFormat rss duration 325.282µs
+INFO  build:  step render substep pages site zh-cn outputFormat search duration 117.824µs
+INFO  build:  step render pages 388 content 205 duration 958.061101ms
+INFO  build:  step render deferred count 0 duration 6.279µs
+INFO  build:  step postProcess duration 687.456µs
+INFO  build:  duration 986.384116ms
+
+              │ VI  │ EN  │ JA │ ZH - CN
+──────────────┼─────┼─────┼────┼─────────
+ Pages        │ 180 │ 188 │ 10 │      10
+ Paginator    │   0 │   0 │  0 │       0
+ pages        │     │     │    │
+ Non-page     │  10 │   0 │  0 │       0
+ files        │     │     │    │
+ Static files │  78 │  78 │ 78 │      78
+ Processed    │   0 │   0 │  0 │       0
+ images       │     │     │    │
+ Aliases      │  71 │  75 │  0 │       0
+ Cleaned      │   0 │   0 │  0 │       0
+
+Total in 1105 ms

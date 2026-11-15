@@ -66,3 +66,7 @@ The verified P1-01 inventory and populated KEEP/REPLACE/REMOVE ledger are in [th
 ## P1-03 implementation decision
 
 [D-012](DECISIONS.md#d-012--owned-hugo-templates-and-incremental-compatibility) is the authoritative template, configuration and migration contract. Its prospective paths are not yet implemented. P1-04 must verify Hugo's type-specific lookup and shared-base effects; P1-09 implements the ordered migration/restore convention independently of public Hugo rendering. Known P1-02 defects and blocked external runtime checks remain open until specifically verified.
+
+## P1-05 state
+
+Site configuration now lives only in `config/_default/` (the root `hugo.toml` was folded in, effective configuration unchanged). Home-page CSS moved from the template to `assets/css/home.scss`; duplicate and dead rules left `assets/css/_custom.scss`; the comments-only `_override.scss`, the starter `custom.js`, the unused Kalman mock, the dead root `robots.txt`, tracked bytecode and the duplicate Nash video were removed with proof. See [the P1-05 report](audits/p1-05/README.md). The cleanup-ledger rows above for those files are resolved; the theme, its update workflow, the bookmark module and the remaining `media/` intermediates are still open.

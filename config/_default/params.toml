@@ -668,6 +668,8 @@ disableThemeInject = false
   # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas (https://katex.org)
   [page.math]
     enable = true
+    # rendering engine: "katex" or "mathjax" (moved from the former root hugo.toml in P1-05; the theme default is katex)
+    type = "mathjax"
     # default inline delimiter is $ ... $ and \( ... \)
     inlineLeftDelimiter = ""
     inlineRightDelimiter = ""

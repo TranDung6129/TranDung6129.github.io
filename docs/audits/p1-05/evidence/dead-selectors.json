@@ -1,0 +1,27 @@
+{
+  "method": "querySelectorAll after load in Chromium on every non-alias page",
+  "pages": 201,
+  "homePages": [
+    "/",
+    "/en/",
+    "/ja/",
+    "/zh-cn/"
+  ],
+  "totals": {
+    ".site-title": 0,
+    ".post-content": 0,
+    ".post-card": 0,
+    ".collection-navigation": 0,
+    ".right-panel": 0,
+    ".collections-panel": 0,
+    ".panel-title": 0,
+    ".custom-details": 0,
+    ".panel-title-summary": 0,
+    ".collections-list": 0,
+    "home: .collection-item": 0,
+    "home: .collection-name": 0,
+    "home: .collection-count": 0
+  },
+  "hits": [],
+  "allDead": true
+}

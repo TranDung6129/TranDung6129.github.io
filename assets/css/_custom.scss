@@ -1,7 +1,8 @@
 // ==============================
-// Custom style
-// Journal/Diary Style Theme
-// EB Garamond - Classic Scholar
+// Site style layer for The Epistemic Diary
+// Warm paper / ink / terracotta palette, Inter + Lora typography.
+// Imported last by the theme stylesheet (css/style.scss), so these rules
+// override theme defaults. Home-only rules live in css/home.scss.
 // ==============================
 
 /* 1. Import Inter và Lora từ Google Fonts */
@@ -73,7 +74,6 @@ body {
 }
 
 /* Tiêu đề thanh thoát, không cần in đậm quá mức */
-.site-title,
 h1,
 h2,
 h3,
@@ -87,8 +87,7 @@ h6 {
 }
 
 /* Tùy chỉnh riêng cho các bài viết */
-.single .content,
-.post-content {
+.single .content {
   font-family: var(--font-family-content);
   font-size: 1.15rem;
   line-height: 1.8;
@@ -111,7 +110,6 @@ h6 {
 
 /* Xóa border đứt đoạn mặc định - Chuyển sang style nhật ký */
 .summary,
-.post-card,
 article.single {
   background: transparent !important;
   box-shadow: none !important;
@@ -120,19 +118,10 @@ article.single {
 }
 
 /* Ngăn cách bài viết bằng đường kẻ mờ thay vì card */
-.summary,
-.post-card {
+.summary {
   border-bottom: 1px solid var(--border-color) !important;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-}
-
-/* Dãn dòng nội dung để đọc như sách */
-.single .content,
-.post-content {
-  font-family: var(--font-family-content);
-  line-height: 1.8;
-  font-size: 1.15rem;
 }
 
 /* Định dạng thẻ trích dẫn cho scholarly */
@@ -212,100 +201,6 @@ pre code {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Collection Sidebar Styling */
-.collection-navigation {
-  background: var(--card-bg-color);
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-
-  .collection-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-
-    &::before {
-      content: "📚";
-      margin-right: 0.5rem;
-    }
-  }
-
-  .collection-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    .collection-item {
-      margin-bottom: 0.5rem;
-
-      a {
-        display: block;
-        padding: 0.5rem 0.75rem;
-        color: var(--global-secondary-color);
-        text-decoration: none;
-        border-radius: 4px;
-        transition: all 0.2s ease;
-        font-size: 0.95rem;
-
-        &:hover {
-          background: var(--primary-color);
-          color: #161412;
-          transform: translateX(4px);
-        }
-
-        &.active {
-          background: var(--primary-color);
-          color: #161412;
-          font-weight: 500;
-        }
-      }
-
-      .post-count {
-        font-size: 0.8rem;
-        opacity: 0.7;
-        margin-left: 0.5rem;
-      }
-    }
-  }
-
-  .related-posts {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
-
-    .related-title {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      color: var(--primary-color);
-    }
-
-    .related-item {
-      margin-bottom: 0.5rem;
-
-      a {
-        display: block;
-        padding: 0.4rem 0.5rem;
-        color: var(--global-font-color);
-        text-decoration: none;
-        border-radius: 4px;
-        font-size: 0.9rem;
-        line-height: 1.3;
-
-        &:hover {
-          background: var(--card-bg-color);
-          color: var(--primary-color);
-        }
-      }
-    }
-  }
-}
-
 /* Custom collection name without prefix */
 .collection-name-custom {
   flex-grow: 1;
@@ -340,15 +235,6 @@ pre code {
   .collection-nav-simple-info {
     font-size: 0.8rem;
     color: var(--global-secondary-color);
-  }
-}
-
-/* Responsive sidebar */
-@media (max-width: 1200px) {
-  .collection-navigation {
-    position: static;
-    width: 100%;
-    margin-bottom: 1rem;
   }
 }
 

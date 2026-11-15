@@ -213,3 +213,58 @@ Working-file Git blob hashes on `feat/p1-04-hugo-templates`; registry self hash 
 | `docs/CODEBASE_MAP.md` | `9207a9ca2f516c517b1f8f5f0037d413143e8fae` | COVERED | Adds the runtime-check entry point and modification record. |
 
 Generated evidence group `docs/audits/p1-04/runtime/` (result JSON, logs, PNGs): PARTIAL, blobs listed in `docs/audits/p1-04/artifact-blobs.tsv`. Generated production output `js/lib/mathjax.min.js` (FixIt loader, config `processHtmlClass: content`, CDN `mathjax@3/es5/tex-mml-chtml.js`, `ui/safe`) was read from the build to design the harness; its source stays in the pinned theme.
+
+## 2026-11-15 — P1-05 configuration and CSS consolidation (Claude Code)
+
+Working-file Git blob hashes on `chore/p1-05-css-config-cleanup`; registry self hash is pre-append `4b2057336cfb62033551984f2560b531fcdc1fe9`.
+
+| Path | Blob | Status | Purpose, consumers, risks and verification |
+|---|---|---|---|
+| `config/_default/hugo.toml` | `667b0ee6e0911849b95acc22b39d1e1606fe0ca2` | COVERED | Title, baseURL, the two theme modules, default language `vi` (top-level `languageCode = vi` is inherited by every language), robots/emoji/GitInfo flags, `summaryLength`, ignored errors; since P1-05 also `pagination.pagerSize = 12` and the `cascade` that gives the six subject sections `type = posts`, `layout = single` (this is what selects `layouts/posts/single.html`). |
+| `config/_default/module.toml` | `aa0dcce387d347b441e346f7de90c844695c0117` | COVERED | New in P1-05: `hugoVersion` extended, min 0.147.7 (from the former root file). CI pins 0.149.0. |
+| `config/_default/markup.toml` | `27ea4718de66dfd9b4299a141dc4718b6a92016e` | COVERED | Highlight (line numbers in table, classes), Goldmark extensions incl. extras and math passthrough delimiters (moved from the root file in P1-05), parser attributes, `unsafe = true`, TOC levels 2–6; `_merge = shallow`. |
+| `config/_default/params.toml` | `a0387eee5ba6c8af0eebf6a282017c9d0852ea7b` | PARTIAL | 918-line FixIt starter parameter set (search/Fuse, header, footer, home, page, TOC, math, code, share, comments off, `customPartials.head` bookmark injector). P1-05 added `page.math.type = "mathjax"`. Mirrors many theme defaults on purpose until P1-07. Read: math, home, custom-partials sections only. |
+| `config/_default/frontmatter.toml` | `8f85808e3e66309c72feb417cd9d84f20fabb2e6` | COVERED | `lastmod` precedence `lastmod`, `:git`, `:fileModTime`, `:defalut` (typo, inert because an earlier source always resolves); fix belongs to P1-06. |
+| `config/_default/languages.toml` | `1071e660f57e9e294ef90211a8994cfe94aeb14b` | COVERED | vi/en/ja/zh-cn names and weights; `description` and `home.subtitle` for en/ja/zh-cn are FixIt starter taglines (P1-06 item). No per-language `languageCode`. |
+| `config/_default/outputs.toml` | `63a58b15da2925adc6056f74d2cabc7b4a1dc02a` | COVERED | Only `_merge = "shadow"`; output formats per kind come from the theme config. |
+| `config/_default/permalinks.toml` | `8b18d38fd627769608d762aa0ff3d579d41cc574` | COVERED | `posts = "posts/:slugorcontentbasename"`; URL-sensitive. |
+| `config/_default/privacy.toml` | `471be015253f0a04470bafc304c0b6a7bbf5ea9b` | COVERED | `x.enableDNT`, `youtube.privacyEnhanced`. The deprecated `privacy.twitter` duplicate lived only in the removed root file. |
+| `config/_default/related.toml` | `ed7b621d52758ee69d463ab07c98f7e2147c43ec` | COVERED | Related-content indices: keywords, date, tags, fragmentrefs, collections, categories. |
+| `config/_default/sitemap.toml` | `d83eff58137b8a040f735d1d46be8469889d6e5f` | COVERED | weekly, `sitemap.xml`, priority 0.5. |
+| `config/_default/taxonomies.toml` | `3daef3876726e7c944c7986e336133ca0e1b1b86` | COVERED | category/tag/collection; `_merge = shallow`. |
+| `layouts/index.html` | `26136ec862726ad916c6961ae035335237e47708` | COVERED | Home: `title`, new `custom-head` block linking `css/home.min.css` (compiled from `assets/css/home.scss`), `content` with six fixed category cards (inline SVG icons, vi/en labels chosen by `eq .Site.Language.Lang "en"`, so ja/zh-cn show Vietnamese), heatmap section calling `partial "heatmap.html"`, five recent posts from seven sections when `params.home.posts.enable`. No inline CSS since P1-05. |
+| `assets/css/home.scss` | `38085b486ad73cb6189542617e93818861b6f3f5` | COVERED | New in P1-05: 24 home-only rules (layout wrapper, section title, category grid/cards, recent posts, heatmap section, two breakpoints). Uses theme CSS variables. Loaded only on the four home pages. |
+| `assets/css/_custom.scss` | `9b97fbecc88efc486e604cf36bd73bb2ae34a292` | COVERED | Site style layer imported last by the theme stylesheet: Google Fonts imports (Inter, Lora, Caveat, JetBrains Mono), font variables, light/dark palettes, typography, blockquote, links, code, category/tag chips, collection name/nav tweaks, tables, scrollbar, selection, metadata, header, buttons, images, search and pagination radius. Duplicate and dead rules removed in P1-05; `blockquote.handwritten` is an authoring affordance with no current use. |
+| `layouts/shortcodes/react.html` | `e4c31b450139fdfa9cc3bf2ce382d0dac822f870` | PARTIAL | Unchanged; size and role confirmed while scanning for inline CSS. Not modified. |
+| `layouts/_partials/single/collection-list.html` | `f345eeccfddc33ea1db80211b3ff0ba51dc1021d` | PARTIAL | Unchanged; confirmed as the only emitter of `collection-name-custom` and `collection-nav-simple` used by `_custom.scss`. |
+| `.gitignore` | `6adcbcd82a9cd799af8172adaf7bec17d7aa136d` | COVERED | Adds `__pycache__/` and `*.pyc`. |
+| `docs/audits/p1-05/README.md` | `6acd5a296e58b77fce43016b7fefcca1bbfb579f` | COVERED | P1-05 report: changes, complete list of output differences, eight verification steps, deferred items, rollback. |
+| `docs/audits/p1-05/tools/compare-output.py` | `6832c8425547fcd9e1cf6441763f4c76e94d4736` | COVERED | Byte diff of two output trees with optional JSON report and unified diffs. |
+| `docs/audits/p1-05/tools/config-diff.py` | `16b04bbf31a9ea0c2b81678feba7051695281cc5` | COVERED | Flattens two `hugo config --format json` dumps and prints added/removed/changed dotted keys. |
+| `docs/audits/p1-05/tools/visual-compare.cjs` | `e79627a19f16c494c01fa142f2a6e94138af2b5e` | COVERED | Full-page pixel comparison of two builds across routes/widths/themes with determinism aids, retries and a serial recheck; writes `visual-results.json`. |
+| `docs/audits/p1-05/tools/make-routes.py` | `002319d89c8ef65b0dd8efd8c4297c90d5c1f5ad` | COVERED | Lists non-alias HTML routes of a build and a 22-route representative matrix for the pixel comparison. |
+| `docs/audits/p1-05/tools/dead-selectors.cjs` | `3bf3c984b2aec55d0123477ab8daf2ccfb993eec` | COVERED | Counts matches of the removed selectors on every page in Chromium. |
+| `docs/audits/p1-05/tools/home-css-rules.cjs` | `f22f4a6e9bb21f0c114b328e94761aa402d0c6b1` | COVERED | CSSOM comparison of the old inline home rules with `css/home.min.css`, stylesheet order, and element/property overlap with reordered sheets. |
+| `docs/audits/p1-04/runtime/compare.cjs` | `60e414304a4726e5cd89c684a960b65558af8e93` | COVERED | Now compares response hashes only where both runs captured the body; URL set, status and resolved version are always compared. |
+| `docs/audits/P1-01.md` | `aab2ab2b1a122fbd87be7a44385d7b47bbbd4db8` | COVERED | Unchanged; KEEP/REPLACE/REMOVE ledger used to scope P1-05. |
+| `docs/audits/p1-01/config-and-deployment.md` | `b6f438985eda4b0be844a165a995f60a2b2460c1` | COVERED | Unchanged; precedence findings reproduced and extended by the isolation diff. |
+| `docs/audits/p1-01/assets-and-content.md` | `ebf6f8c56bb7d44dae62fade0ade1f0e18665cc8` | COVERED | Unchanged; consumer evidence for the removal candidates. |
+| `archetypes/default.md` | `cb8a71478de2c36a9838c722745fa6919dddbb39` | COVERED | New-content scaffold: title from file name, empty subtitle/description/keywords, `comment: false`. |
+| `docs/CODEBASE_MAP.md` | `ca188c7d46d4baf2d07db9b1ee06bbc754d27f34` | COVERED | Config, home CSS, custom JS, Kalman, animation and robots rows updated; new regression-tooling row and modification record. |
+| `docs/ARCHITECTURE.md` | `8217fa9ae0bb67105801e1e5c3231a571c5aa8d7` | COVERED | Adds the P1-05 state note. |
+| `docs/TASK_BOARD.md` | `8b6be2396e4da598db1e65f309dfc400e868dd40` | COVERED | P1-05 DONE pending maintainer merge. |
+| `docs/AGENT_LOG.md` | `a90b13edd967322f6a65f0eea97de21d7692b0cc` | COVERED | P1-05 claim and completion entries. |
+
+**REMOVED in P1-05** (historical notes; all remain in Git history before `7d83d78`/`4d82bd4`/`0b575ae`):
+
+| Former path | Last blob | What it was and why it went |
+|---|---|---|
+| `hugo.toml` (root) | `31ba0a8a84864500f4b96eb87a744d46bbb52c77` | 1,414-line FixIt starter config. Contributed only pagination, cascade, `module.hugoVersion`, Goldmark extras/passthrough, MathJax type and deprecated `privacy.twitter`; everything else was overridden by `config/_default/` or equal to theme defaults. Replaced by `config/_default/{hugo,module,markup,params}.toml`. |
+| `assets/css/_override.scss` | — | Four comment lines; the theme ships the same fallback. |
+| `assets/js/custom.js` | — | Starter `FixItBlog` class logging a greeting; emitted as `js/custom.min.js`, no consumer. |
+| `assets/js/components/KalmanFilterSim.jsx` | — | Mock React component with no shortcode call or import. |
+| `robots.txt` (root) | — | Not a Hugo mount; duplicate of the theme template output with an `example.org` sitemap line. |
+| `manim/__pycache__/game_theory_nash.cpython-310.pyc` | — | Interpreter bytecode. |
+| `media/videos/game_theory_nash/720p30/game_theory_nash.mp4` | — | Byte-identical to `static/videos/game_theory_nash.mp4` (SHA-256 `10a2da74…145b`). |
+
+Vendor theme files read for this task (pinned FixIt `f5fb989`, PARTIAL): `assets/css/style.scss` (import order: variables, override, mixins, core, page, media, patch, custom), `assets/css/_override.scss` and `_custom.scss` (comment-only fallbacks), `layouts/_partials/plugin/style.html` (stylesheet helper: resource, template, toCSS, minify, fingerprint, preload), `layouts/_partials/head/link.html` (icons, canonical, prev/next, alternates, config/style/Font Awesome/Animate links), `layouts/_partials/assets.html` lines 285–320 (config script, theme script, optional `js/custom.js`, per-page styles), `layouts/robots.txt` (robots template). Generated evidence under `docs/audits/p1-05/evidence/`: PARTIAL, described in the report.
