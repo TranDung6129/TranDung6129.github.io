@@ -21,6 +21,12 @@
 ## D-007 — Multi-agent execution
 **Accepted:** TASK_BOARD.md is canonical. Claims, evidence, blockers and completion logs are mandatory; one branch/PR per narrow task; separate integration authority.
 
+## D-008 — Visual asset provenance and original editorial style
+**Accepted direction:** hybrid original/AI-assisted art, code-generated scientific figures and license-verified real photography. Never misrepresent synthetic imagery as documentary evidence. Maintain a provenance/license manifest. No final homepage wireframe approved. See [VISUAL_ASSET_GUIDELINES.md](VISUAL_ASSET_GUIDELINES.md).
+
+## D-009 — Architecture proportional to product needs
+**Accepted direction:** no mandatory database/backend for Hugo public content; future subscriptions/auth/private files only via trusted services and validated security model. Git, small changes, server-side authorization, backups/migrations where relevant, CI/CD and privacy/legal review. See [ENGINEERING_STANDARDS.md](ENGINEERING_STANDARDS.md).
+
 ## Decision proposal template
 ### D-XXX — Name
 - Status: PROPOSED / ACCEPTED / REJECTED / SUPERSEDED

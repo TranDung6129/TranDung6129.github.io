@@ -8,8 +8,10 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 3. docs/TASK_BOARD.md
 4. docs/ARCHITECTURE.md
 5. docs/DESIGN_SYSTEM.md
-6. docs/QUALITY_GATES.md
-7. Docs relevant to the assigned task: CONTENT_MODEL, EDITORIAL_VOICE, SEO_AND_MONETIZATION, DECISIONS.
+6. docs/VISUAL_ASSET_GUIDELINES.md
+7. docs/ENGINEERING_STANDARDS.md
+8. docs/QUALITY_GATES.md
+9. Docs relevant to the assigned task: CONTENT_MODEL, EDITORIAL_VOICE, SEO_AND_MONETIZATION, DECISIONS.
 
 ## Product and scope
 - Brand: **The Epistemic Diary**. Do not rebrand as a personal-name blog. Personal name may appear only in bylines/About.
@@ -35,6 +37,8 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 - Never expose premium plaintext in generated public HTML; client-side hiding is not a paywall.
 - External links and future affiliate material require honest labeling. Never fabricate product tests, prices, citations, traffic, or freshness claims.
 - Use semantic HTML and keyboard-accessible controls; respect reduced-motion preferences.
+- Follow docs/VISUAL_ASSET_GUIDELINES.md: original/look-consistent images, provable commercial-use rights and truthful documentary imagery.
+- Follow docs/ENGINEERING_STANDARDS.md: proportional architecture; no speculative backend/database; secrets and authorization reviewed; controlled migrations/backup where applicable.
 - Do not automatically check off project-wide acceptance solely because a local task passed.
 
 ## Handoff format (append to docs/AGENT_LOG.md)
