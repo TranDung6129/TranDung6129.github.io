@@ -23,6 +23,7 @@
 | Browser custom JS | `assets/js/custom.js` | FixIt asset pipeline | Starter greeting is emitted; verify consumers before removal |
 | Logos, avatars, published videos | `static/images/`, `static/videos/` | `content/about/images/`, params, media library | Published URL may exist even when not referenced in Markdown |
 | Scientific animation source | `manim/game_theory_nash.py` | `media/` intermediates; published MP4 under `static/videos/` | `media/` tracked generated files; content poster missing, documented in audit |
+| Pre-migration baseline / regression evidence | `docs/audits/P1-02.md`, `docs/audits/p1-02/static/analyze.py`, `test_analyzer.py`, `browser/baseline.cjs` | Frozen P1-01 routes, generated production output, system Chromium + external Playwright install | Capture known defects separately from passing invariants; no runtime source changes; local timings are not field CWV |
 | Search, RSS, sitemap, robots | `config/_default/params.toml`, `outputs.toml`, `sitemap.toml`, root `hugo.toml` | FixIt search/robots templates | Retain outputs and paths; test generated HTML and index files |
 | GitHub Pages builds | `.github/workflows/deploy.yml` | `package.json`, Hugo config, submodules | Action currently pinned Hugo 0.149.0; PR-triggered CI not present at audit |
 | Theme updates | `.github/workflows/update-theme.yml` | `.gitmodules`, `.github/dependabot.yml` | Remove only after theme replacement verified; adjust deploy workflow_run coupling |
@@ -53,6 +54,7 @@
 ## Modification record template (append short entries here, most recent first)
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
+| 2026-11-15 | P1-02 baseline | Test/evidence entrypoints | New `docs/audits/p1-02/` | Static route/link/metadata fixture + Chromium capture; no application owner moved |
 | 2026-11-15 | P1-01 audit / PR #13 | Inventory only | No runtime path changed | 645 emitted files unchanged per audit |
 
 **Maintenance rule:** any PR that renames, adds, deletes or changes responsibility of a component MUST update this map. Reviewer should request changes if navigation docs are stale. Keep it concise: this is a routing index, not copied source code.

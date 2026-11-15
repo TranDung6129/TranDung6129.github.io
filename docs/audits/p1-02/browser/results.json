@@ -1,0 +1,981 @@
+{
+  "method": "Single-run headless Chromium against unmodified production output served by python http.server on localhost:1314; normal external requests retained; no production-origin rewrites, trust bypass, CPU/network throttle or field CWV claim.",
+  "browser": "156.0.8078.79",
+  "screenshots": [
+    {
+      "file": "home-360-light.png",
+      "width": 360,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-360-light.png",
+      "width": 360,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-360-dark.png",
+      "width": 360,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-360-dark.png",
+      "width": 360,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-768-light.png",
+      "width": 768,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-768-light.png",
+      "width": 768,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-768-dark.png",
+      "width": 768,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-768-dark.png",
+      "width": 768,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "reactDisplay": "none",
+      "mobileFallback": "block"
+    },
+    {
+      "file": "home-1024-light.png",
+      "width": 1024,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1024-light.png",
+      "width": 1024,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    },
+    {
+      "file": "home-1024-dark.png",
+      "width": 1024,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1024-dark.png",
+      "width": 1024,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    },
+    {
+      "file": "home-1440-light.png",
+      "width": 1440,
+      "scheme": "light",
+      "route": "/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1440-light.png",
+      "width": 1440,
+      "scheme": "light",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": null,
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    },
+    {
+      "file": "home-1440-dark.png",
+      "width": 1440,
+      "scheme": "dark",
+      "route": "/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": null,
+      "mobileFallback": null
+    },
+    {
+      "file": "nash-1440-dark.png",
+      "width": 1440,
+      "scheme": "dark",
+      "route": "/kinh-te/game_theory_nash/",
+      "bodyTheme": "dark",
+      "horizontalOverflow": false,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "reactDisplay": "block",
+      "mobileFallback": "none"
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "lang": "vi",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 292.40000000037253,
+            "domContentLoaded": 285.6000000005588,
+            "load": 292.40000000037253,
+            "transferSize": 27131
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 144
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 144
+          }
+        ],
+        "resources": 26
+      }
+    },
+    {
+      "route": "/en/",
+      "status": 200,
+      "lang": "en",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/en/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 95.79999999981374,
+            "domContentLoaded": 85.8999999994412,
+            "load": 95.79999999981374,
+            "transferSize": 26818
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 68
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 68
+          }
+        ],
+        "resources": 26
+      }
+    },
+    {
+      "route": "/ja/",
+      "status": 200,
+      "lang": "ja",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/ja/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 92.79999999981374,
+            "domContentLoaded": 59.299999999813735,
+            "load": 92.79999999981374,
+            "transferSize": 20491
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 60
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 60
+          }
+        ],
+        "resources": 26
+      }
+    },
+    {
+      "route": "/zh-cn/",
+      "status": 200,
+      "lang": "zh-cn",
+      "title": "The Epistemic Diary",
+      "h1": 0,
+      "canonical": "https://trandung6129.github.io/zh-cn/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 74.3999999994412,
+            "domContentLoaded": 72.79999999981374,
+            "load": 74.3999999994412,
+            "transferSize": 20301
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 84
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 84
+          }
+        ],
+        "resources": 26
+      }
+    },
+    {
+      "route": "/kinh-te/game_theory_nash/",
+      "status": 200,
+      "lang": "vi",
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/kinh-te/game_theory_nash/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 24,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d="
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 394.70000000018626,
+            "domContentLoaded": 195.6000000005588,
+            "load": 394.70000000018626,
+            "transferSize": 54500
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 100
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 100
+          }
+        ],
+        "resources": 28
+      }
+    },
+    {
+      "route": "/en/kinh-te/game_theory_nash/",
+      "status": 200,
+      "lang": "en",
+      "title": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/en/kinh-te/game_theory_nash/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 24,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d="
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 215.8999999994412,
+            "domContentLoaded": 96.20000000018626,
+            "load": 215.8999999994412,
+            "transferSize": 54246
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 120
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 120
+          }
+        ],
+        "resources": 29
+      }
+    },
+    {
+      "route": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "status": 200,
+      "lang": "vi",
+      "title": "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 1,
+      "tocLinks": 38,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d="
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 94.5,
+            "domContentLoaded": 86.80000000074506,
+            "load": 94.5,
+            "transferSize": 68878
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 88
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 88
+          }
+        ],
+        "resources": 25
+      }
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "lang": "vi",
+      "title": "About - The Epistemic Diary",
+      "h1": 1,
+      "canonical": "https://trandung6129.github.io/about/",
+      "mathContainers": 0,
+      "mathLoader": true,
+      "codeBlocks": 0,
+      "tocLinks": 0,
+      "images": [
+        "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+        "http://127.0.0.1:1314/about/images/philosophy.png"
+      ],
+      "performance": {
+        "navigation": [
+          {
+            "duration": 280.6000000005588,
+            "domContentLoaded": 120.6000000005588,
+            "load": 280.6000000005588,
+            "transferSize": 22019
+          }
+        ],
+        "paint": [
+          {
+            "name": "first-paint",
+            "startTime": 180
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 180
+          }
+        ],
+        "resources": 30
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "Nash preset state updates (vi)",
+      "passed": true,
+      "before": [
+        "Pure-strategy NE: (Bottom, Right)"
+      ],
+      "after": "Equilibrium Analysis\nPure-strategy NE: None\nMixed-strategy NE: p* = 0.500, q* = 0.500→ U₁ = 0.000, U₂ = 0.000\n"
+    },
+    {
+      "name": "Nash payoff keyboard slider",
+      "passed": true,
+      "before": "1",
+      "after": "1.5"
+    },
+    {
+      "name": "TOC anchor navigation",
+      "passed": true,
+      "href": "#1-motivation-why-do-we-need-game-theory",
+      "url": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory"
+    },
+    {
+      "name": "Theme toggle changes html data-theme",
+      "passed": true,
+      "before": null,
+      "after": "dark"
+    },
+    {
+      "name": "Theme choice survives reload",
+      "passed": true,
+      "theme": "dark"
+    },
+    {
+      "name": "Desktop search returns Nash results",
+      "passed": true,
+      "count": 1,
+      "text": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points\n2025-08-01\nYour browser does not support the video tag. 1. Motivation: Why Do We Need Game Theory? Classical optimization asks: given an objective function, find its maximiser. The catch — the objective function depends solely on your ow"
+    },
+    {
+      "name": "Fenced code rendered",
+      "passed": true,
+      "blocks": 1,
+      "copyControls": 1
+    },
+    {
+      "name": "Code copy writes clipboard",
+      "passed": true,
+      "characters": 311,
+      "prefix": "def vertex_cover_approx(G):\n    cover = set()\n    edges = G.edges.copy()\n    \n    while edges:\n        u, v = edges.pop("
+    }
+  ],
+  "errors": [
+    {
+      "page": "http://127.0.0.1:1314/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "http://127.0.0.1:1314/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "http://127.0.0.1:1314/en/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "http://127.0.0.1:1314/ja/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "http://127.0.0.1:1314/zh-cn/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/kinh-te/game_theory_nash/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/about/",
+      "url": "http://127.0.0.1:1314/about/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "message": "CalHeatMap is not defined"
+    }
+  ],
+  "requestsFailed": [
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://d3js.org/d3.v3.min.js",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "https://d3js.org/d3.v3.min.js",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "https://d3js.org/d3.v3.min.js",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "https://d3js.org/d3.v3.min.js",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/about/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/about/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/about/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/about/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/about/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "http://127.0.0.1:1314/videos/game_theory_nash.mp4",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://d3js.org/d3.v3.min.js",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+      "error": "net::ERR_TUNNEL_CONNECTION_FAILED"
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+      "error": "net::ERR_CERT_AUTHORITY_INVALID"
+    }
+  ]
+}

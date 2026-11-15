@@ -1,0 +1,5217 @@
+[
+  {
+    "source": "/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "static/images/logoted.png"
+  },
+  {
+    "source": "/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/about/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "about/static/images/logoted.png"
+  },
+  {
+    "source": "/about/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/about/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "archives/static/images/logoted.png"
+  },
+  {
+    "source": "/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/applied-mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/applied-mathematics/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/applied-mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/applied-mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/ca-nhan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/ca-nhan/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/ca-nhan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/ca-nhan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/education/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/education/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/education/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/education/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/khoa-hoc-may-tinh/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/programming/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/toan-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/travel/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/triet-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/tutorial/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/tutorial/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/tutorial/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/tutorial/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/categories/vat-ly/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "categories/vat-ly/static/images/logoted.png"
+  },
+  {
+    "source": "/categories/vat-ly/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/categories/vat-ly/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/collections/hugo-tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "collections/hugo-tutorials/static/images/logoted.png"
+  },
+  {
+    "source": "/collections/hugo-tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/collections/hugo-tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "collections/static/images/logoted.png"
+  },
+  {
+    "source": "/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/collections/programming-tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "collections/programming-tips/static/images/logoted.png"
+  },
+  {
+    "source": "/collections/programming-tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/collections/programming-tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/collections/toán-cơ-bản-cho-kinh-tế/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "collections/toán-cơ-bản-cho-kinh-tế/static/images/logoted.png"
+  },
+  {
+    "source": "/collections/toán-cơ-bản-cho-kinh-tế/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/collections/toán-cơ-bản-cho-kinh-tế/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/collections/travel-guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "collections/travel-guides/static/images/logoted.png"
+  },
+  {
+    "source": "/collections/travel-guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/collections/travel-guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/collections/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "collections/web-development/static/images/logoted.png"
+  },
+  {
+    "source": "/collections/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/collections/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/static/images/logoted.png"
+  },
+  {
+    "source": "/en/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/about/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/about/static/images/logoted.png"
+  },
+  {
+    "source": "/en/about/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/about/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/archives/static/images/logoted.png"
+  },
+  {
+    "source": "/en/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/applied-mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/applied-mathematics/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/applied-mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/applied-mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/ca-nhan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/ca-nhan/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/ca-nhan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/ca-nhan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/economics/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/education/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/education/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/education/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/education/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/khoa-hoc-may-tinh/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/mathematics/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/programming/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/toan-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/travel/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/triet-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/tutorial/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/tutorial/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/tutorial/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/tutorial/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/categories/vat-ly/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/categories/vat-ly/static/images/logoted.png"
+  },
+  {
+    "source": "/en/categories/vat-ly/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/categories/vat-ly/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/collections/basic-mathematics-for-economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/collections/basic-mathematics-for-economics/static/images/logoted.png"
+  },
+  {
+    "source": "/en/collections/basic-mathematics-for-economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/collections/basic-mathematics-for-economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/collections/hugo-tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/collections/hugo-tutorials/static/images/logoted.png"
+  },
+  {
+    "source": "/en/collections/hugo-tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/collections/hugo-tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/collections/static/images/logoted.png"
+  },
+  {
+    "source": "/en/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/collections/programming-tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/collections/programming-tips/static/images/logoted.png"
+  },
+  {
+    "source": "/en/collections/programming-tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/collections/programming-tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/collections/toán-cơ-bản-cho-kinh-tế/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/collections/toán-cơ-bản-cho-kinh-tế/static/images/logoted.png"
+  },
+  {
+    "source": "/en/collections/toán-cơ-bản-cho-kinh-tế/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/collections/toán-cơ-bản-cho-kinh-tế/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/collections/travel-guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/collections/travel-guides/static/images/logoted.png"
+  },
+  {
+    "source": "/en/collections/travel-guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/collections/travel-guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/collections/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/collections/web-development/static/images/logoted.png"
+  },
+  {
+    "source": "/en/collections/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/collections/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/static/images/logoted.png"
+  },
+  {
+    "source": "/en/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/khoa-hoc-may-tinh/complexity-theory-quantum/static/images/logoted.png"
+  },
+  {
+    "source": "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/khoa-hoc-may-tinh/static/images/logoted.png"
+  },
+  {
+    "source": "/en/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/co-gian-cung-cau-cong-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/co-gian-cung-cau-cong-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/co-gian-cung-cau-cong-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/co-gian-cung-cau-cong-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/doanh-thu-co-gian-dinh-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/game_theory_nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/game_theory_nash/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/game_theory_nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/game_theory_nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/game_theory_nash/",
+    "element": "video",
+    "attribute": "poster",
+    "url": "/images/game_theory_nash_poster.png",
+    "target": "images/game_theory_nash_poster.png"
+  },
+  {
+    "source": "/en/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/ly-thuyet-tro-choi-nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/ly-thuyet-tro-choi-nash/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/ly-thuyet-tro-choi-nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/ly-thuyet-tro-choi-nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-1/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/toan-co-ban-1/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-1/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-1/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-2/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/toan-co-ban-2/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-2/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-2/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-3/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/toan-co-ban-3/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-3/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-3/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-4/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/toan-co-ban-4/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-4/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-4/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-5/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/kinh-te/toan-co-ban-5/static/images/logoted.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-5/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/kinh-te/toan-co-ban-5/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/offline/static/images/logoted.png"
+  },
+  {
+    "source": "/en/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/ai/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/ai/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/ai/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/ai/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/best-practices/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/best-practices/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/best-practices/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/best-practices/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/calculus/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/calculus/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/calculus/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/calculus/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/career/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/career/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/career/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/career/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/chien-luoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/chien-luoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/chien-luoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/chien-luoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/collections/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/complexity/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/complexity/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/complexity/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/complexity/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/courses/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/courses/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/courses/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/courses/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/crypto/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/crypto/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/crypto/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/crypto/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/css/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/css/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/css/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/css/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/dai-so-tuyen-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/dai-so-tuyen-tinh/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/dai-so-tuyen-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/dai-so-tuyen-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/doanh-thu/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/doanh-thu/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/doanh-thu/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/doanh-thu/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/economics-math/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/economics-math/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/economics-math/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/economics-math/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/economics/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/game-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/game-theory/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/game-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/game-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/guides/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/hien-tuong-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/html/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/html/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/html/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/html/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/hugo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/hugo/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/hugo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/hugo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/husserl/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/husserl/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/husserl/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/husserl/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/international/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/international/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/international/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/international/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/javascript/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/javascript/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/javascript/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/javascript/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/lagrange/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/lagrange/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/lagrange/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/lagrange/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/lap-trinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/lap-trinh/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/lap-trinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/lap-trinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/learning/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/learning/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/learning/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/learning/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/ly-thuyet-so/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/ly-thuyet-so/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/ly-thuyet-so/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/ly-thuyet-so/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/ly-thuyet-tro-choi/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/ly-thuyet-tro-choi/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/ly-thuyet-tro-choi/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/ly-thuyet-tro-choi/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/ma-tran/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/ma-tran/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/ma-tran/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/ma-tran/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/mathematics/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/nash/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/nhan-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/nhan-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/nhan-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/nhan-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/optimization/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/optimization/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/optimization/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/optimization/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/phan-tich/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/phan-tich/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/phan-tich/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/phan-tich/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/programming/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/quantum/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/riemann/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/riemann/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/riemann/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/riemann/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/so-nguyen-to/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/so-nguyen-to/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/so-nguyen-to/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/so-nguyen-to/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/static-site/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/static-site/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/static-site/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/static-site/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/thuat-toan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/thuat-toan/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/thuat-toan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/thuat-toan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/tips/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/toan-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/toan-kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/toan-kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/toan-kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/toan-kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/toi-uu-hoa/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/toi-uu-hoa/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/toi-uu-hoa/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/toi-uu-hoa/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/travel/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/triet-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/tutorials/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/vi-mo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/vi-mo/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/vi-mo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/vi-mo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/vi-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/vi-phan/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/vi-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/vi-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/vi-tich-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/vi-tich-phan/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/vi-tich-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/vi-tich-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/vietnam/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/vietnam/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/vietnam/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/vietnam/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/web-development/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/tags/y-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/tags/y-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/tags/y-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/tags/y-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/toan-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/toan-hoc/riemann-hypothesis-number-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/toan-hoc/riemann-hypothesis-number-theory/static/images/logoted.png"
+  },
+  {
+    "source": "/en/toan-hoc/riemann-hypothesis-number-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/toan-hoc/riemann-hypothesis-number-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/triet-hoc/husserl-hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/triet-hoc/husserl-hien-tuong-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/triet-hoc/husserl-hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/triet-hoc/husserl-hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/en/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "en/triet-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/en/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/en/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "static/images/logoted.png"
+  },
+  {
+    "source": "/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "ja/static/images/logoted.png"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "ja/archives/static/images/logoted.png"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "ja/categories/static/images/logoted.png"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "ja/collections/static/images/logoted.png"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "ja/static/images/logoted.png"
+  },
+  {
+    "source": "/ja/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/ja/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "ja/offline/static/images/logoted.png"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "ja/tags/static/images/logoted.png"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/web-development/",
+    "target": "ja/collections/web-development/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/travel-guides/",
+    "target": "ja/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/programming-tips/",
+    "target": "ja/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/collections/hugo-tutorials/",
+    "target": "ja/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/ja/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/ja/about/",
+    "target": "ja/about/index.html"
+  },
+  {
+    "source": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "khoa-hoc-may-tinh/complexity-theory-quantum/static/images/logoted.png"
+  },
+  {
+    "source": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/khoa-hoc-may-tinh/complexity-theory-quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "khoa-hoc-may-tinh/static/images/logoted.png"
+  },
+  {
+    "source": "/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/khoa-hoc-may-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/co-gian-cung-cau-cong-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/co-gian-cung-cau-cong-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/co-gian-cung-cau-cong-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/co-gian-cung-cau-cong-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/doanh-thu-co-gian-dinh-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/game_theory_nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/game_theory_nash/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/game_theory_nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/game_theory_nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/game_theory_nash/",
+    "element": "video",
+    "attribute": "poster",
+    "url": "/images/game_theory_nash_poster.png",
+    "target": "images/game_theory_nash_poster.png"
+  },
+  {
+    "source": "/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/ly-thuyet-tro-choi-nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/ly-thuyet-tro-choi-nash/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/ly-thuyet-tro-choi-nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/ly-thuyet-tro-choi-nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-1/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/toan-co-ban-1/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-1/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-1/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-2/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/toan-co-ban-2/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-2/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-2/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-3/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/toan-co-ban-3/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-3/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-3/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-4/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/toan-co-ban-4/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-4/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-4/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-5/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "kinh-te/toan-co-ban-5/static/images/logoted.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-5/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/kinh-te/toan-co-ban-5/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "offline/static/images/logoted.png"
+  },
+  {
+    "source": "/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/ai/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/ai/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/ai/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/ai/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/best-practices/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/best-practices/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/best-practices/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/best-practices/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/career/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/career/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/career/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/career/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/chien-luoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/chien-luoc/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/chien-luoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/chien-luoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/collections/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/complexity/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/complexity/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/complexity/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/complexity/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/courses/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/courses/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/courses/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/courses/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/crypto/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/crypto/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/crypto/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/crypto/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/css/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/css/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/css/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/css/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/dai-so-tuyen-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/dai-so-tuyen-tinh/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/dai-so-tuyen-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/dai-so-tuyen-tinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/doanh-thu/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/doanh-thu/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/doanh-thu/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/doanh-thu/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/economics/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/economics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/game-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/game-theory/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/game-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/game-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/guides/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/guides/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/hien-tuong-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/html/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/html/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/html/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/html/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/hugo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/hugo/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/hugo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/hugo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/husserl/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/husserl/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/husserl/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/husserl/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/international/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/international/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/international/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/international/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/javascript/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/javascript/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/javascript/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/javascript/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/lagrange/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/lagrange/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/lagrange/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/lagrange/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/lap-trinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/lap-trinh/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/lap-trinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/lap-trinh/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/learning/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/learning/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/learning/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/learning/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/ly-thuyet-so/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/ly-thuyet-so/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/ly-thuyet-so/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/ly-thuyet-so/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/ly-thuyet-tro-choi/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/ly-thuyet-tro-choi/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/ly-thuyet-tro-choi/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/ly-thuyet-tro-choi/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/ma-tran/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/ma-tran/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/ma-tran/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/ma-tran/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/mathematics/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/mathematics/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/nash/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/nash/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/nhan-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/nhan-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/nhan-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/nhan-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/optimization/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/optimization/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/optimization/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/optimization/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/phan-tich/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/phan-tich/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/phan-tich/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/phan-tich/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/programming/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/programming/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/quantum/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/quantum/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/riemann/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/riemann/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/riemann/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/riemann/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/so-nguyen-to/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/so-nguyen-to/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/so-nguyen-to/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/so-nguyen-to/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/static-site/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/static-site/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/static-site/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/static-site/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/thuat-toan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/thuat-toan/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/thuat-toan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/thuat-toan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/tips/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/tips/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/toan-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/toan-kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/toan-kinh-te/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/toan-kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/toan-kinh-te/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/toi-uu-hoa/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/toi-uu-hoa/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/toi-uu-hoa/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/toi-uu-hoa/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/travel/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/travel/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/triet-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/tutorials/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/tutorials/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/vi-mo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/vi-mo/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/vi-mo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/vi-mo/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/vi-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/vi-phan/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/vi-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/vi-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/vi-tich-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/vi-tich-phan/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/vi-tich-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/vi-tich-phan/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/vietnam/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/vietnam/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/vietnam/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/vietnam/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/web-development/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/web-development/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/tags/y-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "tags/y-thuc/static/images/logoted.png"
+  },
+  {
+    "source": "/tags/y-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/tags/y-thuc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "toan-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/toan-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/toan-hoc/riemann-hypothesis-number-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "toan-hoc/riemann-hypothesis-number-theory/static/images/logoted.png"
+  },
+  {
+    "source": "/toan-hoc/riemann-hypothesis-number-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/toan-hoc/riemann-hypothesis-number-theory/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/triet-hoc/husserl-hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "triet-hoc/husserl-hien-tuong-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/triet-hoc/husserl-hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/triet-hoc/husserl-hien-tuong-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "triet-hoc/static/images/logoted.png"
+  },
+  {
+    "source": "/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/triet-hoc/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "zh-cn/static/images/logoted.png"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/404.html",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "zh-cn/archives/static/images/logoted.png"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/archives/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "zh-cn/categories/static/images/logoted.png"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/categories/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "zh-cn/collections/static/images/logoted.png"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/collections/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "zh-cn/static/images/logoted.png"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "zh-cn/offline/static/images/logoted.png"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/offline/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "static/images/logoted.png",
+    "target": "zh-cn/tags/static/images/logoted.png"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/apple-touch-icon.png",
+    "target": "apple-touch-icon.png"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "link",
+    "attribute": "href",
+    "url": "/safari-pinned-tab.svg",
+    "target": "safari-pinned-tab.svg"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/web-development/",
+    "target": "zh-cn/collections/web-development/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/travel-guides/",
+    "target": "zh-cn/collections/travel-guides/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/programming-tips/",
+    "target": "zh-cn/collections/programming-tips/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/collections/hugo-tutorials/",
+    "target": "zh-cn/collections/hugo-tutorials/index.html"
+  },
+  {
+    "source": "/zh-cn/tags/",
+    "element": "a",
+    "attribute": "href",
+    "url": "/zh-cn/about/",
+    "target": "zh-cn/about/index.html"
+  }
+]
