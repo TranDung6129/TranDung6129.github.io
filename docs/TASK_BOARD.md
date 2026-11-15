@@ -7,7 +7,7 @@
 | Check | ID | Task / acceptance | Depends | Status | Owner |
 |---|---|---|---|---|---|
 | [x] | P1-01 | Inventory all files, deployments, config precedence, active assets/shortcodes/theme use; publish KEEP/REPLACE/REMOVE matrix with proof | — | DONE | Codex (PR #13 accepted) |
-| [ ] | P1-02 | Capture baseline: Hugo version/build, route list, language variants, RSS/search/math/code/TOC/theme behaviors, broken links, current performance | P1-01 | BLOCKED | Codex integrator (PR API egress) |
+| [x] | P1-02 | Capture baseline: Hugo version/build, route list, language variants, RSS/search/math/code/TOC/theme behaviors, broken links, current performance | P1-01 | DONE | Codex (PR #17 reviewed and merged; existing defects logged) |
 | [ ] | P1-03 | Decide custom Hugo template architecture, configuration model and migration strategy; record decision | P1-01, P1-02 | TODO | — |
 | [ ] | P1-04 | Implement base, header/footer, section/single templates and compatibility layer; build passes while old functionality remains | P1-03 | TODO | — |
 | [ ] | P1-05 | Consolidate duplicate CSS and configuration; remove only demonstrably unused packages/old overrides, with proof | P1-04 | TODO | — |
