@@ -404,3 +404,8 @@ other = "Cited in"
 [ed_chapterCount]
 one = "{{ .Count }} chapter"
 other = "{{ .Count }} chapters"
+
+[ed_sectionLink]
+other = "Link to this section"
+[ed_activityLabel]
+other = "Calendar of essays published per day over six months"

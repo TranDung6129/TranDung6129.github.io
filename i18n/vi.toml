@@ -403,3 +403,8 @@ other = "Tuyển chọn biên tập từ các tài liệu được trích dẫn 
 other = "Được trích dẫn trong"
 [ed_chapterCount]
 other = "{{ .Count }} chương"
+
+[ed_sectionLink]
+other = "Liên kết tới mục này"
+[ed_activityLabel]
+other = "Lịch số bài viết được đăng mỗi ngày trong sáu tháng"
