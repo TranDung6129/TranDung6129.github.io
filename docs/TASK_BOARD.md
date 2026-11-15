@@ -14,7 +14,7 @@
 | [ ] | P1-06 | Adopt content metadata/schema and SEO defaults without breaking permalinks or translations | P1-03, P1-04 | TODO | — |
 | [ ] | P1-07 | Verify parity and safely remove FixIt/unused submodules and obsolete theme update workflow | P1-04, P1-05, P1-06 | TODO | — |
 | [ ] | P1-08 | Final Phase-1 regression, rollback notes, deployment smoke test and sign-off | P1-02, P1-07, P1-09 | TODO | — |
-| [ ] | P1-09 | PostgreSQL foundation: review schema boundary, local dev setup, versioned migration, seed/demo data, env.example, connection/migration tests and backup/restore drill; no live auth/payments/hosted provision claim | P1-03 | TODO | — |
+| [ ] | P1-09 | PostgreSQL foundation: review schema boundary, local dev setup, versioned migration, seed/demo data, env.example, connection/migration tests and backup/restore drill; no live auth/payments/hosted provision claim | P1-03 | IN PROGRESS | Codex |
 
 ## Phase 2 — Editorial design system
 
