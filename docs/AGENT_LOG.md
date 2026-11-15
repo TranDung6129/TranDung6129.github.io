@@ -244,3 +244,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 ### 2026-11-15 — P2-03 integrated navigation verification
 - **Status:** DONE for review-only navigation behavior; owner visual approval remains pending. Branch code `feat/p2-03-navigation`, claim `ce9d298`; verification on stacked P2-05 composition.
 - **Tests:** Focused `scripts/test-editorial-navigation.cjs` PASS: mobile menu/Escape/focus, theme persistence, delayed search stale-result race, real Nash search and search Escape. Independent Playwright integrated run recorded 80/80 interaction/layout checks and working anchors across 360/390/768/1024/1440 light/dark; no console/network errors observed. Full accessibility audit and owner aesthetic sign-off are not claimed. One unrelated scrollable code region needed keyboard focus; fix tracked in P2-06.
+
+### 2026-11-15 — P2-06 claim — Codex
+- **Status:** IN PROGRESS; P2-02–05 prototype checkpoints complete on stacked branches.
+- **Branch:** `feat/p2-06-review`, stacked on P2-05.
+- **Scope:** Integrated screenshot, keyboard, reduced-motion, contrast/accessibility and performance review; owner visual sign-off required.
