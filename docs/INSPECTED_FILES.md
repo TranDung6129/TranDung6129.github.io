@@ -169,7 +169,8 @@ Hashes are working-file Git blobs at review (registry self hash is pre-append); 
 | `docs/DECISIONS.md` | `2b7ef6689ae4c070cd2502f8e5a69adc4e520c32` | D-013 records schema and operational choices under D-010/D-012; no hosted or production authorization. |
 | `docs/CODEBASE_MAP.md` | `34a011a8f0d276f839156c3570cbb2984e687fa3` | Database row and change record now identify actual local DB entrypoints and boundaries. |
 | `docs/TASK_BOARD.md` | `0f7f980edfb4bddcc2bf2f5715784ce8d572c433` | P1-09 DONE on feature branch following independent verification; P1-04–07 untouched; P1-08 dependencies remain. |
-| `docs/AGENT_LOG.md` | `1f15731754637878f19cc32062d99a781bce8dbd` | Append-only P1-09 claim, completion evidence, contributor provenance and limitations; review/merge remains separate. |
+| `docs/AGENT_LOG.md` | `0e33a756066a5ead88ecfa5427539d3417bea9a1` | Append-only P1-09 claim, completion evidence, contributor provenance and limitations; review/merge remains separate. |
+| `docs/audits/p1-09/PR_BODY.md` | `6ca6f17bbdd873096e0704df7042868e8bbe8fb9` | Prepared scoped PR description with tests and limitations; actual GitHub PR remains uncreated due API Forbidden. |
 | `docs/audits/p1-09/README.md` | `706f6dfa2823bb11633065dc14e2ed4c0e79b395` | Exact local DB and Hugo test commands, output artifacts, observed Docker digest and limitations. |
 | `docs/INSPECTED_FILES.md` | `e596c21f1d9486592d4e8c0984b7c0c47cf22eb4` | Revision-aware inspected-file registry; self hash records pre-append working blob. |
 | `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Multi-agent claim, checks, scope, and documentation/registry safeguards. |
