@@ -1,6 +1,6 @@
 # Editorial specimen — owner review
 
-**Status: DIRECTION APPROVED; FINAL VISUAL SIGN-OFF PENDING.** The owner approved the existing layout, spacing, hierarchy, colors and component structure as design direction. The artwork v2 integration and typography comparison still require owner review. This remains an isolated Hugo specimen, not a deployed homepage. P1-08 remains BLOCKED because the public site could not be reached through the environment proxy. No live-site behavior is inferred from the local preview.
+**Status: OWNER-ACCEPTED FOR PHASE 2 (REVERSIBLE).** The owner approved the existing layout, spacing, hierarchy, colors and component structure as design direction. Owner approved this reversible Phase 2 milestone and selected Source Serif 4 for reading and Newsreader for headings; prototype remains isolated, not a homepage deploy. This remains an isolated Hugo specimen, not a deployed homepage. P1-08 remains BLOCKED because the public site could not be reached through the environment proxy. No live-site behavior is inferred from the local preview.
 
 ## View the working prototype
 
@@ -70,3 +70,7 @@ python3 docs/design/check-token-contrast.py
 ```
 
 The original test dependencies were installed separately under `/tmp/p1-02-browser` and `/tmp/p2-qa`; these commands use one equivalent temporary prefix. Do not add browser libraries to production dependencies solely for this review. Normal Chrome TLS behavior is retained. A full production build and comparison of all 647 output bytes passed; [comparison](review/production-retention.json).
+
+
+## Owner final acceptance — 2026-11-15
+Approved the v2 artwork and overall Phase 2 design, with **Source Serif 4 for reading text** and **Newsreader for headings**. Any later design corrections must use reversible PRs. Existing production homepage is unchanged pending Phase 3 migration; P1-08 live smoke is independent and still BLOCKED.

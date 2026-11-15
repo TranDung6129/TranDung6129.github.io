@@ -23,7 +23,8 @@
   --ed-shadow: 0 0.6rem 1.8rem rgb(0 0 0 / 0.24);
 }
 :root {
-  --ed-serif: Georgia, 'Times New Roman', serif;
+  --ed-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --ed-display: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
   --ed-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
   --ed-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --ed-type-xs: 0.75rem;
