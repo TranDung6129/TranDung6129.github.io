@@ -215,3 +215,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Status:** IN PROGRESS; dependencies P1-04 and P2-01 DONE.
 - **Branch:** `feat/p2-03-navigation` stacked on P2-02.
 - **Scope:** Review-only editorial navigation/search/mobile menu and theme controls; no public route changes.
+
+### 2026-11-15 — P2-03 navigation checkpoint — Codex
+- **Status:** IN PROGRESS: core navigation and local interaction probes pass; section anchors and full responsive/accessibility review await integrated P2-04/05 specimen. Branch `feat/p2-03-navigation`, claim `ce9d298`.
+- **Change:** Review-only masthead, mobile menu, local article search and theme persistence; keyboard Escape closes menu and search with focus return. Search uses a request sequence to ignore stale asynchronous responses. Responsive CSS updated; trailing blank lines from P2-02 corrected without semantic changes. No public homepage modification.
+- **Checks:** `NODE_PATH=/tmp/p1-02-browser/node_modules node scripts/test-editorial-navigation.cjs` PASS on local preview: menu open/Escape focus, theme persistence, delayed search race, real Nash search results and search Escape. Full link/keyboard/motion testing follows integrated specimen; no owner visual approval claimed.

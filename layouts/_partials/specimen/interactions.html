@@ -1,0 +1,77 @@
+<script>
+(() => {
+  const root = document.documentElement;
+  const theme = document.querySelector('.theme-toggle');
+  let saved;
+  try { saved = localStorage.getItem('editorial-preview-theme'); } catch (_) {}
+  function setTheme(value) {
+    root.dataset.edTheme = value;
+    theme.setAttribute('aria-label', value === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    try { localStorage.setItem('editorial-preview-theme', value); } catch (_) {}
+  }
+  setTheme(saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+  theme.addEventListener('click', () => setTheme(root.dataset.edTheme === 'dark' ? 'light' : 'dark'));
+
+  const menu = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#editorial-nav');
+  function setMenu(open) {
+    menu.setAttribute('aria-expanded', String(open));
+    nav.classList.toggle('is-open', open);
+  }
+  menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+  nav.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+      setMenu(false);
+      menu.focus();
+    }
+  });
+
+  const toggle = document.querySelector('.search-toggle');
+  const panel = document.querySelector('#search-panel');
+  const input = document.querySelector('#specimen-search');
+  const status = document.querySelector('.search-status');
+  const list = document.querySelector('.search-results');
+  toggle.addEventListener('click', () => {
+    const opening = panel.hidden;
+    panel.hidden = !opening;
+    toggle.setAttribute('aria-expanded', String(opening));
+    if (opening) input.focus();
+  });
+  panel.addEventListener('keydown', event => {
+    if (event.key === 'Escape') { panel.hidden = true; toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }
+  });
+  let index;
+  let request = 0;
+  input.addEventListener('input', async () => {
+    const current = ++request;
+    const query = input.value.trim().toLocaleLowerCase();
+    list.replaceChildren();
+    if (query.length < 2) { status.textContent = 'Type at least two characters.'; return; }
+    try {
+      if (!index) {
+        const response = await fetch('/search.json');
+        if (!response.ok) throw new Error('Search unavailable');
+        index = await response.json();
+      }
+      if (current !== request) return;
+      const hits = index.filter(item => String(item.title || '').toLocaleLowerCase().includes(query)).slice(0, 5);
+      const valid = [];
+      for (const hit of hits) {
+        const url = new URL(hit.uri, location.origin);
+        if (url.origin !== location.origin && url.hostname !== 'trandung6129.github.io') continue;
+        const a = document.createElement('a');
+        const li = document.createElement('li');
+        a.textContent = hit.title;
+        a.href = url.pathname;
+        li.append(a);
+        list.append(li);
+        valid.push(hit);
+      }
+      status.textContent = valid.length ? `${valid.length} published article${valid.length === 1 ? '' : 's'} found.` : 'No published articles found.';
+    } catch (_) {
+      if (current === request) status.textContent = 'Search is unavailable in this preview.';
+    }
+  });
+})();
+</script>

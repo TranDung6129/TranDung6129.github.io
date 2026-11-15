@@ -408,3 +408,21 @@ Working blobs, PARTIAL coverage; Chromium and production output checks recorded 
 | `content/toan-hoc/riemann-hypothesis-number-theory.md` | `d038f61397e2531a230d4da3d82f90c634aa8c4c` | Existing Vietnamese article supplies one attributed specimen excerpt; unchanged. |
 
 Generated intermediate screenshots `docs/design/screenshots/p202-{360,1440}-{light,dark}.png` are review-only browser captures; no claim of final aesthetic approval.
+
+## 2026-11-15 — P2-03 navigation checkpoint
+
+Working blobs, PARTIAL coverage; core controls tested, integrated anchors and owner visual review pending.
+
+| Path | Blob | Responsibility and risks |
+|---|---|---|
+| `layouts/_partials/specimen/navigation.html` | `dc0c512afed742ad4fe669e466b4bcb0496ac204` | Review masthead, responsive menu, search and theme controls; section anchors must be checked when home/future partials are integrated. |
+| `layouts/_partials/specimen/interactions.html` | `b956403db41818425734f35fb12abad9d85394f2` | Theme persistence, mobile Escape/focus, local search and async stale-response protection; demo-only and no public template import. |
+| `assets/css/specimen/navigation.css` | `10ea94a012d565045cd0a2d92d3bf2ab474fdd7a` | Specimen masthead, controls, search and responsive menu presentation; depends on ed tokens. |
+| `assets/css/specimen/responsive.css` | `331634a8e7309b1fdc84f4002faff00a3b0e0324` | Responsive overrides for specimen components; reviewed after updated mobile masthead rules. |
+| `scripts/test-editorial-navigation.cjs` | `cc94cde249c712df682ba574118d6c82f87af12e` | Playwright focused navigation test including delayed search race and keyboard Escape. |
+| `docs/TASK_BOARD.md` | `a6b4231ae2ac35517f07d92f54455026c674c254` | P2-03 currently IN PROGRESS; full integrated anchor review outstanding. |
+| `docs/AGENT_LOG.md` | `e493f15d2a8ae2fb31a49bd09194718578e1f7ad` | P2-03 claim and limited interaction test evidence. |
+| `docs/INSPECTED_FILES.md` | `14c6a0c30b7b91891bc78a3daf553318dc845a6a` | Registry self hash is pre-append. |
+| `assets/css/specimen/base.css` | `d5a877c91239f0ccba986a82a1efb03a6fb2c482` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
+| `assets/css/specimen/typography.css` | `605d970113632fb1be1a989dc990728d1d744701` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
+| `layouts/_partials/specimen/typography.html` | `046622590826399410a48ed6521fd3ce094a9db7` | P2-02 file reviewed after trailing whitespace cleanup; behavior unchanged. |
