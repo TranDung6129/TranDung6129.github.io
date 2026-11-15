@@ -1,0 +1,4820 @@
+{
+"base": "https://trandung6129.github.io",
+"local_build": "hugo --gc --minify of main 5cfcec9",
+"files": 687,
+"status_200": 687,
+"non_200_or_error": [],
+"identical_to_local": 687,
+"different_from_local": [],
+"rows": [
+{
+"path": "404.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6641,
+"identical_to_local": true
+},
+{
+"path": "about/images/computer.jpg",
+"status": 200,
+"content_type": "image/jpeg",
+"bytes": 265647,
+"identical_to_local": true
+},
+{
+"path": "about/images/computer.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 7553473,
+"identical_to_local": true
+},
+{
+"path": "about/images/finance.jpg",
+"status": 200,
+"content_type": "image/jpeg",
+"bytes": 117203,
+"identical_to_local": true
+},
+{
+"path": "about/images/finance.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 6867731,
+"identical_to_local": true
+},
+{
+"path": "about/images/mathematics.jpg",
+"status": 200,
+"content_type": "image/jpeg",
+"bytes": 237594,
+"identical_to_local": true
+},
+{
+"path": "about/images/mathematics.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 7608021,
+"identical_to_local": true
+},
+{
+"path": "about/images/philosophy.jpg",
+"status": 200,
+"content_type": "image/jpeg",
+"bytes": 161120,
+"identical_to_local": true
+},
+{
+"path": "about/images/philosophy.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 1542578,
+"identical_to_local": true
+},
+{
+"path": "about/images/physics.jpg",
+"status": 200,
+"content_type": "image/jpeg",
+"bytes": 111993,
+"identical_to_local": true
+},
+{
+"path": "about/images/physics.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 6524230,
+"identical_to_local": true
+},
+{
+"path": "about/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 11802,
+"identical_to_local": true
+},
+{
+"path": "about/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2782,
+"identical_to_local": true
+},
+{
+"path": "apple-touch-icon.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 19175,
+"identical_to_local": true
+},
+{
+"path": "archives/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 13736,
+"identical_to_local": true
+},
+{
+"path": "archives/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 309,
+"identical_to_local": true
+},
+{
+"path": "categories/applied-mathematics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7333,
+"identical_to_local": true
+},
+{
+"path": "categories/applied-mathematics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2819,
+"identical_to_local": true
+},
+{
+"path": "categories/applied-mathematics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 375,
+"identical_to_local": true
+},
+{
+"path": "categories/ca-nhan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9467,
+"identical_to_local": true
+},
+{
+"path": "categories/ca-nhan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 707,
+"identical_to_local": true
+},
+{
+"path": "categories/ca-nhan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "categories/education/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6978,
+"identical_to_local": true
+},
+{
+"path": "categories/education/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2450,
+"identical_to_local": true
+},
+{
+"path": "categories/education/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "categories/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7167,
+"identical_to_local": true
+},
+{
+"path": "categories/khoa-hoc-may-tinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 10228,
+"identical_to_local": true
+},
+{
+"path": "categories/khoa-hoc-may-tinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2604,
+"identical_to_local": true
+},
+{
+"path": "categories/khoa-hoc-may-tinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 369,
+"identical_to_local": true
+},
+{
+"path": "categories/kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 13480,
+"identical_to_local": true
+},
+{
+"path": "categories/kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 15988,
+"identical_to_local": true
+},
+{
+"path": "categories/kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "categories/programming/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7029,
+"identical_to_local": true
+},
+{
+"path": "categories/programming/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2193,
+"identical_to_local": true
+},
+{
+"path": "categories/programming/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 351,
+"identical_to_local": true
+},
+{
+"path": "categories/toan-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 12936,
+"identical_to_local": true
+},
+{
+"path": "categories/toan-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 12512,
+"identical_to_local": true
+},
+{
+"path": "categories/toan-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "categories/travel/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6951,
+"identical_to_local": true
+},
+{
+"path": "categories/travel/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2174,
+"identical_to_local": true
+},
+{
+"path": "categories/travel/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "categories/triet-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9985,
+"identical_to_local": true
+},
+{
+"path": "categories/triet-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2596,
+"identical_to_local": true
+},
+{
+"path": "categories/triet-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "categories/tutorial/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7277,
+"identical_to_local": true
+},
+{
+"path": "categories/tutorial/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3654,
+"identical_to_local": true
+},
+{
+"path": "categories/tutorial/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "categories/vat-ly/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9748,
+"identical_to_local": true
+},
+{
+"path": "categories/vat-ly/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 705,
+"identical_to_local": true
+},
+{
+"path": "categories/vat-ly/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "collections/hugo-tutorials/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 22601,
+"identical_to_local": true
+},
+{
+"path": "collections/hugo-tutorials/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2203,
+"identical_to_local": true
+},
+{
+"path": "collections/hugo-tutorials/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 363,
+"identical_to_local": true
+},
+{
+"path": "collections/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 18868,
+"identical_to_local": true
+},
+{
+"path": "collections/programming-tips/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 23055,
+"identical_to_local": true
+},
+{
+"path": "collections/programming-tips/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2210,
+"identical_to_local": true
+},
+{
+"path": "collections/programming-tips/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 369,
+"identical_to_local": true
+},
+{
+"path": "collections/to\u00e1n-c\u01a1-b\u1ea3n-cho-kinh-t\u1ebf/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9631,
+"identical_to_local": true
+},
+{
+"path": "collections/to\u00e1n-c\u01a1-b\u1ea3n-cho-kinh-t\u1ebf/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 10720,
+"identical_to_local": true
+},
+{
+"path": "collections/to\u00e1n-c\u01a1-b\u1ea3n-cho-kinh-t\u1ebf/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 468,
+"identical_to_local": true
+},
+{
+"path": "collections/travel-guides/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 19244,
+"identical_to_local": true
+},
+{
+"path": "collections/travel-guides/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2197,
+"identical_to_local": true
+},
+{
+"path": "collections/travel-guides/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 360,
+"identical_to_local": true
+},
+{
+"path": "collections/web-development/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 16373,
+"identical_to_local": true
+},
+{
+"path": "collections/web-development/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2248,
+"identical_to_local": true
+},
+{
+"path": "collections/web-development/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 366,
+"identical_to_local": true
+},
+{
+"path": "css/editorial.min.d904cc0cd0da6549520ecbace3993937001f2a2076b0ef8e1027908103138849.css",
+"status": 200,
+"content_type": "text/css; charset=utf-8",
+"bytes": 36892,
+"identical_to_local": true
+},
+{
+"path": "discover/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9683,
+"identical_to_local": true
+},
+{
+"path": "discover/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 673,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_decision_v2-400.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 39306,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_decision_v2-775.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 147098,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_hero-1400.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 348830,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_hero-1672.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 486404,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_hero-640.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 69396,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_hero-960.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 163574,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_probability_v2-320.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 26226,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_probability_v2-592.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 89080,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_volume_1_cover-1024.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 552838,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_volume_1_cover-256.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 19738,
+"identical_to_local": true
+},
+{
+"path": "editorial-art/epistemic_volume_1_cover-512.webp",
+"status": 200,
+"content_type": "image/webp",
+"bytes": 98434,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/newsreader/files/newsreader-latin-ext-wght-italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 39684,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/newsreader/files/newsreader-latin-ext-wght-normal.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 36244,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/newsreader/files/newsreader-latin-wght-italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 64520,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/newsreader/files/newsreader-latin-wght-normal.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 58084,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/newsreader/files/newsreader-vietnamese-wght-italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 12080,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/newsreader/files/newsreader-vietnamese-wght-normal.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 11932,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/source-serif-4/files/source-serif-4-latin-ext-wght-italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 44420,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/source-serif-4/files/source-serif-4-latin-ext-wght-normal.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 42212,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/source-serif-4/files/source-serif-4-latin-wght-italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 51576,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/source-serif-4/files/source-serif-4-latin-wght-normal.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 50936,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/source-serif-4/files/source-serif-4-vietnamese-wght-italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 13920,
+"identical_to_local": true
+},
+{
+"path": "editorial-fonts/source-serif-4/files/source-serif-4-vietnamese-wght-normal.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 13508,
+"identical_to_local": true
+},
+{
+"path": "editorial-source/epistemic_decision_v2.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 990344,
+"identical_to_local": true
+},
+{
+"path": "editorial-source/epistemic_hero.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 3785112,
+"identical_to_local": true
+},
+{
+"path": "editorial-source/epistemic_probability_v2.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 799755,
+"identical_to_local": true
+},
+{
+"path": "editorial-source/epistemic_volume_1_cover.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 4138362,
+"identical_to_local": true
+},
+{
+"path": "en/404.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6464,
+"identical_to_local": true
+},
+{
+"path": "en/about/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 11758,
+"identical_to_local": true
+},
+{
+"path": "en/about/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2781,
+"identical_to_local": true
+},
+{
+"path": "en/archives/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 13643,
+"identical_to_local": true
+},
+{
+"path": "en/archives/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "en/categories/applied-mathematics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7207,
+"identical_to_local": true
+},
+{
+"path": "en/categories/applied-mathematics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2822,
+"identical_to_local": true
+},
+{
+"path": "en/categories/applied-mathematics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 384,
+"identical_to_local": true
+},
+{
+"path": "en/categories/ca-nhan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9331,
+"identical_to_local": true
+},
+{
+"path": "en/categories/ca-nhan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 709,
+"identical_to_local": true
+},
+{
+"path": "en/categories/ca-nhan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 348,
+"identical_to_local": true
+},
+{
+"path": "en/categories/economics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6996,
+"identical_to_local": true
+},
+{
+"path": "en/categories/economics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2798,
+"identical_to_local": true
+},
+{
+"path": "en/categories/economics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 354,
+"identical_to_local": true
+},
+{
+"path": "en/categories/education/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6852,
+"identical_to_local": true
+},
+{
+"path": "en/categories/education/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2453,
+"identical_to_local": true
+},
+{
+"path": "en/categories/education/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 354,
+"identical_to_local": true
+},
+{
+"path": "en/categories/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7203,
+"identical_to_local": true
+},
+{
+"path": "en/categories/khoa-hoc-may-tinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 10093,
+"identical_to_local": true
+},
+{
+"path": "en/categories/khoa-hoc-may-tinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2607,
+"identical_to_local": true
+},
+{
+"path": "en/categories/khoa-hoc-may-tinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 378,
+"identical_to_local": true
+},
+{
+"path": "en/categories/kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 12878,
+"identical_to_local": true
+},
+{
+"path": "en/categories/kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 13786,
+"identical_to_local": true
+},
+{
+"path": "en/categories/kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 348,
+"identical_to_local": true
+},
+{
+"path": "en/categories/mathematics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7016,
+"identical_to_local": true
+},
+{
+"path": "en/categories/mathematics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2804,
+"identical_to_local": true
+},
+{
+"path": "en/categories/mathematics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 360,
+"identical_to_local": true
+},
+{
+"path": "en/categories/programming/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6903,
+"identical_to_local": true
+},
+{
+"path": "en/categories/programming/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2196,
+"identical_to_local": true
+},
+{
+"path": "en/categories/programming/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 360,
+"identical_to_local": true
+},
+{
+"path": "en/categories/toan-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 12320,
+"identical_to_local": true
+},
+{
+"path": "en/categories/toan-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 10308,
+"identical_to_local": true
+},
+{
+"path": "en/categories/toan-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 351,
+"identical_to_local": true
+},
+{
+"path": "en/categories/travel/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6825,
+"identical_to_local": true
+},
+{
+"path": "en/categories/travel/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2177,
+"identical_to_local": true
+},
+{
+"path": "en/categories/travel/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/categories/triet-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9850,
+"identical_to_local": true
+},
+{
+"path": "en/categories/triet-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2599,
+"identical_to_local": true
+},
+{
+"path": "en/categories/triet-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 354,
+"identical_to_local": true
+},
+{
+"path": "en/categories/tutorial/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7160,
+"identical_to_local": true
+},
+{
+"path": "en/categories/tutorial/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3658,
+"identical_to_local": true
+},
+{
+"path": "en/categories/tutorial/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 351,
+"identical_to_local": true
+},
+{
+"path": "en/categories/vat-ly/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9612,
+"identical_to_local": true
+},
+{
+"path": "en/categories/vat-ly/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 707,
+"identical_to_local": true
+},
+{
+"path": "en/categories/vat-ly/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/collections/basic-mathematics-for-economics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7221,
+"identical_to_local": true
+},
+{
+"path": "en/collections/basic-mathematics-for-economics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2868,
+"identical_to_local": true
+},
+{
+"path": "en/collections/basic-mathematics-for-economics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 423,
+"identical_to_local": true
+},
+{
+"path": "en/collections/hugo-tutorials/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 22363,
+"identical_to_local": true
+},
+{
+"path": "en/collections/hugo-tutorials/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2208,
+"identical_to_local": true
+},
+{
+"path": "en/collections/hugo-tutorials/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 372,
+"identical_to_local": true
+},
+{
+"path": "en/collections/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 18782,
+"identical_to_local": true
+},
+{
+"path": "en/collections/programming-tips/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 22809,
+"identical_to_local": true
+},
+{
+"path": "en/collections/programming-tips/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2215,
+"identical_to_local": true
+},
+{
+"path": "en/collections/programming-tips/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 378,
+"identical_to_local": true
+},
+{
+"path": "en/collections/to\u00e1n-c\u01a1-b\u1ea3n-cho-kinh-t\u1ebf/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9016,
+"identical_to_local": true
+},
+{
+"path": "en/collections/to\u00e1n-c\u01a1-b\u1ea3n-cho-kinh-t\u1ebf/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 8517,
+"identical_to_local": true
+},
+{
+"path": "en/collections/to\u00e1n-c\u01a1-b\u1ea3n-cho-kinh-t\u1ebf/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 477,
+"identical_to_local": true
+},
+{
+"path": "en/collections/travel-guides/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 19030,
+"identical_to_local": true
+},
+{
+"path": "en/collections/travel-guides/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2202,
+"identical_to_local": true
+},
+{
+"path": "en/collections/travel-guides/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 369,
+"identical_to_local": true
+},
+{
+"path": "en/collections/web-development/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 16183,
+"identical_to_local": true
+},
+{
+"path": "en/collections/web-development/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2253,
+"identical_to_local": true
+},
+{
+"path": "en/collections/web-development/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 375,
+"identical_to_local": true
+},
+{
+"path": "en/discover/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9132,
+"identical_to_local": true
+},
+{
+"path": "en/discover/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 677,
+"identical_to_local": true
+},
+{
+"path": "en/films/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7254,
+"identical_to_local": true
+},
+{
+"path": "en/films/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 668,
+"identical_to_local": true
+},
+{
+"path": "en/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 14064,
+"identical_to_local": true
+},
+{
+"path": "en/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 241737,
+"identical_to_local": true
+},
+{
+"path": "en/journal/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 16305,
+"identical_to_local": true
+},
+{
+"path": "en/journal/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 674,
+"identical_to_local": true
+},
+{
+"path": "en/journal/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 315,
+"identical_to_local": true
+},
+{
+"path": "en/khoa-hoc-may-tinh/complexity-theory-quantum/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 59217,
+"identical_to_local": true
+},
+{
+"path": "en/khoa-hoc-may-tinh/complexity-theory-quantum/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 9884,
+"identical_to_local": true
+},
+{
+"path": "en/khoa-hoc-may-tinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7174,
+"identical_to_local": true
+},
+{
+"path": "en/khoa-hoc-may-tinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2574,
+"identical_to_local": true
+},
+{
+"path": "en/khoa-hoc-may-tinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/co-gian-cung-cau-cong-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 37287,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/co-gian-cung-cau-cong-thuc/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 4933,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/doanh-thu-co-gian-dinh-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 46032,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/doanh-thu-co-gian-dinh-thuc/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 6172,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/game_theory_nash/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 46071,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/game_theory_nash/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 12010,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 11059,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 17827,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/ly-thuyet-tro-choi-nash/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 52142,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/ly-thuyet-tro-choi-nash/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 7628,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 315,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 15315,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-1/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1565,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-2/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 15983,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-2/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1703,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-3/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 17046,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-3/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2177,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-4/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 17763,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-4/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2099,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-5/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 17887,
+"identical_to_local": true
+},
+{
+"path": "en/kinh-te/toan-co-ban-5/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2542,
+"identical_to_local": true
+},
+{
+"path": "en/labs/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7286,
+"identical_to_local": true
+},
+{
+"path": "en/labs/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 665,
+"identical_to_local": true
+},
+{
+"path": "en/offline/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7140,
+"identical_to_local": true
+},
+{
+"path": "en/search.json",
+"status": 200,
+"content_type": "application/json; charset=utf-8",
+"bytes": 51943,
+"identical_to_local": true
+},
+{
+"path": "en/sitemap.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 37075,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ai/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6961,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ai/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2754,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ai/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 315,
+"identical_to_local": true
+},
+{
+"path": "en/tags/best-practices/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6897,
+"identical_to_local": true
+},
+{
+"path": "en/tags/best-practices/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2188,
+"identical_to_local": true
+},
+{
+"path": "en/tags/best-practices/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 351,
+"identical_to_local": true
+},
+{
+"path": "en/tags/calculus/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6956,
+"identical_to_local": true
+},
+{
+"path": "en/tags/calculus/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2778,
+"identical_to_local": true
+},
+{
+"path": "en/tags/calculus/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "en/tags/career/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6801,
+"identical_to_local": true
+},
+{
+"path": "en/tags/career/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2164,
+"identical_to_local": true
+},
+{
+"path": "en/tags/career/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "en/tags/chien-luoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7038,
+"identical_to_local": true
+},
+{
+"path": "en/tags/chien-luoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2564,
+"identical_to_local": true
+},
+{
+"path": "en/tags/chien-luoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "en/tags/collections/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6834,
+"identical_to_local": true
+},
+{
+"path": "en/tags/collections/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2442,
+"identical_to_local": true
+},
+{
+"path": "en/tags/collections/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "en/tags/complexity/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7071,
+"identical_to_local": true
+},
+{
+"path": "en/tags/complexity/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2565,
+"identical_to_local": true
+},
+{
+"path": "en/tags/complexity/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "en/tags/courses/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6786,
+"identical_to_local": true
+},
+{
+"path": "en/tags/courses/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2430,
+"identical_to_local": true
+},
+{
+"path": "en/tags/courses/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/crypto/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6984,
+"identical_to_local": true
+},
+{
+"path": "en/tags/crypto/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2628,
+"identical_to_local": true
+},
+{
+"path": "en/tags/crypto/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "en/tags/css/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6743,
+"identical_to_local": true
+},
+{
+"path": "en/tags/css/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2196,
+"identical_to_local": true
+},
+{
+"path": "en/tags/css/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "en/tags/dai-so-tuyen-tinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7138,
+"identical_to_local": true
+},
+{
+"path": "en/tags/dai-so-tuyen-tinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3085,
+"identical_to_local": true
+},
+{
+"path": "en/tags/dai-so-tuyen-tinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 360,
+"identical_to_local": true
+},
+{
+"path": "en/tags/doanh-thu/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6997,
+"identical_to_local": true
+},
+{
+"path": "en/tags/doanh-thu/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2554,
+"identical_to_local": true
+},
+{
+"path": "en/tags/doanh-thu/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "en/tags/economics-math/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7016,
+"identical_to_local": true
+},
+{
+"path": "en/tags/economics-math/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2796,
+"identical_to_local": true
+},
+{
+"path": "en/tags/economics-math/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 351,
+"identical_to_local": true
+},
+{
+"path": "en/tags/economics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7045,
+"identical_to_local": true
+},
+{
+"path": "en/tags/economics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2775,
+"identical_to_local": true
+},
+{
+"path": "en/tags/economics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "en/tags/game-theory/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7069,
+"identical_to_local": true
+},
+{
+"path": "en/tags/game-theory/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2781,
+"identical_to_local": true
+},
+{
+"path": "en/tags/game-theory/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "en/tags/guides/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6783,
+"identical_to_local": true
+},
+{
+"path": "en/tags/guides/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2160,
+"identical_to_local": true
+},
+{
+"path": "en/tags/guides/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "en/tags/hien-tuong-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7092,
+"identical_to_local": true
+},
+{
+"path": "en/tags/hien-tuong-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2593,
+"identical_to_local": true
+},
+{
+"path": "en/tags/hien-tuong-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 351,
+"identical_to_local": true
+},
+{
+"path": "en/tags/html/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6755,
+"identical_to_local": true
+},
+{
+"path": "en/tags/html/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2199,
+"identical_to_local": true
+},
+{
+"path": "en/tags/html/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "en/tags/hugo/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6771,
+"identical_to_local": true
+},
+{
+"path": "en/tags/hugo/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2157,
+"identical_to_local": true
+},
+{
+"path": "en/tags/hugo/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "en/tags/husserl/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7008,
+"identical_to_local": true
+},
+{
+"path": "en/tags/husserl/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2572,
+"identical_to_local": true
+},
+{
+"path": "en/tags/husserl/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9734,
+"identical_to_local": true
+},
+{
+"path": "en/tags/international/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6867,
+"identical_to_local": true
+},
+{
+"path": "en/tags/international/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2181,
+"identical_to_local": true
+},
+{
+"path": "en/tags/international/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 348,
+"identical_to_local": true
+},
+{
+"path": "en/tags/javascript/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6827,
+"identical_to_local": true
+},
+{
+"path": "en/tags/javascript/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2217,
+"identical_to_local": true
+},
+{
+"path": "en/tags/javascript/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "en/tags/kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7934,
+"identical_to_local": true
+},
+{
+"path": "en/tags/kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 6113,
+"identical_to_local": true
+},
+{
+"path": "en/tags/kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/lagrange/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7025,
+"identical_to_local": true
+},
+{
+"path": "en/tags/lagrange/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 1874,
+"identical_to_local": true
+},
+{
+"path": "en/tags/lagrange/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "en/tags/lap-trinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7059,
+"identical_to_local": true
+},
+{
+"path": "en/tags/lap-trinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2562,
+"identical_to_local": true
+},
+{
+"path": "en/tags/lap-trinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "en/tags/learning/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6798,
+"identical_to_local": true
+},
+{
+"path": "en/tags/learning/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2433,
+"identical_to_local": true
+},
+{
+"path": "en/tags/learning/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ly-thuyet-so/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7056,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ly-thuyet-so/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2646,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ly-thuyet-so/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ly-thuyet-tro-choi/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7134,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ly-thuyet-tro-choi/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2588,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ly-thuyet-tro-choi/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 363,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ma-tran/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7499,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ma-tran/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 4867,
+"identical_to_local": true
+},
+{
+"path": "en/tags/ma-tran/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/mathematics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7069,
+"identical_to_local": true
+},
+{
+"path": "en/tags/mathematics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2781,
+"identical_to_local": true
+},
+{
+"path": "en/tags/mathematics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "en/tags/nash/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6966,
+"identical_to_local": true
+},
+{
+"path": "en/tags/nash/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2546,
+"identical_to_local": true
+},
+{
+"path": "en/tags/nash/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "en/tags/nhan-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7032,
+"identical_to_local": true
+},
+{
+"path": "en/tags/nhan-thuc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2578,
+"identical_to_local": true
+},
+{
+"path": "en/tags/nhan-thuc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "en/tags/optimization/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7081,
+"identical_to_local": true
+},
+{
+"path": "en/tags/optimization/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2784,
+"identical_to_local": true
+},
+{
+"path": "en/tags/optimization/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/tags/phan-tich/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6968,
+"identical_to_local": true
+},
+{
+"path": "en/tags/phan-tich/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2488,
+"identical_to_local": true
+},
+{
+"path": "en/tags/phan-tich/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "en/tags/programming/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6861,
+"identical_to_local": true
+},
+{
+"path": "en/tags/programming/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2179,
+"identical_to_local": true
+},
+{
+"path": "en/tags/programming/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "en/tags/quantum/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7035,
+"identical_to_local": true
+},
+{
+"path": "en/tags/quantum/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2556,
+"identical_to_local": true
+},
+{
+"path": "en/tags/quantum/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/riemann/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6996,
+"identical_to_local": true
+},
+{
+"path": "en/tags/riemann/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2631,
+"identical_to_local": true
+},
+{
+"path": "en/tags/riemann/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/so-nguyen-to/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7056,
+"identical_to_local": true
+},
+{
+"path": "en/tags/so-nguyen-to/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2646,
+"identical_to_local": true
+},
+{
+"path": "en/tags/so-nguyen-to/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/tags/static-site/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6855,
+"identical_to_local": true
+},
+{
+"path": "en/tags/static-site/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2178,
+"identical_to_local": true
+},
+{
+"path": "en/tags/static-site/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "en/tags/thuat-toan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7071,
+"identical_to_local": true
+},
+{
+"path": "en/tags/thuat-toan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2565,
+"identical_to_local": true
+},
+{
+"path": "en/tags/thuat-toan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "en/tags/tips/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6777,
+"identical_to_local": true
+},
+{
+"path": "en/tags/tips/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2158,
+"identical_to_local": true
+},
+{
+"path": "en/tags/tips/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toan-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 8991,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toan-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 9831,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toan-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toan-kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 8663,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toan-kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 8405,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toan-kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toi-uu-hoa/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7574,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toi-uu-hoa/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3982,
+"identical_to_local": true
+},
+{
+"path": "en/tags/toi-uu-hoa/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "en/tags/travel/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6783,
+"identical_to_local": true
+},
+{
+"path": "en/tags/travel/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2160,
+"identical_to_local": true
+},
+{
+"path": "en/tags/travel/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "en/tags/triet-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7032,
+"identical_to_local": true
+},
+{
+"path": "en/tags/triet-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2578,
+"identical_to_local": true
+},
+{
+"path": "en/tags/triet-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "en/tags/tutorials/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6831,
+"identical_to_local": true
+},
+{
+"path": "en/tags/tutorials/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2172,
+"identical_to_local": true
+},
+{
+"path": "en/tags/tutorials/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-mo/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6920,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-mo/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2476,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-mo/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 324,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-phan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6973,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-phan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2548,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-phan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-tich-phan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7093,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-tich-phan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2849,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vi-tich-phan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vietnam/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6795,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vietnam/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2163,
+"identical_to_local": true
+},
+{
+"path": "en/tags/vietnam/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "en/tags/web-development/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7202,
+"identical_to_local": true
+},
+{
+"path": "en/tags/web-development/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3662,
+"identical_to_local": true
+},
+{
+"path": "en/tags/web-development/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 354,
+"identical_to_local": true
+},
+{
+"path": "en/tags/y-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6996,
+"identical_to_local": true
+},
+{
+"path": "en/tags/y-thuc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2569,
+"identical_to_local": true
+},
+{
+"path": "en/tags/y-thuc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "en/toan-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7018,
+"identical_to_local": true
+},
+{
+"path": "en/toan-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2622,
+"identical_to_local": true
+},
+{
+"path": "en/toan-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "en/toan-hoc/riemann-hypothesis-number-theory/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 63211,
+"identical_to_local": true
+},
+{
+"path": "en/toan-hoc/riemann-hypothesis-number-theory/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 10663,
+"identical_to_local": true
+},
+{
+"path": "en/triet-hoc/husserl-hien-tuong-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 66523,
+"identical_to_local": true
+},
+{
+"path": "en/triet-hoc/husserl-hien-tuong-hoc/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 13634,
+"identical_to_local": true
+},
+{
+"path": "en/triet-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7043,
+"identical_to_local": true
+},
+{
+"path": "en/triet-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2566,
+"identical_to_local": true
+},
+{
+"path": "en/triet-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "en/volumes/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7304,
+"identical_to_local": true
+},
+{
+"path": "en/volumes/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 1240,
+"identical_to_local": true
+},
+{
+"path": "en/volumes/volume-i/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 12457,
+"identical_to_local": true
+},
+{
+"path": "en/volumes/volume-i/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 349,
+"identical_to_local": true
+},
+{
+"path": "favicon.ico",
+"status": 200,
+"content_type": "image/vnd.microsoft.icon",
+"bytes": 15086,
+"identical_to_local": true
+},
+{
+"path": "films/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7675,
+"identical_to_local": true
+},
+{
+"path": "films/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 664,
+"identical_to_local": true
+},
+{
+"path": "images/avatar.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 7170604,
+"identical_to_local": true
+},
+{
+"path": "images/game_theory_nash_poster.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 52093,
+"identical_to_local": true
+},
+{
+"path": "images/logoted.png",
+"status": 200,
+"content_type": "image/png",
+"bytes": 384861,
+"identical_to_local": true
+},
+{
+"path": "images/mylogo.svg",
+"status": 200,
+"content_type": "image/svg+xml",
+"bytes": 0,
+"identical_to_local": true
+},
+{
+"path": "index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 14357,
+"identical_to_local": true
+},
+{
+"path": "index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 243375,
+"identical_to_local": true
+},
+{
+"path": "ja/404.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6480,
+"identical_to_local": true
+},
+{
+"path": "ja/archives/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6952,
+"identical_to_local": true
+},
+{
+"path": "ja/archives/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "ja/categories/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6266,
+"identical_to_local": true
+},
+{
+"path": "ja/collections/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6281,
+"identical_to_local": true
+},
+{
+"path": "ja/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 14049,
+"identical_to_local": true
+},
+{
+"path": "ja/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 660,
+"identical_to_local": true
+},
+{
+"path": "ja/offline/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7039,
+"identical_to_local": true
+},
+{
+"path": "ja/search.json",
+"status": 200,
+"content_type": "application/json; charset=utf-8",
+"bytes": 2,
+"identical_to_local": true
+},
+{
+"path": "ja/sitemap.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2123,
+"identical_to_local": true
+},
+{
+"path": "ja/tags/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6176,
+"identical_to_local": true
+},
+{
+"path": "journal/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 16373,
+"identical_to_local": true
+},
+{
+"path": "journal/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 670,
+"identical_to_local": true
+},
+{
+"path": "journal/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 306,
+"identical_to_local": true
+},
+{
+"path": "js/editorial.95ac2d40fac67d4c3d036cbd82b942ed0401c307411d1b9292335a3060682203.js",
+"status": 200,
+"content_type": "application/javascript; charset=utf-8",
+"bytes": 4366,
+"identical_to_local": true
+},
+{
+"path": "js/lib/mathjax.min.js",
+"status": 200,
+"content_type": "application/javascript; charset=utf-8",
+"bytes": 747,
+"identical_to_local": true
+},
+{
+"path": "js/mount-react-root-NashEquilibriumSim-0.js",
+"status": 200,
+"content_type": "application/javascript; charset=utf-8",
+"bytes": 587501,
+"identical_to_local": true
+},
+{
+"path": "khoa-hoc-may-tinh/complexity-theory-quantum/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 59614,
+"identical_to_local": true
+},
+{
+"path": "khoa-hoc-may-tinh/complexity-theory-quantum/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 9885,
+"identical_to_local": true
+},
+{
+"path": "khoa-hoc-may-tinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7307,
+"identical_to_local": true
+},
+{
+"path": "khoa-hoc-may-tinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2576,
+"identical_to_local": true
+},
+{
+"path": "khoa-hoc-may-tinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/co-gian-cung-cau-cong-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 37591,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/co-gian-cung-cau-cong-thuc/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 4934,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/doanh-thu-co-gian-dinh-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 46379,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/doanh-thu-co-gian-dinh-thuc/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 6173,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/game_theory_nash/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 46373,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/game_theory_nash/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 12011,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 11172,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 17994,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/ly-thuyet-tro-choi-nash/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 52518,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/ly-thuyet-tro-choi-nash/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 7629,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 306,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 16944,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-1/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1942,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-2/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 16514,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-2/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 1704,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-3/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 17336,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-3/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2178,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-4/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 18061,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-4/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2100,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-5/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 18059,
+"identical_to_local": true
+},
+{
+"path": "kinh-te/toan-co-ban-5/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 2543,
+"identical_to_local": true
+},
+{
+"path": "labs/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7701,
+"identical_to_local": true
+},
+{
+"path": "labs/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 661,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_AMS-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 63632,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_AMS-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 33516,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_AMS-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 28076,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 12368,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 7716,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 6912,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 12344,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 7656,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 6908,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 19584,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 13296,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 11348,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 19572,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 13208,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 11316,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Bold.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 51336,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Bold.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 29912,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Bold.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 25324,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 32968,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 19412,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 16780,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Italic.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 33580,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Italic.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 19676,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 16988,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 53580,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 30772,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Main-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 26272,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 31196,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 18668,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 16400,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Math-Italic.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 31308,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Math-Italic.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 18748,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Math-Italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 16440,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 24504,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 14408,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 12216,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 22364,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 14112,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 12028,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 19436,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 12316,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 10344,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Script-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 16648,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Script-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 10588,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Script-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 9644,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size1-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 12228,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size1-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 6496,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size1-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 5468,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size2-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 11508,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size2-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 6188,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size2-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 5208,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size3-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 7588,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size3-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 4420,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size3-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 3624,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size4-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 10364,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size4-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 5980,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Size4-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 4928,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 27556,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 16028,
+"identical_to_local": true
+},
+{
+"path": "lib/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 13568,
+"identical_to_local": true
+},
+{
+"path": "lib/lightgallery/fonts/lg.svg",
+"status": 200,
+"content_type": "image/svg+xml",
+"bytes": 12834,
+"identical_to_local": true
+},
+{
+"path": "lib/lightgallery/fonts/lg.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 4756,
+"identical_to_local": true
+},
+{
+"path": "lib/lightgallery/fonts/lg.woff",
+"status": 200,
+"content_type": "font/woff",
+"bytes": 4832,
+"identical_to_local": true
+},
+{
+"path": "lib/lightgallery/fonts/lg.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 2332,
+"identical_to_local": true
+},
+{
+"path": "lib/lightgallery/images/loading.gif",
+"status": 200,
+"content_type": "image/gif",
+"bytes": 4178,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-brands-400.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 210736,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-brands-400.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 118724,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-regular-400.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 68064,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-regular-400.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 25484,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-solid-900.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 426112,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-solid-900.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 158224,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-v4compatibility.ttf",
+"status": 200,
+"content_type": "font/ttf",
+"bytes": 10836,
+"identical_to_local": true
+},
+{
+"path": "lib/webfonts/fa-v4compatibility.woff2",
+"status": 200,
+"content_type": "font/woff2",
+"bytes": 4788,
+"identical_to_local": true
+},
+{
+"path": "offline/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7305,
+"identical_to_local": true
+},
+{
+"path": "robots.txt",
+"status": 200,
+"content_type": "text/plain; charset=utf-8",
+"bytes": 1433,
+"identical_to_local": true
+},
+{
+"path": "search.json",
+"status": 200,
+"content_type": "application/json; charset=utf-8",
+"bytes": 52320,
+"identical_to_local": true
+},
+{
+"path": "sitemap.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 527,
+"identical_to_local": true
+},
+{
+"path": "tags/ai/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7087,
+"identical_to_local": true
+},
+{
+"path": "tags/ai/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2751,
+"identical_to_local": true
+},
+{
+"path": "tags/ai/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 306,
+"identical_to_local": true
+},
+{
+"path": "tags/best-practices/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7023,
+"identical_to_local": true
+},
+{
+"path": "tags/best-practices/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2185,
+"identical_to_local": true
+},
+{
+"path": "tags/best-practices/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "tags/career/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6927,
+"identical_to_local": true
+},
+{
+"path": "tags/career/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2161,
+"identical_to_local": true
+},
+{
+"path": "tags/career/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "tags/chien-luoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7165,
+"identical_to_local": true
+},
+{
+"path": "tags/chien-luoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2561,
+"identical_to_local": true
+},
+{
+"path": "tags/chien-luoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "tags/collections/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6960,
+"identical_to_local": true
+},
+{
+"path": "tags/collections/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2439,
+"identical_to_local": true
+},
+{
+"path": "tags/collections/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "tags/complexity/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7198,
+"identical_to_local": true
+},
+{
+"path": "tags/complexity/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2562,
+"identical_to_local": true
+},
+{
+"path": "tags/complexity/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "tags/courses/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6912,
+"identical_to_local": true
+},
+{
+"path": "tags/courses/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2427,
+"identical_to_local": true
+},
+{
+"path": "tags/courses/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/crypto/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7111,
+"identical_to_local": true
+},
+{
+"path": "tags/crypto/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2625,
+"identical_to_local": true
+},
+{
+"path": "tags/crypto/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "tags/css/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6869,
+"identical_to_local": true
+},
+{
+"path": "tags/css/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2193,
+"identical_to_local": true
+},
+{
+"path": "tags/css/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 309,
+"identical_to_local": true
+},
+{
+"path": "tags/dai-so-tuyen-tinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7264,
+"identical_to_local": true
+},
+{
+"path": "tags/dai-so-tuyen-tinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3079,
+"identical_to_local": true
+},
+{
+"path": "tags/dai-so-tuyen-tinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 351,
+"identical_to_local": true
+},
+{
+"path": "tags/doanh-thu/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7124,
+"identical_to_local": true
+},
+{
+"path": "tags/doanh-thu/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2551,
+"identical_to_local": true
+},
+{
+"path": "tags/doanh-thu/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "tags/economics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7171,
+"identical_to_local": true
+},
+{
+"path": "tags/economics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2772,
+"identical_to_local": true
+},
+{
+"path": "tags/economics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "tags/game-theory/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7195,
+"identical_to_local": true
+},
+{
+"path": "tags/game-theory/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2778,
+"identical_to_local": true
+},
+{
+"path": "tags/game-theory/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "tags/guides/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6909,
+"identical_to_local": true
+},
+{
+"path": "tags/guides/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2157,
+"identical_to_local": true
+},
+{
+"path": "tags/guides/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "tags/hien-tuong-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7219,
+"identical_to_local": true
+},
+{
+"path": "tags/hien-tuong-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2590,
+"identical_to_local": true
+},
+{
+"path": "tags/hien-tuong-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 342,
+"identical_to_local": true
+},
+{
+"path": "tags/html/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6881,
+"identical_to_local": true
+},
+{
+"path": "tags/html/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2196,
+"identical_to_local": true
+},
+{
+"path": "tags/html/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 312,
+"identical_to_local": true
+},
+{
+"path": "tags/hugo/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6897,
+"identical_to_local": true
+},
+{
+"path": "tags/hugo/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2154,
+"identical_to_local": true
+},
+{
+"path": "tags/hugo/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 312,
+"identical_to_local": true
+},
+{
+"path": "tags/husserl/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7135,
+"identical_to_local": true
+},
+{
+"path": "tags/husserl/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2569,
+"identical_to_local": true
+},
+{
+"path": "tags/husserl/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9580,
+"identical_to_local": true
+},
+{
+"path": "tags/international/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6993,
+"identical_to_local": true
+},
+{
+"path": "tags/international/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2178,
+"identical_to_local": true
+},
+{
+"path": "tags/international/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 339,
+"identical_to_local": true
+},
+{
+"path": "tags/javascript/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6953,
+"identical_to_local": true
+},
+{
+"path": "tags/javascript/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2214,
+"identical_to_local": true
+},
+{
+"path": "tags/javascript/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "tags/kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 8046,
+"identical_to_local": true
+},
+{
+"path": "tags/kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 6108,
+"identical_to_local": true
+},
+{
+"path": "tags/kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/lagrange/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7151,
+"identical_to_local": true
+},
+{
+"path": "tags/lagrange/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 1860,
+"identical_to_local": true
+},
+{
+"path": "tags/lagrange/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 324,
+"identical_to_local": true
+},
+{
+"path": "tags/lap-trinh/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7186,
+"identical_to_local": true
+},
+{
+"path": "tags/lap-trinh/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2559,
+"identical_to_local": true
+},
+{
+"path": "tags/lap-trinh/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "tags/learning/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6924,
+"identical_to_local": true
+},
+{
+"path": "tags/learning/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2430,
+"identical_to_local": true
+},
+{
+"path": "tags/learning/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 324,
+"identical_to_local": true
+},
+{
+"path": "tags/ly-thuyet-so/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7183,
+"identical_to_local": true
+},
+{
+"path": "tags/ly-thuyet-so/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2643,
+"identical_to_local": true
+},
+{
+"path": "tags/ly-thuyet-so/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "tags/ly-thuyet-tro-choi/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7261,
+"identical_to_local": true
+},
+{
+"path": "tags/ly-thuyet-tro-choi/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2585,
+"identical_to_local": true
+},
+{
+"path": "tags/ly-thuyet-tro-choi/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 354,
+"identical_to_local": true
+},
+{
+"path": "tags/ma-tran/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7617,
+"identical_to_local": true
+},
+{
+"path": "tags/ma-tran/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 4860,
+"identical_to_local": true
+},
+{
+"path": "tags/ma-tran/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/mathematics/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7195,
+"identical_to_local": true
+},
+{
+"path": "tags/mathematics/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2778,
+"identical_to_local": true
+},
+{
+"path": "tags/mathematics/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "tags/nash/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7093,
+"identical_to_local": true
+},
+{
+"path": "tags/nash/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2543,
+"identical_to_local": true
+},
+{
+"path": "tags/nash/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 312,
+"identical_to_local": true
+},
+{
+"path": "tags/nhan-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7159,
+"identical_to_local": true
+},
+{
+"path": "tags/nhan-thuc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2575,
+"identical_to_local": true
+},
+{
+"path": "tags/nhan-thuc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "tags/optimization/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7207,
+"identical_to_local": true
+},
+{
+"path": "tags/optimization/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2781,
+"identical_to_local": true
+},
+{
+"path": "tags/optimization/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "tags/phan-tich/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7095,
+"identical_to_local": true
+},
+{
+"path": "tags/phan-tich/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2485,
+"identical_to_local": true
+},
+{
+"path": "tags/phan-tich/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "tags/programming/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6987,
+"identical_to_local": true
+},
+{
+"path": "tags/programming/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2176,
+"identical_to_local": true
+},
+{
+"path": "tags/programming/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "tags/quantum/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7162,
+"identical_to_local": true
+},
+{
+"path": "tags/quantum/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2553,
+"identical_to_local": true
+},
+{
+"path": "tags/quantum/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/riemann/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7123,
+"identical_to_local": true
+},
+{
+"path": "tags/riemann/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2628,
+"identical_to_local": true
+},
+{
+"path": "tags/riemann/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/so-nguyen-to/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7183,
+"identical_to_local": true
+},
+{
+"path": "tags/so-nguyen-to/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2643,
+"identical_to_local": true
+},
+{
+"path": "tags/so-nguyen-to/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "tags/static-site/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6981,
+"identical_to_local": true
+},
+{
+"path": "tags/static-site/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2175,
+"identical_to_local": true
+},
+{
+"path": "tags/static-site/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 333,
+"identical_to_local": true
+},
+{
+"path": "tags/thuat-toan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7198,
+"identical_to_local": true
+},
+{
+"path": "tags/thuat-toan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2562,
+"identical_to_local": true
+},
+{
+"path": "tags/thuat-toan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "tags/tips/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6903,
+"identical_to_local": true
+},
+{
+"path": "tags/tips/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2155,
+"identical_to_local": true
+},
+{
+"path": "tags/tips/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 312,
+"identical_to_local": true
+},
+{
+"path": "tags/toan-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9089,
+"identical_to_local": true
+},
+{
+"path": "tags/toan-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 9824,
+"identical_to_local": true
+},
+{
+"path": "tags/toan-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 324,
+"identical_to_local": true
+},
+{
+"path": "tags/toan-kinh-te/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 9278,
+"identical_to_local": true
+},
+{
+"path": "tags/toan-kinh-te/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 10610,
+"identical_to_local": true
+},
+{
+"path": "tags/toan-kinh-te/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "tags/toi-uu-hoa/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7691,
+"identical_to_local": true
+},
+{
+"path": "tags/toi-uu-hoa/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3964,
+"identical_to_local": true
+},
+{
+"path": "tags/toi-uu-hoa/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "tags/travel/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6909,
+"identical_to_local": true
+},
+{
+"path": "tags/travel/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2157,
+"identical_to_local": true
+},
+{
+"path": "tags/travel/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "tags/triet-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7159,
+"identical_to_local": true
+},
+{
+"path": "tags/triet-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2575,
+"identical_to_local": true
+},
+{
+"path": "tags/triet-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "tags/tutorials/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6957,
+"identical_to_local": true
+},
+{
+"path": "tags/tutorials/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2169,
+"identical_to_local": true
+},
+{
+"path": "tags/tutorials/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 327,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-mo/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7047,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-mo/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2473,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-mo/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 315,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-phan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7100,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-phan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2545,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-phan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-tich-phan/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7733,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-tich-phan/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 5074,
+"identical_to_local": true
+},
+{
+"path": "tags/vi-tich-phan/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 336,
+"identical_to_local": true
+},
+{
+"path": "tags/vietnam/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6921,
+"identical_to_local": true
+},
+{
+"path": "tags/vietnam/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2160,
+"identical_to_local": true
+},
+{
+"path": "tags/vietnam/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 321,
+"identical_to_local": true
+},
+{
+"path": "tags/web-development/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7319,
+"identical_to_local": true
+},
+{
+"path": "tags/web-development/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 3658,
+"identical_to_local": true
+},
+{
+"path": "tags/web-development/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 345,
+"identical_to_local": true
+},
+{
+"path": "tags/y-thuc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7123,
+"identical_to_local": true
+},
+{
+"path": "tags/y-thuc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2566,
+"identical_to_local": true
+},
+{
+"path": "tags/y-thuc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 318,
+"identical_to_local": true
+},
+{
+"path": "toan-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7151,
+"identical_to_local": true
+},
+{
+"path": "toan-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2624,
+"identical_to_local": true
+},
+{
+"path": "toan-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 309,
+"identical_to_local": true
+},
+{
+"path": "toan-hoc/riemann-hypothesis-number-theory/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 63664,
+"identical_to_local": true
+},
+{
+"path": "toan-hoc/riemann-hypothesis-number-theory/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 10664,
+"identical_to_local": true
+},
+{
+"path": "triet-hoc/husserl-hien-tuong-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 66936,
+"identical_to_local": true
+},
+{
+"path": "triet-hoc/husserl-hien-tuong-hoc/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 13635,
+"identical_to_local": true
+},
+{
+"path": "triet-hoc/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7176,
+"identical_to_local": true
+},
+{
+"path": "triet-hoc/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2568,
+"identical_to_local": true
+},
+{
+"path": "triet-hoc/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 312,
+"identical_to_local": true
+},
+{
+"path": "vi/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 282,
+"identical_to_local": true
+},
+{
+"path": "vi/sitemap.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 35896,
+"identical_to_local": true
+},
+{
+"path": "videos/game_theory_nash.mp4",
+"status": 200,
+"content_type": "video/mp4",
+"bytes": 1720747,
+"identical_to_local": true
+},
+{
+"path": "volumes/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 7776,
+"identical_to_local": true
+},
+{
+"path": "volumes/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 1306,
+"identical_to_local": true
+},
+{
+"path": "volumes/volume-i/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 13186,
+"identical_to_local": true
+},
+{
+"path": "volumes/volume-i/index.md",
+"status": 200,
+"content_type": "text/markdown; charset=utf-8",
+"bytes": 426,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/404.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6402,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/archives/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6859,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/archives/page/1/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 330,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/categories/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6185,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/collections/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6200,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 13956,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/index.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 645,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/offline/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6949,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/search.json",
+"status": 200,
+"content_type": "application/json; charset=utf-8",
+"bytes": 2,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/sitemap.xml",
+"status": 200,
+"content_type": "application/xml",
+"bytes": 2135,
+"identical_to_local": true
+},
+{
+"path": "zh-cn/tags/index.html",
+"status": 200,
+"content_type": "text/html; charset=utf-8",
+"bytes": 6095,
+"identical_to_local": true
+}
+]
+}

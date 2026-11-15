@@ -308,3 +308,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Tests (exit 0):** `hugo --gc --minify` (0 warnings) and development build; `python3 docs/audits/p1-05/tools/compare-output.py <P1-08 build> <P3 build>` — no content route removed; `python3 docs/audits/p1-02/static/analyze.py ...` — 0 broken references (was 140); `python3 docs/audits/p1-06/tools/seo-check.py <build> content ...` PASS 213 pages; `BASE=... AXE=.../axe.min.js node docs/audits/p3-07/tools/p3-smoke.cjs` — 80 matrix states, 31/31 checks, axe 0 violations; `node docs/audits/p3-07/tools/perf.cjs` — home 1,135 to 589 KB at 390 px, CLS 0.
 - **Known limitations:** see `docs/audits/p3-07/README.md`.
 
+### 2026-11-15 — P3-08 deployment and live sign-off — Claude Code
+- **Status:** DONE. Phase 3 complete.
+- **Deploy:** #36 → #35 → #34 merged; `main` `5cfcec9`; `deploy.yml` run 43739094847 success; live `last-modified` 17:05:52 GMT.
+- **Tests (exit 0):** `python3 docs/audits/p1-08/tools/live-mirror.py <build of 5cfcec9> https://trandung6129.github.io …` 687/687 HTTP 200 and byte-identical; `BASE=https://trandung6129.github.io AXE=… node docs/audits/p3-07/tools/p3-smoke.cjs` 80 states, 31/31, axe 0 violations, no failed requests; `seo-check.py` on the live tree PASS (213 pages); `analyze.py` on the live tree 0 broken references.
+- **Rollback:** revert `5cfcec9` → `0045a4c` state; see `docs/audits/p3-08/README.md`.
+
