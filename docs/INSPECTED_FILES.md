@@ -127,3 +127,25 @@ Reviewed on `audit/p1-02-baseline` (main `aae95e9`, claim `808ae64`). Hashes are
 Generated/binary module `docs/audits/p1-02/` JSON/log/routes/screenshots: PARTIAL, parser fields and sampled browser states only. Exact per-artifact Git blobs are in `artifact-blobs.tsv`; module manifest SHA256 `dcaff479e3f15e910cea6f407c268d9807298477e9f111c8cad1eae4a5fb1392`. JSON includes full metadata, missing-target provenance, image digests, XML/search counts, runtime/keyboard observations and P1-01 byte-retention comparison;16 PNGs are unedited viewport captures, two visually opened. Dependencies are unmodified Hugo/FixIt/content+local HTTP/browser; external errors preserved. Edit/regenerate only with documented baseline source/tool versions; no full link/CSS/JS crawl, a11y/SEO, production CWV or live deployment claim.
 
 Reused P1-01 source CSV and route artifacts: PARTIAL; `content-pages.csv` blob `0fc0b18babb32b4526d2c750653b1ee117276863` supplies24vi/24en source counts; `routes-after.txt` blob `6d18a022b4125e4271d6fc3e6d8540c2795cfd77` supplies645 frozen public paths. Consumers: analyzer and parity comparison; neither artifact alone proves runtime/translation quality. Previously reviewed AGENTS/QUALITY_GATES roles and unchanged blobs remain valid; CODEBASE_MAP/registry changes are captured above.
+
+## 2026-11-15 — P1-03 decision review
+
+Git working-file blob hashes at review; registry self hash is pre-append. All entries PARTIAL: targeted roles and implications reviewed; build and baseline analyzer passed as recorded in AGENT_LOG. Existing P1-01/P1-02 artifact group records remain applicable.
+
+| Path | Git blob | Purpose, dependencies and risks |
+|---|---|---|
+| `AGENTS.md` | `006e02c26e301ca92494903e519efbf3c778db3f` | Agent workflow, safeguards, registry and D-011/P1-09 gates. |
+| `docs/TASK_BOARD.md` | `4b9af2f23e10a9e9f0b492cc92ef8c2d4ad4b5b1` | Canonical claims, dependencies and task status; P1-03 decision completed on this branch. |
+| `docs/DECISIONS.md` | `5bccb094ef5df421c01631520897947cf1760a09` | D-012 adds chosen Hugo template, config migration and database migration conventions; D-010/D-011 remain controlling. |
+| `docs/ARCHITECTURE.md` | `9266866e2034c245268d601b872f6a7f757b41f1` | Migration boundaries and pointer to D-012; future paths are not implemented. |
+| `docs/CODEBASE_MAP.md` | `1acfc3893fe1cf9dfed1e034ea4124dabf636b05` | Current feature ownership; adds prospective D-012 pointer without asserting new templates exist. |
+| `docs/DATABASE_FOUNDATION.md` | `80087fd4ecdeb223cd879cba8a3701d0e2049775` | P1-09 local PostgreSQL acceptance, static Hugo boundary and restore tests. |
+| `docs/VISUAL_DIRECTION.md` | `9181d328d71d874bc95c44daca2dec5a7607bd0c` | D-011 specimen and owner visual approval gate; homepage composition not approved. |
+| `docs/audits/P1-02.md` | `ad7ee51ec5ae89a9d708d765092eac76faad8d99` | 645-path baseline, browser results, known link/metadata defects and external runtime limitations. |
+| `docs/QUALITY_GATES.md` | `657ae0681667e282a6e979d69f2ba572b23f3e32` | Route, build, metadata, accessibility, performance and evidence gates for subsequent implementation. |
+| `docs/INSPECTED_FILES.md` | `d68c4efc4edb2d31a97e3579c2e3c574567db048` | Cumulative inspected-file registry; self hash is pre-append. |
+| `docs/AGENT_LOG.md` | `119ec13e1b3acf199abb4bda12bb43b0e12cd8d3` | Claims and evidence; P1-03 entry records commands and limitations. |
+| `hugo.toml` | `31ba0a8a84864500f4b96eb87a744d46bbb52c77` | Root Hugo config contributes cascade, math and pagination; effective behavior overlaps split config. |
+| `config/_default/hugo.toml` | `ff107c0c3ce681d919e50f25c91e1feb6b388f6f` | Project title/base URL and active theme list override root conflicts. |
+| `config/_default/params.toml` | `61861b802993602aabc4e57f6f926f1caefe9005` | Theme search, appearance, math and injected partial settings; preserve consumers until migration. |
+| `config/_default/outputs.toml` | `63a58b15da2925adc6056f74d2cabc7b4a1dc02a` | Home and page output configuration; feeds/search depend on effective merge. |

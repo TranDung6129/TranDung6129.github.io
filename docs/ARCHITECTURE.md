@@ -62,3 +62,7 @@ The verified P1-01 inventory and populated KEEP/REPLACE/REMOVE ledger are in [th
 - No server-side auth simulated by hiding markup client-side.
 - Respect accessibility, third-party script budgets, consent and disclosures.
 - Never auto-update themes/dependencies without version-aware testing.
+
+## P1-03 implementation decision
+
+[D-012](DECISIONS.md#d-012--owned-hugo-templates-and-incremental-compatibility) is the authoritative template, configuration and migration contract. Its prospective paths are not yet implemented. P1-04 must verify Hugo's type-specific lookup and shared-base effects; P1-09 implements the ordered migration/restore convention independently of public Hugo rendering. Known P1-02 defects and blocked external runtime checks remain open until specifically verified.
