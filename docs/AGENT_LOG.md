@@ -47,3 +47,11 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Policy:** Read new navigation/registry, visual/engineering standards and D-010/DATABASE_FOUNDATION. P1-09 remains TODO dependent on P1-03; approved local PostgreSQL does not authorize public auth/billing, hosted provisioning or a DB dependency in Hugo.
 - **Delivery:** Prior PR blocker is resolved by merged PR #13, not by API access: `gh pr list --state merged --limit 10 --json number,title,mergeCommit,url` still fails Forbidden. Git merge evidence is used, not a fabricated API outcome. Follow-up PR creation is attempted separately; no merge by agent.
 - **Next:** P1-02 baseline, own branch/PR.
+
+### 2026-11-15 — P1-02 claim — Codex integrator
+- **Status:** IN PROGRESS; dependency P1-01 accepted after PR #13 merge and fresh output comparison.
+- **Branch / PR:** `audit/p1-02-baseline`, stacked on `docs/p1-01-acceptance` (`02fd727`) to isolate acceptance reconciliation from baseline evidence. PR base is acceptance branch until it merges, then retarget main.
+- **Scope:** Baseline build/routes/languages/feed/search/math/code/TOC/theme behavior, links, screenshots and measured local performance; preserve application/content/config.
+- **Contributors:** `baseline_static` inspects fresh generated output; `baseline_browser` exercises headless Chromium. Shared task/log/registry edits stay with integrator.
+- **Tests:** Fresh production build already PASS at synchronized main; baseline probes underway, results to follow. No defects are being silently fixed.
+- **Next:** P1-03 remains TODO; P1-09 must wait for P1-03 schema/migration decision.
