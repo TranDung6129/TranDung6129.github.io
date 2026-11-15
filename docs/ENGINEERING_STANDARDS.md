@@ -1,14 +1,14 @@
 # Engineering Standards — The Epistemic Diary
 
 ## Applicability
-**Current product:** Hugo static publication on GitHub Pages. Do not introduce a backend, database, mobile app or API on principle alone. Introduce them only with an approved feature needing durable identity, orders, billing, entitlements or personalized state. A subscription commerce platform is a separate later phase.
+**Current product:** Hugo static publication on GitHub Pages, with an **approved PostgreSQL foundation in Phase 1** for future reader support, subscriptions and product discovery. Provision a safe local development database/schema and migration workflow now; hosted credentials/project creation require maintainer action. Do not build an application backend, mobile app, customer accounts or payments without later approval. The public Hugo reading path must remain available when the database is offline.
 
 ## System boundaries and future architecture
 | Concern | Current implementation | Later if justified |
 |---|---|---|
 | Frontend | Hugo templates, CSS, progressive JS | interactive components or optional app |
 | Backend | None needed for public articles | API/service for payment, private delivery and identities |
-| Database | Markdown, front matter, Hugo data files | PostgreSQL for users/orders/entitlements if required |
+| Database | PostgreSQL foundation + migrations in Phase 1, no public runtime dependency | Extend for users/orders/entitlements on feature approval |
 | File storage | Versioned public static assets | private object storage for paid files |
 | External services | GitHub Pages, optional analytics/search | checkout provider, email, subscriptions, video |
 Whenever proposing a new service, document why Hugo static isn't sufficient, costs, backup, exit strategy and new data risk.
@@ -30,9 +30,11 @@ Whenever proposing a new service, document why Hugo static isn't sufficient, cos
 - Private premium assets remain outside public Hugo output and publicly accessible storage buckets.
 - Restrict third-party scripts and external embeds; update dependencies and check known vulnerabilities.
 
-## Database and storage — only if introduced later
-- Prefer relational SQL (e.g., PostgreSQL) for linked users, subscriptions, payments and entitlements unless requirements justify otherwise.
-- Database is **not mandatory** for a static blog; flat files are valid for curated publishing.
+## Database and storage — approved foundation now
+- PostgreSQL is the agreed database engine. Supabase-hosted PostgreSQL is the preferred managed option; self-hosting is not required. Keep provider choice, costs, access and credentials behind an explicit approval gate.
+- In P1-09, supply local development setup (Docker Compose or equivalent), versioned schema migrations, seed/demo data with no PII, environment.example, minimal migration/connection smoke tests, and a short backup/restore procedure. The scope is **infrastructure and reversible schema only**, not a deployed member service.
+- Define stable identifiers, migration conventions and separation of public editorial references from private member/order/payment data. Do not invent live customers, subscriptions or transaction records.
+- Database is not mandatory for reading public Hugo pages: flat files remain the source of editorial text, navigation and site build; database outages must not break article rendering.
 - Keep large media in object storage, store references/metadata in DB where useful. Some DB-backed small binary records may be appropriate, but media libraries belong in storage.
 - Schema changes via reviewed migrations, rollback plans, backups and **restore tests**. Never manually edit production schema without a controlled migration.
 - Design for least privilege, data retention, export/deletion and ownership boundaries.

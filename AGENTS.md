@@ -38,7 +38,7 @@ This file is the entry point for Codex, Claude Code, Cursor, and other coding ag
 - External links and future affiliate material require honest labeling. Never fabricate product tests, prices, citations, traffic, or freshness claims.
 - Use semantic HTML and keyboard-accessible controls; respect reduced-motion preferences.
 - Follow docs/VISUAL_ASSET_GUIDELINES.md: original/look-consistent images, provable commercial-use rights and truthful documentary imagery.
-- Follow docs/ENGINEERING_STANDARDS.md: proportional architecture; no speculative backend/database; secrets and authorization reviewed; controlled migrations/backup where applicable.
+- Follow docs/ENGINEERING_STANDARDS.md and docs/DATABASE_FOUNDATION.md: **PostgreSQL local foundation is approved** (P1-09), but public articles remain static; no unapproved authentication, billing, hosted provisioning or secrets in Git. Use versioned migrations and tested backup/restore plans.
 - Do not automatically check off project-wide acceptance solely because a local task passed.
 
 ## Handoff format (append to docs/AGENT_LOG.md)

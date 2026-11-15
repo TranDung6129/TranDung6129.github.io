@@ -25,7 +25,10 @@
 **Accepted direction:** hybrid original/AI-assisted art, code-generated scientific figures and license-verified real photography. Never misrepresent synthetic imagery as documentary evidence. Maintain a provenance/license manifest. No final homepage wireframe approved. See [VISUAL_ASSET_GUIDELINES.md](VISUAL_ASSET_GUIDELINES.md).
 
 ## D-009 — Architecture proportional to product needs
-**Accepted direction:** no mandatory database/backend for Hugo public content; future subscriptions/auth/private files only via trusted services and validated security model. Git, small changes, server-side authorization, backups/migrations where relevant, CI/CD and privacy/legal review. See [ENGINEERING_STANDARDS.md](ENGINEERING_STANDARDS.md).
+**Superseded in part by D-010:** Hugo public reading remains static and independent of database availability. Git, small changes, server-side authorization for future protected features, backups/migrations, CI/CD and privacy/legal review remain mandatory. See [ENGINEERING_STANDARDS.md](ENGINEERING_STANDARDS.md).
+
+## D-010 — PostgreSQL foundation from Phase 1
+**Accepted:** Prepare an extensible PostgreSQL database early, with a local reproducible environment, reviewed schema/migrations, example data and verification/restore instructions (P1-09). Supabase PostgreSQL is a favored managed provider, not yet provisioned. Hugo/Pages articles remain static and must work without database connection. Real accounts, member entitlements, billing, private assets and customer personal data processing remain deferred to separately approved phases. See [DATABASE_FOUNDATION.md](DATABASE_FOUNDATION.md).
 
 ## Decision proposal template
 ### D-XXX — Name

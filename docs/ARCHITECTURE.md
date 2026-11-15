@@ -8,7 +8,15 @@ Hugo + FixIt via submodule; GitHub Pages action deploying main; root hugo.toml a
 - Build owned layouts in repository, ideally following the installed Hugo version conventions. No new theme dependency by default.
 - Reusable Hugo partials, focused CSS modules and lightweight JS islands where useful. Prefer progressive enhancement.
 - Do NOT move to Next.js/Astro, add Tailwind, or install a CMS without documenting concrete benefits and approval.
-- Future payments/membership access require separate trusted server/provider; public HTML cannot protect premium content.
+- **Approved Phase 1 database foundation:** PostgreSQL with local development setup, migrations, env template, seed/demo data, tests and backup/restore instructions. Supabase-managed PostgreSQL is the preferred future deployment option, pending maintainer provisioning, price/privacy review and secure credentials.
+- No database reads during Hugo build, no client-side database secrets, and no runtime dependency for reading public articles.
+- Future payments/membership access require a separate trusted server/provider; public HTML cannot protect premium content.
+
+## Database boundary
+- P1-09 starts only after P1-03 approves schema and migration conventions. Create local Docker/Postgres schema, versioned migrations and minimal example entities (e.g., author/member identity reference, support tier, product reference) without enabling real authentication, subscription billing or order processing.
+- All private tables are protected on any future public data API; never expose owner, service-role or database credentials in Hugo output. No real customer data in Git.
+- Production-managed database provisioning is a separate step requiring account owner action; completing a local database foundation does NOT claim hosted database deployment.
+- Keep database-related changes in a separate PR; preserve Hugo's static deployment and editorial content as source of truth.
 
 ## Migration order
 1. Capture baseline: build, rendered output snapshot, routes, images, RSS, search, math, syntax highlight, shortcode inventory, language behavior, website preview.

@@ -16,6 +16,7 @@ Build **The Epistemic Diary**, an independent, witty but rigorous publication fo
 | [VISUAL_ASSET_GUIDELINES.md](VISUAL_ASSET_GUIDELINES.md) | Original/licensed/AI media sourcing and rights |
 | [ASSET_MANIFEST_TEMPLATE.md](ASSET_MANIFEST_TEMPLATE.md) | Provenance/credit manifest template |
 | [ENGINEERING_STANDARDS.md](ENGINEERING_STANDARDS.md) | Architecture, security, data, migration and CI guardrails |
+| [DATABASE_FOUNDATION.md](DATABASE_FOUNDATION.md) | Approved PostgreSQL scope, schema boundaries and acceptance |
 | [CONTENT_MODEL.md](CONTENT_MODEL.md) | Magazine, volume, video and product metadata |
 | [EDITORIAL_VOICE.md](EDITORIAL_VOICE.md) | Voice and content standard for site/video |
 | [SEO_AND_MONETIZATION.md](SEO_AND_MONETIZATION.md) | Search, affiliate, support, ads, digital goods |
