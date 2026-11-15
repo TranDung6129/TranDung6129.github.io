@@ -112,3 +112,10 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Trust path and limits:** the block in this environment was the network policy refusing `cdn.jsdelivr.net` and `d3js.org`; the maintainer approved an environment allow-listing those two hosts. HTTPS is re-terminated by the provider's managed egress proxy whose CA the environment installs in the browser store, so executed bytes were cross-checked against npm registry releases by hash. A public-internet end-user browser check remains for P1-08. Details in the report.
 - **Findings / risks:** new baseline defect, identical on main — heatmap cells keep one fill in both themes and show every day as active when the window has no posts (`layouts/partials/heatmap.html`); not fixed here. Gravatar avatar host is not allow-listed in this environment (cosmetic). P1-02 link/metadata/asset defects unchanged.
 - **Next dependency / requested review:** maintainer merges PR #19. P1-05, P1-06 and P1-07 proceed on stacked branches (`chore/p1-05-…` on this branch, and so on) so nothing reaches `main` without review; P1-09 stays with Codex and is not touched.
+
+### 2026-11-15 — P1-05 claim — Claude Code
+- **Status:** IN PROGRESS. Dependency P1-04 is implemented and verified on PR #19 but not yet merged, so this branch is stacked on `feat/p1-04-hugo-templates` (`574ddfa`) and its PR targets that branch until #19 merges; nothing here reaches `main` before review.
+- **Branch:** `chore/p1-05-css-config-cleanup`.
+- **Scope:** consolidate the two active configuration families into `config/_default/`, consolidate duplicated site CSS layers, and remove only files proven unused, each with effective-config, output and browser evidence. No homepage redesign, no theme removal (P1-07), no metadata/SEO fixes (P1-06), no database files (P1-09, Codex).
+- **Evidence:** claim commit precedes implementation; checks follow in the completion entry.
+
