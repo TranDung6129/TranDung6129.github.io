@@ -1,0 +1,68 @@
+{
+  "emitted_files_before": 645,
+  "emitted_files_after": 645,
+  "removed": [],
+  "added": [],
+  "byte_differences": [],
+  "home_metadata": {
+    "index.html": {
+      "lang": "vi",
+      "title_elements": 1,
+      "canonical": "https://trandung6129.github.io/"
+    },
+    "en/index.html": {
+      "lang": "en",
+      "title_elements": 1,
+      "canonical": "https://trandung6129.github.io/en/"
+    },
+    "ja/index.html": {
+      "lang": "ja",
+      "title_elements": 1,
+      "canonical": "https://trandung6129.github.io/ja/"
+    },
+    "zh-cn/index.html": {
+      "lang": "zh-cn",
+      "title_elements": 1,
+      "canonical": "https://trandung6129.github.io/zh-cn/"
+    }
+  },
+  "emitted_consumer_markers": {
+    "react-root-NashEquilibriumSim": [
+      "en/kinh-te/game_theory_nash/index.html",
+      "kinh-te/game_theory_nash/index.html"
+    ],
+    "collection-name-custom": [
+      "en/kinh-te/toan-co-ban-1/index.html",
+      "en/kinh-te/toan-co-ban-2/index.html",
+      "en/kinh-te/toan-co-ban-3/index.html",
+      "en/kinh-te/toan-co-ban-4/index.html",
+      "en/kinh-te/toan-co-ban-5/index.html",
+      "kinh-te/toan-co-ban-1/index.html",
+      "kinh-te/toan-co-ban-2/index.html",
+      "kinh-te/toan-co-ban-3/index.html",
+      "kinh-te/toan-co-ban-4/index.html",
+      "kinh-te/toan-co-ban-5/index.html"
+    ],
+    "cal-heatmap": [
+      "en/index.html",
+      "index.html",
+      "ja/index.html",
+      "zh-cn/index.html"
+    ]
+  },
+  "required_outputs_present": [
+    "index.xml",
+    "sitemap.xml",
+    "robots.txt",
+    "js/mount-react-root-NashEquilibriumSim-0.js",
+    "videos/game_theory_nash.mp4"
+  ],
+  "search_json_files": [
+    "en/search.json",
+    "ja/search.json",
+    "search.json",
+    "zh-cn/search.json"
+  ],
+  "known_missing_asset": "/images/game_theory_nash_poster.png",
+  "limits": "No browser interaction, screenshots, full links/fragments, accessibility, performance or live deployment validated."
+}

@@ -1,0 +1,1270 @@
+{
+  "effective": {
+    "baseurl": "https://trandung6129.github.io/",
+    "title": "The Epistemic Diary",
+    "theme": [
+      "FixIt",
+      "shortcode-docs-bookmark"
+    ],
+    "defaultcontentlanguage": "vi",
+    "languagecode": "vi",
+    "pagination": {
+      "pagersize": 12,
+      "path": "page"
+    },
+    "cascade": [
+      {
+        "fields": {},
+        "params": {
+          "layout": "single",
+          "type": "posts"
+        },
+        "target": {
+          "path": "/{toan-hoc,vat-ly,kinh-te,khoa-hoc-may-tinh,triet-hoc,ca-nhan}/**"
+        }
+      }
+    ],
+    "permalinks": {
+      "page": {
+        "posts": "posts/:slugorcontentbasename"
+      },
+      "section": {},
+      "taxonomy": {},
+      "term": {
+        "posts": "posts/:slugorcontentbasename"
+      }
+    },
+    "outputs": {
+      "home": [
+        "html",
+        "rss",
+        "archives",
+        "offline",
+        "search"
+      ],
+      "page": [
+        "html",
+        "markdown"
+      ],
+      "rss": [
+        "rss"
+      ],
+      "section": [
+        "html",
+        "rss"
+      ],
+      "taxonomy": [
+        "html"
+      ],
+      "term": [
+        "html",
+        "rss"
+      ]
+    },
+    "outputformats": {
+      "404": {
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "permalinkable": true,
+        "ugly": true
+      },
+      "alias": {
+        "ishtml": true,
+        "mediatype": "text/html",
+        "ugly": true
+      },
+      "amp": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "path": "amp",
+        "permalinkable": true,
+        "rel": "amphtml"
+      },
+      "archives": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "path": "archives",
+        "permalinkable": true,
+        "rel": "alternate"
+      },
+      "baidu_urls": {
+        "basename": "baidu_urls",
+        "isplaintext": true,
+        "mediatype": "text/plain",
+        "notalternative": true,
+        "rel": "alternate"
+      },
+      "calendar": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/calendar",
+        "protocol": "webcal://",
+        "rel": "alternate"
+      },
+      "css": {
+        "basename": "styles",
+        "isplaintext": true,
+        "mediatype": "text/css",
+        "notalternative": true,
+        "rel": "stylesheet"
+      },
+      "csv": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/csv",
+        "rel": "alternate"
+      },
+      "gotmpl": {
+        "isplaintext": true,
+        "mediatype": "text/x-gotmpl",
+        "notalternative": true
+      },
+      "html": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "permalinkable": true,
+        "rel": "canonical",
+        "weight": 10
+      },
+      "json": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "application/json",
+        "rel": "alternate"
+      },
+      "markdown": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/markdown",
+        "rel": "alternate"
+      },
+      "offline": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "path": "offline",
+        "permalinkable": true,
+        "rel": "alternate"
+      },
+      "readme": {
+        "basename": "readme",
+        "isplaintext": true,
+        "mediatype": "text/markdown",
+        "notalternative": true,
+        "rel": "alternate"
+      },
+      "robots": {
+        "basename": "robots",
+        "isplaintext": true,
+        "mediatype": "text/plain",
+        "rel": "alternate",
+        "root": true
+      },
+      "rss": {
+        "basename": "index",
+        "mediatype": "application/rss+xml",
+        "nougly": true,
+        "rel": "alternate"
+      },
+      "search": {
+        "basename": "search",
+        "isplaintext": true,
+        "mediatype": "application/json",
+        "permalinkable": true,
+        "rel": "search"
+      },
+      "sitemap": {
+        "basename": "sitemap",
+        "mediatype": "application/xml",
+        "rel": "sitemap",
+        "ugly": true
+      },
+      "sitemapindex": {
+        "basename": "sitemap",
+        "mediatype": "application/xml",
+        "rel": "sitemap",
+        "root": true,
+        "ugly": true
+      },
+      "webappmanifest": {
+        "basename": "manifest",
+        "isplaintext": true,
+        "mediatype": "application/manifest+json",
+        "notalternative": true,
+        "rel": "manifest"
+      }
+    },
+    "privacy": {
+      "disqus": {},
+      "googleanalytics": {},
+      "instagram": {},
+      "twitter": {
+        "enablednt": true
+      },
+      "vimeo": {},
+      "x": {
+        "enablednt": true
+      },
+      "youtube": {
+        "privacyenhanced": true
+      }
+    },
+    "menus": {
+      "main": [
+        {
+          "identifier": "archives",
+          "name": "Lưu trữ",
+          "params": {
+            "icon": "fa-solid fa-archive"
+          },
+          "url": "/archives/",
+          "weight": 1
+        },
+        {
+          "identifier": "categories",
+          "name": "Chủ đề",
+          "params": {
+            "icon": "fa-solid fa-folder-tree"
+          },
+          "url": "/categories/",
+          "weight": 2
+        },
+        {
+          "identifier": "tags",
+          "name": "Thẻ",
+          "params": {
+            "icon": "fa-solid fa-tags"
+          },
+          "url": "/tags/",
+          "weight": 3
+        },
+        {
+          "identifier": "about",
+          "name": "Giới thiệu",
+          "params": {
+            "icon": "fa-solid fa-user"
+          },
+          "url": "/about/",
+          "weight": 5
+        },
+        {
+          "identifier": "collections",
+          "name": "Chuỗi bài",
+          "params": {
+            "icon": "fa-solid fa-layer-group"
+          },
+          "url": "/collections/",
+          "weight": 4
+        },
+        {
+          "identifier": "web-development",
+          "name": "Khóa học Web Development",
+          "params": {
+            "icon": "fa-solid fa-code"
+          },
+          "parent": "collections",
+          "url": "/collections/web-development/",
+          "weight": 1
+        },
+        {
+          "identifier": "travel-guides",
+          "name": "Cẩm nang du lịch",
+          "params": {
+            "icon": "fa-solid fa-map-marked-alt"
+          },
+          "parent": "collections",
+          "url": "/collections/travel-guides/",
+          "weight": 2
+        },
+        {
+          "identifier": "programming-tips",
+          "name": "Tips lập trình",
+          "params": {
+            "icon": "fa-solid fa-lightbulb"
+          },
+          "parent": "collections",
+          "url": "/collections/programming-tips/",
+          "weight": 3
+        },
+        {
+          "identifier": "hugo-tutorials",
+          "name": "Hướng dẫn Hugo",
+          "params": {
+            "icon": "fa-solid fa-graduation-cap"
+          },
+          "parent": "collections",
+          "url": "/collections/hugo-tutorials/",
+          "weight": 4
+        }
+      ]
+    },
+    "math": {
+      "copytex": true,
+      "enable": true,
+      "katex": {
+        "copytex": true,
+        "errorcolor": "#ff4949",
+        "macros": {}
+      },
+      "mathjax": {
+        "cdn": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+        "loader": {
+          "load": [
+            "ui/safe"
+          ],
+          "paths": {}
+        },
+        "macros": {},
+        "options": {
+          "enablemenu": true
+        },
+        "packages": {}
+      },
+      "mhchem": true,
+      "type": "mathjax"
+    },
+    "search": {
+      "algolia": {},
+      "contentlength": 4000,
+      "enable": true,
+      "fuse": {
+        "distance": 100,
+        "minmatchcharlength": 2,
+        "threshold": 0.3
+      },
+      "highlighttag": "em",
+      "maxresultlength": 10,
+      "snippetlength": 30,
+      "type": "fuse"
+    },
+    "markup": {
+      "asciidocext": {
+        "attributes": {},
+        "backend": "html5",
+        "failurelevel": "fatal",
+        "noheaderorfooter": true,
+        "safemode": "unsafe"
+      },
+      "defaultmarkdownhandler": "goldmark",
+      "goldmark": {
+        "extensions": {
+          "cjk": {
+            "eastasianlinebreaksstyle": "simple"
+          },
+          "definitionlist": true,
+          "extras": {
+            "delete": {
+              "enable": true
+            },
+            "insert": {
+              "enable": true
+            },
+            "mark": {
+              "enable": true
+            },
+            "subscript": {
+              "enable": true
+            },
+            "superscript": {
+              "enable": true
+            }
+          },
+          "footnote": true,
+          "linkify": true,
+          "linkifyprotocol": "https",
+          "passthrough": {
+            "delimiters": {
+              "block": [
+                [
+                  "\\[",
+                  "\\]"
+                ],
+                [
+                  "$$",
+                  "$$"
+                ]
+              ],
+              "inline": [
+                [
+                  "\\(",
+                  "\\)"
+                ],
+                [
+                  "$",
+                  "$"
+                ]
+              ]
+            },
+            "enable": true
+          },
+          "strikethrough": true,
+          "table": true,
+          "tasklist": true,
+          "typographer": {
+            "apostrophe": "&rsquo;",
+            "ellipsis": "&hellip;",
+            "emdash": "&mdash;",
+            "endash": "&ndash;",
+            "leftanglequote": "&laquo;",
+            "leftdoublequote": "&ldquo;",
+            "leftsinglequote": "&lsquo;",
+            "rightanglequote": "&raquo;",
+            "rightdoublequote": "&rdquo;",
+            "rightsinglequote": "&rsquo;"
+          }
+        },
+        "parser": {
+          "attribute": {
+            "block": true,
+            "title": true
+          },
+          "autoheadingid": true,
+          "autoidtype": "github",
+          "wrapstandaloneimagewithinparagraph": true
+        },
+        "renderer": {
+          "unsafe": true
+        },
+        "renderhooks": {
+          "image": {
+            "useembedded": "fallback"
+          },
+          "link": {
+            "useembedded": "fallback"
+          }
+        }
+      },
+      "highlight": {
+        "codefences": true,
+        "guesssyntax": true,
+        "linenos": true,
+        "linenostart": 1,
+        "linenumbersintable": true,
+        "style": "monokai",
+        "tabwidth": 4,
+        "wrapperclass": "highlight"
+      },
+      "tableofcontents": {
+        "endlevel": 6,
+        "startlevel": 2
+      }
+    }
+  },
+  "root_only": {
+    "baseurl": "https://trandung6129.github.io/",
+    "title": null,
+    "theme": [
+      "FixIt"
+    ],
+    "defaultcontentlanguage": "vi",
+    "languagecode": "vi",
+    "pagination": {
+      "pagersize": 12,
+      "path": "page"
+    },
+    "cascade": [
+      {
+        "fields": {},
+        "params": {
+          "layout": "single",
+          "type": "posts"
+        },
+        "target": {
+          "path": "/{toan-hoc,vat-ly,kinh-te,khoa-hoc-may-tinh,triet-hoc,ca-nhan}/**"
+        }
+      }
+    ],
+    "permalinks": {
+      "page": {},
+      "section": {},
+      "taxonomy": {},
+      "term": {}
+    },
+    "outputs": {
+      "home": [
+        "html",
+        "rss",
+        "archives",
+        "offline",
+        "search"
+      ],
+      "page": [
+        "html",
+        "markdown"
+      ],
+      "rss": [
+        "rss"
+      ],
+      "section": [
+        "html",
+        "rss"
+      ],
+      "taxonomy": [
+        "html"
+      ],
+      "term": [
+        "html",
+        "rss"
+      ]
+    },
+    "outputformats": {
+      "404": {
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "permalinkable": true,
+        "ugly": true
+      },
+      "alias": {
+        "ishtml": true,
+        "mediatype": "text/html",
+        "ugly": true
+      },
+      "amp": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "path": "amp",
+        "permalinkable": true,
+        "rel": "amphtml"
+      },
+      "archives": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "path": "archives",
+        "permalinkable": true,
+        "rel": "alternate"
+      },
+      "baidu_urls": {
+        "basename": "baidu_urls",
+        "isplaintext": true,
+        "mediatype": "text/plain",
+        "notalternative": true,
+        "rel": "alternate"
+      },
+      "calendar": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/calendar",
+        "protocol": "webcal://",
+        "rel": "alternate"
+      },
+      "css": {
+        "basename": "styles",
+        "isplaintext": true,
+        "mediatype": "text/css",
+        "notalternative": true,
+        "rel": "stylesheet"
+      },
+      "csv": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/csv",
+        "rel": "alternate"
+      },
+      "gotmpl": {
+        "isplaintext": true,
+        "mediatype": "text/x-gotmpl",
+        "notalternative": true
+      },
+      "html": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "permalinkable": true,
+        "rel": "canonical",
+        "weight": 10
+      },
+      "json": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "application/json",
+        "rel": "alternate"
+      },
+      "markdown": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/markdown",
+        "rel": "alternate"
+      },
+      "offline": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "path": "offline",
+        "permalinkable": true,
+        "rel": "alternate"
+      },
+      "readme": {
+        "basename": "readme",
+        "isplaintext": true,
+        "mediatype": "text/markdown",
+        "notalternative": true,
+        "rel": "alternate"
+      },
+      "robots": {
+        "basename": "robots",
+        "isplaintext": true,
+        "mediatype": "text/plain",
+        "rel": "alternate",
+        "root": true
+      },
+      "rss": {
+        "basename": "index",
+        "mediatype": "application/rss+xml",
+        "nougly": true,
+        "rel": "alternate"
+      },
+      "search": {
+        "basename": "search",
+        "isplaintext": true,
+        "mediatype": "application/json",
+        "permalinkable": true,
+        "rel": "search"
+      },
+      "sitemap": {
+        "basename": "sitemap",
+        "mediatype": "application/xml",
+        "rel": "sitemap",
+        "ugly": true
+      },
+      "sitemapindex": {
+        "basename": "sitemap",
+        "mediatype": "application/xml",
+        "rel": "sitemap",
+        "root": true,
+        "ugly": true
+      },
+      "webappmanifest": {
+        "basename": "manifest",
+        "isplaintext": true,
+        "mediatype": "application/manifest+json",
+        "notalternative": true,
+        "rel": "manifest"
+      }
+    },
+    "privacy": {
+      "disqus": {},
+      "googleanalytics": {},
+      "instagram": {},
+      "twitter": {
+        "enablednt": true
+      },
+      "vimeo": {},
+      "x": {
+        "enablednt": true
+      },
+      "youtube": {
+        "privacyenhanced": true
+      }
+    },
+    "menus": {
+      "main": [
+        {
+          "identifier": "archives",
+          "name": "Lưu trữ",
+          "params": {
+            "icon": "fa-solid fa-archive"
+          },
+          "url": "/archives/",
+          "weight": 1
+        },
+        {
+          "identifier": "categories",
+          "name": "Chủ đề",
+          "params": {
+            "icon": "fa-solid fa-folder-tree"
+          },
+          "url": "/categories/",
+          "weight": 2
+        },
+        {
+          "identifier": "tags",
+          "name": "Thẻ",
+          "params": {
+            "icon": "fa-solid fa-tags"
+          },
+          "url": "/tags/",
+          "weight": 3
+        },
+        {
+          "identifier": "about",
+          "name": "Giới thiệu",
+          "params": {
+            "icon": "fa-solid fa-user"
+          },
+          "url": "/about/",
+          "weight": 4
+        }
+      ]
+    },
+    "math": {
+      "enable": true,
+      "katex": {
+        "copytex": true,
+        "errorcolor": "#ff4949",
+        "macros": {}
+      },
+      "mathjax": {
+        "cdn": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+        "loader": {
+          "load": [
+            "ui/safe"
+          ],
+          "paths": {}
+        },
+        "macros": {},
+        "options": {
+          "enablemenu": true
+        },
+        "packages": {}
+      },
+      "type": "mathjax"
+    },
+    "search": {
+      "algolia": {},
+      "contentlength": 4000,
+      "fuse": {
+        "distance": 100,
+        "minmatchcharlength": 2,
+        "threshold": 0.3
+      },
+      "highlighttag": "em",
+      "maxresultlength": 10,
+      "snippetlength": 30,
+      "type": "fuse"
+    },
+    "markup": {
+      "asciidocext": {
+        "attributes": {},
+        "backend": "html5",
+        "failurelevel": "fatal",
+        "noheaderorfooter": true,
+        "safemode": "unsafe"
+      },
+      "defaultmarkdownhandler": "goldmark",
+      "goldmark": {
+        "extensions": {
+          "cjk": {
+            "eastasianlinebreaksstyle": "simple"
+          },
+          "definitionlist": true,
+          "extras": {
+            "delete": {
+              "enable": true
+            },
+            "insert": {
+              "enable": true
+            },
+            "mark": {
+              "enable": true
+            },
+            "subscript": {
+              "enable": true
+            },
+            "superscript": {
+              "enable": true
+            }
+          },
+          "footnote": true,
+          "linkify": true,
+          "linkifyprotocol": "https",
+          "passthrough": {
+            "delimiters": {
+              "block": [
+                [
+                  "\\[",
+                  "\\]"
+                ],
+                [
+                  "$$",
+                  "$$"
+                ]
+              ],
+              "inline": [
+                [
+                  "\\(",
+                  "\\)"
+                ],
+                [
+                  "$",
+                  "$"
+                ]
+              ]
+            },
+            "enable": true
+          },
+          "table": true,
+          "tasklist": true,
+          "typographer": {
+            "apostrophe": "&rsquo;",
+            "ellipsis": "&hellip;",
+            "emdash": "&mdash;",
+            "endash": "&ndash;",
+            "leftanglequote": "&laquo;",
+            "leftdoublequote": "&ldquo;",
+            "leftsinglequote": "&lsquo;",
+            "rightanglequote": "&raquo;",
+            "rightdoublequote": "&rdquo;",
+            "rightsinglequote": "&rsquo;"
+          }
+        },
+        "parser": {
+          "attribute": {
+            "block": true,
+            "title": true
+          },
+          "autoheadingid": true,
+          "autoidtype": "github",
+          "wrapstandaloneimagewithinparagraph": true
+        },
+        "renderer": {
+          "unsafe": true
+        },
+        "renderhooks": {
+          "image": {
+            "useembedded": "auto"
+          },
+          "link": {
+            "useembedded": "auto"
+          }
+        }
+      },
+      "highlight": {
+        "codefences": true,
+        "guesssyntax": true,
+        "linenos": true,
+        "linenostart": 1,
+        "linenumbersintable": true,
+        "style": "monokai",
+        "tabwidth": 4,
+        "wrapperclass": "highlight"
+      },
+      "tableofcontents": {
+        "endlevel": 3,
+        "startlevel": 2
+      }
+    }
+  },
+  "directory_only": {
+    "baseurl": "https://trandung6129.github.io/",
+    "title": "The Epistemic Diary",
+    "theme": [
+      "FixIt",
+      "shortcode-docs-bookmark"
+    ],
+    "defaultcontentlanguage": "vi",
+    "languagecode": "vi",
+    "pagination": {
+      "pagersize": 10,
+      "path": "page"
+    },
+    "cascade": null,
+    "permalinks": {
+      "page": {
+        "posts": "posts/:slugorcontentbasename"
+      },
+      "section": {},
+      "taxonomy": {},
+      "term": {
+        "posts": "posts/:slugorcontentbasename"
+      }
+    },
+    "outputs": {
+      "home": [
+        "html",
+        "rss",
+        "archives",
+        "offline",
+        "search"
+      ],
+      "page": [
+        "html",
+        "markdown"
+      ],
+      "rss": [
+        "rss"
+      ],
+      "section": [
+        "html",
+        "rss"
+      ],
+      "taxonomy": [
+        "html"
+      ],
+      "term": [
+        "html",
+        "rss"
+      ]
+    },
+    "outputformats": {
+      "404": {
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "permalinkable": true,
+        "ugly": true
+      },
+      "alias": {
+        "ishtml": true,
+        "mediatype": "text/html",
+        "ugly": true
+      },
+      "amp": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "path": "amp",
+        "permalinkable": true,
+        "rel": "amphtml"
+      },
+      "archives": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "path": "archives",
+        "permalinkable": true,
+        "rel": "alternate"
+      },
+      "baidu_urls": {
+        "basename": "baidu_urls",
+        "isplaintext": true,
+        "mediatype": "text/plain",
+        "notalternative": true,
+        "rel": "alternate"
+      },
+      "calendar": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/calendar",
+        "protocol": "webcal://",
+        "rel": "alternate"
+      },
+      "css": {
+        "basename": "styles",
+        "isplaintext": true,
+        "mediatype": "text/css",
+        "notalternative": true,
+        "rel": "stylesheet"
+      },
+      "csv": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/csv",
+        "rel": "alternate"
+      },
+      "gotmpl": {
+        "isplaintext": true,
+        "mediatype": "text/x-gotmpl",
+        "notalternative": true
+      },
+      "html": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "permalinkable": true,
+        "rel": "canonical",
+        "weight": 10
+      },
+      "json": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "application/json",
+        "rel": "alternate"
+      },
+      "markdown": {
+        "basename": "index",
+        "isplaintext": true,
+        "mediatype": "text/markdown",
+        "rel": "alternate"
+      },
+      "offline": {
+        "basename": "index",
+        "ishtml": true,
+        "mediatype": "text/html",
+        "notalternative": true,
+        "path": "offline",
+        "permalinkable": true,
+        "rel": "alternate"
+      },
+      "readme": {
+        "basename": "readme",
+        "isplaintext": true,
+        "mediatype": "text/markdown",
+        "notalternative": true,
+        "rel": "alternate"
+      },
+      "robots": {
+        "basename": "robots",
+        "isplaintext": true,
+        "mediatype": "text/plain",
+        "rel": "alternate",
+        "root": true
+      },
+      "rss": {
+        "basename": "index",
+        "mediatype": "application/rss+xml",
+        "nougly": true,
+        "rel": "alternate"
+      },
+      "search": {
+        "basename": "search",
+        "isplaintext": true,
+        "mediatype": "application/json",
+        "permalinkable": true,
+        "rel": "search"
+      },
+      "sitemap": {
+        "basename": "sitemap",
+        "mediatype": "application/xml",
+        "rel": "sitemap",
+        "ugly": true
+      },
+      "sitemapindex": {
+        "basename": "sitemap",
+        "mediatype": "application/xml",
+        "rel": "sitemap",
+        "root": true,
+        "ugly": true
+      },
+      "webappmanifest": {
+        "basename": "manifest",
+        "isplaintext": true,
+        "mediatype": "application/manifest+json",
+        "notalternative": true,
+        "rel": "manifest"
+      }
+    },
+    "privacy": {
+      "disqus": {},
+      "googleanalytics": {},
+      "instagram": {},
+      "twitter": {},
+      "vimeo": {},
+      "x": {
+        "enablednt": true
+      },
+      "youtube": {
+        "privacyenhanced": true
+      }
+    },
+    "menus": {
+      "main": [
+        {
+          "identifier": "archives",
+          "name": "Lưu trữ",
+          "params": {
+            "icon": "fa-solid fa-archive"
+          },
+          "url": "/archives/",
+          "weight": 1
+        },
+        {
+          "identifier": "categories",
+          "name": "Chủ đề",
+          "params": {
+            "icon": "fa-solid fa-folder-tree"
+          },
+          "url": "/categories/",
+          "weight": 2
+        },
+        {
+          "identifier": "tags",
+          "name": "Thẻ",
+          "params": {
+            "icon": "fa-solid fa-tags"
+          },
+          "url": "/tags/",
+          "weight": 3
+        },
+        {
+          "identifier": "about",
+          "name": "Giới thiệu",
+          "params": {
+            "icon": "fa-solid fa-user"
+          },
+          "url": "/about/",
+          "weight": 5
+        },
+        {
+          "identifier": "collections",
+          "name": "Chuỗi bài",
+          "params": {
+            "icon": "fa-solid fa-layer-group"
+          },
+          "url": "/collections/",
+          "weight": 4
+        },
+        {
+          "identifier": "web-development",
+          "name": "Khóa học Web Development",
+          "params": {
+            "icon": "fa-solid fa-code"
+          },
+          "parent": "collections",
+          "url": "/collections/web-development/",
+          "weight": 1
+        },
+        {
+          "identifier": "travel-guides",
+          "name": "Cẩm nang du lịch",
+          "params": {
+            "icon": "fa-solid fa-map-marked-alt"
+          },
+          "parent": "collections",
+          "url": "/collections/travel-guides/",
+          "weight": 2
+        },
+        {
+          "identifier": "programming-tips",
+          "name": "Tips lập trình",
+          "params": {
+            "icon": "fa-solid fa-lightbulb"
+          },
+          "parent": "collections",
+          "url": "/collections/programming-tips/",
+          "weight": 3
+        },
+        {
+          "identifier": "hugo-tutorials",
+          "name": "Hướng dẫn Hugo",
+          "params": {
+            "icon": "fa-solid fa-graduation-cap"
+          },
+          "parent": "collections",
+          "url": "/collections/hugo-tutorials/",
+          "weight": 4
+        }
+      ]
+    },
+    "math": {
+      "copytex": true,
+      "enable": true,
+      "katex": {
+        "copytex": true,
+        "errorcolor": "#ff4949",
+        "macros": {}
+      },
+      "mathjax": {
+        "cdn": "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+        "loader": {
+          "load": [
+            "ui/safe"
+          ],
+          "paths": {}
+        },
+        "macros": {},
+        "options": {
+          "enablemenu": true
+        },
+        "packages": {}
+      },
+      "mhchem": true,
+      "type": "katex"
+    },
+    "search": {
+      "algolia": {},
+      "contentlength": 4000,
+      "enable": true,
+      "fuse": {
+        "distance": 100,
+        "minmatchcharlength": 2,
+        "threshold": 0.3
+      },
+      "highlighttag": "em",
+      "maxresultlength": 10,
+      "snippetlength": 30,
+      "type": "fuse"
+    },
+    "markup": {
+      "asciidocext": {
+        "attributes": {},
+        "backend": "html5",
+        "failurelevel": "fatal",
+        "noheaderorfooter": true,
+        "safemode": "unsafe"
+      },
+      "defaultmarkdownhandler": "goldmark",
+      "goldmark": {
+        "extensions": {
+          "cjk": {
+            "eastasianlinebreaksstyle": "simple"
+          },
+          "definitionlist": true,
+          "extras": {
+            "delete": {},
+            "insert": {},
+            "mark": {},
+            "subscript": {},
+            "superscript": {}
+          },
+          "footnote": true,
+          "linkify": true,
+          "linkifyprotocol": "https",
+          "passthrough": {
+            "delimiters": {}
+          },
+          "strikethrough": true,
+          "table": true,
+          "tasklist": true,
+          "typographer": {
+            "apostrophe": "&rsquo;",
+            "ellipsis": "&hellip;",
+            "emdash": "&mdash;",
+            "endash": "&ndash;",
+            "leftanglequote": "&laquo;",
+            "leftdoublequote": "&ldquo;",
+            "leftsinglequote": "&lsquo;",
+            "rightanglequote": "&raquo;",
+            "rightdoublequote": "&rdquo;",
+            "rightsinglequote": "&rsquo;"
+          }
+        },
+        "parser": {
+          "attribute": {
+            "block": true,
+            "title": true
+          },
+          "autoheadingid": true,
+          "autoidtype": "github",
+          "wrapstandaloneimagewithinparagraph": true
+        },
+        "renderer": {
+          "unsafe": true
+        },
+        "renderhooks": {
+          "image": {
+            "useembedded": "fallback"
+          },
+          "link": {
+            "useembedded": "fallback"
+          }
+        }
+      },
+      "highlight": {
+        "codefences": true,
+        "guesssyntax": true,
+        "linenos": true,
+        "linenostart": 1,
+        "linenumbersintable": true,
+        "style": "monokai",
+        "tabwidth": 4,
+        "wrapperclass": "highlight"
+      },
+      "tableofcontents": {
+        "endlevel": 6,
+        "startlevel": 2
+      }
+    }
+  }
+}

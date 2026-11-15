@@ -1,0 +1,3 @@
+path	line	delimiter	name	call
+content/kinh-te/game_theory_nash.en.md	347	<	react	"{{< react name=""NashEquilibriumSim"" >}}"
+content/kinh-te/game_theory_nash.md	347	<	react	"{{< react name=""NashEquilibriumSim"" >}}"
