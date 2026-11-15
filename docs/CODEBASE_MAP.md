@@ -4,6 +4,8 @@
 
 **Verified baseline:** P1-01 audit merged; initial FixIt architecture, Hugo Extended 0.149.0. See [P1-01 audit](audits/P1-01.md). After migration, do not preserve stale paths: update the **Current path** and status below.
 
+P1-03 prospective template ownership, lookup precedence, migration gates and PostgreSQL conventions are specified in [D-012](DECISIONS.md#d-012--owned-hugo-templates-and-incremental-compatibility); these template paths do not yet exist.
+
 ## Task routing (read the smallest relevant surface first)
 
 | Need to change | Current entry point(s) | Related files / dependency | Important cautions |
