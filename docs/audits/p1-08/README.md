@@ -42,3 +42,7 @@ Capture representative screenshots, browser console and HTTP status evidence and
 
 ## Exit criterion
 Mark **P1-08 DONE** only after a reviewer provides trustworthy direct live browser/HTTP smoke evidence, validates no newly introduced regression, records exact URLs/screenshots and signs off. Deployment log alone is insufficient.
+
+## Independent retry, 2026-11-15
+
+On this task's cloud environment, Chromium 156.0.8078.79 with normal TLS verification attempted `https://trandung6129.github.io/` and returned `net::ERR_TUNNEL_CONNECTION_FAILED`; `curl -I --max-time 12 https://trandung6129.github.io/` returned exit 56, proxy CONNECT HTTP 403, before an origin response. Environment status reports restricted egress and the hostname absent from its effective allowlist. These are environment access failures, not evidence of a production outage. No page, interaction, asset, screenshot of the actual site, or console smoke gate could be verified. P1-08 stays **BLOCKED**. Allow the hostname in the environment's Internet settings and repeat the trusted live browser checklist; maintainer sign-off remains outstanding.

@@ -1,0 +1,7 @@
+# Editorial tokens — review specimen
+
+`assets/css/editorial/tokens.css` is a scoped input to the experimental specimen only; it is not imported into public templates. Select the palette with `data-ed-theme="light"` or `"dark"` on the document. Tokens cover ink, paper, accent, surface, muted copy, borders, focus, elevation, type, space, reading measure, container width and motion. `--ed-duration` becomes zero under `prefers-reduced-motion: reduce`. Initial breakpoint targets are 360/390, 768, 1024 and 1440 CSS px; media queries use literal boundaries because CSS custom properties cannot parameterize media conditions.
+
+Colors start from the approved direction. Light muted text was darkened from `#7A7265` to `#6A6256`: the former measures 4.36:1 on paper, below 4.5:1 for normal text; the replacement measures 5.52:1 on paper and 4.66:1 on surface. Measured WCAG relative-luminance ratios for body/accent/muted on paper: light 12.34/6.14/5.52, dark 12.97/7.83/6.42. Accent on surface: light 5.19, dark 6.72; muted on surface: light 4.66, dark 5.52. Borders are decorative; do not rely on them alone to convey a control state. Focus needs a visible outline and non-color cue.
+
+Typography uses system Georgia / system sans / monospace as an initial network-independent fallback, not a final font selection. Test Vietnamese glyphs, equations, code, loading and visual rhythm in the specimen before adopting a typeface. Tokens are design inputs, not owner acceptance; no visual propagation or homepage deployment is authorized by this file.

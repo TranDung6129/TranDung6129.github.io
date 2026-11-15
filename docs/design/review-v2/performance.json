@@ -1,0 +1,225 @@
+{
+  "method": "One unthrottled local Chromium run per viewport/theme, no production field CWV; observe 2.5 seconds after load without interaction. Lazy images outside viewport may not be fetched.",
+  "data": [
+    {
+      "width": 390,
+      "theme": "light",
+      "status": 200,
+      "lcp": {
+        "startTime": 304,
+        "size": 67600,
+        "tag": "IMG",
+        "url": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp"
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 248.89999999850988,
+          "transferSize": 17520,
+          "encodedBodySize": 17220
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 304
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 304
+        }
+      ],
+      "images": [
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "transferSize": 69696,
+          "encodedBodySize": 69396,
+          "duration": 41.099999994039536
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-320.webp",
+          "transferSize": 26526,
+          "encodedBodySize": 26226,
+          "duration": 8.599999994039536
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "transferSize": 39606,
+          "encodedBodySize": 39306,
+          "duration": 10.300000004470348
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "transferSize": 20038,
+          "encodedBodySize": 19738,
+          "duration": 10.100000001490116
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "status": 200,
+      "lcp": {
+        "startTime": 240,
+        "size": 67600,
+        "tag": "IMG",
+        "url": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp"
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 220.80000000447035,
+          "transferSize": 17520,
+          "encodedBodySize": 17220
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 240
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 240
+        }
+      ],
+      "images": [
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "transferSize": 69696,
+          "encodedBodySize": 69396,
+          "duration": 33.29999999701977
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-320.webp",
+          "transferSize": 26526,
+          "encodedBodySize": 26226,
+          "duration": 12.700000002980232
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "transferSize": 39606,
+          "encodedBodySize": 39306,
+          "duration": 12.799999997019768
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "transferSize": 20038,
+          "encodedBodySize": 19738,
+          "duration": 12.5
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "status": 200,
+      "lcp": {
+        "startTime": 280,
+        "size": 319272,
+        "tag": "IMG",
+        "url": "http://127.0.0.1:1317/editorial-art/epistemic_hero-960.webp"
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 255.29999999701977,
+          "transferSize": 17520,
+          "encodedBodySize": 17220
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 280
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 280
+        }
+      ],
+      "images": [
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_hero-960.webp",
+          "transferSize": 163874,
+          "encodedBodySize": 163574,
+          "duration": 46.399999998509884
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "transferSize": 89380,
+          "encodedBodySize": 89080,
+          "duration": 7.600000001490116
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "transferSize": 39606,
+          "encodedBodySize": 39306,
+          "duration": 7.199999995529652
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "transferSize": 20038,
+          "encodedBodySize": 19738,
+          "duration": 7.100000001490116
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "status": 200,
+      "lcp": {
+        "startTime": 376,
+        "size": 319272,
+        "tag": "IMG",
+        "url": "http://127.0.0.1:1317/editorial-art/epistemic_hero-960.webp"
+      },
+      "cls": 0,
+      "nav": [
+        {
+          "load": 309.79999999701977,
+          "transferSize": 17520,
+          "encodedBodySize": 17220
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 376
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 376
+        }
+      ],
+      "images": [
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_hero-960.webp",
+          "transferSize": 163874,
+          "encodedBodySize": 163574,
+          "duration": 140.29999999701977
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "transferSize": 89380,
+          "encodedBodySize": 89080,
+          "duration": 4.299999997019768
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "transferSize": 39606,
+          "encodedBodySize": 39306,
+          "duration": 4
+        },
+        {
+          "name": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "transferSize": 20038,
+          "encodedBodySize": 19738,
+          "duration": 4.100000001490116
+        }
+      ]
+    }
+  ]
+}

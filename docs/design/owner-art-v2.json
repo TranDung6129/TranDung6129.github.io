@@ -1,0 +1,87 @@
+{
+  "assets": [
+    {
+      "id": "hero",
+      "filePath": "assets/editorial-source/epistemic_hero.png",
+      "usePage": "/editorial-review/",
+      "kind": "ai-illustration",
+      "creator": "owner-supplied AI-generated artwork",
+      "source": "epistemic_editorial_assets_v2.zip supplied by owner",
+      "license": "owner-supplied for review; commercial rights verification pending",
+      "aiGenerated": true,
+      "sha256": "cde246cfb8eb27594760578a1cea8003e543076a8602b3bd7a68a81918a4fa63",
+      "width": 1672,
+      "height": 941,
+      "altText": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+      "modificationNotes": "No crop or inversion; proportionally resized WebP derivatives, quality 84",
+      "derivativeWidths": [
+        640,
+        960,
+        1400,
+        1672
+      ],
+      "editorialReviewStatus": "final visual and rights approval pending"
+    },
+    {
+      "id": "probability",
+      "filePath": "assets/editorial-source/epistemic_probability_v2.png",
+      "usePage": "/editorial-review/",
+      "kind": "ai-illustration",
+      "creator": "owner-supplied AI-generated artwork",
+      "source": "epistemic_editorial_assets_v2.zip supplied by owner",
+      "license": "owner-supplied for review; commercial rights verification pending",
+      "aiGenerated": true,
+      "sha256": "e9e02fac9217baa9364692cec936d1ed6e644a7a616ea86c13a1a6c2e14fb42b",
+      "width": 592,
+      "height": 708,
+      "altText": "Illustrative engraving of two dice in motion",
+      "modificationNotes": "No crop or inversion; proportionally resized WebP derivatives, quality 84",
+      "derivativeWidths": [
+        320,
+        592
+      ],
+      "editorialReviewStatus": "final visual and rights approval pending"
+    },
+    {
+      "id": "decision",
+      "filePath": "assets/editorial-source/epistemic_decision_v2.png",
+      "usePage": "/editorial-review/",
+      "kind": "ai-illustration",
+      "creator": "owner-supplied AI-generated artwork",
+      "source": "epistemic_editorial_assets_v2.zip supplied by owner",
+      "license": "owner-supplied for review; commercial rights verification pending",
+      "aiGenerated": true,
+      "sha256": "d96c879c973f2753d4998f7873604e29026e821095916604c22909f93f531d37",
+      "width": 775,
+      "height": 574,
+      "altText": "Illustrative engraving of a sunlit, vaulted historic library",
+      "modificationNotes": "No crop or inversion; proportionally resized WebP derivatives, quality 84",
+      "derivativeWidths": [
+        400,
+        775
+      ],
+      "editorialReviewStatus": "final visual and rights approval pending"
+    },
+    {
+      "id": "volume",
+      "filePath": "assets/editorial-source/epistemic_volume_1_cover.png",
+      "usePage": "/editorial-review/",
+      "kind": "ai-illustration",
+      "creator": "owner-supplied AI-generated artwork",
+      "source": "epistemic_editorial_assets_v2.zip supplied by owner",
+      "license": "owner-supplied for review; commercial rights verification pending",
+      "aiGenerated": true,
+      "sha256": "b6cee35dc60067fad34a72adc6555f7fd68b0683e50b43d24970cbdb9b54e874",
+      "width": 1024,
+      "height": 1536,
+      "altText": "Illustrative cover of Volume I: Reason, Models and the World",
+      "modificationNotes": "No crop or inversion; proportionally resized WebP derivatives, quality 84",
+      "derivativeWidths": [
+        256,
+        512,
+        1024
+      ],
+      "editorialReviewStatus": "final visual and rights approval pending"
+    }
+  ]
+}

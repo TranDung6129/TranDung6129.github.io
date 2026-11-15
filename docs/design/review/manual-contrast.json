@@ -1,0 +1,202 @@
+[
+  {
+    "width": 390,
+    "theme": "light",
+    "selector": ".menu-toggle",
+    "color": "rgb(51, 46, 40)",
+    "background": "rgb(247, 245, 240)",
+    "contrast": 12.34,
+    "fontSize": "0px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "selector": ".art-caption",
+    "color": "rgb(106, 98, 86)",
+    "background": "rgb(247, 245, 240)",
+    "contrast": 5.52,
+    "fontSize": "9.92px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "selector": ".art-caption > span",
+    "color": "rgb(140, 74, 50)",
+    "background": "rgb(247, 245, 240)",
+    "contrast": 6.14,
+    "fontSize": "9.92px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "selector": ".landscape > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "selector": ".architecture > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "selector": ".menu-toggle",
+    "color": "rgb(226, 220, 208)",
+    "background": "rgb(26, 24, 22)",
+    "contrast": 12.97,
+    "fontSize": "0px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "selector": ".art-caption",
+    "color": "rgb(166, 154, 139)",
+    "background": "rgb(26, 24, 22)",
+    "contrast": 6.42,
+    "fontSize": "9.92px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "selector": ".art-caption > span",
+    "color": "rgb(212, 163, 115)",
+    "background": "rgb(26, 24, 22)",
+    "contrast": 7.83,
+    "fontSize": "9.92px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "selector": ".landscape > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "selector": ".architecture > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "selector": ".menu-toggle",
+    "color": "rgb(51, 46, 40)",
+    "background": "rgb(247, 245, 240)",
+    "contrast": 12.34,
+    "fontSize": "18px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "selector": ".art-caption",
+    "color": "rgb(106, 98, 86)",
+    "background": "rgb(247, 245, 240)",
+    "contrast": 5.52,
+    "fontSize": "10.4px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "selector": ".art-caption > span",
+    "color": "rgb(140, 74, 50)",
+    "background": "rgb(247, 245, 240)",
+    "contrast": 6.14,
+    "fontSize": "10.4px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "selector": ".landscape > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "selector": ".architecture > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "selector": ".menu-toggle",
+    "color": "rgb(226, 220, 208)",
+    "background": "rgb(26, 24, 22)",
+    "contrast": 12.97,
+    "fontSize": "18px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "selector": ".art-caption",
+    "color": "rgb(166, 154, 139)",
+    "background": "rgb(26, 24, 22)",
+    "contrast": 6.42,
+    "fontSize": "10.4px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "selector": ".art-caption > span",
+    "color": "rgb(212, 163, 115)",
+    "background": "rgb(26, 24, 22)",
+    "contrast": 7.83,
+    "fontSize": "10.4px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "selector": ".landscape > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "selector": ".architecture > span",
+    "color": "rgb(255, 250, 240)",
+    "background": "rgb(51, 46, 40)",
+    "contrast": 12.92,
+    "fontSize": "10.88px",
+    "note": "Computed opaque background ratio; visible text or control. Actual perception and decorative SVG/MathML require manual review."
+  }
+]

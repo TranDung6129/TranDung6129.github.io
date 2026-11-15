@@ -1,0 +1,1125 @@
+{
+  "records": [
+    {
+      "width": 360,
+      "theme": "light",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 324,
+          "naturalHeight": 182,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 324,
+          "displayHeight": 182.25,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-320.webp",
+          "naturalWidth": 158,
+          "naturalHeight": 189,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 154,
+          "displayHeight": 188.34375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 158,
+          "naturalHeight": 117,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 154,
+          "displayHeight": 180.046875,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 140,
+          "naturalHeight": 210,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 140,
+          "displayHeight": 200,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -657.59375,
+            "width": 154,
+            "height": 188.34375
+          },
+          "caption": {
+            "x": 18,
+            "y": -469.25,
+            "width": 154,
+            "height": 39.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -383.875,
+            "width": 154,
+            "height": 180.046875
+          },
+          "caption": {
+            "x": 18,
+            "y": -203.828125,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 324,
+          "naturalHeight": 182,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 324,
+          "displayHeight": 182.25,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-320.webp",
+          "naturalWidth": 158,
+          "naturalHeight": 189,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 154,
+          "displayHeight": 188.34375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 158,
+          "naturalHeight": 117,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 154,
+          "displayHeight": 180.046875,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 140,
+          "naturalHeight": 210,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 140,
+          "displayHeight": 200,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -657.59375,
+            "width": 154,
+            "height": 188.34375
+          },
+          "caption": {
+            "x": 18,
+            "y": -469.25,
+            "width": 154,
+            "height": 39.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -383.875,
+            "width": 154,
+            "height": 180.046875
+          },
+          "caption": {
+            "x": 18,
+            "y": -203.828125,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 351,
+          "naturalHeight": 197,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 354,
+          "displayHeight": 199.125,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-320.webp",
+          "naturalWidth": 171,
+          "naturalHeight": 205,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 169,
+          "displayHeight": 202.265625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 171,
+          "naturalHeight": 126,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 169,
+          "displayHeight": 147.640625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 140,
+          "naturalHeight": 210,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 140,
+          "displayHeight": 200,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -587.71875,
+            "width": 169,
+            "height": 202.265625
+          },
+          "caption": {
+            "x": 18,
+            "y": -385.453125,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -315.078125,
+            "width": 169,
+            "height": 147.640625
+          },
+          "caption": {
+            "x": 18,
+            "y": -167.4375,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 351,
+          "naturalHeight": 197,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 354,
+          "displayHeight": 199.125,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-320.webp",
+          "naturalWidth": 171,
+          "naturalHeight": 205,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 169,
+          "displayHeight": 202.265625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 171,
+          "naturalHeight": 126,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 169,
+          "displayHeight": 147.640625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 140,
+          "naturalHeight": 210,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 140,
+          "displayHeight": 200,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -587.71875,
+            "width": 169,
+            "height": 202.265625
+          },
+          "caption": {
+            "x": 18,
+            "y": -385.453125,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 18,
+            "y": -315.078125,
+            "width": 169,
+            "height": 147.640625
+          },
+          "caption": {
+            "x": 18,
+            "y": -167.4375,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 368,
+          "naturalHeight": 207,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 360,
+          "displayHeight": 202.5,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "naturalWidth": 337,
+          "naturalHeight": 404,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 348,
+          "displayHeight": 207.40625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 337,
+          "naturalHeight": 250,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 323,
+          "displayHeight": 190.734375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 140,
+          "naturalHeight": 210,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 140,
+          "displayHeight": 200,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 24,
+            "y": -515.15625,
+            "width": 348,
+            "height": 207.40625
+          },
+          "caption": {
+            "x": 24,
+            "y": -307.75,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 421,
+            "y": -515.15625,
+            "width": 323,
+            "height": 190.734375
+          },
+          "caption": {
+            "x": 421,
+            "y": -324.421875,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 368,
+          "naturalHeight": 207,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 360,
+          "displayHeight": 202.5,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "naturalWidth": 337,
+          "naturalHeight": 404,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 348,
+          "displayHeight": 207.40625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 337,
+          "naturalHeight": 250,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 323,
+          "displayHeight": 190.734375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 140,
+          "naturalHeight": 210,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 140,
+          "displayHeight": 200,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 24,
+            "y": -515.15625,
+            "width": 348,
+            "height": 207.40625
+          },
+          "caption": {
+            "x": 24,
+            "y": -307.75,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 421,
+            "y": -515.15625,
+            "width": 323,
+            "height": 190.734375
+          },
+          "caption": {
+            "x": 421,
+            "y": -324.421875,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 552,
+          "naturalHeight": 311,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 537.609375,
+          "displayHeight": 302.390625,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "naturalWidth": 450,
+          "naturalHeight": 538,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 468,
+          "displayHeight": 287.40625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-775.webp",
+          "naturalWidth": 450,
+          "naturalHeight": 333,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 443,
+          "displayHeight": 270.734375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 160,
+          "naturalHeight": 240,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 110,
+          "displayHeight": 190,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 32,
+            "y": -178.78125,
+            "width": 468,
+            "height": 287.40625
+          },
+          "caption": {
+            "x": 32,
+            "y": 108.625,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 549,
+            "y": -178.78125,
+            "width": 443,
+            "height": 270.734375
+          },
+          "caption": {
+            "x": 549,
+            "y": 91.953125,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-640.webp",
+          "naturalWidth": 552,
+          "naturalHeight": 311,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 537.609375,
+          "displayHeight": 302.390625,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "naturalWidth": 450,
+          "naturalHeight": 538,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 468,
+          "displayHeight": 287.40625,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-775.webp",
+          "naturalWidth": 450,
+          "naturalHeight": 333,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 443,
+          "displayHeight": 270.734375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 160,
+          "naturalHeight": 240,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 110,
+          "displayHeight": 190,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 32,
+            "y": -178.78125,
+            "width": 468,
+            "height": 287.40625
+          },
+          "caption": {
+            "x": 32,
+            "y": 108.625,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 549,
+            "y": -178.78125,
+            "width": 443,
+            "height": 270.734375
+          },
+          "caption": {
+            "x": 549,
+            "y": 91.953125,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-960.webp",
+          "naturalWidth": 777,
+          "naturalHeight": 437,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 752.640625,
+          "displayHeight": 423.359375,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "naturalWidth": 345,
+          "naturalHeight": 413,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 328.625,
+          "displayHeight": 194.484375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 345,
+          "naturalHeight": 255,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 311.46875,
+          "displayHeight": 183.046875,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 160,
+          "naturalHeight": 240,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 160.5625,
+          "displayHeight": 225,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 48,
+            "y": 83.921875,
+            "width": 328.625,
+            "height": 194.484375
+          },
+          "caption": {
+            "x": 48,
+            "y": 278.40625,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 769,
+            "y": 83.921875,
+            "width": 311.46875,
+            "height": 183.046875
+          },
+          "caption": {
+            "x": 769,
+            "y": 266.96875,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "images": [
+        {
+          "alt": "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_hero-960.webp",
+          "naturalWidth": 777,
+          "naturalHeight": 437,
+          "declaredWidth": "1672",
+          "declaredHeight": "941",
+          "displayWidth": 752.640625,
+          "displayHeight": 423.359375,
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "eager",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of two dice in motion",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_probability_v2-592.webp",
+          "naturalWidth": 345,
+          "naturalHeight": 413,
+          "declaredWidth": "592",
+          "declaredHeight": "708",
+          "displayWidth": 328.625,
+          "displayHeight": 194.484375,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative engraving of a sunlit, vaulted historic library",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_decision_v2-400.webp",
+          "naturalWidth": 345,
+          "naturalHeight": 255,
+          "declaredWidth": "775",
+          "declaredHeight": "574",
+          "displayWidth": 311.46875,
+          "displayHeight": 183.046875,
+          "objectFit": "contain",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": []
+        },
+        {
+          "alt": "Illustrative cover of Volume I: Reason, Models and the World",
+          "src": "http://127.0.0.1:1317/editorial-art/epistemic_volume_1_cover-256.webp",
+          "naturalWidth": 160,
+          "naturalHeight": 240,
+          "declaredWidth": "1024",
+          "declaredHeight": "1536",
+          "displayWidth": 160.5625,
+          "displayHeight": 225,
+          "objectFit": "contain",
+          "objectPosition": "0% 50%",
+          "complete": true,
+          "loading": "lazy",
+          "filter": "none",
+          "ancestorsWithFilters": [
+            {
+              "node": "book",
+              "filter": "drop-shadow(rgba(56, 40, 25, 0.2) 5px 6px 6px)"
+            }
+          ]
+        }
+      ],
+      "captions": [
+        {
+          "overlap": false,
+          "image": {
+            "x": 48,
+            "y": 83.921875,
+            "width": 328.625,
+            "height": 194.484375
+          },
+          "caption": {
+            "x": 48,
+            "y": 278.40625,
+            "width": 161.546875,
+            "height": 24.59375
+          }
+        },
+        {
+          "overlap": false,
+          "image": {
+            "x": 769,
+            "y": 83.921875,
+            "width": 311.46875,
+            "height": 183.046875
+          },
+          "caption": {
+            "x": 769,
+            "y": 266.96875,
+            "width": 126.265625,
+            "height": 24.59375
+          }
+        }
+      ],
+      "heroLinkHit": true,
+      "heroCaption": {
+        "overlap": false
+      },
+      "failed": []
+    }
+  ],
+  "problems": []
+}

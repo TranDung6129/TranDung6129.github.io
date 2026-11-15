@@ -1,0 +1,338 @@
+[
+  {
+    "width": 390,
+    "theme": "light",
+    "passes": 26,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 11,
+        "nodes": [
+          {
+            "target": [
+              ".menu-toggle"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<button class=\"menu-toggle\" aria-expanded=\"false\" aria-controls=\"editorial-nav\" type=\"button\">Menu <span aria-hidden=\"true\">☰</span></button>"
+          },
+          {
+            "target": [
+              ".menu-toggle > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<span aria-hidden=\"true\">☰</span>"
+          },
+          {
+            "target": [
+              "text[x=\"74\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<text x=\"74\" y=\"98\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"17\" font-style=\"italic\">φ</text>"
+          },
+          {
+            "target": [
+              "text[x=\"496\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<text x=\"496\" y=\"222\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"13\" font-style=\"italic\">a little more wonder</text>"
+          },
+          {
+            "target": [
+              ".art-caption"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<div class=\"art-caption\"><span>FIG. 01</span> &nbsp; An instrument for looking closer</div>"
+          },
+          {
+            "target": [
+              ".art-caption > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 01</span>"
+          },
+          {
+            "target": [
+              ".landscape > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 02 / PROBABILITY</span>"
+          },
+          {
+            "target": [
+              ".architecture > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 03 / REASON</span>"
+          },
+          {
+            "target": [
+              "mover > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<mo>¯</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "passes": 26,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 11,
+        "nodes": [
+          {
+            "target": [
+              ".menu-toggle"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<button class=\"menu-toggle\" aria-expanded=\"false\" aria-controls=\"editorial-nav\" type=\"button\">Menu <span aria-hidden=\"true\">☰</span></button>"
+          },
+          {
+            "target": [
+              ".menu-toggle > span[aria-hidden=\"true\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<span aria-hidden=\"true\">☰</span>"
+          },
+          {
+            "target": [
+              "text[x=\"74\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<text x=\"74\" y=\"98\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"17\" font-style=\"italic\">φ</text>"
+          },
+          {
+            "target": [
+              "text[x=\"496\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<text x=\"496\" y=\"222\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"13\" font-style=\"italic\">a little more wonder</text>"
+          },
+          {
+            "target": [
+              ".art-caption"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<div class=\"art-caption\"><span>FIG. 01</span> &nbsp; An instrument for looking closer</div>"
+          },
+          {
+            "target": [
+              ".art-caption > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 01</span>"
+          },
+          {
+            "target": [
+              ".landscape > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 02 / PROBABILITY</span>"
+          },
+          {
+            "target": [
+              ".architecture > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 03 / REASON</span>"
+          },
+          {
+            "target": [
+              "mover > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<mo>¯</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 9,
+        "nodes": [
+          {
+            "target": [
+              "text[x=\"74\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<text x=\"74\" y=\"98\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"17\" font-style=\"italic\">φ</text>"
+          },
+          {
+            "target": [
+              "text[x=\"496\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<text x=\"496\" y=\"222\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"13\" font-style=\"italic\">a little more wonder</text>"
+          },
+          {
+            "target": [
+              ".art-caption"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<div class=\"art-caption\"><span>FIG. 01</span> &nbsp; An instrument for looking closer</div>"
+          },
+          {
+            "target": [
+              ".art-caption > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 01</span>"
+          },
+          {
+            "target": [
+              ".landscape > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 02 / PROBABILITY</span>"
+          },
+          {
+            "target": [
+              ".architecture > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 03 / REASON</span>"
+          },
+          {
+            "target": [
+              "mover > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<mo>¯</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "theme": "dark",
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 9,
+        "nodes": [
+          {
+            "target": [
+              "text[x=\"74\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<text x=\"74\" y=\"98\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"17\" font-style=\"italic\">φ</text>"
+          },
+          {
+            "target": [
+              "text[x=\"496\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<text x=\"496\" y=\"222\" fill=\"currentColor\" font-family=\"Georgia,serif\" font-size=\"13\" font-style=\"italic\">a little more wonder</text>"
+          },
+          {
+            "target": [
+              ".art-caption"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<div class=\"art-caption\"><span>FIG. 01</span> &nbsp; An instrument for looking closer</div>"
+          },
+          {
+            "target": [
+              ".art-caption > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 01</span>"
+          },
+          {
+            "target": [
+              ".landscape > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 02 / PROBABILITY</span>"
+          },
+          {
+            "target": [
+              ".architecture > span"
+            ],
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "html": "<span>FIG. 03 / REASON</span>"
+          },
+          {
+            "target": [
+              "mover > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content",
+            "html": "<mo>¯</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(1) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          },
+          {
+            "target": [
+              "mrow:nth-child(2) > mo"
+            ],
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "html": "<mo>∑</mo>"
+          }
+        ]
+      }
+    ],
+    "violations": []
+  }
+]

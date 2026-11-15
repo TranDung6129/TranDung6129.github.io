@@ -1,0 +1,3 @@
+# Future-format visual specimens
+
+The isolated review page includes visual descriptions of Films, Labs, Discover, reader Support/Membership, original digital Editions and an inactive advertising-slot label; the volume concept appears in the editorial composition. These are illustrative placeholders. They create no feature routes, accounts, subscriptions, transactions, payment providers, affiliates or hosted resources. An eventual production feature requires its own authorization, factual content, accessibility and security review. The only live navigation in the specimen is local section anchors, the existing published-article search and a link to an existing Riemann article.

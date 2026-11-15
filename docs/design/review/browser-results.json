@@ -1,0 +1,2137 @@
+{
+  "method": "Unthrottled headless Chromium; isolated local Hugo preview; reduced-motion preferred; fresh context per viewport/theme; no TLS bypass; synthetic interaction assertions only, no visual approval or full WCAG/performance certification.",
+  "browser": "156.0.8078.79",
+  "url": "http://127.0.0.1:1317/editorial-review/",
+  "checks": [
+    {
+      "name": "360/light: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "360/light: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 360,
+        "innerWidth": 360
+      }
+    },
+    {
+      "name": "360/light: requested theme",
+      "passed": true,
+      "details": "light"
+    },
+    {
+      "name": "360/light: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "360/light: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 276
+      }
+    },
+    {
+      "name": "360/light: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "360/light: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "360/light: mobile controls >=44x44",
+      "passed": true,
+      "details": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "mobile menu button visible",
+      "passed": true
+    },
+    {
+      "name": "mobile menu opens with aria-expanded",
+      "passed": true
+    },
+    {
+      "name": "mobile menu closes after selection",
+      "passed": true
+    },
+    {
+      "name": "360/dark: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "360/dark: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 360,
+        "innerWidth": 360
+      }
+    },
+    {
+      "name": "360/dark: requested theme",
+      "passed": true,
+      "details": "dark"
+    },
+    {
+      "name": "360/dark: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "360/dark: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 276
+      }
+    },
+    {
+      "name": "360/dark: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "360/dark: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "360/dark: mobile controls >=44x44",
+      "passed": true,
+      "details": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "390/light: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "390/light: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "390/light: requested theme",
+      "passed": true,
+      "details": "light"
+    },
+    {
+      "name": "390/light: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "390/light: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 306
+      }
+    },
+    {
+      "name": "390/light: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "390/light: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "390/light: mobile controls >=44x44",
+      "passed": true,
+      "details": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "390/dark: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "390/dark: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      }
+    },
+    {
+      "name": "390/dark: requested theme",
+      "passed": true,
+      "details": "dark"
+    },
+    {
+      "name": "390/dark: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "390/dark: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 306
+      }
+    },
+    {
+      "name": "390/dark: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "390/dark: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "390/dark: mobile controls >=44x44",
+      "passed": true,
+      "details": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "768/light: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "768/light: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 768,
+        "innerWidth": 768
+      }
+    },
+    {
+      "name": "768/light: requested theme",
+      "passed": true,
+      "details": "light"
+    },
+    {
+      "name": "768/light: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "768/light: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 403.21875
+      }
+    },
+    {
+      "name": "768/light: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "768/light: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "768/dark: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "768/dark: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 768,
+        "innerWidth": 768
+      }
+    },
+    {
+      "name": "768/dark: requested theme",
+      "passed": true,
+      "details": "dark"
+    },
+    {
+      "name": "768/dark: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "768/dark: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 403.21875
+      }
+    },
+    {
+      "name": "768/dark: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "768/dark: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1024/light: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "1024/light: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 1024,
+        "innerWidth": 1024
+      }
+    },
+    {
+      "name": "1024/light: requested theme",
+      "passed": true,
+      "details": "light"
+    },
+    {
+      "name": "1024/light: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "1024/light: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 539.875
+      }
+    },
+    {
+      "name": "1024/light: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1024/light: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1024/dark: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "1024/dark: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 1024,
+        "innerWidth": 1024
+      }
+    },
+    {
+      "name": "1024/dark: requested theme",
+      "passed": true,
+      "details": "dark"
+    },
+    {
+      "name": "1024/dark: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "1024/dark: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 539.875
+      }
+    },
+    {
+      "name": "1024/dark: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1024/dark: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1440/light: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "1440/light: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      }
+    },
+    {
+      "name": "1440/light: requested theme",
+      "passed": true,
+      "details": "light"
+    },
+    {
+      "name": "1440/light: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "1440/light: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 567.78125
+      }
+    },
+    {
+      "name": "1440/light: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1440/light: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "no broken visible demo destinations",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "desktop navigation visible",
+      "passed": true
+    },
+    {
+      "name": "theme toggles",
+      "passed": true
+    },
+    {
+      "name": "theme persists on reload",
+      "passed": true
+    },
+    {
+      "name": "search returns published Nash result",
+      "passed": true,
+      "details": {
+        "hits": 4,
+        "text": "4 published articles found."
+      }
+    },
+    {
+      "name": "search closes on Escape",
+      "passed": true
+    },
+    {
+      "name": "keyboard can focus an element",
+      "passed": true,
+      "details": {
+        "tag": "BUTTON",
+        "text": "",
+        "outline": "rgb(226, 220, 208) solid 3px",
+        "boxShadow": "none"
+      }
+    },
+    {
+      "name": "1440/dark: http 200",
+      "passed": true,
+      "details": 200
+    },
+    {
+      "name": "1440/dark: no horizontal overflow",
+      "passed": true,
+      "details": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      }
+    },
+    {
+      "name": "1440/dark: requested theme",
+      "passed": true,
+      "details": "dark"
+    },
+    {
+      "name": "1440/dark: reduced motion",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "1440/dark: rendered MathML",
+      "passed": true,
+      "details": {
+        "count": 1,
+        "width": 567.78125
+      }
+    },
+    {
+      "name": "1440/dark: images have alt attributes",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1440/dark: buttons have accessible name candidates",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "screenshots": [
+    {
+      "width": 360,
+      "theme": "light",
+      "path": "specimen-360-light.png",
+      "httpStatus": 200,
+      "statusTheme": "light",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "bodyHeight": 5663,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 276,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 1114.5999999977648,
+          "domContentLoaded": 989.3000000007451,
+          "load": 1114.5999999977648,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 952
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 952
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "path": "specimen-360-dark.png",
+      "httpStatus": 200,
+      "statusTheme": "dark",
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "bodyHeight": 5663,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 276,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 347.80000000074506,
+          "domContentLoaded": 325.80000000074506,
+          "load": 347.80000000074506,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 256
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 256
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "path": "specimen-390-light.png",
+      "httpStatus": 200,
+      "statusTheme": "light",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "bodyHeight": 5389,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 306,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 492.8999999985099,
+          "domContentLoaded": 485.8999999985099,
+          "load": 492.8999999985099,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 484
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 484
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "path": "specimen-390-dark.png",
+      "httpStatus": 200,
+      "statusTheme": "dark",
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "bodyHeight": 5389,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 306,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 195.20000000298023,
+          "domContentLoaded": 192.90000000223517,
+          "load": 195.20000000298023,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 188
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 188
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "menu-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "path": "specimen-768-light.png",
+      "httpStatus": 200,
+      "statusTheme": "light",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "bodyHeight": 4605,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 403.21875,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 593.3999999985099,
+          "domContentLoaded": 587.5999999977648,
+          "load": 593.3999999985099,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 396
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 396
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "menu-toggle",
+          "width": 72.046875,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "path": "specimen-768-dark.png",
+      "httpStatus": 200,
+      "statusTheme": "dark",
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "bodyHeight": 4605,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 403.21875,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 224.39999999850988,
+          "domContentLoaded": 221.89999999850988,
+          "load": 224.39999999850988,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 212
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 212
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "menu-toggle",
+          "width": 72.046875,
+          "height": 44
+        },
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "path": "specimen-1024-light.png",
+      "httpStatus": 200,
+      "statusTheme": "light",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "bodyHeight": 3984,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 539.875,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 518,
+          "domContentLoaded": 515.8000000007451,
+          "load": 518,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 488
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 488
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "path": "specimen-1024-dark.png",
+      "httpStatus": 200,
+      "statusTheme": "dark",
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "bodyHeight": 3984,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 539.875,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 200.59999999776483,
+          "domContentLoaded": 83,
+          "load": 200.59999999776483,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 268
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 268
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "path": "specimen-1440-light.png",
+      "httpStatus": 200,
+      "statusTheme": "light",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "bodyHeight": 3875,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 567.78125,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 249,
+          "domContentLoaded": 246.80000000074506,
+          "load": 249,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 264
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 264
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "path": "specimen-1440-dark.png",
+      "httpStatus": 200,
+      "statusTheme": "dark",
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "bodyHeight": 3875,
+      "heading": "Ideas worth staying with.",
+      "mathCount": 1,
+      "mathWidth": 567.78125,
+      "lang": "en",
+      "reducedMotion": true,
+      "resourceCount": 9,
+      "nav": [
+        {
+          "duration": 221.30000000074506,
+          "domContentLoaded": 218.80000000074506,
+          "load": 221.30000000074506,
+          "transferSize": 20165
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 248
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 248
+        }
+      ],
+      "images": [],
+      "imagesWithoutAlt": [],
+      "buttonsWithoutNames": [],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Ideas worth staying with."
+        },
+        {
+          "level": 2,
+          "text": "FEATURED ESSAYS"
+        },
+        {
+          "level": 3,
+          "text": "The shape of uncertainty"
+        },
+        {
+          "level": 3,
+          "text": "A theory of choice"
+        },
+        {
+          "level": 2,
+          "text": "FROM THE JOURNAL"
+        },
+        {
+          "level": 3,
+          "text": "The languages of mathematics"
+        },
+        {
+          "level": 3,
+          "text": "What do we mean by “explanation”?"
+        },
+        {
+          "level": 3,
+          "text": "Energy, information, and the limits of computation"
+        },
+        {
+          "level": 3,
+          "text": "Games, incentives, and cooperation"
+        },
+        {
+          "level": 2,
+          "text": "CURRENT VOLUME"
+        },
+        {
+          "level": 3,
+          "text": "Volume I"
+        },
+        {
+          "level": 2,
+          "text": "THE READING ROOM"
+        },
+        {
+          "level": 2,
+          "text": "A map is not the territory. But it can help us ask better questions."
+        },
+        {
+          "level": 3,
+          "text": "A small experiment in notation"
+        },
+        {
+          "level": 3,
+          "text": "A note on limits"
+        },
+        {
+          "level": 3,
+          "text": "Related reading"
+        },
+        {
+          "level": 2,
+          "text": "BEYOND THE PAGE"
+        },
+        {
+          "level": 3,
+          "text": "Ideas, in motion."
+        },
+        {
+          "level": 3,
+          "text": "Think with your hands."
+        },
+        {
+          "level": 3,
+          "text": "Useful things, considered."
+        },
+        {
+          "level": 3,
+          "text": "Help ideas go further."
+        },
+        {
+          "level": 3,
+          "text": "Ideas to keep."
+        }
+      ],
+      "controls": [
+        {
+          "name": "search-toggle",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "theme-toggle",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "console": [],
+  "failedRequests": [],
+  "httpErrors": [],
+  "links": [
+    {
+      "text": "Skip to content",
+      "href": "#main",
+      "ok": true
+    },
+    {
+      "text": "View type study ↓",
+      "href": "#typography",
+      "ok": true
+    },
+    {
+      "text": "THE EPISTEMIC DIARY",
+      "href": "#main",
+      "ok": true
+    },
+    {
+      "text": "Journal",
+      "href": "#journal",
+      "ok": true
+    },
+    {
+      "text": "Volumes",
+      "href": "#volume",
+      "ok": true
+    },
+    {
+      "text": "Films",
+      "href": "#films-preview",
+      "ok": true
+    },
+    {
+      "text": "Labs",
+      "href": "#labs-preview",
+      "ok": true
+    },
+    {
+      "text": "Discover",
+      "href": "#discover-preview",
+      "ok": true
+    },
+    {
+      "text": "Explore the journal ↗",
+      "href": "#journal",
+      "ok": true
+    },
+    {
+      "text": "A question of models",
+      "href": "#type-article",
+      "ok": true
+    },
+    {
+      "text": "Equation & code",
+      "href": "#type-math",
+      "ok": true
+    },
+    {
+      "text": "Beyond the page",
+      "href": "#beyond",
+      "ok": true
+    },
+    {
+      "text": "Lý Thuyết Số và Giả Thuyết Riemann",
+      "href": "/toan-hoc/riemann-hypothesis-number-theory/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "text": "Lý Thuyết Số và Giả Thuyết Riemann",
+      "href": "/toan-hoc/riemann-hypothesis-number-theory/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "text": "Game Theory & Nash Equilibrium",
+      "href": "/kinh-te/game_theory_nash/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "text": "Back to top ↑",
+      "href": "#main",
+      "ok": true
+    }
+  ],
+  "measurements": [],
+  "keyboardFocus": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "outline": "rgb(226, 220, 208) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Explore the journal ↗",
+      "outline": "rgb(212, 163, 115) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "A question of models",
+      "outline": "rgb(212, 163, 115) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Equation & code",
+      "outline": "rgb(166, 154, 139) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Beyond the page",
+      "outline": "rgb(166, 154, 139) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Lý Thuyết Số và Giả Thuyết Riemann",
+      "outline": "rgb(166, 154, 139) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "PRE",
+      "text": "def weighted_mean(values, weights):\n    total = sum(weights)\n    return sum(v * ",
+      "outline": "rgb(226, 220, 208) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Lý Thuyết Số và Giả Thuyết Riemann",
+      "outline": "rgb(226, 220, 208) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Game Theory & Nash Equilibrium",
+      "outline": "rgb(226, 220, 208) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Back to top ↑",
+      "outline": "rgb(226, 220, 208) solid 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "BODY",
+      "text": "Skip to content\nDESIGN SPECIMEN\n· Demonstration content · Not the published home",
+      "outline": "rgb(226, 220, 208) none 3px",
+      "boxShadow": "none"
+    },
+    {
+      "tag": "A",
+      "text": "Skip to content",
+      "outline": "rgb(226, 220, 208) solid 3px",
+      "boxShadow": "none"
+    }
+  ]
+}
