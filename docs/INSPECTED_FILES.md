@@ -558,3 +558,19 @@ Working Git blobs at inspection; registry self-hash is pre-append. Source artwor
 | `docs/design/TYPOGRAPHY.md` | `438c38ff952f5b509a1f1ea63c995eb07153ab17` |
 
 Publication handoff: `docs/AGENT_LOG.md` working blob `7edff6abaa66c842d4d3a27d6c2f51463b28c3b3` records the failed PR attempt; `docs/INSPECTED_FILES.md` pre-append blob `5c98104b1e02127f32bcdf1a4ab788c09e78db3f`.
+
+## 2026-11-15 — P1-08 live verification (Claude Code)
+
+Blobs on `docs/p1-08-production-signoff`; registry self hash pre-append `367e25533619e0ced6395af97f084db4d994c47d`. Live-site HTML, feeds and assets were inspected as generated output (group level), compared byte-wise with a local build of `3569afe`.
+
+| Path | Blob | Status | Purpose |
+|---|---|---|---|
+| `docs/audits/p1-08/README.md` | `59df48e62e1ddd6b2f27ef4c6fa1ffc395d5faa6` | COVERED | P1-08 report: deployment identity, live results by category, rollback procedure, acceptance decision; earlier BLOCKED retry kept as history. |
+| `docs/audits/p1-08/tools/live-mirror.py` | `dcd65d4c995581af8d799e9c478845f12913de72` | COVERED | Fetches every file of a local build from the live site with verified TLS; status, final URL, content type, byte identity. Exit 1 on any non-200. |
+| `docs/audits/p1-08/tools/live-smoke.cjs` | `43d14439b0ffbe29ce67e9338f3b2b7d036a89b0` | COVERED | Live Chromium matrix (6 pages × 390/768/1440 × light/dark) and 15 interaction checks; separates own-site from third-party failures. Uses in-page fetch because Playwright request API bypasses the proxy; light mode has no `data-theme` attribute by design. |
+| `assets/js/head/color-scheme.js` | `3457857904f1309785e8a2937f693301d650aabd` | COVERED | Sets `data-theme="dark"` before render from localStorage or `prefers-color-scheme` (default theme auto); light mode leaves the attribute unset. |
+| `layouts/_partials/header.html` | `40cf1efe1b07a3a0e60fad8a428b4859ae2c0cd9` | PARTIAL | Read the mobile header only: `#menu-toggle-mobile`, `#menu-mobile` contains `#search-input-mobile` and `#search-toggle-mobile` (search visible only with the menu open); `#search-dropdown-mobile`. |
+| `db/README.md` | `3551b453e42718ad0928c89b8f7772fcae560917` | PARTIAL | Read backup/restore and migration-rule sections for the rollback note: `db/bin/compose`, `pg_dump`/`pg_restore` drill, compensating migrations only. |
+| `docs/TASK_BOARD.md` | `85ed56d353ac115bc4e7cdd815125474b1648535` | COVERED | P1-08 DONE. |
+| `docs/AGENT_LOG.md` | `b728fb83280a4fe120492297981e18634cd43001` | COVERED | P1-08 entry. |
+| `docs/CODEBASE_MAP.md` | `054bf897fd0e289785790eea08c9a5b7a4bb0684` | COVERED | Live production checks row. |

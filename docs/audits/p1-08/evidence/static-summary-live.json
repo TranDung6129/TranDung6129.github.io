@@ -1,0 +1,292 @@
+{
+  "emitted_files": 647,
+  "html_files": 347,
+  "non_alias_html": 201,
+  "alias_html": 146,
+  "html_language_counts": {
+    "vi": 162,
+    "en": 171,
+    "ja": 7,
+    "zh-cn": 7
+  },
+  "non_alias_language_counts": {
+    "vi": 91,
+    "en": 96,
+    "ja": 7,
+    "zh-cn": 7
+  },
+  "route_diff": {
+    "removed": [
+      "/js/custom.min.js"
+    ],
+    "added": [
+      "/apple-touch-icon.png",
+      "/css/home.min.css",
+      "/images/game_theory_nash_poster.png"
+    ]
+  },
+  "links": {
+    "internal_references_checked": 10802,
+    "missing_target_occurrences": 140,
+    "unique_missing_targets": [
+      "ja/about/index.html",
+      "ja/collections/hugo-tutorials/index.html",
+      "ja/collections/programming-tips/index.html",
+      "ja/collections/travel-guides/index.html",
+      "ja/collections/web-development/index.html",
+      "zh-cn/about/index.html",
+      "zh-cn/collections/hugo-tutorials/index.html",
+      "zh-cn/collections/programming-tips/index.html",
+      "zh-cn/collections/travel-guides/index.html",
+      "zh-cn/collections/web-development/index.html"
+    ],
+    "missing_fragment_occurrences": 0,
+    "external_unique_unchecked": 8,
+    "non_http_skipped": 1113,
+    "scope": "HTML href/src/poster/data-src only; includes canonical/hreflang/CDN same-host links. No CSS/JS or external network/fragment semantics for non-HTML.",
+    "missing_by_literal_url": {
+      "/ja/collections/web-development/": 14,
+      "/ja/collections/travel-guides/": 14,
+      "/ja/collections/programming-tips/": 14,
+      "/ja/collections/hugo-tutorials/": 14,
+      "/ja/about/": 14,
+      "/zh-cn/collections/web-development/": 14,
+      "/zh-cn/collections/travel-guides/": 14,
+      "/zh-cn/collections/programming-tips/": 14,
+      "/zh-cn/collections/hugo-tutorials/": 14,
+      "/zh-cn/about/": 14
+    },
+    "unique_missing_target_count": 10
+  },
+  "metadata": {
+    "without_title": 0,
+    "without_canonical": 0,
+    "without_description": 0,
+    "noindex_pages": [],
+    "duplicate_title_groups": {
+      "404 Không tìm thấy trang - The Epistemic Diary": [
+        "/404.html",
+        "/ja/404.html"
+      ],
+      "About - The Epistemic Diary": [
+        "/about/",
+        "/en/about/"
+      ],
+      "Bài viết cũ - The Epistemic Diary": [
+        "/archives/",
+        "/ja/archives/"
+      ],
+      "Tất cả Danh mục - The Epistemic Diary": [
+        "/categories/",
+        "/ja/categories/"
+      ],
+      "Hugo Tutorials - Collection - The Epistemic Diary": [
+        "/collections/hugo-tutorials/",
+        "/en/collections/hugo-tutorials/"
+      ],
+      "Tất cả Collections - The Epistemic Diary": [
+        "/collections/",
+        "/ja/collections/"
+      ],
+      "Programming Tips - Collection - The Epistemic Diary": [
+        "/collections/programming-tips/",
+        "/en/collections/programming-tips/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế - Collection - The Epistemic Diary": [
+        "/collections/toán-cơ-bản-cho-kinh-tế/",
+        "/en/collections/toán-cơ-bản-cho-kinh-tế/"
+      ],
+      "Travel Guides - Collection - The Epistemic Diary": [
+        "/collections/travel-guides/",
+        "/en/collections/travel-guides/"
+      ],
+      "Web Development - Collection - The Epistemic Diary": [
+        "/collections/web-development/",
+        "/en/collections/web-development/"
+      ],
+      "The Epistemic Diary": [
+        "/en/",
+        "/",
+        "/ja/",
+        "/zh-cn/"
+      ],
+      "Complexity Theory Và Thuật Toán: Từ P vs NP Đến Quantum Computing - The Epistemic Diary": [
+        "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+        "/khoa-hoc-may-tinh/complexity-theory-quantum/"
+      ],
+      "Độ Co Giãn Cung Cầu: Chứng Minh Và Giải Thích Công Thức - The Epistemic Diary": [
+        "/en/kinh-te/co-gian-cung-cau-cong-thuc/",
+        "/kinh-te/co-gian-cung-cau-cong-thuc/"
+      ],
+      "Tổng Doanh Thu Và Độ Co Giãn Cầu: Góc Nhìn Từ Định Thức Ma Trận - The Epistemic Diary": [
+        "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+        "/kinh-te/doanh-thu-co-gian-dinh-thuc/"
+      ],
+      "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary": [
+        "/en/kinh-te/game_theory_nash/",
+        "/kinh-te/game_theory_nash/"
+      ],
+      "Lý Thuyết Trò Chơi Và Cân Bằng Nash: Từ Cơ Sở Toán Học Đến Ứng Dụng Kinh Tế - The Epistemic Diary": [
+        "/en/kinh-te/ly-thuyet-tro-choi-nash/",
+        "/kinh-te/ly-thuyet-tro-choi-nash/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-2/",
+        "/kinh-te/toan-co-ban-2/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 3): Tối Ưu Hóa Có Ràng Buộc - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-3/",
+        "/kinh-te/toan-co-ban-3/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 4): Tích Phân Và Thặng Dư - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-4/",
+        "/kinh-te/toan-co-ban-4/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 5): Đại Số Tuyến Tính - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-5/",
+        "/kinh-te/toan-co-ban-5/"
+      ],
+      "Lý Thuyết Số Và Giả Thuyết Riemann: Từ Hàm Zeta Đến Cryptography - The Epistemic Diary": [
+        "/en/toan-hoc/riemann-hypothesis-number-theory/",
+        "/toan-hoc/riemann-hypothesis-number-theory/"
+      ],
+      "Hiện Tượng Học Husserl Và Ý Thức: Từ Epoché Đến Intersubjectivity - The Epistemic Diary": [
+        "/en/triet-hoc/husserl-hien-tuong-hoc/",
+        "/triet-hoc/husserl-hien-tuong-hoc/"
+      ],
+      "ngoại tuyến - The Epistemic Diary": [
+        "/ja/offline/",
+        "/offline/"
+      ],
+      "Tất cả Nhãn - The Epistemic Diary": [
+        "/ja/tags/",
+        "/tags/"
+      ]
+    },
+    "images_without_alt_attribute": 0,
+    "images_empty_alt": 0,
+    "duplicate_canonical_groups": {
+      "https://trandung6129.github.io/about/": [
+        "/about/",
+        "/en/about/"
+      ],
+      "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/": [
+        "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+        "/khoa-hoc-may-tinh/complexity-theory-quantum/"
+      ],
+      "https://trandung6129.github.io/kinh-te/co-gian-cung-cau-cong-thuc/": [
+        "/en/kinh-te/co-gian-cung-cau-cong-thuc/",
+        "/kinh-te/co-gian-cung-cau-cong-thuc/"
+      ],
+      "https://trandung6129.github.io/kinh-te/doanh-thu-co-gian-dinh-thuc/": [
+        "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+        "/kinh-te/doanh-thu-co-gian-dinh-thuc/"
+      ],
+      "https://trandung6129.github.io/kinh-te/game_theory_nash/": [
+        "/en/kinh-te/game_theory_nash/",
+        "/kinh-te/game_theory_nash/"
+      ],
+      "https://trandung6129.github.io/kinh-te/ly-thuyet-tro-choi-nash/": [
+        "/en/kinh-te/ly-thuyet-tro-choi-nash/",
+        "/kinh-te/ly-thuyet-tro-choi-nash/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-2/": [
+        "/en/kinh-te/toan-co-ban-2/",
+        "/kinh-te/toan-co-ban-2/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-3/": [
+        "/en/kinh-te/toan-co-ban-3/",
+        "/kinh-te/toan-co-ban-3/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-4/": [
+        "/en/kinh-te/toan-co-ban-4/",
+        "/kinh-te/toan-co-ban-4/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-5/": [
+        "/en/kinh-te/toan-co-ban-5/",
+        "/kinh-te/toan-co-ban-5/"
+      ],
+      "https://trandung6129.github.io/toan-hoc/riemann-hypothesis-number-theory/": [
+        "/en/toan-hoc/riemann-hypothesis-number-theory/",
+        "/toan-hoc/riemann-hypothesis-number-theory/"
+      ],
+      "https://trandung6129.github.io/triet-hoc/husserl-hien-tuong-hoc/": [
+        "/en/triet-hoc/husserl-hien-tuong-hoc/",
+        "/triet-hoc/husserl-hien-tuong-hoc/"
+      ]
+    }
+  },
+  "features": {
+    "mathjax_script": 199,
+    "toc_static": 24,
+    "highlight_blocks": 6,
+    "code_elements": 12,
+    "react_mount": 2
+  },
+  "xml": {
+    "files": 156,
+    "invalid": 0,
+    "rss_files": 151,
+    "rss_item_occurrences": 236,
+    "sitemap_files": 5
+  },
+  "search": [
+    {
+      "path": "en/search.json",
+      "entries": 20,
+      "list": true,
+      "entries_with_title": 20,
+      "entries_with_uri": 20,
+      "keys": [
+        "categories",
+        "content",
+        "date",
+        "objectID",
+        "tags",
+        "title",
+        "uri"
+      ]
+    },
+    {
+      "path": "ja/search.json",
+      "entries": 0,
+      "list": true,
+      "entries_with_title": 0,
+      "entries_with_uri": 0,
+      "keys": []
+    },
+    {
+      "path": "search.json",
+      "entries": 20,
+      "list": true,
+      "entries_with_title": 20,
+      "entries_with_uri": 20,
+      "keys": [
+        "categories",
+        "content",
+        "date",
+        "objectID",
+        "tags",
+        "title",
+        "uri"
+      ]
+    },
+    {
+      "path": "zh-cn/search.json",
+      "entries": 0,
+      "list": true,
+      "entries_with_title": 0,
+      "entries_with_uri": 0,
+      "keys": []
+    }
+  ],
+  "image_files": 21,
+  "robots": {
+    "present": true,
+    "bytes": 1433
+  },
+  "source_markdown_counts": {
+    "en": 24,
+    "vi": 24
+  }
+}
