@@ -263,3 +263,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Status:** Review branches pushed; P1-08 remains BLOCKED on trusted live-site access, P2-06 remains BLOCKED on owner visual review.
 - **PR delivery:** `gh pr create --base main --head docs/p1-08-live-retry --title 'docs: record P1-08 live smoke retry' --body-file /tmp/p108-pr-body.md` failed: `Post https://api.github.com/graphql: Forbidden`. No PR was created; [PR plan](design/PR-PLAN.md) lists all pushed stacked branches and appropriate bases. The production homepage was not changed or deployed.
 - **Final checks:** Full current local specimen is available in the running environment on port 1317; 84/84 browser checks, ten screenshots and no reported axe violations, with incomplete cases and owner review explicitly retained. Normal production output is unchanged across 647 files.
+
+### 2026-11-15 — P2 visual asset follow-up claim — Codex
+- **Status:** IN PROGRESS for owner-supplied asset integration and separate typography comparison; P2-06 remains BLOCKED pending final owner approval. The owner approved the existing layout, spacing, hierarchy, color direction and component structure as design direction only.
+- **Branch:** `feat/p2-visual-assets-v2`, based on `feat/p2-06-review` at `efb2667`.
+- **Scope:** Integrate the four specified revised owner-supplied artwork files into the isolated preview without regenerating artwork, preserve originals, optimize responsively and record provenance; compare Newsreader/Source Serif 4/Lora separately. Production homepage and fonts remain unchanged.
+- **Initial blocker:** Four images are visible in the user message but the named ZIP and source files are not available in workspace attachments. Do not substitute or regenerate images; continue independent typography work and ask for the original bundle if still unavailable.
