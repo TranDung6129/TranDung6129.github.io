@@ -1,0 +1,137 @@
+{
+  "checks": [
+    {
+      "name": "Nash preset state updates (vi)",
+      "passed": true,
+      "before": [
+        "Pure-strategy NE: (Bottom, Right)"
+      ],
+      "after": "Equilibrium Analysis\nPure-strategy NE: None\nMixed-strategy NE: p* = 0.500, q* = 0.500→ U₁ = 0.000, U₂ = 0.000\n"
+    },
+    {
+      "name": "Nash payoff keyboard slider",
+      "passed": true,
+      "before": "1",
+      "after": "1.5"
+    },
+    {
+      "name": "TOC anchor navigation",
+      "passed": true,
+      "href": "#1-motivation-why-do-we-need-game-theory",
+      "url": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory"
+    },
+    {
+      "name": "Theme toggle changes html data-theme",
+      "passed": true,
+      "before": null,
+      "after": "dark"
+    },
+    {
+      "name": "Theme choice survives reload",
+      "passed": true,
+      "theme": "dark"
+    },
+    {
+      "name": "Desktop search returns Nash results",
+      "passed": true,
+      "count": 1,
+      "text": "Game Theory & Nash Equilibrium: From Intuition to Fixed Points\n2025-08-01\nYour browser does not support the video tag. 1. Motivation: Why Do We Need Game Theory? Classical optimization asks: given an objective function, find its maximiser. The catch — the objective function depends solely on your ow"
+    },
+    {
+      "name": "Fenced code rendered",
+      "passed": true,
+      "blocks": 1,
+      "copyControls": 1
+    },
+    {
+      "name": "Code copy writes clipboard",
+      "passed": true,
+      "characters": 311,
+      "prefix": "def vertex_cover_approx(G):\n    cover = set()\n    edges = G.edges.copy()\n    \n    while edges:\n        u, v = edges.pop("
+    }
+  ],
+  "screenshots": 16,
+  "errors": [
+    {
+      "page": "http://127.0.0.1:1314/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "url": "http://127.0.0.1:1314/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/",
+      "url": "http://127.0.0.1:1314/en/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/ja/",
+      "url": "http://127.0.0.1:1314/ja/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "message": "CalHeatMap is not defined"
+    },
+    {
+      "page": "http://127.0.0.1:1314/zh-cn/",
+      "url": "http://127.0.0.1:1314/zh-cn/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/kinh-te/game_theory_nash/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/en/kinh-te/game_theory_nash/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/",
+      "url": "http://127.0.0.1:1314/khoa-hoc-may-tinh/complexity-theory-quantum/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/about/",
+      "url": "http://127.0.0.1:1314/about/static/images/logoted.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/kinh-te/game_theory_nash/#1-motivation-why-do-we-need-game-theory",
+      "url": "http://127.0.0.1:1314/images/game_theory_nash_poster.png",
+      "status": 404
+    },
+    {
+      "page": "http://127.0.0.1:1314/",
+      "message": "CalHeatMap is not defined"
+    }
+  ],
+  "failed": 73
+}

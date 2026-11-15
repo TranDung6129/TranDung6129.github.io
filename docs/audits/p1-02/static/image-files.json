@@ -1,0 +1,140 @@
+[
+  {
+    "path": "about/images/computer.jpg",
+    "bytes": 265647,
+    "sha256": "cc8873ed9c83542bc3209bcd8e3d00598694185bc338143dd1db42083db96935",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "about/images/computer.png",
+    "bytes": 7553473,
+    "sha256": "356ad7854c243371e9010a7e18628284be825e0fc07a669d1d82ddc0b28fff75",
+    "dimensions_png_gif": [
+      2816,
+      1328
+    ]
+  },
+  {
+    "path": "about/images/finance.jpg",
+    "bytes": 117203,
+    "sha256": "42c838f9fb7dd6a0d6af7604ddfba980352498847a1c9ff98c5442fb48f03515",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "about/images/finance.png",
+    "bytes": 6867731,
+    "sha256": "5c51e3fb2b82d6c4b8cbc17025501c42781ed262b36a463b9eacde8bebe42300",
+    "dimensions_png_gif": [
+      2816,
+      1355
+    ]
+  },
+  {
+    "path": "about/images/mathematics.jpg",
+    "bytes": 237594,
+    "sha256": "bea4ec5cb26cbba79f4e5f12f858f99d467e21098da2964885cf82bbfcb9429d",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "about/images/mathematics.png",
+    "bytes": 7608021,
+    "sha256": "0c2f41a44b7ef78ef8f0c18454cfedc2e8f59e39eaa2da4b5cb74d4a804e4e0c",
+    "dimensions_png_gif": [
+      2528,
+      1499
+    ]
+  },
+  {
+    "path": "about/images/philosophy.jpg",
+    "bytes": 161120,
+    "sha256": "3572fd15c9ba5c05729edec235358e2c9d86ac21de663d614fe99fa44a787f2e",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "about/images/philosophy.png",
+    "bytes": 1542578,
+    "sha256": "61fe9714997569062f480d9719e8e5a07d49ef5aae2b5637e5ab2c792c2ae521",
+    "dimensions_png_gif": [
+      1264,
+      712
+    ]
+  },
+  {
+    "path": "about/images/physics.jpg",
+    "bytes": 111993,
+    "sha256": "e5add854ed648e3677abae9fcb3443f7a7b4c3216018acffa2070f748bf263c3",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "about/images/physics.png",
+    "bytes": 6524230,
+    "sha256": "7d1ef90e7fb8295ed2606ed25aed7ad8be828638262d94329d5ea415182697aa",
+    "dimensions_png_gif": [
+      2528,
+      1496
+    ]
+  },
+  {
+    "path": "favicon.ico",
+    "bytes": 15086,
+    "sha256": "ae61035dccc60bee05e233235dbfc6491d4e5a43609f70a27bd09f45fc2b6e84",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "images/avatar.png",
+    "bytes": 7170604,
+    "sha256": "8a9efb617ef767b87d72c5b6ffd5c2b4c700920b5dd0d9f02d361fc1a1c278b8",
+    "dimensions_png_gif": [
+      2048,
+      2048
+    ]
+  },
+  {
+    "path": "images/fixit.min.svg",
+    "bytes": 957,
+    "sha256": "e537021ba91916ec279859c514aae2c2f4c4f77e8fe06d75eab47a9a643668d1",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "images/hugo.min.svg",
+    "bytes": 696,
+    "sha256": "4946fb4a18d9d89a2ece09bc8109b0a6b4ee8571db070666545aed04df45996f",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "images/loading.min.svg",
+    "bytes": 482,
+    "sha256": "b9ba70835fb3fc9e3860deb1d6c6eb7d004b1775e8e0a2051dbf33e1dc096356",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "images/logoted.png",
+    "bytes": 384861,
+    "sha256": "0a76e254d5614f740159b68133fffe70e7cffe8593b9e0c4584f52b2f5e68b52",
+    "dimensions_png_gif": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "path": "images/mylogo.svg",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "lib/lightgallery/fonts/lg.svg",
+    "bytes": 12834,
+    "sha256": "f2fe1c00ed9c7bec409ce50038191c71ee54f5cc4877936f5adcf8c6f2e5242d",
+    "dimensions_png_gif": null
+  },
+  {
+    "path": "lib/lightgallery/images/loading.gif",
+    "bytes": 4178,
+    "sha256": "298ad3ffc38de0d78a845bf1b70f0dd317a3836af385ae9fcf94ed457d9aa1da",
+    "dimensions_png_gif": [
+      32,
+      32
+    ]
+  }
+]

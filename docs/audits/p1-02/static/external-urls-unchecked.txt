@@ -1,0 +1,8 @@
+https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css
+https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+https://d3js.org/d3.v3.min.js
+https://github.com/TranDung6129
+https://github.com/hugo-fixit/FixIt
+https://gohugo.io/
+https://www.gravatar.com/avatar/789a6402fed101e43a330bfed0e6dc95?s=32&d=

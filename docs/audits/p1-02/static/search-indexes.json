@@ -1,0 +1,50 @@
+[
+  {
+    "path": "en/search.json",
+    "entries": 20,
+    "list": true,
+    "entries_with_title": 20,
+    "entries_with_uri": 20,
+    "keys": [
+      "categories",
+      "content",
+      "date",
+      "objectID",
+      "tags",
+      "title",
+      "uri"
+    ]
+  },
+  {
+    "path": "ja/search.json",
+    "entries": 0,
+    "list": true,
+    "entries_with_title": 0,
+    "entries_with_uri": 0,
+    "keys": []
+  },
+  {
+    "path": "search.json",
+    "entries": 20,
+    "list": true,
+    "entries_with_title": 20,
+    "entries_with_uri": 20,
+    "keys": [
+      "categories",
+      "content",
+      "date",
+      "objectID",
+      "tags",
+      "title",
+      "uri"
+    ]
+  },
+  {
+    "path": "zh-cn/search.json",
+    "entries": 0,
+    "list": true,
+    "entries_with_title": 0,
+    "entries_with_uri": 0,
+    "keys": []
+  }
+]
