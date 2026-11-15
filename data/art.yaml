@@ -13,12 +13,15 @@ probability:
   width: 592
   height: 708
   alt: "Illustrative engraving of two dice in motion"
+  # Focal point when the image fills a frame of another shape (object-position).
+  focus: "50% 60%"
 decision:
   name: epistemic_decision_v2
   widths: [400, 775]
   width: 775
   height: 574
   alt: "Illustrative engraving of a sunlit, vaulted historic library"
+  focus: "50% 50%"
 volume_1:
   name: epistemic_volume_1_cover
   widths: [256, 512, 1024]

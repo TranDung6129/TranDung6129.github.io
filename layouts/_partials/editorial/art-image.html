@@ -12,5 +12,5 @@
 {{- end -}}
 <picture>
   <source type="image/webp" srcset="{{ delimit $sources ", " }}" sizes="{{ .sizes }}">
-  <img src="{{ $original.RelPermalink }}" width="{{ .width }}" height="{{ .height }}" alt="{{ .alt }}" {{ if .priority }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }} decoding="async">
+  <img src="{{ $original.RelPermalink }}" width="{{ .width }}" height="{{ .height }}" alt="{{ .alt }}" {{ with .focus }}style="object-position: {{ . }}" {{ end }}{{ if .priority }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }} decoding="async">
 </picture>

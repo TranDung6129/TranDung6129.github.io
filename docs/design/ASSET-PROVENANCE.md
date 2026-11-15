@@ -18,3 +18,5 @@ The probability illustration contains two dice; the supplied background includes
 The owner supplied these images for review; the generator/model, source terms and any third-party rights are not independently verified. Complete rights, trademark and editorial review remain necessary before production publication. No visual owner sign-off or production deployment is implied. See the separate [font comparison](typography-comparison/README.md) for licensed typeface provenance.
 
 The previously supplied concept image was a directional reference and is not embedded as an asset. The owner-approved layout remains unchanged as a design direction; final artwork, fonts and production use remain awaiting owner review.
+
+**Phase 3 change (owner request, 2026-11-15):** on the homepage the featured-essay artwork now fills its 3:2 frame (`object-fit: cover`) instead of being letterboxed on a grey surface. Each image has a focal point in `data/art.yaml` (`focus`) chosen so the subject stays whole: both dice for the probability image, the vaulted corridor for the decision image. The figure label sits on the image corner. Source files and WebP derivatives are unchanged.

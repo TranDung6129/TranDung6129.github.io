@@ -314,3 +314,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Tests (exit 0):** `python3 docs/audits/p1-08/tools/live-mirror.py <build of 5cfcec9> https://trandung6129.github.io …` 687/687 HTTP 200 and byte-identical; `BASE=https://trandung6129.github.io AXE=… node docs/audits/p3-07/tools/p3-smoke.cjs` 80 states, 31/31, axe 0 violations, no failed requests; `seo-check.py` on the live tree PASS (213 pages); `analyze.py` on the live tree 0 broken references.
 - **Rollback:** revert `5cfcec9` → `0045a4c` state; see `docs/audits/p3-08/README.md`.
 
+### 2026-11-15 — Phase 3 follow-up: featured artwork fills its frame — Claude Code
+- **Owner report:** the probability and decision artwork left grey bands in the featured cards.
+- **Change:** `.feature-image img` uses `object-fit: cover` with per-image focal points (`data/art.yaml` `focus`, passed by `editorial/art.html` → `art-image.html`); the figure label is overlaid on the image corner (`assets/css/editorial/home.css`). Also applies to the Phase 2 specimen, which shares the CSS.
+- **Tests:** frame and image boxes equal with `cover` at 360/390/768/1024/1440 px for both images; `p3-smoke.cjs` 80 states, 31/31, axe 0 violations.
+

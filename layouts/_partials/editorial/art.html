@@ -1,4 +1,4 @@
 {{- /* Render a named artwork from data/art.yaml. Input: dict "key" "sizes" ["priority"]. */ -}}
 {{- $a := index site.Data.art .key -}}
 {{- if not $a -}}{{- errorf "Unknown editorial artwork %q" .key -}}{{- end -}}
-{{- partial "editorial/art-image.html" (dict "name" $a.name "widths" $a.widths "width" $a.width "height" $a.height "alt" ($a.alt) "sizes" .sizes "priority" .priority) -}}
+{{- partial "editorial/art-image.html" (dict "name" $a.name "widths" $a.widths "width" $a.width "height" $a.height "alt" ($a.alt) "sizes" .sizes "priority" .priority "focus" $a.focus) -}}
