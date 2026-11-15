@@ -510,3 +510,14 @@ Working Git blobs at inspection; registry self hash pre-append. Coverage PARTIAL
 | `content/toan-hoc/riemann-hypothesis-number-theory.md` | `d038f61397e2531a230d4da3d82f90c634aa8c4c` | Existing VI article supplies attributed specimen excerpt; unchanged. |
 
 Review output group `docs/design/review/` (10 screenshot PNGs, browser/axe/font/contrast/performance JSON and retention evidence) is PARTIAL local-browser evidence, not live deployment, owner approval or complete WCAG evaluation. Artifact manifest SHA256 `204d01886f2b311ce8b7887b0479dbd7ccc15f0dd5c7cd5752eeac8a817efc72`. P1-08 live browser remained blocked by proxy CONNECT 403; no origin status inferred. Existing old `themes/` directories were left untouched after checkout and were not staged.
+
+## 2026-11-15 — review publication handoff
+
+Working Git blobs; PARTIAL coverage. Local preview and screenshots available; PR creation and owner visual approval remain unresolved.
+
+| Path | Blob | Responsibility and risk |
+|---|---|---|
+| `docs/design/PR-PLAN.md` | `a5edf06b638efaf45f32659e828105a135946398` | Pushed stacked review branches and base order; GitHub API Forbidden, no PR or merge claimed. |
+| `docs/design/REVIEW.md` | `2cb22030b9eedbd206b89abca1db0de84faeb4d9` | Final owner review entrypoint, screenshots, prototype isolation, tests, limitations and PR plan. |
+| `docs/AGENT_LOG.md` | `4435d51e38346748ea3bcdfb37ee3e501da39368` | Append-only publication blocker and current review status. |
+| `docs/INSPECTED_FILES.md` | `23bd483de00cc9807abdf484a49045b0e6eb88c6` | Registry self hash is pre-append. |

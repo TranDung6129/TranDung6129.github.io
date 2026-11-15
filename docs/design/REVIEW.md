@@ -36,6 +36,8 @@ The reading specimen includes English, Vietnamese, a credited excerpt from the e
 
 The integrator inspected desktop light and 390 dark full-page screenshots; the QA contributor inspected desktop light and mobile dark. Reading comfort, aesthetic craft, image treatment, chosen font and all owner rubric categories remain **NEEDS OWNER REVIEW**, not approved. The attached reference image was seen in the user request; it is not checked in and is not an asset source.
 
+The focused stacked branches and their review bases are listed in [PR-PLAN.md](PR-PLAN.md). PR creation is blocked by GitHub API egress; no PR or merge is claimed.
+
 ## Reproduce checks
 
 With preview running, install browser test packages outside the checkout if needed (Chromium binary at `/usr/bin/chromium`):
