@@ -1,0 +1,4 @@
+{{- /* First category term of a page, or nil. */ -}}
+{{- $c := false -}}
+{{- with .GetTerms "categories" -}}{{- $c = index . 0 -}}{{- end -}}
+{{- return $c -}}

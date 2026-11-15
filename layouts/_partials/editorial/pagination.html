@@ -1,0 +1,7 @@
+{{- with .Paginator -}}{{- if gt .TotalPages 1 -}}
+<nav class="pagination" aria-label="{{ T "ed_pagination" | default "Pages" }}">
+  {{- with .Prev }}<a href="{{ .URL }}" rel="prev">← {{ T "ed_newer" | default "Newer" }}</a>{{ else }}<span></span>{{ end -}}
+  <span>{{ .PageNumber }} / {{ .TotalPages }}</span>
+  {{- with .Next }}<a href="{{ .URL }}" rel="next">{{ T "ed_older" | default "Older" }} →</a>{{ else }}<span></span>{{ end -}}
+</nav>
+{{- end -}}{{- end -}}

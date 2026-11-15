@@ -1,0 +1,30 @@
+{{- $page := . -}}
+{{- $sections := slice "journal" "volumes" "films" "labs" "discover" -}}
+<header class="masthead wrap">
+  <div class="masthead-top">
+    <a class="wordmark" href="{{ site.Home.RelPermalink }}"{{ if .IsHome }} aria-current="page"{{ end }}>{{ site.Title }}</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" type="button">{{ T "ed_menu" | default "Menu" }} <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" aria-label="{{ T "ed_navLabel" | default "Sections" }}">
+      {{- range $sections -}}
+        {{- with partial "editorial/section-link.html" . -}}
+          {{- $current := or (eq .RelPermalink $page.RelPermalink) (and $page.IsPage (eq $page.Section .Section)) -}}
+          {{- if and (eq .Section "journal") (in site.Params.mainSections $page.Section) -}}{{- $current = true -}}{{- end -}}
+          <a href="{{ .RelPermalink }}"{{ if $current }} aria-current="page"{{ end }}>{{ .LinkTitle }}</a>
+        {{- end -}}
+      {{- end -}}
+      <div class="nav-languages">{{ partial "site/languages.html" . }}</div>
+    </nav>
+    <div class="tools">
+      <button type="button" class="search-toggle" aria-expanded="false" aria-controls="search-panel" aria-label="{{ T "ed_searchLabel" | default "Search articles" }}"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="7"></circle><path d="m16 16 5 5"></path></svg></button>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="{{ T "ed_themeDark" | default "Switch to dark theme" }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4 8.5 8.5 0 1 0 20 15.4Z"></path></svg></button>
+      {{- partial "site/languages.html" . -}}
+    </div>
+  </div>
+  <div class="masthead-meta"><span>{{ T "ed_tagline" | default "An independent publication on knowledge & the world" }}</span><span>{{ T "ed_subjects" | default "Mathematics · Economics · Computing · Philosophy" }}</span></div>
+  <div id="search-panel" class="search-panel" data-index="{{ "search.json" | relLangURL }}" hidden>
+    <label for="site-search">{{ T "ed_searchLabel" | default "Search articles" }}</label>
+    <input id="site-search" type="search" autocomplete="off" placeholder="{{ T "ed_searchPlaceholder" | default "Try ‘Nash’" }}">
+    <p class="search-status" aria-live="polite">{{ T "ed_searchHint" | default "Type at least two characters." }}</p>
+    <ul class="search-results"></ul>
+  </div>
+</header>

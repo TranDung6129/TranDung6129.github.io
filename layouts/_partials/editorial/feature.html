@@ -1,0 +1,15 @@
+{{- /* Approved featured-essay card bound to a real page. Input: dict "page" "art" "figure". */ -}}
+{{- $p := .page -}}
+{{- $cat := partial "editorial/category.html" $p -}}
+<article class="feature">
+  <figure class="feature-image">
+    {{- partial "editorial/art.html" (dict "key" .art "sizes" "(max-width: 560px) 44vw, (max-width: 1150px) 44vw, 24vw") -}}
+    <figcaption>{{ .figure }}{{ with $cat }} / {{ upper .LinkTitle }}{{ end }}</figcaption>
+  </figure>
+  <div class="feature-copy">
+    {{ with $cat }}<p class="kicker">{{ .LinkTitle }}</p>{{ end }}
+    <h3><a href="{{ $p.RelPermalink }}">{{ $p.LinkTitle }}</a></h3>
+    {{ with partial "editorial/describe.html" $p }}<p>{{ . }}</p>{{ end }}
+    <a class="text-link" href="{{ $p.RelPermalink }}" aria-hidden="true" tabindex="-1">{{ T "ed_readEssay" | default "Read the essay" }} <span>↗</span></a>
+  </div>
+</article>

@@ -1,0 +1,29 @@
+{{- /* Journal landing (P3-03): every essay of the subject sections, category navigation and the
+       publication-activity heatmap that used to sit on the old homepage. */ -}}
+{{- $src := partial "editorial/source-pages.html" . -}}
+{{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_journalKicker" | default "The journal") "count" (len $src.pages)) }}
+{{- $cats := slice -}}
+{{- range site.Taxonomies.categories.ByCount -}}
+  {{- $n := len (where .Pages "Section" "in" site.Params.mainSections) -}}
+  {{- if gt $n 0 }}{{ $cats = $cats | append (dict "page" .Page "count" $n) }}{{ end -}}
+{{- end -}}
+{{- with $cats }}
+<nav class="category-nav" aria-label="{{ T "ed_byCategory" | default "Browse by category" }}">
+  <span class="kicker">{{ T "ed_byCategory" | default "Browse by category" }}</span>
+  <ul>{{ range . }}<li><a href="{{ .page.RelPermalink }}">{{ .page.LinkTitle }} <span>{{ .count }}</span></a></li>{{ end }}</ul>
+</nav>
+{{- end }}
+{{- $pager := .Paginate $src.pages 20 }}
+<section class="section-block journal-list" aria-labelledby="essays-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "01" "id" "essays-title" "title" (T "ed_allEssays" | default "All essays")) }}
+  {{- if $src.fallback }}<p class="section-intro">{{ T "ed_englishFallback" | default "Articles are published in Vietnamese and English; English versions are shown here." }}</p>{{ end -}}
+  {{- if $pager.Pages }}{{ partial "editorial/essay-list.html" (dict "pages" $pager.Pages "start" (add 1 (mul (sub $pager.PageNumber 1) $pager.PagerSize))) }}{{ else }}<p class="empty-state">{{ T "ed_noEssays" | default "No essays have been published yet." }}</p>{{ end -}}
+  {{- partial "editorial/pagination.html" . -}}
+</section>
+{{- if eq $pager.PageNumber 1 }}
+<section class="section-block heatmap-section" aria-labelledby="activity-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "02" "id" "activity-title" "title" (T "ed_activity" | default "Publishing activity") "aside" (T "ed_activityAside" | default "Essays per day, six months")) }}
+  <div id="cal-heatmap" class="heatmap-container"></div>
+  {{ partial "heatmap.html" (dict "pages" $src.pages) }}
+</section>
+{{- end }}

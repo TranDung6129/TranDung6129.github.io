@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Editorial specimen · The Epistemic Diary</title>
   {{ with resources.Get "css/editorial/tokens.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
-  {{ range slice "base" "navigation" "home" "typography" "future" "responsive" }}{{ with resources.Get (printf "css/specimen/%s.css" .) }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}{{ end }}
+  {{ range slice "base" "navigation" "home" "typography" "future" "responsive" }}{{ with resources.Get (printf "css/editorial/%s.css" .) }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}{{ end }}
   {{/* Fonts are only emitted during editorial-review Hugo builds. */}}
   {{ with resources.Get "editorial-fonts/newsreader/files/newsreader-latin-ext-wght-italic.woff2" }}{{ $_ := .RelPermalink }}{{ end }}
   {{ with resources.Get "editorial-fonts/newsreader/files/newsreader-latin-ext-wght-normal.woff2" }}{{ $_ := .RelPermalink }}{{ end }}
@@ -20,7 +20,7 @@
   {{ with resources.Get "editorial-fonts/source-serif-4/files/source-serif-4-latin-wght-normal.woff2" }}{{ $_ := .RelPermalink }}{{ end }}
   {{ with resources.Get "editorial-fonts/source-serif-4/files/source-serif-4-vietnamese-wght-italic.woff2" }}{{ $_ := .RelPermalink }}{{ end }}
   {{ with resources.Get "editorial-fonts/source-serif-4/files/source-serif-4-vietnamese-wght-normal.woff2" }}{{ $_ := .RelPermalink }}{{ end }}
-  {{ with resources.Get "css/specimen/fonts.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ with resources.Get "css/editorial/fonts.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>

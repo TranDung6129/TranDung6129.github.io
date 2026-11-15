@@ -1,9 +1,15 @@
-{{- /* Compatibility adapter derived from FixIt f5fb989; MIT terms in LICENSE-FixIt.txt. */ -}}
-{{- define "title" -}}
-  {{- title (.Params.Title | default ((T .Section) | default .Section | dict "Some" | T "allSome")) -}}
-  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
-{{- end -}}
-
+{{- /* Section pages (P3-03): subject sections (/kinh-te/ …) and the editorial sections. Editorial
+       sections choose a view with the front matter "view" (journal, volumes, films, labs, discover). */ -}}
 {{- define "content" -}}
-  {{- partial "p1-04/section-content.html" . -}}
+{{- $view := .Params.view | default "section" -}}
+{{- if templates.Exists (printf "_partials/views/%s.html" $view) -}}
+  {{- partial (printf "views/%s.html" $view) . -}}
+{{- else -}}
+  {{- $pages := .Pages.ByDate.Reverse -}}
+  {{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_section" | default "Section") "count" (len $pages)) }}
+  {{- $pager := .Paginate $pages (site.Params.section.paginate | default 20) -}}
+  {{- with .Content }}<div class="prose content list-intro">{{ . }}</div>{{ end -}}
+  {{- if $pager.Pages }}{{ partial "editorial/essay-list.html" (dict "pages" $pager.Pages "start" (add 1 (mul (sub $pager.PageNumber 1) $pager.PagerSize))) }}{{ else }}<p class="empty-state">{{ T "ed_noEssays" | default "No essays have been published yet." }}</p>{{ end -}}
+  {{- partial "editorial/pagination.html" . -}}
+{{- end -}}
 {{- end -}}

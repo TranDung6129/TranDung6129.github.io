@@ -1,0 +1,13 @@
+{{- /* Approved journal list. Input: dict "pages" ["start"] ["showTopic"]. */ -}}
+{{- $start := .start | default 1 -}}
+<ol class="reading-list">
+  {{- range $i, $p := .pages -}}
+    {{- $cat := partial "editorial/category.html" $p -}}
+  <li>
+    <span class="list-number">{{ printf "%02d" (add $i $start) }}</span>
+    <div><h3><a href="{{ $p.RelPermalink }}">{{ $p.LinkTitle }}</a></h3>{{ with partial "editorial/describe.html" $p }}<p>{{ . }}</p>{{ end }}</div>
+    <span class="list-topic">{{ with $cat }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</span>
+    <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ partial "editorial/date.html" $p.Date }}</time>
+  </li>
+  {{- end -}}
+</ol>

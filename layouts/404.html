@@ -1,22 +1,5 @@
-{{- define "title" -}}
-  {{- T "pageNotFound" | printf "404 %v" -}}
-  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
-{{- end -}}
-
+{{- define "title" }}404 {{ site.Params.titleDelimiter | default "-" }} {{ site.Title }}{{ end -}}
 {{- define "content" -}}
-  <article class="page" id="content-404">
-    <h1 id="error-emoji"></h1>
-    <p class="error-text">
-      {{- T "pageNotFoundText" -}}&nbsp;
-      <a href="javascript:void(0);" title="{{ T `back` }}" onclick="window.history.back();">
-        {{- dict "Class" "fa-regular fa-hand-point-left fa-fw" | partial "plugin/icon.html" -}}
-      </a>
-    </p>
-  </article>
-  <script>
-    (function() {
-      const emojiArray = ['\\(o_o)/', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)','(=\'X\'=)', '(>_<)', '(;-;)'];
-      document.getElementById('error-emoji').appendChild(document.createTextNode(emojiArray[Math.floor(Math.random() * emojiArray.length)]));
-    })();
-  </script>
+<section class="message-page"><p class="kicker">404</p><h1>{{ T "ed_notFound" | default "This page is not in the diary." }}</h1><p class="lead">{{ T "ed_notFoundText" | default "The address may have changed, or the page was never written. Try the search above or one of these:" }}</p>
+<p class="message-links"><a class="text-link" href="{{ site.Home.RelPermalink }}">{{ T "ed_home" | default "Return to the front page" }}</a>{{ with partial "editorial/section-link.html" "journal" }} · <a class="text-link" href="{{ .RelPermalink }}">{{ T "ed_allEssays" | default "All essays" }}</a>{{ end }}</p></section>
 {{- end -}}

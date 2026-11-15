@@ -1,0 +1,9 @@
+{{- /* Essays (regular pages of the main subject sections) for the current language; falls back to
+       English when this language has none (ja, zh-cn). Returns dict "pages" "fallback". */ -}}
+{{- $pages := where site.RegularPages "Section" "in" site.Params.mainSections -}}
+{{- $fallback := false -}}
+{{- if not $pages -}}
+  {{- range site.Sites -}}{{- if eq .Language.Lang "en" -}}{{- $pages = where .RegularPages "Section" "in" site.Params.mainSections -}}{{- end -}}{{- end -}}
+  {{- $fallback = true -}}
+{{- end -}}
+{{- return dict "pages" $pages.ByDate.Reverse "fallback" $fallback -}}

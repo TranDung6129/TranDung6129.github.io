@@ -32,6 +32,7 @@
       {{- end }}
     {{- end -}}
   {{- else if eq $math.type "mathjax" -}}
+    {{- $.Page.Store.Set "hasMath" true -}}
     {{- if eq $.Type "block" -}}
       $${{- .Inner -}}$$
     {{- else -}}

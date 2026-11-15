@@ -218,3 +218,149 @@ new = "MỚI"
 changed = "THAY ĐỔI"
 deleted = "XOÁ"
 # === shortcodes/version.html ===
+
+# === editorial (Phase 3, site-owned) ===
+[ed_activity]
+other = "Hoạt động xuất bản"
+[ed_activityAside]
+other = "Số bài mỗi ngày, sáu tháng"
+[ed_allEssays]
+other = "Tất cả bài viết"
+[ed_archive]
+other = "Lưu trữ"
+[ed_backToTop]
+other = "Lên đầu trang"
+[ed_by]
+other = "Tác giả"
+[ed_byCategory]
+other = "Duyệt theo chủ đề"
+[ed_categories]
+other = "Chủ đề"
+[ed_collections]
+other = "Chuỗi bài"
+[ed_contents]
+other = "Nội dung"
+[ed_copied]
+other = "Đã chép"
+[ed_copy]
+other = "Chép"
+[ed_copyFailed]
+other = "Không chép được"
+[ed_copyLabel]
+other = "Chép mã vào bộ nhớ tạm"
+[ed_credits]
+other = "Ghi công"
+[ed_currentVolume]
+other = "Tuyển tập hiện tại"
+[ed_englishFallback]
+other = "Bài viết có bản tiếng Việt và tiếng Anh; danh sách dưới đây là bản tiếng Anh."
+[ed_essayCount]
+other = "{{ .Count }} bài viết"
+[ed_exploreJournal]
+other = "Khám phá tạp chí"
+[ed_featured]
+other = "Bài nổi bật"
+[ed_featuredAside]
+other = "Tuyển chọn cho người tò mò"
+[ed_footerLine]
+other = "Dành cho những câu hỏi còn ở lại với ta."
+[ed_footerNav]
+other = "Thêm"
+[ed_fromJournal]
+other = "Từ tạp chí"
+[ed_heroCaption]
+other = "Hình minh hoạ; các ký hiệu hình học chỉ mang tính trang trí"
+[ed_heroDeck]
+other = "Về toán học, khoa học và hành trình thấu hiểu thế giới — nơi tư duy chặt chẽ gặp góc nhìn tò mò và nhân văn."
+[ed_heroEyebrow]
+other = "Tạp chí của những trí óc tò mò"
+[ed_heroNote]
+other = "Nơi dành cho những câu hỏi xứng đáng được nghĩ lâu hơn một chút."
+[ed_home]
+other = "Về trang đầu"
+[ed_index]
+other = "Mục lục"
+[ed_journalIntro]
+other = "Ghi chú, câu hỏi và ý tưởng để quay lại."
+[ed_journalKicker]
+other = "Tạp chí"
+[ed_languages]
+other = "Ngôn ngữ"
+[ed_license]
+other = "Văn bản"
+[ed_menu]
+other = "Mục lục"
+[ed_minutes]
+other = "{{ .Count }} phút đọc"
+[ed_morePosts]
+other = "Bài khác"
+[ed_navLabel]
+other = "Chuyên mục"
+[ed_newer]
+other = "Mới hơn"
+[ed_newerEssay]
+other = "Bài mới hơn"
+[ed_nextPart]
+other = "Phần tiếp theo"
+[ed_noEssays]
+other = "Chưa có bài viết nào bằng ngôn ngữ này."
+[ed_notFound]
+other = "Trang này không có trong nhật ký."
+[ed_notFoundText]
+other = "Địa chỉ có thể đã thay đổi hoặc trang chưa từng được viết. Hãy thử tìm kiếm ở trên, hoặc:"
+[ed_offline]
+other = "Bạn đang ngoại tuyến"
+[ed_offlineKicker]
+other = "Không có kết nối"
+[ed_offlineText]
+other = "Trang này cần kết nối mạng. Những trang bạn đã mở trước đó có thể vẫn xem được."
+[ed_older]
+other = "Cũ hơn"
+[ed_olderEssay]
+other = "Bài cũ hơn"
+[ed_openVolume]
+other = "Mở tuyển tập"
+[ed_pagination]
+other = "Trang"
+[ed_previousPart]
+other = "Phần trước"
+[ed_readEssay]
+other = "Đọc bài"
+[ed_related]
+other = "Đọc thêm"
+[ed_searchError]
+other = "Hiện không tìm kiếm được."
+[ed_searchFound]
+other = "Tìm thấy {n} bài viết."
+[ed_searchHint]
+other = "Nhập ít nhất hai ký tự."
+[ed_searchLabel]
+other = "Tìm bài viết"
+[ed_searchNone]
+other = "Không tìm thấy bài viết nào."
+[ed_searchPlaceholder]
+other = "Thử ‘Nash’"
+[ed_section]
+other = "Chuyên mục"
+[ed_series]
+other = "Chuỗi bài"
+[ed_skip]
+other = "Bỏ qua đến nội dung"
+[ed_subjects]
+other = "Toán học · Kinh tế · Máy tính · Triết học"
+[ed_tagline]
+other = "Ấn phẩm độc lập về tri thức và thế giới"
+[ed_tags]
+other = "Thẻ"
+[ed_themeDark]
+other = "Chuyển sang giao diện tối"
+[ed_themeLight]
+other = "Chuyển sang giao diện sáng"
+[ed_updated]
+other = "Cập nhật"
+[ed_volume]
+other = "Tập"
+[ed_volumeKicker]
+other = "Một cuốn sách của những ý tưởng liên kết"
+[ed_words]
+other = "{{ .Count }} từ"

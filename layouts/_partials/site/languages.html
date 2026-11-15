@@ -1,0 +1,11 @@
+{{- /* Language links: the translation of this page when it exists, otherwise that language's home. */ -}}
+{{- $page := . -}}
+{{- $labels := dict "vi" "VI" "en" "EN" "ja" "JA" "zh-cn" "中文" -}}
+<ul class="language" aria-label="{{ T "ed_languages" | default "Languages" }}">
+  {{- range site.Sites -}}
+    {{- $lang := .Language.Lang -}}
+    {{- $target := .Home -}}
+    {{- range $page.AllTranslations -}}{{- if eq .Language.Lang $lang -}}{{- $target = . -}}{{- end -}}{{- end -}}
+    <li>{{ if eq $lang $page.Language.Lang }}<span aria-current="true" lang="{{ $lang }}">{{ index $labels $lang | default $lang }}</span>{{ else }}<a href="{{ $target.RelPermalink }}" hreflang="{{ $lang }}" lang="{{ $lang }}" title="{{ .Language.LanguageName }}">{{ index $labels $lang | default $lang }}</a>{{ end }}</li>
+  {{- end -}}
+</ul>
