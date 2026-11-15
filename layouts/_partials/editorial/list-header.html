@@ -1,0 +1,8 @@
+{{- /* Header of list pages. Input: dict "page" "kicker" ["count"]. */ -}}
+{{- $p := .page -}}
+<header class="list-header">
+  <p class="kicker">{{ .kicker }}</p>
+  <h1>{{ $p.Title }}</h1>
+  {{- with $p.Description }}<p class="lead">{{ . }}</p>{{ end -}}
+  {{- with .count }}<p class="list-count">{{ T "ed_essayCount" (dict "Count" .) | default (printf "%d essays" .) }}</p>{{ end -}}
+</header>

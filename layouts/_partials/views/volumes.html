@@ -1,0 +1,19 @@
+{{- /* /volumes/ (P3-04). */ -}}
+{{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_volumesKicker" | default "Books of connected ideas")) }}
+{{- with .RegularPages.ByWeight }}
+<div class="volume-index">
+  {{- range . -}}
+  {{- $n := len (partial "editorial/volume-chapters.html" .) }}
+  <article class="volume-entry">
+    <a class="book" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">{{ partial "editorial/art.html" (dict "key" (.Params.cover | default "volume_1") "sizes" "8rem") }}</a>
+    <div>
+      {{ with .Params.status }}<p class="kicker">{{ . }}</p>{{ end }}
+      <h2><a href="{{ .RelPermalink }}">{{ T "ed_volume" | default "Volume" }} <em>{{ .Params.numeral }}</em></a></h2>
+      <p class="volume-subtitle">{{ .Params.subtitle }}</p>
+      <p>{{ .Description }}</p>
+      <p class="meta">{{ T "ed_chapterCount" (dict "Count" $n) | default (printf "%d chapters" $n) }}</p>
+    </div>
+  </article>
+  {{- end -}}
+</div>
+{{- else }}<p class="empty-state">{{ T "ed_noVolumes" | default "No volume has been published yet." }}</p>{{ end }}

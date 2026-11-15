@@ -1,0 +1,15 @@
+{{- /* Approved "Current volume" card bound to a volume page. Input: dict "page" "number". */ -}}
+{{- $v := .page -}}
+<aside id="volume" class="volume" aria-labelledby="volume-title">
+  {{ partial "editorial/section-heading.html" (dict "number" .number "id" "volume-title" "title" (T "ed_currentVolume" | default "Current volume")) }}
+  <div class="volume-body">
+    <a class="book" href="{{ $v.RelPermalink }}" tabindex="-1" aria-hidden="true">{{ partial "editorial/art.html" (dict "key" ($v.Params.cover | default "volume_1") "sizes" "(max-width: 850px) 140px, 160px") }}</a>
+    <div>
+      <p class="kicker">{{ T "ed_volumeKicker" | default "A book of connected ideas" }}</p>
+      <h3><a href="{{ $v.RelPermalink }}">{{ T "ed_volume" | default "Volume" }} <em>{{ $v.Params.numeral }}</em></a></h3>
+      <p class="volume-subtitle">{{ $v.Params.subtitle }}</p>
+      <p class="volume-description">{{ $v.Description }}</p>
+      <a class="outlined-label" href="{{ $v.RelPermalink }}">{{ with $v.Params.status }}{{ . }}{{ else }}{{ T "ed_openVolume" | default "Open the volume" }}{{ end }} <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</aside>

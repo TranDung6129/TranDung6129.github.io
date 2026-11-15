@@ -1,0 +1,4 @@
+{{- /* Pick the current language from a {vi: …, en: …} map (English fallback); plain strings pass through. */ -}}
+{{- $v := . -}}
+{{- if reflect.IsMap . -}}{{- $v = index . site.Language.Lang | default (index . "en") -}}{{- end -}}
+{{- return $v -}}

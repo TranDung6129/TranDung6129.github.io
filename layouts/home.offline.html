@@ -1,20 +1,5 @@
-{{- define "title" -}}
-  {{- T "offlineTitle" -}}
-  {{- if .Site.Params.withSiteTitle }} {{ .Site.Params.titleDelimiter }} {{ .Site.Title }}{{- end -}}
-{{- end -}}
-
+{{- /* /offline/: shown by browsers without a connection (route kept; not indexed via robots.txt). */ -}}
+{{- define "title" }}{{ T "ed_offline" | default "You are offline" }} {{ site.Params.titleDelimiter | default "-" }} {{ site.Title }}{{ end -}}
 {{- define "content" -}}
-  <article class="page" id="content-offline">
-    <div class="header">
-      <h1 class="offline-title animate__animated animate__pulse animate__faster">{{- T "offlineTitle" -}}</h1>
-      <p class="offline-subtitle animate__animated animate__headShake">
-        <i class="fa-stack fa-xs" aria-hidden="true">
-          <i class="fa-solid fa-wifi fa-stack-1x" aria-hidden="true"></i>
-          <i class="fa-solid fa-ban fa-stack-2x" aria-hidden="true"></i>
-        </i>
-        <span>ERROR_INTERNET_DISCONNECTED</span>
-      </p>
-    </div>
-    <p class="error-text">{{- T "offlineText" -}}</p>
-  </article>
+<section class="message-page"><p class="kicker">{{ T "ed_offlineKicker" | default "No connection" }}</p><h1>{{ T "ed_offline" | default "You are offline" }}</h1><p class="lead">{{ T "ed_offlineText" | default "This page needs a network connection. Pages you have already opened may still be available." }}</p><a class="text-link" href="{{ site.Home.RelPermalink }}">{{ T "ed_home" | default "Return to the front page" }} →</a></section>
 {{- end -}}

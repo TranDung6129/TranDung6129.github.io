@@ -1,0 +1,27 @@
+# Owner-supplied editorial artwork (docs/design/ASSET-PROVENANCE.md). Originals in
+# assets/editorial-source/, WebP derivatives in assets/editorial-art/. Used by
+# layouts/_partials/editorial/art.html.
+hero:
+  name: epistemic_hero
+  widths: [640, 960, 1400, 1672]
+  width: 1672
+  height: 941
+  alt: "Illustrative engraving of an armillary sphere, books, a compass and decorative mathematical notation"
+probability:
+  name: epistemic_probability_v2
+  widths: [320, 592]
+  width: 592
+  height: 708
+  alt: "Illustrative engraving of two dice in motion"
+decision:
+  name: epistemic_decision_v2
+  widths: [400, 775]
+  width: 775
+  height: 574
+  alt: "Illustrative engraving of a sunlit, vaulted historic library"
+volume_1:
+  name: epistemic_volume_1_cover
+  widths: [256, 512, 1024]
+  width: 1024
+  height: 1536
+  alt: "Cover of Volume I: Reason, Models and the World"

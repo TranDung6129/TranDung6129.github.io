@@ -1,129 +1,48 @@
-{{- define "title" }}{{ .Site.Title }}{{- end -}}
-
-{{- /* Home-only stylesheet, linked from <head> through the base template's custom-head block. */ -}}
-{{- define "custom-head" -}}
-  {{- with resources.Get "css/home.scss" | toCSS (dict "targetPath" "css/home.min.css" "outputStyle" "compressed") -}}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- end -}}
-{{- end -}}
-
+{{- /* Homepage (P3-02): the owner-approved Phase 2 composition bound to real content.
+       Brand copy and artwork are static; featured essays, the journal list and the current
+       volume come from content (data/home.yaml picks the featured essays). */ -}}
+{{- define "title" }}{{ site.Title }}{{ end -}}
 {{- define "content" -}}
-<div class="home-layout-single-col">
+{{- $src := partial "editorial/source-pages.html" . -}}
+{{- $journal := partial "editorial/section-link.html" "journal" -}}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span>01</span> &nbsp; {{ T "ed_heroEyebrow" | default "A journal of curious minds" }}</p>
+    <h1 id="hero-title">Ideas worth <em>staying</em> with.</h1>
+    <div class="accent-rule"></div>
+    <p class="hero-deck">{{ T "ed_heroDeck" | default "On mathematics, science, and the broader pursuit of understanding — where rigorous thought meets a curious, human perspective." }}</p>
+    <p class="hero-note">{{ T "ed_heroNote" | default "A place for questions that deserve a little more time." }}</p>
+    {{ with $journal }}<a class="text-link" href="{{ .RelPermalink }}">{{ T "ed_exploreJournal" | default "Explore the journal" }} <span aria-hidden="true">↗</span></a>{{ end }}
+  </div>
+  <figure class="hero-art">
+    {{- partial "editorial/art.html" (dict "key" "hero" "sizes" "(max-width: 560px) 90vw, (max-width: 850px) 48vw, 54vw" "priority" true) -}}
+    <figcaption class="art-caption"><span>FIG. 01</span> &nbsp; {{ T "ed_heroCaption" | default "Illustrative instrument; geometric marks are decorative" }}</figcaption>
+  </figure>
+</section>
 
+{{- $featured := slice -}}
+{{- range $f := site.Data.home.featured -}}
+  {{- with partial "editorial/get-page.html" $f.path -}}{{- $featured = $featured | append (dict "page" . "art" $f.art "figure" $f.figure) -}}{{- end -}}
+{{- end -}}
+{{- if $featured }}
+<section class="section-block" aria-labelledby="featured-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "02" "id" "featured-title" "title" (T "ed_featured" | default "Featured essays") "aside" (T "ed_featuredAside" | default "A selection for the curious")) }}
+  <div class="featured-grid">{{ range $featured }}{{ partial "editorial/feature.html" . }}{{ end }}</div>
+</section>
+{{- end }}
 
-  {{- /* Panel giữa - Categories & Recent Posts */ -}}
-  <main class="center-panel">
-    <section class="categories-section">
-      <h2 class="section-title">{{ if eq .Site.Language.Lang "en" }}Explore by Categories{{ else }}Khám phá theo chủ đề{{ end }}</h2>
-      <div class="categories-grid">
-        {{- $isEn := eq .Site.Language.Lang "en" -}}
-        {{- $categories := slice "toan-hoc" "vat-ly" "kinh-te" "khoa-hoc-may-tinh" "triet-hoc" "ca-nhan" -}}
-        {{- $categoryInfo := dict
-        "toan-hoc" (dict "title" (cond $isEn "Mathematics" "Toán học") "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path
-            d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z" />
-        </svg>` "desc" (cond $isEn "Number theory, analysis, algebra" "Lý thuyết số, giải tích, đại số"))
-        "vat-ly" (dict "title" (cond $isEn "Physics" "Vật lý") "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <circle cx="12" cy="12" r="1" />
-          <ellipse cx="12" cy="12" rx="11" ry="4" transform="rotate(30 12 12)" />
-          <ellipse cx="12" cy="12" rx="11" ry="4" transform="rotate(90 12 12)" />
-          <ellipse cx="12" cy="12" rx="11" ry="4" transform="rotate(150 12 12)" />
-        </svg>` "desc" (cond $isEn "Mechanics, quantum, relativity" "Cơ học, lượng tử, tương đối"))
-        "kinh-te" (dict "title" (cond $isEn "Economics" "Kinh tế") "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-          <polyline points="16 7 22 7 22 13" />
-        </svg>` "desc" (cond $isEn "Micro, macro, game theory" "Vi mô, vĩ mô, lý thuyết trò chơi"))
-        "khoa-hoc-may-tinh" (dict "title" (cond $isEn "Computer Science" "Khoa học máy tính") "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40"
-          height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <rect width="16" height="16" x="4" y="4" rx="2" />
-          <rect width="6" height="6" x="9" y="9" rx="1" />
-          <path d="M15 2v2" />
-          <path d="M15 20v2" />
-          <path d="M2 15h2" />
-          <path d="M2 9h2" />
-          <path d="M20 15h2" />
-          <path d="M20 9h2" />
-          <path d="M9 2v2" />
-          <path d="M9 20v2" />
-        </svg>` "desc" (cond $isEn "Algorithms, AI, complexity" "Thuật toán, AI, độ phức tạp"))
-        "triet-hoc" (dict "title" (cond $isEn "Philosophy" "Triết học") "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <line x1="3" x2="21" y1="22" y2="22" />
-          <line x1="6" x2="6" y1="18" y2="11" />
-          <line x1="10" x2="10" y1="18" y2="11" />
-          <line x1="14" x2="14" y1="18" y2="11" />
-          <line x1="18" x2="18" y1="18" y2="11" />
-          <polygon points="12 2 20 7 4 7" />
-        </svg>` "desc" (cond $isEn "Epistemology, metaphysics" "Nhận thức, siêu hình, hiện tượng"))
-        "ca-nhan" (dict "title" (cond $isEn "Personal" "Cá nhân") "icon" `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path
-            d="M12.67 19a2 2 0 0 0 1.416-.588l6.154-6.172a6 6 0 0 0-8.49-8.49L5.586 9.914A2 2 0 0 0 5 11.328V18a1 1 0 0 0 1 1z" />
-          <path d="M16 8 2 22" />
-          <path d="M17.5 15H9" />
-        </svg>` "desc" (cond $isEn "Diary, reflections" "Nhật ký, suy ngẫm"))
-        -}}
-
-        {{- range $categories -}}
-        {{- $catSlug := . -}}
-        {{- $info := index $categoryInfo $catSlug -}}
-        {{- with $.Site.GetPage (printf "/categories/%s" $catSlug) -}}
-        {{- $count := len .Pages -}}
-        <a href="{{ .RelPermalink }}" class="category-card">
-          <div class="category-icon">{{ $info.icon | safeHTML }}</div>
-          <div class="category-content">
-            <h3 class="category-title">{{ $info.title }}</h3>
-            <p class="category-desc">{{ $info.desc }}</p>
-            <span class="category-count">{{ $count }} {{ if $isEn }}posts{{ else }}bài{{ end }}</span>
-          </div>
-        </a>
-        {{- end -}}
-        {{- end -}}
-      </div>
-    </section>
-
-    <section class="heatmap-section">
-      <h2 class="section-title">{{ if eq .Site.Language.Lang "en" }}Activity{{ else }}Hoạt động{{ end }}</h2>
-      <div id="cal-heatmap" class="heatmap-container"></div>
-      {{ partial "heatmap.html" . }}
-    </section>
-
-    {{- if .Site.Params.home.posts.enable -}}
-    <section class="recent-posts">
-      <h2 class="section-title">{{ if eq .Site.Language.Lang "en" }}Recent Posts{{ else }}Bài viết gần đây{{ end }}</h2>
-      {{- /* Fetch latest regular pages avoiding specific sections limit so it picks up all new categories */ -}}
-      {{- $pages := where .Site.RegularPages "Section" "in" (slice "posts" "toan-hoc" "vat-ly" "kinh-te"
-      "khoa-hoc-may-tinh" "triet-hoc" "ca-nhan") -}}
-      {{- $pages = $pages | first 5 -}}
-      <div class="posts-list">
-        {{- range $pages -}}
-        <article class="post-item">
-          <time class="post-date">{{ .Date.Format "02/01/2006" }}</time>
-          <h3 class="post-title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h3>
-          {{- with .Params.categories -}}
-          <div class="post-meta">
-            {{- range . -}}
-            <span class="category">{{ . }}</span>
-            {{- end -}}
-          </div>
-          {{- end -}}
-        </article>
-        {{- end -}}
-      </div>
-    </section>
-    {{- end -}}
-  </main>
+{{- $exclude := slice -}}{{- range $featured -}}{{- $exclude = $exclude | append .page.RelPermalink -}}{{- end -}}
+{{- $latest := slice -}}
+{{- range $src.pages -}}{{- if and (not (in $exclude .RelPermalink)) (lt (len $latest) (site.Data.home.journal_count | default 4)) -}}{{- $latest = $latest | append . -}}{{- end -}}{{- end -}}
+{{- $volume := false -}}
+{{- with partial "editorial/section-link.html" "volumes" -}}{{- with .RegularPages.ByWeight -}}{{- $volume = index . 0 -}}{{- end -}}{{- end }}
+<div class="journal-volume{{ if not $volume }} journal-only{{ end }}">
+  <section id="journal" class="journal" aria-labelledby="journal-title">
+    {{ partial "editorial/section-heading.html" (dict "number" "03" "id" "journal-title" "title" (T "ed_fromJournal" | default "From the journal")) }}
+    <p class="section-intro">{{ T "ed_journalIntro" | default "Notes, questions and ideas to return to." }}{{ if $src.fallback }} {{ T "ed_englishFallback" | default "Articles are published in Vietnamese and English; English versions are shown here." }}{{ end }}</p>
+    {{- if $latest }}{{ partial "editorial/essay-list.html" (dict "pages" $latest) }}{{ else }}<p class="empty-state">{{ T "ed_noEssays" | default "No essays have been published yet." }}</p>{{ end }}
+    {{ with $journal }}<p class="more-link"><a class="text-link" href="{{ .RelPermalink }}">{{ T "ed_allEssays" | default "All essays" }} <span aria-hidden="true">→</span></a></p>{{ end }}
+  </section>
+  {{- with $volume }}{{ partial "editorial/volume-card.html" (dict "page" . "number" "04") }}{{ end }}
 </div>
-
 {{- end -}}

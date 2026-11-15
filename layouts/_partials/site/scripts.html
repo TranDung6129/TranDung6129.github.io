@@ -1,0 +1,22 @@
+{{- $i18n := dict
+  "themeDark" (T "ed_themeDark" | default "Switch to dark theme")
+  "themeLight" (T "ed_themeLight" | default "Switch to light theme")
+  "searchHint" (T "ed_searchHint" | default "Type at least two characters.")
+  "searchFound" (T "ed_searchFound" | default "{n} articles found.")
+  "searchNone" (T "ed_searchNone" | default "No articles found.")
+  "searchError" (T "ed_searchError" | default "Search is unavailable right now.")
+  "copy" (T "ed_copy" | default "Copy")
+  "copyLabel" (T "ed_copyLabel" | default "Copy code to clipboard")
+  "copied" (T "ed_copied" | default "Copied")
+  "copyFailed" (T "ed_copyFailed" | default "Copy failed") -}}
+<script>window.EDITORIAL_I18N={{ $i18n | jsonify | safeJS }};</script>
+{{- $js := resources.Get "js/editorial.js" | js.Build (dict "targetPath" "js/editorial.js" "minify" hugo.IsProduction "target" "es2018") | fingerprint -}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- /* MathJax only on pages whose content contains math (flag set by the passthrough render hook). */ -}}
+{{- if .Store.Get "hasMath" -}}
+  {{- $m := site.Params.page.math.mathjax -}}
+  {{- $opts := $m.options | default dict -}}
+  {{- $params := dict "cdn" $m.cdn "tex" ($m.tex | default dict) "packages" ($m.packages | default dict) "macros" ($m.macros | default dict) "loader" ($m.loader | default dict) "options" (dict "enableMenu" $opts.enablemenu | merge $opts) -}}
+  {{- $mj := resources.Get "js/lib/mathjax.js" | js.Build (dict "targetPath" "js/lib/mathjax.min.js" "minify" hugo.IsProduction "params" $params) -}}
+<script src="{{ $mj.RelPermalink }}" async defer></script>
+{{- end -}}

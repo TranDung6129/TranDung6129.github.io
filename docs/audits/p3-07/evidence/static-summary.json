@@ -1,0 +1,640 @@
+{
+  "emitted_files": 688,
+  "html_files": 367,
+  "non_alias_html": 213,
+  "alias_html": 154,
+  "html_language_counts": {
+    "vi": 171,
+    "en": 180,
+    "ja": 8,
+    "zh-cn": 8
+  },
+  "non_alias_language_counts": {
+    "vi": 97,
+    "en": 102,
+    "ja": 7,
+    "zh-cn": 7
+  },
+  "route_diff": {
+    "removed": [
+      "/css/config.min.css",
+      "/css/config.min.css.map",
+      "/css/style.min.css",
+      "/css/style.min.css.map",
+      "/images/fixit.min.svg",
+      "/images/hugo.min.svg",
+      "/images/loading.min.svg",
+      "/js/custom.min.js",
+      "/js/head/color-scheme.min.js",
+      "/js/theme.min.js",
+      "/lib/animate/animate.min.css",
+      "/lib/autocomplete/autocomplete.min.js",
+      "/lib/cookieconsent/cookieconsent.min.css",
+      "/lib/cookieconsent/cookieconsent.min.js",
+      "/lib/fontawesome-free/all.min.css",
+      "/lib/fuse/fuse.min.js",
+      "/lib/lightgallery/css/lightgallery-bundle.min.css",
+      "/lib/lightgallery/lightgallery.min.js",
+      "/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js",
+      "/lib/lightgallery/plugins/zoom/lg-zoom.min.js",
+      "/lib/sharer/sharer.min.js"
+    ],
+    "added": [
+      "/apple-touch-icon.png",
+      "/categories/ca-nhan/page/1/",
+      "/categories/vat-ly/page/1/",
+      "/css/editorial.min.3d536dc9c285bd9c99aa8a42700477533031047b75d0e2e8079e2de1240f3bf4.css",
+      "/css/editorial.min.d904cc0cd0da6549520ecbace3993937001f2a2076b0ef8e1027908103138849.css",
+      "/discover/",
+      "/discover/index.xml",
+      "/editorial-art/epistemic_decision_v2-400.webp",
+      "/editorial-art/epistemic_decision_v2-775.webp",
+      "/editorial-art/epistemic_hero-1400.webp",
+      "/editorial-art/epistemic_hero-1672.webp",
+      "/editorial-art/epistemic_hero-640.webp",
+      "/editorial-art/epistemic_hero-960.webp",
+      "/editorial-art/epistemic_probability_v2-320.webp",
+      "/editorial-art/epistemic_probability_v2-592.webp",
+      "/editorial-art/epistemic_volume_1_cover-1024.webp",
+      "/editorial-art/epistemic_volume_1_cover-256.webp",
+      "/editorial-art/epistemic_volume_1_cover-512.webp",
+      "/editorial-fonts/newsreader/files/newsreader-latin-ext-wght-italic.woff2",
+      "/editorial-fonts/newsreader/files/newsreader-latin-ext-wght-normal.woff2",
+      "/editorial-fonts/newsreader/files/newsreader-latin-wght-italic.woff2",
+      "/editorial-fonts/newsreader/files/newsreader-latin-wght-normal.woff2",
+      "/editorial-fonts/newsreader/files/newsreader-vietnamese-wght-italic.woff2",
+      "/editorial-fonts/newsreader/files/newsreader-vietnamese-wght-normal.woff2",
+      "/editorial-fonts/source-serif-4/files/source-serif-4-latin-ext-wght-italic.woff2",
+      "/editorial-fonts/source-serif-4/files/source-serif-4-latin-ext-wght-normal.woff2",
+      "/editorial-fonts/source-serif-4/files/source-serif-4-latin-wght-italic.woff2",
+      "/editorial-fonts/source-serif-4/files/source-serif-4-latin-wght-normal.woff2",
+      "/editorial-fonts/source-serif-4/files/source-serif-4-vietnamese-wght-italic.woff2",
+      "/editorial-fonts/source-serif-4/files/source-serif-4-vietnamese-wght-normal.woff2",
+      "/editorial-source/epistemic_decision_v2.png",
+      "/editorial-source/epistemic_hero.png",
+      "/editorial-source/epistemic_probability_v2.png",
+      "/editorial-source/epistemic_volume_1_cover.png",
+      "/en/categories/ca-nhan/page/1/",
+      "/en/categories/vat-ly/page/1/",
+      "/en/discover/",
+      "/en/discover/index.xml",
+      "/en/films/",
+      "/en/films/index.xml",
+      "/en/journal/",
+      "/en/journal/index.xml",
+      "/en/journal/page/1/",
+      "/en/labs/",
+      "/en/labs/index.xml",
+      "/en/volumes/",
+      "/en/volumes/index.xml",
+      "/en/volumes/volume-i/",
+      "/en/volumes/volume-i/index.md",
+      "/films/",
+      "/films/index.xml",
+      "/images/game_theory_nash_poster.png",
+      "/ja/archives/page/1/",
+      "/journal/",
+      "/journal/index.xml",
+      "/journal/page/1/",
+      "/js/editorial.95ac2d40fac67d4c3d036cbd82b942ed0401c307411d1b9292335a3060682203.js",
+      "/labs/",
+      "/labs/index.xml",
+      "/volumes/",
+      "/volumes/index.xml",
+      "/volumes/volume-i/",
+      "/volumes/volume-i/index.md",
+      "/zh-cn/archives/page/1/"
+    ]
+  },
+  "links": {
+    "internal_references_checked": 8430,
+    "missing_target_occurrences": 0,
+    "unique_missing_targets": [],
+    "missing_fragment_occurrences": 0,
+    "external_unique_unchecked": 6,
+    "non_http_skipped": 2,
+    "scope": "HTML href/src/poster/data-src only; includes canonical/hreflang/CDN same-host links. No CSS/JS or external network/fragment semantics for non-HTML.",
+    "missing_by_literal_url": {},
+    "unique_missing_target_count": 0
+  },
+  "metadata": {
+    "without_title": 0,
+    "without_canonical": 0,
+    "without_description": 0,
+    "noindex_pages": [],
+    "duplicate_title_groups": {
+      "404 - The Epistemic Diary": [
+        "/404.html",
+        "/en/404.html",
+        "/ja/404.html",
+        "/zh-cn/404.html"
+      ],
+      "About - The Epistemic Diary": [
+        "/about/",
+        "/en/about/"
+      ],
+      "Applied Mathematics - The Epistemic Diary": [
+        "/categories/applied-mathematics/",
+        "/en/categories/applied-mathematics/"
+      ],
+      "Cá nhân - The Epistemic Diary": [
+        "/categories/ca-nhan/",
+        "/en/categories/ca-nhan/"
+      ],
+      "Education - The Epistemic Diary": [
+        "/categories/education/",
+        "/en/categories/education/"
+      ],
+      "Categories - The Epistemic Diary": [
+        "/categories/",
+        "/en/categories/",
+        "/ja/categories/",
+        "/zh-cn/categories/"
+      ],
+      "Khoa học máy tính - The Epistemic Diary": [
+        "/categories/khoa-hoc-may-tinh/",
+        "/en/categories/khoa-hoc-may-tinh/"
+      ],
+      "Kinh tế - The Epistemic Diary": [
+        "/categories/kinh-te/",
+        "/en/categories/kinh-te/"
+      ],
+      "Programming - The Epistemic Diary": [
+        "/categories/programming/",
+        "/en/categories/programming/",
+        "/en/tags/programming/",
+        "/tags/programming/"
+      ],
+      "Toán học - The Epistemic Diary": [
+        "/categories/toan-hoc/",
+        "/en/categories/toan-hoc/"
+      ],
+      "Travel - The Epistemic Diary": [
+        "/categories/travel/",
+        "/en/categories/travel/",
+        "/en/tags/travel/",
+        "/tags/travel/"
+      ],
+      "Triết học - The Epistemic Diary": [
+        "/categories/triet-hoc/",
+        "/en/categories/triet-hoc/"
+      ],
+      "Tutorial - The Epistemic Diary": [
+        "/categories/tutorial/",
+        "/en/categories/tutorial/"
+      ],
+      "Vật lý - The Epistemic Diary": [
+        "/categories/vat-ly/",
+        "/en/categories/vat-ly/"
+      ],
+      "Hugo Tutorials - The Epistemic Diary": [
+        "/collections/hugo-tutorials/",
+        "/en/collections/hugo-tutorials/"
+      ],
+      "Collections - The Epistemic Diary": [
+        "/collections/",
+        "/en/collections/",
+        "/en/tags/collections/",
+        "/ja/collections/",
+        "/tags/collections/",
+        "/zh-cn/collections/"
+      ],
+      "Programming Tips - The Epistemic Diary": [
+        "/collections/programming-tips/",
+        "/en/collections/programming-tips/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế - The Epistemic Diary": [
+        "/collections/toán-cơ-bản-cho-kinh-tế/",
+        "/en/collections/toán-cơ-bản-cho-kinh-tế/"
+      ],
+      "Travel Guides - The Epistemic Diary": [
+        "/collections/travel-guides/",
+        "/en/collections/travel-guides/"
+      ],
+      "Web Development - The Epistemic Diary": [
+        "/collections/web-development/",
+        "/en/collections/web-development/"
+      ],
+      "Discover - The Epistemic Diary": [
+        "/discover/",
+        "/en/discover/"
+      ],
+      "Archive - The Epistemic Diary": [
+        "/en/archives/",
+        "/ja/archives/",
+        "/zh-cn/archives/"
+      ],
+      "Economics - The Epistemic Diary": [
+        "/en/categories/economics/",
+        "/en/tags/economics/",
+        "/tags/economics/"
+      ],
+      "Mathematics - The Epistemic Diary": [
+        "/en/categories/mathematics/",
+        "/en/tags/mathematics/",
+        "/tags/mathematics/"
+      ],
+      "Films - The Epistemic Diary": [
+        "/en/films/",
+        "/films/"
+      ],
+      "The Epistemic Diary": [
+        "/en/",
+        "/",
+        "/ja/",
+        "/zh-cn/"
+      ],
+      "Journal - The Epistemic Diary": [
+        "/en/journal/",
+        "/journal/"
+      ],
+      "Complexity Theory và Thuật Toán: Từ P vs NP đến Quantum Computing - The Epistemic Diary": [
+        "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+        "/khoa-hoc-may-tinh/complexity-theory-quantum/"
+      ],
+      "Khoa-Hoc-May-Tinhs - The Epistemic Diary": [
+        "/en/khoa-hoc-may-tinh/",
+        "/khoa-hoc-may-tinh/"
+      ],
+      "Độ Co Giãn Cung Cầu: Chứng Minh và Giải Thích Công Thức - The Epistemic Diary": [
+        "/en/kinh-te/co-gian-cung-cau-cong-thuc/",
+        "/kinh-te/co-gian-cung-cau-cong-thuc/"
+      ],
+      "Tổng Doanh Thu và Độ Co Giãn Cầu: Góc Nhìn Từ Định Thức Ma Trận - The Epistemic Diary": [
+        "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+        "/kinh-te/doanh-thu-co-gian-dinh-thuc/"
+      ],
+      "Game Theory & Nash Equilibrium: From Intuition to Fixed Points - The Epistemic Diary": [
+        "/en/kinh-te/game_theory_nash/",
+        "/kinh-te/game_theory_nash/"
+      ],
+      "Kinh-Tes - The Epistemic Diary": [
+        "/en/kinh-te/",
+        "/kinh-te/"
+      ],
+      "Lý Thuyết Trò Chơi và Cân Bằng Nash: Từ Cơ Sở Toán Học Đến Ứng Dụng Kinh Tế - The Epistemic Diary": [
+        "/en/kinh-te/ly-thuyet-tro-choi-nash/",
+        "/kinh-te/ly-thuyet-tro-choi-nash/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 2): Tối Ưu Hóa Không Ràng Buộc - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-2/",
+        "/kinh-te/toan-co-ban-2/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 3): Tối Ưu Hóa Có Ràng Buộc - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-3/",
+        "/kinh-te/toan-co-ban-3/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 4): Tích Phân và Thặng Dư - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-4/",
+        "/kinh-te/toan-co-ban-4/"
+      ],
+      "Toán Cơ Bản Cho Kinh Tế (Phần 5): Đại Số Tuyến Tính - The Epistemic Diary": [
+        "/en/kinh-te/toan-co-ban-5/",
+        "/kinh-te/toan-co-ban-5/"
+      ],
+      "Labs - The Epistemic Diary": [
+        "/en/labs/",
+        "/labs/"
+      ],
+      "You are offline - The Epistemic Diary": [
+        "/en/offline/",
+        "/ja/offline/",
+        "/zh-cn/offline/"
+      ],
+      "AI - The Epistemic Diary": [
+        "/en/tags/ai/",
+        "/tags/ai/"
+      ],
+      "Best-Practices - The Epistemic Diary": [
+        "/en/tags/best-practices/",
+        "/tags/best-practices/"
+      ],
+      "Career - The Epistemic Diary": [
+        "/en/tags/career/",
+        "/tags/career/"
+      ],
+      "Chien-Luoc - The Epistemic Diary": [
+        "/en/tags/chien-luoc/",
+        "/tags/chien-luoc/"
+      ],
+      "Complexity - The Epistemic Diary": [
+        "/en/tags/complexity/",
+        "/tags/complexity/"
+      ],
+      "Courses - The Epistemic Diary": [
+        "/en/tags/courses/",
+        "/tags/courses/"
+      ],
+      "Crypto - The Epistemic Diary": [
+        "/en/tags/crypto/",
+        "/tags/crypto/"
+      ],
+      "Css - The Epistemic Diary": [
+        "/en/tags/css/",
+        "/tags/css/"
+      ],
+      "Dai-So-Tuyen-Tinh - The Epistemic Diary": [
+        "/en/tags/dai-so-tuyen-tinh/",
+        "/tags/dai-so-tuyen-tinh/"
+      ],
+      "Doanh-Thu - The Epistemic Diary": [
+        "/en/tags/doanh-thu/",
+        "/tags/doanh-thu/"
+      ],
+      "Game-Theory - The Epistemic Diary": [
+        "/en/tags/game-theory/",
+        "/tags/game-theory/"
+      ],
+      "Guides - The Epistemic Diary": [
+        "/en/tags/guides/",
+        "/tags/guides/"
+      ],
+      "Hien-Tuong-Hoc - The Epistemic Diary": [
+        "/en/tags/hien-tuong-hoc/",
+        "/tags/hien-tuong-hoc/"
+      ],
+      "Html - The Epistemic Diary": [
+        "/en/tags/html/",
+        "/tags/html/"
+      ],
+      "Hugo - The Epistemic Diary": [
+        "/en/tags/hugo/",
+        "/tags/hugo/"
+      ],
+      "Husserl - The Epistemic Diary": [
+        "/en/tags/husserl/",
+        "/tags/husserl/"
+      ],
+      "Tags - The Epistemic Diary": [
+        "/en/tags/",
+        "/ja/tags/",
+        "/tags/",
+        "/zh-cn/tags/"
+      ],
+      "International - The Epistemic Diary": [
+        "/en/tags/international/",
+        "/tags/international/"
+      ],
+      "Javascript - The Epistemic Diary": [
+        "/en/tags/javascript/",
+        "/tags/javascript/"
+      ],
+      "Kinh-Te - The Epistemic Diary": [
+        "/en/tags/kinh-te/",
+        "/tags/kinh-te/"
+      ],
+      "Lagrange - The Epistemic Diary": [
+        "/en/tags/lagrange/",
+        "/tags/lagrange/"
+      ],
+      "Lap-Trinh - The Epistemic Diary": [
+        "/en/tags/lap-trinh/",
+        "/tags/lap-trinh/"
+      ],
+      "Learning - The Epistemic Diary": [
+        "/en/tags/learning/",
+        "/tags/learning/"
+      ],
+      "Ly-Thuyet-So - The Epistemic Diary": [
+        "/en/tags/ly-thuyet-so/",
+        "/tags/ly-thuyet-so/"
+      ],
+      "Ly-Thuyet-Tro-Choi - The Epistemic Diary": [
+        "/en/tags/ly-thuyet-tro-choi/",
+        "/tags/ly-thuyet-tro-choi/"
+      ],
+      "Ma-Tran - The Epistemic Diary": [
+        "/en/tags/ma-tran/",
+        "/tags/ma-tran/"
+      ],
+      "Nash - The Epistemic Diary": [
+        "/en/tags/nash/",
+        "/tags/nash/"
+      ],
+      "Nhan-Thuc - The Epistemic Diary": [
+        "/en/tags/nhan-thuc/",
+        "/tags/nhan-thuc/"
+      ],
+      "Optimization - The Epistemic Diary": [
+        "/en/tags/optimization/",
+        "/tags/optimization/"
+      ],
+      "Phan-Tich - The Epistemic Diary": [
+        "/en/tags/phan-tich/",
+        "/tags/phan-tich/"
+      ],
+      "Quantum - The Epistemic Diary": [
+        "/en/tags/quantum/",
+        "/tags/quantum/"
+      ],
+      "Riemann - The Epistemic Diary": [
+        "/en/tags/riemann/",
+        "/tags/riemann/"
+      ],
+      "So-Nguyen-To - The Epistemic Diary": [
+        "/en/tags/so-nguyen-to/",
+        "/tags/so-nguyen-to/"
+      ],
+      "Static-Site - The Epistemic Diary": [
+        "/en/tags/static-site/",
+        "/tags/static-site/"
+      ],
+      "Thuat-Toan - The Epistemic Diary": [
+        "/en/tags/thuat-toan/",
+        "/tags/thuat-toan/"
+      ],
+      "Tips - The Epistemic Diary": [
+        "/en/tags/tips/",
+        "/tags/tips/"
+      ],
+      "Toan-Hoc - The Epistemic Diary": [
+        "/en/tags/toan-hoc/",
+        "/tags/toan-hoc/"
+      ],
+      "Toan-Kinh-Te - The Epistemic Diary": [
+        "/en/tags/toan-kinh-te/",
+        "/tags/toan-kinh-te/"
+      ],
+      "Toi-Uu-Hoa - The Epistemic Diary": [
+        "/en/tags/toi-uu-hoa/",
+        "/tags/toi-uu-hoa/"
+      ],
+      "Triet-Hoc - The Epistemic Diary": [
+        "/en/tags/triet-hoc/",
+        "/tags/triet-hoc/"
+      ],
+      "Tutorials - The Epistemic Diary": [
+        "/en/tags/tutorials/",
+        "/tags/tutorials/"
+      ],
+      "Vi-Mo - The Epistemic Diary": [
+        "/en/tags/vi-mo/",
+        "/tags/vi-mo/"
+      ],
+      "Vi-Phan - The Epistemic Diary": [
+        "/en/tags/vi-phan/",
+        "/tags/vi-phan/"
+      ],
+      "Vi-Tich-Phan - The Epistemic Diary": [
+        "/en/tags/vi-tich-phan/",
+        "/tags/vi-tich-phan/"
+      ],
+      "Vietnam - The Epistemic Diary": [
+        "/en/tags/vietnam/",
+        "/tags/vietnam/"
+      ],
+      "Web-Development - The Epistemic Diary": [
+        "/en/tags/web-development/",
+        "/tags/web-development/"
+      ],
+      "Y-Thuc - The Epistemic Diary": [
+        "/en/tags/y-thuc/",
+        "/tags/y-thuc/"
+      ],
+      "Toan-Hocs - The Epistemic Diary": [
+        "/en/toan-hoc/",
+        "/toan-hoc/"
+      ],
+      "Lý Thuyết Số và Giả Thuyết Riemann: Từ Hàm Zeta đến Cryptography - The Epistemic Diary": [
+        "/en/toan-hoc/riemann-hypothesis-number-theory/",
+        "/toan-hoc/riemann-hypothesis-number-theory/"
+      ],
+      "Hiện Tượng Học Husserl và Ý Thức: Từ Epoché đến Intersubjectivity - The Epistemic Diary": [
+        "/en/triet-hoc/husserl-hien-tuong-hoc/",
+        "/triet-hoc/husserl-hien-tuong-hoc/"
+      ],
+      "Triet-Hocs - The Epistemic Diary": [
+        "/en/triet-hoc/",
+        "/triet-hoc/"
+      ],
+      "Volumes - The Epistemic Diary": [
+        "/en/volumes/",
+        "/volumes/"
+      ]
+    },
+    "images_without_alt_attribute": 0,
+    "images_empty_alt": 0,
+    "duplicate_canonical_groups": {
+      "https://trandung6129.github.io/about/": [
+        "/about/",
+        "/en/about/"
+      ],
+      "https://trandung6129.github.io/khoa-hoc-may-tinh/complexity-theory-quantum/": [
+        "/en/khoa-hoc-may-tinh/complexity-theory-quantum/",
+        "/khoa-hoc-may-tinh/complexity-theory-quantum/"
+      ],
+      "https://trandung6129.github.io/kinh-te/co-gian-cung-cau-cong-thuc/": [
+        "/en/kinh-te/co-gian-cung-cau-cong-thuc/",
+        "/kinh-te/co-gian-cung-cau-cong-thuc/"
+      ],
+      "https://trandung6129.github.io/kinh-te/doanh-thu-co-gian-dinh-thuc/": [
+        "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/",
+        "/kinh-te/doanh-thu-co-gian-dinh-thuc/"
+      ],
+      "https://trandung6129.github.io/kinh-te/game_theory_nash/": [
+        "/en/kinh-te/game_theory_nash/",
+        "/kinh-te/game_theory_nash/"
+      ],
+      "https://trandung6129.github.io/kinh-te/ly-thuyet-tro-choi-nash/": [
+        "/en/kinh-te/ly-thuyet-tro-choi-nash/",
+        "/kinh-te/ly-thuyet-tro-choi-nash/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-2/": [
+        "/en/kinh-te/toan-co-ban-2/",
+        "/kinh-te/toan-co-ban-2/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-3/": [
+        "/en/kinh-te/toan-co-ban-3/",
+        "/kinh-te/toan-co-ban-3/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-4/": [
+        "/en/kinh-te/toan-co-ban-4/",
+        "/kinh-te/toan-co-ban-4/"
+      ],
+      "https://trandung6129.github.io/kinh-te/toan-co-ban-5/": [
+        "/en/kinh-te/toan-co-ban-5/",
+        "/kinh-te/toan-co-ban-5/"
+      ],
+      "https://trandung6129.github.io/toan-hoc/riemann-hypothesis-number-theory/": [
+        "/en/toan-hoc/riemann-hypothesis-number-theory/",
+        "/toan-hoc/riemann-hypothesis-number-theory/"
+      ],
+      "https://trandung6129.github.io/triet-hoc/husserl-hien-tuong-hoc/": [
+        "/en/triet-hoc/husserl-hien-tuong-hoc/",
+        "/triet-hoc/husserl-hien-tuong-hoc/"
+      ]
+    }
+  },
+  "features": {
+    "highlight_blocks": 6,
+    "code_elements": 12,
+    "mathjax_script": 22,
+    "react_mount": 2
+  },
+  "xml": {
+    "files": 166,
+    "invalid": 0,
+    "rss_files": 161,
+    "rss_item_occurrences": 238,
+    "sitemap_files": 5
+  },
+  "search": [
+    {
+      "path": "en/search.json",
+      "entries": 22,
+      "list": true,
+      "entries_with_title": 22,
+      "entries_with_uri": 22,
+      "keys": [
+        "categories",
+        "content",
+        "date",
+        "objectID",
+        "tags",
+        "title",
+        "uri"
+      ]
+    },
+    {
+      "path": "ja/search.json",
+      "entries": 0,
+      "list": true,
+      "entries_with_title": 0,
+      "entries_with_uri": 0,
+      "keys": []
+    },
+    {
+      "path": "search.json",
+      "entries": 22,
+      "list": true,
+      "entries_with_title": 22,
+      "entries_with_uri": 22,
+      "keys": [
+        "categories",
+        "content",
+        "date",
+        "objectID",
+        "tags",
+        "title",
+        "uri"
+      ]
+    },
+    {
+      "path": "zh-cn/search.json",
+      "entries": 0,
+      "list": true,
+      "entries_with_title": 0,
+      "entries_with_uri": 0,
+      "keys": []
+    }
+  ],
+  "image_files": 22,
+  "robots": {
+    "present": true,
+    "bytes": 1433
+  },
+  "source_markdown_counts": {
+    "en": 24,
+    "vi": 24
+  }
+}

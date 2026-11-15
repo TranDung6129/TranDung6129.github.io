@@ -215,3 +215,197 @@ new = "新增"
 changed = "更改"
 deleted = "删除"
 # === shortcodes/version.html ===
+
+# === editorial (Phase 3, site-owned) ===
+[ed_activity]
+other = "Publishing activity"
+[ed_activityAside]
+other = "Essays per day, six months"
+[ed_allEssays]
+other = "All essays"
+[ed_archive]
+other = "Archive"
+[ed_backToTop]
+other = "Back to top"
+[ed_by]
+other = "By"
+[ed_byCategory]
+other = "Browse by category"
+[ed_categories]
+other = "Categories"
+[ed_collections]
+other = "Series"
+[ed_contents]
+other = "Contents"
+[ed_copied]
+other = "Copied"
+[ed_copy]
+other = "Copy"
+[ed_copyFailed]
+other = "Copy failed"
+[ed_copyLabel]
+other = "Copy code to clipboard"
+[ed_credits]
+other = "Credits"
+[ed_currentVolume]
+other = "Current volume"
+[ed_englishFallback]
+other = "Essays are published in Vietnamese and English; the English versions are listed here."
+[ed_essayCount]
+one = "{{ .Count }} essay"
+other = "{{ .Count }} essays"
+[ed_exploreJournal]
+other = "Explore the journal"
+[ed_featured]
+other = "Featured essays"
+[ed_featuredAside]
+other = "A selection for the curious"
+[ed_footerLine]
+other = "For the questions that stay with us."
+[ed_footerNav]
+other = "More"
+[ed_fromJournal]
+other = "From the journal"
+[ed_heroCaption]
+other = "Illustrative instrument; geometric marks are decorative"
+[ed_heroDeck]
+other = "On mathematics, science, and the broader pursuit of understanding — where rigorous thought meets a curious, human perspective."
+[ed_heroEyebrow]
+other = "A journal of curious minds"
+[ed_heroNote]
+other = "A place for questions that deserve a little more time."
+[ed_home]
+other = "Return to the front page"
+[ed_index]
+other = "Index"
+[ed_journalIntro]
+other = "Notes, questions and ideas to return to."
+[ed_journalKicker]
+other = "The journal"
+[ed_languages]
+other = "Languages"
+[ed_license]
+other = "Text"
+[ed_menu]
+other = "Menu"
+[ed_minutes]
+one = "{{ .Count }} min read"
+other = "{{ .Count }} min read"
+[ed_morePosts]
+other = "More essays"
+[ed_navLabel]
+other = "Sections"
+[ed_newer]
+other = "Newer"
+[ed_newerEssay]
+other = "Newer essay"
+[ed_nextPart]
+other = "Next part"
+[ed_noEssays]
+other = "No essays have been published in this language yet."
+[ed_notFound]
+other = "This page is not in the diary."
+[ed_notFoundText]
+other = "The address may have changed, or the page was never written. Try the search above, or:"
+[ed_offline]
+other = "You are offline"
+[ed_offlineKicker]
+other = "No connection"
+[ed_offlineText]
+other = "This page needs a network connection. Pages you have already opened may still be available."
+[ed_older]
+other = "Older"
+[ed_olderEssay]
+other = "Older essay"
+[ed_openVolume]
+other = "Open the volume"
+[ed_pagination]
+other = "Pages"
+[ed_previousPart]
+other = "Previous part"
+[ed_readEssay]
+other = "Read the essay"
+[ed_related]
+other = "Related reading"
+[ed_searchError]
+other = "Search is unavailable right now."
+[ed_searchFound]
+other = "{n} articles found."
+[ed_searchHint]
+other = "Type at least two characters."
+[ed_searchLabel]
+other = "Search articles"
+[ed_searchNone]
+other = "No articles found."
+[ed_searchPlaceholder]
+other = "Try ‘Nash’"
+[ed_section]
+other = "Section"
+[ed_series]
+other = "Series"
+[ed_skip]
+other = "Skip to content"
+[ed_subjects]
+other = "Mathematics · Economics · Computing · Philosophy"
+[ed_tagline]
+other = "An independent publication on knowledge & the world"
+[ed_tags]
+other = "Tags"
+[ed_themeDark]
+other = "Switch to dark theme"
+[ed_themeLight]
+other = "Switch to light theme"
+[ed_updated]
+other = "Updated"
+[ed_volume]
+other = "Volume"
+[ed_volumeKicker]
+other = "A book of connected ideas"
+[ed_words]
+one = "{{ .Count }} word"
+other = "{{ .Count }} words"
+
+[ed_inVolume]
+other = "In a volume"
+[ed_chapterOf]
+other = "Chapter {{ .N }} of {{ .Total }}"
+[ed_nextChapter]
+other = "Next chapter"
+[ed_chapters]
+other = "Chapters"
+[ed_allVolumes]
+other = "All volumes"
+[ed_volumesKicker]
+other = "Books of connected ideas"
+[ed_noVolumes]
+other = "No volume has been published yet."
+[ed_filmsKicker]
+other = "Ideas, in motion"
+[ed_film]
+other = "Film"
+[ed_companion]
+other = "Companion essay"
+[ed_filmsUpcoming]
+other = "Longer films are in production. None has been published yet; they will appear here when they are."
+[ed_labsKicker]
+other = "Think with your hands"
+[ed_lab]
+other = "Lab"
+[ed_openLab]
+other = "Open the experiment"
+[ed_inEssay]
+other = "in"
+[ed_discoverKicker]
+other = "Useful things, considered"
+[ed_discoverDisclosure]
+other = "An editorial selection of works cited in our essays. Nothing on this page is a paid placement or an affiliate link."
+[ed_citedIn]
+other = "Cited in"
+[ed_chapterCount]
+one = "{{ .Count }} chapter"
+other = "{{ .Count }} chapters"
+
+[ed_sectionLink]
+other = "Link to this section"
+[ed_activityLabel]
+other = "Calendar of essays published per day over six months"

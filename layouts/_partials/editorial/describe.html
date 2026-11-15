@@ -1,0 +1,4 @@
+{{- /* One-sentence description: front matter description, else the plain summary. */ -}}
+{{- $d := .Description -}}
+{{- if not $d -}}{{- $d = .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 170 -}}{{- end -}}
+{{- return $d -}}

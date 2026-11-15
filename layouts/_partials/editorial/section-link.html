@@ -1,0 +1,8 @@
+{{- /* Returns the page for a top-level editorial section (e.g. "journal") in the current language,
+       or in English when the current language has no such section (ja, zh-cn). nil if neither. */ -}}
+{{- $name := . -}}
+{{- $p := site.GetPage (printf "/%s" $name) -}}
+{{- if not $p -}}
+  {{- range site.Sites -}}{{- if and (not $p) (eq .Language.Lang "en") -}}{{- $p = .GetPage (printf "/%s" $name) -}}{{- end -}}{{- end -}}
+{{- end -}}
+{{- return $p -}}

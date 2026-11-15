@@ -27,6 +27,21 @@
 | [x] | P2-05 | Future-ready *visual-only* support/membership, Discover/affiliate, premium teaser, film, lab and ad specimens with disclosures | P2-01, P2-04 | DONE | Codex |
 | [x] | P2-06 | Component showcase, usage docs, light/dark/mobile/accessibility/performance validation and sign-off | P2-02, P2-03, P2-04, P2-05 | DONE | Codex + owner final acceptance; reversible visual approval, selected fonts |
 
+## Phase 3 — End-to-end production integration
+
+Plan, scope and acceptance: [docs/phases/phase-3/PLAN.md](phases/phase-3/PLAN.md). Owner-authorized autonomous delivery, 2026-11-15.
+
+| Check | ID | Task / acceptance | Depends | Status | Owner / PR |
+|---|---|---|---|---|---|
+| [x] | P3-01 | Production design system: tokens (dark `#1A1816`), local fonts, shared components, editorial shell | P2-06 | DONE | Claude Code, PR A; evidence `docs/audits/p3-07/` |
+| [x] | P3-02 | Homepage integration from real Hugo data | P3-01 | DONE | Claude Code, PR A |
+| [x] | P3-03 | Journal landing, lists and article reading experience; MathJax/code/TOC/shortcodes kept | P3-01 | DONE | Claude Code, PR A |
+| [x] | P3-04 | Volumes and chapters | P3-03 | DONE | Claude Code, PR B |
+| [x] | P3-05 | Films and Labs; Nash unchanged | P3-03 | DONE | Claude Code, PR B |
+| [x] | P3-06 | Discover, global navigation, search, multilingual behaviour | P3-04, P3-05 | DONE | Claude Code, PR B |
+| [x] | P3-07 | QA and regression report (routes, SEO, runtime, browser matrix, a11y, performance, visual) | P3-01..06 | DONE | Claude Code, PR C; `docs/audits/p3-07/README.md` |
+| [ ] | P3-08 | Production deployment and live sign-off | P3-07 | TODO | Claude Code, PR D |
+
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage
 - [ ] F3-02 Journal/Volumes/Films/Labs/Discover production pages

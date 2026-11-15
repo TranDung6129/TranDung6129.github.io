@@ -1,0 +1,3 @@
+{{- /* Approved numbered section heading. Input: dict "number" "title" "id" ["aside"] ["level"]. */ -}}
+{{- $level := .level | default 2 -}}
+<div class="section-heading">{{ with .number }}<span class="section-number">{{ . }}</span>{{ end }}<h{{ $level }} id="{{ .id }}">{{ .title }}</h{{ $level }}><span class="section-line"></span>{{ with .aside }}<span class="section-aside">{{ . }}</span>{{ end }}</div>

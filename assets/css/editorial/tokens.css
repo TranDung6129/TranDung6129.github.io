@@ -1,4 +1,7 @@
-/* P2-01: specimen-only design tokens; not loaded by public layouts. */
+/* Editorial design tokens (P2-01, production since P3-01).
+   Light is the default; dark applies with data-theme="dark" (production theme switch)
+   or data-ed-theme="dark" (isolated Phase 2 specimen). Dark paper is #1A1816 (replaces
+   the legacy FixIt body colour #292A2E recorded in P1-08). */
 :root,
 [data-ed-theme="light"] {
   color-scheme: light;
@@ -10,8 +13,13 @@
   --ed-border: #a19889;
   --ed-focus: #8c4a32;
   --ed-shadow: 0 0.6rem 1.8rem rgb(51 46 40 / 0.09);
+  --ed-code-bg: #ece6db;
+  --ed-heat-0: #e8e2d7;
+  --ed-heat-1: #d9b9a6;
+  --ed-heat-2: #8c4a32;
 }
-[data-ed-theme="dark"] {
+[data-ed-theme="dark"],
+[data-theme="dark"] {
   color-scheme: dark;
   --ed-bg: #1a1816;
   --ed-fg: #e2dcd0;
@@ -21,12 +29,16 @@
   --ed-border: #746a5f;
   --ed-focus: #d4a373;
   --ed-shadow: 0 0.6rem 1.8rem rgb(0 0 0 / 0.24);
+  --ed-code-bg: #24211e;
+  --ed-heat-0: #292521;
+  --ed-heat-1: #7a5a3f;
+  --ed-heat-2: #d4a373;
 }
 :root {
   --ed-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
   --ed-display: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
   --ed-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --ed-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --ed-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace;
   --ed-type-xs: 0.75rem;
   --ed-type-sm: 0.875rem;
   --ed-type-base: 1rem;
@@ -51,3 +63,18 @@
 @media (prefers-reduced-motion: reduce) {
   :root { --ed-duration: 0ms; }
 }
+
+/* Compatibility aliases read by existing content components (Nash React simulation, mobile fallback). */
+:root,
+[data-theme="dark"] {
+  --code-bg-color: var(--ed-surface);
+  --primary-color: var(--ed-accent);
+  --border-color: var(--ed-border);
+  --text-color: var(--ed-fg);
+  --global-bg-color: var(--ed-bg);
+  --global-font-color: var(--ed-fg);
+}
+
+/* Nash simulation series colours (P3-07): the original pastels fail contrast on light paper. */
+:root { --ed-nash-p1: #0b6285; --ed-nash-p2: #a3352e; --ed-nash-ne: #2e6b33; }
+[data-theme="dark"] { --ed-nash-p1: #4fc3f7; --ed-nash-p2: #ef9a9a; --ed-nash-ne: #a5d6a7; }

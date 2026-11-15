@@ -1,0 +1,22 @@
+{{- /* /films/ (P3-05): only films that are actually published (data/films.yaml). */ -}}
+{{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_filmsKicker" | default "Ideas, in motion")) }}
+<div class="entry-grid">
+  {{- range site.Data.films.films }}
+  {{- $title := partial "editorial/l10n.html" .title -}}
+  {{- $rel := partial "editorial/get-page.html" .related }}
+  <article class="entry film" id="{{ .id }}">
+    <div class="film-media">
+      {{- if .youtube }}
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" title="{{ $title }}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      {{- else }}
+      <video controls preload="none" playsinline poster="{{ .poster }}" src="{{ .video }}" aria-label="{{ $title }}"></video>
+      {{- end }}
+    </div>
+    <p class="kicker">{{ T "ed_film" | default "Film" }} · {{ .duration }}</p>
+    <h2>{{ $title }}</h2>
+    <p>{{ partial "editorial/l10n.html" .description }}</p>
+    <p class="meta"><time datetime="{{ time.Format "2006-01-02" .date }}">{{ partial "editorial/date.html" (time .date) }}</time>{{ with $rel }} · {{ T "ed_companion" | default "Companion essay" }}: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
+  </article>
+  {{- end }}
+</div>
+<p class="empty-state">{{ T "ed_filmsUpcoming" | default "Longer films are in production. None has been published yet; they will appear here when they are." }}</p>

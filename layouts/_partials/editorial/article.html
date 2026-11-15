@@ -1,0 +1,54 @@
+{{- /* Article reading page (P3-03). Content rendering (Markdown, render hooks, math passthrough,
+       shortcodes) is unchanged; this partial only frames it. */ -}}
+{{- $p := . -}}
+{{- $cat := partial "editorial/category.html" $p -}}
+{{- $toc := and (ne $p.Params.toc false) (ne $p.Params.toc.enable false) (gt (len $p.Fragments.HeadingsMap) 1) -}}
+{{- $author := partial "function/get-author-map.html" $p.Params.author -}}
+<article class="article" lang="{{ $p.Language.Lang }}">
+  <header class="article-header">
+    <p class="kicker">{{ with $cat }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> · {{ end }}{{ T "ed_minutes" (dict "Count" $p.ReadingTime) | default (printf "%d min read" $p.ReadingTime) }}</p>
+    <h1 class="article-title">{{ $p.Title }}</h1>
+    {{- with $p.Params.subtitle }}<p class="article-subtitle">{{ . | $p.RenderString }}</p>{{ end }}
+    {{- with $p.Description }}<p class="lead">{{ . }}</p>{{ end }}
+    <p class="article-meta">
+      {{- with $author.name }}<span>{{ T "ed_by" | default "By" }} {{ . }}</span>{{ end -}}
+      <span><time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ partial "editorial/date.html" $p.Date }}</time></span>
+      {{- if gt ($p.Lastmod.Sub $p.Date).Hours 24 }}<span>{{ T "ed_updated" | default "Updated" }} <time datetime="{{ $p.Lastmod.Format "2006-01-02" }}">{{ partial "editorial/date.html" $p.Lastmod }}</time></span>{{ end -}}
+      <span>{{ T "ed_words" (dict "Count" $p.WordCount) | default (printf "%d words" $p.WordCount) }}</span>
+    </p>
+    {{- if templates.Exists "_partials/editorial/volume-position.html" }}{{ partial "editorial/volume-position.html" $p }}{{ end -}}
+  </header>
+  <div class="article-layout{{ if not $toc }} no-toc{{ end }}">
+    {{- if $toc }}
+    <aside class="article-aside">
+      <details class="toc" open>
+        <summary>{{ T "ed_contents" | default "Contents" }}</summary>
+        {{ $p.TableOfContents }}
+      </details>
+    </aside>
+    {{- end }}
+    <div class="prose content" id="content">
+      {{ $p.Content }}
+    </div>
+  </div>
+  <footer class="article-footer">
+    {{- with $p.GetTerms "tags" }}
+    <p class="tag-list"><span>{{ T "ed_tags" | default "Tags" }}</span>{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
+    {{- end }}
+    {{- partial "editorial/series-nav.html" $p -}}
+    {{- $related := first 3 (where (site.RegularPages.Related $p) "Section" "in" site.Params.mainSections) -}}
+    {{- with $related }}
+    <nav class="related-reading" aria-labelledby="related-title">
+      <h2 id="related-title">{{ T "ed_related" | default "Related reading" }}</h2>
+      <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+    </nav>
+    {{- end }}
+    {{- if in site.Params.mainSections $p.Section }}
+    <nav class="chapter-nav" aria-label="{{ T "ed_morePosts" | default "More essays" }}">
+      {{- /* Default ordering is newest first: PrevInSection is the older essay, NextInSection the newer. */ -}}
+      {{- with $p.PrevInSection }}<a href="{{ .RelPermalink }}"><span>← {{ T "ed_olderEssay" | default "Older essay" }}</span><strong>{{ .LinkTitle }}</strong></a>{{ else }}<span></span>{{ end -}}
+      {{- with $p.NextInSection }}<a href="{{ .RelPermalink }}"><span>{{ T "ed_newerEssay" | default "Newer essay" }} →</span><strong>{{ .LinkTitle }}</strong></a>{{ else }}<span></span>{{ end -}}
+    </nav>
+    {{- end }}
+  </footer>
+</article>

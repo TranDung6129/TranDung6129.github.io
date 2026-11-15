@@ -1,0 +1,156 @@
+/* The Epistemic Diary — site behaviour (P3-01).
+ * Theme switch (storage key "theme", data-theme="dark" on <html>, same as the pre-Phase-3 site),
+ * mobile navigation, search over the per-language search.json, code-block copy buttons and
+ * table-of-contents highlighting. No dependencies. */
+(() => {
+  const root = document.documentElement;
+  const t = (key, fallback) => (window.EDITORIAL_I18N && window.EDITORIAL_I18N[key]) || fallback;
+
+  // ---- Theme ----------------------------------------------------------------------------
+  const themeButtons = document.querySelectorAll('[data-theme-toggle]');
+  const isDark = () => root.dataset.theme === 'dark';
+  function syncThemeButtons() {
+    themeButtons.forEach(b => {
+      b.setAttribute('aria-pressed', String(isDark()));
+      b.setAttribute('aria-label', isDark() ? t('themeLight', 'Switch to light theme') : t('themeDark', 'Switch to dark theme'));
+    });
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', isDark() ? '#1a1816' : '#f7f5f0');
+  }
+  function setTheme(dark) {
+    if (dark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (_) {}
+    syncThemeButtons();
+    document.dispatchEvent(new CustomEvent('editorial:themechange', { detail: { dark } }));
+  }
+  themeButtons.forEach(b => b.addEventListener('click', () => setTheme(!isDark())));
+  syncThemeButtons();
+
+  // ---- Navigation -----------------------------------------------------------------------
+  const menu = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('site-nav');
+  function setMenu(open) {
+    if (!menu || !nav) return;
+    menu.setAttribute('aria-expanded', String(open));
+    nav.classList.toggle('is-open', open);
+  }
+  if (menu && nav) {
+    menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+    nav.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+  }
+
+  // ---- Search ---------------------------------------------------------------------------
+  const toggle = document.querySelector('.search-toggle');
+  const panel = document.getElementById('search-panel');
+  const input = document.getElementById('site-search');
+  const status = panel && panel.querySelector('.search-status');
+  const list = panel && panel.querySelector('.search-results');
+  const fold = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+  function closeSearch(returnFocus) {
+    if (!panel || panel.hidden) return;
+    panel.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+    if (returnFocus) toggle.focus();
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if (panel && !panel.hidden) closeSearch(true);
+    else if (menu && menu.getAttribute('aria-expanded') === 'true') { setMenu(false); menu.focus(); }
+  });
+  if (toggle && panel && input) {
+    toggle.addEventListener('click', () => {
+      const opening = panel.hidden;
+      panel.hidden = !opening;
+      toggle.setAttribute('aria-expanded', String(opening));
+      if (opening) input.focus();
+    });
+    let index; let request = 0;
+    async function loadIndex() {
+      if (index) return index;
+      const response = await fetch(panel.dataset.index);
+      if (!response.ok) throw new Error('search index ' + response.status);
+      const seen = new Map();
+      for (const item of await response.json()) {
+        const key = item.uri;
+        const entry = seen.get(key) || { uri: item.uri, title: item.title, date: item.date, content: '' };
+        entry.content += ' ' + (item.content || '');
+        seen.set(key, entry);
+      }
+      index = [...seen.values()].map(e => ({ ...e, ft: fold(e.title), fc: fold(e.content) }));
+      return index;
+    }
+    function snippet(text, query) {
+      const plain = String(text || '').replace(/\s+/g, ' ').trim();
+      const at = fold(plain).indexOf(query);
+      if (at < 0) return plain.slice(0, 140);
+      const start = Math.max(0, at - 50);
+      return (start ? '… ' : '') + plain.slice(start, start + 160) + '…';
+    }
+    input.addEventListener('input', async () => {
+      const current = ++request;
+      const query = fold(input.value.trim());
+      list.replaceChildren();
+      if (query.length < 2) { status.textContent = t('searchHint', 'Type at least two characters.'); return; }
+      try {
+        const items = await loadIndex();
+        if (current !== request) return;
+        const hits = items.filter(i => i.ft.includes(query) || i.fc.includes(query))
+          .sort((a, b) => Number(b.ft.includes(query)) - Number(a.ft.includes(query))).slice(0, 8);
+        for (const hit of hits) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = new URL(hit.uri, location.origin).pathname;
+          a.textContent = hit.title;
+          const p = document.createElement('p');
+          p.textContent = snippet(hit.content, query);
+          li.append(a, p);
+          list.append(li);
+        }
+        status.textContent = hits.length ? t('searchFound', '{n} articles found.').replace('{n}', hits.length) : t('searchNone', 'No articles found.');
+      } catch (_) {
+        if (current === request) status.textContent = t('searchError', 'Search is unavailable right now.');
+      }
+    });
+  }
+
+  // ---- Code blocks: copy button -------------------------------------------------------------
+  document.querySelectorAll('.prose .highlight').forEach(block => {
+    const code = block.querySelector('code[data-lang]') || block.querySelector('td:last-child code') || block.querySelector('pre code');
+    if (!code) return;
+    const bar = document.createElement('div');
+    bar.className = 'code-bar';
+    const lang = document.createElement('span');
+    lang.textContent = code.dataset.lang || 'code';
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'code-copy';
+    button.textContent = t('copy', 'Copy');
+    button.setAttribute('aria-label', t('copyLabel', 'Copy code to clipboard'));
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(code.innerText.replace(/\n$/, ''));
+        button.textContent = t('copied', 'Copied');
+      } catch (_) {
+        button.textContent = t('copyFailed', 'Copy failed');
+      }
+      setTimeout(() => { button.textContent = t('copy', 'Copy'); }, 1800);
+    });
+    bar.append(lang, button);
+    block.prepend(bar);
+  });
+
+  // ---- Table of contents: mark the section being read ---------------------------------------
+  const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    const byId = new Map(tocLinks.map(a => [decodeURIComponent(a.getAttribute('href').slice(1)), a]));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        tocLinks.forEach(a => a.removeAttribute('aria-current'));
+        const link = byId.get(entry.target.id);
+        if (link) link.setAttribute('aria-current', 'location');
+      });
+    }, { rootMargin: '0px 0px -70% 0px' });
+    byId.forEach((_, id) => { const el = document.getElementById(id); if (el) observer.observe(el); });
+  }
+})();

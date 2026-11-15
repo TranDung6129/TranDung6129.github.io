@@ -1,0 +1,5 @@
+{{- /* Page by path in the current language, else English. */ -}}
+{{- $p := site.GetPage . -}}
+{{- $path := . -}}
+{{- if not $p -}}{{- range site.Sites -}}{{- if and (not $p) (eq .Language.Lang "en") -}}{{- $p = .GetPage $path -}}{{- end -}}{{- end -}}{{- end -}}
+{{- return $p -}}

@@ -1,0 +1,2 @@
+{{- /* Localised date: Vietnamese "1 tháng 3, 2026", otherwise "1 March 2026". */ -}}
+{{- if eq site.Language.Lang "vi" -}}{{- .Format "2/1/2006" -}}{{- else -}}{{- .Format "2 Jan 2006" -}}{{- end -}}
