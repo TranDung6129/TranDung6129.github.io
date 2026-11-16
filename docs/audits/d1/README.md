@@ -2,7 +2,7 @@
 
 ## Status
 
-**READY FOR PR REVIEW — not deployed or merged.** This implements D1-00 through D1-06 only. D2–D8 remain future constraints, and no homepage, payment, affiliate, subscription, or other product architecture was changed.
+**READY FOR PR REVIEW — not deployed or merged.** This implements D1-00 through D1-06 only. D2–D8 remain future constraints, and no homepage, payment, affiliate, subscription, or other product architecture was changed. The branch is pushed; automated PR creation is blocked by GitHub API `403 Forbidden`, so use the remote branch’s compare link to open the focused PR manually.
 
 Baseline: `origin/main` `c2898aa`; implementation branch: `feat/d1-article-reading`; claim `e8a38a0`; implementation `aa8ae36`. The complete owner handoff and approved reference were read/inspected before any code modification.
 
