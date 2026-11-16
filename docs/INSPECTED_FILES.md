@@ -628,3 +628,18 @@ Registry self hash pre-append `9fa89441e125e78e735a3b8a472a3c052fac942c`. Remove
 | `content/kinh-te/game_theory_nash.md` | `5f68cd875c182f2975a085da00bc010ab7ab9287` | COVERED | Essay; video and React replaced by film/lab cards (P4-04). |
 | `config/_default/taxonomies.toml` | `4dfe6d850c59b19a180f7ddedb32830dd9b6fcce` | COVERED | categories and tags only; collections retired. |
 | `docs/phases/phase-4/PLAN.md` | `3e5d5d14221aefc9eafb9bbee915a024827f9f59` | COVERED | Phase 4 decisions and status. |
+
+## 2026-11-16 — D1 article reading (Codex)
+
+The complete owner handoff `PHASE4_D1_CODEX_HANDOFF.md` and its approved reference image were inspected before code changes. Supporting Phase 1–3/Phase 4 plans, AGENTS workflow, task board, design system, current article source, production article/masthead/head/JS/CSS owners and generated baseline were reviewed as D1 dependencies.
+
+| Path | Status | Purpose |
+|---|---|---|
+| `layouts/_partials/editorial/article.html` | COVERED | D1 article composition: independent rail, prose, ornaments, discovery footer. |
+| `layouts/_partials/editorial/d1-{ornament,discovery}.html` | COVERED | Decorative image semantics and data-backed end-of-article modules. |
+| `layouts/_partials/site/{masthead,brand,head-assets}.html` | COVERED | Reusable identity, centred navigation and D1 stylesheet entrypoint. |
+| `assets/css/editorial/d1.css` | COVERED | Scoped reading measure, TOC/masthead/ornament/discovery responsiveness and zoom-safe overflow regions. |
+| `assets/js/editorial.js` | COVERED | Existing site interactions plus D1 H3 disclosure and prose progress enhancement. |
+| `data/d1-{ornaments,resources}.yaml`, `static/ornaments/d1/`, `static/images/favicon.svg` | COVERED | Asset provenance/original local ornaments, verified primary resource and favicon. |
+| `scripts/test-d1.cjs`, `docs/audits/d1/` | COVERED | D1 responsive, zoom, math, accessibility and visual evidence. |
+| `config/_default/params.toml` | PARTIAL | Reviewed/changed only D1 vector favicon parameter. |

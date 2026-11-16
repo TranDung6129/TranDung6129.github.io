@@ -89,6 +89,8 @@ Review-only future formats: `layouts/_partials/specimen/future.html`, `footer.ht
 
 Integrated review entrypoint: [design review](design/REVIEW.md), `scripts/preview-editorial.sh`, `scripts/test-editorial-{review,axe,extra,fonts,computed}.cjs`; `layouts/_partials/specimen/` and `assets/css/specimen/` are gated review-only. Production `layouts/index.html` is unchanged.
 
+D1 production article reading layer: `layouts/_partials/editorial/article.html` composes the centred article, TOC rail, deterministic decorative ornaments and discovery ending. `layouts/_partials/editorial/d1-{ornament,discovery}.html`, `layouts/_partials/site/brand.html`, `data/d1-{ornaments,resources}.yaml`, `static/ornaments/d1/`, `static/images/favicon.svg`, and `assets/css/editorial/d1.css` are its narrow owners. `assets/js/editorial.js` owns TOC H3 disclosure and prose-only progress; `scripts/test-d1.cjs` is the local D1 responsive/accessibility harness. It applies to article pages only; homepage/templates and D2–D8 are out of scope.
+
 ## Current file clusters
 - `layouts/`: site-owned Hugo layouts/partials/shortcodes.
 - `i18n/`, `assets/lib/`, `static/lib/`: interface strings and bundled libraries (site-owned since P1-07; no `themes/`).
@@ -113,6 +115,7 @@ Integrated review entrypoint: [design review](design/REVIEW.md), `scripts/previe
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
 | 2026-11-15 | P1-09 local PostgreSQL | Database reference foundation | New `db/` and `compose.yaml` | Ordered migrations, synthetic seed and isolated restore test; Hugo remains static |
+| 2026-11-16 | D1 article reading | Article reading / identity | Existing article partial and masthead → `editorial/article.html`, D1 partials/CSS/data/assets, small `editorial.js` extension | 306-page build, exact 377 route-path retention, responsive/zoom/axe harness; `docs/audits/d1/` |
 | 2026-11-15 | Phase 4 (P4-02..04) | IA | `content/collections/` removed, series → Volume I aliases; About rewritten; Nash lab/film → `content/labs/`, `content/films/`; `data/{films,labs}.yaml` removed | `docs/phases/phase-4/PLAN.md` |
 | 2026-11-15 | Phase 3 (P3-01..07) | Whole presentation layer | FixIt shell/SCSS/JS/libs → `layouts/_partials/{site,editorial,views}/`, `assets/css/editorial/`, `assets/js/editorial.js`; new sections Journal/Volumes/Films/Labs/Discover | `docs/audits/p3-07/` (80-state matrix, 31 checks, axe 0 violations) |
 | 2026-11-15 | P1-07 FixIt retirement | Whole rendering stack | `themes/FixIt/{layouts,assets,i18n,static}` → `layouts/`, `assets/`, `i18n/`, `static/`; theme config → `config/_default/{outputs,outputFormats,params}.toml`; submodules, `.gitmodules`, `update-theme.yml` removed | 647/647 output files equivalent, 355/355 pixel states, see `docs/audits/p1-07/` |
