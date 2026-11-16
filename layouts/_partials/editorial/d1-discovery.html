@@ -1,0 +1,35 @@
+{{- $p := . -}}
+{{- $related := first 3 (where (site.RegularPages.Related $p) "Section" "in" site.Params.mainSections) -}}
+{{- if not $related -}}
+  {{- $pool := where site.RegularPages "Section" "in" site.Params.mainSections -}}
+  {{- $pool = where $pool "RelPermalink" "ne" $p.RelPermalink -}}
+  {{- $related = first 3 $pool -}}
+{{- end -}}
+{{- $resource := index site.Data.d1_resources $p.File.BaseFileName -}}
+{{- if or $related $resource -}}
+<section class="d1-discovery" aria-label="{{ T "ed_morePosts" | default "Continue reading" }}">
+  {{- with $related -}}
+  <section class="discovery-module discovery-essays" aria-labelledby="further-essays-title">
+    <p class="discovery-kicker">{{ T "ed_morePosts" | default "Continue reading" }}</p>
+    <h2 id="further-essays-title">Further Essays</h2>
+    <div class="discovery-essay-grid">
+      {{- range . -}}<article><h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>{{ with partial "editorial/describe.html" . }}<p>{{ . }}</p>{{ end }}<span>{{ T "ed_minutes" (dict "Count" .ReadingTime) | default (printf "%d min read" .ReadingTime) }}</span></article>{{- end -}}
+    </div>
+  </section>
+  {{- end -}}
+  {{- with $resource -}}
+  <section class="discovery-module discovery-resource" aria-labelledby="curated-reading-title">
+    <p class="discovery-kicker">Curated reading</p>
+    <h2 id="curated-reading-title">{{ .label | default "Curated Reading / Resources" }}</h2>
+    <div class="resource-copy">
+      <p class="resource-type">{{ .type }}</p>
+      <h3>{{ .title }}</h3>
+      <p class="resource-author">{{ .author }}</p>
+      <p>{{ .reason }}</p>
+      {{- with .url }}<a class="resource-cta" href="{{ . }}" rel="noopener noreferrer">{{ $resource.cta | default "Open source" }} <span aria-hidden="true">↗</span></a>{{ end -}}
+      {{- if .affiliate }}<p class="affiliate-disclosure">Affiliate link — this is disclosed before you follow it.</p>{{ end -}}
+    </div>
+  </section>
+  {{- end -}}
+</section>
+{{- end -}}

@@ -139,8 +139,36 @@
     block.prepend(bar);
   });
 
-  // ---- Table of contents: mark the section being read ---------------------------------------
-  const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
+  // ---- D1 table of contents and article-only progress ---------------------------------------
+  // Hugo keeps the source heading tree/anchors authoritative. We add controls around its nested
+  // list at runtime, so every heading link remains usable if script is unavailable.
+  const toc = document.querySelector('.d1-article .toc');
+  const tocLinks = [...document.querySelectorAll('.d1-article .toc a[href^="#"]')];
+  const setOpen = (section, open, manual = false) => {
+    if (!section) return;
+    const list = section.querySelector(':scope > ul');
+    const button = section.querySelector(':scope > .toc-toggle');
+    if (!list || !button) return;
+    list.hidden = !open;
+    button.setAttribute('aria-expanded', String(open));
+    if (manual) section.dataset.manual = 'true';
+  };
+  if (toc) {
+    [...toc.querySelectorAll('nav > ul > li')].forEach((section, index) => {
+      const nested = section.querySelector(':scope > ul');
+      const anchor = section.querySelector(':scope > a');
+      if (!nested || !anchor) return;
+      section.classList.add('toc-section');
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'toc-toggle';
+      button.setAttribute('aria-label', `Toggle subsections for ${anchor.textContent.trim()}`);
+      button.setAttribute('aria-expanded', String(index === 0));
+      button.textContent = '⌄';
+      nested.hidden = index !== 0;
+      button.addEventListener('click', () => setOpen(section, nested.hidden, true));
+      anchor.insertAdjacentElement('afterend', button);
+    });
+  }
   if (tocLinks.length && 'IntersectionObserver' in window) {
     const byId = new Map(tocLinks.map(a => [decodeURIComponent(a.getAttribute('href').slice(1)), a]));
     const observer = new IntersectionObserver(entries => {
@@ -148,9 +176,27 @@
         if (!entry.isIntersecting) return;
         tocLinks.forEach(a => a.removeAttribute('aria-current'));
         const link = byId.get(entry.target.id);
-        if (link) link.setAttribute('aria-current', 'location');
+        if (!link) return;
+        link.setAttribute('aria-current', 'location');
+        const section = link.closest('.toc-section');
+        if (section && !section.dataset.manual) setOpen(section, true);
       });
     }, { rootMargin: '0px 0px -70% 0px' });
     byId.forEach((_, id) => { const el = document.getElementById(id); if (el) observer.observe(el); });
+  }
+  const prose = document.querySelector('.d1-article .prose');
+  const progress = document.querySelector('.d1-article .reading-progress');
+  if (prose && progress) {
+    const fill = progress.querySelector('span');
+    const updateProgress = () => {
+      const start = prose.getBoundingClientRect().top + window.scrollY;
+      const end = start + prose.offsetHeight - window.innerHeight;
+      const value = end <= start ? 100 : Math.max(0, Math.min(100, ((window.scrollY - start) / (end - start)) * 100));
+      progress.setAttribute('aria-valuenow', String(Math.round(value)));
+      if (fill) fill.style.width = `${value}%`;
+    };
+    addEventListener('scroll', updateProgress, { passive: true });
+    addEventListener('resize', updateProgress, { passive: true });
+    updateProgress();
   }
 })();

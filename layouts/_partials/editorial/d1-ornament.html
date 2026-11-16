@@ -1,0 +1,4 @@
+{{- /* D1 decorative artwork. Entries are local, original vectors documented in data/d1-ornaments.yaml. */ -}}
+{{- $role := .role -}}
+{{- $path := .path | default `` -}}
+{{- with $path -}}<img class="ornament ornament-{{ $role }}" src="{{ printf "ornaments/d1/%s" . | relURL }}" alt="" aria-hidden="true" loading="lazy" decoding="async">{{- end -}}

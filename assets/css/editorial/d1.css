@@ -1,0 +1,109 @@
+/* D1 — article reading experience. This layer intentionally scopes its layout changes to
+   article pages so the approved Phase 3 section and homepage compositions stay intact. */
+:root {
+  --d1-measure: 44rem;
+  --d1-rail: 13rem;
+  --d1-rail-gap: clamp(2rem, 4vw, 4.5rem);
+}
+
+body.section-posts,
+body.section-kinh-te,
+body.section-toan-hoc,
+body.section-vat-ly,
+body.section-khoa-hoc-may-tinh,
+body.section-triet-hoc,
+body.section-ca-nhan {
+  background-image: url('/ornaments/d1/paper.svg');
+  background-size: 180px 160px;
+}
+
+/* The logo and action cluster occupy equal side columns. Navigation therefore remains centred
+   against the viewport, regardless of the wordmark width or language controls. */
+.masthead-top {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 1rem;
+}
+.wordmark { justify-self: start; display: inline-flex; align-items: center; }
+.brand { display: inline-flex; align-items: center; gap: 0.42rem; }
+.brand-mark { width: 1.55em; height: 1.55em; flex: none; color: var(--ed-accent); }
+.brand-name { font-family: var(--ed-display); font-size: 0.82em; font-weight: 550; letter-spacing: 0.07em; text-transform: none; }
+.masthead nav { justify-self: center; margin: 0; gap: clamp(1rem, 1.8vw, 2rem); }
+.masthead .tools { justify-self: end; }
+.nav-flourish { color: var(--ed-accent); font: 1rem/1 var(--ed-display); opacity: 0.85; }
+.nav-flourish:last-of-type { transform: scaleX(-1); }
+.masthead-branches { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.masthead-branches .ornament { position: absolute; top: -1.25rem; width: 11rem; opacity: 0.38; }
+.masthead-branches .ornament:first-child { left: -7rem; }
+.masthead-branches .ornament:last-child { right: -7rem; transform: scaleX(-1); }
+
+/* The rail leaves normal flow on wide screens. The prose's margin-auto is a viewport-centred
+   reading column, rather than a column centred in the leftover grid area. */
+.d1-article { position: relative; overflow-x: clip; }
+.d1-article .article-header { max-width: var(--d1-measure); margin-inline: auto; padding-top: 2.1rem; }
+.d1-article .article-layout { display: block; padding-top: 2rem; }
+.d1-article .prose { width: min(100%, var(--d1-measure)); margin-inline: auto; font-size: 1.04rem; line-height: 1.57; }
+.d1-article .prose p, .d1-article .prose li { hyphens: manual; }
+.d1-article .prose h2 { margin-top: 2.45rem; }
+.d1-article .prose mjx-container { max-width: 100%; }
+.d1-article .prose mjx-container[display="true"] { display: block !important; width: 100% !important; overflow-x: auto; overflow-y: hidden; }
+.d1-article .prose table { display: block; width: 100%; max-width: 100%; min-width: 0; overflow-x: auto; }
+/* MathJax's visually-hidden semantic duplicate must never contribute to page width at text zoom. */
+.d1-article .prose mjx-assistive-mml { width: 1px !important; max-width: 1px !important; overflow: hidden !important; }
+.d1-article .article-aside { position: absolute; width: var(--d1-rail); left: calc(50% - (var(--d1-measure) / 2) - var(--d1-rail-gap) - var(--d1-rail)); top: 2rem; }
+.d1-article .toc { position: sticky; top: 1.1rem; max-height: calc(100vh - 3rem); overflow: auto; overscroll-behavior: contain; padding: 0.7rem 0.65rem 0.9rem; background: color-mix(in srgb, var(--ed-bg) 94%, transparent); scrollbar-color: var(--ed-border) transparent; }
+.d1-article .toc summary { padding: 0.35rem 0.15rem 0.55rem; }
+.reading-progress { position: sticky; top: 0; z-index: 2; height: 2px; background: var(--ed-border); margin-bottom: 0.65rem; overflow: hidden; }
+.reading-progress > span { display: block; width: 0; height: 100%; background: var(--ed-accent); transition: width var(--ed-duration) linear; }
+.toc-ornament { margin: 1.25rem auto 0; width: min(100%, 9.5rem); pointer-events: none; }
+.toc-ornament .ornament { display: block; width: 100%; height: auto; opacity: 0.48; }
+.article-landscape { width: min(100%, var(--d1-measure)); margin: 0 auto 1rem; padding-top: 1rem; pointer-events: none; }
+.article-landscape .ornament { display: block; width: min(100%, 34rem); height: auto; margin-left: auto; opacity: 0.32; }
+
+/* JavaScript adds independent H3 toggles after preserving Hugo's existing anchors and nested
+   list structure. Without script every link remains available. */
+.toc-section { position: relative; }
+.toc-toggle { appearance: none; border: 0; background: transparent; color: var(--ed-muted); padding: 0.12rem; margin-left: 0.15rem; font: 700 0.7rem/1 var(--ed-sans); }
+.toc-toggle:hover { color: var(--ed-accent); }
+.toc-section > ul[hidden] { display: none; }
+
+/* Both editorial discovery modules use equal outlined, horizontal treatment. A resource is
+   deliberately omitted when no verified entry is supplied in data/d1_resources.yaml. */
+.d1-discovery { margin: 2.8rem 0 1.8rem; display: grid; gap: 1rem; }
+.discovery-module { border: 1px solid var(--ed-border); padding: clamp(1rem, 2.5vw, 1.65rem); background: color-mix(in srgb, var(--ed-surface) 42%, var(--ed-bg)); }
+.discovery-kicker, .resource-type { margin: 0; color: var(--ed-accent); font: 700 0.65rem/1.4 var(--ed-sans); letter-spacing: 0.16em; text-transform: uppercase; }
+.discovery-module h2 { margin: 0.35rem 0 1rem; font: 500 clamp(1.55rem, 1.2rem + 1vw, 2rem)/1.05 var(--ed-display); }
+.discovery-essay-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.discovery-essay-grid article + article { border-left: 1px solid var(--ed-border); padding-left: 1rem; }
+.discovery-essay-grid h3, .resource-copy h3 { margin: 0; font: 550 1.15rem/1.18 var(--ed-display); }
+.discovery-essay-grid h3 a { text-decoration: none; }
+.discovery-essay-grid h3 a:hover { color: var(--ed-accent); text-decoration: underline; }
+.discovery-essay-grid p, .resource-copy > p:not(.resource-type):not(.resource-author) { margin: 0.45rem 0; font-size: 0.9rem; line-height: 1.45; }
+.discovery-essay-grid span, .resource-author, .affiliate-disclosure { color: var(--ed-muted); font: 500 0.72rem/1.5 var(--ed-sans); }
+.resource-author { margin: 0.28rem 0 0.75rem; }
+.resource-cta { display: inline-block; margin-top: 0.45rem; border-bottom: 1px solid currentColor; color: var(--ed-accent); font: 650 0.78rem var(--ed-sans); text-decoration: none; }
+
+@media (max-width: 1110px) {
+  .d1-article .article-aside { position: static; width: min(100%, var(--d1-measure)); margin: 0 auto 1.5rem; }
+  .d1-article .toc { position: static; max-height: min(46vh, 26rem); }
+  .reading-progress { position: static; }
+  .toc-ornament { display: none; }
+}
+@media (max-width: 760px) {
+  .masthead-top { grid-template-columns: minmax(0, 1fr) auto auto; gap: 0.2rem; }
+  .masthead-top > nav { grid-column: 1 / -1; grid-row: 2; justify-self: stretch; }
+  .masthead .brand-name { font-size: 0.7em; letter-spacing: 0.035em; }
+  .masthead-branches, .nav-flourish { display: none; }
+  .d1-article .article-header { padding-top: 1.6rem; }
+  .d1-article .prose { font-size: 1rem; line-height: 1.58; }
+  .discovery-essay-grid { grid-template-columns: 1fr; gap: 0.8rem; }
+  .discovery-essay-grid article + article { border-left: 0; border-top: 1px solid var(--ed-border); padding: 0.8rem 0 0; }
+}
+@media (max-width: 560px) {
+  .brand-name { display: inline; font-size: 0.66em; letter-spacing: 0.015em; }
+  .brand-mark { width: 2rem; height: 2rem; }
+  .d1-article .article-header, .d1-article .prose, .d1-article .article-aside { width: 100%; }
+  .article-landscape { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .reading-progress > span { transition: none; } }

@@ -4,7 +4,10 @@
 {{- $cat := partial "editorial/category.html" $p -}}
 {{- $toc := and (ne $p.Params.toc false) (ne $p.Params.toc.enable false) (gt (len $p.Fragments.HeadingsMap) 1) -}}
 {{- $author := partial "function/get-author-map.html" $p.Params.author -}}
-<article class="article" lang="{{ $p.Language.Lang }}">
+{{- $ornamentIndex := mod (len ($p.File.Path | default $p.RelPermalink)) 2 -}}
+{{- $flower := cond (eq $ornamentIndex 0) "flower.svg" "flower-alt.svg" -}}
+{{- $landscape := cond (eq $ornamentIndex 0) "landscape.svg" "landscape-alt.svg" -}}
+<article class="article d1-article" lang="{{ $p.Language.Lang }}" data-ornament="{{ $ornamentIndex }}">
   <header class="article-header">
     <p class="kicker">{{ with $cat }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> · {{ end }}{{ T "ed_minutes" (dict "Count" $p.ReadingTime) | default (printf "%d min read" $p.ReadingTime) }}</p>
     <h1 class="article-title">{{ $p.Title }}</h1>
@@ -20,11 +23,13 @@
   </header>
   <div class="article-layout{{ if not $toc }} no-toc{{ end }}">
     {{- if $toc }}
-    <aside class="article-aside">
+    <aside class="article-aside" aria-label="{{ T "ed_contents" | default "Contents" }}">
+      <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
       <details class="toc" open>
         <summary>{{ T "ed_contents" | default "Contents" }}</summary>
         {{ $p.TableOfContents }}
       </details>
+      <div class="toc-ornament">{{ partial "editorial/d1-ornament.html" (dict "role" "toc-flowers" "path" $flower) }}</div>
     </aside>
     {{- end }}
     <div class="prose content" id="content">
@@ -32,6 +37,7 @@
     </div>
   </div>
   <footer class="article-footer">
+    {{- partial "editorial/d1-discovery.html" $p -}}
     {{- with $p.GetTerms "tags" }}
     <p class="tag-list"><span>{{ T "ed_tags" | default "Tags" }}</span>{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
     {{- end }}
@@ -50,4 +56,5 @@
     </nav>
     {{- end }}
   </footer>
+  <div class="article-landscape" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "footer-landscapes" "path" $landscape) }}</div>
 </article>

@@ -1,0 +1,11 @@
+# D1 only renders entries listed here. No affiliate URLs are present; the DOI is a canonical
+# primary source, not a purchase link. Add a resource only after editorial verification.
+game_theory_nash:
+  label: "Curated Reading / Resources"
+  type: "Primary source"
+  title: "Equilibrium Points in n-Person Games"
+  author: "John F. Nash, Proceedings of the National Academy of Sciences, 1950"
+  reason: "The concise original paper gives the fixed-point result behind the modern definition of Nash equilibrium."
+  cta: "Read publication"
+  url: "https://doi.org/10.1073/pnas.36.1.48"
+  affiliate: false

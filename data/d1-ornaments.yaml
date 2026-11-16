@@ -1,0 +1,29 @@
+# Original, repository-authored D1 SVG decorations. They are decorative only, have no embedded
+# text, and are intentionally a small licensed-by-owner library rather than the optional concept pack.
+source: "Original vector artwork authored for The Epistemic Diary D1 implementation"
+license: "Repository owner supplied / internal artwork; no third-party asset incorporated"
+assets:
+  - path: "branch.svg"
+    role: "top-branches"
+    dimensions: "300 × 115"
+    decorative: true
+  - path: "flower.svg"
+    role: "toc-flowers"
+    dimensions: "240 × 360"
+    decorative: true
+  - path: "flower-alt.svg"
+    role: "toc-flowers"
+    dimensions: "240 × 360"
+    decorative: true
+  - path: "landscape.svg"
+    role: "footer-landscapes"
+    dimensions: "850 × 210"
+    decorative: true
+  - path: "landscape-alt.svg"
+    role: "footer-landscapes"
+    dimensions: "850 × 210"
+    decorative: true
+  - path: "paper.svg"
+    role: "paper-textures"
+    dimensions: "180 × 160"
+    decorative: true
