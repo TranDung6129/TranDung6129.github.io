@@ -1,0 +1,22 @@
+# D1 botanical line art (D-016). Original vectors authored in this repository for D1; no
+# third-party asset is incorporated. They are PROTOTYPE artwork: the owner has not yet approved
+# them as final, and the library is intentionally small — expanding it is D5 work.
+#
+# Roles:   branch    — masthead corners on article pages (both sides, mirrored)
+#          toc       — one plant below the left contents rail (wide screens only)
+#          landscape — one faint strip below the article footer
+# Rotation: layouts/_partials/editorial/d1-ornament-pick.html picks one asset per role from an
+# md5 of the content path, so an article keeps its artwork across builds and reloads. Add an
+# entry with an existing role to widen the rotation; front matter can pin a file:
+#   ornaments: { toc: "flower-alt.svg", landscape: "landscape.svg" }
+# Files use stroke="#80583e"; the partial inlines them and swaps that for currentColor so the
+# line follows the theme. Nothing is ever placed behind prose, equations or tables.
+source: "Original vector artwork authored for The Epistemic Diary D1 implementation"
+license: "Repository owner supplied / internal artwork; no third-party asset incorporated"
+status: "prototype"
+assets:
+  - { path: "branch.svg",        role: "branch",    viewBox: "300 × 115" }
+  - { path: "flower.svg",        role: "toc",       viewBox: "240 × 360" }
+  - { path: "flower-alt.svg",    role: "toc",       viewBox: "240 × 360" }
+  - { path: "landscape.svg",     role: "landscape", viewBox: "850 × 210" }
+  - { path: "landscape-alt.svg", role: "landscape", viewBox: "850 × 210" }

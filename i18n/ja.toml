@@ -196,3 +196,29 @@ other = "Calendar of essays published per day over six months"
 
 [ed_watchFilm]
 other = "Watch the film"
+[ed_furtherEssays]
+other = "Further essays"
+[ed_furtherKicker]
+other = "Continue the line of thought"
+[ed_curatedReading]
+other = "Curated reading"
+[ed_curatedKicker]
+other = "From the sources"
+[ed_curatedNote]
+other = "Chosen from this essay's references. No paid placement."
+[ed_kindPaper]
+other = "Paper"
+[ed_kindBook]
+other = "Book"
+[ed_openSource]
+other = "Open the source"
+[ed_seeReference]
+other = "See the reference list"
+[ed_affiliate]
+other = "Disclosure: this link is an affiliate link."
+[ed_chapterIn]
+other = "A chapter of {{ .Volume }}"
+[ed_essayNavLabel]
+other = "Older and newer essays"
+[ed_seeReferenceN]
+other = "Reference {{ .N }} in this essay"

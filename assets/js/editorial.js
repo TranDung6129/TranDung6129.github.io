@@ -169,20 +169,41 @@
       anchor.insertAdjacentElement('afterend', button);
     });
   }
-  if (tocLinks.length && 'IntersectionObserver' in window) {
-    const byId = new Map(tocLinks.map(a => [decodeURIComponent(a.getAttribute('href').slice(1)), a]));
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        tocLinks.forEach(a => a.removeAttribute('aria-current'));
-        const link = byId.get(entry.target.id);
-        if (!link) return;
-        link.setAttribute('aria-current', 'location');
-        const section = link.closest('.toc-section');
-        if (section && !section.dataset.manual) setOpen(section, true);
-      });
-    }, { rootMargin: '0px 0px -70% 0px' });
-    byId.forEach((_, id) => { const el = document.getElementById(id); if (el) observer.observe(el); });
+  // Active heading = the last one whose top has passed 30% of the viewport, recomputed on scroll
+  // so it is right in both directions and after a deep link. Its section opens and the other
+  // sections fold away again, unless the reader toggled a section by hand (data-manual), which
+  // is then left as the reader set it.
+  if (toc && tocLinks.length) {
+    const targets = tocLinks
+      .map(a => ({ a, el: document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))) }))
+      .filter(t => t.el);
+    const sections = [...toc.querySelectorAll('.toc-section')];
+    let current = null, queued = false;
+    const keepVisible = link => {
+      const box = toc.getBoundingClientRect(), r = link.getBoundingClientRect();
+      if (r.top < box.top + 24) toc.scrollTop -= box.top + 24 - r.top;
+      else if (r.bottom > box.bottom - 24) toc.scrollTop += r.bottom - box.bottom + 24;
+    };
+    const updateActive = () => {
+      queued = false;
+      const line = window.innerHeight * 0.3;
+      let active = null;
+      for (const t of targets) { if (t.el.getBoundingClientRect().top <= line) active = t; else break; }
+      const link = active ? active.a : null;
+      if (link === current) return;
+      current = link;
+      tocLinks.forEach(a => a.removeAttribute('aria-current'));
+      if (!link) return;
+      link.setAttribute('aria-current', 'location');
+      const own = link.closest('.toc-section');
+      sections.forEach(section => { if (!section.dataset.manual) setOpen(section, section === own); });
+      if (toc.scrollHeight > toc.clientHeight) keepVisible(link);
+    };
+    const queue = () => { if (!queued) { queued = true; requestAnimationFrame(updateActive); } };
+    addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue, { passive: true });
+    addEventListener('hashchange', queue);
+    updateActive();
   }
   const prose = document.querySelector('.d1-article .prose');
   const progress = document.querySelector('.d1-article .reading-progress');

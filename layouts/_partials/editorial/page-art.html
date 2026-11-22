@@ -1,0 +1,23 @@
+{{- /* The existing artwork that legitimately belongs to an essay, or "" (D1 Further Essays).
+       Order: front matter `art` (a data/art.yaml key) → the homepage curation in data/home.yaml →
+       the cover of the volume the essay is a chapter of. No generic or decorative fallback:
+       an essay without one is shown as text. Returns dict "key" "via" or "". */ -}}
+{{- $p := . -}}
+{{- $out := "" -}}
+{{- with $p.Params.art }}{{ if index site.Data.art . }}{{ $out = dict "key" . "via" "page" }}{{ end }}{{ end -}}
+{{- if not $out -}}
+  {{- range $f := site.Data.home.featured -}}
+    {{- with site.GetPage $f.path }}{{ if and (not $out) (eq .RelPermalink $p.RelPermalink) }}{{ $out = dict "key" $f.art "via" "featured" }}{{ end }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $out -}}
+  {{- with site.GetPage "/volumes" -}}
+    {{- range .RegularPages.ByWeight -}}
+      {{- $v := . -}}
+      {{- range partial "editorial/volume-chapters.html" $v -}}
+        {{- if and (not $out) (eq .RelPermalink $p.RelPermalink) }}{{ $out = dict "key" ($v.Params.cover | default "volume_1") "via" "volume" "volume" $v }}{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

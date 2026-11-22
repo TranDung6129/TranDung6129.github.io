@@ -22,7 +22,6 @@
       {{- partial "site/languages.html" . -}}
     </div>
   </div>
-  <div class="masthead-branches" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "top-branches" "path" "branch.svg") }}{{ partial "editorial/d1-ornament.html" (dict "role" "top-branches" "path" "branch.svg") }}</div>
   <div class="masthead-meta"><span>{{ T "ed_tagline" | default "An independent publication on knowledge & the world" }}</span><span>{{ T "ed_subjects" | default "Mathematics · Economics · Computing · Philosophy" }}</span></div>
   <div id="search-panel" class="search-panel" data-index="{{ "search.json" | relLangURL }}" hidden>
     <label for="site-search">{{ T "ed_searchLabel" | default "Search articles" }}</label>

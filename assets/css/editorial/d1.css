@@ -4,17 +4,7 @@
   --d1-measure: 44rem;
   --d1-rail: 13rem;
   --d1-rail-gap: clamp(2rem, 4vw, 4.5rem);
-}
-
-body.section-posts,
-body.section-kinh-te,
-body.section-toan-hoc,
-body.section-vat-ly,
-body.section-khoa-hoc-may-tinh,
-body.section-triet-hoc,
-body.section-ca-nhan {
-  background-image: url('/ornaments/d1/paper.svg');
-  background-size: 180px 160px;
+  --d1-wide: 58rem;
 }
 
 /* The logo and action cluster occupy equal side columns. Navigation therefore remains centred
@@ -33,10 +23,11 @@ body.section-ca-nhan {
 .masthead .tools { justify-self: end; }
 .nav-flourish { color: var(--ed-accent); font: 1rem/1 var(--ed-display); opacity: 0.85; }
 .nav-flourish:last-of-type { transform: scaleX(-1); }
-.masthead-branches { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
-.masthead-branches .ornament { position: absolute; top: -1.25rem; width: 11rem; opacity: 0.38; }
-.masthead-branches .ornament:first-child { left: -7rem; }
-.masthead-branches .ornament:last-child { right: -7rem; transform: scaleX(-1); }
+/* Above the article: a small mirrored pair of branches as a headpiece, clear of the title. */
+.ornament svg { display: block; width: 100%; height: auto; }
+.article-headpiece { display: flex; justify-content: flex-start; gap: 0; margin: 0 0 0.9rem; color: var(--ed-accent); opacity: 0.4; pointer-events: none; }
+.article-headpiece .ornament { width: 4.25rem; }
+.article-headpiece .ornament:last-child { transform: scaleX(-1); }
 
 /* The rail leaves normal flow on wide screens. The prose's margin-auto is a viewport-centred
    reading column, rather than a column centred in the leftover grid area. */
@@ -51,59 +42,110 @@ body.section-ca-nhan {
 .d1-article .prose table { display: block; width: 100%; max-width: 100%; min-width: 0; overflow-x: auto; }
 /* MathJax's visually-hidden semantic duplicate must never contribute to page width at text zoom. */
 .d1-article .prose mjx-assistive-mml { width: 1px !important; max-width: 1px !important; overflow: hidden !important; }
-.d1-article .article-aside { position: absolute; width: var(--d1-rail); left: calc(50% - (var(--d1-measure) / 2) - var(--d1-rail-gap) - var(--d1-rail)); top: 2rem; }
-.d1-article .toc { position: sticky; top: 1.1rem; max-height: calc(100vh - 3rem); overflow: auto; overscroll-behavior: contain; padding: 0.7rem 0.65rem 0.9rem; background: color-mix(in srgb, var(--ed-bg) 94%, transparent); scrollbar-color: var(--ed-border) transparent; }
-.d1-article .toc summary { padding: 0.35rem 0.15rem 0.55rem; }
-.reading-progress { position: sticky; top: 0; z-index: 2; height: 2px; background: var(--ed-border); margin-bottom: 0.65rem; overflow: hidden; }
+/* The aside spans the full height of the article body (top/bottom of .article-layout), so the
+   sticky panel inside it has room to travel; it stays in view from the first heading to the
+   last paragraph and is released before the footer. */
+.d1-article .article-layout { position: relative; }
+.d1-article .article-aside { position: absolute; top: 2rem; bottom: 0; width: var(--d1-rail); left: calc(50% - (var(--d1-measure) / 2) - var(--d1-rail-gap) - var(--d1-rail)); }
+.toc-panel { position: sticky; top: 1rem; display: flex; flex-direction: column; max-height: calc(100vh - 2rem); }
+.reading-progress { flex: none; height: 2px; background: var(--ed-border); margin: 0 0.65rem 0.4rem; overflow: hidden; }
 .reading-progress > span { display: block; width: 0; height: 100%; background: var(--ed-accent); transition: width var(--ed-duration) linear; }
-.toc-ornament { margin: 1.25rem auto 0; width: min(100%, 9.5rem); pointer-events: none; }
-.toc-ornament .ornament { display: block; width: 100%; height: auto; opacity: 0.48; }
-.article-landscape { width: min(100%, var(--d1-measure)); margin: 0 auto 1rem; padding-top: 1rem; pointer-events: none; }
-.article-landscape .ornament { display: block; width: min(100%, 34rem); height: auto; margin-left: auto; opacity: 0.32; }
+.d1-article .toc { position: static; flex: 0 1 auto; min-height: 0; max-height: none; overflow: auto; overscroll-behavior: contain; padding: 0.35rem 0.65rem 0.8rem; background: transparent; scrollbar-width: thin; scrollbar-color: var(--ed-border) transparent; }
+.d1-article .toc summary { padding: 0.35rem 0.15rem 0.55rem; }
+.toc-ornament { flex: none; margin: 0.9rem 0 0 0.65rem; width: 5.75rem; color: var(--ed-accent); opacity: 0.42; pointer-events: none; }
+@media (max-height: 760px) { .toc-ornament { display: none; } }
+/* Below the article: one faint strip, outside the reading column's text. */
+.article-landscape { width: min(100% - 2rem, var(--d1-wide)); margin: 0 auto 1rem; padding-top: 0.5rem; color: var(--ed-accent); pointer-events: none; }
+.article-landscape .ornament { display: block; width: min(100%, 30rem); margin-left: auto; opacity: 0.26; }
 
 /* JavaScript adds independent H3 toggles after preserving Hugo's existing anchors and nested
    list structure. Without script every link remains available. */
-.toc-section { position: relative; }
-.toc-toggle { appearance: none; border: 0; background: transparent; color: var(--ed-muted); padding: 0.12rem; margin-left: 0.15rem; font: 700 0.7rem/1 var(--ed-sans); }
-.toc-toggle:hover { color: var(--ed-accent); }
+.toc-section { display: grid; grid-template-columns: minmax(0, 1fr) 1.6rem; align-items: start; column-gap: 0.15rem; }
+.toc-section > ul { grid-column: 1 / -1; }
+.toc-toggle { appearance: none; display: grid; place-items: center; width: 1.6rem; height: 1.6rem; margin: -0.1rem 0 0; padding: 0; border: 0; border-radius: 2px; background: transparent; color: var(--ed-muted); font: 700 0.8rem/1 var(--ed-sans); cursor: pointer; transition: transform var(--ed-duration) ease; }
+.toc-toggle[aria-expanded="false"] { transform: rotate(-90deg); }
+.toc-toggle:hover { color: var(--ed-accent); background: color-mix(in srgb, var(--ed-accent) 8%, transparent); }
 .toc-section > ul[hidden] { display: none; }
 
-/* Both editorial discovery modules use equal outlined, horizontal treatment. A resource is
-   deliberately omitted when no verified entry is supplied in data/d1_resources.yaml. */
-.d1-discovery { margin: 2.8rem 0 1.8rem; display: grid; gap: 1rem; }
-.discovery-module { border: 1px solid var(--ed-border); padding: clamp(1rem, 2.5vw, 1.65rem); background: color-mix(in srgb, var(--ed-surface) 42%, var(--ed-bg)); }
-.discovery-kicker, .resource-type { margin: 0; color: var(--ed-accent); font: 700 0.65rem/1.4 var(--ed-sans); letter-spacing: 0.16em; text-transform: uppercase; }
-.discovery-module h2 { margin: 0.35rem 0 1rem; font: 500 clamp(1.55rem, 1.2rem + 1vw, 2rem)/1.05 var(--ed-display); }
-.discovery-essay-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.discovery-essay-grid article + article { border-left: 1px solid var(--ed-border); padding-left: 1rem; }
-.discovery-essay-grid h3, .resource-copy h3 { margin: 0; font: 550 1.15rem/1.18 var(--ed-display); }
-.discovery-essay-grid h3 a { text-decoration: none; }
-.discovery-essay-grid h3 a:hover { color: var(--ed-accent); text-decoration: underline; }
-.discovery-essay-grid p, .resource-copy > p:not(.resource-type):not(.resource-author) { margin: 0.45rem 0; font-size: 0.9rem; line-height: 1.45; }
-.discovery-essay-grid span, .resource-author, .affiliate-disclosure { color: var(--ed-muted); font: 500 0.72rem/1.5 var(--ed-sans); }
-.resource-author { margin: 0.28rem 0 0.75rem; }
-.resource-cta { display: inline-block; margin-top: 0.45rem; border-bottom: 1px solid currentColor; color: var(--ed-accent); font: 650 0.78rem var(--ed-sans); text-decoration: none; }
+/* Article footer: tags, then Further Essays and Curated Reading as two equal-width, equally
+   ruled modules (one composition each), then older/newer. The footer is centred on the viewport
+   like the prose, a little wider so the cards can lay out horizontally. */
+.d1-article .article-footer, .d1-article .article-layout:not(.no-toc) + .article-footer { width: min(100% - 2rem, var(--d1-wide)); max-width: none; margin: 2.4rem auto 0; padding-bottom: 1.5rem; }
+.d1-article .tag-list { width: min(100%, var(--d1-measure)); margin: 0 auto 2rem; }
+.d1-discovery { display: grid; gap: 1.25rem; margin-bottom: 0.25rem; }
+.discovery-module { border-top: 2px solid var(--ed-fg); border-bottom: 1px solid var(--ed-border); padding: 1rem 0 1.4rem; }
+.discovery-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 1rem; margin-bottom: 1.1rem; }
+.discovery-head h2 { order: -1; margin: 0; font: 500 clamp(1.5rem, 1.25rem + 0.8vw, 1.9rem)/1.05 var(--ed-display); }
+.discovery-kicker { margin: 0; color: var(--ed-accent); font: 700 0.64rem/1.4 var(--ed-sans); letter-spacing: 0.16em; text-transform: uppercase; }
+.discovery-note { flex-basis: 100%; margin: 0.15rem 0 0; color: var(--ed-muted); font: 400 0.78rem/1.45 var(--ed-sans); }
+.discovery-module h3 { margin: 0; font: 550 1.12rem/1.22 var(--ed-display); text-wrap: pretty; overflow-wrap: anywhere; }
+.discovery-module h3 a { color: var(--ed-fg); text-decoration: none; }
+.discovery-module h3 a:hover { color: var(--ed-accent); text-decoration: underline; text-underline-offset: 0.15em; }
+.essay-meta, .essay-foot, .source-kind { display: flex; flex-wrap: wrap; gap: 0.2rem 0.75rem; margin: 0 0 0.35rem; color: var(--ed-muted); font: 600 0.66rem/1.4 var(--ed-sans); letter-spacing: 0.08em; text-transform: uppercase; }
+.essay-meta span:first-child, .source-kind { color: var(--ed-accent); }
+.source-kind span { color: var(--ed-muted); letter-spacing: 0.04em; }
+.essay-foot { margin: 0.6rem 0 0; font-weight: 500; letter-spacing: 0.04em; text-transform: none; font-size: 0.72rem; }
+.essay-summary, .source-why { margin: 0.45rem 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--ed-fg); }
+.discovery-cta { display: inline-flex; gap: 0.35rem; margin-top: 0.75rem; color: var(--ed-accent); font: 650 0.76rem/1.4 var(--ed-sans); letter-spacing: 0.04em; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.25em; }
+.discovery-cta:hover { text-decoration-thickness: 2px; }
+
+/* Further Essays: a featured card (its own artwork beside the copy) and up to two supporting
+   essays in a ruled column. */
+.essays-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 1.6rem; align-items: start; }
+.essays-layout.essays-single { grid-template-columns: minmax(0, 1fr); }
+.essay-feature.has-art { display: grid; gap: 1.15rem; align-items: start; }
+.essay-feature-art { display: block; aspect-ratio: 4 / 5; overflow: hidden; background: var(--ed-surface); border: 1px solid var(--ed-border); }
+.essay-feature-art picture, .essay-feature-art img { display: block; width: 100%; height: 100%; }
+.essay-feature-art img { object-fit: cover; }
+/* A volume cover is shown whole, as a book, not cropped. */
+.essay-feature.art-volume .essay-feature-art { aspect-ratio: 2 / 3; padding: 0; background: transparent; border: 0; box-shadow: 0 0.5rem 1.25rem -0.8rem rgb(0 0 0 / 0.45); }
+.essay-feature.art-volume .essay-feature-art img { object-fit: contain; }
+.essay-feature.has-art { grid-template-columns: minmax(8rem, 0.62fr) minmax(0, 1fr); }
+.essay-feature h3 { font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.55rem); line-height: 1.14; }
+.essay-feature.text-only { border-left: 2px solid var(--ed-accent); padding-left: 1.1rem; }
+.essay-supporting { list-style: none; margin: 0; padding: 0 0 0 1.5rem; border-left: 1px solid var(--ed-border); display: grid; gap: 1rem; }
+.essay-supporting li + li { border-top: 1px solid var(--ed-border); padding-top: 1rem; }
+.essay-supporting .essay-summary { font-size: 0.86rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Curated Reading: a bibliography, not a shop shelf — numbered columns, no covers unless a
+   legally reusable one is recorded in data/d1_resources.yaml. */
+.source-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.25rem 1.6rem; counter-reset: source; }
+.source-item { counter-increment: source; display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: 0.2rem; }
+.source-item::before { content: counter(source) "."; color: var(--ed-muted); font: 500 1rem/1.2 var(--ed-display); padding-top: 1.05rem; }
+.source-item.has-cover { grid-template-columns: 1.6rem 5rem minmax(0, 1fr); }
+.source-item + .source-item { border-left: 1px solid var(--ed-border); padding-left: 1.4rem; }
+.source-item h3 { font-size: 1.04rem; }
+/* Book titles in italics with the text face (already loaded by the essay's own emphasis), not a second display italic. */
+.source-item h3 cite { font-style: italic; font-family: var(--ed-serif); font-size: 0.96em; }
+.source-biblio { margin: 0.3rem 0 0; color: var(--ed-muted); font: 400 0.78rem/1.45 var(--ed-sans); }
+.source-why { font-size: 0.88rem; }
+.source-disclosure { margin: 0.5rem 0 0; padding: 0.35rem 0.5rem; border: 1px dashed var(--ed-border); color: var(--ed-muted); font: 500 0.72rem/1.4 var(--ed-sans); }
 
 @media (max-width: 1110px) {
   .d1-article .article-aside { position: static; width: min(100%, var(--d1-measure)); margin: 0 auto 1.5rem; }
-  .d1-article .toc { position: static; max-height: min(46vh, 26rem); }
-  .reading-progress { position: static; }
+  .toc-panel { position: static; max-height: none; border: 1px solid var(--ed-border); }
+  .reading-progress { margin: 0; }
+  .d1-article .toc { max-height: min(46vh, 26rem); }
   .toc-ornament { display: none; }
 }
 @media (max-width: 760px) {
   .masthead-top { grid-template-columns: minmax(0, 1fr) auto auto; gap: 0.2rem; }
   .masthead-top > nav { grid-column: 1 / -1; grid-row: 2; justify-self: stretch; }
   .masthead .brand-name { font-size: 0.7em; letter-spacing: 0.035em; }
-  .masthead-branches, .nav-flourish { display: none; }
+  .nav-flourish { display: none; }
   .d1-article .article-header { padding-top: 1.6rem; }
   .d1-article .prose { font-size: 1rem; line-height: 1.58; }
-  .discovery-essay-grid { grid-template-columns: 1fr; gap: 0.8rem; }
-  .discovery-essay-grid article + article { border-left: 0; border-top: 1px solid var(--ed-border); padding: 0.8rem 0 0; }
+  .essays-layout { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+  .essay-supporting { padding: 1rem 0 0; border-left: 0; border-top: 1px solid var(--ed-border); }
+  .source-item + .source-item { border-left: 0; padding-left: 0; border-top: 1px solid var(--ed-border); padding-top: 1rem; }
 }
 @media (max-width: 560px) {
   .brand-name { display: inline; font-size: 0.66em; letter-spacing: 0.015em; }
   .brand-mark { width: 2rem; height: 2rem; }
   .d1-article .article-header, .d1-article .prose, .d1-article .article-aside { width: 100%; }
   .article-landscape { display: none; }
+  .essay-feature.has-art { grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0.9rem; }
+  .d1-article .article-footer, .d1-article .article-layout:not(.no-toc) + .article-footer { width: 100%; }
 }
-@media (prefers-reduced-motion: reduce) { .reading-progress > span { transition: none; } }
+.d1-discovery + .chapter-nav { border-top: 0; margin-top: 0; }
+@media (prefers-reduced-motion: reduce) { .reading-progress > span, .toc-toggle { transition: none; } }

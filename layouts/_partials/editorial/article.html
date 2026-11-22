@@ -4,11 +4,10 @@
 {{- $cat := partial "editorial/category.html" $p -}}
 {{- $toc := and (ne $p.Params.toc false) (ne $p.Params.toc.enable false) (gt (len $p.Fragments.HeadingsMap) 1) -}}
 {{- $author := partial "function/get-author-map.html" $p.Params.author -}}
-{{- $ornamentIndex := mod (len ($p.File.Path | default $p.RelPermalink)) 2 -}}
-{{- $flower := cond (eq $ornamentIndex 0) "flower.svg" "flower-alt.svg" -}}
-{{- $landscape := cond (eq $ornamentIndex 0) "landscape.svg" "landscape-alt.svg" -}}
-<article class="article d1-article" lang="{{ $p.Language.Lang }}" data-ornament="{{ $ornamentIndex }}">
+{{- $orn := partial "editorial/d1-ornament-pick.html" $p -}}
+<article class="article d1-article" lang="{{ $p.Language.Lang }}">
   <header class="article-header">
+    <div class="article-headpiece" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "branch" "file" "branch.svg") }}{{ partial "editorial/d1-ornament.html" (dict "role" "branch" "file" "branch.svg") }}</div>
     <p class="kicker">{{ with $cat }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> · {{ end }}{{ T "ed_minutes" (dict "Count" $p.ReadingTime) | default (printf "%d min read" $p.ReadingTime) }}</p>
     <h1 class="article-title">{{ $p.Title }}</h1>
     {{- with $p.Params.subtitle }}<p class="article-subtitle">{{ . | $p.RenderString }}</p>{{ end }}
@@ -24,12 +23,15 @@
   <div class="article-layout{{ if not $toc }} no-toc{{ end }}">
     {{- if $toc }}
     <aside class="article-aside" aria-label="{{ T "ed_contents" | default "Contents" }}">
-      <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
-      <details class="toc" open>
-        <summary>{{ T "ed_contents" | default "Contents" }}</summary>
-        {{ $p.TableOfContents }}
-      </details>
-      <div class="toc-ornament">{{ partial "editorial/d1-ornament.html" (dict "role" "toc-flowers" "path" $flower) }}</div>
+      {{- /* The aside spans the whole article body; this inner panel is what stays in view. */ -}}
+      <div class="toc-panel">
+        <div class="reading-progress" role="progressbar" aria-label="{{ T "ed_readingProgress" | default "Reading progress" }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+        <details class="toc" open>
+          <summary>{{ T "ed_contents" | default "Contents" }}</summary>
+          {{ $p.TableOfContents }}
+        </details>
+        <div class="toc-ornament" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "toc" "file" $orn.toc) }}</div>
+      </div>
     </aside>
     {{- end }}
     <div class="prose content" id="content">
@@ -37,24 +39,20 @@
     </div>
   </div>
   <footer class="article-footer">
-    {{- partial "editorial/d1-discovery.html" $p -}}
+    {{- /* One discovery block (Further Essays, then Curated Reading); the old "Related reading"
+           list duplicated it and was removed. Older/newer stays: it is chronological, and the
+           essays it names are excluded from Further Essays. */ -}}
     {{- with $p.GetTerms "tags" }}
     <p class="tag-list"><span>{{ T "ed_tags" | default "Tags" }}</span>{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
     {{- end }}
-    {{- $related := first 3 (where (site.RegularPages.Related $p) "Section" "in" site.Params.mainSections) -}}
-    {{- with $related }}
-    <nav class="related-reading" aria-labelledby="related-title">
-      <h2 id="related-title">{{ T "ed_related" | default "Related reading" }}</h2>
-      <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
-    </nav>
-    {{- end }}
+    {{- partial "editorial/d1-discovery.html" $p -}}
     {{- if in site.Params.mainSections $p.Section }}
-    <nav class="chapter-nav" aria-label="{{ T "ed_morePosts" | default "More essays" }}">
+    <nav class="chapter-nav" aria-label="{{ T "ed_essayNavLabel" | default "Older and newer essays" }}">
       {{- /* Default ordering is newest first: PrevInSection is the older essay, NextInSection the newer. */ -}}
       {{- with $p.PrevInSection }}<a href="{{ .RelPermalink }}"><span>← {{ T "ed_olderEssay" | default "Older essay" }}</span><strong>{{ .LinkTitle }}</strong></a>{{ else }}<span></span>{{ end -}}
       {{- with $p.NextInSection }}<a href="{{ .RelPermalink }}"><span>{{ T "ed_newerEssay" | default "Newer essay" }} →</span><strong>{{ .LinkTitle }}</strong></a>{{ else }}<span></span>{{ end -}}
     </nav>
     {{- end }}
   </footer>
-  <div class="article-landscape" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "footer-landscapes" "path" $landscape) }}</div>
+  <div class="article-landscape" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "landscape" "file" $orn.landscape) }}</div>
 </article>
