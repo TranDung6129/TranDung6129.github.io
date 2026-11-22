@@ -336,3 +336,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Branch:** `feat/p4-ia-cleanup`. Details and removed URLs: `docs/phases/phase-4/PLAN.md`; decision D-015.
 - **Tests (exit 0):** `hugo --gc --minify` (0 warnings); `BASE=… AXE=… node docs/audits/p3-07/tools/p3-smoke.cjs` — 100 states (10 pages), 32/32 checks, axe 0 violations; `seo-check.py` PASS (158 pages); `analyze.py` 0 broken references; route diff vs production: only the sample collection/category/tag pages and series feeds removed, series pages redirect to Volume I, lab and film pages added.
 
+### 2026-11-22 — D1 refinement and visual acceptance — Claude Code
+- **Branch:** `feat/d1-article-reading` (continues the Codex D1 pass; no redesign). Implementation `e2033a1`, harness `33195bf`.
+- **What:** sticky contents panel and contextual H3 folding (the previous rail scrolled away and never folded — measured); Further Essays as featured + supporting cards using only existing artwork; Curated Reading with three verified entries from the Nash references; duplicate related list removed; ornaments inlined with theme colour, deterministic md5 rotation, paper texture removed; localised footer strings.
+- **Tests (exit 0):** `hugo --gc --minify` 0 warnings; `node scripts/test-d1.cjs` 25/25; `node docs/audits/p3-07/tools/p3-smoke.cjs` 32/32, 100 states, axe 0 violations; route parity vs `main` 410/410, XML/JSON byte-identical; `perf.cjs` vs `main` and previous D1.
+- **Not done:** merge/deploy (owner), ornament library expansion (D5), DOI verification for two references (no network path here).
+

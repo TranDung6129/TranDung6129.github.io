@@ -1,0 +1,23 @@
+{
+  "baseline": "origin/main c2898aa, hugo --gc --minify",
+  "candidate": "feat/d1-article-reading working tree (this refinement)",
+  "routes_main": 410,
+  "routes_candidate": 410,
+  "routes_removed": [],
+  "routes_added": [],
+  "xml_json_changed": [],
+  "other_removed": [
+    "css/editorial.min.43eca3bf11929c0cf5edf1af12743dbd8a6f82b4b3b6f81c1d65ed9321018acc.css",
+    "js/editorial.95ac2d40fac67d4c3d036cbd82b942ed0401c307411d1b9292335a3060682203.js"
+  ],
+  "other_added": [
+    "css/editorial.min.405346758474556e34f61a3f5985596a12687740216f4626bf1c44a96f766611.css",
+    "images/favicon.svg",
+    "js/editorial.a7bd7d41430b2a6132ab5be12e79d6966368d4809a56d98171d3b519098b325d.js",
+    "ornaments/d1/branch.svg",
+    "ornaments/d1/flower-alt.svg",
+    "ornaments/d1/flower.svg",
+    "ornaments/d1/landscape-alt.svg",
+    "ornaments/d1/landscape.svg"
+  ]
+}

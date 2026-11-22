@@ -1,0 +1,243 @@
+{
+  "method": "Single local unthrottled run per state, fresh context; third-party CDNs reached through the environment proxy. Not field CWV.",
+  "rows": [
+    {
+      "label": "before",
+      "route": "/",
+      "width": 390,
+      "bytes": {
+        "font": 390352,
+        "css": 38444,
+        "image": 155866,
+        "js": 4666,
+        "html": 14721
+      },
+      "total": 604049,
+      "requests": 17,
+      "fcp": 92,
+      "lcp": 92,
+      "lcpElement": "IMG",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 1
+    },
+    {
+      "label": "before",
+      "route": "/",
+      "width": 1440,
+      "bytes": {
+        "font": 390352,
+        "css": 38444,
+        "image": 312898,
+        "js": 4666,
+        "html": 14721
+      },
+      "total": 761081,
+      "requests": 17,
+      "fcp": 108,
+      "lcp": 108,
+      "lcpElement": "IMG",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 1
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 390,
+      "bytes": {
+        "font": 429776,
+        "css": 38444,
+        "js": 214067,
+        "image": 52393,
+        "html": 46075
+      },
+      "total": 780755,
+      "requests": 23,
+      "fcp": 84,
+      "lcp": 84,
+      "lcpElement": "P.lead",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "bytes": {
+        "font": 429776,
+        "css": 38444,
+        "js": 214067,
+        "image": 52393,
+        "html": 46075
+      },
+      "total": 780755,
+      "requests": 23,
+      "fcp": 84,
+      "lcp": 84,
+      "lcpElement": "H1.article-title",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "bytes": {
+        "font": 270504,
+        "css": 38444,
+        "js": 214067,
+        "html": 15732
+      },
+      "total": 538747,
+      "requests": 15,
+      "fcp": 60,
+      "lcp": 60,
+      "lcpElement": "P",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "before",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "bytes": {
+        "font": 270504,
+        "css": 38444,
+        "js": 214067,
+        "html": 15732
+      },
+      "total": 538747,
+      "requests": 15,
+      "fcp": 72,
+      "lcp": 72,
+      "lcpElement": "H1.article-title",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "after",
+      "route": "/",
+      "width": 390,
+      "bytes": {
+        "font": 390352,
+        "css": 47724,
+        "image": 155866,
+        "js": 6374,
+        "html": 15253
+      },
+      "total": 615569,
+      "requests": 17,
+      "fcp": 96,
+      "lcp": 96,
+      "lcpElement": "IMG",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 1
+    },
+    {
+      "label": "after",
+      "route": "/",
+      "width": 1440,
+      "bytes": {
+        "font": 390352,
+        "css": 47724,
+        "image": 312898,
+        "js": 6374,
+        "html": 15253
+      },
+      "total": 772601,
+      "requests": 17,
+      "fcp": 84,
+      "lcp": 84,
+      "lcpElement": "IMG",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 1
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 390,
+      "bytes": {
+        "font": 429776,
+        "css": 47724,
+        "js": 215775,
+        "image": 52393,
+        "html": 53968
+      },
+      "total": 799636,
+      "requests": 23,
+      "fcp": 100,
+      "lcp": 100,
+      "lcpElement": "P.lead",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "bytes": {
+        "font": 429776,
+        "css": 47724,
+        "js": 215775,
+        "image": 52393,
+        "html": 53968
+      },
+      "total": 799636,
+      "requests": 23,
+      "fcp": 92,
+      "lcp": 92,
+      "lcpElement": "H1.article-title",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 390,
+      "bytes": {
+        "font": 270504,
+        "css": 47724,
+        "js": 215775,
+        "image": 20038,
+        "html": 21279
+      },
+      "total": 575320,
+      "requests": 16,
+      "fcp": 68,
+      "lcp": 68,
+      "lcpElement": "H1.article-title",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    },
+    {
+      "label": "after",
+      "route": "/kinh-te/toan-co-ban-2/",
+      "width": 1440,
+      "bytes": {
+        "font": 270504,
+        "css": 47724,
+        "js": 215775,
+        "image": 20038,
+        "html": 21279
+      },
+      "total": 575320,
+      "requests": 16,
+      "fcp": 88,
+      "lcp": 88,
+      "lcpElement": "H1.article-title",
+      "cls": 0,
+      "blockingCss": 1,
+      "scripts": 4
+    }
+  ]
+}
