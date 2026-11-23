@@ -1,0 +1,8 @@
+{{- /* D3: author part of an author–date citation for a bibliography entry.
+       1 author: Family; 2: Family & Family; 3+: Family et al. Family = text before the comma. */ -}}
+{{- $fam := slice -}}
+{{- range .authors }}{{ $fam = $fam | append (index (split . ",") 0) }}{{ end -}}
+{{- $n := len $fam -}}
+{{- $out := index $fam 0 -}}
+{{- if eq $n 2 }}{{ $out = printf "%s & %s" (index $fam 0) (index $fam 1) }}{{ else if gt $n 2 }}{{ $out = printf "%s et al." (index $fam 0) }}{{ end -}}
+{{- return $out -}}

@@ -1,0 +1,13 @@
+{{- /* D3: one bibliography entry, author–date style (APA-like, Vietnamese-neutral punctuation).
+       Authors (Year). Title. Container, volume(issue), pages. Publisher. DOI/URL. */ -}}
+{{- $e := . -}}
+{{- $auth := $e.authors -}}
+{{- $a := "" -}}
+{{- if eq (len $auth) 1 }}{{ $a = index $auth 0 }}{{ else }}{{ $a = printf "%s & %s" (delimit (first (sub (len $auth) 1) $auth) "; ") (index $auth (sub (len $auth) 1)) }}{{ end -}}
+<span class="ref-authors">{{ $a }}</span> ({{ $e.year }}).
+{{- if in (slice "book" "report" "thesis" "web") $e.type }} <cite{{ with $e.title_lang }} lang="{{ . }}"{{ else }} lang="en"{{ end }}>{{ $e.title }}</cite>.
+{{- else }} <span class="ref-title"{{ with $e.title_lang }} lang="{{ . }}"{{ else }} lang="en"{{ end }}>{{ $e.title }}</span>.{{ end -}}
+{{- with $e.container }} <cite>{{ . }}</cite>{{ with $e.volume }}, {{ . }}{{ end }}{{ with $e.issue }}({{ . }}){{ end }}{{ with $e.pages }}, {{ . }}{{ end }}.{{ end -}}
+{{- with $e.publisher }} {{ . }}.{{ end -}}
+{{- with $e.note }} {{ partial "editorial/l10n.html" . }}.{{ end -}}
+{{- with $e.doi }} <a class="ref-link" href="https://doi.org/{{ . }}" rel="noopener">doi:{{ . }}</a>{{ else }}{{ with $e.url }} <a class="ref-link" href="{{ . }}" rel="noopener">{{ replaceRE `^https?://(www\.)?` "" . | strings.TrimSuffix "/" }}</a>{{ else }}{{ with $e.zbmath }} <a class="ref-link" href="https://zbmath.org/?q=an:{{ . }}" rel="noopener">zbMATH {{ . }}</a>{{ end }}{{ end }}{{ end -}}

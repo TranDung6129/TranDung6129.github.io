@@ -1,0 +1,102 @@
+# Source library (D3). One entry per work, cited in essays by key: {{< cite "nash1950" >}}.
+# Every entry is verified against a bibliographic database before it is added:
+#   Crossref (doi), zbMATH (zbmath), or the publisher/author page (url). The `verified` line
+#   records where and when. Never add an entry from memory.
+# type: article | book | chapter | proceedings | web | report | thesis
+# authors: list of "Family, Given" (as in the database).  title_lang: language of the title.
+nash1950:
+  type: article
+  authors: ["Nash, John F."]
+  year: 1950
+  title: "Equilibrium points in n-person games"
+  container: "Proceedings of the National Academy of Sciences"
+  volume: 36
+  issue: 1
+  pages: "48–49"
+  doi: "10.1073/pnas.36.1.48"
+  verified: "Crossref, 2026-11-23"
+kakutani1941:
+  type: article
+  authors: ["Kakutani, Shizuo"]
+  year: 1941
+  title: "A generalization of Brouwer's fixed point theorem"
+  container: "Duke Mathematical Journal"
+  volume: 8
+  issue: 3
+  pages: "457–459"
+  doi: "10.1215/S0012-7094-41-00838-4"
+  verified: "Crossref, 2026-11-23"
+aumann1974:
+  type: article
+  authors: ["Aumann, Robert J."]
+  year: 1974
+  title: "Subjectivity and correlation in randomized strategies"
+  container: "Journal of Mathematical Economics"
+  volume: 1
+  issue: 1
+  pages: "67–96"
+  doi: "10.1016/0304-4068(74)90037-8"
+  verified: "Crossref, 2026-11-24"
+monderer1996:
+  type: article
+  authors: ["Monderer, Dov", "Shapley, Lloyd S."]
+  year: 1996
+  title: "Potential games"
+  container: "Games and Economic Behavior"
+  volume: 14
+  issue: 1
+  pages: "124–143"
+  doi: "10.1006/game.1996.0044"
+  verified: "Crossref, 2026-11-24"
+daskalakis2009:
+  type: article
+  authors: ["Daskalakis, Constantinos", "Goldberg, Paul W.", "Papadimitriou, Christos H."]
+  year: 2009
+  title: "The complexity of computing a Nash equilibrium"
+  container: "SIAM Journal on Computing"
+  volume: 39
+  issue: 1
+  pages: "195–259"
+  doi: "10.1137/070699652"
+  verified: "Crossref, 2026-11-24"
+shoham2008:
+  type: book
+  authors: ["Shoham, Yoav", "Leyton-Brown, Kevin"]
+  year: 2008
+  title: "Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations"
+  publisher: "Cambridge University Press"
+  url: "https://www.masfoundations.org/"
+  note: { vi: "Bản điện tử miễn phí từ tác giả", en: "Free eBook from the authors" }
+  verified: "authors' site masfoundations.org, 2026-11-23"
+hardy1914:
+  type: article
+  authors: ["Hardy, G. H."]
+  year: 1914
+  title: "Sur les zéros de la fonction ζ(s) de Riemann"
+  title_lang: fr
+  container: "Comptes Rendus de l'Académie des Sciences"
+  volume: 158
+  pages: "1012–1014"
+  zbmath: "45.0716.04"
+  verified: "zbMATH API, 2026-11-24"
+conrey1989:
+  type: article
+  authors: ["Conrey, J. B."]
+  year: 1989
+  title: "More than two fifths of the zeros of the Riemann zeta function are on the critical line"
+  container: "Journal für die reine und angewandte Mathematik"
+  volume: 399
+  pages: "1–26"
+  doi: "10.1515/crll.1989.399.1"
+  verified: "Crossref and zbMATH 0668.10044, 2026-11-24"
+delavalleepoussin1896:
+  type: article
+  authors: ["de la Vallée Poussin, Ch. J."]
+  year: 1896
+  title: "Recherches analytiques sur la théorie des nombres premiers"
+  title_lang: fr
+  container: "Annales de la Société Scientifique de Bruxelles"
+  volume: "21 B"
+  pages: "183–256, 281–362, 363–397"
+  zbmath: "27.0155.03"
+  verified: "zbMATH API (JFM 27.0155.03), 2026-11-24; volume as recorded there (often cited as 20)"

@@ -1,0 +1,24 @@
+{{- /* D3 author–date citation. Usage:
+       {{< cite "nash1950" >}}                 → (Nash, 1950)
+       {{< cite "hardy1914, conrey1989" >}}    → (Hardy, 1914; Conrey, 1989)
+       {{< cite key="nash1950" form="t" >}}    → Nash (1950)          narrative form
+       {{< cite key="nash1950" p="48" >}}      → (Nash, 1950, p. 48)  locator
+     Each citation links to its entry in {{< references >}}; the entry links back to every
+     citation of the work. An unknown key fails the build. */ -}}
+{{- $p := .Page -}}
+{{- $raw := cond .IsNamedParams (.Get "key") (.Get 0) -}}
+{{- $form := cond .IsNamedParams (.Get "form" | default "p") "p" -}}
+{{- $loc := cond .IsNamedParams (.Get "p" | default "") "" -}}
+{{- $before := substr (partial "editorial/shortcode-source.html" $p) 0 .Position.Offset -}}
+{{- $parts := slice -}}
+{{- range split $raw "," -}}
+  {{- $k := trim . " " -}}
+  {{- $e := index site.Data.bibliography $k -}}
+  {{- if not $e }}{{ errorf "cite: unknown bibliography key %q in %s" $k $p.File.Path }}{{ end -}}
+  {{- $n := add 1 (len (findRE (printf `\{\{<\s*cite\s+(?:key=)?"[^"]*\b%s\b[^"]*"` $k) $before)) -}}
+  {{- $name := partial "editorial/cite-name.html" $e -}}
+  {{- $locs := cond (ne $loc "") (printf ", p. %s" $loc) "" -}}
+  {{- $text := cond (eq $form "t") (printf "%s (%v%s)" $name $e.year $locs) (printf "%s, %v%s" $name $e.year $locs) -}}
+  {{- $parts = $parts | append (printf `<a class="cite" href="#ref-%s" id="cite-%s-%d" data-ref="%s">%s</a>` $k $k $n $k $text) -}}
+{{- end -}}
+{{- if eq $form "t" }}{{ delimit $parts ", " | safeHTML }}{{ else }}<span class="cite-group">({{ delimit $parts "; " | safeHTML }})</span>{{ end -}}

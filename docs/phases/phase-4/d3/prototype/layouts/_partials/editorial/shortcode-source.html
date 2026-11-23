@@ -1,0 +1,11 @@
+{{- /* D3: the page's Markdown source (front matter included), for deterministic numbering of
+       citations and notes from shortcode positions. Hugo may render a page more than once (HTML,
+       RSS, summaries), so counters kept in .Store would drift; positions in the file do not.
+       .Position.Offset counts bytes while substr counts characters, so every non-ASCII character
+       is replaced by as many placeholder characters as it has UTF-8 bytes: the result can be cut
+       at a byte offset. Shortcode names and keys are ASCII, so matching is unaffected. */ -}}
+{{- $s := readFile (path.Join "content" .File.Path) -}}
+{{- $s = replaceRE `[\x{10000}-\x{10FFFF}]` "~~~~" $s -}}
+{{- $s = replaceRE `[\x{800}-\x{FFFF}]` "~~~" $s -}}
+{{- $s = replaceRE `[\x{80}-\x{7FF}]` "~~" $s -}}
+{{- return $s -}}
