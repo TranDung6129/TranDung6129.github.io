@@ -342,3 +342,28 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Tests (exit 0):** `hugo --gc --minify` 0 warnings; `node scripts/test-d1.cjs` 25/25; `node docs/audits/p3-07/tools/p3-smoke.cjs` 32/32, 100 states, axe 0 violations; route parity vs `main` 410/410, XML/JSON byte-identical; `perf.cjs` vs `main` and previous D1.
 - **Not done:** merge/deploy (owner), ornament library expansion (D5), DOI verification for two references (no network path here).
 
+
+### 2026-11-23 — D1 final acceptance pass — Claude Code
+- **Branch/PR:** `feat/d1-article-reading`, PR #40. Commits `b5c419e`, `27e046f`, `ccb5556` + docs commit.
+- **Owner decision:** brand mark, favicon and nav flourishes stay in D1 as interim identity; D5 replaces them (DECISIONS D-016).
+- **Fixed:**
+  - Contents rail clipped at 1111–1320 px.
+  - Orca "N percent" interruptions; the progress bar is now `aria-hidden`.
+  - TOC toggle names localised.
+  - Nested aside/nav landmarks reduced to one.
+  - Discovery heading order.
+  - Two Curated Reading links verified and made external; their link names are now distinct.
+  - Doubled rules.
+  - vi wording.
+- **Tests (exit 0):**
+  - Clean-tree `hugo --gc --minify`: 0 warnings.
+  - `node scripts/test-d1.cjs`: 29/29, axe 0.
+  - `node docs/audits/p3-07/tools/p3-smoke.cjs`: 32/32.
+  - Routes identical to `main`; RSS and sitemaps byte-identical.
+  - Real Orca 46.1 + Chrome on an isolated Xephyr display; transcripts in `docs/audits/d1/final/evidence/`.
+- **Gaps:**
+  - Firefox + Orca not run: the snap Firefox's AT-SPI tree is blocked by AppArmor here.
+  - NVDA, JAWS and VoiceOver not run.
+  - No live-site check until merge and deploy.
+  - Right-side background balance is open for owner review (D5 artwork).
+- **Next:** owner approves merge → merge PR #40 → check production → D4.

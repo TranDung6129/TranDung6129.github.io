@@ -643,3 +643,22 @@ The complete owner handoff `PHASE4_D1_CODEX_HANDOFF.md` and its approved referen
 | `data/d1-{ornaments,resources}.yaml`, `static/ornaments/d1/`, `static/images/favicon.svg` | COVERED | Asset provenance/original local ornaments, verified primary resource and favicon. |
 | `scripts/test-d1.cjs`, `docs/audits/d1/` | COVERED | D1 responsive, zoom, math, accessibility and visual evidence. |
 | `config/_default/params.toml` | PARTIAL | Reviewed/changed only D1 vector favicon parameter. |
+
+## 2026-11-23 — D1 final acceptance pass (Claude Code)
+
+Blob SHAs are working-tree hashes at commit `ccb5556` on `feat/d1-article-reading`.
+
+| Path | Blob | Status | Purpose / findings |
+|---|---|---|---|
+| `layouts/_partials/editorial/article.html` | `938767bd43af368b11cc247ebd43fc03ae604829` | COVERED | D1 article. The contents `<nav>` is the single labelled landmark (label injected with `replace` on `.TableOfContents`); the aside has no label. The progress bar is `aria-hidden` and carries `data-value`. `<details class="toc" data-toggle-label>` passes the i18n toggle name to JS. |
+| `layouts/_partials/editorial/d1-discovery.html` | `9cabdd87cd07553ef6b5623bb3a7022db7f322ad` | COVERED | Further Essays (Hugo `.Related` in mainSections minus self and older/newer; featured = first with art via `page-art.html`) then Curated Reading (`data/d1_resources.yaml`, keyed by `File.TranslationBaseName`). In each head, the h2 comes before the kicker. Source CTAs carry the title in `.d1-sr`. Fallback when there is no related content: the latest essays in mainSections. |
+| `assets/css/editorial/d1.css` | `57cbc4224cfd72334678caab4e958877849823cf` | COVERED | `--d1-prose: 39.375rem` (= 70ch of the body face) positions the rail: `left: max(0, …)`, `right: 50% + prose/2 + gap`. Below 1110 px the rail is in flow. `.d1-sr` is the visually-hidden utility. `hr + h2` drops the second rule. `--d1-measure` (44rem) still sizes the header and tags. |
+| `assets/js/editorial.js` | `68a20023265bd76cb7452cbde2a9015cfd1f7507` | COVERED (D1 section) | TOC toggles (name from `data-toggle-label`, `%s` = section title), active section at 30 % of the viewport with `aria-current=location`, sections opened by hand stay as set, progress → `data-value` and fill width. |
+| `data/d1_resources.yaml` | `16179f5c78968e0323d6e69b87e2bf75d21d00b9` | COVERED | Three Nash entries, all with verified external URLs (Crossref/doi.org; masfoundations.org). |
+| `scripts/test-d1.cjs` | `ecd8d1c9f12797b40d806f5903170189cd32b51b` | COVERED | 29 checks. Needs `playwright` + `axe-core` on `NODE_PATH`; `CHROMIUM_PATH` selects a browser. Adds a rail check (1112–1920 px), screen-reader structure, distinct source names and doubled rules. |
+| `i18n/{vi,en,ja,zh-CN}.toml` | vi `9f843b6bf0f83f6c1abdab0fa68de2d25d09a2eb` | PARTIAL (D1 keys) | Adds `ed_tocToggle`. vi wording updated for `ed_curatedKicker` and `ed_affiliate`. ja/zh-CN carry English like the rest of their interface. |
+| `assets/css/editorial/site.css`, `typography.css` | `9dc573127606cae2bf67e10332e083fdf567b708`, `db1953f0d9a4253dc5b1301af2191e50e3e23a5f` | PARTIAL | `.prose { max-width: var(--ed-measure) }` = 70ch (the real prose width). Base `.toc` border/sticky rules sit under D1's overrides. `.prose h2` draws a border-top. |
+| `layouts/_partials/site/{masthead,brand}.html` | `41f823f465a4e5d37aecc55e7c84527729839870`, `320bd5f9424352d5d0a116e6e1b55c006f607567` | COVERED | Interim identity kept by owner decision until D5. The masthead strip text runs together for screen readers (pre-existing, not changed). |
+| `layouts/shortcodes/react.html` | `e4c31b450139fdfa9cc3bf2ce382d0dac822f870` | PARTIAL | `js.Build` mounts `assets/js/components/<name>.jsx`. A missing component fails the whole build; a local git-ignored `kalman-test` draft triggers this on the owner's machine only. |
+| `config/_default/module.toml`, `.github/workflows/deploy.yml` | `aa0dcce387d347b441e346f7de90c844695c0117`, `aa85e86dfc62d7df7905ddfc36c6ef281750d938` | PARTIAL | No theme module (FixIt is not mounted). CI pins Hugo 0.149.0 and runs `npm ci` + `hugo --gc --minify`. |
+| `docs/audits/d1/final/` | — | COVERED | Final pass evidence: harness/p3 JSON, Orca speech transcripts before/after, screenshots. |

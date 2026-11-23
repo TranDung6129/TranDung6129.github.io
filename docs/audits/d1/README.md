@@ -1,5 +1,56 @@
 # D1 Article Reading — implementation evidence
 
+## Final acceptance pass (Claude Code, 2026-11-23)
+
+**Status: READY FOR OWNER APPROVAL TO MERGE — not merged, not deployed.** Branch `feat/d1-article-reading`, PR #40. Commits in this pass: `b5c419e`, `27e046f`, `ccb5556`, plus the commit adding this section. Scope: close D1 only (bugs, accessibility, localisation, evidence). No layout redesign, no new modules.
+
+The owner handoff (`PHASE4_D1_CODEX_HANDOFF.md`) and `D1_APPROVED_REFERENCE.png` were available in the owner's workspace for this pass (untracked, not committed) and were read and viewed. The owner decided on 2026-11-23 that the brand mark, favicon and navigation flourishes stay in D1 as interim identity, to be replaced in D5 (DECISIONS D-016).
+
+### Defects found and fixed
+
+| # | Finding (how it was found) | Fix |
+|---|---|---|
+| 1 | **Contents rail clipped on 1111–1320 px screens (1280 px laptops).** The rail was positioned against a 44rem column, but the prose is 70ch = 39.375rem, so its left edge sat up to 80 px outside the article and the first characters of every entry were cut off. Seen in a 1280 px screenshot. The harness tested only 1440 and 1024, so it missed this. | The rail ends one gap before the real prose edge and starts no further left than the article. It narrows (165 px at 1112) instead of being cut. Prose boxes are identical to before at 390, 600, 700, 900, 1024, 1112 and 1440 px. New harness check covers 1112–1920. [before](final/screenshots/before-1280-rail-clipped.png) / [after](final/screenshots/after-1280-rail.png) |
+| 2 | **Orca said "N percent" during reading.** The progress bar was `role=progressbar`, so every scroll made Orca interrupt with "28 percent", "88 percent"… (7 times in the [before transcript](final/evidence/orca-before-fix-speech.txt)). | Visual only (`aria-hidden`). The contents list already exposes the current section through `aria-current`. 0 occurrences in the [after transcript](final/evidence/orca-after-fix-speech.txt). |
+| 3 | TOC toggle names were English on every language ("Toggle subsections for …"). | `ed_tocToggle` in i18n. Orca reads "Mục con của 3. Dominant Strategies… collapsed push button", then "expanded" / "collapsed" as it is pressed. |
+| 4 | Contents was a labelled `aside` wrapping an unlabelled `nav`, i.e. two nested landmarks. | One landmark: Hugo's `<nav>` carries the label ("Nội dung"). The aside has none. |
+| 5 | Discovery kickers came before their headings in the DOM, so Orca read "Tiếp nối mạch suy nghĩ" before "Đọc tiếp". | Heading first in the DOM. The visual order is unchanged. |
+| 6 | Two Curated Reading entries linked only to the essay's own reference list, because they could not be verified offline. | Verified on 2026-11-23: Kakutani DOI `10.1215/S0012-7094-41-00838-4` against Crossref (Duke Math. J. 8(3) 457–459, 1941) and doi.org (resolves to Project Euclid). `masfoundations.org` is the authors' official site for *Multiagent Systems* and offers the free eBook in agreement with Cambridge University Press. |
+| 7 | After #6, the three links were all named "Mở nguồn". | Each link carries its source title as screen-reader text, e.g. "Mở nguồn: Equilibrium Points in n-Person Games". |
+| 8 | Doubled rules: a Markdown `---` before a section heading plus the h2's own rule; the TOC border under the progress bar; the mobile panel border plus the TOC border. | One rule each. |
+| 9 | Vietnamese wording: "Từ nguồn gốc" and "liên kết tiếp thị liên kết". | "Từ nguồn trích dẫn"; "liên kết affiliate (tiếp thị liên kết)". |
+
+### Screen reader (real Orca, not simulated)
+
+- **Setup:** Orca 46.1 with Google Chrome (`--force-renderer-accessibility`). Both ran on an isolated nested X display (Xephyr `:99`) with their own D-Bus and AT-SPI buses and no audio sink, so the owner's desktop session was not touched. Keys were synthesised via AT-SPI (XTest) and received by Orca like keyboard input. Orca's debug log records every utterance, and the transcripts are excerpts of it.
+- **Why not Firefox:** the system Firefox is a snap, and AppArmor blocks AT-SPI clients started from this environment from reading its accessibility tree. **Firefox + Orca therefore remains untested.** Chrome exposes the same ARIA semantics through AT-SPI, but the two browsers do not behave identically.
+- **Covered:** browse-mode heading navigation (H), landmark navigation (M), Tab order through header, TOC and footer, toggle operation with Space, and the footer links in reverse.
+- **Heard:** "navigation Nội dung", "region Đọc tiếp", "region Tài liệu chọn lọc", "navigation Bài cũ hơn và mới hơn". Every essay link is announced once.
+- **Not covered:** mobile layout under a screen reader, and NVDA/JAWS/VoiceOver.
+
+Pre-existing issues heard, outside D1 (recorded, not changed):
+- English essays on Vietnamese pages are marked `lang="vi"`, so Orca reads English prose with a Vietnamese voice. This is a content-language metadata question for D4.
+- MathJax output is read symbol by symbol ("𝐺 = ( 𝑁 , …"). Math accessibility belongs to D2.
+- Every heading is followed by its permalink anchor, "Liên kết tới mục này: …".
+- The masthead strip reads "…VÀ THẾ GIỚITOÁN HỌC · KINH TẾ…" with no pause between its two halves.
+
+### Verification on the final tree (exit 0)
+
+| Check | Result |
+|---|---|
+| Clean build of the committed tree (`hugo --gc --minify`) | 0 warnings, 0 errors. A local, git-ignored `content/khoa-hoc-may-tinh/kalman-test*.md` draft breaks a build of the working copy; it is not in the repository and CI is unaffected. |
+| `node scripts/test-d1.cjs` → [d1-results.json](final/evidence/d1-results.json) | **29/29 PASS** (25 earlier checks + rail 1112–1920 px, screen-reader structure, distinct source links, no doubled rules); axe-core 4.10.2 0 violations |
+| `node docs/audits/p3-07/tools/p3-smoke.cjs` → [p3-smoke-results.json](final/evidence/p3-smoke-results.json) | **32/32 PASS**, axe 0 serious/critical |
+| Route parity vs `main` | HTML/XML/JSON route lists identical; `index.xml`, `sitemap.xml` and `en/index.xml` byte-identical |
+| Visual review against the approved reference | Viewport-centred prose, left rail with progress and a plant below it, centred navigation with flourishes, brand mark, branch headpiece, and two stacked equal-width discovery modules. All present. See the open item below. |
+
+Screenshots: [final/screenshots/](final/screenshots/).
+
+### Open for the owner (product decision, not a defect)
+
+- **Right-side balance.** The handoff records the owner's own critique that an empty right side can feel awkward, and allows a restrained *background* ornament there. The current build leaves the right side empty at all widths. Adding one needs new artwork, which is D5 territory.
+
+
 ## Phase 4 refinement and visual acceptance (Claude Code, 2026-11-22)
 
 **Status: READY FOR OWNER VISUAL REVIEW — not merged, not deployed.** Branch `feat/d1-article-reading`, on top of `origin/main` `c2898aa`. Commits: implementation `e2033a1`, test harness `33195bf`, this report and evidence: see the commit that adds `docs/audits/d1/refinement/` (hash in the PR description). The earlier pass by Codex is kept below; where it disagrees with this section, this section is current.
