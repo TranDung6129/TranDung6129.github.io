@@ -144,3 +144,19 @@ Agents may propose choices; changes to accepted product direction require mainta
 - **Numbering:** from positions in the Markdown source (`editorial/shortcode-source.html`; byte-safe), because Hugo can render a page several times and `.Store` counters would drift.
 - **Scope:** the Riemann (vi) and Nash (en) essays use the protocol. The other essays keep plain text until they are rewritten (D4 new essay set).
 - **Content correction (owner):** in the Nash essay, two-player PPAD-completeness is now cited to Chen, Deng & Teng (2009) and three-player to Daskalakis, Goldberg & Papadimitriou (2009). Both claims were verified against the papers' Crossref abstracts.
+
+## D-020 — D5 visual identity: engraved ornament library and the sprig mark
+- **Status:** ACCEPTED by the owner. Decisions 2026-11-24; visual board approved 2026-11-24 (library "Duyệt, triển khai"). Logo: option C was chosen first; at merge review the owner switched to option **A, the refined quill** (2026-11-24). Record: `docs/phases/phase-4/d5/`, evidence `docs/audits/d5/`.
+- **Ornaments:**
+  - Historical public-domain/CC0 engravings (Mattioli, Fuchs, Hollar, Rijksmuseum), each verified from its Wikimedia Commons metadata.
+  - Separated into alpha masks by `docs/phases/phase-4/d5/process.py` (captions and plate borders removed, nothing redrawn).
+  - Drawn as CSS masks in the accent colour, so they follow light/dark.
+  - Manifest `data/d1_ornaments.yaml` (fields copied from metadata only).
+  - Deterministic rotation per article now also covers the headpiece.
+  - The five hand-drawn D1 SVG prototypes are retired; no template, content or data referenced them after the change.
+- **Brand mark:**
+  - The refined quill (option A), inline SVG in `layouts/_partials/site/brand.html`, accent-coloured in both themes.
+  - Favicon `static/images/favicon.svg`: the same quill with heavier strokes and a dark-scheme colour.
+  - The Mattioli sprig stays an ornament only.
+- **Hero illustrations:** owner-made AI art following `docs/phases/phase-4/d5/HERO_GUIDE.md`; optional per essay, labelled "Minh hoạ", with provenance recorded.
+- **Not changed:** design tokens, fonts and spacing (Phase 2).

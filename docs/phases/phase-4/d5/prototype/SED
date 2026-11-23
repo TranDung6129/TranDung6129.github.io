@@ -1,2 +1,0 @@
-layouts/_partials/site/head-assets.html	s/"site" "d1" "d4" "d3"/"site" "d1" "d4" "d3" "d5"/
-layouts/_partials/editorial/article.html	s/(dict "role" "branch" "file" "branch.svg")/(dict "role" "branch" "file" $orn.branch)/g

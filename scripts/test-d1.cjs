@@ -69,7 +69,7 @@ const settle = page => page.evaluate(async () => {
         sourceNames: [...document.querySelectorAll('.source-item .discovery-cta')].map(a => a.textContent.replace(/\s+/g, ' ').trim()),
         doubleRules: [...document.querySelectorAll('.d1-article .prose hr + h2')].filter(h => getComputedStyle(h).borderTopStyle !== 'none').length,
         tocTopBorder: getComputedStyle(document.querySelector('.d1-article .toc')).borderTopStyle,
-        ornamentStroke: (() => { const g = document.querySelector('.toc-ornament svg g, .article-landscape svg g'); return g && getComputedStyle(g).stroke; })(),
+        ornamentStroke: (() => { const g = document.querySelector('.toc-ornament .ornament, .article-landscape .ornament'); return g && getComputedStyle(g).backgroundColor; })(),
       };
     });
     const prefix = `nash-${width}-${scheme}`;
@@ -106,7 +106,7 @@ const settle = page => page.evaluate(async () => {
   check('Curated Reading: every source opens its verified external page, and each link has a distinct accessible name', result.cases.every(c => c.sourceLinks.length === 3 && c.sourceLinks.every(h => /^https:\/\//.test(h)) && new Set(c.sourceNames).size === 3), { links: result.cases[0].sourceLinks, names: result.cases[0].sourceNames });
   check('No doubled rules: a Markdown rule before a section heading and the TOC top border are not drawn twice', result.cases.every(c => c.doubleRules === 0 && c.tocTopBorder === 'none'));
   check('No MathJax errors and formulas rendered', result.cases.every(c => c.mathErrors === 0 && c.mathContainers > 0), { containers: result.cases.map(c => c.mathContainers) });
-  check('Ornament line colour follows the theme (inline SVG, currentColor)', new Set(desktop.map(c => c.ornamentStroke)).size === 2, { strokes: desktop.map(c => [c.scheme, c.ornamentStroke]) });
+  check('Ornament colour follows the theme (D5 engraved masks filled with the accent colour)', new Set(desktop.map(c => c.ornamentStroke)).size === 2, { strokes: desktop.map(c => [c.scheme, c.ornamentStroke]) });
 
   // 2. Sticky TOC and progress through a long essay at desktop sizes.
   for (const [width, height] of [[1440, 900], [1280, 720]]) {
