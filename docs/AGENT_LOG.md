@@ -386,3 +386,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - `p3-smoke.cjs`: 32/32.
 - **Not changed (owner/Phase 3 scope):** the English hero headline "Ideas worth staying with." and the English section names on the Vietnamese site; tag labels shown as title-cased slugs ("Ly-Thuyet-Tro-Choi") → D4 metadata.
 - **Next:** owner approves the merge; then D4 discovery.
+
+### 2026-11-23 — D4 content architecture: discovery started — Claude Code
+- **Branch:** `docs/d4-discovery`. Claim: TASK_BOARD row D4 → IN PROGRESS.
+- **Production checks (post-merge):** D1 PR #40 (`4b6d328`) and D-017 PR #41 (`8a86b25`) deployed. `D1_BASE=https://trandung6129.github.io node scripts/test-d1.cjs` → 31/31. Redirects for removed copies and retired listings answer on the live site.
+- **Owner decisions:** Vietnamese first with selected English editions; Volumes are purposeful books, with Series as lighter chains in the Journal; Discover becomes a resource library. Recorded in `docs/phases/phase-4/d4/DISCOVERY.md`.
+- **Next:** owner answers on topics, navigation, ja/zh interfaces and Volume I; then DESIGN_SPEC with navigation and archive/series mockups.
