@@ -689,3 +689,13 @@ Blob SHAs are working-tree hashes at commit `ccb5556` on `feat/d1-article-readin
 | `layouts/index.html` | PARTIAL | The volume slot shows the newest series (`aside.volume.home-series`) when no volume exists. |
 | `assets/css/editorial/d4.css` | COVERED | D4 components on existing tokens; breakpoints 850/560. |
 | `docs/audits/d4/tools/{d4-check.cjs,check-redirects.py}` | COVERED | 48-state matrix + axe + keyboard; redirect targets and lost-route diff. |
+
+## 2026-11-24 — D3 citations (Claude Code)
+
+| Path | Status | Purpose / findings |
+|---|---|---|
+| `data/bibliography.yaml` | COVERED | Verified source library (11 entries); `verified` per entry. |
+| `layouts/shortcodes/{cite,note,references}.html` | COVERED | Citation (author–date, narrative, locator; id `cite-<key>-<n>`), sidenote (`sn-<n>`), and the A–Z list with backlinks. `n` is counted from source positions; the key must be the first argument. |
+| `layouts/_partials/editorial/shortcode-source.html` | COVERED | Reads the page file and pads non-ASCII characters to their UTF-8 byte length, so `substr` can cut at `.Position.Offset` (bytes). |
+| `layouts/_partials/editorial/bib-resolve.html` | COVERED | Merges library fields into Curated Reading and Discover items (`bib:`). |
+| `assets/css/editorial/d3.css`, `assets/js/editorial.js` (D3 block) | COVERED | Margin notes ≥ 1240 px; the preview follows its citation on scroll. `.prose cite` (typography.css) is small caps, so the reference list resets it. |

@@ -1,6 +1,6 @@
 # D3 — Citation & research protocol: design specification
 
-**Status:** PROTOTYPE READY FOR OWNER REVIEW (2026-11-24). Nothing is live. Decisions: `DISCOVERY.md`. Prototype: `prototype/`, built with `scripts/preview-overlay.sh docs/phases/phase-4/d3/prototype <dir>`. Screenshots: `docs/audits/d3/screenshots/`. Checks: `docs/audits/d3/tools/d3-check.cjs` → `docs/audits/d3/d3-results.json` (18/18).
+**Status:** APPROVED by the owner 2026-11-24 and implemented in `feat/d3-citations` (D-019). The review-only prototype overlay was removed once the same files moved into `data/`, `layouts/`, `assets/` and `content/`. Decisions: `DISCOVERY.md`. Screenshots: `docs/audits/d3/screenshots/`. Checks: `docs/audits/d3/tools/d3-check.cjs` → `docs/audits/d3/d3-results.json` (18/18).
 
 Samples: the Vietnamese Riemann essay (3 sources, one cited twice, one narrative citation, one note) and the English Nash essay (5 sources, one note).
 

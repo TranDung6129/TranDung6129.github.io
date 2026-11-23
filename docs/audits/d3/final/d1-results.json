@@ -1,0 +1,1956 @@
+{
+  "base": "http://127.0.0.1:1338",
+  "date": "2026-11-23T20:48:09.466Z",
+  "cases": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scheme": "light",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "overflow": false,
+      "viewport": 1440,
+      "prose": {
+        "left": 412.1875,
+        "right": 1027.796875,
+        "width": 615.609375,
+        "center": 719.9921875
+      },
+      "header": {
+        "left": 368,
+        "right": 1072,
+        "width": 704,
+        "center": 720
+      },
+      "nav": {
+        "left": 494.875,
+        "right": 945.125,
+        "width": 450.25,
+        "center": 720
+      },
+      "aside": {
+        "left": 139.390625,
+        "right": 347.40625,
+        "width": 208.015625,
+        "center": 243.3984375
+      },
+      "footer": {
+        "left": 256,
+        "right": 1184,
+        "width": 928,
+        "center": 720
+      },
+      "asidePosition": "absolute",
+      "h2Links": 12,
+      "toggles": 5,
+      "discovery": [
+        "discovery-reading"
+      ],
+      "headings": [
+        "Curated reading"
+      ],
+      "featured": 0,
+      "featuredArt": false,
+      "supporting": 0,
+      "sources": 3,
+      "modules": {
+        "reading": {
+          "width": 928,
+          "height": 385
+        }
+      },
+      "relatedReading": 0,
+      "bodyBackground": "none",
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg",
+      "tocNavLabel": "Contents",
+      "progressHidden": true,
+      "discoveryOrder": [
+        "H2"
+      ],
+      "asideLabel": null,
+      "toggleLabels": [
+        "Subsections of 2. Formal Setup: Strategic-Form Games",
+        "Subsections of 3. Dominant Strategies and Iterated Elimination",
+        "Subsections of 4. Nash Equilibrium",
+        "Subsections of 6. Mixed-Strategy NE in 2×2 Games",
+        "Subsections of 9. Extensions and Applications"
+      ],
+      "sourceLinks": [
+        "https://doi.org/10.1073/pnas.36.1.48",
+        "https://www.masfoundations.org/",
+        "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      ],
+      "sourceNames": [
+        "Open the source: Equilibrium points in n-person games ↗",
+        "Open the source: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations ↗",
+        "Open the source: A generalization of Brouwer's fixed point theorem ↗"
+      ],
+      "doubleRules": 0,
+      "tocTopBorder": "none",
+      "ornamentStroke": "rgb(140, 74, 50)"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scheme": "dark",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "overflow": false,
+      "viewport": 1440,
+      "prose": {
+        "left": 412.1875,
+        "right": 1027.796875,
+        "width": 615.609375,
+        "center": 719.9921875
+      },
+      "header": {
+        "left": 368,
+        "right": 1072,
+        "width": 704,
+        "center": 720
+      },
+      "nav": {
+        "left": 494.875,
+        "right": 945.125,
+        "width": 450.25,
+        "center": 720
+      },
+      "aside": {
+        "left": 139.390625,
+        "right": 347.40625,
+        "width": 208.015625,
+        "center": 243.3984375
+      },
+      "footer": {
+        "left": 256,
+        "right": 1184,
+        "width": 928,
+        "center": 720
+      },
+      "asidePosition": "absolute",
+      "h2Links": 12,
+      "toggles": 5,
+      "discovery": [
+        "discovery-reading"
+      ],
+      "headings": [
+        "Curated reading"
+      ],
+      "featured": 0,
+      "featuredArt": false,
+      "supporting": 0,
+      "sources": 3,
+      "modules": {
+        "reading": {
+          "width": 928,
+          "height": 385
+        }
+      },
+      "relatedReading": 0,
+      "bodyBackground": "none",
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg",
+      "tocNavLabel": "Contents",
+      "progressHidden": true,
+      "discoveryOrder": [
+        "H2"
+      ],
+      "asideLabel": null,
+      "toggleLabels": [
+        "Subsections of 2. Formal Setup: Strategic-Form Games",
+        "Subsections of 3. Dominant Strategies and Iterated Elimination",
+        "Subsections of 4. Nash Equilibrium",
+        "Subsections of 6. Mixed-Strategy NE in 2×2 Games",
+        "Subsections of 9. Extensions and Applications"
+      ],
+      "sourceLinks": [
+        "https://doi.org/10.1073/pnas.36.1.48",
+        "https://www.masfoundations.org/",
+        "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      ],
+      "sourceNames": [
+        "Open the source: Equilibrium points in n-person games ↗",
+        "Open the source: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations ↗",
+        "Open the source: A generalization of Brouwer's fixed point theorem ↗"
+      ],
+      "doubleRules": 0,
+      "tocTopBorder": "none",
+      "ornamentStroke": "rgb(212, 163, 115)"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scheme": "light",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "overflow": false,
+      "viewport": 1024,
+      "prose": {
+        "left": 204.1875,
+        "right": 819.796875,
+        "width": 615.609375,
+        "center": 511.9921875
+      },
+      "header": {
+        "left": 160,
+        "right": 864,
+        "width": 704,
+        "center": 512
+      },
+      "nav": {
+        "left": 309.328125,
+        "right": 714.671875,
+        "width": 405.34375,
+        "center": 512
+      },
+      "aside": {
+        "left": 160,
+        "right": 864,
+        "width": 704,
+        "center": 512
+      },
+      "footer": {
+        "left": 48,
+        "right": 976,
+        "width": 928,
+        "center": 512
+      },
+      "asidePosition": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "discovery": [
+        "discovery-reading"
+      ],
+      "headings": [
+        "Curated reading"
+      ],
+      "featured": 0,
+      "featuredArt": false,
+      "supporting": 0,
+      "sources": 3,
+      "modules": {
+        "reading": {
+          "width": 928,
+          "height": 382
+        }
+      },
+      "relatedReading": 0,
+      "bodyBackground": "none",
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg",
+      "tocNavLabel": "Contents",
+      "progressHidden": true,
+      "discoveryOrder": [
+        "H2"
+      ],
+      "asideLabel": null,
+      "toggleLabels": [
+        "Subsections of 2. Formal Setup: Strategic-Form Games",
+        "Subsections of 3. Dominant Strategies and Iterated Elimination",
+        "Subsections of 4. Nash Equilibrium",
+        "Subsections of 6. Mixed-Strategy NE in 2×2 Games",
+        "Subsections of 9. Extensions and Applications"
+      ],
+      "sourceLinks": [
+        "https://doi.org/10.1073/pnas.36.1.48",
+        "https://www.masfoundations.org/",
+        "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      ],
+      "sourceNames": [
+        "Open the source: Equilibrium points in n-person games ↗",
+        "Open the source: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations ↗",
+        "Open the source: A generalization of Brouwer's fixed point theorem ↗"
+      ],
+      "doubleRules": 0,
+      "tocTopBorder": "none",
+      "ornamentStroke": "rgb(140, 74, 50)"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scheme": "dark",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "overflow": false,
+      "viewport": 1024,
+      "prose": {
+        "left": 204.1875,
+        "right": 819.796875,
+        "width": 615.609375,
+        "center": 511.9921875
+      },
+      "header": {
+        "left": 160,
+        "right": 864,
+        "width": 704,
+        "center": 512
+      },
+      "nav": {
+        "left": 309.328125,
+        "right": 714.671875,
+        "width": 405.34375,
+        "center": 512
+      },
+      "aside": {
+        "left": 160,
+        "right": 864,
+        "width": 704,
+        "center": 512
+      },
+      "footer": {
+        "left": 48,
+        "right": 976,
+        "width": 928,
+        "center": 512
+      },
+      "asidePosition": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "discovery": [
+        "discovery-reading"
+      ],
+      "headings": [
+        "Curated reading"
+      ],
+      "featured": 0,
+      "featuredArt": false,
+      "supporting": 0,
+      "sources": 3,
+      "modules": {
+        "reading": {
+          "width": 928,
+          "height": 382
+        }
+      },
+      "relatedReading": 0,
+      "bodyBackground": "none",
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg",
+      "tocNavLabel": "Contents",
+      "progressHidden": true,
+      "discoveryOrder": [
+        "H2"
+      ],
+      "asideLabel": null,
+      "toggleLabels": [
+        "Subsections of 2. Formal Setup: Strategic-Form Games",
+        "Subsections of 3. Dominant Strategies and Iterated Elimination",
+        "Subsections of 4. Nash Equilibrium",
+        "Subsections of 6. Mixed-Strategy NE in 2×2 Games",
+        "Subsections of 9. Extensions and Applications"
+      ],
+      "sourceLinks": [
+        "https://doi.org/10.1073/pnas.36.1.48",
+        "https://www.masfoundations.org/",
+        "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      ],
+      "sourceNames": [
+        "Open the source: Equilibrium points in n-person games ↗",
+        "Open the source: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations ↗",
+        "Open the source: A generalization of Brouwer's fixed point theorem ↗"
+      ],
+      "doubleRules": 0,
+      "tocTopBorder": "none",
+      "ornamentStroke": "rgb(212, 163, 115)"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scheme": "light",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "overflow": false,
+      "viewport": 390,
+      "prose": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "header": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "nav": {
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "center": 0
+      },
+      "aside": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "footer": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "asidePosition": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "discovery": [
+        "discovery-reading"
+      ],
+      "headings": [
+        "Curated reading"
+      ],
+      "featured": 0,
+      "featuredArt": false,
+      "supporting": 0,
+      "sources": 3,
+      "modules": {
+        "reading": {
+          "width": 354,
+          "height": 778
+        }
+      },
+      "relatedReading": 0,
+      "bodyBackground": "none",
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg",
+      "tocNavLabel": "Contents",
+      "progressHidden": true,
+      "discoveryOrder": [
+        "H2"
+      ],
+      "asideLabel": null,
+      "toggleLabels": [
+        "Subsections of 2. Formal Setup: Strategic-Form Games",
+        "Subsections of 3. Dominant Strategies and Iterated Elimination",
+        "Subsections of 4. Nash Equilibrium",
+        "Subsections of 6. Mixed-Strategy NE in 2×2 Games",
+        "Subsections of 9. Extensions and Applications"
+      ],
+      "sourceLinks": [
+        "https://doi.org/10.1073/pnas.36.1.48",
+        "https://www.masfoundations.org/",
+        "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      ],
+      "sourceNames": [
+        "Open the source: Equilibrium points in n-person games ↗",
+        "Open the source: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations ↗",
+        "Open the source: A generalization of Brouwer's fixed point theorem ↗"
+      ],
+      "doubleRules": 0,
+      "tocTopBorder": "none",
+      "ornamentStroke": "rgb(140, 74, 50)"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scheme": "dark",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "overflow": false,
+      "viewport": 390,
+      "prose": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "header": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "nav": {
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "center": 0
+      },
+      "aside": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "footer": {
+        "left": 18,
+        "right": 372,
+        "width": 354,
+        "center": 195
+      },
+      "asidePosition": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "discovery": [
+        "discovery-reading"
+      ],
+      "headings": [
+        "Curated reading"
+      ],
+      "featured": 0,
+      "featuredArt": false,
+      "supporting": 0,
+      "sources": 3,
+      "modules": {
+        "reading": {
+          "width": 354,
+          "height": 778
+        }
+      },
+      "relatedReading": 0,
+      "bodyBackground": "none",
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg",
+      "tocNavLabel": "Contents",
+      "progressHidden": true,
+      "discoveryOrder": [
+        "H2"
+      ],
+      "asideLabel": null,
+      "toggleLabels": [
+        "Subsections of 2. Formal Setup: Strategic-Form Games",
+        "Subsections of 3. Dominant Strategies and Iterated Elimination",
+        "Subsections of 4. Nash Equilibrium",
+        "Subsections of 6. Mixed-Strategy NE in 2×2 Games",
+        "Subsections of 9. Extensions and Applications"
+      ],
+      "sourceLinks": [
+        "https://doi.org/10.1073/pnas.36.1.48",
+        "https://www.masfoundations.org/",
+        "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      ],
+      "sourceNames": [
+        "Open the source: Equilibrium points in n-person games ↗",
+        "Open the source: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations ↗",
+        "Open the source: A generalization of Brouwer's fixed point theorem ↗"
+      ],
+      "doubleRules": 0,
+      "tocTopBorder": "none",
+      "ornamentStroke": "rgb(212, 163, 115)"
+    }
+  ],
+  "sticky": [
+    {
+      "width": 1440,
+      "height": 900,
+      "fraction": 0.1,
+      "tocTop": 24,
+      "tocBottom": 575,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 10,
+      "current": "2-formal-setup-strategic-form-games",
+      "expected": "2-formal-setup-strategic-form-games",
+      "currentVisible": true,
+      "open": [
+        "2. Formal Setup: Strategic-For"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "fraction": 0.25,
+      "tocTop": 24,
+      "tocBottom": 623,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 25,
+      "current": "32-the-prisoners-dilemma",
+      "expected": "32-the-prisoners-dilemma",
+      "currentVisible": true,
+      "open": [
+        "3. Dominant Strategies and Ite"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "fraction": 0.5,
+      "tocTop": 24,
+      "tocBottom": 632,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 50,
+      "current": "61-indifference-principle",
+      "expected": "61-indifference-principle",
+      "currentVisible": true,
+      "open": [
+        "6. Mixed-Strategy NE in 2×2 Ga"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "fraction": 0.75,
+      "tocTop": 24,
+      "tocBottom": 732,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 75,
+      "current": "101-correlated-equilibrium",
+      "expected": "101-correlated-equilibrium",
+      "currentVisible": true,
+      "open": [
+        "9. Extensions and Applications"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "fraction": 0.98,
+      "tocTop": 24,
+      "tocBottom": 535,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 98,
+      "current": "11-interactive-exploration",
+      "expected": "11-interactive-exploration",
+      "currentVisible": true,
+      "open": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "fraction": 0.1,
+      "tocTop": 24,
+      "tocBottom": 575,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 10,
+      "current": "2-formal-setup-strategic-form-games",
+      "expected": "2-formal-setup-strategic-form-games",
+      "currentVisible": true,
+      "open": [
+        "2. Formal Setup: Strategic-For"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "fraction": 0.25,
+      "tocTop": 24,
+      "tocBottom": 623,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 25,
+      "current": "32-the-prisoners-dilemma",
+      "expected": "32-the-prisoners-dilemma",
+      "currentVisible": true,
+      "open": [
+        "3. Dominant Strategies and Ite"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "fraction": 0.5,
+      "tocTop": 24,
+      "tocBottom": 632,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 50,
+      "current": "62-matching-pennies",
+      "expected": "62-matching-pennies",
+      "currentVisible": true,
+      "open": [
+        "6. Mixed-Strategy NE in 2×2 Ga"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "fraction": 0.75,
+      "tocTop": 24,
+      "tocBottom": 704,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 75,
+      "current": "101-correlated-equilibrium",
+      "expected": "101-correlated-equilibrium",
+      "currentVisible": true,
+      "open": [
+        "9. Extensions and Applications"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "fraction": 0.98,
+      "tocTop": 24,
+      "tocBottom": 535,
+      "inView": true,
+      "progressTop": 16,
+      "progress": 98,
+      "current": "11-interactive-exploration",
+      "expected": "11-interactive-exploration",
+      "currentVisible": true,
+      "open": []
+    }
+  ],
+  "pages": [
+    {
+      "route": "/kinh-te/toan-co-ban-1/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "vi",
+      "prose": 719.9921875,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 1): Đạo Hàm và Hàm Tế",
+      "titleLines": 3,
+      "tablesScroll": true,
+      "math": 15,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [
+        "discovery-essays"
+      ],
+      "featuredArt": false,
+      "textOnly": true,
+      "fontSize": 16.64,
+      "essaysWidth": 928,
+      "featuredCount": 1,
+      "supportingCount": 2,
+      "tocNavLabel": "Nội dung",
+      "toggleLabels": [],
+      "centred": true
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-1/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "vi",
+      "prose": 195,
+      "title": "Toán Cơ Bản Cho Kinh Tế (Phần 1): Đạo Hàm và Hàm Tế",
+      "titleLines": 3,
+      "tablesScroll": true,
+      "math": 15,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [
+        "discovery-essays"
+      ],
+      "featuredArt": false,
+      "textOnly": true,
+      "fontSize": 16,
+      "essaysWidth": 354,
+      "featuredCount": 1,
+      "supportingCount": 2,
+      "tocNavLabel": "Nội dung",
+      "toggleLabels": [],
+      "centred": true
+    },
+    {
+      "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "vi",
+      "prose": 719.9921875,
+      "title": "Lý Thuyết Trò Chơi và Cân Bằng Nash: Từ Cơ Sở Toán Học Đến Ứng Dụng Kinh Tế",
+      "titleLines": 4,
+      "tablesScroll": true,
+      "math": 54,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [
+        "discovery-essays"
+      ],
+      "featuredArt": false,
+      "textOnly": true,
+      "fontSize": 16.64,
+      "essaysWidth": 928,
+      "featuredCount": 1,
+      "supportingCount": 0,
+      "tocNavLabel": "Nội dung",
+      "toggleLabels": [
+        "Mục con của 1. Cơ Sở Toán Học Của Lý Thuyết Trò Chơi",
+        "Mục con của 2. Định Lý Tồn Tại Cân Bằng Nash",
+        "Mục con của 3. Phân Tích Toán Học Sâu Hơn",
+        "Mục con của 4. Ứng Dụng: Cạnh Tranh Cournot",
+        "Mục con của 5. Mở Rộng: Trò Chơi Động",
+        "Mục con của 6. Lý Thuyết Đấu Giá",
+        "Mục con của 7. Trò Chơi Tiến Hóa",
+        "Mục con của 8. Ứng Dụng Thực Tiễn",
+        "Mục con của 9. Phương Pháp Tính Toán Hiện Đại",
+        "Mục con của 10. Giới Hạn và Phê Phán"
+      ],
+      "centred": true
+    },
+    {
+      "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "vi",
+      "prose": 195,
+      "title": "Lý Thuyết Trò Chơi và Cân Bằng Nash: Từ Cơ Sở Toán Học Đến Ứng Dụng Kinh Tế",
+      "titleLines": 4,
+      "tablesScroll": true,
+      "math": 54,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [
+        "discovery-essays"
+      ],
+      "featuredArt": false,
+      "textOnly": true,
+      "fontSize": 16,
+      "essaysWidth": 354,
+      "featuredCount": 1,
+      "supportingCount": 0,
+      "tocNavLabel": "Nội dung",
+      "toggleLabels": [
+        "Mục con của 1. Cơ Sở Toán Học Của Lý Thuyết Trò Chơi",
+        "Mục con của 2. Định Lý Tồn Tại Cân Bằng Nash",
+        "Mục con của 3. Phân Tích Toán Học Sâu Hơn",
+        "Mục con của 4. Ứng Dụng: Cạnh Tranh Cournot",
+        "Mục con của 5. Mở Rộng: Trò Chơi Động",
+        "Mục con của 6. Lý Thuyết Đấu Giá",
+        "Mục con của 7. Trò Chơi Tiến Hóa",
+        "Mục con của 8. Ứng Dụng Thực Tiễn",
+        "Mục con của 9. Phương Pháp Tính Toán Hiện Đại",
+        "Mục con của 10. Giới Hạn và Phê Phán"
+      ],
+      "centred": true
+    },
+    {
+      "route": "/toan-hoc/riemann-hypothesis-number-theory/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "vi",
+      "prose": 719.9921875,
+      "title": "Lý Thuyết Số và Giả Thuyết Riemann: Từ Hàm Zeta đến Cryptography",
+      "titleLines": 4,
+      "tablesScroll": true,
+      "math": 62,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [
+        "discovery-essays"
+      ],
+      "featuredArt": true,
+      "textOnly": false,
+      "fontSize": 16.64,
+      "essaysWidth": 928,
+      "featuredCount": 1,
+      "supportingCount": 2,
+      "tocNavLabel": "Nội dung",
+      "toggleLabels": [
+        "Mục con của 1. Hàm Zeta Riemann và Mở Rộng Analytic",
+        "Mục con của 2. Giả Thuyết Riemann",
+        "Mục con của 3. Phân Tích Số Học và Ứng Dụng",
+        "Mục con của 4. Computational Aspects",
+        "Mục con của 5. L-Functions và Generalizations",
+        "Mục con của 6. Ứng Dụng Trong Cryptography",
+        "Mục con của 7. Connections với Physics",
+        "Mục con của 8. Alternative Approaches",
+        "Mục con của 9. Attempts và Partial Results",
+        "Mục con của 10. Consequences của RH",
+        "Mục con của 11. Modern Approaches và Future Directions"
+      ],
+      "centred": true
+    },
+    {
+      "route": "/toan-hoc/riemann-hypothesis-number-theory/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "vi",
+      "prose": 195,
+      "title": "Lý Thuyết Số và Giả Thuyết Riemann: Từ Hàm Zeta đến Cryptography",
+      "titleLines": 4,
+      "tablesScroll": true,
+      "math": 62,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [
+        "discovery-essays"
+      ],
+      "featuredArt": true,
+      "textOnly": false,
+      "fontSize": 16,
+      "essaysWidth": 354,
+      "featuredCount": 1,
+      "supportingCount": 2,
+      "tocNavLabel": "Nội dung",
+      "toggleLabels": [
+        "Mục con của 1. Hàm Zeta Riemann và Mở Rộng Analytic",
+        "Mục con của 2. Giả Thuyết Riemann",
+        "Mục con của 3. Phân Tích Số Học và Ứng Dụng",
+        "Mục con của 4. Computational Aspects",
+        "Mục con của 5. L-Functions và Generalizations",
+        "Mục con của 6. Ứng Dụng Trong Cryptography",
+        "Mục con của 7. Connections với Physics",
+        "Mục con của 8. Alternative Approaches",
+        "Mục con của 9. Attempts và Partial Results",
+        "Mục con của 10. Consequences của RH",
+        "Mục con của 11. Modern Approaches và Future Directions"
+      ],
+      "centred": true
+    },
+    {
+      "route": "/en/kinh-te/toan-co-ban-1/",
+      "width": 1440,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "en",
+      "prose": 719.9921875,
+      "title": "Basic Mathematics for Economics (Part 1): Derivatives and Marginal Functions",
+      "titleLines": 4,
+      "tablesScroll": true,
+      "math": 15,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [],
+      "featuredArt": false,
+      "textOnly": false,
+      "fontSize": 16.64,
+      "essaysWidth": 0,
+      "featuredCount": 0,
+      "supportingCount": 0,
+      "tocNavLabel": "Contents",
+      "toggleLabels": [],
+      "centred": true
+    },
+    {
+      "route": "/en/kinh-te/toan-co-ban-1/",
+      "width": 390,
+      "status": 200,
+      "errors": [],
+      "overflow": false,
+      "lang": "en",
+      "prose": 195,
+      "title": "Basic Mathematics for Economics (Part 1): Derivatives and Marginal Functions",
+      "titleLines": 4,
+      "tablesScroll": true,
+      "math": 15,
+      "mathErrors": 0,
+      "displayMathInside": true,
+      "footer": [],
+      "featuredArt": false,
+      "textOnly": false,
+      "fontSize": 16,
+      "essaysWidth": 0,
+      "featuredCount": 0,
+      "supportingCount": 0,
+      "tocNavLabel": "Contents",
+      "toggleLabels": [],
+      "centred": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "All 6 Nash states load (HTTP 200) without horizontal overflow, page errors or failed requests",
+      "passed": true,
+      "states": [
+        {
+          "w": 1440,
+          "s": "light",
+          "overflow": false,
+          "errors": [],
+          "failed": []
+        },
+        {
+          "w": 1440,
+          "s": "dark",
+          "overflow": false,
+          "errors": [],
+          "failed": []
+        },
+        {
+          "w": 1024,
+          "s": "light",
+          "overflow": false,
+          "errors": [],
+          "failed": []
+        },
+        {
+          "w": 1024,
+          "s": "dark",
+          "overflow": false,
+          "errors": [],
+          "failed": []
+        },
+        {
+          "w": 390,
+          "s": "light",
+          "overflow": false,
+          "errors": [],
+          "failed": []
+        },
+        {
+          "w": 390,
+          "s": "dark",
+          "overflow": false,
+          "errors": [],
+          "failed": []
+        }
+      ]
+    },
+    {
+      "name": "Prose column centre within 2px of the viewport centre at 1440, 1024 and 390",
+      "passed": true,
+      "centres": [
+        [
+          1440,
+          "light",
+          719.99,
+          720
+        ],
+        [
+          1440,
+          "dark",
+          719.99,
+          720
+        ],
+        [
+          1024,
+          "light",
+          511.99,
+          512
+        ],
+        [
+          1024,
+          "dark",
+          511.99,
+          512
+        ],
+        [
+          390,
+          "light",
+          195,
+          195
+        ],
+        [
+          390,
+          "dark",
+          195,
+          195
+        ]
+      ]
+    },
+    {
+      "name": "Article header and footer share the prose centre (±2px)",
+      "passed": true
+    },
+    {
+      "name": "Desktop rail sits left of the prose without overlap; tablet/mobile put it in flow",
+      "passed": true,
+      "positions": [
+        [
+          1440,
+          "absolute"
+        ],
+        [
+          1440,
+          "absolute"
+        ],
+        [
+          1024,
+          "static"
+        ],
+        [
+          1024,
+          "static"
+        ],
+        [
+          390,
+          "static"
+        ],
+        [
+          390,
+          "static"
+        ]
+      ]
+    },
+    {
+      "name": "Desktop navigation centred within 2px",
+      "passed": true,
+      "centres": [
+        720,
+        720
+      ]
+    },
+    {
+      "name": "TOC has H2 links and H3 toggles",
+      "passed": true,
+      "h2": 12,
+      "toggles": 5
+    },
+    {
+      "name": "English Nash footer: Curated Reading with three sources, no empty Further Essays module",
+      "passed": true,
+      "headings": [
+        "Curated reading"
+      ]
+    },
+    {
+      "name": "Old duplicate \"Related reading\" list removed; no texture behind the page",
+      "passed": true
+    },
+    {
+      "name": "Screen-reader structure: one labelled contents landmark, localised toggle names, progress bar hidden from AT (no \"N percent\" interruptions), discovery headings precede their kickers",
+      "passed": true,
+      "navLabel": "Contents",
+      "toggles": [
+        "Subsections of 2. Formal Setup: Strategic-Form Games",
+        "Subsections of 3. Dominant Strategies and Iterated Elimination",
+        "Subsections of 4. Nash Equilibrium",
+        "Subsections of 6. Mixed-Strategy NE in 2×2 Games",
+        "Subsections of 9. Extensions and Applications"
+      ]
+    },
+    {
+      "name": "Curated Reading: every source opens its verified external page, and each link has a distinct accessible name",
+      "passed": true,
+      "links": [
+        "https://doi.org/10.1073/pnas.36.1.48",
+        "https://www.masfoundations.org/",
+        "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      ],
+      "names": [
+        "Open the source: Equilibrium points in n-person games ↗",
+        "Open the source: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations ↗",
+        "Open the source: A generalization of Brouwer's fixed point theorem ↗"
+      ]
+    },
+    {
+      "name": "No doubled rules: a Markdown rule before a section heading and the TOC top border are not drawn twice",
+      "passed": true
+    },
+    {
+      "name": "No MathJax errors and formulas rendered",
+      "passed": true,
+      "containers": [
+        68,
+        68,
+        68,
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "name": "Ornament line colour follows the theme (inline SVG, currentColor)",
+      "passed": true,
+      "strokes": [
+        [
+          "light",
+          "rgb(140, 74, 50)"
+        ],
+        [
+          "dark",
+          "rgb(212, 163, 115)"
+        ]
+      ]
+    },
+    {
+      "name": "TOC panel and progress stay fully in view at 10/25/50/75/98% of the essay (1440×900, 1280×720)",
+      "passed": true,
+      "sticky": [
+        [
+          1440,
+          0.1,
+          24,
+          575
+        ],
+        [
+          1440,
+          0.25,
+          24,
+          623
+        ],
+        [
+          1440,
+          0.5,
+          24,
+          632
+        ],
+        [
+          1440,
+          0.75,
+          24,
+          732
+        ],
+        [
+          1440,
+          0.98,
+          24,
+          535
+        ],
+        [
+          1280,
+          0.1,
+          24,
+          575
+        ],
+        [
+          1280,
+          0.25,
+          24,
+          623
+        ],
+        [
+          1280,
+          0.5,
+          24,
+          632
+        ],
+        [
+          1280,
+          0.75,
+          24,
+          704
+        ],
+        [
+          1280,
+          0.98,
+          24,
+          535
+        ]
+      ]
+    },
+    {
+      "name": "Active TOC entry matches the heading being read and is visible inside the panel",
+      "passed": true,
+      "pairs": [
+        [
+          0.1,
+          "2-formal-setup-strategic-form-games",
+          "2-formal-setup-strategic-form-games"
+        ],
+        [
+          0.25,
+          "32-the-prisoners-dilemma",
+          "32-the-prisoners-dilemma"
+        ],
+        [
+          0.5,
+          "61-indifference-principle",
+          "61-indifference-principle"
+        ],
+        [
+          0.75,
+          "101-correlated-equilibrium",
+          "101-correlated-equilibrium"
+        ],
+        [
+          0.98,
+          "11-interactive-exploration",
+          "11-interactive-exploration"
+        ],
+        [
+          0.1,
+          "2-formal-setup-strategic-form-games",
+          "2-formal-setup-strategic-form-games"
+        ],
+        [
+          0.25,
+          "32-the-prisoners-dilemma",
+          "32-the-prisoners-dilemma"
+        ],
+        [
+          0.5,
+          "62-matching-pennies",
+          "62-matching-pennies"
+        ],
+        [
+          0.75,
+          "101-correlated-equilibrium",
+          "101-correlated-equilibrium"
+        ],
+        [
+          0.98,
+          "11-interactive-exploration",
+          "11-interactive-exploration"
+        ]
+      ]
+    },
+    {
+      "name": "H3 lists collapse contextually: at most one section open at each position",
+      "passed": true,
+      "open": [
+        [
+          "2. Formal Setup: Strategic-For"
+        ],
+        [
+          "3. Dominant Strategies and Ite"
+        ],
+        [
+          "6. Mixed-Strategy NE in 2×2 Ga"
+        ],
+        [
+          "9. Extensions and Applications"
+        ],
+        [],
+        [
+          "2. Formal Setup: Strategic-For"
+        ],
+        [
+          "3. Dominant Strategies and Ite"
+        ],
+        [
+          "6. Mixed-Strategy NE in 2×2 Ga"
+        ],
+        [
+          "9. Extensions and Applications"
+        ],
+        []
+      ]
+    },
+    {
+      "name": "Progress tracks the article body (monotonic, 0–100)",
+      "passed": true,
+      "progress": [
+        10,
+        25,
+        50,
+        75,
+        98,
+        10,
+        25,
+        50,
+        75,
+        98
+      ]
+    },
+    {
+      "name": "A section opened by hand stays open while the reader is elsewhere",
+      "passed": true,
+      "before": "false",
+      "after": "true",
+      "kept": "true"
+    },
+    {
+      "name": "Deep link lands on its heading and the TOC marks that section",
+      "passed": true,
+      "top": 24.1875,
+      "current": "#41-definition",
+      "section": "#4-nash-equilibrium"
+    },
+    {
+      "name": "Keyboard: skip link first, TOC links and toggles reachable, every stop has a visible outline",
+      "passed": true,
+      "stops": [
+        {
+          "tag": "A",
+          "cls": "skip-link",
+          "text": "Skip to content",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "wordmark",
+          "text": "The Epistemic Diary",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Journal",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Volumes",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Films",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Labs",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "Discover",
+          "outline": true
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "search-toggle",
+          "text": "",
+          "outline": true
+        },
+        {
+          "tag": "BUTTON",
+          "cls": "theme-toggle",
+          "text": "",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "VI",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "JA",
+          "outline": true
+        },
+        {
+          "tag": "A",
+          "cls": "",
+          "text": "中文",
+          "outline": true
+        }
+      ]
+    },
+    {
+      "name": "Footer links are reachable without duplicate stops for the same essay",
+      "passed": true,
+      "order": [
+        "/kinh-te/co-gian-cung-cau-cong-thuc/ Độ Co Giãn Cung Cầu: Chứng Minh và Giải ",
+        "/kinh-te/doanh-thu-co-gian-dinh-thuc/ ← Bài cũ hơnTổng Doanh Thu và Độ Co Giãn",
+        "/kinh-te/toan-co-ban-1/ Bài mới hơn →Toán Cơ Bản Cho Kinh Tế (Ph",
+        "/about/ Giới thiệu",
+        "/archives/ Lưu trữ",
+        "/categories/ Chủ đề",
+        "/tags/ Thẻ",
+        "/volumes/ Volumes"
+      ]
+    },
+    {
+      "name": "Vietnamese Nash footer: Further Essays with one featured essay (artwork only if it owns some), at most two supporting; Vietnamese contents labels",
+      "passed": true,
+      "pages": [
+        [
+          1440,
+          [
+            "discovery-essays"
+          ],
+          0,
+          "Nội dung"
+        ],
+        [
+          390,
+          [
+            "discovery-essays"
+          ],
+          0,
+          "Nội dung"
+        ]
+      ]
+    },
+    {
+      "name": "Further Essays and Curated Reading have the same width (equal prominence), compared across the two Nash essays",
+      "passed": true,
+      "widths": [
+        [
+          1440,
+          928,
+          928
+        ],
+        [
+          390,
+          354,
+          354
+        ]
+      ]
+    },
+    {
+      "name": "Each essay is served in its own language (D-017): /en/ pages are lang=en, others lang=vi",
+      "passed": true,
+      "langs": [
+        [
+          "/kinh-te/toan-co-ban-1/",
+          "vi"
+        ],
+        [
+          "/kinh-te/toan-co-ban-1/",
+          "vi"
+        ],
+        [
+          "/kinh-te/ly-thuyet-tro-choi-nash/",
+          "vi"
+        ],
+        [
+          "/kinh-te/ly-thuyet-tro-choi-nash/",
+          "vi"
+        ],
+        [
+          "/toan-hoc/riemann-hypothesis-number-theory/",
+          "vi"
+        ],
+        [
+          "/toan-hoc/riemann-hypothesis-number-theory/",
+          "vi"
+        ],
+        [
+          "/en/kinh-te/toan-co-ban-1/",
+          "en"
+        ],
+        [
+          "/en/kinh-te/toan-co-ban-1/",
+          "en"
+        ]
+      ]
+    },
+    {
+      "name": "Vietnamese, English, math and table essays: 200, centred, no overflow, tables and display math inside the viewport, no MathJax errors",
+      "passed": true,
+      "pages": [
+        [
+          "/kinh-te/toan-co-ban-1/",
+          1440,
+          false,
+          true,
+          15
+        ],
+        [
+          "/kinh-te/toan-co-ban-1/",
+          390,
+          false,
+          true,
+          15
+        ],
+        [
+          "/kinh-te/ly-thuyet-tro-choi-nash/",
+          1440,
+          false,
+          true,
+          54
+        ],
+        [
+          "/kinh-te/ly-thuyet-tro-choi-nash/",
+          390,
+          false,
+          true,
+          54
+        ],
+        [
+          "/toan-hoc/riemann-hypothesis-number-theory/",
+          1440,
+          false,
+          true,
+          62
+        ],
+        [
+          "/toan-hoc/riemann-hypothesis-number-theory/",
+          390,
+          false,
+          true,
+          62
+        ],
+        [
+          "/en/kinh-te/toan-co-ban-1/",
+          1440,
+          false,
+          true,
+          15
+        ],
+        [
+          "/en/kinh-te/toan-co-ban-1/",
+          390,
+          false,
+          true,
+          15
+        ]
+      ]
+    },
+    {
+      "name": "Body text is not shrunk below 16px at any tested width",
+      "passed": true,
+      "sizes": [
+        [
+          "/kinh-te/toan-co-ban-1/",
+          1440,
+          16.64
+        ],
+        [
+          "/kinh-te/toan-co-ban-1/",
+          390,
+          16
+        ],
+        [
+          "/kinh-te/ly-thuyet-tro-choi-nash/",
+          1440,
+          16.64
+        ],
+        [
+          "/kinh-te/ly-thuyet-tro-choi-nash/",
+          390,
+          16
+        ],
+        [
+          "/toan-hoc/riemann-hypothesis-number-theory/",
+          1440,
+          16.64
+        ],
+        [
+          "/toan-hoc/riemann-hypothesis-number-theory/",
+          390,
+          16
+        ],
+        [
+          "/en/kinh-te/toan-co-ban-1/",
+          1440,
+          16.64
+        ],
+        [
+          "/en/kinh-te/toan-co-ban-1/",
+          390,
+          16
+        ]
+      ]
+    },
+    {
+      "name": "200% text zoom at 390px: no horizontal page scroll and prose inside the viewport",
+      "passed": true,
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "prose": {
+        "left": 36,
+        "right": 354
+      },
+      "aside": "static"
+    },
+    {
+      "name": "200% text zoom at 1440px: no horizontal page scroll and prose inside the viewport",
+      "passed": true,
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "prose": {
+        "left": 104.09375,
+        "right": 1335.90625
+      },
+      "aside": "absolute"
+    },
+    {
+      "name": "Rail at 1112–1920 px: inside the article (not clipped), ≥ 10rem wide, ≥ 24px clear of the prose, prose still centred",
+      "passed": true,
+      "rails": [
+        {
+          "width": 1112,
+          "position": "absolute",
+          "railLeft": 32,
+          "articleLeft": 32,
+          "railWidth": 165,
+          "tocLeft": 32,
+          "gap": 52,
+          "proseCentre": 555.99
+        },
+        {
+          "width": 1180,
+          "position": "absolute",
+          "railLeft": 48,
+          "articleLeft": 48,
+          "railWidth": 180,
+          "tocLeft": 48,
+          "gap": 54,
+          "proseCentre": 589.99
+        },
+        {
+          "width": 1280,
+          "position": "absolute",
+          "railLeft": 66,
+          "articleLeft": 48,
+          "railWidth": 208,
+          "tocLeft": 66,
+          "gap": 58,
+          "proseCentre": 639.99
+        },
+        {
+          "width": 1320,
+          "position": "absolute",
+          "railLeft": 84,
+          "articleLeft": 48,
+          "railWidth": 208,
+          "tocLeft": 84,
+          "gap": 60,
+          "proseCentre": 659.99
+        },
+        {
+          "width": 1366,
+          "position": "absolute",
+          "railLeft": 105,
+          "articleLeft": 48,
+          "railWidth": 208,
+          "tocLeft": 105,
+          "gap": 62,
+          "proseCentre": 682.99
+        },
+        {
+          "width": 1920,
+          "position": "absolute",
+          "railLeft": 365,
+          "articleLeft": 240,
+          "railWidth": 208,
+          "tocLeft": 365,
+          "gap": 79,
+          "proseCentre": 959.99
+        }
+      ]
+    },
+    {
+      "name": "Homepage carries no D1 article ornaments or texture",
+      "passed": true,
+      "branches": 0,
+      "bg": "none"
+    },
+    {
+      "name": "axe: no automatic WCAG 2.1 A/AA violations (3 essays × 390/1440 × light/dark)",
+      "passed": true,
+      "violations": []
+    }
+  ],
+  "axe": [
+    {
+      "route": "/en/kinh-te/game_theory_nash/",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "route": "/en/kinh-te/game_theory_nash/",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "route": "/en/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "route": "/en/kinh-te/game_theory_nash/",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-1/",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-1/",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-1/",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/toan-co-ban-1/",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ]
+    },
+    {
+      "route": "/kinh-te/ly-thuyet-tro-choi-nash/",
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ]
+    }
+  ],
+  "zoom390": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "prose": {
+      "left": 36,
+      "right": 354
+    },
+    "aside": "static"
+  },
+  "zoom1440": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "prose": {
+      "left": 104.09375,
+      "right": 1335.90625
+    },
+    "aside": "absolute"
+  },
+  "rails": [
+    {
+      "width": 1112,
+      "position": "absolute",
+      "railLeft": 32,
+      "articleLeft": 32,
+      "railWidth": 165,
+      "tocLeft": 32,
+      "gap": 52,
+      "proseCentre": 555.99
+    },
+    {
+      "width": 1180,
+      "position": "absolute",
+      "railLeft": 48,
+      "articleLeft": 48,
+      "railWidth": 180,
+      "tocLeft": 48,
+      "gap": 54,
+      "proseCentre": 589.99
+    },
+    {
+      "width": 1280,
+      "position": "absolute",
+      "railLeft": 66,
+      "articleLeft": 48,
+      "railWidth": 208,
+      "tocLeft": 66,
+      "gap": 58,
+      "proseCentre": 639.99
+    },
+    {
+      "width": 1320,
+      "position": "absolute",
+      "railLeft": 84,
+      "articleLeft": 48,
+      "railWidth": 208,
+      "tocLeft": 84,
+      "gap": 60,
+      "proseCentre": 659.99
+    },
+    {
+      "width": 1366,
+      "position": "absolute",
+      "railLeft": 105,
+      "articleLeft": 48,
+      "railWidth": 208,
+      "tocLeft": 105,
+      "gap": 62,
+      "proseCentre": 682.99
+    },
+    {
+      "width": 1920,
+      "position": "absolute",
+      "railLeft": 365,
+      "articleLeft": 240,
+      "railWidth": 208,
+      "tocLeft": 365,
+      "gap": 79,
+      "proseCentre": 959.99
+    }
+  ]
+}

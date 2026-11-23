@@ -53,7 +53,7 @@ Plan and owner decisions: [docs/phases/phase-4/PLAN.md](phases/phase-4/PLAN.md).
 | [x] | P4-03 | About as a publication page | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
 | [x] | P4-04 | Labs and films as their own pages; essays link with cards | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
 | [x] | D4 | Content architecture: sitemap, content types, relationships, navigation, metadata (design first, no code) | D1, D-017 | DONE (PR #44, `a4e6354`; production verified 2026-11-24) | Claude Code |
-| [ ] | D3 | Citation & research protocol: citation style, footnotes, references, source metadata, presentation (sample article first) | D4 | IN PROGRESS | Claude Code, `docs/d3-discovery` |
+| [ ] | D3 | Citation & research protocol: citation style, footnotes, references, source metadata, presentation (sample article first) | D4 | IN PROGRESS (sample approved; implementation PR awaiting merge approval) | Claude Code, `feat/d3-citations` |
 
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage

@@ -9,9 +9,6 @@ description: >
   A rigorous but accessible tour of strategic-form games, dominant strategies,
   best-response correspondences, and Nash's fixed-point existence proof —
   with an interactive 2×2 bimatrix explorer and Manim animation.
-# Only redirect aliases were added on 2026-11-23 (D-017); the text is unchanged, so the
-# last modification shown to readers stays the last real edit.
-lastmod: 2026-11-15T17:40:37+00:00
 # Content-language separation (D-017): the former copy at this URL was in the wrong language.
 aliases:
   - "/kinh-te/game_theory_nash/"
@@ -159,10 +156,10 @@ $$
 
 ## 5. Existence: Nash's Theorem
 
-> **Theorem (Nash, 1950).** *Every finite strategic-form game has at least one
+> **Theorem** {{< cite "nash1950" >}}. *Every finite strategic-form game has at least one
 > Nash Equilibrium in mixed strategies.*
 
-**Proof sketch via Kakutani's fixed-point theorem.**
+**Proof sketch via Kakutani's fixed-point theorem** {{< cite "kakutani1941" >}}.{{< note >}}A *correspondence* maps each point to a set of points; Kakutani's theorem is the set-valued version of Brouwer's fixed-point theorem.{{< /note >}}
 
 1. The mixed-strategy simplex $\Delta := \prod_i \Delta(S_i)$ is compact and convex.
 2. The correspondence $\text{BR}: \Delta \rightrightarrows \Delta$ is
@@ -241,7 +238,7 @@ Each player simultaneously plays a best response to yesterday's profile.
 
 **Convergence guarantees:**
 - In **dominance-solvable** games: always converges to the unique pure NE.
-- In **potential games** (Monderer & Shapley, 1996): convergence guaranteed.
+- In **potential games** {{< cite "monderer1996" >}}: convergence guaranteed.
 - In **zero-sum games**: simultaneous BRD may cycle; no convergence guarantee
   for pure strategies.
 
@@ -267,9 +264,9 @@ The [Manim animation](#) above walks through four scenes:
 
 ## 9. Extensions and Applications
 
-### 10.1 Correlated Equilibrium (Aumann, 1974)
+### 10.1 Correlated Equilibrium
 
-A weaker solution concept: players observe a common signal and respond optimally.
+A weaker solution concept {{< cite "aumann1974" >}}: players observe a common signal and respond optimally.
 Every NE is a correlated equilibrium, but not vice versa.
 Correlated equilibria can be computed in polynomial time via linear programming
 (unlike NE in $n$-player games, which is PPAD-complete).
@@ -295,8 +292,9 @@ be invaded by a small fraction playing any $\sigma \neq \sigma^*$.
 - **2-player zero-sum games**: NE computable via linear programming in
   polynomial time (von Neumann's minimax theorem).
 - **2-player general-sum games**: NE is PPAD-complete
-  (Daskalakis, Goldberg & Papadimitriou, 2009).
-- **$n$-player games ($n \geq 3$)**: NE remains PPAD-hard;
+  {{< cite "chen2009" >}}.
+- **$n$-player games ($n \geq 3$)**: NE is PPAD-complete already for three players
+  {{< cite "daskalakis2009" >}};
   approximate NE achievable in quasi-polynomial time for small approximation.
 
 ---
@@ -333,15 +331,4 @@ The interactive 2×2 bimatrix explorer now lives in Labs: edit the payoffs with 
 
 ## References
 
-1. Nash, J. F. (1950). *Equilibrium points in n-person games.*
-   Proceedings of the National Academy of Sciences, 36(1), 48–49.
-2. Kakutani, S. (1941). *A generalization of Brouwer's fixed point theorem.*
-   Duke Mathematical Journal, 8(3), 457–459.
-3. Daskalakis, C., Goldberg, P. W., & Papadimitriou, C. H. (2009).
-   *The complexity of computing a Nash equilibrium.*
-   SIAM Journal on Computing, 39(1), 195–259.
-4. Monderer, D., & Shapley, L. S. (1996). *Potential games.*
-   Games and Economic Behavior, 14(1), 124–143.
-5. Shoham, Y., & Leyton-Brown, K. (2008).
-   *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations.*
-   Cambridge University Press.
+{{< references >}}
