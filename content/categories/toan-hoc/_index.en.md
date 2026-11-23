@@ -1,11 +1,11 @@
 ---
-title: "Mathematics"
+title: "Fundamental Sciences"
 slug: "toan-hoc"
-description: "The beauty of mathematics, from number theory to geometry, analysis and modern fields"
+description: "Mathematics and physics: from number theory, analysis and geometry to the laws that govern the universe"
 icon: "fa-solid fa-infinity"
 ---
 
-## Mathematics — the language of the universe
+## Fundamental Sciences — mathematics and physics
 
 Mathematics is not just numbers and formulas; it is the most basic language for describing the world around us. From patterns hidden in nature to the most abstract structures of human thought, mathematics bridges imagination and reality.
 
@@ -16,3 +16,4 @@ Mathematics is not just numbers and formulas; it is the most basic language for 
 - **Algebra**: groups, rings, fields, linear algebra
 - **Geometry**: Euclidean and non-Euclidean geometry, topology
 - **Mathematical logic**: set theory, formal logic, proof theory
+- **Physics**: mechanics, electromagnetism, quantum mechanics, relativity, statistical physics

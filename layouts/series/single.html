@@ -1,0 +1,26 @@
+{{- /* D4: one series. */ -}}
+{{- define "content" -}}
+{{- $parts := partial "editorial/series-parts.html" . -}}
+{{- $topic := site.GetPage (printf "/categories/%s" .Params.topic) -}}
+<header class="list-header series-header">
+  <p class="kicker">{{ T "ed_series" | default "Series" }}{{ with $topic }} · <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.subtitle }}<p class="series-subtitle">{{ . }}</p>{{ end }}
+  {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  <p class="list-count">{{ T "ed_seriesParts" (dict "Count" (len $parts)) }} · {{ if eq .Params.status "complete" }}{{ T "ed_seriesComplete" }}{{ else }}{{ T "ed_seriesOngoing" }}{{ end }}</p>
+  {{ with .Params.note }}<p class="disclosure">{{ . }}</p>{{ end }}
+  {{ with index $parts 0 }}<p><a class="series-start" href="{{ .RelPermalink }}">{{ T "ed_seriesStart" | default "Start with part 1" }} <span aria-hidden="true">→</span></a></p>{{ end }}
+</header>
+<ol class="series-parts">
+  {{- range $i, $e := $parts }}
+  <li>
+    <span class="series-part-n">{{ T "ed_seriesPart" (dict "N" (add $i 1)) }}</span>
+    <div>
+      <h2><a href="{{ $e.RelPermalink }}">{{ $e.LinkTitle }}</a></h2>
+      {{ with partial "editorial/describe.html" $e }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <span class="meta">{{ T "ed_minutes" (dict "Count" $e.ReadingTime) }}</span>
+  </li>
+  {{- end }}
+</ol>
+{{- end -}}

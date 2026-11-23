@@ -1,11 +1,11 @@
 ---
-title: "Triết học"
+title: "Triết học & Suy ngẫm"
 slug: "triet-hoc"
-description: "Từ siêu hình học đến nhận thức luận, đạo đức học và triết học tâm trí"
+description: "Từ siêu hình học, nhận thức luận, đạo đức học đến những suy ngẫm cá nhân"
 icon: "fa-solid fa-book-open"
 ---
 
-## Triết học - Tìm kiếm trí tuệ
+## Triết học & Suy ngẫm - Tìm kiếm trí tuệ
 
 Triết học là nỗ lực hiểu những câu hỏi căn bản nhất về tồn tại, tri thức, giá trị và ý nghĩa. Qua lịch sử, triết học đã định hình cách chúng ta tư duy về bản thân và thế giới.
 
@@ -16,3 +16,4 @@ Triết học là nỗ lực hiểu những câu hỏi căn bản nhất về t�
 - **Đạo đức học**: Deontology, consequentialism, virtue ethics
 - **Triết học tâm trí**: Ý thức, intentionality, qualia
 - **Hiện tượng học**: Husserl, Heidegger, Merleau-Ponty
+- **Suy ngẫm**: nhật ký, sách và phim, những câu hỏi về ý nghĩa cuộc sống

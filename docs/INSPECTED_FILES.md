@@ -675,3 +675,17 @@ Blob SHAs are working-tree hashes at commit `ccb5556` on `feat/d1-article-readin
 | `content/categories/*/_index.en.md` | COVERED | English category pages, translated 2026-11-23. |
 | `content/volumes/volume-i{,.en}.md` | COVERED | Chapter lists per language (en: Part 1 + Nash; vi: Parts 1–5 + `ly-thuyet-tro-choi-nash`). |
 | `docs/audits/p3-07/tools/{p3-smoke,perf}.cjs` | PARTIAL | Route lists updated to essays that exist per language. |
+
+## 2026-11-24 — D4 content architecture (Claude Code)
+
+| Path | Status | Purpose / findings |
+|---|---|---|
+| `layouts/term.html` | COVERED | Categories render as topic hubs: series with `topic` = term; essays; films/labs whose `related` essay's main category is the term; resources whose `topics` include the term. Tags keep the paginated list. Hubs are not paginated, so `page/1/` aliases are redirected. |
+| `layouts/_partials/views/journal.html` | COVERED | Topics (every category, with counts from mainSections), series cards, the paginated reading list, and the heatmap on page 1. |
+| `layouts/series/single.html`, `layouts/_partials/views/series.html` | COVERED | Series page and index. |
+| `layouts/_partials/editorial/series-{of,parts,card,position}.html` | COVERED | `series-of` scans `/series` pages for the essay (as `volume-position` scans volumes). `series-position` is called from `article.html` before `volume-position`. |
+| `layouts/_partials/editorial/resource-item.html`, `data/resources.yaml` | COVERED | Library entry (type, year, title→verified URL, biblio, `why` via l10n, related essays in the current language). |
+| `layouts/_partials/views/volumes.html` | COVERED | Production index when volumes exist; otherwise "in preparation" with a link to Series. |
+| `layouts/index.html` | PARTIAL | The volume slot shows the newest series (`aside.volume.home-series`) when no volume exists. |
+| `assets/css/editorial/d4.css` | COVERED | D4 components on existing tokens; breakpoints 850/560. |
+| `docs/audits/d4/tools/{d4-check.cjs,check-redirects.py}` | COVERED | 48-state matrix + axe + keyboard; redirect targets and lost-route diff. |

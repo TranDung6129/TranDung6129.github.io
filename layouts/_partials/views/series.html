@@ -1,0 +1,3 @@
+{{- /* D4: /series/ index. */ -}}
+{{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_seriesKicker" | default "Read in order")) }}
+{{- with .RegularPages.ByDate.Reverse }}<div class="series-grid">{{ range . }}{{ partial "editorial/series-card.html" . }}{{ end }}</div>{{ end }}

@@ -3,7 +3,7 @@ title: "Game Theory & Nash Equilibrium: From Intuition to Fixed Points"
 date: 2025-08-01T09:00:00+07:00
 draft: false
 tags: ["game-theory", "mathematics", "optimization", "economics", "AI"]
-categories: ["Applied Mathematics"]
+categories: ["kinh-te", "toan-hoc"]
 math: true
 description: >
   A rigorous but accessible tour of strategic-form games, dominant strategies,

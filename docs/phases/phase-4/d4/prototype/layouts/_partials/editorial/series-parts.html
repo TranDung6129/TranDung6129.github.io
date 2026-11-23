@@ -1,4 +1,0 @@
-{{- /* D4 prototype. Resolved, ordered parts of a series. */ -}}
-{{- $parts := slice -}}
-{{- range .Params.essays }}{{ with partial "editorial/get-page.html" . }}{{ $parts = $parts | append . }}{{ end }}{{ end -}}
-{{- return $parts -}}
