@@ -22,13 +22,14 @@ const host = new URL(base).host;
 const PAGES = [
   ['home', '/'], ['journal', '/journal/'], ['article', '/kinh-te/toan-co-ban-2/'], ['volume', '/volumes/volume-i/'],
   ['films', '/films/'], ['labs', '/labs/'], ['nash', '/labs/nash-explorer/'], ['discover', '/discover/'],
-  ['essay', '/kinh-te/game_theory_nash/'], ['film', '/films/nash-animation/'],
+  ['essay', '/en/kinh-te/game_theory_nash/'], ['film', '/films/nash-animation/'],
 ];
+// D-017 (2026-11-23): wrong-language copies were removed; their URLs are redirects now, so only
+// the essays that exist in each language are listed.
 const MATH = ['/kinh-te/toan-co-ban-1/', '/en/kinh-te/toan-co-ban-1/', '/kinh-te/toan-co-ban-2/', '/kinh-te/toan-co-ban-3/', '/kinh-te/toan-co-ban-4/',
-  '/kinh-te/toan-co-ban-5/', '/en/kinh-te/toan-co-ban-5/', '/kinh-te/co-gian-cung-cau-cong-thuc/', '/kinh-te/doanh-thu-co-gian-dinh-thuc/',
-  '/kinh-te/ly-thuyet-tro-choi-nash/', '/kinh-te/game_theory_nash/', '/en/kinh-te/game_theory_nash/', '/toan-hoc/riemann-hypothesis-number-theory/',
-  '/en/toan-hoc/riemann-hypothesis-number-theory/', '/khoa-hoc-may-tinh/complexity-theory-quantum/', '/en/khoa-hoc-may-tinh/complexity-theory-quantum/',
-  '/labs/nash-explorer/', '/en/labs/nash-explorer/'];
+  '/kinh-te/toan-co-ban-5/', '/kinh-te/co-gian-cung-cau-cong-thuc/', '/kinh-te/doanh-thu-co-gian-dinh-thuc/',
+  '/kinh-te/ly-thuyet-tro-choi-nash/', '/en/kinh-te/game_theory_nash/', '/toan-hoc/riemann-hypothesis-number-theory/',
+  '/khoa-hoc-may-tinh/complexity-theory-quantum/', '/labs/nash-explorer/', '/en/labs/nash-explorer/'];
 
 (async () => {
   const browser = await chromium.launch();
@@ -131,7 +132,7 @@ const MATH = ['/kinh-te/toan-co-ban-1/', '/en/kinh-te/toan-co-ban-1/', '/kinh-te
   }
 
   // P4-04: the essay links out to its lab and film; the simulation lives on the lab page.
-  await p.goto(base + '/kinh-te/game_theory_nash/', { waitUntil: 'load' });
+  await p.goto(base + '/en/kinh-te/game_theory_nash/', { waitUntil: 'load' });
   const cards = await p.evaluate(() => ({ react: !!document.querySelector('[id^="react-root"]'), video: !!document.querySelector('.prose video'), links: [...document.querySelectorAll('.prose .media-card a.text-link')].map(a => a.getAttribute('href')) }));
   const cardStatus = []; for (const l of cards.links) cardStatus.push([l, await fetchStatus(l)]);
   check('Essay links to its film and lab pages instead of embedding them', !cards.react && !cards.video && cards.links.length === 2 && cardStatus.every(([, s]) => s === 200), { cardStatus });

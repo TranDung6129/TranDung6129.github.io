@@ -1,0 +1,11 @@
+{{- /* Publishes data/redirects.yaml as static redirect pages, in the same form as Hugo's own
+       alias pages. Called once, from the default-language homepage. Only list paths that no
+       page renders any more: Hugo does not detect the clash, and whichever file is written
+       last wins (docs/audits/d-017 checks this against the route list). */ -}}
+{{- range site.Data.redirects.redirects -}}
+  {{- $from := strings.TrimPrefix "/" .from -}}
+  {{- $to := .to | absURL -}}
+  {{- $html := printf `<!doctype html><html><head><title>%s</title><link rel="canonical" href="%s"><meta name="robots" content="noindex"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=%s"></head></html>` $to $to $to -}}
+  {{- $r := resources.FromString (printf "%sindex.html" $from) $html -}}
+  {{- $r.Publish -}}
+{{- end -}}

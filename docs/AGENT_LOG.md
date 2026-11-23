@@ -367,3 +367,22 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - No live-site check until merge and deploy.
   - Right-side background balance is open for owner review (D5 artwork).
 - **Next:** owner approves merge → merge PR #40 → check production → D4.
+
+### 2026-11-23 — D-017 content-language separation — Claude Code
+- **Branch:** `fix/content-language-separation` (from `main` after PR #40 merged as `4b6d328`).
+- **Owner request:** separate English and Vietnamese. The owner accepted removing the wrong-language copies, since the current essays are largely placeholders.
+- **Changed:**
+  - 11 wrong-language essay copies removed; aliases added on the originals.
+  - 6 English category pages translated.
+  - Volume I (vi/en), the Vietnamese film and lab, and `data/home.yaml` repointed.
+  - `get-page.html` accepts alternative paths.
+  - `data/redirects.yaml` + `site/redirects.html` added for 74 retired listing URLs.
+  - Harnesses adapted: `scripts/test-d1.cjs`, `p3-smoke.cjs`, `perf.cjs`.
+- **Tests (exit 0):**
+  - Clean `hugo --gc --minify`: 0 warnings.
+  - All 11 essay redirects resolve to the intended page.
+  - Route diff vs `main`: 0 HTML routes lost, 37 term feeds end.
+  - `node scripts/test-d1.cjs`: 31/31, axe 0.
+  - `p3-smoke.cjs`: 32/32.
+- **Not changed (owner/Phase 3 scope):** the English hero headline "Ideas worth staying with." and the English section names on the Vietnamese site; tag labels shown as title-cased slugs ("Ly-Thuyet-Tro-Choi") → D4 metadata.
+- **Next:** owner approves the merge; then D4 discovery.

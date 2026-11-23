@@ -1,11 +1,13 @@
 # Homepage curation (P3-02). Featured essays are existing articles, referenced by content path
-# (resolved in the reader's language, falling back to English). "art" is a key of data/art.yaml;
+# (resolved in the reader's language, falling back to English). A path may be a list of
+# alternatives: the first that exists in the reader's language wins (D-017: an essay may exist
+# in one language only); an entry with no match in either is skipped. "art" is a key of data/art.yaml;
 # the artwork is illustrative, not documentary.
 featured:
   - path: /toan-hoc/riemann-hypothesis-number-theory
     art: probability
     figure: "FIG. 02"
-  - path: /kinh-te/game_theory_nash
+  - path: [/kinh-te/ly-thuyet-tro-choi-nash, /kinh-te/game_theory_nash]
     art: decision
     figure: "FIG. 03"
 # Number of latest essays listed under "From the journal".

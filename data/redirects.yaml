@@ -1,0 +1,82 @@
+# Redirects for generated pages that no longer exist (D-017, content-language separation,
+# 2026-11-23). Content pages keep their old URLs through front-matter `aliases`; these are the
+# taxonomy and section listings that disappeared with them (no remaining content in that
+# language). Each points to the same listing in the language that still has the content.
+# Written as static meta-refresh pages by layouts/_partials/site/redirects.html (GitHub Pages
+# has no server-side redirects). Term RSS feeds (index.xml) cannot be redirected this way and
+# end; see docs/audits/d-017/URL_MAP.md.
+redirects:
+  - { from: "/categories/applied-mathematics/", to: "/en/categories/applied-mathematics/" }
+  - { from: "/categories/applied-mathematics/page/1/", to: "/en/categories/applied-mathematics/" }
+  - { from: "/en/khoa-hoc-may-tinh/", to: "/khoa-hoc-may-tinh/" }
+  - { from: "/en/khoa-hoc-may-tinh/page/1/", to: "/khoa-hoc-may-tinh/" }
+  - { from: "/en/tags/chien-luoc/", to: "/tags/chien-luoc/" }
+  - { from: "/en/tags/chien-luoc/page/1/", to: "/tags/chien-luoc/" }
+  - { from: "/en/tags/complexity/", to: "/tags/complexity/" }
+  - { from: "/en/tags/complexity/page/1/", to: "/tags/complexity/" }
+  - { from: "/en/tags/crypto/", to: "/tags/crypto/" }
+  - { from: "/en/tags/crypto/page/1/", to: "/tags/crypto/" }
+  - { from: "/en/tags/dai-so-tuyen-tinh/", to: "/tags/dai-so-tuyen-tinh/" }
+  - { from: "/en/tags/dai-so-tuyen-tinh/page/1/", to: "/tags/dai-so-tuyen-tinh/" }
+  - { from: "/en/tags/doanh-thu/", to: "/tags/doanh-thu/" }
+  - { from: "/en/tags/doanh-thu/page/1/", to: "/tags/doanh-thu/" }
+  - { from: "/en/tags/hien-tuong-hoc/", to: "/tags/hien-tuong-hoc/" }
+  - { from: "/en/tags/hien-tuong-hoc/page/1/", to: "/tags/hien-tuong-hoc/" }
+  - { from: "/en/tags/husserl/", to: "/tags/husserl/" }
+  - { from: "/en/tags/husserl/page/1/", to: "/tags/husserl/" }
+  - { from: "/en/tags/kinh-te/", to: "/tags/kinh-te/" }
+  - { from: "/en/tags/kinh-te/page/1/", to: "/tags/kinh-te/" }
+  - { from: "/en/tags/lagrange/", to: "/tags/lagrange/" }
+  - { from: "/en/tags/lagrange/page/1/", to: "/tags/lagrange/" }
+  - { from: "/en/tags/lap-trinh/", to: "/tags/lap-trinh/" }
+  - { from: "/en/tags/lap-trinh/page/1/", to: "/tags/lap-trinh/" }
+  - { from: "/en/tags/ly-thuyet-so/", to: "/tags/ly-thuyet-so/" }
+  - { from: "/en/tags/ly-thuyet-so/page/1/", to: "/tags/ly-thuyet-so/" }
+  - { from: "/en/tags/ly-thuyet-tro-choi/", to: "/tags/ly-thuyet-tro-choi/" }
+  - { from: "/en/tags/ly-thuyet-tro-choi/page/1/", to: "/tags/ly-thuyet-tro-choi/" }
+  - { from: "/en/tags/ma-tran/", to: "/tags/ma-tran/" }
+  - { from: "/en/tags/ma-tran/page/1/", to: "/tags/ma-tran/" }
+  - { from: "/en/tags/nash/", to: "/tags/nash/" }
+  - { from: "/en/tags/nash/page/1/", to: "/tags/nash/" }
+  - { from: "/en/tags/nhan-thuc/", to: "/tags/nhan-thuc/" }
+  - { from: "/en/tags/nhan-thuc/page/1/", to: "/tags/nhan-thuc/" }
+  - { from: "/en/tags/phan-tich/", to: "/tags/phan-tich/" }
+  - { from: "/en/tags/phan-tich/page/1/", to: "/tags/phan-tich/" }
+  - { from: "/en/tags/quantum/", to: "/tags/quantum/" }
+  - { from: "/en/tags/quantum/page/1/", to: "/tags/quantum/" }
+  - { from: "/en/tags/riemann/", to: "/tags/riemann/" }
+  - { from: "/en/tags/riemann/page/1/", to: "/tags/riemann/" }
+  - { from: "/en/tags/so-nguyen-to/", to: "/tags/so-nguyen-to/" }
+  - { from: "/en/tags/so-nguyen-to/page/1/", to: "/tags/so-nguyen-to/" }
+  - { from: "/en/tags/thuat-toan/", to: "/tags/thuat-toan/" }
+  - { from: "/en/tags/thuat-toan/page/1/", to: "/tags/thuat-toan/" }
+  - { from: "/en/tags/toan-hoc/", to: "/tags/toan-hoc/" }
+  - { from: "/en/tags/toan-hoc/page/1/", to: "/tags/toan-hoc/" }
+  - { from: "/en/tags/toan-kinh-te/", to: "/tags/toan-kinh-te/" }
+  - { from: "/en/tags/toan-kinh-te/page/1/", to: "/tags/toan-kinh-te/" }
+  - { from: "/en/tags/toi-uu-hoa/", to: "/tags/toi-uu-hoa/" }
+  - { from: "/en/tags/toi-uu-hoa/page/1/", to: "/tags/toi-uu-hoa/" }
+  - { from: "/en/tags/triet-hoc/", to: "/tags/triet-hoc/" }
+  - { from: "/en/tags/triet-hoc/page/1/", to: "/tags/triet-hoc/" }
+  - { from: "/en/tags/vi-mo/", to: "/tags/vi-mo/" }
+  - { from: "/en/tags/vi-mo/page/1/", to: "/tags/vi-mo/" }
+  - { from: "/en/tags/vi-phan/", to: "/tags/vi-phan/" }
+  - { from: "/en/tags/vi-phan/page/1/", to: "/tags/vi-phan/" }
+  - { from: "/en/tags/vi-tich-phan/", to: "/tags/vi-tich-phan/" }
+  - { from: "/en/tags/vi-tich-phan/page/1/", to: "/tags/vi-tich-phan/" }
+  - { from: "/en/tags/y-thuc/", to: "/tags/y-thuc/" }
+  - { from: "/en/tags/y-thuc/page/1/", to: "/tags/y-thuc/" }
+  - { from: "/en/toan-hoc/", to: "/toan-hoc/" }
+  - { from: "/en/toan-hoc/page/1/", to: "/toan-hoc/" }
+  - { from: "/en/triet-hoc/", to: "/triet-hoc/" }
+  - { from: "/en/triet-hoc/page/1/", to: "/triet-hoc/" }
+  - { from: "/tags/ai/", to: "/en/tags/ai/" }
+  - { from: "/tags/ai/page/1/", to: "/en/tags/ai/" }
+  - { from: "/tags/economics/", to: "/en/tags/economics/" }
+  - { from: "/tags/economics/page/1/", to: "/en/tags/economics/" }
+  - { from: "/tags/game-theory/", to: "/en/tags/game-theory/" }
+  - { from: "/tags/game-theory/page/1/", to: "/en/tags/game-theory/" }
+  - { from: "/tags/mathematics/", to: "/en/tags/mathematics/" }
+  - { from: "/tags/mathematics/page/1/", to: "/en/tags/mathematics/" }
+  - { from: "/tags/optimization/", to: "/en/tags/optimization/" }
+  - { from: "/tags/optimization/page/1/", to: "/en/tags/optimization/" }

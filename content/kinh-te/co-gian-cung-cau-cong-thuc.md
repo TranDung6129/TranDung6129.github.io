@@ -7,6 +7,9 @@ tags: ["kinh-te", "vi-mo", "toan-hoc", "phan-tich"]
 categories: ["kinh-te"]
 math: true
 draft: false
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/kinh-te/co-gian-cung-cau-cong-thuc/"
 ---
 
 ## Giới Thiệu

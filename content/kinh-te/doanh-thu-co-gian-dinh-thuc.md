@@ -7,6 +7,9 @@ tags: ["kinh-te", "toan-hoc", "vi-phan", "ma-tran", "doanh-thu"]
 categories: ["kinh-te"]
 math: true
 draft: false
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/kinh-te/doanh-thu-co-gian-dinh-thuc/"
 ---
 
 ## Giới Thiệu

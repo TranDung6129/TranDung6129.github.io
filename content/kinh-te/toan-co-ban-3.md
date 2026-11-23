@@ -5,6 +5,9 @@ draft: false
 categories: ["kinh-te", "toan-hoc"]
 tags: ["toan-kinh-te", "toi-uu-hoa", "lagrange"]
 math: true
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/kinh-te/toan-co-ban-3/"
 ---
 
 Hầu hết các quyết định trong nền kinh tế thực không bao giờ là không bị giới hạn. Trái lại, nó là một quá trình phân bổ các nguồn lực khan hiếm: ngân sách, thời gian, nguyên vật liệu,...

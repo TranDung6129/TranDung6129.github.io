@@ -6,7 +6,7 @@ weight: 1
 math: true
 tech: "React · Recharts"
 requires: "Cần màn hình máy tính hoặc máy tính bảng xoay ngang; trên điện thoại hiển thị phần giải thích thay thế."
-related: /kinh-te/game_theory_nash
+related: /kinh-te/ly-thuyet-tro-choi-nash
 ---
 
 Thí nghiệm này đi kèm bài luận về lý thuyết trò chơi và cân bằng Nash. Mỗi thanh trượt là một ô trong ma trận lợi ích của hai người chơi; mọi thay đổi được tính lại ngay. Phần mô tả bên dưới giữ nguyên tiếng Anh như trong bài gốc.

@@ -5,6 +5,9 @@ draft: false
 categories: ["kinh-te", "toan-hoc"]
 tags: ["toan-kinh-te", "dai-so-tuyen-tinh", "ma-tran"]
 math: true
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/kinh-te/toan-co-ban-5/"
 ---
 
 Nếu Vi tích phân giúp chúng ta giải được quyết định của *một* doanh nghiệp hay *một* người tiêu dùng, thì đại số tuyến tính là nền tảng cốt lõi đưa kinh tế học vươn lên thành một môn học của *hàng nghìn* doanh nghiệp tương tác cùng nhau.

@@ -9,6 +9,9 @@ description: >
   A rigorous but accessible tour of strategic-form games, dominant strategies,
   best-response correspondences, and Nash's fixed-point existence proof —
   with an interactive 2×2 bimatrix explorer and Manim animation.
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/kinh-te/game_theory_nash/"
 ---
 
 {{< film "nash-animation" >}}

@@ -13,7 +13,9 @@ const shots = path.join(out, 'screenshots');
 fs.mkdirSync(shots, { recursive: true });
 const result = { base, date: new Date().toISOString(), cases: [], sticky: [], pages: [], checks: [], axe: [] };
 const check = (name, passed, detail = {}) => result.checks.push({ name, passed: !!passed, ...detail });
-const NASH = '/kinh-te/game_theory_nash/';
+// D-017: the Nash essay exists in English only; its Vietnamese counterpart is a different essay.
+const NASH = '/en/kinh-te/game_theory_nash/';
+const VI_NASH = '/kinh-te/ly-thuyet-tro-choi-nash/';
 const settle = page => page.evaluate(async () => {
   if (window.MathJax?.startup?.promise) await MathJax.startup.promise;
   await document.fonts.ready;
@@ -96,10 +98,11 @@ const settle = page => page.evaluate(async () => {
   check('Desktop rail sits left of the prose without overlap; tablet/mobile put it in flow', desktop.every(c => c.asidePosition === 'absolute' && c.aside.right <= c.prose.left - 16) && [...tablet, ...mobile].every(c => c.asidePosition === 'static'), { positions: result.cases.map(c => [c.width, c.asidePosition]) });
   check('Desktop navigation centred within 2px', desktop.every(c => Math.abs(c.nav.center - c.viewport / 2) <= 2), { centres: desktop.map(c => c.nav.center) });
   check('TOC has H2 links and H3 toggles', result.cases.every(c => c.h2Links > 0 && c.toggles > 0), { h2: result.cases[0].h2Links, toggles: result.cases[0].toggles });
-  check('Footer: Further Essays then Curated Reading; one featured essay with its artwork, up to two supporting; three sources', result.cases.every(c => c.discovery.join('|') === 'discovery-essays|discovery-reading' && c.featured === 1 && c.featuredArt && c.supporting <= 2 && c.supporting >= 1 && c.sources === 3), { headings: result.cases[0].headings, supporting: result.cases[0].supporting });
-  check('Both discovery modules have the same width (equal prominence)', result.cases.every(c => c.modules.essays.width === c.modules.reading.width), { modules: result.cases.map(c => [c.width, c.modules]) });
+  // The English site has one other essay, already linked as older/newer, so Further Essays is
+  // absent here by design (no hollow module); it is checked on the Vietnamese Nash essay below.
+  check('English Nash footer: Curated Reading with three sources, no empty Further Essays module', result.cases.every(c => c.discovery.join('|') === 'discovery-reading' && c.featured === 0 && c.sources === 3), { headings: result.cases[0].headings });
   check('Old duplicate "Related reading" list removed; no texture behind the page', result.cases.every(c => c.relatedReading === 0 && c.bodyBackground === 'none'));
-  check('Screen-reader structure: one labelled contents landmark, localised toggle names, progress bar hidden from AT (no "N percent" interruptions), discovery headings precede their kickers', result.cases.every(c => c.tocNavLabel === 'Nội dung' && c.progressHidden && c.discoveryOrder.every(t => t === 'H2') && !c.asideLabel && c.toggleLabels.length && c.toggleLabels.every(l => l.startsWith('Mục con của ') && l.length > 12)), { navLabel: result.cases[0].tocNavLabel, toggles: result.cases[0].toggleLabels });
+  check('Screen-reader structure: one labelled contents landmark, localised toggle names, progress bar hidden from AT (no "N percent" interruptions), discovery headings precede their kickers', result.cases.every(c => c.tocNavLabel === 'Contents' && c.progressHidden && c.discoveryOrder.every(t => t === 'H2') && !c.asideLabel && c.toggleLabels.length && c.toggleLabels.every(l => l.startsWith('Subsections of ') && l.length > 16)), { navLabel: result.cases[0].tocNavLabel, toggles: result.cases[0].toggleLabels });
   check('Curated Reading: every source opens its verified external page, and each link has a distinct accessible name', result.cases.every(c => c.sourceLinks.length === 3 && c.sourceLinks.every(h => /^https:\/\//.test(h)) && new Set(c.sourceNames).size === 3), { links: result.cases[0].sourceLinks, names: result.cases[0].sourceNames });
   check('No doubled rules: a Markdown rule before a section heading and the TOC top border are not drawn twice', result.cases.every(c => c.doubleRules === 0 && c.tocTopBorder === 'none'));
   check('No MathJax errors and formulas rendered', result.cases.every(c => c.mathErrors === 0 && c.mathContainers > 0), { containers: result.cases.map(c => c.mathContainers) });
@@ -151,6 +154,7 @@ const settle = page => page.evaluate(async () => {
       stops.push(await page.evaluate(() => { const a = document.activeElement; const cs = getComputedStyle(a); return { tag: a.tagName, cls: a.className, text: (a.textContent || '').trim().slice(0, 30), outline: cs.outlineStyle !== 'none' && parseFloat(cs.outlineWidth) > 0 }; }));
     }
     check('Keyboard: skip link first, TOC links and toggles reachable, every stop has a visible outline', stops[0].cls.includes('skip-link') && stops.some(s => s.cls.includes('toc-toggle')) && stops.every(s => s.outline), { stops: stops.slice(0, 12) });
+    await page.goto(base + VI_NASH, { waitUntil: 'load' }); await page.waitForTimeout(200);
     await page.evaluate(() => document.querySelector('.discovery-essays h3 a').focus());
     const discFocus = []; for (let i = 0; i < 8; i++) { discFocus.push(await page.evaluate(() => `${document.activeElement.getAttribute('href')} ${(document.activeElement.textContent || '').trim().slice(0, 40)}`)); await page.keyboard.press('Tab'); }
     check('Footer links are reachable without duplicate stops for the same essay', new Set(discFocus).size === discFocus.length, { order: discFocus });
@@ -158,7 +162,7 @@ const settle = page => page.evaluate(async () => {
   }
 
   // 4. Other essays: Vietnamese text, English page, math and tables, a page without curated reading.
-  for (const [route, label] of [['/kinh-te/toan-co-ban-1/', 'vi-economics'], ['/en/kinh-te/game_theory_nash/', 'en-nash'], ['/toan-hoc/riemann-hypothesis-number-theory/', 'vi-riemann'], ['/en/toan-hoc/riemann-hypothesis-number-theory/', 'en-riemann']]) {
+  for (const [route, label] of [['/kinh-te/toan-co-ban-1/', 'vi-economics'], [VI_NASH, 'vi-nash'], ['/toan-hoc/riemann-hypothesis-number-theory/', 'vi-riemann'], ['/en/kinh-te/toan-co-ban-1/', 'en-economics']]) {
     for (const [width, height] of [[1440, 900], [390, 844]]) {
       const { context, page, errors, status } = await open(route, { width, height });
       const info = await page.evaluate(() => ({
@@ -174,6 +178,11 @@ const settle = page => page.evaluate(async () => {
         featuredArt: !!document.querySelector('.essay-feature-art img'),
         textOnly: !!document.querySelector('.essay-feature.text-only'),
         fontSize: parseFloat(getComputedStyle(document.querySelector('.d1-article .prose > p')).fontSize),
+        essaysWidth: Math.round(document.querySelector('.discovery-essays')?.getBoundingClientRect().width || 0),
+        featuredCount: document.querySelectorAll('.essay-feature').length,
+        supportingCount: document.querySelectorAll('.essay-supporting li').length,
+        tocNavLabel: document.querySelector('.d1-article .toc nav')?.getAttribute('aria-label'),
+        toggleLabels: [...document.querySelectorAll('.toc-toggle')].map(b => b.getAttribute('aria-label')),
       }));
       await page.screenshot({ path: path.join(shots, `${label}-${width}-start.png`) });
       await page.evaluate(() => { const f = document.querySelector('.d1-article .article-footer'); scrollTo(0, f.getBoundingClientRect().top + scrollY - 24); }); await page.waitForTimeout(400);
@@ -181,6 +190,16 @@ const settle = page => page.evaluate(async () => {
       result.pages.push({ route, width, status, errors, ...info, centred: Math.abs(info.prose - width / 2) <= 2 });
       await context.close();
     }
+  }
+  {
+    const vn = result.pages.filter(p => p.route === VI_NASH);
+    // Artwork is optional (only art the featured essay already owns) and supporting essays depend on
+    // the related index, so 0–2 is valid; a text-only card must then say so with .text-only.
+    check('Vietnamese Nash footer: Further Essays with one featured essay (artwork only if it owns some), at most two supporting; Vietnamese contents labels', vn.length && vn.every(p => p.footer.join('|') === 'discovery-essays' && p.featuredCount === 1 && (p.featuredArt || p.textOnly) && p.supportingCount <= 2 && p.tocNavLabel === 'Nội dung' && p.toggleLabels.length && p.toggleLabels.every(l => l.startsWith('Mục con của '))), { pages: vn.map(p => [p.width, p.footer, p.supportingCount, p.tocNavLabel]) });
+    const enReading = w => result.cases.find(c => c.width === w && c.scheme === 'light').modules.reading.width;
+    check('Further Essays and Curated Reading have the same width (equal prominence), compared across the two Nash essays', vn.every(p => p.essaysWidth === enReading(p.width)), { widths: vn.map(p => [p.width, p.essaysWidth, enReading(p.width)]) });
+    const langs = result.pages.map(p => [p.route, p.lang]);
+    check('Each essay is served in its own language (D-017): /en/ pages are lang=en, others lang=vi', langs.every(([r, l]) => (r.startsWith('/en/') ? l === 'en' : l === 'vi')), { langs });
   }
   check('Vietnamese, English, math and table essays: 200, centred, no overflow, tables and display math inside the viewport, no MathJax errors', result.pages.every(p => p.status === 200 && !p.errors.length && !p.overflow && p.centred && p.tablesScroll && p.displayMathInside && p.mathErrors === 0), { pages: result.pages.map(p => [p.route, p.width, p.overflow, p.centred, p.math]) });
   check('Body text is not shrunk below 16px at any tested width', result.pages.every(p => p.fontSize >= 16), { sizes: result.pages.map(p => [p.route, p.width, p.fontSize]) });
@@ -226,7 +245,7 @@ const settle = page => page.evaluate(async () => {
   // 7. axe-core WCAG 2.1 A/AA.
   if (fs.existsSync(axePath)) {
     const axeSource = fs.readFileSync(axePath, 'utf8');
-    for (const route of [NASH, '/kinh-te/toan-co-ban-1/', '/en/toan-hoc/riemann-hypothesis-number-theory/'])
+    for (const route of [NASH, '/kinh-te/toan-co-ban-1/', VI_NASH])
       for (const [width, scheme] of [[390, 'light'], [390, 'dark'], [1440, 'light'], [1440, 'dark']]) {
         const { context, page } = await open(route, { width, scheme });
         await page.addScriptTag({ content: axeSource });

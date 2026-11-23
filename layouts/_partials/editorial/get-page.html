@@ -1,5 +1,15 @@
-{{- /* Page by path in the current language, else English. */ -}}
-{{- $p := site.GetPage . -}}
-{{- $path := . -}}
-{{- if not $p -}}{{- range site.Sites -}}{{- if and (not $p) (eq .Language.Lang "en") -}}{{- $p = .GetPage $path -}}{{- end -}}{{- end -}}{{- end -}}
+{{- /* Page by content path in the current language, else English. The argument may also be a
+       list of alternative paths (D-017): the first found in the current language wins, then the
+       first found in English. Returns nil when none exists. */ -}}
+{{- $paths := cond (reflect.IsSlice .) . (slice .) -}}
+{{- $p := false -}}
+{{- range $paths }}{{ if not $p }}{{ with site.GetPage . }}{{ $p = . }}{{ end }}{{ end }}{{ end -}}
+{{- if not $p -}}
+  {{- range site.Sites -}}
+    {{- if eq .Language.Lang "en" -}}
+      {{- $s := . -}}
+      {{- range $paths }}{{ if not $p }}{{ with $s.GetPage . }}{{ $p = . }}{{ end }}{{ end }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- return $p -}}

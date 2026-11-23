@@ -5,6 +5,9 @@ draft: false
 categories: ["kinh-te", "toan-hoc"]
 tags: ["toan-kinh-te", "toi-uu-hoa"]
 math: true
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/kinh-te/toan-co-ban-2/"
 ---
 
 Tối ưu hóa là trái tim của lý thuyết kinh tế: người tiêu dùng muốn tối đa hóa độ thỏa dụng (utility), và doanh nghiệp muốn tối đa hóa lợi nhuận (profit) hoặc tối thiểu hóa chi phí (cost).

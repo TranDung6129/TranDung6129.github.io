@@ -5,6 +5,9 @@ draft: false
 categories: ["kinh-te", "toan-hoc"]
 tags: ["toan-kinh-te", "vi-tich-phan"]
 math: true
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/kinh-te/toan-co-ban-4/"
 ---
 
 Nếu như đạo hàm giải quyết bài toán cận biên ở những mức thay đổi cực kỳ nhỏ, thì tích phân giải quyết bài toán "đi ngược lại" từ tốc độ thay đổi cận biên để tìm tổng các giá trị tích lũy.

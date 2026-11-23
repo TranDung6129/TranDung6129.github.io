@@ -90,3 +90,21 @@ Agents may propose choices; changes to accepted product direction require mainta
 - **Consequences:** D1 changes article presentation and adds a small no-dependency enhancement in `assets/js/editorial.js`; it does not change the homepage, database boundary, subscription/payment scope, content ownership, or public route set. D2–D8 remain non-implemented future constraints.
 - **Refinement, 2026-11-22 (Claude Code):** the contents panel is sticky inside an aside that spans the article body; H3 lists fold to the section being read unless the reader toggled one. The article footer has one discovery block — Further Essays (a featured essay shown with artwork it already owns, else text-only; up to two supporting; never the older/newer essays) then Curated Reading (verified entries from the essay's references, same width and weight) — and no separate related list. Ornaments are inline `currentColor` SVGs chosen by an md5 of the content path per role (`data/d1_ornaments.yaml`, front-matter override), never behind text and never on the homepage; the current five are prototypes. Evidence: `docs/audits/d1/README.md`.
 - **Owner decision, 2026-11-23:** the brand mark, favicon and navigation flourishes stay in D1 as interim identity; D5 (Visual Identity & Asset Library) replaces them with the approved final set. The reading-progress bar is visual only (`aria-hidden`): exposed as a progressbar it made Orca interrupt reading with "N percent" on every scroll, and the contents list already marks the current section with `aria-current`. Evidence: `docs/audits/d1/README.md` (final acceptance pass). The owner reviewed the right side on 2026-11-23 and judged the composition balanced: no right-side ornament is added.
+
+## D-017 — Each essay in the language it is written in
+- **Status:** ACCEPTED by the owner, 2026-11-23 ("tách biệt lại tiếng Anh và tiếng Việt"; the current essays are largely placeholders and may be removed).
+- **Problem:** 17 content files carried the wrong language: ten `.en.md` essays and six English category pages contained Vietnamese text, and the Vietnamese `game_theory_nash.md` was English. Readers saw Vietnamese on the English site and the reverse, and screen readers read English with a Vietnamese voice (Orca, D1 final pass).
+- **Choice:**
+  - Wrong-language essay copies are removed, not machine-translated.
+  - Their URLs redirect to the original (front-matter `aliases`).
+  - The six English category pages are translated: they are structure, not essays.
+  - Generated listings left empty in a language redirect to the same listing in the other language (`data/redirects.yaml`).
+  - Templates that reference essays by path accept a list of alternatives, so curation can name the right essay per language.
+- **Consequences:**
+  - The English site has two essays: *Basic Mathematics for Economics (Part 1)* and *Game Theory & Nash Equilibrium*.
+  - English Volume I lists those two and says Parts 2–5 are Vietnamese only.
+  - Vietnamese Volume I's Nash chapter is now the Vietnamese Nash essay.
+  - The Vietnamese film and lab link to the Vietnamese essay.
+  - 37 term RSS feeds end.
+  - A new essay set (D4) should be written per language; a translation is a separate file, added only when it exists.
+- **Evidence:** `docs/audits/d-017/URL_MAP.md`; route diff against `main`.
