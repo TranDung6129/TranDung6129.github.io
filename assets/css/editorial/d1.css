@@ -5,6 +5,9 @@
   --d1-rail: 13rem;
   --d1-rail-gap: clamp(2rem, 4vw, 4.5rem);
   --d1-wide: 58rem;
+  /* The prose column itself: 70ch of the body face at 1.04rem (the site-wide --ed-measure),
+     written in rem so the rail, which uses another font, can be placed against it exactly. */
+  --d1-prose: 39.375rem;
 }
 
 /* The logo and action cluster occupy equal side columns. Navigation therefore remains centred
@@ -34,7 +37,7 @@
 .d1-article { position: relative; overflow-x: clip; }
 .d1-article .article-header { max-width: var(--d1-measure); margin-inline: auto; padding-top: 2.1rem; }
 .d1-article .article-layout { display: block; padding-top: 2rem; }
-.d1-article .prose { width: min(100%, var(--d1-measure)); margin-inline: auto; font-size: 1.04rem; line-height: 1.57; }
+.d1-article .prose { width: min(100%, var(--d1-prose)); margin-inline: auto; font-size: 1.04rem; line-height: 1.57; }
 .d1-article .prose p, .d1-article .prose li { hyphens: manual; }
 .d1-article .prose h2 { margin-top: 2.45rem; }
 /* Essays often put a Markdown rule before a section; the h2 already draws one, so drop the second. */
@@ -48,7 +51,9 @@
    sticky panel inside it has room to travel; it stays in view from the first heading to the
    last paragraph and is released before the footer. */
 .d1-article .article-layout { position: relative; }
-.d1-article .article-aside { position: absolute; top: 2rem; bottom: 0; width: var(--d1-rail); left: calc(50% - (var(--d1-measure) / 2) - var(--d1-rail-gap) - var(--d1-rail)); }
+/* The rail ends one gap before the prose and is at most --d1-rail wide; on narrower desktops
+   (1111–1320 px) it starts at the article edge and narrows instead of being clipped. */
+.d1-article .article-aside { position: absolute; top: 2rem; bottom: 0; width: auto; left: max(0px, calc(50% - (var(--d1-prose) / 2) - var(--d1-rail-gap) - var(--d1-rail))); right: calc(50% + (var(--d1-prose) / 2) + var(--d1-rail-gap)); }
 .toc-panel { position: sticky; top: 1rem; display: flex; flex-direction: column; max-height: calc(100vh - 2rem); }
 .reading-progress { flex: none; height: 2px; background: var(--ed-border); margin: 0 0.65rem 0.4rem; overflow: hidden; }
 .reading-progress > span { display: block; width: 0; height: 100%; background: var(--ed-accent); transition: width var(--ed-duration) linear; }

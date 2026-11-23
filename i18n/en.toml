@@ -444,3 +444,5 @@ other = "Older and newer essays"
 other = "Reference {{ .N }} in this essay"
 [ed_tocToggle]
 other = "Subsections of %s"
+[ed_readingProgress]
+other = "Reading progress"

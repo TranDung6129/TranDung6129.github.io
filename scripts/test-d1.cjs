@@ -59,6 +59,7 @@ const settle = page => page.evaluate(async () => {
         mathContainers: document.querySelectorAll('mjx-container').length,
         favicon: document.querySelector('link[rel="icon"]')?.getAttribute('href'),
         tocNavLabel: document.querySelector('.d1-article .toc nav')?.getAttribute('aria-label'),
+        progressLabel: document.querySelector('.reading-progress')?.getAttribute('aria-label'),
         asideLabel: document.querySelector('.article-aside')?.getAttribute('aria-label'),
         toggleLabels: [...document.querySelectorAll('.toc-toggle')].map(b => b.getAttribute('aria-label')),
         sourceLinks: [...document.querySelectorAll('.source-item .discovery-cta')].map(a => a.getAttribute('href')),
@@ -96,7 +97,7 @@ const settle = page => page.evaluate(async () => {
   check('Footer: Further Essays then Curated Reading; one featured essay with its artwork, up to two supporting; three sources', result.cases.every(c => c.discovery.join('|') === 'discovery-essays|discovery-reading' && c.featured === 1 && c.featuredArt && c.supporting <= 2 && c.supporting >= 1 && c.sources === 3), { headings: result.cases[0].headings, supporting: result.cases[0].supporting });
   check('Both discovery modules have the same width (equal prominence)', result.cases.every(c => c.modules.essays.width === c.modules.reading.width), { modules: result.cases.map(c => [c.width, c.modules]) });
   check('Old duplicate "Related reading" list removed; no texture behind the page', result.cases.every(c => c.relatedReading === 0 && c.bodyBackground === 'none'));
-  check('TOC: one labelled navigation landmark (no unlabelled nav, no nested aside landmark); toggle names localised', result.cases.every(c => c.tocNavLabel === 'Nội dung' && !c.asideLabel && c.toggleLabels.length && c.toggleLabels.every(l => l.startsWith('Mục con của ') && l.length > 12)), { navLabel: result.cases[0].tocNavLabel, toggles: result.cases[0].toggleLabels });
+  check('TOC: one labelled navigation landmark (no unlabelled nav, no nested aside landmark); toggle names localised', result.cases.every(c => c.tocNavLabel === 'Nội dung' && c.progressLabel === 'Tiến độ đọc' && !c.asideLabel && c.toggleLabels.length && c.toggleLabels.every(l => l.startsWith('Mục con của ') && l.length > 12)), { navLabel: result.cases[0].tocNavLabel, toggles: result.cases[0].toggleLabels });
   check('Curated Reading: every source opens its verified external page', result.cases.every(c => c.sourceLinks.length === 3 && c.sourceLinks.every(h => /^https:\/\//.test(h))), { links: result.cases[0].sourceLinks });
   check('No doubled rules: a Markdown rule before a section heading and the TOC top border are not drawn twice', result.cases.every(c => c.doubleRules === 0 && c.tocTopBorder === 'none'));
   check('No MathJax errors and formulas rendered', result.cases.every(c => c.mathErrors === 0 && c.mathContainers > 0), { containers: result.cases.map(c => c.mathContainers) });
@@ -192,6 +193,24 @@ const settle = page => page.evaluate(async () => {
     result[`zoom${width}`] = z;
     check(`200% text zoom at ${width}px: no horizontal page scroll and prose inside the viewport`, z.scrollWidth <= z.innerWidth && z.prose.left >= 0 && z.prose.right <= z.innerWidth, z);
     await context.close();
+  }
+
+  // 5b. Narrower desktops (common laptop widths): the rail must sit inside the article, fully
+  // visible, clear of the prose and still wide enough to read.
+  {
+    const rails = [];
+    for (const width of [1112, 1180, 1280, 1320, 1366, 1920]) {
+      const { context, page } = await open(NASH, { width, height: 800 });
+      rails.push(await page.evaluate(() => {
+        const r = s => document.querySelector(s).getBoundingClientRect();
+        const a = r('.article-aside'), p = r('.d1-article .prose'), art = r('.d1-article'), t = r('.d1-article .toc');
+        return { width: innerWidth, position: getComputedStyle(document.querySelector('.article-aside')).position, railLeft: Math.round(a.left), articleLeft: Math.round(art.left), railWidth: Math.round(a.width), tocLeft: Math.round(t.left), gap: Math.round(p.left - a.right), proseCentre: +(p.left + p.width / 2).toFixed(2) };
+      }));
+      if (width === 1280) await page.screenshot({ path: path.join(shots, 'nash-1280-light-start.png') });
+      await context.close();
+    }
+    result.rails = rails;
+    check('Rail at 1112–1920 px: inside the article (not clipped), ≥ 10rem wide, ≥ 24px clear of the prose, prose still centred', rails.every(r => r.position === 'absolute' && r.railLeft >= r.articleLeft && r.tocLeft >= r.articleLeft && r.railWidth >= 160 && r.gap >= 24 && Math.abs(r.proseCentre - r.width / 2) <= 2), { rails });
   }
 
   // 6. Homepage untouched by D1 ornaments.
