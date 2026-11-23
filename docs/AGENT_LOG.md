@@ -483,11 +483,11 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - The owner's optional ornament concept pack (27 SVGs, untracked, status unconfirmed).
 
 ### 2026-11-24 — D5 visual identity implemented — Claude Code
-- **Branch:** `feat/d5-visual-identity` (from `main` after #47). The owner chose logo C and approved the library.
+- **Branch:** `feat/d5-visual-identity` (from `main` after #47). The owner approved the library. Logo: C was chosen first, then the owner switched to **A (refined quill)** at merge review.
 - **Changed:**
   - Five PD/CC0 engravings in `static/ornaments/d5/`, with the manifest in `data/d1_ornaments.yaml`.
   - The ornament partials draw raster masks, and the headpiece now rotates.
-  - Brand mark `static/images/brand-sprig.svg` as a mask; new favicon.
+  - Brand mark: the refined quill (inline SVG) with a matching heavier-stroke favicon.
   - `d5.css`.
   - D1 SVG ornaments removed after a grep showed no remaining references.
   - `test-d1.cjs` theme-colour check updated for masks.

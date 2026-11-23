@@ -1,7 +1,7 @@
-{{- /* Brand lockup (D5, owner choice C): the Mattioli vetch sprig as a CSS mask filled with the
-       accent colour (static/images/brand-sprig.svg; cached, theme-aware), then the wordmark. */ -}}
+{{- /* Brand lockup (D5, owner choice A, 2026-11-24): the refined quill, inline so it takes the
+       accent colour in both themes, then the wordmark. Favicon: static/images/favicon.svg. */ -}}
 {{- $compact := .compact | default false -}}
 <span class="brand{{ if $compact }} brand-compact{{ end }}">
-  <span class="brand-mark" aria-hidden="true"></span>
+  <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M38.5 5.5C26 8 16.5 18.5 12.6 33.4c3.3-4.1 7.4-7.4 12.4-9.6-3.4 3.2-6.2 6.9-8.3 11.1 9.1-5 16.3-14.7 21.8-29.4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M38.5 5.5 13.6 36.6M12.6 33.4 9.5 41.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M28.2 12.6l3.7 1.2M23.9 17.8l4.5.9M20.1 23.6l4.4.4" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
   {{- if not $compact }}<span class="brand-name">{{ site.Title }}</span>{{ end -}}
 </span>

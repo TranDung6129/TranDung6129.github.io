@@ -1,6 +1,6 @@
 # D5 — Visual identity & asset library: design specification
 
-**Status:** APPROVED 2026-11-24 (logo **C**, library approved) and implemented in `feat/d5-visual-identity` (D-020). The review-only overlay and its `/d5-board/` page were removed once the assets moved into `static/`, `data/` and `layouts/`. Screenshots: `docs/audits/d5/screenshots/`. Checks: `docs/audits/d5/tools/d5-check.cjs` (12 states: no overflow, no errors, axe 0, every visible ornament has a size).
+**Status:** APPROVED 2026-11-24 (library approved; logo **A**, the refined quill: the owner changed from C at merge review) and implemented in `feat/d5-visual-identity` (D-020). The review-only overlay and its `/d5-board/` page were removed once the assets moved into `static/`, `data/` and `layouts/`. Screenshots: `docs/audits/d5/screenshots/`. Checks: `docs/audits/d5/tools/d5-check.cjs` (12 states: no overflow, no errors, axe 0, every visible ornament has a size).
 
 ## 1. Design system
 - **Unchanged:** the Phase 2 tokens (paper/ink/terracotta, midnight dark), Newsreader / Source Serif 4 / sans, the spacing and the rules. D5 adds no colour.

@@ -3791,7 +3791,7 @@
       "name": "TOC link scrolls to its heading",
       "passed": true,
       "href": "#1-tối-đa-hóa-lợi-nhuận-của-doanh-nghiệp",
-      "top": 28
+      "top": 30
     },
     {
       "name": "Code copy writes the code (without line numbers) to the clipboard",

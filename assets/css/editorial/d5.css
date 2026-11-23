@@ -7,6 +7,4 @@
 .toc-ornament:has(.ornament-mask) { opacity: 0.85; width: 7rem; }
 .article-landscape .ornament-mask { opacity: 0.35; }
 
-/* Brand mark (owner choice C): the traced Mattioli sprig, accent-coloured, beside the wordmark. */
-.brand-mark { display: inline-block; flex: none; width: 2.35em; height: 1.48em; background: var(--ed-accent); -webkit-mask: url("/images/brand-sprig.svg") center / contain no-repeat; mask: url("/images/brand-sprig.svg") center / contain no-repeat; }
-@media (max-width: 560px) { .brand-mark { width: 2.6rem; height: 1.65rem; } }
+/* Brand mark: the refined quill (owner choice A) uses the D1 .brand-mark sizing in d1.css. */
