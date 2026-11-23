@@ -72,10 +72,32 @@ Rules carried over:
   - Affiliate: a flag plus a disclosure (D6).
 - **Tags:** readable label per language (fixes the slug display).
 
-## 6. Questions for the next round
+## 6. Owner decisions, round 2 (2026-11-24)
 
-Asked to the owner after this file (answers recorded here):
-- Topics: which subject areas the publication keeps, and whether empty ones go.
-- Navigation: whether Topics joins the main navigation.
-- Japanese and Chinese interfaces with no content: keep or retire.
-- Volume I: becomes a Series (as defined above), or stays as Volume I and is rewritten into a planned book.
+4. **Topics: four.**
+   - Toán học — absorbs Vật lý.
+   - Kinh tế.
+   - Khoa học máy tính.
+   - Triết học — absorbs Cá nhân.
+
+   Implementation note: the `vat-ly` and `ca-nhan` category URLs redirect to their new homes; the `categories:` front matter of affected essays is updated. Whether the merged topics are renamed (e.g. "Toán học & Vật lý") is left to DESIGN_SPEC, with the owner.
+5. **Topic hubs live inside the Journal.** The main navigation keeps its five approved items. The Journal gets a topic filter, and each topic has a hub page: introduction, essays, series, volumes, films, labs, resources.
+6. **Japanese and Chinese interfaces stay** as they are, although they have no content.
+7. **Volume I becomes a Series.** "Toán cơ bản cho kinh tế" becomes a Series in the Journal. Volumes shows an honest "in preparation" state until the first purposeful book exists. The old Volume I URLs redirect to the series.
+
+## 7. Sitemap after round 2 (for approval)
+
+```
+/                         Home: featured essays, latest essays, current series or volume, a resource pick
+├── Journal               all essays; filter by topic; series list
+│   ├── Topics (4)        Toán học · Kinh tế · Khoa học máy tính · Triết học   (hub pages)
+│   ├── Series            Toán cơ bản cho kinh tế (from Volume I) …
+│   └── <essay>
+├── Volumes               "in preparation" until the first book
+├── Films                 each film → its essay(s)
+├── Labs                  each lab → its essay(s)
+├── Discover              resource library by topic and type
+└── Footer                About · Archive · Tags · RSS · Search
+```
+
+Next: DESIGN_SPEC with mockups (navigation and Journal filter, topic hub, series page, essay page showing its series/volume/film/lab/resources, Discover library). These go to the owner for approval before any implementation.

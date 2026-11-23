@@ -392,3 +392,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Production checks (post-merge):** D1 PR #40 (`4b6d328`) and D-017 PR #41 (`8a86b25`) deployed. `D1_BASE=https://trandung6129.github.io node scripts/test-d1.cjs` → 31/31. Redirects for removed copies and retired listings answer on the live site.
 - **Owner decisions:** Vietnamese first with selected English editions; Volumes are purposeful books, with Series as lighter chains in the Journal; Discover becomes a resource library. Recorded in `docs/phases/phase-4/d4/DISCOVERY.md`.
 - **Next:** owner answers on topics, navigation, ja/zh interfaces and Volume I; then DESIGN_SPEC with navigation and archive/series mockups.
+- 2026-11-24 (D4, round 2): owner decisions recorded in `DISCOVERY.md` §6:
+  - Four topics: Vật lý folds into Toán học, Cá nhân into Triết học.
+  - Topic hubs sit inside the Journal; the main navigation keeps five items.
+  - The ja/zh interfaces stay.
+  - Volume I becomes a Series.
+  - Sitemap §7 awaits approval; mockups come next.
