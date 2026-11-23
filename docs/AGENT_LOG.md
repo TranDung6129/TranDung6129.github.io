@@ -431,3 +431,16 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - 7 term feeds end.
   - No screen-reader run on the new pages.
 - **Next:** owner approves the merge → production check → D4 DONE; then D3.
+
+### 2026-11-24 — D4 closed on production; D3 started — Claude Code
+- **D4 production (`a4e6354`):**
+  - `d4-check.cjs` against https://trandung6129.github.io: 48 states, 0 problems; keyboard OK.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+  - Live redirects checked: `/volumes/volume-i/`, `/en/volumes/volume-i/`, `/collections/`, `/categories/vat-ly/`, `/en/categories/economics/`, `/categories/kinh-te/page/1/`.
+  - TASK_BOARD D4 → DONE.
+- **D3 claimed** (`docs/d3-discovery`). Current practice:
+  - Author–date in plain text: "(Nash, 1950)", "(Hardy, 1914)".
+  - One hand-numbered reference list (English Nash essay).
+  - No footnotes; Goldmark footnotes are enabled.
+  - Pre-existing gap: "(Aumann, 1974)" is cited in the Nash essay but absent from its references.
