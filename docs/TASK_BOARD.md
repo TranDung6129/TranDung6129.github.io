@@ -52,7 +52,7 @@ Plan and owner decisions: [docs/phases/phase-4/PLAN.md](phases/phase-4/PLAN.md).
 | [x] | P4-02 | Retire sample collections; series folded into Volumes with redirects | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
 | [x] | P4-03 | About as a publication page | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
 | [x] | P4-04 | Labs and films as their own pages; essays link with cards | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
-| [ ] | D4 | Content architecture: sitemap, content types, relationships, navigation, metadata (design first, no code) | D1, D-017 | IN PROGRESS | Claude Code, `docs/d4-discovery` |
+| [ ] | D4 | Content architecture: sitemap, content types, relationships, navigation, metadata (design first, no code) | D1, D-017 | IN PROGRESS (prototype approved; implementation PR awaiting merge approval) | Claude Code, `feat/d4-content-architecture` |
 
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage

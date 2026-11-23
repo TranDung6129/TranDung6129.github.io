@@ -1,5 +1,5 @@
 ---
 title: "Volumes"
-description: "Tuyển tập: những chuỗi bài viết được sắp xếp như các chương của một cuốn sách."
+description: "Những cuốn sách được viết có chủ đích, chương này nối tiếp chương kia."
 view: volumes
 ---

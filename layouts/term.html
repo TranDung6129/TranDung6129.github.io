@@ -1,10 +1,51 @@
-{{- /* Term pages: a category, tag or series (P3-03). */ -}}
+{{- /* D4: a category term is a topic hub; tags keep the plain list. */ -}}
 {{- define "content" -}}
-{{- $kicker := .Parent.Title -}}
-{{ partial "editorial/list-header.html" (dict "page" . "kicker" $kicker "count" (len .Pages)) }}
-{{- with .Content }}<div class="prose content list-intro">{{ . }}</div>{{ end -}}
-{{- $ordered := cond (eq .Data.Plural "collections") .Pages.ByDate .Pages.ByDate.Reverse -}}
-{{- $pager := .Paginate $ordered (site.Params.list.paginate | default 20) -}}
-{{- if $pager.Pages }}{{ partial "editorial/essay-list.html" (dict "pages" $pager.Pages "start" (add 1 (mul (sub $pager.PageNumber 1) $pager.PagerSize))) }}{{ else }}<p class="empty-state">{{ T "ed_noEssays" | default "No essays have been published yet." }}</p>{{ end -}}
-{{- partial "editorial/pagination.html" . -}}
+{{- if eq .Data.Plural "categories" -}}
+  {{- $t := . -}}
+  {{- $essays := (where .Pages "Section" "in" site.Params.mainSections).ByDate.Reverse -}}
+  {{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_topics" | default "Topics") "count" (len $essays)) }}
+  {{- $n := 0 -}}
+  {{- $series := slice -}}{{- with site.GetPage "/series" }}{{ range .RegularPages }}{{ if eq .Params.topic $t.Data.Term }}{{ $series = $series | append . }}{{ end }}{{ end }}{{ end -}}
+  {{- with $series }}{{ $n = add $n 1 }}
+  <section class="section-block" aria-labelledby="t-series">
+    {{ partial "editorial/section-heading.html" (dict "number" (printf "%02d" $n) "id" "t-series" "title" (T "ed_series" | default "Series") "aside" (T "ed_seriesKicker" | default "Read in order")) }}
+    <div class="series-grid">{{ range . }}{{ partial "editorial/series-card.html" . }}{{ end }}</div>
+  </section>
+  {{- end }}
+  {{- $n = add $n 1 }}
+  <section class="section-block" aria-labelledby="t-essays">
+    {{ partial "editorial/section-heading.html" (dict "number" (printf "%02d" $n) "id" "t-essays" "title" (T "ed_topicEssays" | default "Essays")) }}
+    {{- if $essays }}{{ partial "editorial/essay-list.html" (dict "pages" $essays) }}{{ else }}<p class="empty-state">{{ T "ed_noEssays" | default "No essays have been published yet." }}</p>{{ end }}
+  </section>
+  {{- $media := slice -}}
+  {{- range (slice "films" "labs") -}}{{- $sec := . -}}
+    {{- with site.GetPage (printf "/%s" $sec) }}{{ range .RegularPages }}{{ with partial "editorial/get-page.html" .Params.related }}{{ $c := partial "editorial/category.html" . }}{{ if and $c (eq $c.RelPermalink $t.RelPermalink) }}{{ $media = $media | append (dict "sec" $sec) }}{{ end }}{{ end }}{{ end }}{{ end -}}
+  {{- end -}}
+  {{- if $media }}{{ $n = add $n 1 }}
+  <section class="section-block" aria-labelledby="t-media">
+    {{ partial "editorial/section-heading.html" (dict "number" (printf "%02d" $n) "id" "t-media" "title" (T "ed_topicMedia" | default "Films and labs")) }}
+    <ul class="media-list">
+    {{- range (slice "films" "labs") -}}{{- $sec := . -}}
+      {{- with site.GetPage (printf "/%s" $sec) }}{{ range .RegularPages }}{{ $m := . }}{{ with partial "editorial/get-page.html" .Params.related }}{{ $c := partial "editorial/category.html" . }}{{ if and $c (eq $c.RelPermalink $t.RelPermalink) }}
+      <li><span class="kicker">{{ if eq $sec "films" }}{{ T "ed_film" }}{{ with $m.Params.duration }} · {{ . }}{{ end }}{{ else }}{{ T "ed_lab" }}{{ end }}</span><a href="{{ $m.RelPermalink }}">{{ $m.Title }}</a><span class="meta">{{ $m.Description }}</span></li>
+      {{- end }}{{ end }}{{ end }}{{ end -}}
+    {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- $res := slice -}}{{- range site.Data.resources.resources }}{{ if in .topics $t.Data.Term }}{{ $res = $res | append . }}{{ end }}{{ end -}}
+  {{- with $res }}{{ $n = add $n 1 }}
+  <section class="section-block" aria-labelledby="t-res">
+    {{ partial "editorial/section-heading.html" (dict "number" (printf "%02d" $n) "id" "t-res" "title" (T "ed_topicResources" | default "Resources") "aside" "") }}
+    <ul class="resource-list">{{ range . }}{{ partial "editorial/resource-item.html" . }}{{ end }}</ul>
+    {{ with site.GetPage "/discover" }}<p class="more-link"><a class="text-link" href="{{ .RelPermalink }}">{{ T "ed_allResources" | default "The whole library" }} <span aria-hidden="true">→</span></a></p>{{ end }}
+  </section>
+  {{- end }}
+{{- else -}}
+  {{ partial "editorial/list-header.html" (dict "page" . "kicker" .Parent.Title "count" (len .Pages)) }}
+  {{- with .Content }}<div class="prose content list-intro">{{ . }}</div>{{ end -}}
+  {{- $pager := .Paginate .Pages.ByDate.Reverse (site.Params.list.paginate | default 20) -}}
+  {{- if $pager.Pages }}{{ partial "editorial/essay-list.html" (dict "pages" $pager.Pages "start" (add 1 (mul (sub $pager.PageNumber 1) $pager.PagerSize))) }}{{ else }}<p class="empty-state">{{ T "ed_noEssays" | default "No essays have been published yet." }}</p>{{ end -}}
+  {{- partial "editorial/pagination.html" . -}}
+{{- end -}}
 {{- end -}}

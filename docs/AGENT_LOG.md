@@ -405,3 +405,29 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Fix:** `lastmod` is pinned in those 11 files to their previous commit date, which is what readers saw before #41. Films, labs and volume files changed meaningfully and keep their git date.
 - **Tests:** `hugo --gc --minify` 0 warnings. Rendered "Cập nhật"/"Updated" and JSON-LD `dateModified` checked on toan-co-ban-2 (15/11/2026), Riemann (1/3/2026) and the English Nash essay (15 Nov 2026).
 - **Rule for later edits:** a metadata-only change to an essay (aliases, categories, series membership) must pin `lastmod` to the last real edit. This applies to D4's topic/series migration.
+
+### 2026-11-24 — D4 content architecture implemented — Claude Code
+- **Branch:** `feat/d4-content-architecture` (from `main` after #42/#43). Owner approved the prototype; names "Khoa học cơ bản" and "Triết học & Suy ngẫm"; heatmap kept.
+- **Changed:**
+  - Topic hubs: `term.html`.
+  - Journal: topics, series, essays, heatmap.
+  - Series: content, layouts and the header box.
+  - Volumes: "in preparation" state.
+  - Homepage: current-series slot.
+  - Discover: library on `data/resources.yaml`.
+  - Volume I → series, with aliases.
+  - Topics 6 → 4, plus `data/redirects.yaml` entries.
+  - English essays' categories folded into the four topics, with `lastmod` pinned.
+  - i18n in four languages.
+  - The prototype overlay and `scripts/preview-d4.sh` removed (superseded).
+- **Tests (exit 0):**
+  - Clean `hugo --gc --minify`: 0 warnings.
+  - `python3 docs/audits/d4/tools/check-redirects.py <site> <main-site>`: 161 redirects, 0 broken or chained; 0 HTML routes lost.
+  - `node docs/audits/d4/tools/d4-check.cjs`: 12 pages × 1440/390 × light/dark = 48 states; 200, no overflow, no errors, one h1, axe 0; keyboard reaches all topic and series links with a visible outline.
+  - `node scripts/test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32 (series replaces the Volume I checks).
+- **Masthead (owner-approved):** the subject strip now holds the four topic links; typography is identical (screenshot `docs/audits/d4/final/screenshots/masthead-subjects.png`). Re-run after it: d4-check 48 states, test-d1 31/31, p3 32/32, 161 redirects valid.
+- **Gaps:**
+  - 7 term feeds end.
+  - No screen-reader run on the new pages.
+- **Next:** owner approves the merge → production check → D4 DONE; then D3.

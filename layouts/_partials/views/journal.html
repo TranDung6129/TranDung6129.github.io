@@ -1,28 +1,36 @@
-{{- /* Journal landing (P3-03): every essay of the subject sections, category navigation and the
-       publication-activity heatmap that used to sit on the old homepage. */ -}}
+{{- /* Journal (P3-03, D4): topic hubs, series, every essay, then the publishing heatmap. */ -}}
 {{- $src := partial "editorial/source-pages.html" . -}}
 {{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_journalKicker" | default "The journal") "count" (len $src.pages)) }}
-{{- $cats := slice -}}
+{{- $topics := slice -}}
 {{- range site.Taxonomies.categories.ByCount -}}
   {{- $n := len (where .Pages "Section" "in" site.Params.mainSections) -}}
-  {{- if gt $n 0 }}{{ $cats = $cats | append (dict "page" .Page "count" $n) }}{{ end -}}
+  {{- $topics = $topics | append (dict "page" .Page "count" $n) -}}
 {{- end -}}
-{{- with $cats }}
-<nav class="category-nav" aria-label="{{ T "ed_byCategory" | default "Browse by category" }}">
-  <span class="kicker">{{ T "ed_byCategory" | default "Browse by category" }}</span>
-  <ul>{{ range . }}<li><a href="{{ .page.RelPermalink }}">{{ .page.LinkTitle }} <span>{{ .count }}</span></a></li>{{ end }}</ul>
+{{- with site.GetPage "/categories" }}{{ range .Pages }}{{ $t := . }}{{ $known := false }}{{ range $topics }}{{ if eq .page.RelPermalink $t.RelPermalink }}{{ $known = true }}{{ end }}{{ end }}{{ if not $known }}{{ $topics = $topics | append (dict "page" $t "count" 0) }}{{ end }}{{ end }}{{ end -}}
+<nav class="topic-nav" aria-labelledby="topics-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "01" "id" "topics-title" "title" (T "ed_topics" | default "Topics")) }}
+  <ul>
+    {{- range $topics }}
+    <li><a href="{{ .page.RelPermalink }}"><span class="topic-name">{{ .page.LinkTitle }}</span><span class="topic-count">{{ T "ed_essayCount" (dict "Count" .count) | default (printf "%d essays" .count) }}</span>{{ with .page.Description }}<span class="topic-desc">{{ . }}</span>{{ end }}</a></li>
+    {{- end }}
+  </ul>
 </nav>
-{{- end }}
+{{- with site.GetPage "/series" }}{{ with .RegularPages }}
+<section class="section-block" aria-labelledby="series-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "02" "id" "series-title" "title" (T "ed_series" | default "Series") "aside" (T "ed_seriesKicker" | default "Read in order")) }}
+  <div class="series-grid">{{ range . }}{{ partial "editorial/series-card.html" . }}{{ end }}</div>
+</section>
+{{- end }}{{ end }}
 {{- $pager := .Paginate $src.pages 20 }}
 <section class="section-block journal-list" aria-labelledby="essays-title">
-  {{ partial "editorial/section-heading.html" (dict "number" "01" "id" "essays-title" "title" (T "ed_allEssays" | default "All essays")) }}
+  {{ partial "editorial/section-heading.html" (dict "number" "03" "id" "essays-title" "title" (T "ed_allEssays" | default "All essays")) }}
   {{- if $src.fallback }}<p class="section-intro">{{ T "ed_englishFallback" | default "Articles are published in Vietnamese and English; English versions are shown here." }}</p>{{ end -}}
   {{- if $pager.Pages }}{{ partial "editorial/essay-list.html" (dict "pages" $pager.Pages "start" (add 1 (mul (sub $pager.PageNumber 1) $pager.PagerSize))) }}{{ else }}<p class="empty-state">{{ T "ed_noEssays" | default "No essays have been published yet." }}</p>{{ end -}}
   {{- partial "editorial/pagination.html" . -}}
 </section>
 {{- if eq $pager.PageNumber 1 }}
 <section class="section-block heatmap-section" aria-labelledby="activity-title">
-  {{ partial "editorial/section-heading.html" (dict "number" "02" "id" "activity-title" "title" (T "ed_activity" | default "Publishing activity") "aside" (T "ed_activityAside" | default "Essays per day, six months")) }}
+  {{ partial "editorial/section-heading.html" (dict "number" "04" "id" "activity-title" "title" (T "ed_activity" | default "Publishing activity") "aside" (T "ed_activityAside" | default "Essays per day, six months")) }}
   <div id="cal-heatmap" class="heatmap-container" tabindex="0" role="img" aria-label="{{ T "ed_activityLabel" | default "Calendar of essays published per day over six months" }}"></div>
   {{ partial "heatmap.html" (dict "pages" $src.pages) }}
 </section>

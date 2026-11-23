@@ -1,9 +1,0 @@
-{{- /* D4 prototype: a series in a list (Journal, topic hub, series index). */ -}}
-{{- $s := . -}}{{- $parts := partial "editorial/series-parts.html" $s -}}
-<article class="series-card">
-  <p class="kicker">{{ T "ed_series" | default "Series" }}{{ with site.GetPage (printf "/categories/%s" $s.Params.topic) }} · {{ .LinkTitle }}{{ end }}</p>
-  <h3><a href="{{ $s.RelPermalink }}">{{ $s.Title }}</a></h3>
-  {{ with $s.Params.subtitle }}<p class="series-subtitle">{{ . }}</p>{{ end }}
-  <ol class="series-mini">{{ range $i, $e := $parts }}<li><span>{{ add $i 1 }}</span><a href="{{ $e.RelPermalink }}">{{ $e.LinkTitle }}</a></li>{{ end }}</ol>
-  <p class="meta">{{ T "ed_seriesParts" (dict "Count" (len $parts)) | default (printf "%d parts" (len $parts)) }} · {{ if eq $s.Params.status "complete" }}{{ T "ed_seriesComplete" | default "Complete" }}{{ else }}{{ T "ed_seriesOngoing" | default "Ongoing" }}{{ end }}</p>
-</article>

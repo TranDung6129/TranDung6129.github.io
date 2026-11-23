@@ -1,0 +1,14 @@
+{{- /* D4. The series a page belongs to: dict "series" "parts" "index" (0-based), or "". */ -}}
+{{- $p := . -}}
+{{- $out := "" -}}
+{{- with site.GetPage "/series" -}}
+  {{- range .RegularPages -}}
+    {{- $s := . -}}
+    {{- $parts := slice -}}
+    {{- range $s.Params.essays }}{{ with partial "editorial/get-page.html" . }}{{ $parts = $parts | append . }}{{ end }}{{ end -}}
+    {{- range $i, $e := $parts -}}
+      {{- if and (not $out) (eq $e.RelPermalink $p.RelPermalink) }}{{ $out = dict "series" $s "parts" $parts "index" $i }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

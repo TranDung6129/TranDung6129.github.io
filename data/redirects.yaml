@@ -1,13 +1,36 @@
-# Redirects for generated pages that no longer exist (D-017, content-language separation,
-# 2026-11-23). Content pages keep their old URLs through front-matter `aliases`; these are the
+# Redirects for generated pages that no longer exist (D-017, 2026-11-23; D-018, 2026-11-24). Content pages keep their old URLs through front-matter `aliases`; these are the
 # taxonomy and section listings that disappeared with them (no remaining content in that
 # language). Each points to the same listing in the language that still has the content.
 # Written as static meta-refresh pages by layouts/_partials/site/redirects.html (GitHub Pages
 # has no server-side redirects). Term RSS feeds (index.xml) cannot be redirected this way and
 # end; see docs/audits/d-017/URL_MAP.md.
 redirects:
-  - { from: "/categories/applied-mathematics/", to: "/en/categories/applied-mathematics/" }
-  - { from: "/categories/applied-mathematics/page/1/", to: "/en/categories/applied-mathematics/" }
+  # D-018 (2026-11-24): merged topics (vat-ly → toan-hoc, ca-nhan → triet-hoc), English-only
+  # category names folded into the four topics, and topic pages no longer paginated.
+  - { from: "/categories/ca-nhan/", to: "/categories/triet-hoc/" }
+  - { from: "/categories/ca-nhan/page/1/", to: "/categories/triet-hoc/" }
+  - { from: "/categories/khoa-hoc-may-tinh/page/1/", to: "/categories/khoa-hoc-may-tinh/" }
+  - { from: "/categories/kinh-te/page/1/", to: "/categories/kinh-te/" }
+  - { from: "/categories/toan-hoc/page/1/", to: "/categories/toan-hoc/" }
+  - { from: "/categories/triet-hoc/page/1/", to: "/categories/triet-hoc/" }
+  - { from: "/categories/vat-ly/", to: "/categories/toan-hoc/" }
+  - { from: "/categories/vat-ly/page/1/", to: "/categories/toan-hoc/" }
+  - { from: "/en/categories/applied-mathematics/", to: "/en/categories/toan-hoc/" }
+  - { from: "/en/categories/applied-mathematics/page/1/", to: "/en/categories/toan-hoc/" }
+  - { from: "/en/categories/ca-nhan/", to: "/en/categories/triet-hoc/" }
+  - { from: "/en/categories/ca-nhan/page/1/", to: "/en/categories/triet-hoc/" }
+  - { from: "/en/categories/economics/", to: "/en/categories/kinh-te/" }
+  - { from: "/en/categories/economics/page/1/", to: "/en/categories/kinh-te/" }
+  - { from: "/en/categories/khoa-hoc-may-tinh/page/1/", to: "/en/categories/khoa-hoc-may-tinh/" }
+  - { from: "/en/categories/kinh-te/page/1/", to: "/en/categories/kinh-te/" }
+  - { from: "/en/categories/mathematics/", to: "/en/categories/toan-hoc/" }
+  - { from: "/en/categories/mathematics/page/1/", to: "/en/categories/toan-hoc/" }
+  - { from: "/en/categories/toan-hoc/page/1/", to: "/en/categories/toan-hoc/" }
+  - { from: "/en/categories/triet-hoc/page/1/", to: "/en/categories/triet-hoc/" }
+  - { from: "/en/categories/vat-ly/", to: "/en/categories/toan-hoc/" }
+  - { from: "/en/categories/vat-ly/page/1/", to: "/en/categories/toan-hoc/" }
+  - { from: "/categories/applied-mathematics/", to: "/en/categories/toan-hoc/" }
+  - { from: "/categories/applied-mathematics/page/1/", to: "/en/categories/toan-hoc/" }
   - { from: "/en/khoa-hoc-may-tinh/", to: "/khoa-hoc-may-tinh/" }
   - { from: "/en/khoa-hoc-may-tinh/page/1/", to: "/khoa-hoc-may-tinh/" }
   - { from: "/en/tags/chien-luoc/", to: "/tags/chien-luoc/" }

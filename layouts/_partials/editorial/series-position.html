@@ -1,0 +1,10 @@
+{{- /* D4: replaces volume-position in the article header. */ -}}
+{{- with partial "editorial/series-of.html" . -}}
+{{- $n := add .index 1 -}}{{- $total := len .parts -}}
+<nav class="series-position" aria-label="{{ T "ed_inSeries" | default "In a series" }}">
+  <span class="kicker">{{ T "ed_series" | default "Series" }} · {{ T "ed_seriesPosition" (dict "N" $n "Total" $total) | default (printf "Part %d of %d" $n $total) }}</span>
+  <a href="{{ .series.RelPermalink }}">{{ .series.Title }}</a>
+  <ol class="series-dots" aria-hidden="true">{{ range $i, $e := .parts }}<li{{ if eq $i (sub $n 1) }} class="is-current"{{ end }}></li>{{ end }}</ol>
+  {{- if lt $n $total }}{{ with index .parts $n }}<span class="series-next">{{ T "ed_seriesNext" | default "Next part" }}: <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>{{ end }}{{ end }}
+</nav>
+{{- end -}}

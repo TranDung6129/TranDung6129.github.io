@@ -1,11 +1,11 @@
 ---
-title: "Philosophy"
+title: "Philosophy & Reflection"
 slug: "triet-hoc"
-description: "From metaphysics to epistemology, ethics and the philosophy of mind"
+description: "From metaphysics, epistemology and ethics to personal reflection"
 icon: "fa-solid fa-book-open"
 ---
 
-## Philosophy — the search for wisdom
+## Philosophy & Reflection — the search for wisdom
 
 Philosophy is the effort to understand the most basic questions about existence, knowledge, value and meaning. Throughout history it has shaped how we think about ourselves and the world.
 
@@ -16,3 +16,4 @@ Philosophy is the effort to understand the most basic questions about existence,
 - **Ethics**: deontology, consequentialism, virtue ethics
 - **Philosophy of mind**: consciousness, intentionality, qualia
 - **Phenomenology**: Husserl, Heidegger, Merleau-Ponty
+- **Reflection**: journal entries, books and films, questions about the meaning of life

@@ -20,7 +20,7 @@ const shots = process.env.MATRIX_SHOTS !== '0';
 fs.mkdirSync(path.join(out, 'screenshots'), { recursive: true });
 const host = new URL(base).host;
 const PAGES = [
-  ['home', '/'], ['journal', '/journal/'], ['article', '/kinh-te/toan-co-ban-2/'], ['volume', '/volumes/volume-i/'],
+  ['home', '/'], ['journal', '/journal/'], ['article', '/kinh-te/toan-co-ban-2/'], ['volume', '/volumes/'], ['series', '/series/toan-co-ban-cho-kinh-te/'],
   ['films', '/films/'], ['labs', '/labs/'], ['nash', '/labs/nash-explorer/'], ['discover', '/discover/'],
   ['essay', '/en/kinh-te/game_theory_nash/'], ['film', '/films/nash-animation/'],
 ];
@@ -153,14 +153,15 @@ const MATH = ['/kinh-te/toan-co-ban-1/', '/en/kinh-te/toan-co-ban-1/', '/kinh-te
   const lab = await p.locator('.lab h2 a').getAttribute('href');
   await p.goto(base + lab, { waitUntil: 'load' });
   check('Labs: the experiment link opens the live simulation', await p.evaluate(() => !!document.querySelector('[id^="react-root-Nash"]')), { lab });
-  await p.goto(base + '/volumes/volume-i/', { waitUntil: 'load' });
-  const chapters = await p.evaluate(() => [...document.querySelectorAll('.chapter-list a')].map(a => a.getAttribute('href')));
+  // D-018: Volume I became the series "Toán cơ bản cho kinh tế"; the volume URL redirects there.
+  await p.goto(base + '/series/toan-co-ban-cho-kinh-te/', { waitUntil: 'load' });
+  const chapters = await p.evaluate(() => [...document.querySelectorAll('.series-parts h2 a')].map(a => a.getAttribute('href')));
   const cs = []; for (const c of chapters) cs.push([c, await fetchStatus(c)]);
-  check('Volume I: six chapters, all resolve', chapters.length === 6 && cs.every(([, s]) => s === 200), { cs });
+  check('Series: five parts in order, all resolve', chapters.length === 5 && cs.every(([, s]) => s === 200), { cs });
   await p.goto(base + chapters[2], { waitUntil: 'load' });
-  check('Chapter page shows its volume position and links back', await p.evaluate(() => { const n = document.querySelector('.volume-position'); return !!n && /3/.test(n.textContent) && !!n.querySelector('a[href*="/volumes/"]'); }));
+  check('Essay in a series shows its position and links back', await p.evaluate(() => { const n = document.querySelector('.series-position'); return !!n && /3/.test(n.textContent) && !!n.querySelector('a[href*="/series/"]'); }));
   const commerce = [];
-  for (const route of ['/', '/volumes/', '/volumes/volume-i/', '/films/', '/labs/', '/discover/', '/en/discover/']) {
+  for (const route of ['/', '/volumes/', '/series/toan-co-ban-cho-kinh-te/', '/films/', '/labs/', '/discover/', '/en/discover/']) {
     await p.goto(base + route, { waitUntil: 'load' });
     if (await p.evaluate(() => /(\$\s?\d|₫|\bbuy\b|\bprice\b|checkout|subscribe now|mua ngay|giá bán)/i.test(document.querySelector('main').innerText) || !!document.querySelector('main a[href*="amazon."], main a[href*="tag="], main a[rel~="sponsored"]'))) commerce.push(route);
   }

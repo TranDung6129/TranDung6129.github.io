@@ -345,8 +345,6 @@ other = "Section"
 other = "Series"
 [ed_skip]
 other = "Skip to content"
-[ed_subjects]
-other = "Mathematics · Economics · Computing · Philosophy"
 [ed_tagline]
 other = "An independent publication on knowledge & the world"
 [ed_tags]
@@ -440,3 +438,61 @@ other = "Older and newer essays"
 other = "Reference {{ .N }} in this essay"
 [ed_tocToggle]
 other = "Subsections of %s"
+
+# --- D4 content architecture ---
+[ed_topics]
+other = "Topics"
+[ed_seriesKicker]
+other = "Read in order"
+[ed_seriesParts]
+one = "{{ .Count }} part"
+other = "{{ .Count }} parts"
+[ed_seriesPart]
+other = "Part {{ .N }}"
+[ed_seriesPosition]
+other = "Part {{ .N }} of {{ .Total }}"
+[ed_seriesNext]
+other = "Next part"
+[ed_seriesStart]
+other = "Start with part 1"
+[ed_seriesOngoing]
+other = "Ongoing"
+[ed_seriesComplete]
+other = "Complete"
+[ed_inSeries]
+other = "In a series"
+[ed_topicEssays]
+other = "Essays"
+[ed_topicMedia]
+other = "Films and labs"
+[ed_topicResources]
+other = "Resources"
+[ed_allResources]
+other = "The whole library"
+[ed_resBook]
+other = "Book"
+[ed_resPaper]
+other = "Paper"
+[ed_resCourse]
+other = "Course"
+[ed_resTool]
+other = "Tool"
+[ed_relatedEssays]
+other = "Related"
+[ed_libraryNote]
+other = "Books, papers, courses and tools chosen by topic, each with an editorial reason and a link to the essays it relates to. No paid links."
+[ed_volumesPreparing]
+other = "In preparation"
+[ed_volumesPreparingNote]
+other = "A volume is a book written on purpose: chapters written for it, in order, with an introduction and a conclusion. The first volume is being planned. Meanwhile, consecutive essays live in Series."
+[ed_currentSeries]
+other = "Current series"
+# Masthead subject links (D-018, owner 2026-11-24): short labels of the four topics.
+[ed_subject_toan_hoc]
+other = "Sciences"
+[ed_subject_kinh_te]
+other = "Economics"
+[ed_subject_khoa_hoc_may_tinh]
+other = "Computing"
+[ed_subject_triet_hoc]
+other = "Philosophy"

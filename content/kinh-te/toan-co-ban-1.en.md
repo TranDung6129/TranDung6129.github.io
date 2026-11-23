@@ -1,8 +1,10 @@
 ---
+# Metadata-only edit on 2026-11-24 (D-018 topics); lastmod stays the last real edit.
+lastmod: 2026-11-15T17:40:37+00:00
 title: "Basic Mathematics for Economics (Part 1): Derivatives and Marginal Functions"
 date: 2026-03-01T10:00:00+07:00
 draft: false
-categories: ["economics", "mathematics"]
+categories: ["kinh-te", "toan-hoc"]
 tags: ["economics-math", "calculus"]
 math: true
 ---

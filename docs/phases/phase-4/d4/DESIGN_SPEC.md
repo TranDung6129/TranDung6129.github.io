@@ -1,6 +1,10 @@
 # D4 — Content Architecture: design specification
 
-**Status:** PROTOTYPE READY FOR OWNER REVIEW (2026-11-24). Nothing here is live. Decisions: `DISCOVERY.md` §2, §6. Screenshots: `docs/audits/d4/screenshots/`. Prototype source: `prototype/` (build with `scripts/preview-d4.sh <dir>`).
+**Status:** APPROVED by the owner 2026-11-24 and implemented in `feat/d4-content-architecture` (D-018). Prototype screenshots: `docs/audits/d4/screenshots/`. Implementation evidence: `docs/audits/d4/final/`. The review-only prototype overlay and `scripts/preview-d4.sh` were removed once the production templates replaced them (same files, now in `layouts/`, `assets/`, `content/`, `data/`).
+
+**Owner answers at approval:**
+- Merged topic names: "Khoa học cơ bản" (en "Fundamental Sciences") and "Triết học & Suy ngẫm" (en "Philosophy & Reflection").
+- The heatmap stays at the end of the Journal.
 
 The design reuses the approved Phase 3 and D1 vocabulary: numbered section headings, the reading list, the list header, top rules instead of boxes, accent kickers, and the D1 article unchanged except for one box. No new colours, fonts or imagery.
 
@@ -11,7 +15,7 @@ Order:
 3. **02 Series:** series cards.
 4. **03 All essays:** the existing reading list.
 
-The publishing heatmap moves off the Journal; it is not part of D4 and stays available for a later home.
+The publishing heatmap stays as section 04 at the end (owner, 2026-11-24).
 Screenshots: `journal-1440-light.png`, `journal-390-light.png`, `journal-1440-dark.png`.
 
 ## 2. Topic hub (`/categories/<topic>/`)

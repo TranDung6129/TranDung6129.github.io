@@ -37,7 +37,10 @@
 {{- range $src.pages -}}{{- if and (not (in $exclude .RelPermalink)) (lt (len $latest) (site.Data.home.journal_count | default 4)) -}}{{- $latest = $latest | append . -}}{{- end -}}{{- end -}}
 {{- $volume := false -}}
 {{- with partial "editorial/section-link.html" "volumes" -}}{{- with .RegularPages.ByWeight -}}{{- $volume = index . 0 -}}{{- end -}}{{- end }}
-<div class="journal-volume{{ if not $volume }} journal-only{{ end }}">
+{{- /* D4: until the first volume exists, the slot shows the most recent series. */ -}}
+{{- $series := false -}}
+{{- if not $volume }}{{ with site.GetPage "/series" }}{{ with .RegularPages.ByDate.Reverse }}{{ $series = index . 0 }}{{ end }}{{ end }}{{ end }}
+<div class="journal-volume{{ if not (or $volume $series) }} journal-only{{ end }}">
   <section id="journal" class="journal" aria-labelledby="journal-title">
     {{ partial "editorial/section-heading.html" (dict "number" "03" "id" "journal-title" "title" (T "ed_fromJournal" | default "From the journal")) }}
     <p class="section-intro">{{ T "ed_journalIntro" | default "Notes, questions and ideas to return to." }}{{ if $src.fallback }} {{ T "ed_englishFallback" | default "Articles are published in Vietnamese and English; English versions are shown here." }}{{ end }}</p>
@@ -45,5 +48,11 @@
     {{ with $journal }}<p class="more-link"><a class="text-link" href="{{ .RelPermalink }}">{{ T "ed_allEssays" | default "All essays" }} <span aria-hidden="true">→</span></a></p>{{ end }}
   </section>
   {{- with $volume }}{{ partial "editorial/volume-card.html" (dict "page" . "number" "04") }}{{ end }}
+  {{- with $series }}
+  <aside class="volume home-series" aria-labelledby="series-slot-title">
+    {{ partial "editorial/section-heading.html" (dict "number" "04" "id" "series-slot-title" "title" (T "ed_currentSeries" | default "Current series")) }}
+    {{ partial "editorial/series-card.html" . }}
+  </aside>
+  {{- end }}
 </div>
 {{- end -}}

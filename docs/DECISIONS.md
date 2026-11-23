@@ -108,3 +108,27 @@ Agents may propose choices; changes to accepted product direction require mainta
   - 37 term RSS feeds end.
   - A new essay set (D4) should be written per language; a translation is a separate file, added only when it exists.
 - **Evidence:** `docs/audits/d-017/URL_MAP.md`; route diff against `main`.
+
+## D-018 — D4 content architecture: topics, series, resource library
+- **Status:** ACCEPTED by the owner. Discovery 2026-11-23/24; prototype screenshots approved 2026-11-24 ("Duyệt, triển khai"). Record: `docs/phases/phase-4/d4/DISCOVERY.md`, `DESIGN_SPEC.md`, `docs/audits/d4/`.
+- **Choices:**
+  - Vietnamese first, English selectively (builds on D-017).
+  - **Four topics** (the `categories` taxonomy):
+    - Kinh tế;
+    - Khoa học cơ bản (`toan-hoc`, absorbs Vật lý);
+    - Khoa học máy tính;
+    - Triết học & Suy ngẫm (`triet-hoc`, absorbs Cá nhân).
+
+    The slugs are unchanged. An essay's first category is its main topic.
+  - Topic hubs live under the Journal; the five-item navigation is unchanged.
+  - **Series** (`content/series/`, ordered `essays` paths) are lighter chains in the Journal.
+  - **Volumes** are purposeful books. Volume I became the series "Toán cơ bản cho kinh tế"; Volumes shows "Đang biên soạn" until the first book exists. The homepage slot shows the current series meanwhile.
+  - **Discover** is a resource library (`data/resources.yaml`, replaces `data/discover.yaml`), grouped by each resource's main topic, with only verified links and no affiliate links (D6 later).
+  - The publishing heatmap stays at the end of the Journal.
+  - The ja/zh interfaces stay.
+- **URLs:**
+  - Volume I and the older series URLs are aliases of the series.
+  - `vat-ly` and `ca-nhan`, the English-only category names, and the no-longer-paginated `categories/*/page/1/` redirect through `data/redirects.yaml`.
+  - 0 HTML routes lost against `main`; 7 term feeds end.
+- **Rule:** metadata-only edits to an essay pin `lastmod` to its last real edit (no false "updated" dates).
+- **Masthead subject strip (owner, 2026-11-24):** now the four topics as links (vi "Khoa học cơ bản · Kinh tế · Máy tính · Triết học", en "Sciences · Economics · Computing · Philosophy") in a labelled `nav` ("Duyệt theo chủ đề"). This also fixes Orca reading the tagline and the subjects as one word (D1 final pass). `ed_subjects` was replaced by `ed_subject_*`.

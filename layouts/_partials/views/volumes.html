@@ -1,4 +1,5 @@
-{{- /* /volumes/ (P3-04). */ -}}
+{{- /* /volumes/ (P3-04). While no purposeful book exists (D4 decision 7, D-018), an honest
+       "in preparation" note with a link to Series replaces the empty state. */ -}}
 {{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_volumesKicker" | default "Books of connected ideas")) }}
 {{- with .RegularPages.ByWeight }}
 <div class="volume-index">
@@ -16,4 +17,10 @@
   </article>
   {{- end -}}
 </div>
-{{- else }}<p class="empty-state">{{ T "ed_noVolumes" | default "No volume has been published yet." }}</p>{{ end }}
+{{- else }}
+<section class="volumes-preparing">
+  <p class="kicker">{{ T "ed_volumesPreparing" | default "In preparation" }}</p>
+  <p class="lead">{{ T "ed_volumesPreparingNote" }}</p>
+  {{ with site.GetPage "/series" }}<p><a class="text-link" href="{{ .RelPermalink }}">{{ .Title }} <span aria-hidden="true">→</span></a></p>{{ end }}
+</section>
+{{- end }}

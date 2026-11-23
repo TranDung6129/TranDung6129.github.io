@@ -18,7 +18,8 @@
       {{- if gt ($p.Lastmod.Sub $p.Date).Hours 24 }}<span>{{ T "ed_updated" | default "Updated" }} <time datetime="{{ $p.Lastmod.Format "2006-01-02" }}">{{ partial "editorial/date.html" $p.Lastmod }}</time></span>{{ end -}}
       <span>{{ T "ed_words" (dict "Count" $p.WordCount) | default (printf "%d words" $p.WordCount) }}</span>
     </p>
-    {{- if templates.Exists "_partials/editorial/volume-position.html" }}{{ partial "editorial/volume-position.html" $p }}{{ end -}}
+    {{- partial "editorial/series-position.html" $p -}}
+    {{- partial "editorial/volume-position.html" $p -}}
   </header>
   <div class="article-layout{{ if not $toc }} no-toc{{ end }}">
     {{- if $toc }}
