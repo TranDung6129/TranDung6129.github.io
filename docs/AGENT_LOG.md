@@ -504,3 +504,13 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - The library is a starter set (1 branch, 2 flowers, 2 landscapes); it grows in verified batches.
   - No hero illustration yet (owner-made, per `HERO_GUIDE.md`).
 - **Next:** owner approves the merge → production check → D5 DONE; then D2.
+
+### 2026-11-24 — D5 closed on production; D2 started — Claude Code
+- **D5 production (`0797d0b`):** against https://trandung6129.github.io:
+  - `d3-check.cjs`: 18/18.
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+  - `/ornaments/d5/*.webp` and `/images/favicon.svg` are served (200, correct types).
+  - TASK_BOARD D5 → DONE.
+- **D2 claimed** (`docs/d2-discovery`).
