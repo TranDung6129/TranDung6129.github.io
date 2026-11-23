@@ -426,8 +426,8 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - `node docs/audits/d4/tools/d4-check.cjs`: 12 pages × 1440/390 × light/dark = 48 states; 200, no overflow, no errors, one h1, axe 0; keyboard reaches all topic and series links with a visible outline.
   - `node scripts/test-d1.cjs`: 31/31.
   - `p3-smoke.cjs`: 32/32 (series replaces the Volume I checks).
+- **Masthead (owner-approved):** the subject strip now holds the four topic links; typography is identical (screenshot `docs/audits/d4/final/screenshots/masthead-subjects.png`). Re-run after it: d4-check 48 states, test-d1 31/31, p3 32/32, 161 redirects valid.
 - **Gaps:**
   - 7 term feeds end.
-  - The masthead subject strip still lists the old names (Phase 3 brand copy; owner).
   - No screen-reader run on the new pages.
 - **Next:** owner approves the merge → production check → D4 DONE; then D3.

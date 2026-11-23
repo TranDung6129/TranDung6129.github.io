@@ -131,4 +131,4 @@ Agents may propose choices; changes to accepted product direction require mainta
   - `vat-ly` and `ca-nhan`, the English-only category names, and the no-longer-paginated `categories/*/page/1/` redirect through `data/redirects.yaml`.
   - 0 HTML routes lost against `main`; 7 term feeds end.
 - **Rule:** metadata-only edits to an essay pin `lastmod` to its last real edit (no false "updated" dates).
-- **Not changed:** the masthead subject strip ("Toán học · Kinh tế · Máy tính · Triết học") is Phase 3 brand copy and still lists the old subject names; changing it needs the owner.
+- **Masthead subject strip (owner, 2026-11-24):** now the four topics as links (vi "Khoa học cơ bản · Kinh tế · Máy tính · Triết học", en "Sciences · Economics · Computing · Philosophy") in a labelled `nav` ("Duyệt theo chủ đề"). This also fixes Orca reading the tagline and the subjects as one word (D1 final pass). `ed_subjects` was replaced by `ed_subject_*`.

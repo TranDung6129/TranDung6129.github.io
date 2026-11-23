@@ -22,7 +22,7 @@
       {{- partial "site/languages.html" . -}}
     </div>
   </div>
-  <div class="masthead-meta"><span>{{ T "ed_tagline" | default "An independent publication on knowledge & the world" }}</span><span>{{ T "ed_subjects" | default "Mathematics · Economics · Computing · Philosophy" }}</span></div>
+  <div class="masthead-meta"><span>{{ T "ed_tagline" | default "An independent publication on knowledge & the world" }}</span><nav class="masthead-subjects" aria-label="{{ T "ed_byCategory" | default "Browse by topic" }}">{{ range $i, $t := slice "toan-hoc" "kinh-te" "khoa-hoc-may-tinh" "triet-hoc" }}{{ with site.GetPage (printf "/categories/%s" $t) }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ .RelPermalink }}">{{ T (printf "ed_subject_%s" (replace $t "-" "_")) | default .LinkTitle }}</a>{{ end }}{{ end }}</nav></div>
   <div id="search-panel" class="search-panel" data-index="{{ "search.json" | relLangURL }}" hidden>
     <label for="site-search">{{ T "ed_searchLabel" | default "Search articles" }}</label>
     <input id="site-search" type="search" autocomplete="off" placeholder="{{ T "ed_searchPlaceholder" | default "Try ‘Nash’" }}">

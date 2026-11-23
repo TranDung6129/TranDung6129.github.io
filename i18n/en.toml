@@ -349,8 +349,6 @@ other = "Section"
 other = "Series"
 [ed_skip]
 other = "Skip to content"
-[ed_subjects]
-other = "Mathematics · Economics · Computing · Philosophy"
 [ed_tagline]
 other = "An independent publication on knowledge & the world"
 [ed_tags]
@@ -493,3 +491,12 @@ other = "In preparation"
 other = "A volume is a book written on purpose: chapters written for it, in order, with an introduction and a conclusion. The first volume is being planned. Meanwhile, consecutive essays live in Series."
 [ed_currentSeries]
 other = "Current series"
+# Masthead subject links (D-018, owner 2026-11-24): short labels of the four topics.
+[ed_subject_toan_hoc]
+other = "Sciences"
+[ed_subject_kinh_te]
+other = "Economics"
+[ed_subject_khoa_hoc_may_tinh]
+other = "Computing"
+[ed_subject_triet_hoc]
+other = "Philosophy"

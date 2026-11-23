@@ -346,8 +346,6 @@ other = "Chuyên mục"
 other = "Chuỗi bài"
 [ed_skip]
 other = "Bỏ qua đến nội dung"
-[ed_subjects]
-other = "Toán học · Kinh tế · Máy tính · Triết học"
 [ed_tagline]
 other = "Ấn phẩm độc lập về tri thức và thế giới"
 [ed_tags]
@@ -487,3 +485,12 @@ other = "Đang biên soạn"
 other = "Một Tập là một cuốn sách được viết có chủ đích: các chương viết cho nó, theo thứ tự, có mở đầu và kết luận. Tập đầu tiên đang được lên kế hoạch. Trong lúc chờ, các nhóm bài liên tiếp nằm ở Chuỗi bài."
 [ed_currentSeries]
 other = "Chuỗi bài đang viết"
+# Masthead subject links (D-018, owner 2026-11-24): short labels of the four topics.
+[ed_subject_toan_hoc]
+other = "Khoa học cơ bản"
+[ed_subject_kinh_te]
+other = "Kinh tế"
+[ed_subject_khoa_hoc_may_tinh]
+other = "Máy tính"
+[ed_subject_triet_hoc]
+other = "Triết học"
