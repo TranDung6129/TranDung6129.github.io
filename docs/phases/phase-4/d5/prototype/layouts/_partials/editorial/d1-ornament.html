@@ -1,0 +1,17 @@
+{{- /* Decorative ornament (D1, D5). SVG line art is inlined with currentColor; raster engravings
+       (D5) are drawn as a CSS mask filled with currentColor, so both follow the theme. Input:
+       dict "role" "file" (path relative to static/ornaments/, or a bare D1 file name). */ -}}
+{{- with .file -}}
+  {{- $f := . -}}
+  {{- if strings.HasSuffix $f ".svg" -}}
+    {{- $path := printf "static/ornaments/d1/%s" $f -}}
+    {{- if fileExists $path -}}
+      {{- $svg := readFile $path | replaceRE `<\?xml[^>]*\?>\s*` "" | replaceRE `#80583e` "currentColor" -}}
+      {{- $svg = replaceRE `<svg ` `<svg aria-hidden="true" focusable="false" ` $svg 1 -}}
+<span class="ornament ornament-{{ $.role }}">{{ $svg | safeHTML }}</span>
+    {{- end -}}
+  {{- else -}}
+    {{- $a := index (where site.Data.d1_ornaments.assets "path" $f) 0 -}}
+<span class="ornament ornament-{{ $.role }} ornament-mask" style="--orn: url('{{ printf "/ornaments/%s" $f | relURL }}'); aspect-ratio: {{ $a.width }} / {{ $a.height }}"></span>
+  {{- end -}}
+{{- end -}}

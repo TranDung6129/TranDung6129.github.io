@@ -14,3 +14,13 @@
 
 ## Questions for the owner
 Recorded below with the answers.
+
+## Owner decisions (2026-11-24)
+1. **Ornaments:** historical public-domain engravings, verified one by one and converted to theme-coloured line masks.
+2. **Hero illustrations:** created by the owner with AI, following a fixed style guide; optional per article.
+3. **Logo:** three options to choose from.
+
+## Notes from sourcing
+- Wikimedia Commons rate-limited downloads (HTTP 429) and asked for standard thumbnail sizes. Assets were taken at standard widths (960–1920 px), with pauses between requests.
+- Hand-coloured woodcuts (Fuchs, Mattioli) give the cleanest lines once the colour wash is dropped. The Loudon leaf studies (1875) were too heavy and large for small ornaments and were not used.
+- Some descriptive data is thin on Commons (e.g. no date on the Fuchs/Mattioli sheets; the Rijksmuseum print lists the museum as "Artist"). The manifest records exactly what the metadata says.
