@@ -58,6 +58,12 @@ const settle = page => page.evaluate(async () => {
         mathErrors: document.querySelectorAll('mjx-merror').length,
         mathContainers: document.querySelectorAll('mjx-container').length,
         favicon: document.querySelector('link[rel="icon"]')?.getAttribute('href'),
+        tocNavLabel: document.querySelector('.d1-article .toc nav')?.getAttribute('aria-label'),
+        asideLabel: document.querySelector('.article-aside')?.getAttribute('aria-label'),
+        toggleLabels: [...document.querySelectorAll('.toc-toggle')].map(b => b.getAttribute('aria-label')),
+        sourceLinks: [...document.querySelectorAll('.source-item .discovery-cta')].map(a => a.getAttribute('href')),
+        doubleRules: [...document.querySelectorAll('.d1-article .prose hr + h2')].filter(h => getComputedStyle(h).borderTopStyle !== 'none').length,
+        tocTopBorder: getComputedStyle(document.querySelector('.d1-article .toc')).borderTopStyle,
         ornamentStroke: (() => { const g = document.querySelector('.toc-ornament svg g, .article-landscape svg g'); return g && getComputedStyle(g).stroke; })(),
       };
     });
@@ -90,6 +96,9 @@ const settle = page => page.evaluate(async () => {
   check('Footer: Further Essays then Curated Reading; one featured essay with its artwork, up to two supporting; three sources', result.cases.every(c => c.discovery.join('|') === 'discovery-essays|discovery-reading' && c.featured === 1 && c.featuredArt && c.supporting <= 2 && c.supporting >= 1 && c.sources === 3), { headings: result.cases[0].headings, supporting: result.cases[0].supporting });
   check('Both discovery modules have the same width (equal prominence)', result.cases.every(c => c.modules.essays.width === c.modules.reading.width), { modules: result.cases.map(c => [c.width, c.modules]) });
   check('Old duplicate "Related reading" list removed; no texture behind the page', result.cases.every(c => c.relatedReading === 0 && c.bodyBackground === 'none'));
+  check('TOC: one labelled navigation landmark (no unlabelled nav, no nested aside landmark); toggle names localised', result.cases.every(c => c.tocNavLabel === 'Nội dung' && !c.asideLabel && c.toggleLabels.length && c.toggleLabels.every(l => l.startsWith('Mục con của ') && l.length > 12)), { navLabel: result.cases[0].tocNavLabel, toggles: result.cases[0].toggleLabels });
+  check('Curated Reading: every source opens its verified external page', result.cases.every(c => c.sourceLinks.length === 3 && c.sourceLinks.every(h => /^https:\/\//.test(h))), { links: result.cases[0].sourceLinks });
+  check('No doubled rules: a Markdown rule before a section heading and the TOC top border are not drawn twice', result.cases.every(c => c.doubleRules === 0 && c.tocTopBorder === 'none'));
   check('No MathJax errors and formulas rendered', result.cases.every(c => c.mathErrors === 0 && c.mathContainers > 0), { containers: result.cases.map(c => c.mathContainers) });
   check('Ornament line colour follows the theme (inline SVG, currentColor)', new Set(desktop.map(c => c.ornamentStroke)).size === 2, { strokes: desktop.map(c => [c.scheme, c.ornamentStroke]) });
 

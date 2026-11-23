@@ -13,8 +13,9 @@
 #   affiliate: must stay false. A future affiliate link needs `affiliate: true` and is shown
 #           in a separate, labelled "Disclosure" line — never mixed into the editorial note.
 #
-# Not verified from this environment (doi.org is not reachable): the Kakutani DOI and an
-# author-hosted Shoham & Leyton-Brown PDF; both therefore point to the essay's references.
+# Links verified 2026-11-23: Nash and Kakutani DOIs against Crossref metadata (journal, volume,
+# issue, pages, year) and doi.org resolution; masfoundations.org is the authors' official book
+# site, which offers the free eBook in agreement with Cambridge University Press.
 game_theory_nash:
   items:
     - kind: paper
@@ -31,8 +32,7 @@ game_theory_nash:
       source: "Cambridge University Press"
       year: 2008
       why: "Where to go next: computing equilibria, potential games and the complexity results the essay only mentions, in one consistent notation."
-      ref: "references"
-      refnum: 5
+      url: "https://www.masfoundations.org/"
       affiliate: false
     - kind: paper
       title: "A Generalization of Brouwer's Fixed Point Theorem"
@@ -40,6 +40,5 @@ game_theory_nash:
       source: "Duke Mathematical Journal 8 (3), 457–459"
       year: 1941
       why: "The fixed-point theorem behind the existence proof, for readers who want the step the essay takes on trust."
-      ref: "references"
-      refnum: 2
+      url: "https://doi.org/10.1215/S0012-7094-41-00838-4"
       affiliate: false

@@ -37,6 +37,8 @@
 .d1-article .prose { width: min(100%, var(--d1-measure)); margin-inline: auto; font-size: 1.04rem; line-height: 1.57; }
 .d1-article .prose p, .d1-article .prose li { hyphens: manual; }
 .d1-article .prose h2 { margin-top: 2.45rem; }
+/* Essays often put a Markdown rule before a section; the h2 already draws one, so drop the second. */
+.d1-article .prose hr + h2 { border-top: 0; padding-top: 0; }
 .d1-article .prose mjx-container { max-width: 100%; }
 .d1-article .prose mjx-container[display="true"] { display: block !important; width: 100% !important; overflow-x: auto; overflow-y: hidden; }
 .d1-article .prose table { display: block; width: 100%; max-width: 100%; min-width: 0; overflow-x: auto; }
@@ -50,7 +52,7 @@
 .toc-panel { position: sticky; top: 1rem; display: flex; flex-direction: column; max-height: calc(100vh - 2rem); }
 .reading-progress { flex: none; height: 2px; background: var(--ed-border); margin: 0 0.65rem 0.4rem; overflow: hidden; }
 .reading-progress > span { display: block; width: 0; height: 100%; background: var(--ed-accent); transition: width var(--ed-duration) linear; }
-.d1-article .toc { position: static; flex: 0 1 auto; min-height: 0; max-height: none; overflow: auto; overscroll-behavior: contain; padding: 0.35rem 0.65rem 0.8rem; background: transparent; scrollbar-width: thin; scrollbar-color: var(--ed-border) transparent; }
+.d1-article .toc { position: static; flex: 0 1 auto; min-height: 0; max-height: none; overflow: auto; overscroll-behavior: contain; padding: 0.35rem 0.65rem 0.8rem; background: transparent; scrollbar-width: thin; scrollbar-color: var(--ed-border) transparent; border-top: 0; }
 .d1-article .toc summary { padding: 0.35rem 0.15rem 0.55rem; }
 .toc-ornament { flex: none; margin: 0.9rem 0 0 0.65rem; width: 5.75rem; color: var(--ed-accent); opacity: 0.42; pointer-events: none; }
 @media (max-height: 760px) { .toc-ornament { display: none; } }
@@ -124,6 +126,7 @@
 @media (max-width: 1110px) {
   .d1-article .article-aside { position: static; width: min(100%, var(--d1-measure)); margin: 0 auto 1.5rem; }
   .toc-panel { position: static; max-height: none; border: 1px solid var(--ed-border); }
+  .d1-article .toc { border: 0; }
   .reading-progress { margin: 0; }
   .d1-article .toc { max-height: min(46vh, 26rem); }
   .toc-ornament { display: none; }

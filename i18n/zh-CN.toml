@@ -438,3 +438,5 @@ other = "A chapter of {{ .Volume }}"
 other = "Older and newer essays"
 [ed_seeReferenceN]
 other = "Reference {{ .N }} in this essay"
+[ed_tocToggle]
+other = "Subsections of %s"

@@ -22,13 +22,15 @@
   </header>
   <div class="article-layout{{ if not $toc }} no-toc{{ end }}">
     {{- if $toc }}
-    <aside class="article-aside" aria-label="{{ T "ed_contents" | default "Contents" }}">
+    <aside class="article-aside">
       {{- /* The aside spans the whole article body; this inner panel is what stays in view. */ -}}
       <div class="toc-panel">
         <div class="reading-progress" role="progressbar" aria-label="{{ T "ed_readingProgress" | default "Reading progress" }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
-        <details class="toc" open>
+        {{- /* The contents list is the one landmark here: Hugo's <nav> gets the label, the aside none,
+               so a screen reader announces "Contents, navigation" once instead of two nested regions. */}}
+        <details class="toc" open data-toggle-label="{{ T "ed_tocToggle" | default "Subsections of %s" }}">
           <summary>{{ T "ed_contents" | default "Contents" }}</summary>
-          {{ $p.TableOfContents }}
+          {{ replace $p.TableOfContents `<nav id="TableOfContents">` (printf `<nav id="TableOfContents" aria-label="%s">` (T "ed_contents" | default "Contents")) | safeHTML }}
         </details>
         <div class="toc-ornament" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "toc" "file" $orn.toc) }}</div>
       </div>

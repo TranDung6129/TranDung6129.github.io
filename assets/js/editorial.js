@@ -161,7 +161,7 @@
       section.classList.add('toc-section');
       const button = document.createElement('button');
       button.type = 'button'; button.className = 'toc-toggle';
-      button.setAttribute('aria-label', `Toggle subsections for ${anchor.textContent.trim()}`);
+      button.setAttribute('aria-label', (toc.dataset.toggleLabel || 'Subsections of %s').replace('%s', anchor.textContent.trim()));
       button.setAttribute('aria-expanded', String(index === 0));
       button.textContent = '⌄';
       nested.hidden = index !== 0;
