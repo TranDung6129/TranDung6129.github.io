@@ -5,6 +5,9 @@ draft: false
 categories: ["kinh-te", "toan-hoc"]
 tags: ["toan-kinh-te", "dai-so-tuyen-tinh", "ma-tran"]
 math: true
+# Only redirect aliases were added on 2026-11-23 (D-017); the text is unchanged, so the
+# last modification shown to readers stays the last real edit.
+lastmod: 2026-11-15T17:40:37+00:00
 # Content-language separation (D-017): the former copy at this URL was in the wrong language.
 aliases:
   - "/en/kinh-te/toan-co-ban-5/"

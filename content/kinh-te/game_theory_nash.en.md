@@ -9,6 +9,9 @@ description: >
   A rigorous but accessible tour of strategic-form games, dominant strategies,
   best-response correspondences, and Nash's fixed-point existence proof —
   with an interactive 2×2 bimatrix explorer and Manim animation.
+# Only redirect aliases were added on 2026-11-23 (D-017); the text is unchanged, so the
+# last modification shown to readers stays the last real edit.
+lastmod: 2026-11-15T17:40:37+00:00
 # Content-language separation (D-017): the former copy at this URL was in the wrong language.
 aliases:
   - "/kinh-te/game_theory_nash/"
