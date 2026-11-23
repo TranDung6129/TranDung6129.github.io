@@ -1,0 +1,20 @@
+{{- /* D3 reference list: every work cited on the page with {{< cite >}}, one A–Z list by first
+       author's family name, then year. Place it under the essay's own "References" heading so it
+       appears in the contents. Backlinks go to each citation of the work. */ -}}
+{{- $p := .Page -}}
+{{- $src := partial "editorial/shortcode-source.html" $p -}}
+{{- $all := slice -}}
+{{- range findRESubmatch `\{\{<\s*cite\s+(?:key=)?"([^"]+)"` $src }}{{ range split (index . 1) "," }}{{ $all = $all | append (trim . " ") }}{{ end }}{{ end -}}
+{{- $rows := slice -}}
+{{- range uniq $all }}{{ $k := . }}{{ $e := index site.Data.bibliography $k }}{{ $c := 0 }}{{ range $all }}{{ if eq . $k }}{{ $c = add $c 1 }}{{ end }}{{ end }}{{ $rows = $rows | append (dict "key" $k "e" $e "count" $c "sort" (printf "%s %v" (lower (index $e.authors 0)) $e.year)) }}{{ end -}}
+{{- with sort $rows "sort" }}
+<ol class="references" role="list">
+  {{- range . }}{{ $k := .key }}{{ $e := .e }}{{ $count := .count }}
+  <li id="ref-{{ $k }}" class="ref ref-{{ $e.type }}">
+    <span class="ref-type">{{ T (printf "ed_ref_%s" $e.type) | default $e.type }}</span>
+    <span class="ref-text">{{ partial "editorial/reference-text.html" $e }}</span>
+    <span class="ref-back">{{ range $i := seq $count }}<a href="#cite-{{ $k }}-{{ $i }}" aria-label="{{ T "ed_backToCitation" (dict "N" $i) | default (printf "Back to citation %d" $i) }}">↩︎{{ if gt $count 1 }}<sup>{{ $i }}</sup>{{ end }}</a>{{ end }}</span>
+  </li>
+  {{- end }}
+</ol>
+{{- end -}}

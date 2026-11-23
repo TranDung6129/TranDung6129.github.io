@@ -1,0 +1,6 @@
+{{- /* D3 explanatory note (sidenote). Usage: text{{< note >}}The note, *Markdown* allowed.{{< /note >}}
+       Wide screens: the note sits in the right margin beside its line. Narrow screens: the
+       number is a button that opens the note in place. Numbered per page, in source order. */ -}}
+{{- $p := .Page -}}
+{{- $n := add 1 (len (findRE `\{\{<\s*note\s*>\}\}` (substr (partial "editorial/shortcode-source.html" $p) 0 .Position.Offset))) -}}
+<span class="sn"><button class="sn-mark" type="button" aria-expanded="false" aria-controls="sn-{{ $n }}"><span class="d1-sr">{{ T "ed_note" | default "Note" }} </span>{{ $n }}</button><span class="sn-body" id="sn-{{ $n }}" role="note"><span class="sn-num" aria-hidden="true">{{ $n }}</span> {{ .Inner | $p.RenderString }}</span></span>

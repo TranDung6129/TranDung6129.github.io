@@ -1,0 +1,38 @@
+/* D3 — citations, sidenotes and reference lists. Existing tokens only. */
+
+/* Citations: quiet links inside the sentence. */
+.prose a.cite { color: inherit; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--ed-accent) 55%, transparent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+.prose a.cite:hover, .prose a.cite:focus-visible { color: var(--ed-accent); text-decoration-color: currentColor; }
+.cite-preview { position: absolute; z-index: 20; max-width: min(26rem, calc(100vw - 2rem)); padding: 0.75rem 0.9rem; background: var(--ed-bg); border: 1px solid var(--ed-border); border-top: 2px solid var(--ed-accent); box-shadow: 0 6px 22px color-mix(in srgb, var(--ed-fg) 14%, transparent); font: 400 0.82rem/1.5 var(--ed-sans); color: var(--ed-fg); pointer-events: none; }
+.cite-preview .ref-link { color: var(--ed-accent); }
+
+/* Sidenotes. Without script the note shows inline; with script (.sn-ready) narrow screens fold it
+   behind its number, wide screens place it in the right margin beside its line. */
+.sn-mark { appearance: none; border: 0; background: none; padding: 0 0.1em; margin: 0; font: 700 0.68em/1 var(--ed-sans); vertical-align: super; color: var(--ed-accent); cursor: pointer; }
+.sn-mark:focus-visible { outline: 2px solid var(--ed-accent); outline-offset: 2px; }
+.sn-body { display: block; margin: 0.5rem 0 0.7rem; padding: 0.45rem 0 0.45rem 0.8rem; border-left: 2px solid var(--ed-accent); font: 400 0.84rem/1.5 var(--ed-sans); color: var(--ed-muted); }
+.sn-num { font-weight: 700; color: var(--ed-accent); margin-right: 0.15em; }
+.sn-ready .sn-body { display: none; }
+.sn-ready .sn.is-open .sn-body { display: block; }
+@media (min-width: 1240px) {
+  .sn-ready .sn-body, .sn-body { display: block; float: right; clear: right; width: 13rem; margin: 0.15rem calc(-13rem - 2.5rem) 0.8rem 0; padding: 0 0 0 0.7rem; border-left: 1px solid var(--ed-border); font-size: 0.8rem; }
+  .sn-mark { cursor: default; }
+}
+
+/* Reference list: one A–Z list, type label in the margin of each entry, hanging lines. */
+.prose ol.references { list-style: none; margin: 1rem 0 0; padding: 0; }
+.prose ol.references li { display: grid; grid-template-columns: 5.2rem minmax(0, 1fr) auto; gap: 0 0.9rem; align-items: baseline; margin: 0; padding: 0.7rem 0; border-top: 1px solid var(--ed-border); font-size: 0.93rem; line-height: 1.5; }
+.ref-type { font: 700 0.6rem/1.4 var(--ed-sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ed-accent); }
+.ref-authors { font-weight: 600; }
+.prose .ref-text cite { display: inline; font-family: var(--ed-serif); font-size: 1em; font-weight: 400; font-style: italic; letter-spacing: normal; text-transform: none; color: inherit; }
+.ref-link { font: 400 0.8rem var(--ed-sans); color: var(--ed-accent); overflow-wrap: anywhere; }
+.ref-back { display: inline-flex; gap: 0.35rem; font: 600 0.78rem var(--ed-sans); }
+.ref-back a { color: var(--ed-accent); text-decoration: none; padding: 0.1rem 0.2rem; }
+.ref-back a:hover, .ref-back a:focus-visible { text-decoration: underline; }
+/* Arriving at a reference or back at a citation: a brief, calm highlight. */
+.prose ol.references li:target, .prose a.cite:target { background: color-mix(in srgb, var(--ed-accent) 12%, transparent); }
+.prose ol.references li:target { box-shadow: -0.6rem 0 0 color-mix(in srgb, var(--ed-accent) 12%, transparent); }
+@media (max-width: 560px) {
+  .prose ol.references li { grid-template-columns: minmax(0, 1fr) auto; }
+  .ref-type { grid-column: 1 / -1; }
+}

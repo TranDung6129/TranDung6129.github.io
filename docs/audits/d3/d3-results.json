@@ -1,0 +1,176 @@
+[
+ {
+  "name": "riemann-vi: every citation has a reference entry and every entry links back to each citation",
+  "passed": true,
+  "ids": [
+   "cite-hardy1914-1",
+   "cite-conrey1989-1",
+   "cite-delavalleepoussin1896-1",
+   "cite-delavalleepoussin1896-2"
+  ],
+  "back": [
+   "cite-conrey1989-1",
+   "cite-delavalleepoussin1896-1",
+   "cite-delavalleepoussin1896-2",
+   "cite-hardy1914-1"
+  ]
+ },
+ {
+  "name": "riemann-vi: reference list is A–Z by first author",
+  "passed": true,
+  "refs": [
+   "ref-conrey1989",
+   "ref-delavalleepoussin1896",
+   "ref-hardy1914"
+  ]
+ },
+ {
+  "name": "riemann-vi: at 1440 px notes sit in the right margin, clear of the prose, expanded",
+  "passed": true,
+  "notes": [
+   {
+    "left": 1075,
+    "right": 1283,
+    "visible": true
+   }
+  ],
+  "proseRight": 1035
+ },
+ {
+  "name": "riemann-vi: axe WCAG 2.1 A/AA, 0 violations",
+  "passed": true,
+  "v": []
+ },
+ {
+  "name": "riemann-vi light: no overflow or page errors at 1440",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "riemann-vi: keyboard focus on a citation shows its reference preview (visual only)",
+  "passed": true,
+  "prev": {
+   "text": "Hardy, G. H. (1914). Sur les zéros de la fonction ζ(s) de Ri",
+   "hidden": "true"
+  }
+ },
+ {
+  "name": "riemann-vi: citation → reference → back to the same citation",
+  "passed": true,
+  "atRef": {
+   "hash": "#ref-hardy1914",
+   "top": 24
+  },
+  "back": {
+   "hash": "#cite-hardy1914-1",
+   "top": 24
+  }
+ },
+ {
+  "name": "riemann-vi: at 390 px a note is folded, opens with the keyboard, aria-expanded follows; no overflow",
+  "passed": true,
+  "closed": {
+   "shown": false,
+   "exp": "false",
+   "overflow": false
+  },
+  "open": {
+   "shown": true,
+   "exp": "true"
+  }
+ },
+ {
+  "name": "riemann-vi dark: no overflow or page errors at 1440",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "nash-en: every citation has a reference entry and every entry links back to each citation",
+  "passed": true,
+  "ids": [
+   "cite-nash1950-1",
+   "cite-kakutani1941-1",
+   "cite-monderer1996-1",
+   "cite-aumann1974-1",
+   "cite-daskalakis2009-1"
+  ],
+  "back": [
+   "cite-aumann1974-1",
+   "cite-daskalakis2009-1",
+   "cite-kakutani1941-1",
+   "cite-monderer1996-1",
+   "cite-nash1950-1"
+  ]
+ },
+ {
+  "name": "nash-en: reference list is A–Z by first author",
+  "passed": true,
+  "refs": [
+   "ref-aumann1974",
+   "ref-daskalakis2009",
+   "ref-kakutani1941",
+   "ref-monderer1996",
+   "ref-nash1950"
+  ]
+ },
+ {
+  "name": "nash-en: at 1440 px notes sit in the right margin, clear of the prose, expanded",
+  "passed": true,
+  "notes": [
+   {
+    "left": 1075,
+    "right": 1283,
+    "visible": true
+   }
+  ],
+  "proseRight": 1035
+ },
+ {
+  "name": "nash-en: axe WCAG 2.1 A/AA, 0 violations",
+  "passed": true,
+  "v": []
+ },
+ {
+  "name": "nash-en light: no overflow or page errors at 1440",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "nash-en: keyboard focus on a citation shows its reference preview (visual only)",
+  "passed": true,
+  "prev": {
+   "text": "Nash, John F. (1950). Equilibrium points in n-person games. ",
+   "hidden": "true"
+  }
+ },
+ {
+  "name": "nash-en: citation → reference → back to the same citation",
+  "passed": true,
+  "atRef": {
+   "hash": "#ref-nash1950",
+   "top": 24
+  },
+  "back": {
+   "hash": "#cite-nash1950-1",
+   "top": 24
+  }
+ },
+ {
+  "name": "nash-en: at 390 px a note is folded, opens with the keyboard, aria-expanded follows; no overflow",
+  "passed": true,
+  "closed": {
+   "shown": false,
+   "exp": "false",
+   "overflow": false
+  },
+  "open": {
+   "shown": true,
+   "exp": "true"
+  }
+ },
+ {
+  "name": "nash-en dark: no overflow or page errors at 1440",
+  "passed": true,
+  "errors": []
+ }
+]
