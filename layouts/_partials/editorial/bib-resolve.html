@@ -1,0 +1,22 @@
+{{- /* D3: one source library. An item of data/d1_resources.yaml or data/resources.yaml that names
+       a `bib` key takes its bibliographic fields from data/bibliography.yaml, so a work's title,
+       authors, source, year and link are the same everywhere. Editorial fields (why, topics,
+       essays, cover, affiliate) stay on the item. Returns the merged dict; an unknown key fails. */ -}}
+{{- $it := . -}}
+{{- $out := $it -}}
+{{- with $it.bib -}}
+  {{- $e := index site.Data.bibliography . -}}
+  {{- if not $e }}{{ errorf "bib-resolve: unknown bibliography key %q" . }}{{ end -}}
+  {{- $names := slice -}}
+  {{- range $e.authors }}{{ $p := split . ", " }}{{ $names = $names | append (cond (gt (len $p) 1) (printf "%s %s" (index $p 1) (index $p 0)) .) }}{{ end -}}
+  {{- $authors := index $names 0 -}}
+  {{- if gt (len $names) 1 }}{{ $authors = printf "%s & %s" (delimit (first (sub (len $names) 1) $names) ", ") (index $names (sub (len $names) 1)) }}{{ end -}}
+  {{- $src := "" -}}
+  {{- with $e.container }}{{ $src = . }}{{ with $e.volume }}{{ $src = printf "%s %v" $src . }}{{ end }}{{ with $e.issue }}{{ $src = printf "%s(%v)" $src . }}{{ end }}{{ with $e.pages }}{{ $src = printf "%s, %s" $src . }}{{ end }}{{ end -}}
+  {{- with $e.publisher }}{{ $src = cond (eq $src "") . (printf "%s · %s" $src .) }}{{ end -}}
+  {{- $url := "" -}}
+  {{- with $e.doi }}{{ $url = printf "https://doi.org/%s" . }}{{ else }}{{ with $e.url }}{{ $url = . }}{{ else }}{{ with $e.zbmath }}{{ $url = printf "https://zbmath.org/?q=an:%s" . }}{{ end }}{{ end }}{{ end -}}
+  {{- $kind := cond (eq $e.type "book") "book" "paper" -}}
+  {{- $out = merge $it (dict "title" $e.title "authors" $authors "source" $src "year" $e.year "url" $url "kind" $kind "type" $kind "title_lang" ($e.title_lang | default "en")) -}}
+{{- end -}}
+{{- return $out -}}

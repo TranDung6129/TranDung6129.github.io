@@ -59,6 +59,17 @@ daskalakis2009:
   pages: "195–259"
   doi: "10.1137/070699652"
   verified: "Crossref, 2026-11-24"
+chen2009:
+  type: article
+  authors: ["Chen, Xi", "Deng, Xiaotie", "Teng, Shang-Hua"]
+  year: 2009
+  title: "Settling the complexity of computing two-player Nash equilibria"
+  container: "Journal of the ACM"
+  volume: 56
+  issue: 3
+  pages: "1–57"
+  doi: "10.1145/1516512.1516516"
+  verified: "Crossref, 2026-11-24"
 shoham2008:
   type: book
   authors: ["Shoham, Yoav", "Leyton-Brown, Kevin"]

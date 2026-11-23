@@ -132,3 +132,15 @@ Agents may propose choices; changes to accepted product direction require mainta
   - 0 HTML routes lost against `main`; 7 term feeds end.
 - **Rule:** metadata-only edits to an essay pin `lastmod` to its last real edit (no false "updated" dates).
 - **Masthead subject strip (owner, 2026-11-24):** now the four topics as links (vi "Khoa học cơ bản · Kinh tế · Máy tính · Triết học", en "Sciences · Economics · Computing · Philosophy") in a labelled `nav` ("Duyệt theo chủ đề"). This also fixes Orca reading the tagline and the subjects as one word (D1 final pass). `ed_subjects` was replaced by `ed_subject_*`.
+
+## D-019 — D3 citation and research protocol
+- **Status:** ACCEPTED by the owner. Decisions 2026-11-24; sample essays approved 2026-11-24 ("Duyệt, triển khai"). Record: `docs/phases/phase-4/d3/`, evidence `docs/audits/d3/`.
+- **Choices:**
+  - Author–date citations via `{{< cite key >}}`: parenthetical, narrative `form="t"`, locator `p=`.
+  - A hover/focus preview, and two-way links between each citation and its entry.
+  - Explanatory notes via `{{< note >}}`: sidenotes in the right margin from 1240 px, a button-revealed note below that, inline without JS.
+  - One A–Z reference list of the cited works only, via `{{< references >}}` under the essay's own heading, with type labels and DOI/URL/zbMATH links.
+  - A single verified source library `data/bibliography.yaml`: never from memory; `verified` records the database and date; an unknown key fails the build. D1 Curated Reading and Discover take their bibliographic fields from it (`editorial/bib-resolve.html`).
+- **Numbering:** from positions in the Markdown source (`editorial/shortcode-source.html`; byte-safe), because Hugo can render a page several times and `.Store` counters would drift.
+- **Scope:** the Riemann (vi) and Nash (en) essays use the protocol. The other essays keep plain text until they are rewritten (D4 new essay set).
+- **Content correction (owner):** in the Nash essay, two-player PPAD-completeness is now cited to Chen, Deng & Teng (2009) and three-player to Daskalakis, Goldberg & Papadimitriou (2009). Both claims were verified against the papers' Crossref abstracts.

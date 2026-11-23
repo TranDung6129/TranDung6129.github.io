@@ -444,3 +444,27 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - One hand-numbered reference list (English Nash essay).
   - No footnotes; Goldmark footnotes are enabled.
   - Pre-existing gap: "(Aumann, 1974)" is cited in the Nash essay but absent from its references.
+
+### 2026-11-24 — D3 citation protocol implemented — Claude Code
+- **Branch:** `feat/d3-citations` (from `main` after #45). The owner approved the sample and asked for the Nash attribution fix.
+- **Changed:**
+  - Source library `data/bibliography.yaml`, adding Chen, Deng & Teng (2009), verified on Crossref.
+  - Shortcodes `cite`, `note`, `references`.
+  - Partials `cite-name`, `reference-text`, `shortcode-source`, `bib-resolve`.
+  - `d3.css`, and a D3 block in `editorial.js`.
+  - i18n in four languages.
+  - Riemann (vi) and Nash (en) essays converted. Their pinned `lastmod` was removed: these are real edits.
+  - D1 Curated Reading and Discover read the library.
+  - The prototype overlay removed; `scripts/preview-overlay.sh` kept as the generic review tool.
+- **Tests (exit 0):**
+  - Clean `hugo --gc --minify`: 0 warnings.
+  - `check-redirects.py` vs `main`: 161 valid, 0 HTML routes lost.
+  - `d3-check.cjs`: 18/18 (anchors both ways, A–Z, margin notes at 1440, folded notes at 390 with keyboard, preview on focus, axe 0).
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+- **Gaps:**
+  - Other essays still cite in plain text (rewritten with the new essay set).
+  - BibTeX/Zotero import not built (D7).
+  - No screen-reader run of the notes.
+- **Next:** owner approves the merge → production check → D3 DONE; then D5.

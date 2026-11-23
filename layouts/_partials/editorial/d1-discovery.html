@@ -4,7 +4,8 @@
        candidate with its own existing artwork (editorial/page-art.html) becomes the featured card;
        without one the featured card is text only. Nothing is invented: titles, descriptions and
        artwork all come from the essays themselves.
-       Curated Reading — only verified entries from data/d1_resources.yaml. */ -}}
+       Curated Reading — only verified entries from data/d1_resources.yaml; bibliographic fields come
+       from data/bibliography.yaml through editorial/bib-resolve.html (D3). */ -}}
 {{- $p := . -}}
 {{- $exclude := slice $p.RelPermalink -}}
 {{- with $p.PrevInSection }}{{ $exclude = $exclude | append .RelPermalink }}{{ end -}}
@@ -75,12 +76,12 @@
       <p class="discovery-note">{{ T "ed_curatedNote" | default "Chosen from this essay's references. No paid placement." }}</p>
     </header>
     <ol class="source-list" role="list">
-      {{- range . }}
+      {{- range . }}{{ with partial "editorial/bib-resolve.html" . }}
       <li class="source-item source-{{ .kind }}{{ if .cover }} has-cover{{ end }}">
         {{- with .cover }}<div class="source-cover">{{ partial "editorial/art.html" (dict "key" . "sizes" "6rem") }}</div>{{ end }}
         <div class="source-copy">
           <p class="source-kind">{{ if eq .kind "book" }}{{ T "ed_kindBook" | default "Book" }}{{ else }}{{ T "ed_kindPaper" | default "Paper" }}{{ end }}<span>{{ .year }}</span></p>
-          <h3 lang="en">{{ if eq .kind "book" }}<cite>{{ .title }}</cite>{{ else }}“{{ .title }}”{{ end }}</h3>
+          <h3 lang="{{ .title_lang | default "en" }}">{{ if eq .kind "book" }}<cite>{{ .title }}</cite>{{ else }}“{{ .title }}”{{ end }}</h3>
           <p class="source-biblio" lang="en">{{ .authors }} · {{ .source }}</p>
           <p class="source-why" lang="en">{{ .why }}</p>
           {{- if .url }}
@@ -91,7 +92,7 @@
           {{- if .affiliate }}<p class="source-disclosure">{{ T "ed_affiliate" | default "Disclosure: this link is an affiliate link." }}</p>{{ end }}
         </div>
       </li>
-      {{- end }}
+      {{- end }}{{ end }}
     </ol>
   </section>
   {{- end -}}

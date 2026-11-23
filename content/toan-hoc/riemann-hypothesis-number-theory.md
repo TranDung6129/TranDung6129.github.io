@@ -7,9 +7,6 @@ tags: ["toan-hoc", "ly-thuyet-so", "riemann", "so-nguyen-to", "crypto"]
 categories: ["toan-hoc"]
 math: true
 draft: false
-# Only redirect aliases were added on 2026-11-23 (D-017); the text is unchanged, so the
-# last modification shown to readers stays the last real edit.
-lastmod: 2026-03-01T22:05:48+07:00
 # Content-language separation (D-017): the former copy at this URL was in the wrong language.
 aliases:
   - "/en/toan-hoc/riemann-hypothesis-number-theory/"
@@ -64,9 +61,9 @@ $$\xi(s) = \xi(1-s)$$
 - **Critical line**: $\text{Re}(s) = 1/2$
 
 **Những gì đã biết:**
-- Tồn tại vô hạn zeros trên critical line (Hardy, 1914)
-- Ít nhất 40% zeros nằm trên critical line (Conrey, 1989)
-- Không có zeros trên $\text{Re}(s) = 1$ (de la Vallée Poussin, 1896)
+- Tồn tại vô hạn zeros trên critical line {{< cite "hardy1914" >}}
+- Ít nhất 40% zeros nằm trên critical line {{< cite "conrey1989" >}}
+- Không có zeros trên $\text{Re}(s) = 1$ {{< cite "delavalleepoussin1896" >}}
 
 ### 2.3 Tương Đương với Prime Number Theorem
 
@@ -130,7 +127,7 @@ $$p_{n+1} - p_n \ll p_n^{0.525}$$
 **Pair correlation:**
 $$\lim_{T \to \infty} \frac{1}{N(T)} \sum_{\substack{0 < \gamma, \gamma' \leq T \\ \gamma \neq \gamma'}} w\left(\frac{2\pi(\gamma - \gamma')}{\ln(\gamma/(2\pi))}\right)$$
 
-Match với GUE (Gaussian Unitary Ensemble).
+Match với GUE.{{< note >}}GUE: *Gaussian Unitary Ensemble*, tập hợp các ma trận ngẫu nhiên Hermite.{{< /note >}}
 
 ### 4.3 Computational Complexity
 
@@ -233,7 +230,7 @@ với $N = pq$ where $p,q \equiv 3 \pmod{4}$.
 
 ### 9.1 Zero-Free Regions
 
-**Classical result (de la Vallée Poussin):**
+**Classical result** — {{< cite key="delavalleepoussin1896" form="t" >}}:
 $$\zeta(s) \neq 0 \text{ for } \text{Re}(s) \geq 1 - \frac{c}{\ln(|t| + 2)}$$
 
 **Modern improvements:**
@@ -323,3 +320,7 @@ Giả thuyết Riemann đứng ở trung tâm của nhiều lĩnh vực toán h�
 Cho dù RH có được chứng minh hay bác bỏ trong tương lai, journey để hiểu nó đã và sẽ tiếp tục mang lại những insights sâu sắc về structure của numbers và nature của mathematical truth. Trong era của big data và quantum computing, những insights từ RH sẽ ngày càng trở nên quan trọng trong việc design secure và efficient computational systems.
 
 Riemann's vision về "arithmetic harmony" encoded trong zeros của hàm zeta không chỉ là một beautiful mathematical conjecture, mà là window into deep connections giữa pure mathematics và technological applications trong modern world.
+
+## Tài liệu tham khảo
+
+{{< references >}}

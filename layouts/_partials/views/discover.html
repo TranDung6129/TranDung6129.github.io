@@ -1,5 +1,5 @@
 {{- /* D4: Discover as a resource library, grouped by topic (decision 3). */ -}}
-{{- $all := site.Data.resources.resources -}}
+{{- $all := slice -}}{{- range site.Data.resources.resources }}{{ $all = $all | append (partial "editorial/bib-resolve.html" .) }}{{ end -}}
 {{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_discoverKicker" | default "Useful things, considered") "count" 0) }}
 <p class="disclosure">{{ T "ed_libraryNote" }}</p>
 {{- $types := slice -}}{{- range (slice "book" "paper" "course" "tool") }}{{ $k := . }}{{ $c := len (where $all "type" $k) }}{{ if $c }}{{ $types = $types | append (dict "k" $k "c" $c) }}{{ end }}{{ end -}}
