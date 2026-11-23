@@ -1,0 +1,29 @@
+{{- /* D4 prototype of the Journal: topic hubs (4), series, then every essay. */ -}}
+{{- $src := partial "editorial/source-pages.html" . -}}
+{{ partial "editorial/list-header.html" (dict "page" . "kicker" (T "ed_journalKicker" | default "The journal") "count" (len $src.pages)) }}
+{{- $topics := slice -}}
+{{- range site.Taxonomies.categories.ByCount -}}
+  {{- $n := len (where .Pages "Section" "in" site.Params.mainSections) -}}
+  {{- $topics = $topics | append (dict "page" .Page "count" $n) -}}
+{{- end -}}
+{{- with site.GetPage "/categories" }}{{ range .Pages }}{{ $t := . }}{{ $known := false }}{{ range $topics }}{{ if eq .page.RelPermalink $t.RelPermalink }}{{ $known = true }}{{ end }}{{ end }}{{ if not $known }}{{ $topics = $topics | append (dict "page" $t "count" 0) }}{{ end }}{{ end }}{{ end -}}
+<nav class="topic-nav" aria-labelledby="topics-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "01" "id" "topics-title" "title" (T "ed_topics" | default "Topics")) }}
+  <ul>
+    {{- range $topics }}
+    <li><a href="{{ .page.RelPermalink }}"><span class="topic-name">{{ .page.LinkTitle }}</span><span class="topic-count">{{ T "ed_essayCount" (dict "Count" .count) | default (printf "%d essays" .count) }}</span>{{ with .page.Description }}<span class="topic-desc">{{ . }}</span>{{ end }}</a></li>
+    {{- end }}
+  </ul>
+</nav>
+{{- with site.GetPage "/series" }}{{ with .RegularPages }}
+<section class="section-block" aria-labelledby="series-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "02" "id" "series-title" "title" (T "ed_series" | default "Series") "aside" (T "ed_seriesKicker" | default "Read in order")) }}
+  <div class="series-grid">{{ range . }}{{ partial "editorial/series-card.html" . }}{{ end }}</div>
+</section>
+{{- end }}{{ end }}
+{{- $pager := .Paginate $src.pages 20 }}
+<section class="section-block journal-list" aria-labelledby="essays-title">
+  {{ partial "editorial/section-heading.html" (dict "number" "03" "id" "essays-title" "title" (T "ed_allEssays" | default "All essays")) }}
+  {{- if $pager.Pages }}{{ partial "editorial/essay-list.html" (dict "pages" $pager.Pages "start" (add 1 (mul (sub $pager.PageNumber 1) $pager.PagerSize))) }}{{ end -}}
+  {{- partial "editorial/pagination.html" . -}}
+</section>

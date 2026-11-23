@@ -1,0 +1,80 @@
+/* D4 prototype — content architecture components. Uses only existing tokens (--ed-*). */
+
+/* Journal topic hubs: four equal entries, a rule above each, no boxes. */
+.topic-nav ul { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 1.6rem; list-style: none; margin: 0 0 2.2rem; padding: 0; }
+.topic-nav a { display: grid; gap: 0.25rem; padding: 0.9rem 0 1rem; border-top: 2px solid var(--ed-fg); text-decoration: none; color: inherit; height: 100%; }
+.topic-nav a:hover .topic-name, .topic-nav a:focus-visible .topic-name { color: var(--ed-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+.topic-name { font: 500 1.35rem/1.15 var(--ed-display); }
+.topic-count { font: 700 0.64rem/1.4 var(--ed-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ed-accent); }
+.topic-desc { font: 400 0.84rem/1.45 var(--ed-sans); color: var(--ed-muted); }
+
+/* Series cards and the series page. */
+.series-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr)); gap: 1.6rem; margin-bottom: 1rem; }
+.series-card { border-top: 2px solid var(--ed-fg); border-bottom: 1px solid var(--ed-border); padding: 0.9rem 0 1.1rem; }
+.series-card h3 { margin: 0.2rem 0 0.15rem; font: 500 1.45rem/1.15 var(--ed-display); }
+.series-card h3 a { text-decoration: none; }
+.series-card h3 a:hover { text-decoration: underline; text-decoration-color: var(--ed-accent); }
+.series-subtitle { margin: 0 0 0.7rem; font-style: italic; color: var(--ed-muted); }
+.series-mini { list-style: none; margin: 0 0 0.7rem; padding: 0; display: grid; gap: 0.3rem; font: 400 0.86rem/1.4 var(--ed-sans); }
+.series-mini li { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); align-items: baseline; }
+.series-mini span { font: 600 0.72rem var(--ed-sans); color: var(--ed-accent); }
+.series-mini a { color: inherit; text-decoration: none; }
+.series-mini a:hover { color: var(--ed-accent); text-decoration: underline; }
+.series-card .meta { margin: 0; font: 500 0.75rem var(--ed-sans); color: var(--ed-muted); }
+.series-header .series-subtitle { font-size: 1.2rem; }
+.series-start { display: inline-block; margin-top: 0.6rem; font: 600 0.85rem var(--ed-sans); color: var(--ed-accent); }
+.series-parts { list-style: none; margin: 0 0 3rem; padding: 0; }
+.series-parts li { display: grid; grid-template-columns: 6rem minmax(0, 1fr) 7rem; gap: 1.2rem; align-items: baseline; padding: 1.1rem 0; border-bottom: 1px solid var(--ed-border); }
+.series-part-n { font: 700 0.68rem var(--ed-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ed-accent); }
+.series-parts h2 { margin: 0 0 0.3rem; font: 500 1.3rem/1.2 var(--ed-display); }
+.series-parts h2 a { text-decoration: none; }
+.series-parts h2 a:hover { text-decoration: underline; text-decoration-color: var(--ed-accent); }
+.series-parts p { margin: 0; color: var(--ed-muted); font-size: 0.95rem; }
+.series-parts .meta { font: 500 0.75rem var(--ed-sans); color: var(--ed-muted); text-align: right; }
+
+/* Article header: position in a series (replaces the volume box). */
+.series-position { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; align-items: center; border: 1px solid var(--ed-border); padding: 0.7rem 0.9rem; margin-top: 1rem; font: 500 0.82rem var(--ed-sans); }
+.series-position > a { color: var(--ed-accent); }
+.series-dots { display: inline-flex; gap: 0.3rem; list-style: none; margin: 0; padding: 0; }
+.series-dots li { width: 0.5rem; height: 0.5rem; border: 1px solid var(--ed-accent); border-radius: 50%; }
+.series-dots li.is-current { background: var(--ed-accent); }
+.series-next { color: var(--ed-muted); }
+.series-next a { color: var(--ed-accent); }
+
+/* Topic hub: films and labs, resources. */
+.media-list { list-style: none; margin: 0; padding: 0; }
+.media-list li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 0.2rem 1.2rem; padding: 0.9rem 0; border-bottom: 1px solid var(--ed-border); }
+.media-list .kicker { grid-row: span 2; margin: 0.2rem 0 0; }
+.media-list a { font: 500 1.15rem/1.25 var(--ed-display); text-decoration: none; }
+.media-list a:hover { text-decoration: underline; text-decoration-color: var(--ed-accent); }
+.media-list .meta { color: var(--ed-muted); font-size: 0.9rem; }
+
+/* Discover library entries. */
+.library-types { margin: 1rem 0 0.5rem; font: 600 0.7rem var(--ed-sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ed-muted); }
+.library-types span { color: var(--ed-accent); }
+.resource-list { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 0 1.6rem; }
+.resource-item { padding: 1rem 0 1.2rem; border-bottom: 1px solid var(--ed-border); }
+.resource-type { margin: 0; font: 700 0.64rem/1.4 var(--ed-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ed-accent); }
+.resource-type span { margin-left: 0.7rem; color: var(--ed-muted); }
+.resource-item h3 { margin: 0.3rem 0 0.25rem; font: 500 1.12rem/1.25 var(--ed-display); }
+.resource-item h3 a { text-decoration: none; }
+.resource-item h3 a:hover { text-decoration: underline; text-decoration-color: var(--ed-accent); }
+.resource-biblio { margin: 0; font: 400 0.78rem/1.45 var(--ed-sans); color: var(--ed-muted); }
+.resource-why { margin: 0.5rem 0 0.4rem; font-size: 0.93rem; }
+.resource-related { margin: 0; font: 400 0.78rem/1.45 var(--ed-sans); color: var(--ed-muted); }
+.resource-related a { color: var(--ed-accent); }
+.discover-topic .empty-state { color: var(--ed-muted); font-style: italic; }
+
+/* Volumes while none exists. */
+.volumes-preparing { max-width: 44rem; padding: 1rem 0 3rem; }
+
+@media (max-width: 850px) {
+  .topic-nav ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .series-parts li { grid-template-columns: minmax(0, 1fr); gap: 0.3rem; }
+  .series-parts .meta { text-align: left; }
+}
+@media (max-width: 560px) {
+  .topic-nav ul { grid-template-columns: minmax(0, 1fr); }
+  .media-list li { grid-template-columns: minmax(0, 1fr); }
+  .media-list .kicker { grid-row: auto; }
+}

@@ -387,6 +387,18 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Not changed (owner/Phase 3 scope):** the English hero headline "Ideas worth staying with." and the English section names on the Vietnamese site; tag labels shown as title-cased slugs ("Ly-Thuyet-Tro-Choi") → D4 metadata.
 - **Next:** owner approves the merge; then D4 discovery.
 
+### 2026-11-23 — D4 content architecture: discovery started — Claude Code
+- **Branch:** `docs/d4-discovery`. Claim: TASK_BOARD row D4 → IN PROGRESS.
+- **Production checks (post-merge):** D1 PR #40 (`4b6d328`) and D-017 PR #41 (`8a86b25`) deployed. `D1_BASE=https://trandung6129.github.io node scripts/test-d1.cjs` → 31/31. Redirects for removed copies and retired listings answer on the live site.
+- **Owner decisions:** Vietnamese first with selected English editions; Volumes are purposeful books, with Series as lighter chains in the Journal; Discover becomes a resource library. Recorded in `docs/phases/phase-4/d4/DISCOVERY.md`.
+- **Next:** owner answers on topics, navigation, ja/zh interfaces and Volume I; then DESIGN_SPEC with navigation and archive/series mockups.
+- 2026-11-24 (D4, round 2): owner decisions recorded in `DISCOVERY.md` §6:
+  - Four topics: Vật lý folds into Toán học, Cá nhân into Triết học.
+  - Topic hubs sit inside the Journal; the main navigation keeps five items.
+  - The ja/zh interfaces stay.
+  - Volume I becomes a Series.
+  - Sitemap §7 awaits approval; mockups come next.
+
 ### 2026-11-24 — Fix: alias-only edits showed a false "updated" date — Claude Code
 - **Branch:** `fix/lastmod-metadata-only`.
 - **Finding:** found in a D4 screenshot. D-017 (PR #41) added redirect aliases to 11 essays. Because `lastmod` comes from `:git`, the live site showed "Cập nhật 23/11/2026" and `dateModified` 2026-11-23 for essays whose text did not change. That is a false freshness claim (AGENTS.md).
