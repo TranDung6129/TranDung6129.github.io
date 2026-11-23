@@ -25,7 +25,10 @@
     <aside class="article-aside">
       {{- /* The aside spans the whole article body; this inner panel is what stays in view. */ -}}
       <div class="toc-panel">
-        <div class="reading-progress" role="progressbar" aria-label="{{ T "ed_readingProgress" | default "Reading progress" }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+        {{- /* Visual only. Exposed as a progressbar, every scroll made screen readers interrupt the
+               text with "N percent" (Orca 46, verified); the contents list already marks the
+               current section with aria-current. */}}
+        <div class="reading-progress" aria-hidden="true" data-value="0"><span></span></div>
         {{- /* The contents list is the one landmark here: Hugo's <nav> gets the label, the aside none,
                so a screen reader announces "Contents, navigation" once instead of two nested regions. */}}
         <details class="toc" open data-toggle-label="{{ T "ed_tocToggle" | default "Subsections of %s" }}">

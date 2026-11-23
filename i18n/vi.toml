@@ -439,5 +439,3 @@ other = "Bài cũ hơn và mới hơn"
 other = "Tham khảo số {{ .N }} trong bài"
 [ed_tocToggle]
 other = "Mục con của %s"
-[ed_readingProgress]
-other = "Tiến độ đọc"

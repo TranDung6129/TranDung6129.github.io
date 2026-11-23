@@ -33,8 +33,8 @@
   {{- with $featured -}}
   <section class="discovery-module discovery-essays" aria-labelledby="further-essays-title">
     <header class="discovery-head">
-      <p class="discovery-kicker">{{ T "ed_furtherKicker" | default "Continue the line of thought" }}</p>
       <h2 id="further-essays-title">{{ T "ed_furtherEssays" | default "Further essays" }}</h2>
+      <p class="discovery-kicker">{{ T "ed_furtherKicker" | default "Continue the line of thought" }}</p>
     </header>
     <div class="essays-layout{{ if not $supporting }} essays-single{{ end }}">
       <article class="essay-feature{{ with $featuredArt }} has-art art-{{ .via }}{{ else }} text-only{{ end }}">
@@ -70,8 +70,8 @@
   {{- with $items -}}
   <section class="discovery-module discovery-reading" aria-labelledby="curated-reading-title">
     <header class="discovery-head">
-      <p class="discovery-kicker">{{ T "ed_curatedKicker" | default "From the sources" }}</p>
       <h2 id="curated-reading-title">{{ T "ed_curatedReading" | default "Curated reading" }}</h2>
+      <p class="discovery-kicker">{{ T "ed_curatedKicker" | default "From the sources" }}</p>
       <p class="discovery-note">{{ T "ed_curatedNote" | default "Chosen from this essay's references. No paid placement." }}</p>
     </header>
     <ol class="source-list" role="list">
@@ -84,7 +84,7 @@
           <p class="source-biblio" lang="en">{{ .authors }} · {{ .source }}</p>
           <p class="source-why" lang="en">{{ .why }}</p>
           {{- if .url }}
-          <a class="discovery-cta" href="{{ .url }}" rel="noopener noreferrer">{{ T "ed_openSource" | default "Open the source" }} <span aria-hidden="true">↗</span></a>
+          <a class="discovery-cta" href="{{ .url }}" rel="noopener noreferrer">{{ T "ed_openSource" | default "Open the source" }}<span class="d1-sr">: <span lang="en">{{ .title }}</span></span> <span aria-hidden="true">↗</span></a>
           {{- else if .ref }}
           <a class="discovery-cta" href="#{{ .ref }}">{{ with .refnum }}{{ T "ed_seeReferenceN" (dict "N" .) | default (printf "Reference %d in this essay" .) }}{{ else }}{{ T "ed_seeReference" | default "See the reference list" }}{{ end }} <span aria-hidden="true">↓</span></a>
           {{- end }}

@@ -213,7 +213,7 @@
       const start = prose.getBoundingClientRect().top + window.scrollY;
       const end = start + prose.offsetHeight - window.innerHeight;
       const value = end <= start ? 100 : Math.max(0, Math.min(100, ((window.scrollY - start) / (end - start)) * 100));
-      progress.setAttribute('aria-valuenow', String(Math.round(value)));
+      progress.dataset.value = String(Math.round(value));
       if (fill) fill.style.width = `${value}%`;
     };
     addEventListener('scroll', updateProgress, { passive: true });

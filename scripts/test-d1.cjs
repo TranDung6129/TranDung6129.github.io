@@ -59,10 +59,12 @@ const settle = page => page.evaluate(async () => {
         mathContainers: document.querySelectorAll('mjx-container').length,
         favicon: document.querySelector('link[rel="icon"]')?.getAttribute('href'),
         tocNavLabel: document.querySelector('.d1-article .toc nav')?.getAttribute('aria-label'),
-        progressLabel: document.querySelector('.reading-progress')?.getAttribute('aria-label'),
+        progressHidden: document.querySelector('.reading-progress')?.getAttribute('aria-hidden') === 'true' && !document.querySelector('.reading-progress')?.hasAttribute('role'),
+        discoveryOrder: [...document.querySelectorAll('.discovery-head')].map(h => h.firstElementChild.tagName),
         asideLabel: document.querySelector('.article-aside')?.getAttribute('aria-label'),
         toggleLabels: [...document.querySelectorAll('.toc-toggle')].map(b => b.getAttribute('aria-label')),
         sourceLinks: [...document.querySelectorAll('.source-item .discovery-cta')].map(a => a.getAttribute('href')),
+        sourceNames: [...document.querySelectorAll('.source-item .discovery-cta')].map(a => a.textContent.replace(/\s+/g, ' ').trim()),
         doubleRules: [...document.querySelectorAll('.d1-article .prose hr + h2')].filter(h => getComputedStyle(h).borderTopStyle !== 'none').length,
         tocTopBorder: getComputedStyle(document.querySelector('.d1-article .toc')).borderTopStyle,
         ornamentStroke: (() => { const g = document.querySelector('.toc-ornament svg g, .article-landscape svg g'); return g && getComputedStyle(g).stroke; })(),
@@ -97,8 +99,8 @@ const settle = page => page.evaluate(async () => {
   check('Footer: Further Essays then Curated Reading; one featured essay with its artwork, up to two supporting; three sources', result.cases.every(c => c.discovery.join('|') === 'discovery-essays|discovery-reading' && c.featured === 1 && c.featuredArt && c.supporting <= 2 && c.supporting >= 1 && c.sources === 3), { headings: result.cases[0].headings, supporting: result.cases[0].supporting });
   check('Both discovery modules have the same width (equal prominence)', result.cases.every(c => c.modules.essays.width === c.modules.reading.width), { modules: result.cases.map(c => [c.width, c.modules]) });
   check('Old duplicate "Related reading" list removed; no texture behind the page', result.cases.every(c => c.relatedReading === 0 && c.bodyBackground === 'none'));
-  check('TOC: one labelled navigation landmark (no unlabelled nav, no nested aside landmark); toggle names localised', result.cases.every(c => c.tocNavLabel === 'Nội dung' && c.progressLabel === 'Tiến độ đọc' && !c.asideLabel && c.toggleLabels.length && c.toggleLabels.every(l => l.startsWith('Mục con của ') && l.length > 12)), { navLabel: result.cases[0].tocNavLabel, toggles: result.cases[0].toggleLabels });
-  check('Curated Reading: every source opens its verified external page', result.cases.every(c => c.sourceLinks.length === 3 && c.sourceLinks.every(h => /^https:\/\//.test(h))), { links: result.cases[0].sourceLinks });
+  check('Screen-reader structure: one labelled contents landmark, localised toggle names, progress bar hidden from AT (no "N percent" interruptions), discovery headings precede their kickers', result.cases.every(c => c.tocNavLabel === 'Nội dung' && c.progressHidden && c.discoveryOrder.every(t => t === 'H2') && !c.asideLabel && c.toggleLabels.length && c.toggleLabels.every(l => l.startsWith('Mục con của ') && l.length > 12)), { navLabel: result.cases[0].tocNavLabel, toggles: result.cases[0].toggleLabels });
+  check('Curated Reading: every source opens its verified external page, and each link has a distinct accessible name', result.cases.every(c => c.sourceLinks.length === 3 && c.sourceLinks.every(h => /^https:\/\//.test(h)) && new Set(c.sourceNames).size === 3), { links: result.cases[0].sourceLinks, names: result.cases[0].sourceNames });
   check('No doubled rules: a Markdown rule before a section heading and the TOC top border are not drawn twice', result.cases.every(c => c.doubleRules === 0 && c.tocTopBorder === 'none'));
   check('No MathJax errors and formulas rendered', result.cases.every(c => c.mathErrors === 0 && c.mathContainers > 0), { containers: result.cases.map(c => c.mathContainers) });
   check('Ornament line colour follows the theme (inline SVG, currentColor)', new Set(desktop.map(c => c.ornamentStroke)).size === 2, { strokes: desktop.map(c => [c.scheme, c.ornamentStroke]) });
@@ -118,7 +120,7 @@ const settle = page => page.evaluate(async () => {
         // The heading the reader is on: last whose top passed 30% of the viewport.
         let expected = null;
         document.querySelectorAll('.d1-article .prose :is(h2,h3)[id]').forEach(h => { if (h.getBoundingClientRect().top <= innerHeight * 0.3 && document.querySelector(`.toc a[href="#${CSS.escape(h.id)}"]`)) expected = h.id; });
-        return { tocTop: Math.round(t.top), tocBottom: Math.round(t.bottom), inView: t.top >= 0 && t.bottom <= innerHeight, progressTop: Math.round(pr.top), progress: +document.querySelector('.reading-progress').getAttribute('aria-valuenow'), current: cur && decodeURIComponent(cur.getAttribute('href').slice(1)), expected, currentVisible: !!curBox && curBox.top >= t.top && curBox.bottom <= t.bottom, open };
+        return { tocTop: Math.round(t.top), tocBottom: Math.round(t.bottom), inView: t.top >= 0 && t.bottom <= innerHeight, progressTop: Math.round(pr.top), progress: +document.querySelector('.reading-progress').dataset.value, current: cur && decodeURIComponent(cur.getAttribute('href').slice(1)), expected, currentVisible: !!curBox && curBox.top >= t.top && curBox.bottom <= t.bottom, open };
       });
       result.sticky.push({ width, height, fraction: f, ...s });
       if (width === 1440 && (f === 0.5 || f === 0.98)) await page.screenshot({ path: path.join(shots, `nash-1440-sticky-${Math.round(f * 100)}.png`) });
