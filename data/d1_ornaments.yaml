@@ -1,22 +1,77 @@
-# D1 botanical line art (D-016). Original vectors authored in this repository for D1; no
-# third-party asset is incorporated. They are PROTOTYPE artwork: the owner has not yet approved
-# them as final, and the library is intentionally small — expanding it is D5 work.
+# Ornament library (D5 prototype; replaces the D1 prototype line art once approved).
+# Public-domain / CC0 engravings and woodcuts from Wikimedia Commons, verified 2026-11-24 from
+# each file's Commons metadata. Every descriptive field below is copied from that metadata
+# (file title, Artist, date, description); nothing is added from memory. Processing: the darkest ink is
+# separated from the paper (illumination flattened, soft threshold) into an alpha mask; printed
+# captions are blanked or cropped out; no other change to the drawing. Shown via CSS mask in
+# the accent colour, so the line follows the theme. Pipeline: docs/phases/phase-4/d5/process.py
 #
-# Roles:   branch    — masthead corners on article pages (both sides, mirrored)
-#          toc       — one plant below the left contents rail (wide screens only)
-#          landscape — one faint strip below the article footer
-# Rotation: layouts/_partials/editorial/d1-ornament-pick.html picks one asset per role from an
-# md5 of the content path, so an article keeps its artwork across builds and reloads. Add an
-# entry with an existing role to widen the rotation; front matter can pin a file:
-#   ornaments: { toc: "flower-alt.svg", landscape: "landscape.svg" }
-# Files use stroke="#80583e"; the partial inlines them and swaps that for currentColor so the
-# line follows the theme. Nothing is ever placed behind prose, equations or tables.
-source: "Original vector artwork authored for The Epistemic Diary D1 implementation"
-license: "Repository owner supplied / internal artwork; no third-party asset incorporated"
+# Roles: branch (article headpiece, mirrored pair), toc (below the contents rail),
+#        landscape (faint strip below the footer). Rotation as in D1 (md5 of the content path).
 status: "prototype"
 assets:
-  - { path: "branch.svg",        role: "branch",    viewBox: "300 × 115" }
-  - { path: "flower.svg",        role: "toc",       viewBox: "240 × 360" }
-  - { path: "flower-alt.svg",    role: "toc",       viewBox: "240 × 360" }
-  - { path: "landscape.svg",     role: "landscape", viewBox: "850 × 210" }
-  - { path: "landscape-alt.svg", role: "landscape", viewBox: "850 × 210" }
+  - path: "d5/branch-mattioli-vicia.webp"
+    role: branch
+    width: 320
+    height: 218
+    commonsTitle: "Wicken. Vicia. Wilde Wicken. Aphace. - DPLA - 476cd5d0abf5de420dbaab49969409f0"
+    creator: "Pier Andrea Mattioli"
+    date: ""
+    description: "1 handcolored woodcut [text in letterpress?]; 34 x 21 cm. (sheet). 168 verso."
+    license: "Public domain"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Wicken._Vicia._Wilde_Wicken._Aphace._-_DPLA_-_476cd5d0abf5de420dbaab49969409f0.jpg"
+    licenseCheckedAt: "2026-11-24"
+    kind: historical-engraving
+    aiGenerated: false
+  - path: "d5/flower-fuchs-primula.webp"
+    role: toc
+    width: 240
+    height: 400
+    commonsTitle: "Weiss Schlsselblum CCCCXC - DPLA - 8f91c14103b905e761ca82a7fc546845"
+    creator: "Leonhart Fuchs"
+    date: ""
+    description: "1 handcolored woodcut; 35 x 24 cm. (sheet). Yy2 [recto].More about cowslip: http://www.botanical.com/botanical/mgmh/c/cowsl112.html"
+    license: "Public domain"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Weiss_Schlsselblum_CCCCXC_-_DPLA_-_8f91c14103b905e761ca82a7fc546845.jpg"
+    licenseCheckedAt: "2026-11-24"
+    kind: historical-engraving
+    aiGenerated: false
+  - path: "d5/flower-fuchs-euphorbia.webp"
+    role: toc
+    width: 240
+    height: 434
+    commonsTitle: "Sonnenwendede Wolffsmilch CCCCLXV - DPLA - bf758b43f401a56dbab36a8f64c3b2b5"
+    creator: "Leonhart Fuchs"
+    date: ""
+    description: "1 handcolored woodcut; 35 x 24 cm. (sheet). Tt2 [recto]."
+    license: "Public domain"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Sonnenwendede_Wolffsmilch_CCCCLXV_-_DPLA_-_bf758b43f401a56dbab36a8f64c3b2b5.jpg"
+    licenseCheckedAt: "2026-11-24"
+    kind: historical-engraving
+    aiGenerated: false
+  - path: "d5/landscape-rhine-bonn.webp"
+    role: landscape
+    width: 960
+    height: 135
+    commonsTitle: "Landschap met gezicht op de Rijn bij Bonn, RP-P-OB-11.274"
+    creator: "Rijksmuseum"
+    date: "between 1643 and 1644"
+    description: "IdentificatieTitel(s): Landschap met gezicht op de Rijn bij Bonn Landschappen en stadsgezichten (serietitel) Amoenissimi Aliquot Locorum in Diversis Provincijs "
+    license: "CC0"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Landschap_met_gezicht_op_de_Rijn_bij_Bonn,_RP-P-OB-11.274.jpg"
+    licenseCheckedAt: "2026-11-24"
+    kind: historical-engraving
+    aiGenerated: false
+  - path: "d5/landscape-hollar-coblenz.webp"
+    role: landscape
+    width: 800
+    height: 200
+    commonsTitle: "Landscape showing Coblentz and Harmenstein, copy MET DP828158"
+    creator: "Wenceslaus Hollar"
+    date: "17th century"
+    description: "Print; Prints"
+    license: "CC0"
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Landscape_showing_Coblentz_and_Harmenstein,_copy_MET_DP828158.jpg"
+    licenseCheckedAt: "2026-11-24"
+    kind: historical-engraving
+    aiGenerated: false

@@ -1,5 +1,7 @@
+{{- /* Brand lockup (D5, owner choice C): the Mattioli vetch sprig as a CSS mask filled with the
+       accent colour (static/images/brand-sprig.svg; cached, theme-aware), then the wordmark. */ -}}
 {{- $compact := .compact | default false -}}
 <span class="brand{{ if $compact }} brand-compact{{ end }}">
-  <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M12 37C19 31 25 22 33 7c1 13-4 24-14 30M20 29c-2-6-5-9-10-11m14 4c5-1 9 0 13 3M17 34c-4-1-7 0-10 3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/><path d="M33 7l4 4-5 3z" fill="currentColor"/></svg>
+  <span class="brand-mark" aria-hidden="true"></span>
   {{- if not $compact }}<span class="brand-name">{{ site.Title }}</span>{{ end -}}
 </span>

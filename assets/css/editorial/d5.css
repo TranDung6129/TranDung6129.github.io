@@ -1,0 +1,12 @@
+/* D5 — engraved ornaments and the brand mark drawn as masks in the accent colour. */
+.ornament-mask { display: block; width: 100%; background: currentColor; -webkit-mask: var(--orn) center / contain no-repeat; mask: var(--orn) center / contain no-repeat; }
+/* Headpiece: the sprig and its mirror meet in the middle, above the kicker. */
+.article-headpiece:has(.ornament-mask) { gap: 0.2rem; opacity: 0.7; }
+.article-headpiece .ornament-mask { width: 5.5rem; }
+.article-headpiece .ornament-mask:last-child { transform: scaleX(-1); }
+.toc-ornament:has(.ornament-mask) { opacity: 0.85; width: 7rem; }
+.article-landscape .ornament-mask { opacity: 0.35; }
+
+/* Brand mark (owner choice C): the traced Mattioli sprig, accent-coloured, beside the wordmark. */
+.brand-mark { display: inline-block; flex: none; width: 2.35em; height: 1.48em; background: var(--ed-accent); -webkit-mask: url("/images/brand-sprig.svg") center / contain no-repeat; mask: url("/images/brand-sprig.svg") center / contain no-repeat; }
+@media (max-width: 560px) { .brand-mark { width: 2.6rem; height: 1.65rem; } }

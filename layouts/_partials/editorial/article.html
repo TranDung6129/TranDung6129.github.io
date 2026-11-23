@@ -7,7 +7,7 @@
 {{- $orn := partial "editorial/d1-ornament-pick.html" $p -}}
 <article class="article d1-article" lang="{{ $p.Language.Lang }}">
   <header class="article-header">
-    <div class="article-headpiece" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "branch" "file" "branch.svg") }}{{ partial "editorial/d1-ornament.html" (dict "role" "branch" "file" "branch.svg") }}</div>
+    <div class="article-headpiece" aria-hidden="true">{{ partial "editorial/d1-ornament.html" (dict "role" "branch" "file" $orn.branch) }}{{ partial "editorial/d1-ornament.html" (dict "role" "branch" "file" $orn.branch) }}</div>
     <p class="kicker">{{ with $cat }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> · {{ end }}{{ T "ed_minutes" (dict "Count" $p.ReadingTime) | default (printf "%d min read" $p.ReadingTime) }}</p>
     <h1 class="article-title">{{ $p.Title }}</h1>
     {{- with $p.Params.subtitle }}<p class="article-subtitle">{{ . | $p.RenderString }}</p>{{ end }}

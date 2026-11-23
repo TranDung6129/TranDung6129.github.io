@@ -481,3 +481,26 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - Five prototype D1 line-art SVGs.
   - The vector brand mark and favicon (interim, D1).
   - The owner's optional ornament concept pack (27 SVGs, untracked, status unconfirmed).
+
+### 2026-11-24 — D5 visual identity implemented — Claude Code
+- **Branch:** `feat/d5-visual-identity` (from `main` after #47). The owner chose logo C and approved the library.
+- **Changed:**
+  - Five PD/CC0 engravings in `static/ornaments/d5/`, with the manifest in `data/d1_ornaments.yaml`.
+  - The ornament partials draw raster masks, and the headpiece now rotates.
+  - Brand mark `static/images/brand-sprig.svg` as a mask; new favicon.
+  - `d5.css`.
+  - D1 SVG ornaments removed after a grep showed no remaining references.
+  - `test-d1.cjs` theme-colour check updated for masks.
+  - The prototype overlay removed.
+- **Tests (exit 0):**
+  - Clean `hugo --gc --minify`: 0 warnings.
+  - `check-redirects.py`: 161 valid, 0 HTML routes lost.
+  - `d3-check.cjs`: 18/18.
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+  - Logo and favicon screenshots: `docs/audits/d5/final/screenshots/`.
+- **Gaps:**
+  - The library is a starter set (1 branch, 2 flowers, 2 landscapes); it grows in verified batches.
+  - No hero illustration yet (owner-made, per `HERO_GUIDE.md`).
+- **Next:** owner approves the merge → production check → D5 DONE; then D2.
