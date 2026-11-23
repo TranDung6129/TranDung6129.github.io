@@ -398,3 +398,10 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - The ja/zh interfaces stay.
   - Volume I becomes a Series.
   - Sitemap §7 awaits approval; mockups come next.
+
+### 2026-11-24 — Fix: alias-only edits showed a false "updated" date — Claude Code
+- **Branch:** `fix/lastmod-metadata-only`.
+- **Finding:** found in a D4 screenshot. D-017 (PR #41) added redirect aliases to 11 essays. Because `lastmod` comes from `:git`, the live site showed "Cập nhật 23/11/2026" and `dateModified` 2026-11-23 for essays whose text did not change. That is a false freshness claim (AGENTS.md).
+- **Fix:** `lastmod` is pinned in those 11 files to their previous commit date, which is what readers saw before #41. Films, labs and volume files changed meaningfully and keep their git date.
+- **Tests:** `hugo --gc --minify` 0 warnings. Rendered "Cập nhật"/"Updated" and JSON-LD `dateModified` checked on toan-co-ban-2 (15/11/2026), Riemann (1/3/2026) and the English Nash essay (15 Nov 2026).
+- **Rule for later edits:** a metadata-only change to an essay (aliases, categories, series membership) must pin `lastmod` to the last real edit. This applies to D4's topic/series migration.

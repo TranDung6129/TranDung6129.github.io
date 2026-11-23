@@ -7,6 +7,9 @@ tags: ["lap-trinh", "thuat-toan", "complexity", "quantum", "toan-hoc"]
 categories: ["khoa-hoc-may-tinh"]
 math: true
 draft: false
+# Only redirect aliases were added on 2026-11-23 (D-017); the text is unchanged, so the
+# last modification shown to readers stays the last real edit.
+lastmod: 2026-03-01T22:05:48+07:00
 # Content-language separation (D-017): the former copy at this URL was in the wrong language.
 aliases:
   - "/en/khoa-hoc-may-tinh/complexity-theory-quantum/"

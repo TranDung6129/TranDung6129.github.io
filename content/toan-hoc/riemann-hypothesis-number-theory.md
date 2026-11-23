@@ -7,6 +7,9 @@ tags: ["toan-hoc", "ly-thuyet-so", "riemann", "so-nguyen-to", "crypto"]
 categories: ["toan-hoc"]
 math: true
 draft: false
+# Only redirect aliases were added on 2026-11-23 (D-017); the text is unchanged, so the
+# last modification shown to readers stays the last real edit.
+lastmod: 2026-03-01T22:05:48+07:00
 # Content-language separation (D-017): the former copy at this URL was in the wrong language.
 aliases:
   - "/en/toan-hoc/riemann-hypothesis-number-theory/"
