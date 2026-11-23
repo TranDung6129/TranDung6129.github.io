@@ -1,0 +1,44 @@
+# Curated Reading for D1 article footers, keyed by the essay's content file name without
+# language suffix (File.TranslationBaseName). Only editorially verified entries belong here.
+#
+#   kind:   paper | book
+#   title, authors, source, year   bibliographic fields, copied from the essay's own references
+#   why:    one or two sentences on why this follows from the essay
+#   url:    optional. Only a canonical, verified link (DOI, publisher, author-hosted edition).
+#           Without it the entry links to the essay's own reference list (`ref`).
+#   ref:    fragment of the essay's reference list used when there is no url
+#   refnum: the entry's number in that list (makes each link's text distinct)
+#   cover:  optional data/art.yaml key of a cover image the site may legally reuse. None today;
+#           no cover is ever drawn or fetched for a paper.
+#   affiliate: must stay false. A future affiliate link needs `affiliate: true` and is shown
+#           in a separate, labelled "Disclosure" line — never mixed into the editorial note.
+#
+# Links verified 2026-11-23: Nash and Kakutani DOIs against Crossref metadata (journal, volume,
+# issue, pages, year) and doi.org resolution; masfoundations.org is the authors' official book
+# site, which offers the free eBook in agreement with Cambridge University Press.
+game_theory_nash:
+  items:
+    - kind: paper
+      title: "Equilibrium Points in n-Person Games"
+      authors: "John F. Nash Jr."
+      source: "Proceedings of the National Academy of Sciences 36 (1), 48–49"
+      year: 1950
+      why: "Two pages that state and prove the existence result this essay builds up to; worth reading once the fixed-point section makes sense."
+      url: "https://doi.org/10.1073/pnas.36.1.48"
+      affiliate: false
+    - kind: book
+      title: "Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations"
+      authors: "Yoav Shoham and Kevin Leyton-Brown"
+      source: "Cambridge University Press"
+      year: 2008
+      why: "Where to go next: computing equilibria, potential games and the complexity results the essay only mentions, in one consistent notation."
+      url: "https://www.masfoundations.org/"
+      affiliate: false
+    - kind: paper
+      title: "A Generalization of Brouwer's Fixed Point Theorem"
+      authors: "Shizuo Kakutani"
+      source: "Duke Mathematical Journal 8 (3), 457–459"
+      year: 1941
+      why: "The fixed-point theorem behind the existence proof, for readers who want the step the essay takes on trust."
+      url: "https://doi.org/10.1215/S0012-7094-41-00838-4"
+      affiliate: false

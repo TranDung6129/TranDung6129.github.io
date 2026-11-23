@@ -282,6 +282,18 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Branch:** `feat/p2-visual-assets-v2` pushed; review base `feat/p2-06-review`.
 - **PR blocker:** `gh pr create --base feat/p2-06-review --head feat/p2-visual-assets-v2` returned `Post https://api.github.com/graphql: Forbidden`. No pull request was created; the pushed branch remains available for a manual PR. P2-06 remains blocked pending owner visual approval.
 
+### 2026-11-16 — D1 claim — Codex
+- **Status:** IN PROGRESS. **Branch:** `feat/d1-article-reading`, created from current `origin/main` (`c2898aa`).
+- **Scope:** D1-00 through D1-06 only: production article reading experience, independent TOC/progress, centered masthead/identity, licensed-or-owner-supplied ornamental system, and data-backed end-of-article discovery. D2–D8 remain guardrails only.
+- **Audit baseline:** Read the complete owner handoff and inspected its approved reference before code changes; audited Phase 1–3 architecture and representative current articles. Local production captures show the long Nash article prose center at x=687.3 of a 1440px viewport and x=606.7 of 1024px, rather than viewport center. Mobile is centered and has no horizontal overflow. Direct production access is blocked here by proxy `CONNECT 403`; local production build is the test target.
+
+### 2026-11-16 — D1 article reading implementation — Codex
+- **Status:** READY FOR PR REVIEW. D1-00 through D1-06 are implemented on `feat/d1-article-reading`; this is not a deployment, merge, owner-final visual approval, or a claim about D2–D8. Claim `e8a38a0`; implementation `aa8ae36`.
+- **Scope / evidence:** Article prose is viewport-centred while the TOC remains independently left at desktop, moves into flow at tablet, and becomes a mobile disclosure. H3 controls preserve manual reader state; progress is calculated from the prose region. Reusable brand/favicons and original internal decorative SVGs are local; handoff concept-prototype ornaments were not used. Discovery order is Further Essays then Curated Reading, backed by real pages and the Nash 1950 PNAS DOI only — no affiliate/price/product data. Full details and before/after captures: `docs/audits/d1/README.md`.
+- **Tests:** `PATH=/workspace/.cloud-tools/bin:$PATH npm run build -- --destination /tmp/d1-release-build` PASS (306 content pages); `D1_BASE=http://127.0.0.1:1336 D1_OUT=/tmp/d1-release D1_IGNORE_HTTPS_ERRORS=1 D1_REQUIRE_MATH_RENDER=1 NODE_PATH=/tmp/p2-qa/node_modules:/tmp/p1-02-browser/node_modules node scripts/test-d1.cjs` PASS (six 1440/1024/390 light/dark states; centred prose/nav, TOC/progress/deep links, no overflow, 200% text zoom, 68 MathJax containers/state, zero automatic axe violations). Vietnamese route checked HTTP 200/no overflow at 390/1440. Final output retains exactly 377 HTML/XML/JSON relative paths versus `origin/main` baseline.
+- **Limits:** axe reports incomplete colour-contrast cases (225 mobile / 235 desktop) requiring manual assessment. The managed Chromium trust store rejects MathJax CDN with `ERR_CERT_AUTHORITY_INVALID`; the documented browser run used an HTTPS-ignore setting solely to test the existing loader. Live host access is still `CONNECT 403`, so no trusted live/browser or production claim is made. Local performance data is indicative only. The untracked `themes/` directory was preserved untouched.
+- **Publication:** branch pushed to `origin/feat/d1-article-reading`. `gh pr create --base main --head feat/d1-article-reading` was attempted and GitHub GraphQL returned `403 Forbidden`; no PR was created, no merge/deploy occurred. Manual compare/PR URL: `https://github.com/TranDung6129/TranDung6129.github.io/pull/new/feat/d1-article-reading`.
+
 ### 2026-11-15 — P2-06 maintainer acceptance and integration
 - **Owner:** Approved merging Phase 2 design specimen and v2 artworks as a reversible milestone without waiting for additional visual review. Chose Source Serif 4 for reading text and Newsreader for headlines.
 - **Font scope:** Self-hosted 12 licensed variable WOFF2 files copied from already sourced font comparison, loaded only in Hugo `editorial-review` preview build. Original license notices remain under `docs/design/typography-comparison/fonts/`.
@@ -324,3 +336,34 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Branch:** `feat/p4-ia-cleanup`. Details and removed URLs: `docs/phases/phase-4/PLAN.md`; decision D-015.
 - **Tests (exit 0):** `hugo --gc --minify` (0 warnings); `BASE=… AXE=… node docs/audits/p3-07/tools/p3-smoke.cjs` — 100 states (10 pages), 32/32 checks, axe 0 violations; `seo-check.py` PASS (158 pages); `analyze.py` 0 broken references; route diff vs production: only the sample collection/category/tag pages and series feeds removed, series pages redirect to Volume I, lab and film pages added.
 
+### 2026-11-22 — D1 refinement and visual acceptance — Claude Code
+- **Branch:** `feat/d1-article-reading` (continues the Codex D1 pass; no redesign). Implementation `e2033a1`, harness `33195bf`.
+- **What:** sticky contents panel and contextual H3 folding (the previous rail scrolled away and never folded — measured); Further Essays as featured + supporting cards using only existing artwork; Curated Reading with three verified entries from the Nash references; duplicate related list removed; ornaments inlined with theme colour, deterministic md5 rotation, paper texture removed; localised footer strings.
+- **Tests (exit 0):** `hugo --gc --minify` 0 warnings; `node scripts/test-d1.cjs` 25/25; `node docs/audits/p3-07/tools/p3-smoke.cjs` 32/32, 100 states, axe 0 violations; route parity vs `main` 410/410, XML/JSON byte-identical; `perf.cjs` vs `main` and previous D1.
+- **Not done:** merge/deploy (owner), ornament library expansion (D5), DOI verification for two references (no network path here).
+
+
+### 2026-11-23 — D1 final acceptance pass — Claude Code
+- **Branch/PR:** `feat/d1-article-reading`, PR #40. Commits `b5c419e`, `27e046f`, `ccb5556` + docs commit.
+- **Owner decision:** brand mark, favicon and nav flourishes stay in D1 as interim identity; D5 replaces them (DECISIONS D-016).
+- **Fixed:**
+  - Contents rail clipped at 1111–1320 px.
+  - Orca "N percent" interruptions; the progress bar is now `aria-hidden`.
+  - TOC toggle names localised.
+  - Nested aside/nav landmarks reduced to one.
+  - Discovery heading order.
+  - Two Curated Reading links verified and made external; their link names are now distinct.
+  - Doubled rules.
+  - vi wording.
+- **Tests (exit 0):**
+  - Clean-tree `hugo --gc --minify`: 0 warnings.
+  - `node scripts/test-d1.cjs`: 29/29, axe 0.
+  - `node docs/audits/p3-07/tools/p3-smoke.cjs`: 32/32.
+  - Routes identical to `main`; RSS and sitemaps byte-identical.
+  - Real Orca 46.1 + Chrome on an isolated Xephyr display; transcripts in `docs/audits/d1/final/evidence/`.
+- **Gaps:**
+  - Firefox + Orca not run: the snap Firefox's AT-SPI tree is blocked by AppArmor here.
+  - NVDA, JAWS and VoiceOver not run.
+  - No live-site check until merge and deploy.
+  - Right-side background balance is open for owner review (D5 artwork).
+- **Next:** owner approves merge → merge PR #40 → check production → D4.

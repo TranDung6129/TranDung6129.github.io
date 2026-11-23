@@ -411,3 +411,31 @@ other = "Lịch số bài viết được đăng mỗi ngày trong sáu tháng"
 
 [ed_watchFilm]
 other = "Xem phim"
+[ed_furtherEssays]
+other = "Đọc tiếp"
+[ed_furtherKicker]
+other = "Tiếp nối mạch suy nghĩ"
+[ed_curatedReading]
+other = "Tài liệu chọn lọc"
+[ed_curatedKicker]
+other = "Từ nguồn trích dẫn"
+[ed_curatedNote]
+other = "Chọn từ danh mục tham khảo của bài. Không có vị trí trả phí."
+[ed_kindPaper]
+other = "Bài báo"
+[ed_kindBook]
+other = "Sách"
+[ed_openSource]
+other = "Mở nguồn"
+[ed_seeReference]
+other = "Xem danh mục tham khảo"
+[ed_affiliate]
+other = "Công khai: đây là liên kết affiliate (tiếp thị liên kết)."
+[ed_chapterIn]
+other = "Một chương của {{ .Volume }}"
+[ed_essayNavLabel]
+other = "Bài cũ hơn và mới hơn"
+[ed_seeReferenceN]
+other = "Tham khảo số {{ .N }} trong bài"
+[ed_tocToggle]
+other = "Mục con của %s"

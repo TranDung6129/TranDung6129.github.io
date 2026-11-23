@@ -1,0 +1,455 @@
+{
+  "base": "http://127.0.0.1:1336",
+  "cases": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scheme": "light",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "screenshot": "nash-1440-light.png",
+      "overflow": false,
+      "viewport": 1440,
+      "prose": {
+        "left": 412.1875,
+        "width": 615.609375,
+        "center": 719.9921875
+      },
+      "nav": {
+        "left": 494.875,
+        "width": 450.25,
+        "center": 720
+      },
+      "aside": {
+        "left": 102.390625,
+        "width": 208,
+        "center": 206.390625
+      },
+      "staticAside": "absolute",
+      "h2Links": 12,
+      "toggles": 5,
+      "progress": "0",
+      "discovery": [
+        "Further Essays",
+        "Curated Reading / Resources"
+      ],
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "scheme": "dark",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "screenshot": "nash-1440-dark.png",
+      "overflow": false,
+      "viewport": 1440,
+      "prose": {
+        "left": 412.1875,
+        "width": 615.609375,
+        "center": 719.9921875
+      },
+      "nav": {
+        "left": 494.875,
+        "width": 450.25,
+        "center": 720
+      },
+      "aside": {
+        "left": 102.390625,
+        "width": 208,
+        "center": 206.390625
+      },
+      "staticAside": "absolute",
+      "h2Links": 12,
+      "toggles": 5,
+      "progress": "0",
+      "discovery": [
+        "Further Essays",
+        "Curated Reading / Resources"
+      ],
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scheme": "light",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "screenshot": "nash-1024-light.png",
+      "overflow": false,
+      "viewport": 1024,
+      "prose": {
+        "left": 204.1875,
+        "width": 615.609375,
+        "center": 511.9921875
+      },
+      "nav": {
+        "left": 309.328125,
+        "width": 405.34375,
+        "center": 512
+      },
+      "aside": {
+        "left": 160,
+        "width": 704,
+        "center": 512
+      },
+      "staticAside": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "progress": "0",
+      "discovery": [
+        "Further Essays",
+        "Curated Reading / Resources"
+      ],
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scheme": "dark",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "screenshot": "nash-1024-dark.png",
+      "overflow": false,
+      "viewport": 1024,
+      "prose": {
+        "left": 204.1875,
+        "width": 615.609375,
+        "center": 511.9921875
+      },
+      "nav": {
+        "left": 309.328125,
+        "width": 405.34375,
+        "center": 512
+      },
+      "aside": {
+        "left": 160,
+        "width": 704,
+        "center": 512
+      },
+      "staticAside": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "progress": "0",
+      "discovery": [
+        "Further Essays",
+        "Curated Reading / Resources"
+      ],
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scheme": "light",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "screenshot": "nash-390-light.png",
+      "overflow": false,
+      "viewport": 390,
+      "prose": {
+        "left": 18,
+        "width": 354,
+        "center": 195
+      },
+      "nav": {
+        "left": 0,
+        "width": 0,
+        "center": 0
+      },
+      "aside": {
+        "left": 18,
+        "width": 354,
+        "center": 195
+      },
+      "staticAside": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "progress": "0",
+      "discovery": [
+        "Further Essays",
+        "Curated Reading / Resources"
+      ],
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scheme": "dark",
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "screenshot": "nash-390-dark.png",
+      "overflow": false,
+      "viewport": 390,
+      "prose": {
+        "left": 18,
+        "width": 354,
+        "center": 195
+      },
+      "nav": {
+        "left": 0,
+        "width": 0,
+        "center": 0
+      },
+      "aside": {
+        "left": 18,
+        "width": 354,
+        "center": 195
+      },
+      "staticAside": "static",
+      "h2Links": 12,
+      "toggles": 5,
+      "progress": "0",
+      "discovery": [
+        "Further Essays",
+        "Curated Reading / Resources"
+      ],
+      "mathErrors": 0,
+      "mathContainers": 68,
+      "favicon": "/images/favicon.svg"
+    }
+  ],
+  "checks": [
+    {
+      "name": "All desktop/tablet/mobile article states load without overflow or page errors",
+      "passed": true,
+      "states": 6
+    },
+    {
+      "name": "Wide prose centre is within 1px of viewport centre",
+      "passed": true,
+      "centres": [
+        719.9921875,
+        719.9921875
+      ]
+    },
+    {
+      "name": "Tablet moves the rail into normal flow before it can collide with prose",
+      "passed": true,
+      "positions": [
+        "static",
+        "static"
+      ]
+    },
+    {
+      "name": "Mobile prose remains fluid and centred",
+      "passed": true,
+      "centres": [
+        195,
+        195
+      ]
+    },
+    {
+      "name": "TOC has visible top-level links, independent H3 toggles and a restrained progress control",
+      "passed": true,
+      "sample": {
+        "width": 1440,
+        "height": 900,
+        "scheme": "light",
+        "status": 200,
+        "errors": [],
+        "failed": [],
+        "screenshot": "nash-1440-light.png",
+        "overflow": false,
+        "viewport": 1440,
+        "prose": {
+          "left": 412.1875,
+          "width": 615.609375,
+          "center": 719.9921875
+        },
+        "nav": {
+          "left": 494.875,
+          "width": 450.25,
+          "center": 720
+        },
+        "aside": {
+          "left": 102.390625,
+          "width": 208,
+          "center": 206.390625
+        },
+        "staticAside": "absolute",
+        "h2Links": 12,
+        "toggles": 5,
+        "progress": "0",
+        "discovery": [
+          "Further Essays",
+          "Curated Reading / Resources"
+        ],
+        "mathErrors": 0,
+        "mathContainers": 68,
+        "favicon": "/images/favicon.svg"
+      }
+    },
+    {
+      "name": "Further Essays precedes Curated Reading and the favicon is the D1 vector",
+      "passed": true
+    },
+    {
+      "name": "No MathJax render errors after loading",
+      "passed": true,
+      "errors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "containers": [
+        68,
+        68,
+        68,
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "name": "MathJax renders the article formulae",
+      "passed": true,
+      "containers": [
+        68,
+        68,
+        68,
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "name": "Desktop navigation is visually centred independent of side controls",
+      "passed": true,
+      "centres": [
+        720,
+        720
+      ]
+    },
+    {
+      "name": "A TOC subsection toggle preserves its manual expansion state and progress changes within prose",
+      "passed": true,
+      "before": "false",
+      "after": "true",
+      "progress": "7"
+    },
+    {
+      "name": "Existing deep-link anchor remains present",
+      "passed": true
+    },
+    {
+      "name": "200% text zoom preserves a horizontal-scroll-free reading page",
+      "passed": true,
+      "scrollWidth": 390
+    },
+    {
+      "name": "axe has no automatic WCAG 2.1 A/AA violations on the D1 article states",
+      "passed": true,
+      "axe": [
+        {
+          "width": 390,
+          "scheme": "light",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 225
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "scheme": "dark",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 225
+            }
+          ]
+        },
+        {
+          "width": 1440,
+          "scheme": "light",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 235
+            }
+          ]
+        },
+        {
+          "width": 1440,
+          "scheme": "dark",
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 235
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "axe": [
+    {
+      "width": 390,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 225
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 225
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "scheme": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 235
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "scheme": "dark",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 235
+        }
+      ]
+    }
+  ]
+}

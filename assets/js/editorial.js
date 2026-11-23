@@ -139,18 +139,85 @@
     block.prepend(bar);
   });
 
-  // ---- Table of contents: mark the section being read ---------------------------------------
-  const tocLinks = [...document.querySelectorAll('.toc a[href^="#"]')];
-  if (tocLinks.length && 'IntersectionObserver' in window) {
-    const byId = new Map(tocLinks.map(a => [decodeURIComponent(a.getAttribute('href').slice(1)), a]));
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        tocLinks.forEach(a => a.removeAttribute('aria-current'));
-        const link = byId.get(entry.target.id);
-        if (link) link.setAttribute('aria-current', 'location');
-      });
-    }, { rootMargin: '0px 0px -70% 0px' });
-    byId.forEach((_, id) => { const el = document.getElementById(id); if (el) observer.observe(el); });
+  // ---- D1 table of contents and article-only progress ---------------------------------------
+  // Hugo keeps the source heading tree/anchors authoritative. We add controls around its nested
+  // list at runtime, so every heading link remains usable if script is unavailable.
+  const toc = document.querySelector('.d1-article .toc');
+  const tocLinks = [...document.querySelectorAll('.d1-article .toc a[href^="#"]')];
+  const setOpen = (section, open, manual = false) => {
+    if (!section) return;
+    const list = section.querySelector(':scope > ul');
+    const button = section.querySelector(':scope > .toc-toggle');
+    if (!list || !button) return;
+    list.hidden = !open;
+    button.setAttribute('aria-expanded', String(open));
+    if (manual) section.dataset.manual = 'true';
+  };
+  if (toc) {
+    [...toc.querySelectorAll('nav > ul > li')].forEach((section, index) => {
+      const nested = section.querySelector(':scope > ul');
+      const anchor = section.querySelector(':scope > a');
+      if (!nested || !anchor) return;
+      section.classList.add('toc-section');
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'toc-toggle';
+      button.setAttribute('aria-label', (toc.dataset.toggleLabel || 'Subsections of %s').replace('%s', anchor.textContent.trim()));
+      button.setAttribute('aria-expanded', String(index === 0));
+      button.textContent = '⌄';
+      nested.hidden = index !== 0;
+      button.addEventListener('click', () => setOpen(section, nested.hidden, true));
+      anchor.insertAdjacentElement('afterend', button);
+    });
+  }
+  // Active heading = the last one whose top has passed 30% of the viewport, recomputed on scroll
+  // so it is right in both directions and after a deep link. Its section opens and the other
+  // sections fold away again, unless the reader toggled a section by hand (data-manual), which
+  // is then left as the reader set it.
+  if (toc && tocLinks.length) {
+    const targets = tocLinks
+      .map(a => ({ a, el: document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1))) }))
+      .filter(t => t.el);
+    const sections = [...toc.querySelectorAll('.toc-section')];
+    let current = null, queued = false;
+    const keepVisible = link => {
+      const box = toc.getBoundingClientRect(), r = link.getBoundingClientRect();
+      if (r.top < box.top + 24) toc.scrollTop -= box.top + 24 - r.top;
+      else if (r.bottom > box.bottom - 24) toc.scrollTop += r.bottom - box.bottom + 24;
+    };
+    const updateActive = () => {
+      queued = false;
+      const line = window.innerHeight * 0.3;
+      let active = null;
+      for (const t of targets) { if (t.el.getBoundingClientRect().top <= line) active = t; else break; }
+      const link = active ? active.a : null;
+      if (link === current) return;
+      current = link;
+      tocLinks.forEach(a => a.removeAttribute('aria-current'));
+      if (!link) return;
+      link.setAttribute('aria-current', 'location');
+      const own = link.closest('.toc-section');
+      sections.forEach(section => { if (!section.dataset.manual) setOpen(section, section === own); });
+      if (toc.scrollHeight > toc.clientHeight) keepVisible(link);
+    };
+    const queue = () => { if (!queued) { queued = true; requestAnimationFrame(updateActive); } };
+    addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue, { passive: true });
+    addEventListener('hashchange', queue);
+    updateActive();
+  }
+  const prose = document.querySelector('.d1-article .prose');
+  const progress = document.querySelector('.d1-article .reading-progress');
+  if (prose && progress) {
+    const fill = progress.querySelector('span');
+    const updateProgress = () => {
+      const start = prose.getBoundingClientRect().top + window.scrollY;
+      const end = start + prose.offsetHeight - window.innerHeight;
+      const value = end <= start ? 100 : Math.max(0, Math.min(100, ((window.scrollY - start) / (end - start)) * 100));
+      progress.dataset.value = String(Math.round(value));
+      if (fill) fill.style.width = `${value}%`;
+    };
+    addEventListener('scroll', updateProgress, { passive: true });
+    addEventListener('resize', updateProgress, { passive: true });
+    updateProgress();
   }
 })();
