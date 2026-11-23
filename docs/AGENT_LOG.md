@@ -468,3 +468,16 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - BibTeX/Zotero import not built (D7).
   - No screen-reader run of the notes.
 - **Next:** owner approves the merge → production check → D3 DONE; then D5.
+
+### 2026-11-24 — D3 closed on production; D5 started — Claude Code
+- **D3 production (`4d2029b`):** against https://trandung6129.github.io:
+  - `d3-check.cjs`: 18/18.
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+  - TASK_BOARD D3 → DONE.
+- **D5 claimed** (`docs/d5-discovery`). Current state:
+  - Four owner-supplied AI illustrations (hero, two featured, Volume I cover), recorded in `docs/design/ASSET-PROVENANCE.md`.
+  - Five prototype D1 line-art SVGs.
+  - The vector brand mark and favicon (interim, D1).
+  - The owner's optional ornament concept pack (27 SVGs, untracked, status unconfirmed).

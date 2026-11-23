@@ -1,0 +1,32 @@
+/* D5 prototype — engraved ornaments drawn as masks in the accent colour. */
+.ornament-mask { display: block; width: 100%; background: currentColor; -webkit-mask: var(--orn) center / contain no-repeat; mask: var(--orn) center / contain no-repeat; }
+/* Headpiece: the sprig and its mirror meet in the middle, above the kicker. */
+.article-headpiece:has(.ornament-mask) { gap: 0.2rem; opacity: 0.7; }
+.article-headpiece .ornament-mask { width: 5.5rem; }
+.article-headpiece .ornament-mask:last-child { transform: scaleX(-1); }
+.toc-ornament:has(.ornament-mask) { opacity: 0.85; width: 7rem; }
+.article-landscape .ornament-mask { opacity: 0.35; }
+
+/* Review board only. */
+.board-row { display: grid; grid-template-columns: 14rem 1fr 1fr; gap: 1rem; align-items: stretch; margin-bottom: 1rem; }
+.board-label { margin: 0; font: 500 1.05rem/1.3 var(--ed-display); align-self: center; }
+.board-tile { padding: 1.2rem 1.4rem; border: 1px solid var(--ed-border); }
+.tile-light { background: #f7f5f0; color: #332e28; --tile-accent: #8c4a32; }
+.tile-dark { background: #1a1816; color: #e2dcd0; --tile-accent: #d4a373; }
+.lockup { display: flex; align-items: center; gap: 0.55rem; color: var(--tile-accent); }
+.lockup .logo-mark { width: 2.6rem; height: 2.6rem; }
+.lockup-name { font: 550 1.45rem/1 var(--ed-display); letter-spacing: 0.07em; color: inherit; }
+.tile-light .lockup-name { color: #332e28; } .tile-dark .lockup-name { color: #e2dcd0; }
+.sizes { display: flex; align-items: flex-end; gap: 1rem; margin-top: 1rem; color: var(--tile-accent); }
+.sz svg { display: block; } .sz48 svg { width: 48px; height: 48px; } .sz32 svg { width: 32px; height: 32px; } .sz16 svg { width: 16px; height: 16px; }
+.sz-note { font: 500 0.7rem var(--ed-sans); margin-left: auto; }
+.tile-light .sz-note { color: #5f574c; } .tile-dark .sz-note { color: #c9c1b3; }
+.orn-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.orn-card { margin: 0; } .orn-card.orn-landscape { grid-column: 1 / -1; }
+.orn-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+.orn-pair .board-tile { color: var(--tile-accent); display: grid; place-items: center; min-height: 12rem; }
+.orn-pair .ornament-mask { width: min(100%, 9rem); }
+.orn-landscape .orn-pair { grid-template-columns: 1fr; } .orn-landscape .ornament-mask { width: 100%; } .orn-landscape .board-tile { min-height: 0; }
+.orn-card figcaption { margin-top: 0.4rem; font: 400 0.78rem/1.45 var(--ed-sans); color: var(--ed-muted); }
+.hero-refs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; } .hero-refs img { width: 100%; height: auto; display: block; }
+@media (max-width: 760px) { .board-row, .orn-grid { grid-template-columns: 1fr; } .hero-refs { grid-template-columns: 1fr 1fr; } }

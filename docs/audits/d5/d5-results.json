@@ -1,0 +1,494 @@
+[
+ {
+  "n": "board",
+  "w": 1440,
+  "scheme": "light",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 144,
+    "h": 98,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 98,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 240,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 240,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 260,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 260,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 182,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 182,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 324,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 324,
+    "shown": true
+   }
+  ],
+  "violations": []
+ },
+ {
+  "n": "board",
+  "w": 1440,
+  "scheme": "dark",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 144,
+    "h": 98,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 98,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 240,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 240,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 260,
+    "shown": true
+   },
+   {
+    "w": 144,
+    "h": 260,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 182,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 182,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 324,
+    "shown": true
+   },
+   {
+    "w": 1297,
+    "h": 324,
+    "shown": true
+   }
+  ],
+  "violations": null
+ },
+ {
+  "n": "board",
+  "w": 390,
+  "scheme": "light",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 126,
+    "h": 86,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 86,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 210,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 210,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 228,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 228,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 43,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 43,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 77,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 77,
+    "shown": true
+   }
+  ],
+  "violations": []
+ },
+ {
+  "n": "board",
+  "w": 390,
+  "scheme": "dark",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 126,
+    "h": 86,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 86,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 210,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 210,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 228,
+    "shown": true
+   },
+   {
+    "w": 126,
+    "h": 228,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 43,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 43,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 77,
+    "shown": true
+   },
+   {
+    "w": 307,
+    "h": 77,
+    "shown": true
+   }
+  ],
+  "violations": null
+ },
+ {
+  "n": "riemann",
+  "w": 1440,
+  "scheme": "light",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 104,
+    "h": 188,
+    "shown": true
+   },
+   {
+    "w": 480,
+    "h": 68,
+    "shown": true
+   }
+  ],
+  "violations": []
+ },
+ {
+  "n": "riemann",
+  "w": 1440,
+  "scheme": "dark",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 104,
+    "h": 188,
+    "shown": true
+   },
+   {
+    "w": 480,
+    "h": 68,
+    "shown": true
+   }
+  ],
+  "violations": null
+ },
+ {
+  "n": "riemann",
+  "w": 390,
+  "scheme": "light",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   }
+  ],
+  "violations": []
+ },
+ {
+  "n": "riemann",
+  "w": 390,
+  "scheme": "dark",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   }
+  ],
+  "violations": null
+ },
+ {
+  "n": "nash-vi",
+  "w": 1440,
+  "scheme": "light",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 104,
+    "h": 188,
+    "shown": true
+   },
+   {
+    "w": 480,
+    "h": 68,
+    "shown": true
+   }
+  ],
+  "violations": []
+ },
+ {
+  "n": "nash-vi",
+  "w": 1440,
+  "scheme": "dark",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 104,
+    "h": 188,
+    "shown": true
+   },
+   {
+    "w": 480,
+    "h": 68,
+    "shown": true
+   }
+  ],
+  "violations": null
+ },
+ {
+  "n": "nash-vi",
+  "w": 390,
+  "scheme": "light",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   }
+  ],
+  "violations": []
+ },
+ {
+  "n": "nash-vi",
+  "w": 390,
+  "scheme": "dark",
+  "errors": [],
+  "failed": [],
+  "overflow": false,
+  "masks": [
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 88,
+    "h": 60,
+    "shown": true
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "shown": false
+   }
+  ],
+  "violations": null
+ }
+]
