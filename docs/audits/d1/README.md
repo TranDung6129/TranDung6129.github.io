@@ -46,101 +46,11 @@ Pre-existing issues heard, outside D1 (recorded, not changed):
 
 Screenshots: [final/screenshots/](final/screenshots/).
 
-### Open for the owner (product decision, not a defect)
+### Owner review (2026-11-23)
 
-- **Right-side balance.** The handoff records the owner's own critique that an empty right side can feel awkward, and allows a restrained *background* ornament there. The current build leaves the right side empty at all widths. Adding one needs new artwork, which is D5 territory.
-
-
-## Phase 4 refinement and visual acceptance (Claude Code, 2026-11-22)
-
-**Status: READY FOR OWNER VISUAL REVIEW — not merged, not deployed.** Branch `feat/d1-article-reading`, on top of `origin/main` `c2898aa`. Commits: implementation `e2033a1`, test harness `33195bf`, this report and evidence: see the commit that adds `docs/audits/d1/refinement/` (hash in the PR description). The earlier pass by Codex is kept below; where it disagrees with this section, this section is current.
-
-The handoff files named in the brief (`PHASE4_D1_CODEX_HANDOFF.md`, `D1_APPROVED_REFERENCE.png`) are not in the repository or this workspace, so the refinement was judged against the brief itself, the existing D1 branch and D-016.
-
-### Requested end-of-article view (1440 px)
-
-| Before (previous D1) | After, light | After, dark |
-|---|---|---|
-| [PNG](refinement/screenshots/before-d1-1440-light-footer-full.png) | [PNG](refinement/screenshots/nash-1440-light-footer-full.png) | [PNG](refinement/screenshots/nash-1440-dark-footer-full.png) |
-
-![End of the Nash essay at 1440 px, light theme: Further Essays and Curated Reading](refinement/screenshots/nash-1440-light-footer-full.png)
-
-### Defects found in the previous D1 state and what changed
-
-| # | Finding (evidence) | Change |
-|---|---|---|
-| 1 | **Contents rail scrolled away.** At 10/25/50/75/98 % of the Nash essay the TOC was 447–7,590 px above the viewport ([probe](refinement/evidence/before-sticky-probe.json), [screenshot](refinement/screenshots/before-d1-1440-sticky-50.png)). The absolutely positioned aside was only as tall as its content, so its sticky children had nowhere to travel. | The aside spans the article body (`top`/`bottom` of `.article-layout`); one sticky `.toc-panel` holds progress, TOC and plant, with its own scroll when the list is taller than the viewport. In view at every tested position at 1440×900 and 1280×720. |
-| 2 | **H3 lists never folded** (two to five sections open by the end). | Active entry = last heading above 30 % of the viewport, recomputed on scroll (correct in both directions and after a deep link); its section opens and the others fold, except sections the reader toggled (kept as set). The active entry is kept visible inside the panel. Toggles now sit on the H2's line instead of wrapping below it. |
-| 3 | **Further Essays was a plain three-column text grid**, headings hard-coded in English on Vietnamese pages. | Featured card + up to two supporting essays (below). Headings, kickers and CTAs localised (`ed_furtherEssays`, `ed_curatedReading`, …; ja/zh-CN carry English like the rest of their interface). |
-| 4 | **Curated Reading had one record** in a different visual weight. | Same width and rule weight as Further Essays, a bibliographic layout (numbered, paper/book, authors · source, why it follows from the essay). |
-| 5 | **Duplicate footer navigation**: the "Related reading" list repeated Further Essays. | Removed. Older/newer stays (chronological, a different purpose) and its two essays are excluded from Further Essays, so no essay appears twice. |
-| 6 | **Paper texture behind the whole page**, including prose and equations; it also made axe unable to compute text contrast (Codex recorded 225–235 `color-contrast` incomplete nodes per state). | Removed. Incomplete contrast items fell to 3–14 per state, all glyph icons (see below). |
-| 7 | **Ornaments fixed brown** in both themes; rotation was `len(path) mod 2`; masthead branches were clipped to a sliver by the masthead's overflow and sat behind the page background (invisible). | SVGs inlined with `currentColor` (follow the accent token per theme); md5-based pick per article and role, front-matter override; a small mirrored branch headpiece above the title replaces the masthead corners. Homepage carries no D1 ornament. |
-
-### Further Essays
-
-- Candidates: Hugo's related content in the main sections, minus the current essay and the older/newer essays; first three kept.
-- Featured: the first candidate that already owns artwork, resolved by `layouts/_partials/editorial/page-art.html` in this order: front matter `art` (a `data/art.yaml` key) → the homepage curation in `data/home.yaml` → the cover of the volume the essay is a chapter of (shown whole, as a book, with "A chapter of Volume I"). No generic or decorative image is ever substituted; with none, the card is text-only with an accent rule. Titles, summaries and dates come from the essays.
-- On the Nash essay this yields *Toán Cơ Bản Cho Kinh Tế (Phần 5)* with the Volume I cover, plus parts 4 and 3. The three candidates are all Volume I chapters, which reflects the related-content index, not a choice.
-
-### Curated Reading
-
-`data/d1_resources.yaml` (documented schema in the file). For the Nash essay, three entries from the essay's own reference list:
-
-| Entry | Link | Why no other link |
-|---|---|---|
-| Nash (1950), *PNAS* 36(1) 48–49 — paper | `https://doi.org/10.1073/pnas.36.1.48` (already in the previous D1 record; DOI matches volume/page) | — |
-| Shoham & Leyton-Brown (2008), Cambridge University Press — book | "Reference 5 in this essay" → `#references` | An author-hosted edition exists by reputation, but doi.org and the host are not reachable from this environment, so nothing was verified. No cover: none with a confirmed reuse right. |
-| Kakutani (1941), *Duke Math. J.* 8(3) 457–459 — paper | "Reference 2 in this essay" → `#references` | DOI not verifiable here. |
-
-No price, rating, merchant, purchase wording or affiliate link. The schema has `affiliate: false`; a future `true` renders a separate "Disclosure" line and is not mixed into the note. The `why` notes are English, like the essay itself, and marked `lang="en"`.
-
-### Ornament placement (prototype artwork)
-
-`data/d1_ornaments.yaml`: five repository-authored line drawings, **status: prototype** (not final; library expansion is D5). Placement: navigation `❧` flourishes either side of the section links (sitewide header, unchanged from the earlier D1 pass); a mirrored branch headpiece above the article kicker (opacity .4); one plant below the contents rail on wide screens with enough height (hidden under 760 px viewport height, 1110 px width); one faint landscape strip below the footer (opacity .26, hidden under 560 px). Nothing behind prose, equations, tables or the discovery cards. Rotation: md5 of the content path, so translations share artwork and a reload or rebuild never changes it; any new entry with an existing role widens the rotation; `ornaments: { toc: …, landscape: … }` in front matter pins a file (unknown names warn at build).
-
-### Verification (all on the final tree, exit 0)
-
-Build: `hugo --gc --minify` — 0 warnings, 0 errors. Browser: Playwright 1.63.0 with its own Chromium, certificate validation on (MathJax now loads from cdn.jsdelivr.net normally; the earlier `D1_IGNORE_HTTPS_ERRORS` workaround was not used).
-
-| Check | Command / evidence | Result |
-|---|---|---|
-| D1 harness, 25 checks | `D1_BASE=http://127.0.0.1:1338 D1_OUT=… D1_AXE=…/axe.min.js node scripts/test-d1.cjs` → [d1-results.json](refinement/evidence/d1-results.json) | **25/25 PASS** |
-| Centring | same | prose centre − viewport centre: −0.01 px at 1440 and 1024, 0.00 px at 390, light and dark; header and footer share that centre (±2 px); navigation centred ±2 px at 1440 |
-| Sticky TOC / progress | same, 10/25/50/75/98 % at 1440×900 and 1280×720 | panel fully in view at all ten positions; active entry equals the heading being read and is visible in the panel; ≤ 1 section open; progress 10→25→50→75→98 |
-| Manual toggle, deep link, keyboard | same | hand-opened section stays open while reading elsewhere; `#4-nash-equilibrium` lands at the heading and marks §4; Tab order starts with the skip link, reaches TOC links and toggles, every stop shows an outline; footer links have no duplicate stops |
-| Other essays | same: `/kinh-te/toan-co-ban-1/` (vi), `/en/kinh-te/game_theory_nash/`, Riemann vi/en at 1440 and 390 | 200, centred, no overflow, tables and display math inside the viewport, MathJax 0 errors, body ≥ 16 px |
-| 200 % text | root font-size doubled at 390 and 1440 | no horizontal page scroll, prose inside the viewport |
-| axe-core 4.10.2, WCAG 2.1 A/AA | 3 essays × 390/1440 × light/dark | **0 violations** |
-| Manual contrast review | axe `incomplete` = 3–14 nodes per state (3 on a short essay, 10 on Nash, 14 on Riemann), all `nonBmp` glyphs: `❧` flourishes (decorative, `aria-hidden`), TOC chevrons, arrow glyphs. Tokens measured: muted 5.52:1 / 6.42:1, accent 6.14:1 / 7.83:1 (light / dark) | pass (≥ 3:1 non-text, ≥ 4.5:1 text). Ornaments are decorative and hidden from assistive technology |
-| Phase 3 regression | `BASE=… AXE=… MATRIX_SHOTS=0 node docs/audits/p3-07/tools/p3-smoke.cjs` → [p3-smoke-results.json](refinement/evidence/p3-smoke-results.json) | **32/32 PASS**, 100 states, axe 0 violations |
-| Route parity vs `main` | [route-parity.json](refinement/evidence/route-parity.json) | 410 = 410 HTML/XML/JSON/MD routes, none added or removed; every XML and JSON file (feeds, sitemaps, search indexes) byte-identical. Other files: hashed CSS/JS renamed; favicon and five ornament SVGs added |
-| Performance (local, unthrottled, one run; not field CWV) | `node docs/audits/p3-07/tools/perf.cjs` → [vs main](refinement/evidence/performance-main-vs-refined.json), [vs previous D1](refinement/evidence/performance-d1-previous-vs-refined.json) | see below |
-
-| Page (1440 and 390 identical) | `main` | previous D1 | refined D1 | Requests | CLS |
-|---|---|---|---|---|---|
-| Home | 743 KB | 752 KB | 754 KB | 17 | 0 |
-| Nash essay | 762 KB | 775 KB | 781 KB | 23 | 0 |
-| Short essay (`toan-co-ban-2`) | 526 KB | 538 KB | 562 KB | 16 | 0 |
-
-The refined stylesheet is +9 KB over `main` (all pages). A short essay also loads the 256 px featured cover (20 KB) because the footer is near the first viewport; LCP stays 56–112 ms. The earlier report's "431 KB vs 804 KB" was measured differently (response headers) and is not comparable.
-
-Screenshots ([all](refinement/screenshots/)): Nash at 1440/1024/390 × light/dark at article start, middle and footer; full footer captures; sticky rail at 50 % and 98 %; Vietnamese, English and Riemann essays at 1440/390; 200 % text at 390/1440.
-
-### Files changed in the refinement
-
-`layouts/_partials/editorial/article.html`, `d1-discovery.html`, `d1-ornament.html`, new `d1-ornament-pick.html` and `page-art.html`; `layouts/_partials/site/masthead.html` (branches removed); `assets/css/editorial/d1.css`; `assets/js/editorial.js` (TOC section only); `data/d1_resources.yaml`; `data/d1-ornaments.yaml` → `data/d1_ornaments.yaml`; `i18n/{vi,en,ja,zh-CN}.toml` (+13 keys); `static/ornaments/d1/paper.svg` removed; `scripts/test-d1.cjs`. Homepage templates, payment, subscription, affiliate infrastructure and D2–D8 untouched.
-
-### Remaining issues and limits
-
-- **Ornaments are prototypes.** Simple line art; the owner has not approved them as final. Five files only (D5 expands the library).
-- **Curated Reading exists for one essay.** Other essays show Further Essays only, by design, until verified entries are added.
-- **Two references link inward**, not to the source, until their DOIs/host can be verified from a networked machine.
-- **Further Essays on Nash shows three Volume I chapters**; the related index has little else that is related. More tagged content will diversify it.
-- The `why` notes are English on the Vietnamese page (the essay itself is English).
-- TOC toggle labels ("Toggle subsections for …") are English in all languages (inherited from the earlier pass).
-- Visual review against an approved reference image was not possible (file not provided). Screen-reader testing was not performed; automated checks are not a conformance claim.
-- No live deployment or live-site check: merge and deploy are the owner's call.
+- Interim identity (brand mark, favicon, nav flourishes) kept in D1; D5 replaces it.
+- Right side: judged balanced; no ornament added.
+- Merge approved; the owner asked to proceed to the next phase.
 
 ---
 
