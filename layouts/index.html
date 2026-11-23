@@ -3,6 +3,7 @@
        volume come from content (data/home.yaml picks the featured essays). */ -}}
 {{- define "title" }}{{ site.Title }}{{ end -}}
 {{- define "content" -}}
+{{- if eq site.Language.Lang (index site.Sites 0).Language.Lang }}{{ partial "site/redirects.html" . }}{{ end -}}
 {{- $src := partial "editorial/source-pages.html" . -}}
 {{- $journal := partial "editorial/section-link.html" "journal" -}}
 <section class="hero" aria-labelledby="hero-title">

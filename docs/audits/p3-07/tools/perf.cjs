@@ -2,7 +2,7 @@
 // Fresh context per run, no cache, no throttling: local observations, not field Core Web Vitals.
 const { chromium } = require('playwright');
 const fs = require('fs');
-const ROUTES = ['/', '/kinh-te/game_theory_nash/', '/kinh-te/toan-co-ban-2/'];
+const ROUTES = ['/', '/en/kinh-te/game_theory_nash/', '/kinh-te/toan-co-ban-2/'];
 (async () => {
   const [a, b, out] = process.argv.slice(2);
   const browser = await chromium.launch(); const rows = [];

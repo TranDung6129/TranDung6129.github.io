@@ -24,6 +24,7 @@ The FixIt shell, styles and scripts are gone. The table below supersedes older r
 | Volumes | `content/volumes/*.md` (`chapters:` content paths, `aliases` for retired series URLs), `layouts/volumes/single.html`, `views/volumes.html` | Missing chapter path fails the build; the `collections` taxonomy no longer exists (P4-02) |
 | Films, Labs | `content/films/*.md`, `content/labs/*.md` (front matter `related`, `video`/`poster`/`duration`/`youtube`, `tech`/`requires`); `layouts/{films,labs}/single.html` → `editorial/media-page.html`; lists `views/films.html`, `views/labs.html`; essay cards `layouts/shortcodes/{film,lab}.html` | P4-04: media are not embedded in essays any more |
 | Discover | `data/discover.yaml`, `views/discover.html` | No affiliate links (fields reserved) |
+| Redirects, content language | Essays: front-matter `aliases`. Retired generated listings: `data/redirects.yaml` → `layouts/_partials/site/redirects.html` (published from the default-language homepage). Path lookups: `editorial/get-page.html` (a path or a list of alternatives; current language, then English) | D-017: each essay exists only in the language it is written in; URL map in `docs/audits/d-017/URL_MAP.md` |
 | Artwork and fonts | `data/art.yaml`, `layouts/_partials/editorial/art.html`, `art-image.html`; `assets/editorial-*` | Responsive WebP + PNG fallback |
 | Interface strings | `i18n/{vi,en,ja,zh-CN}.toml`, keys `ed_*` | ja/zh-CN carry English strings |
 | Regression tests | `docs/audits/p3-07/tools/p3-smoke.cjs` (also against the live site: `BASE=https://trandung6129.github.io`), `perf.cjs`, `docs/audits/p1-08/tools/live-mirror.py`; `docs/audits/p1-06/tools/seo-check.py`; `docs/audits/p1-02/static/analyze.py` | `p1-04/runtime/runtime.cjs` and `p1-08/tools/live-smoke.cjs` target the pre-Phase-3 markup |
@@ -114,6 +115,7 @@ D1 production article reading layer: `layouts/_partials/editorial/article.html` 
 ## Modification record template (append short entries here, most recent first)
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
+| 2026-11-23 | D-017 content language | Content, redirects | 11 wrong-language essay copies removed (aliases on the originals); new `data/redirects.yaml` + `site/redirects.html`; `get-page.html` accepts alternatives; `data/home.yaml` path lists | Owner request; route diff vs main 0 HTML lost; test-d1 31/31, p3 32/32 |
 | 2026-11-15 | P1-09 local PostgreSQL | Database reference foundation | New `db/` and `compose.yaml` | Ordered migrations, synthetic seed and isolated restore test; Hugo remains static |
 | 2026-11-16 | D1 article reading | Article reading / identity | Existing article partial and masthead → `editorial/article.html`, D1 partials/CSS/data/assets, small `editorial.js` extension | 306-page build, exact 377 route-path retention, responsive/zoom/axe harness; `docs/audits/d1/` |
 | 2026-11-15 | Phase 4 (P4-02..04) | IA | `content/collections/` removed, series → Volume I aliases; About rewritten; Nash lab/film → `content/labs/`, `content/films/`; `data/{films,labs}.yaml` removed | `docs/phases/phase-4/PLAN.md` |

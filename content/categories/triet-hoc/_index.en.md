@@ -1,18 +1,18 @@
 ---
-title: "Triết học"
+title: "Philosophy"
 slug: "triet-hoc"
-description: "Từ siêu hình học đến nhận thức luận, đạo đức học và triết học tâm trí"
+description: "From metaphysics to epistemology, ethics and the philosophy of mind"
 icon: "fa-solid fa-book-open"
 ---
 
-## Triết học - Tìm kiếm trí tuệ
+## Philosophy — the search for wisdom
 
-Triết học là nỗ lực hiểu những câu hỏi căn bản nhất về tồn tại, tri thức, giá trị và ý nghĩa. Qua lịch sử, triết học đã định hình cách chúng ta tư duy về bản thân và thế giới.
+Philosophy is the effort to understand the most basic questions about existence, knowledge, value and meaning. Throughout history it has shaped how we think about ourselves and the world.
 
-### Các chủ đề chính
+### Main topics
 
-- **Siêu hình học**: Bản thể luận, nhân quả, tự do ý chí
-- **Nhận thức luận**: Tri thức, chân lý, biện minh
-- **Đạo đức học**: Deontology, consequentialism, virtue ethics
-- **Triết học tâm trí**: Ý thức, intentionality, qualia
-- **Hiện tượng học**: Husserl, Heidegger, Merleau-Ponty
+- **Metaphysics**: ontology, causation, free will
+- **Epistemology**: knowledge, truth, justification
+- **Ethics**: deontology, consequentialism, virtue ethics
+- **Philosophy of mind**: consciousness, intentionality, qualia
+- **Phenomenology**: Husserl, Heidegger, Merleau-Ponty

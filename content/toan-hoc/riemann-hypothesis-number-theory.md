@@ -7,6 +7,9 @@ tags: ["toan-hoc", "ly-thuyet-so", "riemann", "so-nguyen-to", "crypto"]
 categories: ["toan-hoc"]
 math: true
 draft: false
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/toan-hoc/riemann-hypothesis-number-theory/"
 ---
 
 ## Giới Thiệu

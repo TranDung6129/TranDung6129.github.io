@@ -7,6 +7,9 @@ tags: ["lap-trinh", "thuat-toan", "complexity", "quantum", "toan-hoc"]
 categories: ["khoa-hoc-may-tinh"]
 math: true
 draft: false
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/khoa-hoc-may-tinh/complexity-theory-quantum/"
 ---
 
 ## Giới Thiệu

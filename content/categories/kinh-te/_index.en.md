@@ -1,18 +1,18 @@
 ---
-title: "Kinh tế"
+title: "Economics"
 slug: "kinh-te"
-description: "Phân tích kinh tế vi mô, vĩ mô và các lý thuyết kinh tế hiện đại"
+description: "Microeconomics, macroeconomics and modern economic theory"
 icon: "fa-solid fa-chart-line"
 ---
 
-## Kinh tế - Nghiên cứu sự lựa chọn
+## Economics — the study of choice
 
-Kinh tế học nghiên cứu cách con người và xã hội đưa ra quyết định khi đối mặt với nguồn lực khan hiếm. Từ hành vi cá nhân đến chính sách quốc gia, kinh tế học cung cấp framework để hiểu và phân tích thế giới xã hội.
+Economics studies how people and societies make decisions in the face of scarce resources. From individual behaviour to national policy, it offers a framework for understanding and analysing the social world.
 
-### Các chủ đề chính
+### Main topics
 
-- **Vi mô**: Cung cầu, co giãn, tối ưu hóa, lý thuyết trò chơi
-- **Vĩ mô**: GDP, lạm phát, thất nghiệp, chính sách tiền tệ
-- **Kinh tế lượng**: Hồi quy, nhân quả, phân tích dữ liệu
-- **Hành vi**: Behavioral economics, nudge theory, cognitive biases
-- **Chế độ**: So sánh các hệ thống kinh tế, phát triển bền vững
+- **Microeconomics**: supply and demand, elasticity, optimisation, game theory
+- **Macroeconomics**: GDP, inflation, unemployment, monetary policy
+- **Econometrics**: regression, causality, data analysis
+- **Behavioural**: behavioural economics, nudge theory, cognitive biases
+- **Economic systems**: comparing economic systems, sustainable development

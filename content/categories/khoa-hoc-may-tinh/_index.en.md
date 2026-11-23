@@ -1,18 +1,18 @@
 ---
-title: "Khoa học máy tính"
+title: "Computer Science"
 slug: "khoa-hoc-may-tinh"
-description: "Thuật toán, cấu trúc dữ liệu, AI, và các lý thuyết nền tảng của computer science"
+description: "Algorithms, data structures, AI and the theoretical foundations of computer science"
 icon: "fa-solid fa-microchip"
 ---
 
-## Khoa học máy tính - Khoa học của tính toán
+## Computer Science — the science of computation
 
-Khoa học máy tính nghiên cứu nền tảng lý thuyết của tính toán và ứng dụng thực tế của nó. Từ những thuật toán cơ bản đến trí tuệ nhân tạo, computer science đang định hình lại thế giới hiện đại.
+Computer science studies the theoretical foundations of computation and its practical applications. From basic algorithms to artificial intelligence, it is reshaping the modern world.
 
-### Các chủ đề chính
+### Main topics
 
-- **Thuật toán**: Complexity theory, sorting, graph algorithms
-- **Cấu trúc dữ liệu**: Trees, graphs, hash tables, dynamic programming
-- **Lý thuyết tính toán**: Automata, computability, NP-completeness
-- **Trí tuệ nhân tạo**: Machine learning, deep learning, neural networks
-- **Hệ thống**: Operating systems, databases, distributed systems
+- **Algorithms**: complexity theory, sorting, graph algorithms
+- **Data structures**: trees, graphs, hash tables, dynamic programming
+- **Theory of computation**: automata, computability, NP-completeness
+- **Artificial intelligence**: machine learning, deep learning, neural networks
+- **Systems**: operating systems, databases, distributed systems

@@ -7,7 +7,7 @@
 {{- with $p.Params.art }}{{ if index site.Data.art . }}{{ $out = dict "key" . "via" "page" }}{{ end }}{{ end -}}
 {{- if not $out -}}
   {{- range $f := site.Data.home.featured -}}
-    {{- with site.GetPage $f.path }}{{ if and (not $out) (eq .RelPermalink $p.RelPermalink) }}{{ $out = dict "key" $f.art "via" "featured" }}{{ end }}{{ end -}}
+    {{- with partial "editorial/get-page.html" $f.path }}{{ if and (not $out) (eq .RelPermalink $p.RelPermalink) }}{{ $out = dict "key" $f.art "via" "featured" }}{{ end }}{{ end -}}
   {{- end -}}
 {{- end -}}
 {{- if not $out -}}

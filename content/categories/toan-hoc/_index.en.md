@@ -1,18 +1,18 @@
 ---
-title: "Toán học"
+title: "Mathematics"
 slug: "toan-hoc"
-description: "Khám phá vẻ đẹp của toán học từ lý thuyết số đến hình học, giải tích và các ngành toán học hiện đại"
+description: "The beauty of mathematics, from number theory to geometry, analysis and modern fields"
 icon: "fa-solid fa-infinity"
 ---
 
-## Toán học - Ngôn ngữ của vũ trụ
+## Mathematics — the language of the universe
 
-Toán học không chỉ là những con số và công thức, mà là ngôn ngữ cơ bản nhất để mô tả thế giới xung quanh chúng ta. Từ những pattern ẩn giấu trong tự nhiên đến những cấu trúc trừu tượng nhất của tư duy con người, toán học là cầu nối giữa trí tưởng tượng và hiện thực.
+Mathematics is not just numbers and formulas; it is the most basic language for describing the world around us. From patterns hidden in nature to the most abstract structures of human thought, mathematics bridges imagination and reality.
 
-### Các chủ đề chính
+### Main topics
 
-- **Lý thuyết số**: Số nguyên tố, giả thuyết Riemann, số học modular
-- **Giải tích**: Vi tích phân, chuỗi, phương trình vi phân
-- **Đại số**: Nhóm, vành, trường, đại số tuyến tính
-- **Hình học**: Hình học Euclid, hình học phi Euclid, topology
-- **Logic toán học**: Lý thuyết tập hợp, logic hình thức, lý thuyết chứng minh
+- **Number theory**: primes, the Riemann hypothesis, modular arithmetic
+- **Analysis**: calculus, series, differential equations
+- **Algebra**: groups, rings, fields, linear algebra
+- **Geometry**: Euclidean and non-Euclidean geometry, topology
+- **Mathematical logic**: set theory, formal logic, proof theory

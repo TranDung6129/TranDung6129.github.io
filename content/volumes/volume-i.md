@@ -19,7 +19,7 @@ chapters:
   - /kinh-te/toan-co-ban-3
   - /kinh-te/toan-co-ban-4
   - /kinh-te/toan-co-ban-5
-  - /kinh-te/game_theory_nash
+  - /kinh-te/ly-thuyet-tro-choi-nash
 ---
 
 Tập đầu tiên đi từ ngôn ngữ của giải tích và đại số tuyến tính đến lý thuyết trò chơi: mỗi chương là một công cụ để biến một câu hỏi về lựa chọn thành một mô hình có thể suy luận.

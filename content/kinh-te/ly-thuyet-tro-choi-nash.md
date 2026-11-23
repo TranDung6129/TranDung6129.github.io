@@ -7,6 +7,9 @@ tags: ["kinh-te", "ly-thuyet-tro-choi", "nash", "toan-hoc", "chien-luoc"]
 categories: ["kinh-te"]
 math: true
 draft: false
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/kinh-te/ly-thuyet-tro-choi-nash/"
 ---
 
 ## Giới Thiệu

@@ -1,18 +1,18 @@
 ---
-title: "Vật lý"
+title: "Physics"
 slug: "vat-ly"
-description: "Từ cơ học Newton đến lượng tử và tương đối, khám phá những định luật chi phối vũ trụ"
+description: "From Newtonian mechanics to quantum theory and relativity: the laws that govern the universe"
 icon: "fa-solid fa-atom"
 ---
 
-## Vật lý - Khám phá bản chất của vũ trụ
+## Physics — the nature of the universe
 
-Vật lý là khoa học nghiên cứu những định luật cơ bản nhất của tự nhiên. Từ chuyển động của các hạt nhỏ nhất đến sự tiến hóa của vũ trụ, vật lý giúp chúng ta hiểu được cách thức hoạt động của thế giới vật chất.
+Physics is the science of the most fundamental laws of nature. From the motion of the smallest particles to the evolution of the universe, it helps us understand how the material world works.
 
-### Các chủ đề chính
+### Main topics
 
-- **Cơ học cổ điển**: Định luật Newton, năng lượng, động lượng
-- **Điện từ học**: Điện trường, từ trường, sóng điện từ
-- **Cơ học lượng tử**: Nguyên lý bất định, hàm sóng, entanglement
-- **Thuyết tương đối**: Không-thời gian, năng lượng tối, vật chất tối
-- **Vật lý thống kê**: Entropy, nhiệt động lực học, hệ phức tạp
+- **Classical mechanics**: Newton's laws, energy, momentum
+- **Electromagnetism**: electric and magnetic fields, electromagnetic waves
+- **Quantum mechanics**: the uncertainty principle, wave functions, entanglement
+- **Relativity**: spacetime, dark energy, dark matter
+- **Statistical physics**: entropy, thermodynamics, complex systems

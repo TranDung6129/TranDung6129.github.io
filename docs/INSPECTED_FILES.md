@@ -662,3 +662,16 @@ Blob SHAs are working-tree hashes at commit `ccb5556` on `feat/d1-article-readin
 | `layouts/shortcodes/react.html` | `e4c31b450139fdfa9cc3bf2ce382d0dac822f870` | PARTIAL | `js.Build` mounts `assets/js/components/<name>.jsx`. A missing component fails the whole build; a local git-ignored `kalman-test` draft triggers this on the owner's machine only. |
 | `config/_default/module.toml`, `.github/workflows/deploy.yml` | `aa0dcce387d347b441e346f7de90c844695c0117`, `aa85e86dfc62d7df7905ddfc36c6ef281750d938` | PARTIAL | No theme module (FixIt is not mounted). CI pins Hugo 0.149.0 and runs `npm ci` + `hugo --gc --minify`. |
 | `docs/audits/d1/final/` | — | COVERED | Final pass evidence: harness/p3 JSON, Orca speech transcripts before/after, screenshots. |
+
+## 2026-11-23 — D-017 content-language separation (Claude Code)
+
+| Path | Status | Purpose / findings |
+|---|---|---|
+| `layouts/_partials/editorial/get-page.html` | COVERED | Resolves a content path, or the first of a list of paths, in the current language, then in English. Used by the homepage featured list, page-art, films/labs `related`, discover `cited_in` and volume chapters (fallback). |
+| `layouts/_partials/editorial/volume-chapters.html` | COVERED | Chapter paths are resolved in the volume's language, then English; a missing path fails the build (`errorf`). Each language's volume file therefore lists only chapters that exist in that language or in English. |
+| `layouts/_partials/site/redirects.html`, `data/redirects.yaml` | COVERED (new) | Static meta-refresh pages for retired generated listings, published via `resources.FromString … .Publish` from the default-language homepage. Clashes with real pages are not detected by Hugo; keep the list to removed routes. |
+| `layouts/index.html` | PARTIAL | Featured essays come from `data/home.yaml` through `get-page`. "From the journal" excludes featured essays; the redirects partial is called at the top for the default language. |
+| `data/home.yaml` | COVERED | `featured[].path` may be a list of alternatives (D-017). |
+| `content/categories/*/_index.en.md` | COVERED | English category pages, translated 2026-11-23. |
+| `content/volumes/volume-i{,.en}.md` | COVERED | Chapter lists per language (en: Part 1 + Nash; vi: Parts 1–5 + `ly-thuyet-tro-choi-nash`). |
+| `docs/audits/p3-07/tools/{p3-smoke,perf}.cjs` | PARTIAL | Route lists updated to essays that exist per language. |

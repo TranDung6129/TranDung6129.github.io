@@ -7,6 +7,9 @@ tags: ["triet-hoc", "hien-tuong-hoc", "husserl", "y-thuc", "nhan-thuc"]
 categories: ["triet-hoc"]
 math: false
 draft: false
+# Content-language separation (D-017): the former copy at this URL was in the wrong language.
+aliases:
+  - "/en/triet-hoc/husserl-hien-tuong-hoc/"
 ---
 
 ## Giới Thiệu
