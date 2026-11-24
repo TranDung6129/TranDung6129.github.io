@@ -1,0 +1,113 @@
+{{- /* D1 article footer discovery: Further Essays, then Curated Reading (D-016).
+       Further Essays — up to three related essays in the main sections. The essays named by the
+       older/newer links below are excluded so the two blocks never repeat each other. The first
+       candidate with its own existing artwork (editorial/page-art.html) becomes the featured card;
+       without one the featured card is text only. Nothing is invented: titles, descriptions and
+       artwork all come from the essays themselves.
+       Curated Reading — only verified entries from data/d1_resources.yaml; bibliographic fields come
+       from data/bibliography.yaml through editorial/bib-resolve.html (D3). */ -}}
+{{- $p := . -}}
+{{- $exclude := slice $p.RelPermalink -}}
+{{- with $p.PrevInSection }}{{ $exclude = $exclude | append .RelPermalink }}{{ end -}}
+{{- with $p.NextInSection }}{{ $exclude = $exclude | append .RelPermalink }}{{ end -}}
+{{- /* D6: candidates carry a reason. Order: editor's picks (front matter `further:` paths) →
+       the next part of the essay's series → related essays in the main sections → (if none) latest. */ -}}
+{{- $cands := slice -}}{{- $seen := $exclude -}}
+{{- range $p.Params.further }}{{ with partial "editorial/get-page.html" . }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "editor") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end }}{{ end -}}
+{{- with partial "editorial/series-of.html" $p -}}
+  {{- $next := add .index 1 -}}
+  {{- if lt $next (len .parts) }}{{ with index .parts $next }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "series") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end }}{{ end -}}
+{{- end -}}
+{{- $n := len $cands -}}
+{{- range where (site.RegularPages.Related $p) "Section" "in" site.Params.mainSections }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "topic") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end -}}
+{{- /* Nothing related left (as D1): fall back to the latest essays, labelled as such. */ -}}
+{{- if eq (len $cands) $n -}}
+  {{- range (where site.RegularPages "Section" "in" site.Params.mainSections).ByDate.Reverse }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "latest") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end -}}
+{{- end -}}
+{{- $cands = first 3 $cands -}}
+{{- $why := dict -}}{{- $candidates := slice -}}
+{{- range $cands }}{{ $candidates = $candidates | append .page }}{{ $why = merge $why (dict .page.RelPermalink .why) }}{{ end -}}
+{{- $featured := false -}}
+{{- $featuredArt := "" -}}
+{{- range $candidates -}}
+  {{- if not $featured -}}
+    {{- $a := partial "editorial/page-art.html" . -}}
+    {{- if $a }}{{ $featured = . }}{{ $featuredArt = $a }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if and (not $featured) $candidates }}{{ $featured = index $candidates 0 }}{{ end -}}
+{{- $supporting := slice -}}
+{{- range $candidates }}{{ if ne .RelPermalink $featured.RelPermalink }}{{ $supporting = $supporting | append . }}{{ end }}{{ end -}}
+{{- $resource := index site.Data.d1_resources ($p.File.TranslationBaseName | default "") -}}
+{{- $items := slice -}}
+{{- with $resource }}{{ with .items }}{{ $items = . }}{{ end }}{{ end -}}
+{{- if or $featured $items -}}
+<div class="d1-discovery">
+  {{- with $featured -}}
+  <section class="discovery-module discovery-essays" aria-labelledby="further-essays-title">
+    <header class="discovery-head">
+      <h2 id="further-essays-title">{{ T "ed_furtherEssays" | default "Further essays" }}</h2>
+      <p class="discovery-kicker">{{ T "ed_furtherKicker" | default "Continue the line of thought" }}</p>
+    </header>
+    <div class="essays-layout{{ if not $supporting }} essays-single{{ end }}">
+      <article class="essay-feature{{ with $featuredArt }} has-art art-{{ .via }}{{ else }} text-only{{ end }}">
+        {{- with $featuredArt }}
+        <a class="essay-feature-art" href="{{ $featured.RelPermalink }}" tabindex="-1" aria-hidden="true">{{ partial "editorial/art.html" (dict "key" .key "sizes" "(max-width: 560px) 6.5rem, 13rem") }}</a>
+        {{- end }}
+        <div class="essay-feature-copy">
+          <p class="essay-meta">
+            <span class="why why-{{ index $why .RelPermalink }}">{{ T (printf "ed_why_%s" (index $why .RelPermalink)) }}</span>
+            {{- with partial "editorial/category.html" . }}<span>{{ .LinkTitle }}</span>{{ end -}}
+            {{- with $featuredArt }}{{ if eq .via "volume" }}<span>{{ T "ed_chapterIn" (dict "Volume" .volume.LinkTitle) | default (printf "A chapter of %s" .volume.LinkTitle) }}</span>{{ end }}{{ end -}}
+          </p>
+          <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+          {{- with partial "editorial/describe.html" . }}<p class="essay-summary">{{ . }}</p>{{ end }}
+          <p class="essay-foot"><span>{{ partial "editorial/date.html" .Date }}</span><span>{{ T "ed_minutes" (dict "Count" .ReadingTime) | default (printf "%d min read" .ReadingTime) }}</span></p>
+          <a class="discovery-cta" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">{{ T "ed_readEssay" | default "Read the essay" }} <span>→</span></a>
+        </div>
+      </article>
+      {{- with $supporting }}
+      <ul class="essay-supporting" role="list">
+        {{- range . }}
+        <li>
+          <p class="essay-meta"><span class="why why-{{ index $why .RelPermalink }}">{{ T (printf "ed_why_%s" (index $why .RelPermalink)) }}</span>{{ with partial "editorial/category.html" . }}<span>{{ .LinkTitle }}</span>{{ end }}</p>
+          <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+          {{- with partial "editorial/describe.html" . }}<p class="essay-summary">{{ . }}</p>{{ end }}
+          <p class="essay-foot"><span>{{ T "ed_minutes" (dict "Count" .ReadingTime) | default (printf "%d min read" .ReadingTime) }}</span></p>
+        </li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+  </section>
+  {{- end -}}
+  {{- with $items -}}
+  <section class="discovery-module discovery-reading" aria-labelledby="curated-reading-title">
+    <header class="discovery-head">
+      <h2 id="curated-reading-title">{{ T "ed_curatedReading" | default "Curated reading" }}</h2>
+      <p class="discovery-kicker">{{ T "ed_curatedKicker" | default "From the sources" }}</p>
+      <p class="discovery-note">{{ T "ed_curatedNote" | default "Chosen from this essay's references. No paid placement." }}</p>
+    </header>
+    <ol class="source-list" role="list">
+      {{- range . }}{{ with partial "editorial/bib-resolve.html" . }}
+      <li class="source-item source-{{ .kind }}{{ if .cover }} has-cover{{ end }}">
+        {{- with .cover }}<div class="source-cover">{{ partial "editorial/art.html" (dict "key" . "sizes" "6rem") }}</div>{{ end }}
+        <div class="source-copy">
+          <p class="source-kind">{{ if eq .kind "book" }}{{ T "ed_kindBook" | default "Book" }}{{ else }}{{ T "ed_kindPaper" | default "Paper" }}{{ end }}<span>{{ .year }}</span></p>
+          <h3 lang="{{ .title_lang | default "en" }}">{{ if eq .kind "book" }}<cite>{{ .title }}</cite>{{ else }}“{{ .title }}”{{ end }}</h3>
+          <p class="source-biblio" lang="en">{{ .authors }} · {{ .source }}</p>
+          <p class="source-why" lang="en">{{ .why }}</p>
+          {{- if .url }}
+          <a class="discovery-cta" href="{{ .url }}" rel="noopener noreferrer">{{ T "ed_openSource" | default "Open the source" }}<span class="d1-sr">: <span lang="en">{{ .title }}</span></span> <span aria-hidden="true">↗</span></a>
+          {{- else if .ref }}
+          <a class="discovery-cta" href="#{{ .ref }}">{{ with .refnum }}{{ T "ed_seeReferenceN" (dict "N" .) | default (printf "Reference %d in this essay" .) }}{{ else }}{{ T "ed_seeReference" | default "See the reference list" }}{{ end }} <span aria-hidden="true">↓</span></a>
+          {{- end }}
+          {{- partial "editorial/buy-links.html" . -}}
+        </div>
+      </li>
+      {{- end }}{{ end }}
+    </ol>
+  </section>
+  {{- end -}}
+</div>
+{{- end -}}

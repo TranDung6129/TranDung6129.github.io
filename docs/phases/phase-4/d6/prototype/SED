@@ -1,0 +1,3 @@
+layouts/_partials/site/head-assets.html	s/"site" "d1" "d4" "d3" "d5" "d2"/"site" "d1" "d4" "d3" "d5" "d2" "d6"/
+layouts/_partials/editorial/article.html	s#^  </footer>#  </footer>\n  {{- partial "site/support.html" . -}}#
+config/_default/params.toml	$a [support]\n  url = "https://example.invalid/ung-ho"\n  sample = true

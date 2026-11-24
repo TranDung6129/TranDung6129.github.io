@@ -1,0 +1,30 @@
+# Discover resource library (D4 decision 3, D-018); replaces data/discover.yaml. Real works only: each is cited by
+# an essay on this site. URLs are verified (Crossref + doi.org, or the authors' official site,
+# 2026-11-23/24); an entry without a verified URL has url "". No affiliate links (D6).
+#   bib: key in data/bibliography.yaml (title, authors, year, source, link, type come from there;
+#        a future course or tool without a bibliography entry may carry its own fields)
+#   topics: category slugs      essays: content paths
+resources:
+  - bib: nash1950
+    topics: [kinh-te, toan-hoc]
+    why: { vi: "Hai trang chứng minh mọi trò chơi hữu hạn đều có cân bằng.", en: "Two pages that prove every finite game has an equilibrium." }
+    essays: [/kinh-te/ly-thuyet-tro-choi-nash, /kinh-te/game_theory_nash]
+  - bib: kakutani1941
+    topics: [toan-hoc]
+    why: { vi: "Định lý điểm bất động mà chứng minh của Nash dựa vào.", en: "The fixed-point theorem Nash's proof relies on." }
+    essays: [/kinh-te/ly-thuyet-tro-choi-nash, /kinh-te/game_theory_nash]
+  - bib: monderer1996
+    topics: [kinh-te]
+    why: { vi: "Khi nào động lực phản ứng tốt nhất chắc chắn hội tụ.", en: "When best-response dynamics are guaranteed to converge." }
+    essays: [/kinh-te/game_theory_nash]
+  - bib: daskalakis2009
+    topics: [khoa-hoc-may-tinh, kinh-te]
+    why: { vi: "Vì sao tìm cân bằng Nash lại khó về mặt tính toán.", en: "Why finding a Nash equilibrium is computationally hard." }
+    essays: [/kinh-te/game_theory_nash]
+  - bib: shoham2008
+    # REVIEW SAMPLE ONLY (D6 prototype): placeholder store link, not a real offer.
+    buy:
+      - { store: "Nhà sách (mẫu)", url: "https://example.invalid/mau", affiliate: true, sample: true }
+    topics: [khoa-hoc-may-tinh, kinh-te]
+    why: { vi: "Tính toán cân bằng, trò chơi thế năng và độ phức tạp trong cùng một hệ ký hiệu.", en: "Computing equilibria, potential games and complexity in one consistent notation." }
+    essays: [/kinh-te/game_theory_nash]

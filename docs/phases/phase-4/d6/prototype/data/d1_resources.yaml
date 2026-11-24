@@ -1,0 +1,28 @@
+# Curated Reading for D1 article footers, keyed by the essay's content file name without
+# language suffix (File.TranslationBaseName). Only editorially verified entries belong here.
+#
+#   bib:    key in data/bibliography.yaml (D3): title, authors, source, year, link and kind come
+#           from the source library, so they match the essay's reference list exactly
+#   why:    one or two sentences on why this follows from the essay
+#   The link is the library's DOI, URL or zbMATH record.
+#   cover:  optional data/art.yaml key of a cover image the site may legally reuse. None today;
+#           no cover is ever drawn or fetched for a paper.
+#   affiliate: must stay false. A future affiliate link needs `affiliate: true` and is shown
+#           in a separate, labelled "Disclosure" line — never mixed into the editorial note.
+#
+# Links verified 2026-11-23: Nash and Kakutani DOIs against Crossref metadata (journal, volume,
+# issue, pages, year) and doi.org resolution; masfoundations.org is the authors' official book
+# site, which offers the free eBook in agreement with Cambridge University Press.
+game_theory_nash:
+  items:
+    - bib: nash1950
+      why: "Two pages that state and prove the existence result this essay builds up to; worth reading once the fixed-point section makes sense."
+      affiliate: false
+    - bib: shoham2008
+      buy:
+        - { store: "Nhà sách (mẫu)", url: "https://example.invalid/mau", affiliate: true, sample: true }
+      why: "Where to go next: computing equilibria, potential games and the complexity results the essay only mentions, in one consistent notation."
+      affiliate: false
+    - bib: kakutani1941
+      why: "The fixed-point theorem behind the existence proof, for readers who want the step the essay takes on trust."
+      affiliate: false

@@ -546,3 +546,16 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - The film's English text is unchanged apart from colours and the corrections; no Vietnamese version of the film.
 - **Next:** owner approves the merge → production check → D2 DONE; then D6.
 
+### 2026-11-24 — D2 closed on production; D6 started — Claude Code
+- **D2 production (`5bd7011`):**
+  - `d3-check.cjs`: 18/18.
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+  - Film, poster and handwriting font served; the film page shows the correction.
+  - TASK_BOARD D2 → DONE.
+- **D6:**
+  - **Owner decisions:** editor-first recommendations with reasons; affiliate books and voluntary support; no-cookie analytics.
+  - **Placements prototype:** `d6-check.cjs` 20/20, axe 0.
+  - **Found while prototyping:** the reworked candidate list skipped D1's "latest essays" fallback when Hugo's related index only returned excluded essays (Part 2 lost its three recommendations). Fixed and labelled "Bài mới".
+
