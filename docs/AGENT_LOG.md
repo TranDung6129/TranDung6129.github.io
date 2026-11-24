@@ -579,3 +579,21 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - `p3-smoke.cjs`: 32/32.
 - **Next:** owner approves the merge → production check → D6 DONE (channels go live when the owner adds accounts); then D7.
 
+### 2026-11-24 — D6 closed on production; D7 Studio built — Claude Code
+- **D6 production (`ca0e20e`):**
+  - `d3-check.cjs`: 18/18.
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+  - Reason labels are live; support, store links and analytics are absent, as intended.
+- **D7:** the owner chose a local dashboard with three screens (writing + preview, content, stats). Built in `tools/studio/` (Node built-ins).
+- **Safety checks run:**
+  - Foreign Host → 421; foreign Origin → 403.
+  - Path traversal → 400; writing outside `content/`/`data/` → 400.
+- **Found and fixed:**
+  - Hugo ignores a space-separated `HUGO_IGNOREFILES`, so one regex is used.
+  - A monospace editor font lacked Vietnamese, so the editor uses Source Serif.
+  - The faded stats sample failed contrast and was removed.
+- **Tests:** `d7-check.cjs` 9/9, read-only; `git status content data` empty afterwards.
+- **Next:** owner review and merge; then D8.
+
