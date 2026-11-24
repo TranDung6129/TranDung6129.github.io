@@ -195,3 +195,16 @@ Agents may propose choices; changes to accepted product direction require mainta
 - **Voluntary support:** one block after essays and on About, shown only when `params.support.url` is set. It never gates content.
 - **Analytics:** GoatCounter, no cookies. Loaded only in production and only when `params.goatcounter` is set. Store and support clicks are counted as events for D7.
 - **Premium content:** deferred. It requires real authentication and payments; client-side hiding is not a paywall (AGENTS.md).
+
+## D-023 — D7 Studio: a local authoring dashboard
+- **Status:** PROPOSED for owner approval 2026-11-24 (architecture and screens chosen by the owner).
+- **Choice:**
+  - A local Node app (`tools/studio/`, built-ins only) that edits the repository's Markdown.
+  - Preview with the real Hugo server.
+  - Publishing by git commit + push after a passing test build.
+  - No authentication, hosting or secrets; listens on 127.0.0.1 with Host/Origin checks; writes limited to `content/` and `data/`.
+  - Statistics from GoatCounter with a token kept in the environment.
+- **Consequences:**
+  - Authoring needs the machine with the repository.
+  - Markdown remains the source of truth (D-019/D-021 shortcodes).
+  - The PostgreSQL foundation (P1-09) stays independent.

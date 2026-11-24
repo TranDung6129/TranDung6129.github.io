@@ -6,7 +6,8 @@
   "scripts": {
     "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0 -O",
-    "server:production": "npm run server -- --environment production"
+    "server:production": "npm run server -- --environment production",
+    "studio": "node tools/studio/server.mjs"
   },
   "repository": {
     "type": "git",
