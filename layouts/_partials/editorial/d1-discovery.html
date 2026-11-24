@@ -10,11 +10,23 @@
 {{- $exclude := slice $p.RelPermalink -}}
 {{- with $p.PrevInSection }}{{ $exclude = $exclude | append .RelPermalink }}{{ end -}}
 {{- with $p.NextInSection }}{{ $exclude = $exclude | append .RelPermalink }}{{ end -}}
-{{- $candidates := where (where (site.RegularPages.Related $p) "Section" "in" site.Params.mainSections) "RelPermalink" "not in" $exclude -}}
-{{- if not $candidates -}}
-  {{- $candidates = where (where site.RegularPages "Section" "in" site.Params.mainSections) "RelPermalink" "not in" $exclude -}}
+{{- /* D6: candidates carry a reason. Order: editor's picks (front matter `further:` paths) →
+       the next part of the essay's series → related essays in the main sections → (if none) latest. */ -}}
+{{- $cands := slice -}}{{- $seen := $exclude -}}
+{{- range $p.Params.further }}{{ with partial "editorial/get-page.html" . }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "editor") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end }}{{ end -}}
+{{- with partial "editorial/series-of.html" $p -}}
+  {{- $next := add .index 1 -}}
+  {{- if lt $next (len .parts) }}{{ with index .parts $next }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "series") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end }}{{ end -}}
 {{- end -}}
-{{- $candidates = first 3 $candidates -}}
+{{- $n := len $cands -}}
+{{- range where (site.RegularPages.Related $p) "Section" "in" site.Params.mainSections }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "topic") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end -}}
+{{- /* Nothing related left (as D1): fall back to the latest essays, labelled as such. */ -}}
+{{- if eq (len $cands) $n -}}
+  {{- range (where site.RegularPages "Section" "in" site.Params.mainSections).ByDate.Reverse }}{{ if not (in $seen .RelPermalink) }}{{ $cands = $cands | append (dict "page" . "why" "latest") }}{{ $seen = $seen | append .RelPermalink }}{{ end }}{{ end -}}
+{{- end -}}
+{{- $cands = first 3 $cands -}}
+{{- $why := dict -}}{{- $candidates := slice -}}
+{{- range $cands }}{{ $candidates = $candidates | append .page }}{{ $why = merge $why (dict .page.RelPermalink .why) }}{{ end -}}
 {{- $featured := false -}}
 {{- $featuredArt := "" -}}
 {{- range $candidates -}}
@@ -44,6 +56,7 @@
         {{- end }}
         <div class="essay-feature-copy">
           <p class="essay-meta">
+            <span class="why why-{{ index $why .RelPermalink }}">{{ T (printf "ed_why_%s" (index $why .RelPermalink)) }}</span>
             {{- with partial "editorial/category.html" . }}<span>{{ .LinkTitle }}</span>{{ end -}}
             {{- with $featuredArt }}{{ if eq .via "volume" }}<span>{{ T "ed_chapterIn" (dict "Volume" .volume.LinkTitle) | default (printf "A chapter of %s" .volume.LinkTitle) }}</span>{{ end }}{{ end -}}
           </p>
@@ -57,7 +70,7 @@
       <ul class="essay-supporting" role="list">
         {{- range . }}
         <li>
-          {{- with partial "editorial/category.html" . }}<p class="essay-meta"><span>{{ .LinkTitle }}</span></p>{{ end }}
+          <p class="essay-meta"><span class="why why-{{ index $why .RelPermalink }}">{{ T (printf "ed_why_%s" (index $why .RelPermalink)) }}</span>{{ with partial "editorial/category.html" . }}<span>{{ .LinkTitle }}</span>{{ end }}</p>
           <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
           {{- with partial "editorial/describe.html" . }}<p class="essay-summary">{{ . }}</p>{{ end }}
           <p class="essay-foot"><span>{{ T "ed_minutes" (dict "Count" .ReadingTime) | default (printf "%d min read" .ReadingTime) }}</span></p>
@@ -89,7 +102,7 @@
           {{- else if .ref }}
           <a class="discovery-cta" href="#{{ .ref }}">{{ with .refnum }}{{ T "ed_seeReferenceN" (dict "N" .) | default (printf "Reference %d in this essay" .) }}{{ else }}{{ T "ed_seeReference" | default "See the reference list" }}{{ end }} <span aria-hidden="true">↓</span></a>
           {{- end }}
-          {{- if .affiliate }}<p class="source-disclosure">{{ T "ed_affiliate" | default "Disclosure: this link is an affiliate link." }}</p>{{ end }}
+          {{- partial "editorial/buy-links.html" . -}}
         </div>
       </li>
       {{- end }}{{ end }}

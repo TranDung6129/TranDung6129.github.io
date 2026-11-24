@@ -181,3 +181,17 @@ Agents may propose choices; changes to accepted product direction require mainta
   - An arrow from the best-response scene lingered into the next scene; it is removed.
   - The closing sentence overlapped the axis; it is moved.
 - **Interactive:** unchanged (P4-04).
+
+## D-022 — D6 discovery and monetization placements
+- **Status:** ACCEPTED by the owner 2026-11-24 (placements approved; accounts not yet created, so every paid or measuring channel ships switched off). Record: `docs/phases/phase-4/d6/`, evidence `docs/audits/d6/`, how to enable: `docs/phases/phase-4/d6/ENABLE.md`.
+- **Recommendations:**
+  - Order: editor's picks (`further:`) → next part of the series → same topic → latest.
+  - Every card states its reason.
+  - No behavioural algorithm.
+- **Affiliate books:**
+  - `buy:` on resource items in Discover and Curated Reading only, never inside essay prose.
+  - Links are `rel="sponsored"`, with the disclosure directly beneath.
+  - Nothing renders without a real URL; no prices or urgency language.
+- **Voluntary support:** one block after essays and on About, shown only when `params.support.url` is set. It never gates content.
+- **Analytics:** GoatCounter, no cookies. Loaded only in production and only when `params.goatcounter` is set. Store and support clicks are counted as events for D7.
+- **Premium content:** deferred. It requires real authentication and payments; client-side hiding is not a paywall (AGENTS.md).

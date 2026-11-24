@@ -12,6 +12,7 @@
   {{- partial "head/link.html" . -}}
   {{- partial "head/seo.html" . -}}
   {{- partial "site/head-assets.html" . -}}
+  {{- partial "site/analytics.html" . -}}
   {{- block "custom-head" . }}{{ end -}}
 </head>
 <body class="kind-{{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }}">

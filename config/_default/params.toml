@@ -943,3 +943,18 @@ disableThemeInject = false
     [page.math.mathjax.loader.paths]
   [page.math.mathjax.options]
     enableMenu = true
+
+# ---------------------------------------------------------------------------------------------
+# D6 (2026-11-24): voluntary support and privacy-friendly analytics. Both stay off while empty.
+# See docs/phases/phase-4/d6/ENABLE.md.
+# Analytics without cookies: the owner's GoatCounter endpoint, e.g. "https://NAME.goatcounter.com/count".
+goatcounter = ""
+
+[support]
+  # Link to the support page (Ko-fi, Buy Me a Coffee, a bank/MoMo page). Empty = block hidden.
+  url = ""
+  # Optional button text; default "Ủng hộ" / "Support".
+  label = ""
+  # Optional static image path for a QR code, e.g. "/images/support-qr.png".
+  qr = ""
+

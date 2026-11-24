@@ -559,3 +559,23 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - **Placements prototype:** `d6-check.cjs` 20/20, axe 0.
   - **Found while prototyping:** the reworked candidate list skipped D1's "latest essays" fallback when Hugo's related index only returned excluded essays (Part 2 lost its three recommendations). Fixed and labelled "Bài mới".
 
+### 2026-11-24 — D6 implemented (channels off) — Claude Code
+- **Branch:** `feat/d6-discovery-monetization` (from `main` after #51). The owner approved the placements; no accounts yet.
+- **Changed:**
+  - Discovery candidates carry reasons (editor / series / topic / latest), with `further:` front matter.
+  - `buy-links`, `support` and `analytics` partials, all off by default (`params.support.url`, `params.goatcounter`).
+  - `d6.css`; i18n in four languages.
+  - Enable guide `ENABLE.md`.
+  - Fixture `docs/audits/d6/fixture`.
+- **Tests (exit 0):**
+  - Clean build: 0 warnings.
+  - Production output has 0 support blocks, 0 store links, 0 analytics scripts and 0 sample URLs.
+  - `check-redirects.py`: 161 valid, 0 HTML routes lost.
+  - `d6-check.cjs` (fixture): 20/20.
+  - `d2-check.cjs` (fixture): 10/10.
+  - `d3-check.cjs`: 18/18.
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+- **Next:** owner approves the merge → production check → D6 DONE (channels go live when the owner adds accounts); then D7.
+
