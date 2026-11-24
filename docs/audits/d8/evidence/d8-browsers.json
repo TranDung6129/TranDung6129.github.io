@@ -1,0 +1,147 @@
+[
+ {
+  "browser": "firefox",
+  "route": "/",
+  "w": 1440,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/",
+  "w": 390,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/journal/",
+  "w": 1440,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/journal/",
+  "w": 390,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/toan-hoc/riemann-hypothesis-number-theory/",
+  "w": 1440,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "url(\"http://127.0.0.1:1338/ornaments/d5/branch-mattioli-vicia.webp\")"
+ },
+ {
+  "browser": "firefox",
+  "route": "/toan-hoc/riemann-hypothesis-number-theory/",
+  "w": 390,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "url(\"http://127.0.0.1:1338/ornaments/d5/branch-mattioli-vicia.webp\")"
+ },
+ {
+  "browser": "firefox",
+  "route": "/en/kinh-te/game_theory_nash/",
+  "w": 1440,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "url(\"http://127.0.0.1:1338/ornaments/d5/branch-mattioli-vicia.webp\")"
+ },
+ {
+  "browser": "firefox",
+  "route": "/en/kinh-te/game_theory_nash/",
+  "w": 390,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "url(\"http://127.0.0.1:1338/ornaments/d5/branch-mattioli-vicia.webp\")"
+ },
+ {
+  "browser": "firefox",
+  "route": "/series/toan-co-ban-cho-kinh-te/",
+  "w": 1440,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/series/toan-co-ban-cho-kinh-te/",
+  "w": 390,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/discover/",
+  "w": 1440,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/discover/",
+  "w": 390,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/films/nash-animation/",
+  "w": 1440,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "firefox",
+  "route": "/films/nash-animation/",
+  "w": 390,
+  "status": 200,
+  "errors": [],
+  "overflow": false,
+  "mathErrors": 0,
+  "mask": "none"
+ },
+ {
+  "browser": "webkit",
+  "launched": false,
+  "error": "browserType.launch: "
+ }
+]

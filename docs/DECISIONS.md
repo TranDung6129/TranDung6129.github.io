@@ -197,7 +197,7 @@ Agents may propose choices; changes to accepted product direction require mainta
 - **Premium content:** deferred. It requires real authentication and payments; client-side hiding is not a paywall (AGENTS.md).
 
 ## D-023 — D7 Studio: a local authoring dashboard
-- **Status:** PROPOSED for owner approval 2026-11-24 (architecture and screens chosen by the owner).
+- **Status:** ACCEPTED by the owner 2026-11-24 (architecture and screens chosen by the owner; Studio reviewed and merged, PR #53).
 - **Choice:**
   - A local Node app (`tools/studio/`, built-ins only) that edits the repository's Markdown.
   - Preview with the real Hugo server.
@@ -208,3 +208,11 @@ Agents may propose choices; changes to accepted product direction require mainta
   - Authoring needs the machine with the repository.
   - Markdown remains the source of truth (D-019/D-021 shortcodes).
   - The PostgreSQL foundation (P1-09) stays independent.
+
+## D-024 — D8 quality pass
+- **Status:** DONE 2026-11-24 (agent work, reported to the owner). Report: `docs/audits/d8/AUDIT.md`.
+- **Changes:**
+  - Ornament WebPs use lossy alpha (247 KB → 94 KB, visually identical).
+  - Redirect pages use Hugo's alias markup.
+  - The sweep and cross-browser tools are added to `docs/audits/d8/tools/`.
+- **Standing checks for later work:** `d8-sweep.cjs` over the sitemap; `seo-check.py`; `check-redirects.py` against `main`; the per-phase suites.

@@ -597,3 +597,16 @@ This is an append-only log, except to correct factual mistakes. **No implementat
 - **Tests:** `d7-check.cjs` 9/9, read-only; `git status content data` empty afterwards.
 - **Next:** owner review and merge; then D8.
 
+### 2026-11-24 — D7 merged; D8 quality pass — Claude Code
+- **D7:** the owner approved the Studio; merged as PR #53 (`1d6ddcb`).
+- **D8 (`chore/d8-quality`):**
+  - Sitemap sweep: 93/93 clean.
+  - SEO check: pass, after aligning the redirect page markup with Hugo's.
+  - 0 routes lost.
+  - External links: all DOIs and zbMATH records resolve (checked through the official APIs).
+  - Firefox: 14/14 clean. WebKit could not run (missing system libraries).
+  - All suites pass.
+  - Ornaments: 247 KB → 94 KB.
+  - Report: `docs/audits/d8/AUDIT.md`.
+- **Next:** owner approves the merge → production check.
+

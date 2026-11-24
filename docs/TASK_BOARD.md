@@ -57,7 +57,8 @@ Plan and owner decisions: [docs/phases/phase-4/PLAN.md](phases/phase-4/PLAN.md).
 | [x] | D5 | Visual identity & asset library: design system review, botanical library, hero illustrations, asset management (visual board first) | D3 | DONE (PR #48, `0797d0b`; production verified 2026-11-24) | Claude Code |
 | [x] | D2 | Content & media protocol: text blocks, mathematics, scientific plots, video/Manim, interactive content (example set first) | D5 | DONE (PR #50, `5bd7011`; production verified 2026-11-24) | Claude Code |
 | [x] | D6 | Discovery & monetization: editorial recommendations, affiliate books, voluntary support, privacy-friendly analytics (placements first) | D2 | DONE (PR #52, `ca0e20e`; production verified 2026-11-24; channels off until owner accounts) | Claude Code |
-| [ ] | D7 | Authoring & publishing dashboard (local Studio): content list, editor with live preview, stats, publish | D6 | IN PROGRESS (working prototype for owner review) | Claude Code, `feat/d7-studio` |
+| [x] | D7 | Authoring & publishing dashboard (local Studio): content list, editor with live preview, stats, publish | D6 | DONE (PR #53, `1d6ddcb`; local tool, no deploy) | Claude Code |
+| [x] | D8 | Quality, integration and final polish: site-wide sweep, SEO, links, browsers, performance, security, recovery | D7 | DONE pending merge (report `docs/audits/d8/AUDIT.md`) | Claude Code, `chore/d8-quality` |
 
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage

@@ -5,7 +5,9 @@
 {{- range site.Data.redirects.redirects -}}
   {{- $from := strings.TrimPrefix "/" .from -}}
   {{- $to := .to | absURL -}}
-  {{- $html := printf `<!doctype html><html><head><title>%s</title><link rel="canonical" href="%s"><meta name="robots" content="noindex"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=%s"></head></html>` $to $to $to -}}
+  {{- /* Same markup as Hugo's own (minified) alias pages, so tools that recognise aliases
+         (docs/audits/p1-06/tools/seo-check.py) treat both alike. */ -}}
+  {{- $html := printf `<!doctype html><html><head><title>%s</title><link rel=canonical href=%s><meta name=robots content="noindex"><meta charset=utf-8><meta http-equiv=refresh content="0; url=%s"></head></html>` $to $to $to -}}
   {{- $r := resources.FromString (printf "%sindex.html" $from) $html -}}
   {{- $r.Publish -}}
 {{- end -}}

@@ -4,7 +4,8 @@
 # (file title, Artist, date, description); nothing is added from memory. Processing: the darkest ink is
 # separated from the paper (illumination flattened, soft threshold) into an alpha mask; printed
 # captions are blanked or cropped out; no other change to the drawing. Shown via CSS mask in
-# the accent colour, so the line follows the theme. Pipeline: docs/phases/phase-4/d5/process.py
+# the accent colour, so the line follows the theme. Pipeline: docs/phases/phase-4/d5/process.py;
+# encoded as WebP with lossy alpha (quality 55, D8: 247 KB → 94 KB for the set, no visible change).
 #
 # Roles: branch (article headpiece, mirrored pair), toc (below the contents rail),
 #        landscape (faint strip below the footer). Rotation as in D1 (md5 of the content path).
@@ -51,8 +52,8 @@ assets:
     aiGenerated: false
   - path: "d5/landscape-rhine-bonn.webp"
     role: landscape
-    width: 960
-    height: 135
+    width: 800
+    height: 113
     commonsTitle: "Landschap met gezicht op de Rijn bij Bonn, RP-P-OB-11.274"
     creator: "Rijksmuseum"
     date: "between 1643 and 1644"
