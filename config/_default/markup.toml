@@ -42,7 +42,8 @@
     [goldmark.extensions.passthrough]
       enable = true
       [goldmark.extensions.passthrough.delimiters]
-        block = [['\[', '\]'], ['$$', '$$']]
+        # D2: numbered environments pass through untouched (see layouts/_markup/render-passthrough.html).
+        block = [['\[', '\]'], ['$$', '$$'], ['\begin{equation}', '\end{equation}'], ['\begin{align}', '\end{align}']]
         inline = [['\(', '\)'], ['$', '$']]
   [goldmark.parser]
     autoHeadingID = true

@@ -520,3 +520,19 @@ other = "Website"
 other = "Report"
 [ed_ref_thesis]
 other = "Thesis"
+
+# --- D2 content blocks ---
+[ed_callout_definition]
+other = "Definition"
+[ed_callout_theorem]
+other = "Theorem"
+[ed_callout_example]
+other = "Example"
+[ed_callout_note]
+other = "Note"
+[ed_callout_warning]
+other = "Warning"
+[ed_figure]
+other = "Figure {{ .N }}"
+[ed_table]
+other = "Table {{ .N }}"

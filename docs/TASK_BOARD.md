@@ -55,7 +55,7 @@ Plan and owner decisions: [docs/phases/phase-4/PLAN.md](phases/phase-4/PLAN.md).
 | [x] | D4 | Content architecture: sitemap, content types, relationships, navigation, metadata (design first, no code) | D1, D-017 | DONE (PR #44, `a4e6354`; production verified 2026-11-24) | Claude Code |
 | [x] | D3 | Citation & research protocol: citation style, footnotes, references, source metadata, presentation (sample article first) | D4 | DONE (PR #46, `4d2029b`; production verified 2026-11-24) | Claude Code |
 | [x] | D5 | Visual identity & asset library: design system review, botanical library, hero illustrations, asset management (visual board first) | D3 | DONE (PR #48, `0797d0b`; production verified 2026-11-24) | Claude Code |
-| [ ] | D2 | Content & media protocol: text blocks, mathematics, scientific plots, video/Manim, interactive content (example set first) | D5 | IN PROGRESS | Claude Code, `docs/d2-discovery` |
+| [ ] | D2 | Content & media protocol: text blocks, mathematics, scientific plots, video/Manim, interactive content (example set first) | D5 | IN PROGRESS (example approved; implementation PR awaiting merge approval) | Claude Code, `feat/d2-content-media` |
 
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage

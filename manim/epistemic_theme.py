@@ -21,6 +21,8 @@ Text.set_default(font=SERIF, color=INK)
 MathTex.set_default(color=INK)
 Tex.set_default(color=INK)
 Line.set_default(color=INK)
+DecimalNumber.set_default(color=INK)
+Integer.set_default(color=INK)
 
 def hand(text, **kw):
     """Handwritten annotation (annotations only, never for data or mathematics)."""

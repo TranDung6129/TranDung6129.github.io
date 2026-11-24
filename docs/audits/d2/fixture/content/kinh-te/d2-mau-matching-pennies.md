@@ -8,7 +8,7 @@ tags: ["ly-thuyet-tro-choi", "nash"]
 math: true
 ---
 
-Trang này là **bản mẫu để duyệt** chuẩn nội dung và media (D2). Bài toán được chọn vì nó đủ nhỏ để thấy hết mọi khối, nhưng vẫn có một kết luận thật: trò chơi không có cân bằng thuần, chỉ có một cân bằng hỗn hợp.
+Trang này là **dữ liệu kiểm thử** của chuẩn nội dung và media (D2); nó không thuộc trang công khai. Bài toán được chọn vì nó đủ nhỏ để thấy hết mọi khối, nhưng vẫn có một kết luận thật: trò chơi không có cân bằng thuần, chỉ có một cân bằng hỗn hợp.
 
 ## 1. Bài toán
 
@@ -60,10 +60,6 @@ def indifference(a, b, c, d):
 
 print(indifference(+1, -1, -1, +1))  # 1/2
 ```
-
-## 4. Video: khung hình storyboard
-
-{{< storyboard >}}
 
 ## Tài liệu tham khảo
 
