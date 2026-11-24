@@ -9,7 +9,7 @@
 <link rel="preload" href="{{ $url }}" as="font" type="font/woff2" crossorigin>
   {{- end -}}
 {{- end -}}
-{{- $files := slice "tokens" "fonts" "base" "navigation" "home" "typography" "future" "responsive" "site" "d1" "d4" "d3" "d5" -}}
+{{- $files := slice "tokens" "fonts" "base" "navigation" "home" "typography" "future" "responsive" "site" "d1" "d4" "d3" "d5" "d2" -}}
 {{- $parts := slice -}}
 {{- range $files -}}{{- $parts = $parts | append (resources.Get (printf "css/editorial/%s.css" .)) -}}{{- end -}}
 {{- $css := $parts | resources.Concat "css/editorial.css" | minify | fingerprint -}}

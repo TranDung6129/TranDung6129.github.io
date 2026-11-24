@@ -1,5 +1,7 @@
 // D2 content and media blocks: behaviour checks and review screenshots.
-// Usage: BASE=http://127.0.0.1:1353 OUT=/tmp/d2 AXE=/path/axe.min.js ROUTE=/kinh-te/<page>/ node docs/audits/d2/tools/d2-check.cjs
+// The fixture page is not part of the public site: build it with
+//   scripts/preview-overlay.sh docs/audits/d2/fixture <dir>
+// then: BASE=http://127.0.0.1:1353 OUT=/tmp/d2 AXE=/path/axe.min.js node docs/audits/d2/tools/d2-check.cjs
 const { chromium } = require('playwright'); const fs = require('fs'), path = require('path');
 const base = (process.env.BASE || 'http://127.0.0.1:1353').replace(/\/$/, ''), out = process.env.OUT || '/tmp/d2'; fs.mkdirSync(out, { recursive: true });
 const route = process.env.ROUTE || '/kinh-te/d2-mau-matching-pennies/';
@@ -32,7 +34,7 @@ const checks = []; const check = (n, ok, d = {}) => { checks.push({ name: n, pas
       check('Callouts render with localised labels (Định nghĩa, Cảnh báo, Định lý)', ['Định nghĩa', 'Cảnh báo', 'Định lý'].every(k => info.callouts.some(c => c.startsWith(k))), { callouts: info.callouts });
       check('Figure and table are numbered (Hình 1, Bảng 1); the table is centred in the prose (±2 px)', info.fig === 'Hình 1.' && info.tab === 'Bảng 1.' && Math.abs(info.tableCentre) <= 2, { fig: info.fig, tab: info.tab, tableCentre: info.tableCentre });
       check('Plot is an image with a text alternative; annotation uses the handwriting face, which is loaded', info.plotRole === 'img' && info.plotLabel > 20 && /patrick hand/i.test(info.handFont || '') && info.handLoaded, info);
-      check('Storyboard frames load', info.frames.length === 3 && info.frames.every(Boolean), { frames: info.frames });
+      if (info.frames.length) check('Storyboard frames load', info.frames.every(Boolean), { frames: info.frames });
       if (axe) { await p.addScriptTag({ content: axe }); const v = await p.evaluate(async () => (await axe.run(document, { runOnly: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] })).violations.map(x => [x.id, x.nodes.length])); check('axe WCAG 2.1 A/AA: 0 violations', !v.length, { v }); }
     }
     check(`${w} ${scheme}: HTTP 200, no overflow, no page or MathJax errors`, res.status() === 200 && !info.overflow && !errors.length && !info.mathErrors, { errors, mathErrors: info.mathErrors });

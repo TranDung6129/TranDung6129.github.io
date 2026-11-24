@@ -13,16 +13,17 @@ Run:
 
 from manim import *
 import numpy as np
+from epistemic_theme import EpistemicScene, INK, MUTED, ACCENT, SLATE, OLIVE, OCHRE
 
-# ── Color palette ────────────────────────────────────────────────────────────
-P1_COLOR   = "#4FC3F7"   # player 1 — light blue
-P2_COLOR   = "#EF9A9A"   # player 2 — light red
-NE_COLOR   = "#A5D6A7"   # Nash Equilibrium highlight — green
-GRAY_LIGHT = "#BDBDBD"
-TITLE_COLOR = WHITE
+# ── Colour palette: The Epistemic Diary theme (D2, ivory paper / brown ink) ─────
+P1_COLOR   = ACCENT      # player 1 — terracotta
+P2_COLOR   = SLATE       # player 2 — slate blue
+NE_COLOR   = OLIVE       # Nash Equilibrium highlight
+GRAY_LIGHT = MUTED
+TITLE_COLOR = INK
 
 
-class GameTheoryNash(Scene):
+class GameTheoryNash(EpistemicScene):
     """
     Multi-scene animation covering:
       Scene 1 — What is a strategic-form game?  (Prisoner's Dilemma matrix)
@@ -61,12 +62,12 @@ class GameTheoryNash(Scene):
         self.wait(1.5)
 
         definition = VGroup(
-            Text("A Nash Equilibrium is a strategy profile", font_size=22, color=WHITE),
+            Text("A Nash Equilibrium is a strategy profile", font_size=22, color=INK),
             MathTex(
                 r"s^* = (s_1^*, s_2^*, \ldots, s_n^*)",
                 font_size=28, color=NE_COLOR
             ),
-            Text("such that no player can profitably deviate unilaterally.", font_size=22, color=WHITE),
+            Text("such that no player can profitably deviate unilaterally.", font_size=22, color=INK),
         ).arrange(DOWN, buff=0.25).next_to(subtitle, DOWN, buff=0.6)
 
         self.play(FadeIn(definition, shift=UP * 0.15))
@@ -128,7 +129,7 @@ class GameTheoryNash(Scene):
 
         # Explanation text
         explainer = VGroup(
-            Text("Each cell shows payoffs as (Player 1, Player 2).", font_size=20, color=WHITE),
+            Text("Each cell shows payoffs as (Player 1, Player 2).", font_size=20, color=INK),
             Text("Negative values = years in prison (lower is better).", font_size=20, color=GRAY_LIGHT),
         ).arrange(DOWN, buff=0.18).to_edge(DOWN).shift(UP * 0.3)
         self.play(FadeIn(explainer))
@@ -238,8 +239,8 @@ class GameTheoryNash(Scene):
 
         # ── BRD trajectory: (B,R) → (T,?) → (T,L) ──────────────────────────
         # Start: P2 plays R (col 2). P1's BR: B (row 2, payoff 4)
-        start_dot = Dot(cell_centers[(2, 2)], color=YELLOW, radius=0.18)
-        start_lbl = Text("Start: (B, R)", font_size=18, color=YELLOW).next_to(start_dot, RIGHT, buff=0.2)
+        start_dot = Dot(cell_centers[(2, 2)], color=OCHRE, radius=0.18)
+        start_lbl = Text("Start: (B, R)", font_size=18, color=OCHRE).next_to(start_dot, RIGHT, buff=0.2)
         self.play(FadeIn(start_dot), Write(start_lbl))
         self.wait(0.5)
 
@@ -261,22 +262,24 @@ class GameTheoryNash(Scene):
 
         # Step-by-step BRD: (B,L) → converge to (T,L)
         steps = [
-            ((2, 0), "Start: (B, L)", YELLOW),
+            ((2, 0), "Start: (B, L)", OCHRE),
             ((0, 0), "P1's BR to L: T  (4>1>0)", P1_COLOR),
             ((0, 0), "P2's BR to T: L  (4>1>0)", P2_COLOR),
         ]
 
         prev_center = cell_centers[(2, 0)]
-        dot = Dot(prev_center, color=YELLOW, radius=0.18)
+        dot = Dot(prev_center, color=OCHRE, radius=0.18)
         lbl = Text(steps[0][1], font_size=18, color=steps[0][2]).to_edge(RIGHT).shift(UP * 2)
         self.play(FadeIn(dot), Write(lbl))
         self.wait(0.5)
 
+        arrows = VGroup()   # every step's arrow, so all leave with the scene (one used to linger)
         for (i, j), label_str, color in steps[1:]:
             new_center = cell_centers[(i, j)]
             arrow = Arrow(prev_center, new_center, color=color,
                           buff=0.22, stroke_width=3, max_tip_length_to_length_ratio=0.2)
             new_lbl = Text(label_str, font_size=18, color=color).to_edge(RIGHT).shift(UP * 2)
+            arrows.add(arrow)
             self.play(GrowArrow(arrow), Transform(lbl, new_lbl))
             self.play(dot.animate.move_to(new_center))
             prev_center = new_center
@@ -291,7 +294,7 @@ class GameTheoryNash(Scene):
 
         self.play(FadeOut(VGroup(
             heading, cells, pay_texts, row_labels, col_labels,
-            p1_lbl, p2_lbl, description, dot, lbl, ne_rect, ne_text, arrow
+            p1_lbl, p2_lbl, description, dot, lbl, ne_rect, ne_text, arrows
         )))
 
     # ── Scene 4 : Mixed-Strategy NE via BR curve intersection ────────────────
@@ -322,9 +325,9 @@ class GameTheoryNash(Scene):
             y_range=[0, 1, 0.25],
             x_length=5.5,
             y_length=5.5,
-            axis_config={"include_numbers": True, "font_size": 20, "color": WHITE},
+            axis_config={"include_numbers": True, "font_size": 20, "color": INK},
             tips=True,
-        ).shift(DOWN * 0.3)
+        ).shift(LEFT * 2.0 + DOWN * 0.3)
 
         x_label = ax.get_x_axis_label(
             MathTex(r"q\;(\text{P2 prob of H})", font_size=22), edge=RIGHT, direction=RIGHT
@@ -337,7 +340,7 @@ class GameTheoryNash(Scene):
 
         # ── Best-response correspondences ────────────────────────────────────
         # P1's BR: p=1 if q>1/2, p=0 if q<1/2, p∈[0,1] if q=1/2
-        # Draw as a staircase in RED (P1 color)
+        # Draw as a staircase in ACCENT (P1 color)
         br_p1 = VGroup(
             ax.plot_line_graph(x_values=[0, 0.5], y_values=[0, 0],
                                line_color=P1_COLOR, stroke_width=3, add_vertex_dots=False),
@@ -348,22 +351,24 @@ class GameTheoryNash(Scene):
                                line_color=P1_COLOR, stroke_width=3, add_vertex_dots=False),
         )
 
-        # P2's BR: q=1 if p>1/2, q=0 if p<1/2, q∈[0,1] if p=1/2
-        # Note: axes are (q horizontal, p vertical), so P2's BR is a horizontal staircase
+        # P2 (the mismatcher): q=1 if p<1/2, q=0 if p>1/2, q∈[0,1] if p=1/2.
+        # (Corrected 2026-11-24: the earlier drawing had q=0 for p<1/2, which made the two
+        # correspondences cross at (0,0) and (1,1) as well; Matching Pennies has only (½, ½).)
+        # Axes are (q horizontal, p vertical).
         br_p2 = VGroup(
-            ax.plot_line_graph(x_values=[0, 0], y_values=[0, 0.5],
+            ax.plot_line_graph(x_values=[1, 1], y_values=[0, 0.5],
                                line_color=P2_COLOR, stroke_width=3, add_vertex_dots=False),
             ax.plot_line_graph(x_values=[0, 1], y_values=[0.5, 0.5],
                                line_color=P2_COLOR, stroke_width=3, stroke_opacity=0.6,
                                add_vertex_dots=False),
-            ax.plot_line_graph(x_values=[1, 1], y_values=[0.5, 1],
+            ax.plot_line_graph(x_values=[0, 0], y_values=[0.5, 1],
                                line_color=P2_COLOR, stroke_width=3, add_vertex_dots=False),
         )
 
         p1_legend = VGroup(
             Line(ORIGIN, RIGHT * 0.5, color=P1_COLOR, stroke_width=3),
             Text("BR₁(q)", font_size=20, color=P1_COLOR)
-        ).arrange(RIGHT, buff=0.15).to_corner(DR).shift(LEFT * 0.3 + UP * 0.9)
+        ).arrange(RIGHT, buff=0.15).move_to(RIGHT * 4.2 + UP * 1.0)
 
         p2_legend = VGroup(
             Line(ORIGIN, RIGHT * 0.5, color=P2_COLOR, stroke_width=3),
@@ -383,9 +388,10 @@ class GameTheoryNash(Scene):
 
         # Intuition text
         intuition = VGroup(
-            Text("At (p*=½, q*=½) neither player", font_size=19, color=WHITE),
-            Text("can improve by changing their mix.", font_size=19, color=WHITE),
-        ).arrange(DOWN, buff=0.15).to_edge(DOWN).shift(UP * 0.3)
+            Text("At (p* = ½, q* = ½)", font_size=19, color=INK),
+            Text("neither player can improve", font_size=19, color=INK),
+            Text("by changing their mix.", font_size=19, color=INK),
+        ).arrange(DOWN, buff=0.15, aligned_edge=LEFT).next_to(p1_legend, DOWN, buff=0.9).align_to(p2_legend, LEFT)
         self.play(FadeIn(intuition))
         self.wait(2.5)
 
@@ -399,7 +405,7 @@ class GameTheoryNash(Scene):
             Text("Nash's Existence Theorem", font_size=34, color=NE_COLOR),
             MathTex(
                 r"\text{Every finite game has at least one Nash Equilibrium}",
-                font_size=26, color=WHITE
+                font_size=26, color=INK
             ),
             MathTex(
                 r"\text{(possibly in mixed strategies).}",

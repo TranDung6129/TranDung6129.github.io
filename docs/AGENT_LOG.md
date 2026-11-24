@@ -520,3 +520,29 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - **`d2-check.cjs`:** 11/11 (equation numbers and eqref targets, callouts, Hình/Bảng numbering, plot alternative text and handwriting font, theme-aware plot colours, storyboard, axe 0, no overflow at 1440/390 light/dark).
   - **Found and fixed while prototyping:** the inherited passthrough hook dropped `\begin{equation}`; MathJax `\eqref` links are focusable inside `aria-hidden` (replaced by the `eqref` shortcode).
 
+### 2026-11-24 — D2 content and media protocol implemented — Claude Code
+- **Branch:** `feat/d2-content-media` (from `main` after #49). The owner approved the example set with one change: centre numbered tables.
+- **Changed:**
+  - Shortcodes `callout`, `table`, `plot`, `eqref`.
+  - Passthrough hook keeps `\begin{equation|align}`.
+  - MathJax `tags: 'ams'` and the matching passthrough delimiters.
+  - `d2.css` with the plot palette and the Patrick Hand font.
+  - `scripts/plotstyle/`, `assets/plots/`.
+  - Manim theme and OFL fonts.
+  - i18n in four languages.
+  - The Nash film re-rendered on the ivory theme, with three corrections (player 2's best response reversed, a lingering arrow, overlapping text).
+  - The sample page moved to the test fixture `docs/audits/d2/fixture`.
+- **Tests (exit 0):**
+  - Clean build: 0 warnings.
+  - `check-redirects.py`: 161 valid, 0 HTML routes lost.
+  - Every maths page's MathJax output compared with `main`: no difference.
+  - `d2-check.cjs` on the fixture: 10/10.
+  - `d3-check.cjs`: 18/18.
+  - `d4-check.cjs`: 48 states.
+  - `test-d1.cjs`: 31/31.
+  - `p3-smoke.cjs`: 32/32.
+- **Gaps:**
+  - No essay uses the new blocks yet (the new essay set will).
+  - The film's English text is unchanged apart from colours and the corrections; no Vietnamese version of the film.
+- **Next:** owner approves the merge → production check → D2 DONE; then D6.
+

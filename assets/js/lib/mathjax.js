@@ -18,6 +18,8 @@ window.MathJax = {
   tex: {
     displayMath: [['\\[', '\\]'], ['$$', '$$']],
     inlineMath: [['\\(', '\\)'], ['$', '$']],
+    // D2: number \begin{equation}/align (AMS); $$…$$ stays unnumbered.
+    tags: 'ams',
     packages: {
       ...params.packages,
     },

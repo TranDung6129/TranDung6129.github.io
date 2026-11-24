@@ -160,3 +160,24 @@ Agents may propose choices; changes to accepted product direction require mainta
   - The Mattioli sprig stays an ornament only.
 - **Hero illustrations:** owner-made AI art following `docs/phases/phase-4/d5/HERO_GUIDE.md`; optional per essay, labelled "Minh hoạ", with provenance recorded.
 - **Not changed:** design tokens, fonts and spacing (Phase 2).
+
+## D-021 — D2 content and media protocol
+- **Status:** ACCEPTED by the owner. Decisions 2026-11-24; example set reviewed 2026-11-24 with one change (centre numbered tables), implemented. Record: `docs/phases/phase-4/d2/`, evidence `docs/audits/d2/`.
+- **Blocks:**
+  - `{{< callout definition|theorem|example|note|warning >}}`.
+  - `{{< table caption >}}`: a numbered, centred table with a real `<caption>`.
+  - `{{< plot src caption alt >}}`: a numbered, inline, theme-aware SVG with `role="img"`.
+  - `{{< eqref >}}`: an accessible equation reference.
+- **Mathematics:**
+  - Standard typesetting; handwriting only in annotations.
+  - `\begin{equation}` / `align` pass through and are numbered (AMS tags); `$$…$$` stays unnumbered. No existing essay used those environments, so no live equation changed.
+- **Plots:**
+  - One palette (contrast ≥ 4.3:1 on both themes) for web, matplotlib (`scripts/plotstyle/`) and Manim (`manim/epistemic_theme.py`).
+  - Web SVGs map colours to CSS variables and keep text as text.
+  - Patrick Hand (OFL, Vietnamese) for annotations; Source Serif 4 (OFL) in video.
+- **Video:** ivory paper, brown ink; no narrator yet.
+- **Nash film corrections (re-rendered on the new theme):**
+  - Player 2's best response was drawn reversed (q = 0 for p < ½), which made the curves cross at (0,0) and (1,1) as well as (½,½). It is now q = 1 for p < ½, with a single crossing.
+  - An arrow from the best-response scene lingered into the next scene; it is removed.
+  - The closing sentence overlapped the axis; it is moved.
+- **Interactive:** unchanged (P4-04).

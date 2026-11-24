@@ -1,6 +1,6 @@
 # D2 — Content & media protocol: design specification
 
-**Status:** EXAMPLE SET READY FOR OWNER REVIEW (2026-11-24). Nothing is live. Decisions: `DISCOVERY.md`. Prototype: `prototype/`, built with `scripts/preview-overlay.sh docs/phases/phase-4/d2/prototype <dir>`; sample at `/kinh-te/d2-mau-matching-pennies/`. Screenshots: `docs/audits/d2/screenshots/`. Checks: `docs/audits/d2/tools/d2-check.cjs` → 11/11.
+**Status:** APPROVED 2026-11-24 (one change: centre numbered tables) and implemented in `feat/d2-content-media` (D-021). The sample page became the test fixture `docs/audits/d2/fixture` (not published). Decisions: `DISCOVERY.md`. Prototype: `prototype/`, built with `scripts/preview-overlay.sh docs/phases/phase-4/d2/prototype <dir>`; sample at `/kinh-te/d2-mau-matching-pennies/`. Screenshots: `docs/audits/d2/screenshots/`. Checks: `docs/audits/d2/tools/d2-check.cjs` → 11/11.
 
 The example is one real problem, Matching Pennies, worked through with every block. Its mathematics is checked:
 - the indifference condition gives q* = ½;

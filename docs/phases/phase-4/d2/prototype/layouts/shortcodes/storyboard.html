@@ -1,6 +1,0 @@
-{{- /* D2 prototype: storyboard frames rendered with manim/epistemic_theme.py (review only). */ -}}
-<div class="storyboard">
-{{- range $i, $f := slice "01-title" "02-matrix" "03-best-response" }}
-  <figure><img src="{{ printf "/images/d2/storyboard-%s.png" $f | relURL }}" alt="{{ index (slice "Khung 1: tiêu đề trên nền giấy ngà" "Khung 2: ma trận lợi ích, ghi chú viết tay chỉ ô (H, H)" "Khung 3: hai đường phản ứng tốt nhất cắt nhau tại (1/2, 1/2)") $i }}" loading="lazy" width="960" height="540"><figcaption>{{ index (slice "Mở đầu" "Ma trận lợi ích" "Đường phản ứng tốt nhất") $i }}</figcaption></figure>
-{{- end }}
-</div>

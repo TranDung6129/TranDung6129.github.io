@@ -30,7 +30,3 @@
 .prose mjx-container[display="true"] mjx-mtd[id^="mjx-eqn"], .prose mjx-labels { color: var(--ed-muted); }
 /* Handwriting is for annotations only (D2 owner decision). */
 .hand { font-family: 'Patrick Hand', cursive; font-size: 1.15em; color: var(--ed-accent); }
-/* Storyboard (review only). */
-.prose .storyboard { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.5rem 0; }
-.prose .storyboard img { display: block; width: 100%; height: auto; border: 1px solid var(--ed-border); }
-.prose .storyboard figcaption { font: 400 0.8rem var(--ed-sans); color: var(--ed-muted); margin-top: 0.3rem; }
