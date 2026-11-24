@@ -1,0 +1,225 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" class="plot-svg" viewBox="0 0 314.883516 323.639101" xmlns="http://www.w3.org/2000/svg" version="1.1"><title>Đường phản ứng tốt nhất của hai người chơi trong Matching Pennies, cắt nhau tại (1/2, 1/2)</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 323.639101 
+L 314.883516 323.639101 
+L 314.883516 0 
+L 0 0 
+L 0 323.639101 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 39.843516 283.487772 
+L 307.683516 283.487772 
+L 307.683516 50.639772 
+L 39.843516 50.639772 
+L 39.843516 283.487772 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 52.018061 283.487772 
+L 52.018061 50.639772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke: var(--plot-grid); stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="mdeade07724" d="M 0 0 
+L 0 3.5 
+" style="stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mdeade07724" x="52.018061" y="283.487772" style="fill: var(--plot-ink); stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: middle; fill: var(--plot-ink)" x="52.018061" y="298.085429" transform="rotate(-0 52.018061 298.085429)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 173.763516 283.487772 
+L 173.763516 50.639772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke: var(--plot-grid); stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mdeade07724" x="173.763516" y="283.487772" style="fill: var(--plot-ink); stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: middle; fill: var(--plot-ink)" x="173.763516" y="298.085429" transform="rotate(-0 173.763516 298.085429)">½</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 295.50897 283.487772 
+L 295.50897 50.639772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke: var(--plot-grid); stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mdeade07724" x="295.50897" y="283.487772" style="fill: var(--plot-ink); stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: middle; fill: var(--plot-ink)" x="295.50897" y="298.085429" transform="rotate(-0 295.50897 298.085429)">1</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 11px; font-family: var(--ed-serif); text-anchor: middle; fill: var(--plot-ink)" x="173.763516" y="313.796522" transform="rotate(-0 173.763516 313.796522)">p: xác suất người chơi 1 chọn H</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <path d="M 39.843516 272.903772 
+L 307.683516 272.903772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke: var(--plot-grid); stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <defs>
+       <path id="ma6def72fe8" d="M 0 0 
+L -3.5 0 
+" style="stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ma6def72fe8" x="39.843516" y="272.903772" style="fill: var(--plot-ink); stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: end; fill: var(--plot-ink)" x="32.843516" y="276.702601" transform="rotate(-0 32.843516 276.702601)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <path d="M 39.843516 167.063772 
+L 307.683516 167.063772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke: var(--plot-grid); stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#ma6def72fe8" x="39.843516" y="167.063772" style="fill: var(--plot-ink); stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: end; fill: var(--plot-ink)" x="32.843516" y="170.862601" transform="rotate(-0 32.843516 170.862601)">½</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <path d="M 39.843516 61.223772 
+L 307.683516 61.223772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke: var(--plot-grid); stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#ma6def72fe8" x="39.843516" y="61.223772" style="fill: var(--plot-ink); stroke: var(--plot-ink); stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: end; fill: var(--plot-ink)" x="32.843516" y="65.022601" transform="rotate(-0 32.843516 65.022601)">1</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 11px; font-family: var(--ed-serif); text-anchor: middle; fill: var(--plot-ink)" x="16.50875" y="167.063772" transform="rotate(-90 16.50875 167.063772)">q: xác suất người chơi 2 chọn H</text>
+    </g>
+   </g>
+   <g id="line2d_13">
+    <path d="M 52.018061 272.903772 
+L 52.018061 167.063772 
+L 295.50897 167.063772 
+L 295.50897 61.223772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke: var(--plot-1); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 52.018061 61.223772 
+L 173.763516 61.223772 
+L 173.763516 272.903772 
+L 295.50897 272.903772 
+" clip-path="url(#p30a413c42e)" style="fill: none; stroke-dasharray: 10,6; stroke-dashoffset: 0; stroke: var(--plot-2); stroke-width: 2"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 39.843516 283.487772 
+L 39.843516 50.639772 
+" style="fill: none; stroke: var(--plot-ink); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 39.843516 283.487772 
+L 307.683516 283.487772 
+" style="fill: none; stroke: var(--plot-ink); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 211.265165 120.275316 
+Q 201.258229 147.428679 177.874541 164.203582 
+" style="fill: none; stroke: var(--plot-ink); stroke-width: 0.9; stroke-linecap: round"/>
+    <path d="M 184.056907 163.214466 
+L 177.874541 164.203582 
+L 180.792668 158.66422 
+z
+" style="fill: var(--plot-ink); stroke: var(--plot-ink); stroke-width: 0.9; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14px; font-family:'Patrick Hand', cursive; text-anchor: start; fill: var(--plot-ink)" x="161.58897" y="112.026972" transform="rotate(-0 161.58897 112.026972)">cân bằng Nash (½, ½)</text>
+   </g>
+   <g id="line2d_15">
+    <defs>
+     <path id="ma93e78f054" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: var(--plot-ink)"/>
+    </defs>
+    <g clip-path="url(#p30a413c42e)">
+     <use xlink:href="#ma93e78f054" x="173.763516" y="167.063772" style="fill: var(--plot-ink); stroke: var(--plot-ink)"/>
+    </g>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_16">
+     <path d="M 48.843516 15.689062 
+L 58.843516 15.689062 
+L 68.843516 15.689062 
+" style="fill: none; stroke: var(--plot-1); stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: start; fill: var(--plot-ink)" x="76.843516" y="19.189062" transform="rotate(-0 76.843516 19.189062)">BR₁(q): người chơi 1</text>
+    </g>
+    <g id="line2d_17">
+     <path d="M 48.843516 31.080469 
+L 58.843516 31.080469 
+L 68.843516 31.080469 
+" style="fill: none; stroke-dasharray: 10,6; stroke-dashoffset: 0; stroke: var(--plot-2); stroke-width: 2"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 10px; font-family: var(--ed-serif); text-anchor: start; fill: var(--plot-ink)" x="76.843516" y="34.580469" transform="rotate(-0 76.843516 34.580469)">BR₂(p): người chơi 2</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p30a413c42e">
+   <rect x="39.843516" y="50.639772" width="267.84" height="232.848"/>
+  </clipPath>
+ </defs>
+</svg>

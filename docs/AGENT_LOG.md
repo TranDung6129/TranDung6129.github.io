@@ -514,3 +514,9 @@ This is an append-only log, except to correct factual mistakes. **No implementat
   - `/ornaments/d5/*.webp` and `/images/favicon.svg` are served (200, correct types).
   - TASK_BOARD D5 → DONE.
 - **D2 claimed** (`docs/d2-discovery`).
+- 2026-11-24 (D2):
+  - **Owner decisions:** standard maths (handwriting for annotations only); web, matplotlib and Manim share one style; ivory video background; no narrator yet.
+  - **Example set prototype:** `docs/phases/phase-4/d2/prototype`.
+  - **`d2-check.cjs`:** 11/11 (equation numbers and eqref targets, callouts, Hình/Bảng numbering, plot alternative text and handwriting font, theme-aware plot colours, storyboard, axe 0, no overflow at 1440/390 light/dark).
+  - **Found and fixed while prototyping:** the inherited passthrough hook dropped `\begin{equation}`; MathJax `\eqref` links are focusable inside `aria-hidden` (replaced by the `eqref` shortcode).
+

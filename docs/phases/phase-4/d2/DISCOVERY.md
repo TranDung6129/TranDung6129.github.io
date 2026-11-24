@@ -13,3 +13,9 @@
 
 ## Questions for the owner
 Recorded below with the answers.
+
+## Owner decisions (2026-11-24)
+1. **Mathematics:** standard typesetting in essays. Handwriting only for annotations on plots, illustrations and video.
+2. **Plot tools:** web (on the page), Python (matplotlib) and Manim (video) share one style.
+3. **Video:** ivory paper, brown ink.
+4. **Narrator character:** not now.

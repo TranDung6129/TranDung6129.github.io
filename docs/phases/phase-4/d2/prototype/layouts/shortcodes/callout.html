@@ -1,0 +1,11 @@
+{{- /* D2 callout block. Usage:
+       {{< callout definition "Cân bằng Nash" >}}Markdown…{{< /callout >}}
+       kinds: definition | theorem | example | note | warning  (label localised; title optional).
+       A semantic <aside> with a visible label; theorem/definition text stays plain prose. */ -}}
+{{- $kind := .Get 0 | default "note" -}}
+{{- if not (in (slice "definition" "theorem" "example" "note" "warning") $kind) }}{{ errorf "callout: unknown kind %q in %s" $kind .Page.File.Path }}{{ end -}}
+{{- $title := .Get 1 -}}
+<aside class="callout callout-{{ $kind }}" aria-label="{{ T (printf "ed_callout_%s" $kind) }}{{ with $title }}: {{ . }}{{ end }}">
+  <p class="callout-label">{{ T (printf "ed_callout_%s" $kind) }}{{ with $title }}<span class="callout-title"> · {{ . | $.Page.RenderString }}</span>{{ end }}</p>
+  <div class="callout-body">{{ .Inner | $.Page.RenderString (dict "display" "block") }}</div>
+</aside>

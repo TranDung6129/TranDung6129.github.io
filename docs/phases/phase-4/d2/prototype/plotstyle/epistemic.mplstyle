@@ -1,0 +1,30 @@
+# The Epistemic Diary — matplotlib style (D2). Light-theme colours; epistemic_plot.save_web()
+# turns them into CSS variables so web figures follow the site's light/dark theme.
+figure.facecolor: none
+axes.facecolor: none
+savefig.facecolor: none
+savefig.transparent: True
+font.family: serif
+font.serif: Source Serif 4, Newsreader, DejaVu Serif
+font.size: 11
+axes.titlesize: 12
+axes.labelsize: 11
+axes.edgecolor: 332e28
+axes.labelcolor: 332e28
+axes.linewidth: 0.8
+axes.spines.top: False
+axes.spines.right: False
+axes.grid: True
+grid.color: d9d1c3
+grid.linewidth: 0.6
+xtick.color: 332e28
+ytick.color: 332e28
+xtick.labelsize: 10
+ytick.labelsize: 10
+text.color: 332e28
+lines.linewidth: 2.0
+axes.prop_cycle: cycler('color', ['8c4a32', '3f6584', '5f6f2e', '9a6a12'])
+legend.frameon: False
+legend.fontsize: 10
+svg.fonttype: none
+mathtext.fontset: cm

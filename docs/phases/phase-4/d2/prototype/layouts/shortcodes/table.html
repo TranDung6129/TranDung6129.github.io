@@ -1,0 +1,10 @@
+{{- /* D2 numbered table. Wrap a Markdown table:
+       {{< table caption="Ma trận lợi ích của Matching Pennies" >}}
+       | | H | T |
+       …
+       {{< /table >}}   → "Bảng 1. …" as a real <caption> (announced with the table). */ -}}
+{{- $p := .Page -}}
+{{- $n := add 1 (len (findRE `\{\{<\s*table\s` (substr (partial "editorial/shortcode-source.html" $p) 0 .Position.Offset))) -}}
+{{- $html := .Inner | $p.RenderString (dict "display" "block") -}}
+{{- $cap := printf `<caption><span class="fig-label">%s.</span> %s</caption>` (T "ed_table" (dict "N" $n)) (.Get "caption" | $p.RenderString) -}}
+<div class="table-figure" id="tab-{{ $n }}">{{ replaceRE `<table>` (printf "<table>%s" $cap) $html 1 | safeHTML }}</div>
