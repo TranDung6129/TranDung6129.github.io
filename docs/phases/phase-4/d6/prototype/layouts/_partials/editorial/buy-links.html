@@ -1,0 +1,11 @@
+{{- /* D6: where to get a book, with the affiliate disclosure next to the links. Input: an item with
+       `buy: [{store, url, affiliate}]`. Links are rel="sponsored" when affiliate; a click is counted
+       (no cookie) through data-goatcounter-click when analytics are on. Nothing renders without a
+       real URL; `sample: true` marks review-only placeholders. */ -}}
+{{- with .buy -}}
+{{- $aff := false -}}{{- range . }}{{ if .affiliate }}{{ $aff = true }}{{ end }}{{ end -}}
+<p class="buy-links"><span class="buy-label">{{ T "ed_buy" }}</span>
+{{- range $i, $b := . }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $b.url }}" rel="{{ if $b.affiliate }}sponsored {{ end }}noopener" data-goatcounter-click="buy:{{ $b.store | urlize }}" data-goatcounter-title="{{ $b.store }}">{{ $b.store }}{{ if $b.sample }} <span class="sample-badge">{{ T "ed_sample" }}</span>{{ end }} <span aria-hidden="true">↗</span></a>{{ end -}}
+</p>
+{{- if $aff }}<p class="buy-disclosure">{{ T "ed_affiliateNote" }}</p>{{ end -}}
+{{- end -}}

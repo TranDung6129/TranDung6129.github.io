@@ -1,0 +1,10 @@
+{{- /* D6 voluntary support: never gates content. Shown under an essay's footer and on About when
+       site.Params.support.url (and optionally .qr, a static image path) is set. */ -}}
+{{- with site.Params.support -}}{{- if .url -}}
+<aside class="support" aria-labelledby="support-title">
+  <h2 id="support-title">{{ T "ed_supportTitle" }}</h2>
+  <p>{{ T "ed_supportText" }}</p>
+  <p class="support-actions"><a class="support-button" href="{{ .url }}" rel="noopener" data-goatcounter-click="support">{{ .label | default (T "ed_supportButton") }}{{ if .sample }} <span class="sample-badge">{{ T "ed_sample" }}</span>{{ end }} <span aria-hidden="true">↗</span></a>
+  {{- with .qr }}<span class="support-qr"><img src="{{ . | relURL }}" alt="{{ T "ed_supportQr" }}" width="120" height="120" loading="lazy"></span>{{ end -}}</p>
+</aside>
+{{- end -}}{{- end -}}

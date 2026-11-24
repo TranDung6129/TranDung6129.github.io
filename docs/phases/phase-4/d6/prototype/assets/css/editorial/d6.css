@@ -1,0 +1,14 @@
+/* D6 — recommendation reasons, buy links with disclosure, voluntary support. */
+.essay-meta .why { color: var(--ed-accent); }
+.essay-meta .why-topic { color: var(--ed-muted); }
+.buy-links { margin: 0.5rem 0 0; font: 500 0.8rem/1.5 var(--ed-sans); }
+.buy-label { color: var(--ed-muted); margin-right: 0.4rem; }
+.buy-links a { color: var(--ed-accent); }
+.buy-disclosure { margin: 0.3rem 0 0; font: 400 0.72rem/1.45 var(--ed-sans); color: var(--ed-muted); }
+.sample-badge { display: inline-block; padding: 0 0.3rem; border: 1px dashed currentColor; font: 700 0.6rem/1.4 var(--ed-sans); letter-spacing: 0.08em; }
+.support { width: min(100% - 2rem, var(--d1-measure, 44rem)); margin: 2rem auto 1rem; padding: 1.1rem 0 1.2rem; border-top: 1px solid var(--ed-border); border-bottom: 1px solid var(--ed-border); text-align: center; }
+.support h2 { margin: 0 0 0.35rem; font: 500 1.2rem/1.3 var(--ed-display); }
+.support p { margin: 0 auto; max-width: 34rem; font-size: 0.95rem; color: var(--ed-muted); }
+.support-actions { margin-top: 0.8rem !important; display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.support-button { display: inline-block; padding: 0.45rem 1rem; border: 1px solid var(--ed-accent); color: var(--ed-accent); font: 600 0.85rem var(--ed-sans); text-decoration: none; }
+.support-button:hover, .support-button:focus-visible { background: color-mix(in srgb, var(--ed-accent) 10%, transparent); }
