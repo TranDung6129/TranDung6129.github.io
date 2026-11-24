@@ -17,11 +17,14 @@
 /* Figures and numbered tables. */
 .prose .plot-figure { margin: 2rem auto; max-width: 30rem; }
 .prose .plot-svg { display: block; width: 100%; height: auto; }
-.prose .plot-figure figcaption, .prose .table-figure caption { margin-top: 0.6rem; font: 400 0.84rem/1.5 var(--ed-sans); color: var(--ed-muted); text-align: left; caption-side: bottom; }
+.prose .plot-figure figcaption, .prose .table-figure caption { margin-top: 0.6rem; padding-top: 0.5rem; font: 400 0.84rem/1.5 var(--ed-sans); color: var(--ed-muted); text-align: left; caption-side: bottom; }
 .prose .fig-label { font-weight: 700; color: var(--ed-fg); }
+.prose .table-figure caption { text-align: center; }
 .prose .fig-source { display: block; font-size: 0.78rem; }
-.prose .table-figure { margin: 1.8rem 0; }
-.prose .table-figure table { margin-inline: auto; }
+.prose .table-figure { margin: 1.8rem 0; overflow-x: auto; }
+/* Centred (owner, 2026-11-24): the wrapper scrolls on narrow screens, so the table itself can be
+   a real, content-sized table in the middle of the measure instead of D1's full-width block. */
+.d1-article .prose .table-figure table { display: table; width: auto; max-width: none; margin-inline: auto; }
 .prose .plot-figure:target, .prose .table-figure:target { outline: 2px solid color-mix(in srgb, var(--ed-accent) 35%, transparent); outline-offset: 0.6rem; }
 /* Numbered display equations: MathJax AMS tags, accent-coloured, aligned with the measure. */
 .prose mjx-container[display="true"] mjx-mtd[id^="mjx-eqn"], .prose mjx-labels { color: var(--ed-muted); }

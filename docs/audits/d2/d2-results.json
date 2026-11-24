@@ -31,10 +31,11 @@
   ]
  },
  {
-  "name": "Figure and table are numbered (Hình 1, Bảng 1)",
+  "name": "Figure and table are numbered (Hình 1, Bảng 1); the table is centred in the prose (±2 px)",
   "passed": true,
   "fig": "Hình 1.",
-  "tab": "Bảng 1."
+  "tab": "Bảng 1.",
+  "tableCentre": 0
  },
  {
   "name": "Plot is an image with a text alternative; annotation uses the handwriting face, which is loaded",
@@ -65,6 +66,7 @@
    "Định lý · Định lý tồn tại"
   ],
   "fig": "Hình 1.",
+  "tableCentre": 0,
   "tab": "Bảng 1.",
   "plotRole": "img",
   "plotLabel": 133,

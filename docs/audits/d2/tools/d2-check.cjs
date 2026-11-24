@@ -20,7 +20,7 @@ const checks = []; const check = (n, ok, d = {}) => { checks.push({ name: n, pas
       return {
         overflow: document.documentElement.scrollWidth > innerWidth, mathErrors: document.querySelectorAll('mjx-merror').length, tags, refs,
         callouts: [...document.querySelectorAll('.callout')].map(c => c.querySelector('.callout-label').textContent.trim()),
-        fig: document.querySelector('.plot-figure figcaption .fig-label')?.textContent.trim(), tab: document.querySelector('.table-figure caption .fig-label')?.textContent.trim(),
+        fig: document.querySelector('.plot-figure figcaption .fig-label')?.textContent.trim(), tableCentre: (() => { const t = document.querySelector('.table-figure table')?.getBoundingClientRect(), pr = document.querySelector('.d1-article .prose').getBoundingClientRect(); return t ? Math.round((t.left + t.width / 2) - (pr.left + pr.width / 2)) : null; })(), tab: document.querySelector('.table-figure caption .fig-label')?.textContent.trim(),
         plotRole: document.querySelector('.plot-svg')?.getAttribute('role'), plotLabel: (document.querySelector('.plot-svg')?.getAttribute('aria-label') || '').length,
         plotStroke: path ? getComputedStyle(path).stroke : null, handFont: (() => { const t = [...document.querySelectorAll('.plot-svg text')].find(t => /patrick hand/i.test(getComputedStyle(t).fontFamily)); return t ? getComputedStyle(t).fontFamily : null; })(),
         handLoaded: document.fonts.check('16px "Patrick Hand"'), frames: [...document.querySelectorAll('.storyboard img')].map(i => i.complete && i.naturalWidth > 0),
@@ -30,7 +30,7 @@ const checks = []; const check = (n, ok, d = {}) => { checks.push({ name: n, pas
     if (w === 1440 && scheme === 'light') {
       check('Display equations are numbered (1), (2) and every eqref link reaches its equation with the same number', info.tags.length >= 2 && info.tags[0].includes('1') && info.refs.length >= 2 && info.refs.every(r => r.ok && r.eqTag === r.text.replace(/[()]/g, '')), { tags: info.tags, refs: info.refs });
       check('Callouts render with localised labels (Định nghĩa, Cảnh báo, Định lý)', ['Định nghĩa', 'Cảnh báo', 'Định lý'].every(k => info.callouts.some(c => c.startsWith(k))), { callouts: info.callouts });
-      check('Figure and table are numbered (Hình 1, Bảng 1)', info.fig === 'Hình 1.' && info.tab === 'Bảng 1.', { fig: info.fig, tab: info.tab });
+      check('Figure and table are numbered (Hình 1, Bảng 1); the table is centred in the prose (±2 px)', info.fig === 'Hình 1.' && info.tab === 'Bảng 1.' && Math.abs(info.tableCentre) <= 2, { fig: info.fig, tab: info.tab, tableCentre: info.tableCentre });
       check('Plot is an image with a text alternative; annotation uses the handwriting face, which is loaded', info.plotRole === 'img' && info.plotLabel > 20 && /patrick hand/i.test(info.handFont || '') && info.handLoaded, info);
       check('Storyboard frames load', info.frames.length === 3 && info.frames.every(Boolean), { frames: info.frames });
       if (axe) { await p.addScriptTag({ content: axe }); const v = await p.evaluate(async () => (await axe.run(document, { runOnly: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] })).violations.map(x => [x.id, x.nodes.length])); check('axe WCAG 2.1 A/AA: 0 violations', !v.length, { v }); }

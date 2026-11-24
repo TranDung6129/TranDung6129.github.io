@@ -12,7 +12,7 @@ The example is one real problem, Matching Pennies, worked through with every blo
   - Theorem text is italic.
   - Note and example are quieter (grey rule).
   - Warning has a heavier rule.
-- **Numbered tables:** `{{< table caption="…" >}}` wraps a Markdown table and adds a real `<caption>` "Bảng n." that is announced with the table.
+- **Numbered tables:** `{{< table caption="…" >}}` wraps a Markdown table and adds a real `<caption>` "Bảng n." that is announced with the table. The table is centred in the measure (owner, 2026-11-24); its wrapper scrolls on narrow screens.
 - **Code:** the existing block (language label, copy button, line numbers). Unchanged.
 - Paragraphs, quotes and lists are unchanged (Phase 2/D1). D3 notes and citations work inside every block.
 
