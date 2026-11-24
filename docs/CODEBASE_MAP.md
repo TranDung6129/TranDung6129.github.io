@@ -123,6 +123,7 @@ D1 production article reading layer: `layouts/_partials/editorial/article.html` 
 ## Modification record template (append short entries here, most recent first)
 | Date | PR/commit | Feature area | Former path → current path | Why / tests |
 |---|---|---|---|---|
+| 2026-11-24 | D8 / D-024 | Quality | `docs/audits/d8/tools/{d8-sweep,d8-browsers}.cjs` added; `site/redirects.html` markup = Hugo alias; ornament WebPs re-encoded | Sweep 93/93, SEO pass, all suites pass |
 | 2026-11-24 | D7 / D-023 | Authoring | New `tools/studio/` and `npm run studio` | Owner-chosen local dashboard; d7-check 9/9 (read-only) |
 | 2026-11-24 | D6 / D-022 | Discovery, monetization | New `buy-links`, `site/support`, `site/analytics`, `d6.css`; discovery candidates carry reasons | Owner-approved placements, shipped off; d6 20/20 (fixture), d2 10/10, d3 18/18, d4 48, test-d1 31/31, p3 32/32 |
 | 2026-11-24 | D2 / D-021 | Content & media | New shortcodes `callout/table/plot/eqref`, `d2.css`, `scripts/plotstyle/`, `manim/epistemic_theme.py`; passthrough hook keeps equation environments; Nash film re-rendered | Owner-approved example; d2 10/10, d3 18/18, d4 48, test-d1 31/31, p3 32/32, 0 routes lost |

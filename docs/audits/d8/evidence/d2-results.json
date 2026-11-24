@@ -1,0 +1,117 @@
+[
+ {
+  "name": "Display equations are numbered (1), (2) and every eqref link reaches its equation with the same number",
+  "passed": true,
+  "tags": [
+   "1",
+   "2"
+  ],
+  "refs": [
+   {
+    "href": "#eq-eq%3au1",
+    "text": "(1)",
+    "ok": true,
+    "eqTag": "1"
+   },
+   {
+    "href": "#eq-eq%3aqstar",
+    "text": "(2)",
+    "ok": true,
+    "eqTag": "2"
+   }
+  ]
+ },
+ {
+  "name": "Callouts render with localised labels (Định nghĩa, Cảnh báo, Định lý)",
+  "passed": true,
+  "callouts": [
+   "Định nghĩa · Matching Pennies",
+   "Cảnh báo",
+   "Định lý · Định lý tồn tại"
+  ]
+ },
+ {
+  "name": "Figure and table are numbered (Hình 1, Bảng 1); the table is centred in the prose (±2 px)",
+  "passed": true,
+  "fig": "Hình 1.",
+  "tab": "Bảng 1.",
+  "tableCentre": 0
+ },
+ {
+  "name": "Plot is an image with a text alternative; annotation uses the handwriting face, which is loaded",
+  "passed": true,
+  "overflow": false,
+  "mathErrors": 0,
+  "tags": [
+   "1",
+   "2"
+  ],
+  "refs": [
+   {
+    "href": "#eq-eq%3au1",
+    "text": "(1)",
+    "ok": true,
+    "eqTag": "1"
+   },
+   {
+    "href": "#eq-eq%3aqstar",
+    "text": "(2)",
+    "ok": true,
+    "eqTag": "2"
+   }
+  ],
+  "callouts": [
+   "Định nghĩa · Matching Pennies",
+   "Cảnh báo",
+   "Định lý · Định lý tồn tại"
+  ],
+  "fig": "Hình 1.",
+  "tableCentre": 0,
+  "tab": "Bảng 1.",
+  "plotRole": "img",
+  "plotLabel": 133,
+  "plotStroke": "rgb(140, 74, 50)",
+  "handFont": "\"patrick hand\", cursive",
+  "handLoaded": true,
+  "frames": []
+ },
+ {
+  "name": "axe WCAG 2.1 A/AA: 0 violations",
+  "passed": true,
+  "v": []
+ },
+ {
+  "name": "1440 light: HTTP 200, no overflow, no page or MathJax errors",
+  "passed": true,
+  "errors": [],
+  "mathErrors": 0
+ },
+ {
+  "name": "1440 dark: HTTP 200, no overflow, no page or MathJax errors",
+  "passed": true,
+  "errors": [],
+  "mathErrors": 0
+ },
+ {
+  "name": "390 light: HTTP 200, no overflow, no page or MathJax errors",
+  "passed": true,
+  "errors": [],
+  "mathErrors": 0
+ },
+ {
+  "name": "390 dark: HTTP 200, no overflow, no page or MathJax errors",
+  "passed": true,
+  "errors": [],
+  "mathErrors": 0
+ },
+ {
+  "name": "Plot colours follow the theme (series 1 differs between light and dark)",
+  "passed": true,
+  "plotColour": {
+   "1440-light": "rgb(140, 74, 50)",
+   "1440-dark": "rgb(212, 163, 115)",
+   "390-light": "rgb(140, 74, 50)",
+   "390-dark": "rgb(212, 163, 115)"
+  }
+ }
+]

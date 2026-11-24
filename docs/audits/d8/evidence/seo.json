@@ -1,0 +1,29 @@
+{
+  "pages": 105,
+  "untranslated_copies_in_content": 8,
+  "pages_with_hreflang": [
+    "/about/",
+    "/en/about/",
+    "/en/films/nash-animation/",
+    "/en/kinh-te/toan-co-ban-1/",
+    "/en/labs/nash-explorer/",
+    "/films/nash-animation/",
+    "/kinh-te/toan-co-ban-1/",
+    "/labs/nash-explorer/"
+  ],
+  "copies_canonicalised_to_original": [
+    "/en/series/toan-co-ban-cho-kinh-te/"
+  ],
+  "shared_canonical_groups_other_than_copy_plus_original": {},
+  "sitemap_files": 5,
+  "sitemap_locs": 97,
+  "search_index_records": {
+    "en/search.json": 10,
+    "ja/search.json": 0,
+    "search.json": 24,
+    "zh-cn/search.json": 0
+  },
+  "robots": "User-agent: *\n\nDisallow: /*offline/\nDisallow: /*404.html$\nDisallow: /*.md$\n\nUser-agent: MJ12bot\nDisallow: /\n\nUser-agent:",
+  "problems": [],
+  "pass": true
+}
