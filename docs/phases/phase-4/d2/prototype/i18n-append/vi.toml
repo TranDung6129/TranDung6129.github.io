@@ -1,0 +1,16 @@
+
+# --- D2 prototype keys ---
+[ed_callout_definition]
+other = "Định nghĩa"
+[ed_callout_theorem]
+other = "Định lý"
+[ed_callout_example]
+other = "Ví dụ"
+[ed_callout_note]
+other = "Lưu ý"
+[ed_callout_warning]
+other = "Cảnh báo"
+[ed_figure]
+other = "Hình {{ .N }}"
+[ed_table]
+other = "Bảng {{ .N }}"

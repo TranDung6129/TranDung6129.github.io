@@ -1,0 +1,3 @@
+layouts/_partials/site/head-assets.html	s/"site" "d1" "d4" "d3" "d5"/"site" "d1" "d4" "d3" "d5" "d2"/
+assets/js/lib/mathjax.js	/inlineMath:/a tags: 'ams',
+config/_default/markup.toml	s/        block = \[\[.\\\[., .\\\].\], \[.\$\$., .\$\$.\]\]/        block = [['\\[', '\\]'], ['$$', '$$'], ['\\begin{equation}', '\\end{equation}'], ['\\begin{align}', '\\end{align}']]/

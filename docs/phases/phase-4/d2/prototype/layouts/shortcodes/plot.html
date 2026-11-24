@@ -1,0 +1,15 @@
+{{- /* D2 figure from a theme-aware SVG made by scripts/plotstyle (save_web). Usage:
+       {{< plot src="matching-pennies-br.svg" caption="…" alt="…" >}}
+       The SVG (assets/plots/<src>) is inlined so its colours follow the site theme. Figures are
+       numbered per page in source order ("Hình 1"); an anchor id fig-<n> lets text link to it. */ -}}
+{{- $p := .Page -}}
+{{- $src := .Get "src" -}}
+{{- $res := resources.Get (printf "plots/%s" $src) -}}
+{{- if not $res }}{{ errorf "plot: assets/plots/%s not found (%s)" $src $p.File.Path }}{{ end -}}
+{{- $n := add 1 (len (findRE `\{\{<\s*plot\s` (substr (partial "editorial/shortcode-source.html" $p) 0 .Position.Offset))) -}}
+{{- $alt := .Get "alt" | default (.Get "caption") -}}
+{{- $svg := $res.Content | replaceRE `<metadata>[\s\S]*?</metadata>` "" | replaceRE `<svg ` (printf `<svg role="img" aria-label="%s" ` (htmlEscape $alt)) -}}
+<figure class="plot-figure" id="fig-{{ $n }}">
+  {{ $svg | safeHTML }}
+  <figcaption><span class="fig-label">{{ T "ed_figure" (dict "N" $n) }}.</span> {{ .Get "caption" | $p.RenderString }}{{ with .Get "source" }} <span class="fig-source">{{ . | $p.RenderString }}</span>{{ end }}</figcaption>
+</figure>

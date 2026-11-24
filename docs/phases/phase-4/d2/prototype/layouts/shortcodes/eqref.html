@@ -1,0 +1,14 @@
+{{- /* D2 equation reference. Usage: {{< eqref "eq:u1" >}} -> "(1)", linked to the equation.
+       A plain HTML link (outside MathJax's aria-hidden output, readable without script). The
+       number is the position of the labelled \begin{equation} among numbered equation blocks in
+       the source (equation* and align* are unnumbered; numbered align rows are not supported). */ -}}
+{{- $p := .Page -}}
+{{- $key := .Get 0 -}}
+{{- $src := partial "editorial/shortcode-source.html" $p -}}
+{{- $n := 0 -}}{{- $i := 0 -}}
+{{- range findRE `\\begin\{equation\}[\s\S]*?\\end\{equation\}` $src -}}
+  {{- $i = add $i 1 -}}
+  {{- if in . (printf `\label{%s}` $key) }}{{ $n = $i }}{{ end -}}
+{{- end -}}
+{{- if not $n }}{{ errorf "eqref: no equation with label %q in %s" $key $p.File.Path }}{{ end -}}
+<a class="eqref" href="#eq-{{ $key }}">({{ $n }})</a>

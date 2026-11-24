@@ -1,0 +1,36 @@
+/* D2 — content blocks, figures, plots. Existing tokens plus a plot palette (contrast ≥ 4.3:1
+   on both backgrounds; the grid is deliberately faint). */
+@font-face { font-family: 'Patrick Hand'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/patrick-hand/patrick-hand-subset.woff2') format('woff2'); }
+:root { --plot-ink: #332e28; --plot-muted: #6a6256; --plot-grid: #d9d1c3; --plot-1: #8c4a32; --plot-2: #3f6584; --plot-3: #5f6f2e; --plot-4: #9a6a12; }
+[data-ed-theme="dark"], [data-theme="dark"] { --plot-ink: #e2dcd0; --plot-muted: #a69a8b; --plot-grid: #3a342d; --plot-1: #d4a373; --plot-2: #93b4cf; --plot-3: #b3c07a; --plot-4: #dcb064; }
+
+/* Callouts: a rule and a small-caps label, no filled box behind long text. */
+.prose .callout { margin: 1.6rem 0; padding: 0.2rem 0 0.2rem 1.1rem; border-left: 2px solid var(--ed-accent); }
+.prose .callout-label { margin: 0 0 0.35rem; font: 700 0.66rem/1.4 var(--ed-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ed-accent); }
+.prose .callout-title { letter-spacing: 0.04em; text-transform: none; font: italic 500 0.95rem var(--ed-display); color: var(--ed-fg); }
+.prose .callout-body > :first-child { margin-top: 0; } .prose .callout-body > :last-child { margin-bottom: 0; }
+.prose .callout-theorem .callout-body { font-style: italic; }
+.prose .callout-note, .prose .callout-example { border-left-color: var(--ed-border); }
+.prose .callout-note .callout-label, .prose .callout-example .callout-label { color: var(--ed-muted); }
+.prose .callout-warning { border-left-width: 3px; }
+
+/* Figures and numbered tables. */
+.prose .plot-figure { margin: 2rem auto; max-width: 30rem; }
+.prose .plot-svg { display: block; width: 100%; height: auto; }
+.prose .plot-figure figcaption, .prose .table-figure caption { margin-top: 0.6rem; padding-top: 0.5rem; font: 400 0.84rem/1.5 var(--ed-sans); color: var(--ed-muted); text-align: left; caption-side: bottom; }
+.prose .fig-label { font-weight: 700; color: var(--ed-fg); }
+.prose .table-figure caption { text-align: center; }
+.prose .fig-source { display: block; font-size: 0.78rem; }
+.prose .table-figure { margin: 1.8rem 0; overflow-x: auto; }
+/* Centred (owner, 2026-11-24): the wrapper scrolls on narrow screens, so the table itself can be
+   a real, content-sized table in the middle of the measure instead of D1's full-width block. */
+.d1-article .prose .table-figure table { display: table; width: auto; max-width: none; margin-inline: auto; }
+.prose .plot-figure:target, .prose .table-figure:target { outline: 2px solid color-mix(in srgb, var(--ed-accent) 35%, transparent); outline-offset: 0.6rem; }
+/* Numbered display equations: MathJax AMS tags, accent-coloured, aligned with the measure. */
+.prose mjx-container[display="true"] mjx-mtd[id^="mjx-eqn"], .prose mjx-labels { color: var(--ed-muted); }
+/* Handwriting is for annotations only (D2 owner decision). */
+.hand { font-family: 'Patrick Hand', cursive; font-size: 1.15em; color: var(--ed-accent); }
+/* Storyboard (review only). */
+.prose .storyboard { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.5rem 0; }
+.prose .storyboard img { display: block; width: 100%; height: auto; border: 1px solid var(--ed-border); }
+.prose .storyboard figcaption { font: 400 0.8rem var(--ed-sans); color: var(--ed-muted); margin-top: 0.3rem; }

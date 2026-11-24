@@ -54,7 +54,8 @@ Plan and owner decisions: [docs/phases/phase-4/PLAN.md](phases/phase-4/PLAN.md).
 | [x] | P4-04 | Labs and films as their own pages; essays link with cards | P3-08 | DONE | Claude Code, `feat/p4-ia-cleanup` |
 | [x] | D4 | Content architecture: sitemap, content types, relationships, navigation, metadata (design first, no code) | D1, D-017 | DONE (PR #44, `a4e6354`; production verified 2026-11-24) | Claude Code |
 | [x] | D3 | Citation & research protocol: citation style, footnotes, references, source metadata, presentation (sample article first) | D4 | DONE (PR #46, `4d2029b`; production verified 2026-11-24) | Claude Code |
-| [ ] | D5 | Visual identity & asset library: design system review, botanical library, hero illustrations, asset management (visual board first) | D3 | IN PROGRESS (board approved; implementation PR awaiting merge approval) | Claude Code, `feat/d5-visual-identity` |
+| [x] | D5 | Visual identity & asset library: design system review, botanical library, hero illustrations, asset management (visual board first) | D3 | DONE (PR #48, `0797d0b`; production verified 2026-11-24) | Claude Code |
+| [ ] | D2 | Content & media protocol: text blocks, mathematics, scientific plots, video/Manim, interactive content (example set first) | D5 | IN PROGRESS | Claude Code, `docs/d2-discovery` |
 
 ## Deferred backlog (do NOT check off or implement without new approval)
 - [ ] F3-01 Homepage concept exploration and actual redesigned homepage
