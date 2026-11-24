@@ -536,3 +536,27 @@ other = "Warning"
 other = "Figure {{ .N }}"
 [ed_table]
 other = "Table {{ .N }}"
+
+# --- D6 recommendations, affiliate links, support ---
+[ed_why_editor]
+other = "Editor's pick"
+[ed_why_series]
+other = "Next in the series"
+[ed_why_topic]
+other = "Same topic"
+[ed_why_latest]
+other = "Latest"
+[ed_buy]
+other = "Get the book:"
+[ed_affiliateNote]
+other = "Affiliate link: if you buy through it, the publication may earn a commission at no extra cost to you. Books are chosen for their content, not for commissions."
+[ed_sample]
+other = "SAMPLE"
+[ed_supportTitle]
+other = "Support The Epistemic Diary"
+[ed_supportText]
+other = "Every essay is free. If you find them worthwhile, a small contribution gives the publication more time to write carefully."
+[ed_supportButton]
+other = "Support"
+[ed_supportQr]
+other = "QR code for support"

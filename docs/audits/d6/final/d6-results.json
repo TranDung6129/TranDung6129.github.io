@@ -1,0 +1,123 @@
+[
+ {
+  "name": "Recommendations show their reason (editor's pick first)",
+  "passed": true,
+  "why": [
+   "Biên tập chọn",
+   "Cùng chủ đề"
+  ]
+ },
+ {
+  "name": "nash-vi: axe 0 violations",
+  "passed": true,
+  "v": []
+ },
+ {
+  "name": "nash-vi 1440 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "nash-vi 1440 dark: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "nash-vi 390 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "nash-en: every store link is rel=sponsored with the affiliate disclosure next to it",
+  "passed": true,
+  "buy": [
+   {
+    "rel": "sponsored noopener",
+    "hasDisclosure": true
+   }
+  ]
+ },
+ {
+  "name": "nash-en: axe 0 violations",
+  "passed": true,
+  "v": []
+ },
+ {
+  "name": "nash-en 1440 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "nash-en 1440 dark: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "nash-en 390 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "discover: every store link is rel=sponsored with the affiliate disclosure next to it",
+  "passed": true,
+  "buy": [
+   {
+    "rel": "sponsored noopener",
+    "hasDisclosure": true
+   }
+  ]
+ },
+ {
+  "name": "discover: axe 0 violations",
+  "passed": true,
+  "v": []
+ },
+ {
+  "name": "discover 1440 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "discover 1440 dark: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "discover 390 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "Voluntary support block present after the article; analytics not loaded in a non-production build",
+  "passed": true,
+  "overflow": false,
+  "buy": [],
+  "why": [
+   "Bài mới",
+   "Bài mới",
+   "Bài mới"
+  ],
+  "support": true,
+  "analytics": false
+ },
+ {
+  "name": "support: axe 0 violations",
+  "passed": true,
+  "v": []
+ },
+ {
+  "name": "support 1440 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "support 1440 dark: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ },
+ {
+  "name": "support 390 light: 200, no overflow or errors",
+  "passed": true,
+  "errors": []
+ }
+]

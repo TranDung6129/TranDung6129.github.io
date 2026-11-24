@@ -530,3 +530,27 @@ other = "Cảnh báo"
 other = "Hình {{ .N }}"
 [ed_table]
 other = "Bảng {{ .N }}"
+
+# --- D6 recommendations, affiliate links, support ---
+[ed_why_editor]
+other = "Biên tập chọn"
+[ed_why_series]
+other = "Phần tiếp của chuỗi"
+[ed_why_topic]
+other = "Cùng chủ đề"
+[ed_why_latest]
+other = "Bài mới"
+[ed_buy]
+other = "Mua sách:"
+[ed_affiliateNote]
+other = "Liên kết tiếp thị liên kết: nếu bạn mua qua đây, ấn phẩm có thể nhận một khoản hoa hồng; giá bạn trả không đổi. Sách được chọn vì nội dung, không vì hoa hồng."
+[ed_sample]
+other = "MẪU"
+[ed_supportTitle]
+other = "Ủng hộ The Epistemic Diary"
+[ed_supportText]
+other = "Mọi bài viết đều miễn phí. Nếu bạn thấy chúng đáng giá, một khoản ủng hộ nhỏ giúp ấn phẩm có thêm thời gian để viết kỹ hơn."
+[ed_supportButton]
+other = "Ủng hộ"
+[ed_supportQr]
+other = "Mã QR để ủng hộ"

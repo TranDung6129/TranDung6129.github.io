@@ -1,6 +1,6 @@
 # D6 — Discovery & monetization: design specification
 
-**Status:** PLACEMENTS READY FOR OWNER REVIEW (2026-11-24). Nothing is live. Prototype: `prototype/` (`scripts/preview-overlay.sh docs/phases/phase-4/d6/prototype <dir>`). Screenshots: `docs/audits/d6/screenshots/`. Checks: `docs/audits/d6/tools/d6-check.cjs` → 20/20, axe 0.
+**Status:** APPROVED 2026-11-24 and implemented in `feat/d6-discovery-monetization` (D-022). Live: recommendation reasons. Off until configured (owner accounts pending): store links, support, analytics; see `ENABLE.md`. The sample data moved to the test fixture `docs/audits/d6/fixture`. Screenshots: `docs/audits/d6/screenshots/`. Checks: `docs/audits/d6/tools/d6-check.cjs` → 20/20, axe 0.
 
 All store and support links in the prototype are placeholders marked **MẪU / SAMPLE** (`example.invalid`). No real offer, price or commission is invented.
 
